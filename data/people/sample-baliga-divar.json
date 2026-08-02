@@ -1,0 +1,4363 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Left Divar island when the Saptakoteshwar image was moved to Narve.",
+  "people": [
+    {
+      "id": "baliga-divar-0995",
+      "name": {
+        "given": "Janardan",
+        "surname": "Baliga",
+        "display": "Janardan Baliga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1817,
+          "qualifier": "circa",
+          "raw": "c. 1817"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "divar"
+        },
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1887,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "baliga-divar-0996",
+          "status": "widowed",
+          "date": {
+            "year": 1840,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-0996",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Mallya",
+        "display": "Anandibai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1826,
+          "qualifier": "circa",
+          "raw": "c. 1826"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "divar"
+        },
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-0995",
+          "status": "married",
+          "date": {
+            "year": 1840,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-0997",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Baliga",
+        "patronymic": "Janardan",
+        "display": "Kaveribai Janardan Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1842,
+          "qualifier": "circa",
+          "raw": "c. 1842"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "baliga-divar-0995",
+      "motherId": "baliga-divar-0996"
+    },
+    {
+      "id": "baliga-divar-0998",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Baliga",
+        "patronymic": "Janardan",
+        "display": "Janakibai Janardan Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa",
+          "raw": "c. 1846"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "divar"
+        },
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1892,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "fatherId": "baliga-divar-0995",
+      "motherId": "baliga-divar-0996"
+    },
+    {
+      "id": "baliga-divar-0999",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Baliga",
+        "patronymic": "Janardan",
+        "display": "Purushottam Janardan Baliga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa",
+          "raw": "c. 1850"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "divar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1921,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "baliga-divar-0995",
+      "motherId": "baliga-divar-0996",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1000",
+          "status": "widowed",
+          "date": {
+            "year": 1875,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1000",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Mallya",
+        "display": "Tarabai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1900,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "bio": "Served as a mahajan of the family's temple and travelled to Divar for the annual festival every year until old age made the journey impossible.",
+      "spouses": [
+        {
+          "personId": "baliga-divar-0999",
+          "status": "married",
+          "date": {
+            "year": 1875,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1001",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Radhabai Purushottam Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1876,
+          "qualifier": "circa",
+          "raw": "c. 1876"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1914,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1002",
+          "status": "widowed",
+          "date": {
+            "year": 1892,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1002",
+      "name": {
+        "given": "Rajaram",
+        "surname": "Kini",
+        "display": "Rajaram Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1867,
+          "qualifier": "circa",
+          "raw": "c. 1867"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1902,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1001",
+          "status": "married",
+          "date": {
+            "year": 1892,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1003",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Kini",
+        "patronymic": "Rajaram",
+        "display": "Kashibai Rajaram Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1895,
+          "qualifier": "exact",
+          "raw": "1895"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1907,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "baliga-divar-1002",
+      "motherId": "baliga-divar-1001"
+    },
+    {
+      "id": "baliga-divar-1004",
+      "name": {
+        "given": "Jagannath",
+        "surname": "Kini",
+        "patronymic": "Rajaram",
+        "display": "Jagannath Rajaram Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1898,
+          "qualifier": "exact",
+          "raw": "1898"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "fatherId": "baliga-divar-1002",
+      "motherId": "baliga-divar-1001",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1005",
+          "status": "widowed",
+          "date": {
+            "year": 1916,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1005",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Mallya",
+        "display": "Kaveribai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1945,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1004",
+          "status": "married",
+          "date": {
+            "year": 1916,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1006",
+      "name": {
+        "given": "Damodar",
+        "surname": "Kini",
+        "patronymic": "Jagannath",
+        "display": "Damodar Jagannath Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1919,
+          "qualifier": "exact",
+          "raw": "1919"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1919
+        }
+      ],
+      "fatherId": "baliga-divar-1004",
+      "motherId": "baliga-divar-1005",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1007",
+          "status": "widowed",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1007",
+      "name": {
+        "given": "Rohini",
+        "surname": "Shenoy",
+        "display": "Rohini Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1006",
+          "status": "married",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1008",
+      "name": {
+        "given": "Umabai",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Umabai Damodar Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007"
+    },
+    {
+      "id": "baliga-divar-1009",
+      "name": {
+        "given": "Janardan",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Janardan Damodar Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1010",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1010",
+      "name": {
+        "given": "Usha",
+        "surname": "Kudva",
+        "display": "Usha Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "mathagram",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1009",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1011",
+      "name": {
+        "given": "Deepika",
+        "surname": "Kini",
+        "patronymic": "Janardan",
+        "display": "Deepika Janardan Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1981
+        }
+      ],
+      "fatherId": "baliga-divar-1009",
+      "motherId": "baliga-divar-1010"
+    },
+    {
+      "id": "baliga-divar-1012",
+      "name": {
+        "given": "Anjali",
+        "surname": "Kini",
+        "patronymic": "Janardan",
+        "display": "Anjali Janardan Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1998
+        }
+      ],
+      "fatherId": "baliga-divar-1009",
+      "motherId": "baliga-divar-1010"
+    },
+    {
+      "id": "baliga-divar-1013",
+      "name": {
+        "given": "Shreekant",
+        "surname": "Kini",
+        "patronymic": "Janardan",
+        "display": "Shreekant Janardan Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "baliga-divar-1009",
+      "motherId": "baliga-divar-1010"
+    },
+    {
+      "id": "baliga-divar-1014",
+      "name": {
+        "given": "Ganesh",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Ganesh Damodar Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1955
+        }
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1015",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1015",
+      "name": {
+        "given": "Vimala",
+        "surname": "Kamath",
+        "display": "Vimala Kamath"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1014",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1016",
+      "name": {
+        "given": "Kavita",
+        "surname": "Kini",
+        "patronymic": "Ganesh",
+        "display": "Kavita Ganesh Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1986
+        }
+      ],
+      "fatherId": "baliga-divar-1014",
+      "motherId": "baliga-divar-1015",
+      "epithet": "first of the line at Sanquelim"
+    },
+    {
+      "id": "baliga-divar-1017",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Vaishali Damodar Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007"
+    },
+    {
+      "id": "baliga-divar-1018",
+      "name": {
+        "given": "Sudhir",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Sudhir Damodar Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1962
+        }
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "baliga-divar-1019",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Kini",
+        "patronymic": "Damodar",
+        "display": "Jyoti Damodar Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "baliga-divar-1006",
+      "motherId": "baliga-divar-1007"
+    },
+    {
+      "id": "baliga-divar-1020",
+      "name": {
+        "given": "Avinash",
+        "surname": "Kini",
+        "patronymic": "Jagannath",
+        "display": "Avinash Jagannath Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "baliga-divar-1004",
+      "motherId": "baliga-divar-1005",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1021",
+          "status": "married",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1021",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Prabhu",
+        "display": "Manjulabai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1927
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1020",
+          "status": "married",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1022",
+      "name": {
+        "given": "Raghunath",
+        "surname": "Kini",
+        "patronymic": "Avinash",
+        "display": "Raghunath Avinash Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "baliga-divar-1020",
+      "motherId": "baliga-divar-1021"
+    },
+    {
+      "id": "baliga-divar-1023",
+      "name": {
+        "given": "Sudha",
+        "surname": "Kini",
+        "patronymic": "Avinash",
+        "display": "Sudha Avinash Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "baliga-divar-1020",
+      "motherId": "baliga-divar-1021",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1024",
+          "status": "married",
+          "date": {
+            "year": 1966,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1024",
+      "name": {
+        "given": "Manjunath",
+        "surname": "Pai",
+        "display": "Manjunath Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1023",
+          "status": "married",
+          "date": {
+            "year": 1966,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1025",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Pai",
+        "patronymic": "Manjunath",
+        "display": "Pushpa Manjunath Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician",
+        "software engineer"
+      ],
+      "fatherId": "baliga-divar-1024",
+      "motherId": "baliga-divar-1023",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "baliga-divar-1026",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Pai",
+        "patronymic": "Manjunath",
+        "display": "Shailaja Manjunath Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1985
+        }
+      ],
+      "fatherId": "baliga-divar-1024",
+      "motherId": "baliga-divar-1023",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "baliga-divar-1027",
+      "name": {
+        "given": "Karthik",
+        "surname": "Pai",
+        "patronymic": "Manjunath",
+        "display": "Karthik Manjunath Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "baliga-divar-1024",
+      "motherId": "baliga-divar-1023"
+    },
+    {
+      "id": "baliga-divar-1028",
+      "name": {
+        "given": "Milind",
+        "surname": "Pai",
+        "patronymic": "Manjunath",
+        "display": "Milind Manjunath Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "baliga-divar-1024",
+      "motherId": "baliga-divar-1023",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "baliga-divar-1029",
+      "name": {
+        "given": "Manjunath",
+        "surname": "Kini",
+        "patronymic": "Avinash",
+        "display": "Manjunath Avinash Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1952
+        }
+      ],
+      "fatherId": "baliga-divar-1020",
+      "motherId": "baliga-divar-1021",
+      "epithet": "temple mahajan",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1030",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1030",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Adiga",
+        "display": "Kashibai Adiga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1029",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1031",
+      "name": {
+        "given": "Neel",
+        "surname": "Kini",
+        "patronymic": "Manjunath",
+        "display": "Neel Manjunath Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "baliga-divar-1029",
+      "motherId": "baliga-divar-1030"
+    },
+    {
+      "id": "baliga-divar-1032",
+      "name": {
+        "given": "Ashok",
+        "surname": "Kini",
+        "patronymic": "Avinash",
+        "display": "Ashok Avinash Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "baliga-divar-1020",
+      "motherId": "baliga-divar-1021",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1033",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1033",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Kamath",
+        "display": "Savitribai Kamath"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1032",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1034",
+      "name": {
+        "given": "Aditya",
+        "surname": "Kini",
+        "patronymic": "Ashok",
+        "display": "Aditya Ashok Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "baliga-divar-1032",
+      "motherId": "baliga-divar-1033"
+    },
+    {
+      "id": "baliga-divar-1035",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Kini",
+        "patronymic": "Avinash",
+        "display": "Sarojini Avinash Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "baliga-divar-1020",
+      "motherId": "baliga-divar-1021"
+    },
+    {
+      "id": "baliga-divar-1036",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Kini",
+        "patronymic": "Jagannath",
+        "display": "Pushpa Jagannath Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "baliga-divar-1004",
+      "motherId": "baliga-divar-1005",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1037",
+          "status": "widowed",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1037",
+      "name": {
+        "given": "Sadanand",
+        "surname": "Kudva",
+        "display": "Sadanand Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1920,
+          "qualifier": "exact",
+          "raw": "1920"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist",
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "epithet": "kept the family vahi",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1036",
+          "status": "married",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1038",
+      "name": {
+        "given": "Asha",
+        "surname": "Kudva",
+        "patronymic": "Sadanand",
+        "display": "Asha Sadanand Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "baliga-divar-1037",
+      "motherId": "baliga-divar-1036",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1040",
+          "status": "widowed",
+          "date": {
+            "year": 1963,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1039",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Kudva",
+        "patronymic": "Sadanand",
+        "display": "Anuradha Sadanand Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "baliga-divar-1037",
+      "motherId": "baliga-divar-1036"
+    },
+    {
+      "id": "baliga-divar-1040",
+      "name": {
+        "given": "Bhaskar",
+        "surname": "Karkal",
+        "display": "Bhaskar Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1038",
+          "status": "married",
+          "date": {
+            "year": 1963,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1041",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Karkal",
+        "patronymic": "Bhaskar",
+        "display": "Shailaja Bhaskar Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "baliga-divar-1040",
+      "motherId": "baliga-divar-1038"
+    },
+    {
+      "id": "baliga-divar-1042",
+      "name": {
+        "given": "Pranav",
+        "surname": "Karkal",
+        "patronymic": "Bhaskar",
+        "display": "Pranav Bhaskar Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "baliga-divar-1040",
+      "motherId": "baliga-divar-1038"
+    },
+    {
+      "id": "baliga-divar-1043",
+      "name": {
+        "given": "Advait",
+        "surname": "Karkal",
+        "patronymic": "Bhaskar",
+        "display": "Advait Bhaskar Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "chennai"
+        },
+        {
+          "id": "singapore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "baliga-divar-1040",
+      "motherId": "baliga-divar-1038"
+    },
+    {
+      "id": "baliga-divar-1044",
+      "name": {
+        "given": "Kamala",
+        "surname": "Kini",
+        "patronymic": "Jagannath",
+        "display": "Kamala Jagannath Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "baliga-divar-1004",
+      "motherId": "baliga-divar-1005",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1045",
+          "status": "widowed",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1045",
+      "name": {
+        "given": "Suresh",
+        "surname": "Karkal",
+        "display": "Suresh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1044",
+          "status": "married",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1046",
+      "name": {
+        "given": "Janardan",
+        "surname": "Karkal",
+        "patronymic": "Suresh",
+        "display": "Janardan Suresh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "baliga-divar-1045",
+      "motherId": "baliga-divar-1044",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1047",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1047",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Mallya",
+        "display": "Vaishali Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1046",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1048",
+      "name": {
+        "given": "Ameya",
+        "surname": "Karkal",
+        "patronymic": "Janardan",
+        "display": "Ameya Janardan Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "baliga-divar-1046",
+      "motherId": "baliga-divar-1047"
+    },
+    {
+      "id": "baliga-divar-1049",
+      "name": {
+        "given": "Nandan",
+        "surname": "Karkal",
+        "patronymic": "Suresh",
+        "display": "Nandan Suresh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "baliga-divar-1045",
+      "motherId": "baliga-divar-1044",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1050",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1050",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Bhat",
+        "display": "Sulochana Bhat"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1049",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1051",
+      "name": {
+        "given": "Prachi",
+        "surname": "Karkal",
+        "patronymic": "Nandan",
+        "display": "Prachi Nandan Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician",
+        "classical dancer"
+      ],
+      "fatherId": "baliga-divar-1049",
+      "motherId": "baliga-divar-1050"
+    },
+    {
+      "id": "baliga-divar-1052",
+      "name": {
+        "given": "Swati",
+        "surname": "Karkal",
+        "patronymic": "Nandan",
+        "display": "Swati Nandan Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact",
+          "raw": "1984"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant",
+        "physician"
+      ],
+      "fatherId": "baliga-divar-1049",
+      "motherId": "baliga-divar-1050"
+    },
+    {
+      "id": "baliga-divar-1053",
+      "name": {
+        "given": "Yash",
+        "surname": "Karkal",
+        "patronymic": "Nandan",
+        "display": "Yash Nandan Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "baliga-divar-1049",
+      "motherId": "baliga-divar-1050",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "baliga-divar-1054",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Kini",
+        "patronymic": "Rajaram",
+        "display": "Radhabai Rajaram Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "baliga-divar-1002",
+      "motherId": "baliga-divar-1001"
+    },
+    {
+      "id": "baliga-divar-1055",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Godavaribai Purushottam Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1886,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000"
+    },
+    {
+      "id": "baliga-divar-1056",
+      "name": {
+        "given": "Anant",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Anant Purushottam Baliga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1883,
+          "qualifier": "exact",
+          "raw": "1883"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1960,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1057",
+          "status": "married",
+          "date": {
+            "year": 1908,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "divar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1057",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Shanbhag",
+        "display": "Godavaribai Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1886,
+          "qualifier": "exact",
+          "raw": "1886"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "kushasthali",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "divar"
+        },
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1964,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1056",
+          "status": "married",
+          "date": {
+            "year": 1908,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1058",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Baliga",
+        "patronymic": "Anant",
+        "display": "Narmadabai Anant Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "baliga-divar-1056",
+      "motherId": "baliga-divar-1057"
+    },
+    {
+      "id": "baliga-divar-1059",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Baliga",
+        "patronymic": "Anant",
+        "display": "Sitabai Anant Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1914,
+          "qualifier": "exact",
+          "raw": "1914"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "fatherId": "baliga-divar-1056",
+      "motherId": "baliga-divar-1057",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "baliga-divar-1060",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Baliga",
+        "patronymic": "Anant",
+        "display": "Sarojini Anant Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1918,
+          "qualifier": "exact",
+          "raw": "1918"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "baliga-divar-1056",
+      "motherId": "baliga-divar-1057",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1061",
+          "status": "married",
+          "date": {
+            "year": 1937,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1061",
+      "name": {
+        "given": "Prakash",
+        "surname": "Bhandarkar",
+        "display": "Prakash Bhandarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "sanquelim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1060",
+          "status": "married",
+          "date": {
+            "year": 1937,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1062",
+      "name": {
+        "given": "Rekha",
+        "surname": "Bhandarkar",
+        "patronymic": "Prakash",
+        "display": "Rekha Prakash Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "baliga-divar-1061",
+      "motherId": "baliga-divar-1060"
+    },
+    {
+      "id": "baliga-divar-1063",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Bhandarkar",
+        "patronymic": "Prakash",
+        "display": "Mangesh Prakash Bhandarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "baliga-divar-1061",
+      "motherId": "baliga-divar-1060",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1064",
+          "status": "married",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "narve"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1064",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Pai",
+        "display": "Sulochana Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1063",
+          "status": "married",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1065",
+      "name": {
+        "given": "Namrata",
+        "surname": "Bhandarkar",
+        "patronymic": "Mangesh",
+        "display": "Namrata Mangesh Bhandarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "baliga-divar-1063",
+      "motherId": "baliga-divar-1064",
+      "spouses": [
+        {
+          "personId": "baliga-divar-1066",
+          "status": "married",
+          "date": {
+            "year": 1998,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sanquelim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1066",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Mallya",
+        "display": "Hrishikesh Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "spouses": [
+        {
+          "personId": "baliga-divar-1065",
+          "status": "married",
+          "date": {
+            "year": 1998,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1067",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Mallya",
+        "patronymic": "Hrishikesh",
+        "display": "Sulochana Hrishikesh Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "baliga-divar-1066",
+      "motherId": "baliga-divar-1065"
+    },
+    {
+      "id": "baliga-divar-1068",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Bhandarkar",
+        "patronymic": "Mangesh",
+        "display": "Hrishikesh Mangesh Bhandarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "baliga-divar-1063",
+      "motherId": "baliga-divar-1064",
+      "bio": "Hrishikesh kept the family's accounts at Narve and is remembered for maintaining the household vahi in which most of the dates before 2014 in this branch are recorded."
+    },
+    {
+      "id": "baliga-divar-1069",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Bhandarkar",
+        "patronymic": "Prakash",
+        "display": "Vrinda Prakash Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1959
+        }
+      ],
+      "fatherId": "baliga-divar-1061",
+      "motherId": "baliga-divar-1060",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation."
+    },
+    {
+      "id": "baliga-divar-1070",
+      "name": {
+        "given": "Ashok",
+        "surname": "Bhandarkar",
+        "patronymic": "Prakash",
+        "display": "Ashok Prakash Bhandarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "sanquelim"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "baliga-divar-1061",
+      "motherId": "baliga-divar-1060",
+      "spouses": [
+        {
+          "personId": "shenoy-mathagram-0485",
+          "status": "married",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "baliga-divar-1071",
+      "name": {
+        "given": "Padmanabh",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Padmanabh Purushottam Baliga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "narve"
+        },
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1940,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Baliga household at divar."
+        }
+      ],
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000"
+    },
+    {
+      "id": "baliga-divar-1072",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Parvatibai Purushottam Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1887,
+          "qualifier": "exact",
+          "raw": "1887"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "sanquelim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1960,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000"
+    },
+    {
+      "id": "baliga-divar-1073",
+      "name": {
+        "given": "Gopal",
+        "surname": "Baliga",
+        "patronymic": "Purushottam",
+        "display": "Gopal Purushottam Baliga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1889,
+          "qualifier": "exact",
+          "raw": "1889"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1950,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "baliga-divar-0999",
+      "motherId": "baliga-divar-1000"
+    },
+    {
+      "id": "baliga-divar-1074",
+      "name": {
+        "given": "Venubai",
+        "surname": "Baliga",
+        "patronymic": "Janardan",
+        "display": "Venubai Janardan Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "divar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "divar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1855,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "baliga-divar-0995",
+      "motherId": "baliga-divar-0996"
+    },
+    {
+      "id": "baliga-divar-1075",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Baliga",
+        "patronymic": "Janardan",
+        "display": "Shantabai Janardan Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "narve"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "saptakoteshwar",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "narve"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1907,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "fatherId": "baliga-divar-0995",
+      "motherId": "baliga-divar-0996",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "baliga-divar-1525",
+      "name": {
+        "given": "Nandini",
+        "surname": "Bhandarkar",
+        "patronymic": "Ashok",
+        "display": "Nandini Ashok Bhandarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "chennai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "chennai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "baliga-divar-1070",
+      "motherId": "shenoy-mathagram-0485"
+    }
+  ]
+}

@@ -1,0 +1,3791 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Followed the Devki Krishna image from Chorao to Mashel.",
+  "people": [
+    {
+      "id": "mallya-chorao-1154",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Mallya",
+        "display": "Trimbak Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1809,
+          "qualifier": "circa",
+          "raw": "c. 1809"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "devki-krishna",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years.",
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1155",
+          "status": "widowed",
+          "date": {
+            "year": 1829,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1155",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Karkal",
+        "display": "Tarabai Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1811,
+          "qualifier": "circa",
+          "raw": "c. 1811"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1154",
+          "status": "married",
+          "date": {
+            "year": 1829,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1156",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Mallya",
+        "patronymic": "Trimbak",
+        "display": "Ambabai Trimbak Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1832,
+          "qualifier": "circa",
+          "raw": "c. 1832"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "devki-krishna",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "fatherId": "mallya-chorao-1154",
+      "motherId": "mallya-chorao-1155",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1159",
+          "status": "married",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1157",
+      "name": {
+        "given": "Bhagirathibai",
+        "surname": "Mallya",
+        "patronymic": "Trimbak",
+        "display": "Bhagirathibai Trimbak Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1834,
+          "qualifier": "circa",
+          "raw": "c. 1834"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "devki-krishna",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1898,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "mallya-chorao-1154",
+      "motherId": "mallya-chorao-1155"
+    },
+    {
+      "id": "mallya-chorao-1158",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Mallya",
+        "patronymic": "Trimbak",
+        "display": "Shrinivas Trimbak Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1838,
+          "qualifier": "circa",
+          "raw": "c. 1838"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "devki-krishna",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1847,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "mallya-chorao-1154",
+      "motherId": "mallya-chorao-1155"
+    },
+    {
+      "id": "mallya-chorao-1159",
+      "name": {
+        "given": "Kashinath",
+        "surname": "Prabhu",
+        "display": "Kashinath Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1826,
+          "qualifier": "circa",
+          "raw": "c. 1826"
+        },
+        "place": {
+          "id": "chorao"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "chorao"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1156",
+          "status": "married",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1160",
+      "name": {
+        "given": "Narayan",
+        "surname": "Prabhu",
+        "patronymic": "Kashinath",
+        "display": "Narayan Kashinath Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1847,
+          "qualifier": "circa",
+          "raw": "c. 1847"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "chorao"
+        },
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1899,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "fatherId": "mallya-chorao-1159",
+      "motherId": "mallya-chorao-1156",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1161",
+          "status": "widowed",
+          "date": {
+            "year": 1865,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1161",
+      "name": {
+        "given": "Umabai",
+        "surname": "Nayak",
+        "display": "Umabai Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1848,
+          "qualifier": "circa",
+          "raw": "c. 1848"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1160",
+          "status": "married",
+          "date": {
+            "year": 1865,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1162",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Prabhu",
+        "patronymic": "Narayan",
+        "display": "Janakibai Narayan Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa",
+          "raw": "c. 1868"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "marcel"
+        },
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1939,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "mallya-chorao-1160",
+      "motherId": "mallya-chorao-1161",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1163",
+          "status": "widowed",
+          "date": {
+            "year": 1882,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1163",
+      "name": {
+        "given": "Nagesh",
+        "surname": "Karkal",
+        "display": "Nagesh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1913,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1162",
+          "status": "married",
+          "date": {
+            "year": 1882,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1164",
+      "name": {
+        "given": "Krishna",
+        "surname": "Karkal",
+        "patronymic": "Nagesh",
+        "display": "Krishna Nagesh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1884,
+          "qualifier": "exact",
+          "raw": "1884"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1943,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "mallya-chorao-1163",
+      "motherId": "mallya-chorao-1162",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1165",
+          "status": "married",
+          "date": {
+            "year": 1909,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1165",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Shenoy",
+        "display": "Yamunabai Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1894,
+          "qualifier": "exact",
+          "raw": "1894"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "marcel"
+        },
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1950,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1164",
+          "status": "married",
+          "date": {
+            "year": 1909,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1166",
+      "name": {
+        "given": "Umabai",
+        "surname": "Karkal",
+        "patronymic": "Krishna",
+        "display": "Umabai Krishna Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "marcel"
+        },
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "mallya-chorao-1164",
+      "motherId": "mallya-chorao-1165"
+    },
+    {
+      "id": "mallya-chorao-1167",
+      "name": {
+        "given": "Satish",
+        "surname": "Karkal",
+        "patronymic": "Krishna",
+        "display": "Satish Krishna Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1914,
+          "qualifier": "exact",
+          "raw": "1914"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1929
+        }
+      ],
+      "fatherId": "mallya-chorao-1164",
+      "motherId": "mallya-chorao-1165",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1169",
+          "status": "widowed",
+          "date": {
+            "year": 1939,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1168",
+      "name": {
+        "given": "Rekha",
+        "surname": "Karkal",
+        "patronymic": "Krishna",
+        "display": "Rekha Krishna Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1164",
+      "motherId": "mallya-chorao-1165"
+    },
+    {
+      "id": "mallya-chorao-1169",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Pai",
+        "display": "Vrinda Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1921
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1167",
+          "status": "married",
+          "date": {
+            "year": 1939,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1170",
+      "name": {
+        "given": "Milind",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Milind Satish Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "mallya-chorao-1171",
+      "name": {
+        "given": "Nalini",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Nalini Satish Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1961
+        }
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "mallya-chorao-1172",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Vasanti Satish Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "mallya-chorao-1173",
+      "name": {
+        "given": "Suresh",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Suresh Satish Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor of mathematics",
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "epithet": "first of the line at Karkala",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1174",
+          "status": "widowed",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1174",
+      "name": {
+        "given": "Rekha",
+        "surname": "Shenoy",
+        "display": "Rekha Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1963
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1173",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1175",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Karkal",
+        "patronymic": "Suresh",
+        "display": "Kaustubh Suresh Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "mallya-chorao-1173",
+      "motherId": "mallya-chorao-1174"
+    },
+    {
+      "id": "mallya-chorao-1176",
+      "name": {
+        "given": "Aditi",
+        "surname": "Karkal",
+        "patronymic": "Suresh",
+        "display": "Aditi Suresh Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1173",
+      "motherId": "mallya-chorao-1174"
+    },
+    {
+      "id": "mallya-chorao-1177",
+      "name": {
+        "given": "Sarvesh",
+        "surname": "Karkal",
+        "patronymic": "Suresh",
+        "display": "Sarvesh Suresh Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "mallya-chorao-1173",
+      "motherId": "mallya-chorao-1174",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "mallya-chorao-1178",
+      "name": {
+        "given": "Sushila",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Sushila Satish Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "mallya-chorao-1179",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Sulochana Satish Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1958
+        }
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169"
+    },
+    {
+      "id": "mallya-chorao-1180",
+      "name": {
+        "given": "Smita",
+        "surname": "Karkal",
+        "patronymic": "Satish",
+        "display": "Smita Satish Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist",
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1976
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1167",
+      "motherId": "mallya-chorao-1169",
+      "bio": "Served as a mahajan of the family's temple and travelled to Chorao for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "mallya-chorao-1181",
+      "name": {
+        "given": "Rajaram",
+        "surname": "Karkal",
+        "patronymic": "Nagesh",
+        "display": "Rajaram Nagesh Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1886,
+          "qualifier": "exact",
+          "raw": "1886"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1958,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "mallya-chorao-1163",
+      "motherId": "mallya-chorao-1162",
+      "epithet": "kept the family vahi",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1182",
+          "status": "widowed",
+          "date": {
+            "year": 1904,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1182",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Prabhu",
+        "display": "Indirabai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1929,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1181",
+          "status": "married",
+          "date": {
+            "year": 1904,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1183",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Karkal",
+        "patronymic": "Rajaram",
+        "display": "Kaveribai Rajaram Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "mallya-chorao-1181",
+      "motherId": "mallya-chorao-1182",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1184",
+          "status": "widowed",
+          "date": {
+            "year": 1923,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "marcel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1184",
+      "name": {
+        "given": "Krishna",
+        "surname": "Nayak",
+        "display": "Krishna Nayak"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1939,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1183",
+          "status": "married",
+          "date": {
+            "year": 1923,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1185",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Nayak",
+        "patronymic": "Krishna",
+        "display": "Savitribai Krishna Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "mallya-chorao-1184",
+      "motherId": "mallya-chorao-1183"
+    },
+    {
+      "id": "mallya-chorao-1186",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Nayak",
+        "patronymic": "Krishna",
+        "display": "Narmadabai Krishna Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "fatherId": "mallya-chorao-1184",
+      "motherId": "mallya-chorao-1183",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1187",
+          "status": "married",
+          "date": {
+            "year": 1947,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1187",
+      "name": {
+        "given": "Suresh",
+        "surname": "Kini",
+        "display": "Suresh Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1186",
+          "status": "married",
+          "date": {
+            "year": 1947,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1188",
+      "name": {
+        "given": "Bhaskar",
+        "surname": "Kini",
+        "patronymic": "Suresh",
+        "display": "Bhaskar Suresh Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "fatherId": "mallya-chorao-1187",
+      "motherId": "mallya-chorao-1186"
+    },
+    {
+      "id": "mallya-chorao-1189",
+      "name": {
+        "given": "Milind",
+        "surname": "Kini",
+        "patronymic": "Suresh",
+        "display": "Milind Suresh Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1966
+        }
+      ],
+      "fatherId": "mallya-chorao-1187",
+      "motherId": "mallya-chorao-1186"
+    },
+    {
+      "id": "mallya-chorao-1190",
+      "name": {
+        "given": "Satish",
+        "surname": "Kini",
+        "patronymic": "Suresh",
+        "display": "Satish Suresh Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "mallya-chorao-1187",
+      "motherId": "mallya-chorao-1186"
+    },
+    {
+      "id": "mallya-chorao-1191",
+      "name": {
+        "given": "Ramkrishna",
+        "surname": "Kini",
+        "patronymic": "Suresh",
+        "display": "Ramkrishna Suresh Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1187",
+      "motherId": "mallya-chorao-1186"
+    },
+    {
+      "id": "mallya-chorao-1192",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Nayak",
+        "patronymic": "Krishna",
+        "display": "Anuradha Krishna Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1945
+        }
+      ],
+      "fatherId": "mallya-chorao-1184",
+      "motherId": "mallya-chorao-1183"
+    },
+    {
+      "id": "mallya-chorao-1193",
+      "name": {
+        "given": "Kiran",
+        "surname": "Nayak",
+        "patronymic": "Krishna",
+        "display": "Kiran Krishna Nayak"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1932,
+          "qualifier": "exact",
+          "raw": "1932"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "mallya-chorao-1184",
+      "motherId": "mallya-chorao-1183",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1194",
+          "status": "married",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1194",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Baliga",
+        "display": "Manjulabai Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1193",
+          "status": "married",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1195",
+      "name": {
+        "given": "Satish",
+        "surname": "Nayak",
+        "patronymic": "Kiran",
+        "display": "Satish Kiran Nayak"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "mallya-chorao-1193",
+      "motherId": "mallya-chorao-1194",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "mallya-chorao-1196",
+      "name": {
+        "given": "Nagesh",
+        "surname": "Nayak",
+        "patronymic": "Kiran",
+        "display": "Nagesh Kiran Nayak"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "fatherId": "mallya-chorao-1193",
+      "motherId": "mallya-chorao-1194"
+    },
+    {
+      "id": "mallya-chorao-1197",
+      "name": {
+        "given": "Siddharth",
+        "surname": "Nayak",
+        "patronymic": "Kiran",
+        "display": "Siddharth Kiran Nayak"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "mallya-chorao-1193",
+      "motherId": "mallya-chorao-1194"
+    },
+    {
+      "id": "mallya-chorao-1198",
+      "name": {
+        "given": "Sadanand",
+        "surname": "Nayak",
+        "patronymic": "Krishna",
+        "display": "Sadanand Krishna Nayak"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "mallya-chorao-1184",
+      "motherId": "mallya-chorao-1183"
+    },
+    {
+      "id": "mallya-chorao-1199",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Karkal",
+        "patronymic": "Rajaram",
+        "display": "Ulhas Rajaram Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "mallya-chorao-1181",
+      "motherId": "mallya-chorao-1182",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1200",
+          "status": "widowed",
+          "date": {
+            "year": 1933,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "chorao"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1200",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Mallya",
+        "display": "Radhabai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1914,
+          "qualifier": "exact",
+          "raw": "1914"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1199",
+          "status": "married",
+          "date": {
+            "year": 1933,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1201",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Karkal",
+        "patronymic": "Ulhas",
+        "display": "Vasanti Ulhas Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1949
+        }
+      ],
+      "fatherId": "mallya-chorao-1199",
+      "motherId": "mallya-chorao-1200"
+    },
+    {
+      "id": "mallya-chorao-1202",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Karkal",
+        "patronymic": "Ulhas",
+        "display": "Nirmala Ulhas Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "mallya-chorao-1199",
+      "motherId": "mallya-chorao-1200"
+    },
+    {
+      "id": "mallya-chorao-1203",
+      "name": {
+        "given": "Anant",
+        "surname": "Karkal",
+        "patronymic": "Ulhas",
+        "display": "Anant Ulhas Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1938
+        }
+      ],
+      "fatherId": "mallya-chorao-1199",
+      "motherId": "mallya-chorao-1200",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1204",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "marcel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1204",
+      "name": {
+        "given": "Vimala",
+        "surname": "Prabhu",
+        "display": "Vimala Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1203",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1205",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Karkal",
+        "patronymic": "Anant",
+        "display": "Vaishali Anant Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1967
+        }
+      ],
+      "fatherId": "mallya-chorao-1203",
+      "motherId": "mallya-chorao-1204"
+    },
+    {
+      "id": "mallya-chorao-1206",
+      "name": {
+        "given": "Sarvesh",
+        "surname": "Karkal",
+        "patronymic": "Anant",
+        "display": "Sarvesh Anant Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1984
+        }
+      ],
+      "fatherId": "mallya-chorao-1203",
+      "motherId": "mallya-chorao-1204",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "mallya-chorao-1207",
+      "name": {
+        "given": "Sameer",
+        "surname": "Karkal",
+        "patronymic": "Anant",
+        "display": "Sameer Anant Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "mallya-chorao-1203",
+      "motherId": "mallya-chorao-1204"
+    },
+    {
+      "id": "mallya-chorao-1208",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Karkal",
+        "patronymic": "Anant",
+        "display": "Aarohi Anant Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "mallya-chorao-1203",
+      "motherId": "mallya-chorao-1204"
+    },
+    {
+      "id": "mallya-chorao-1209",
+      "name": {
+        "given": "Kunda",
+        "surname": "Karkal",
+        "patronymic": "Ulhas",
+        "display": "Kunda Ulhas Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "mallya-chorao-1199",
+      "motherId": "mallya-chorao-1200"
+    },
+    {
+      "id": "mallya-chorao-1210",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Karkal",
+        "patronymic": "Ulhas",
+        "display": "Sarojini Ulhas Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant",
+        "physician"
+      ],
+      "fatherId": "mallya-chorao-1199",
+      "motherId": "mallya-chorao-1200"
+    },
+    {
+      "id": "mallya-chorao-1211",
+      "name": {
+        "given": "Avinash",
+        "surname": "Karkal",
+        "patronymic": "Rajaram",
+        "display": "Avinash Rajaram Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath",
+        "journalist"
+      ],
+      "fatherId": "mallya-chorao-1181",
+      "motherId": "mallya-chorao-1182",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1212",
+          "status": "widowed",
+          "date": {
+            "year": 1935,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "karkala"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1212",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Prabhu",
+        "display": "Vithabai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1915,
+          "qualifier": "exact",
+          "raw": "1915"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1211",
+          "status": "married",
+          "date": {
+            "year": 1935,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1213",
+      "name": {
+        "given": "Shashank",
+        "surname": "Karkal",
+        "patronymic": "Avinash",
+        "display": "Shashank Avinash Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer",
+        "insurance agent"
+      ],
+      "fatherId": "mallya-chorao-1211",
+      "motherId": "mallya-chorao-1212",
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1216",
+          "status": "married",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "marcel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1214",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Karkal",
+        "patronymic": "Avinash",
+        "display": "Trimbak Avinash Karkal"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "karkala"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "mallya-chorao-1211",
+      "motherId": "mallya-chorao-1212",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "mallya-chorao-1215",
+      "name": {
+        "given": "Sudha",
+        "surname": "Karkal",
+        "patronymic": "Avinash",
+        "display": "Sudha Avinash Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "mallya-chorao-1211",
+      "motherId": "mallya-chorao-1212"
+    },
+    {
+      "id": "mallya-chorao-1216",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Bhat",
+        "display": "Padmavatibai Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "kushasthali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1956
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "mallya-chorao-1213",
+          "status": "married",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mallya-chorao-1217",
+      "name": {
+        "given": "Rekha",
+        "surname": "Karkal",
+        "patronymic": "Shashank",
+        "display": "Rekha Shashank Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hyderabad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1976
+        }
+      ],
+      "fatherId": "mallya-chorao-1213",
+      "motherId": "mallya-chorao-1216"
+    },
+    {
+      "id": "mallya-chorao-1218",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Karkal",
+        "patronymic": "Shashank",
+        "display": "Shailaja Shashank Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "hyderabad"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hyderabad"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "mallya-chorao-1213",
+      "motherId": "mallya-chorao-1216"
+    },
+    {
+      "id": "mallya-chorao-1219",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Karkal",
+        "patronymic": "Nagesh",
+        "display": "Parvatibai Nagesh Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1890,
+          "qualifier": "exact",
+          "raw": "1890"
+        },
+        "place": {
+          "id": "karkala"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1942,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "fatherId": "mallya-chorao-1163",
+      "motherId": "mallya-chorao-1162"
+    },
+    {
+      "id": "mallya-chorao-1220",
+      "name": {
+        "given": "Vithal",
+        "surname": "Prabhu",
+        "patronymic": "Narayan",
+        "display": "Vithal Narayan Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "chorao"
+        },
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1946,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "fatherId": "mallya-chorao-1160",
+      "motherId": "mallya-chorao-1161"
+    },
+    {
+      "id": "mallya-chorao-1221",
+      "name": {
+        "given": "Kashinath",
+        "surname": "Prabhu",
+        "patronymic": "Narayan",
+        "display": "Kashinath Narayan Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karkala"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1942,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Mallya household at chorao."
+        }
+      ],
+      "fatherId": "mallya-chorao-1160",
+      "motherId": "mallya-chorao-1161"
+    },
+    {
+      "id": "mallya-chorao-1222",
+      "name": {
+        "given": "Sunderabai",
+        "surname": "Prabhu",
+        "patronymic": "Kashinath",
+        "display": "Sunderabai Kashinath Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa",
+          "raw": "c. 1850"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "chorao"
+        },
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "mallya-chorao-1159",
+      "motherId": "mallya-chorao-1156"
+    },
+    {
+      "id": "mallya-chorao-1223",
+      "name": {
+        "given": "Mukund",
+        "surname": "Prabhu",
+        "patronymic": "Kashinath",
+        "display": "Mukund Kashinath Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "marcel"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "marcel"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1904,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "fatherId": "mallya-chorao-1159",
+      "motherId": "mallya-chorao-1156",
+      "epithet": "kept the family vahi"
+    }
+  ]
+}

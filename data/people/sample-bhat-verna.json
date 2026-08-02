@@ -1,0 +1,4567 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "A priestly line attached to the Mahalasa temple at Mardol after the move from Verna.",
+  "people": [
+    {
+      "id": "bhat-verna-0746",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Bhat",
+        "display": "Shrinivas Bhat"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1793,
+          "qualifier": "circa",
+          "raw": "c. 1793"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1865,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0747",
+          "status": "widowed",
+          "date": {
+            "year": 1815,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0747",
+      "name": {
+        "given": "Venubai",
+        "surname": "Prabhu",
+        "display": "Venubai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1796,
+          "qualifier": "circa",
+          "raw": "c. 1796"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0746",
+          "status": "married",
+          "date": {
+            "year": 1815,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0748",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Lakshmibai Shrinivas Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1816,
+          "qualifier": "circa",
+          "raw": "c. 1816"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "verna"
+        },
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1884,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747"
+    },
+    {
+      "id": "bhat-verna-0749",
+      "name": {
+        "given": "Umabai",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Umabai Shrinivas Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1820,
+          "qualifier": "circa",
+          "raw": "c. 1820"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1895,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747"
+    },
+    {
+      "id": "bhat-verna-0750",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Narmadabai Shrinivas Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1822,
+          "qualifier": "circa",
+          "raw": "c. 1822"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1867,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "bhat-verna-0751",
+      "name": {
+        "given": "Vithal",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Vithal Shrinivas Bhat"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1826,
+          "qualifier": "circa",
+          "raw": "c. 1826"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1904,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0752",
+          "status": "widowed",
+          "date": {
+            "year": 1845,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0752",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Mallya",
+        "display": "Ratnabai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1829,
+          "qualifier": "circa",
+          "raw": "c. 1829"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0751",
+          "status": "married",
+          "date": {
+            "year": 1845,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0753",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Bhat",
+        "patronymic": "Vithal",
+        "display": "Purushottam Vithal Bhat"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa",
+          "raw": "c. 1846"
+        },
+        "place": {
+          "id": "mardol"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "bhat-verna-0751",
+      "motherId": "bhat-verna-0752"
+    },
+    {
+      "id": "bhat-verna-0754",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Bhat",
+        "patronymic": "Vithal",
+        "display": "Shrinivas Vithal Bhat"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa",
+          "raw": "c. 1850"
+        },
+        "place": {
+          "id": "mardol"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "verna"
+        },
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1860,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "bhat-verna-0751",
+      "motherId": "bhat-verna-0752"
+    },
+    {
+      "id": "bhat-verna-0755",
+      "name": {
+        "given": "Rukminibai",
+        "surname": "Bhat",
+        "patronymic": "Vithal",
+        "display": "Rukminibai Vithal Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "mardol"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1900,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        }
+      ],
+      "fatherId": "bhat-verna-0751",
+      "motherId": "bhat-verna-0752",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0756",
+          "status": "married",
+          "date": {
+            "year": 1868,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0756",
+      "name": {
+        "given": "Laxman",
+        "surname": "Mallya",
+        "display": "Laxman Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1845,
+          "qualifier": "circa",
+          "raw": "c. 1845"
+        },
+        "place": {
+          "id": "mardol"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0755",
+          "status": "married",
+          "date": {
+            "year": 1868,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0757",
+      "name": {
+        "given": "Anant",
+        "surname": "Mallya",
+        "patronymic": "Laxman",
+        "display": "Anant Laxman Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1942,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        }
+      ],
+      "fatherId": "bhat-verna-0756",
+      "motherId": "bhat-verna-0755",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0758",
+          "status": "widowed",
+          "date": {
+            "year": 1894,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0758",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Kamath",
+        "display": "Anandibai Kamath"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1877,
+          "qualifier": "circa",
+          "raw": "c. 1877"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1918,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0757",
+          "status": "married",
+          "date": {
+            "year": 1894,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0759",
+      "name": {
+        "given": "Achyut",
+        "surname": "Mallya",
+        "patronymic": "Anant",
+        "display": "Achyut Anant Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "fatherId": "bhat-verna-0757",
+      "motherId": "bhat-verna-0758",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0760",
+          "status": "married",
+          "date": {
+            "year": 1922,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0760",
+      "name": {
+        "given": "Bhagirathibai",
+        "surname": "Rao",
+        "display": "Bhagirathibai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0759",
+          "status": "married",
+          "date": {
+            "year": 1922,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0761",
+      "name": {
+        "given": "Kiran",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Kiran Achyut Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760"
+    },
+    {
+      "id": "bhat-verna-0762",
+      "name": {
+        "given": "Vasudev",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Vasudev Achyut Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer",
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0763",
+          "status": "widowed",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0763",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Hegde",
+        "display": "Sitabai Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0762",
+          "status": "married",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0764",
+      "name": {
+        "given": "Jayant",
+        "surname": "Mallya",
+        "patronymic": "Vasudev",
+        "display": "Jayant Vasudev Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "bhat-verna-0762",
+      "motherId": "bhat-verna-0763",
+      "bio": "Served as a mahajan of the family's temple and travelled to Verna for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "bhat-verna-0765",
+      "name": {
+        "given": "Asha",
+        "surname": "Mallya",
+        "patronymic": "Vasudev",
+        "display": "Asha Vasudev Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0762",
+      "motherId": "bhat-verna-0763",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1387",
+          "status": "married",
+          "date": {
+            "year": 1982,
+            "qualifier": "exact"
+          }
+        }
+      ],
+      "notes": "Married into another family recorded in this archive — the two lineages can be walked end to end from here."
+    },
+    {
+      "id": "bhat-verna-0766",
+      "name": {
+        "given": "Nandan",
+        "surname": "Mallya",
+        "patronymic": "Vasudev",
+        "display": "Nandan Vasudev Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "bhat-verna-0762",
+      "motherId": "bhat-verna-0763",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0767",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0767",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Mallya",
+        "display": "Nirmala Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0766",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0768",
+      "name": {
+        "given": "Deepika",
+        "surname": "Mallya",
+        "patronymic": "Nandan",
+        "display": "Deepika Nandan Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2001
+        }
+      ],
+      "fatherId": "bhat-verna-0766",
+      "motherId": "bhat-verna-0767",
+      "bio": "Served as a mahajan of the family's temple and travelled to Verna for the annual festival every year until old age made the journey impossible.",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "bhat-verna-0769",
+      "name": {
+        "given": "Aarav",
+        "surname": "Mallya",
+        "patronymic": "Nandan",
+        "display": "Aarav Nandan Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "bhat-verna-0766",
+      "motherId": "bhat-verna-0767"
+    },
+    {
+      "id": "bhat-verna-0770",
+      "name": {
+        "given": "Pramod",
+        "surname": "Mallya",
+        "patronymic": "Vasudev",
+        "display": "Pramod Vasudev Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "bhat-verna-0762",
+      "motherId": "bhat-verna-0763",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0771",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0771",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Shanbhag",
+        "display": "Pushpa Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "kushasthali",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0770",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0772",
+      "name": {
+        "given": "Advait",
+        "surname": "Mallya",
+        "patronymic": "Pramod",
+        "display": "Advait Pramod Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2001
+        }
+      ],
+      "fatherId": "bhat-verna-0770",
+      "motherId": "bhat-verna-0771"
+    },
+    {
+      "id": "bhat-verna-0773",
+      "name": {
+        "given": "Ishani",
+        "surname": "Mallya",
+        "patronymic": "Pramod",
+        "display": "Ishani Pramod Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1989,
+          "qualifier": "exact",
+          "raw": "1989"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "bhat-verna-0770",
+      "motherId": "bhat-verna-0771"
+    },
+    {
+      "id": "bhat-verna-0774",
+      "name": {
+        "given": "Soham",
+        "surname": "Mallya",
+        "patronymic": "Pramod",
+        "display": "Soham Pramod Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "bhat-verna-0770",
+      "motherId": "bhat-verna-0771"
+    },
+    {
+      "id": "bhat-verna-0775",
+      "name": {
+        "given": "Ramesh",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Ramesh Achyut Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent",
+        "surveyor"
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0776",
+          "status": "married",
+          "date": {
+            "year": 1952,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0776",
+      "name": {
+        "given": "Sushila",
+        "surname": "Bhandarkar",
+        "display": "Sushila Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1938
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0775",
+          "status": "married",
+          "date": {
+            "year": 1952,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0777",
+      "name": {
+        "given": "Deepak",
+        "surname": "Mallya",
+        "patronymic": "Ramesh",
+        "display": "Deepak Ramesh Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0775",
+      "motherId": "bhat-verna-0776",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0778",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0778",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Nayak",
+        "display": "Vasanti Nayak"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1964
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0777",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0779",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Mallya",
+        "patronymic": "Deepak",
+        "display": "Aarohi Deepak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "bhat-verna-0777",
+      "motherId": "bhat-verna-0778"
+    },
+    {
+      "id": "bhat-verna-0780",
+      "name": {
+        "given": "Aniket",
+        "surname": "Mallya",
+        "patronymic": "Deepak",
+        "display": "Aniket Deepak Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "bhat-verna-0777",
+      "motherId": "bhat-verna-0778"
+    },
+    {
+      "id": "bhat-verna-0781",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Mallya",
+        "patronymic": "Ramesh",
+        "display": "Vishwanath Ramesh Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1956
+        }
+      ],
+      "fatherId": "bhat-verna-0775",
+      "motherId": "bhat-verna-0776"
+    },
+    {
+      "id": "bhat-verna-0782",
+      "name": {
+        "given": "Indira",
+        "surname": "Mallya",
+        "patronymic": "Ramesh",
+        "display": "Indira Ramesh Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "bhat-verna-0775",
+      "motherId": "bhat-verna-0776"
+    },
+    {
+      "id": "bhat-verna-0783",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Vaishali Achyut Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1932,
+          "qualifier": "exact",
+          "raw": "1932"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1932
+        }
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760"
+    },
+    {
+      "id": "bhat-verna-0784",
+      "name": {
+        "given": "Shobha",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Shobha Achyut Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760"
+    },
+    {
+      "id": "bhat-verna-0785",
+      "name": {
+        "given": "Shanta",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Shanta Achyut Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1989,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760"
+    },
+    {
+      "id": "bhat-verna-0786",
+      "name": {
+        "given": "Vinayak",
+        "surname": "Mallya",
+        "patronymic": "Achyut",
+        "display": "Vinayak Achyut Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "bhat-verna-0759",
+      "motherId": "bhat-verna-0760",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0787",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0787",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Shenoy",
+        "display": "Sulochana Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0786",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0788",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Sarojini Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1965
+        }
+      ],
+      "fatherId": "bhat-verna-0786",
+      "motherId": "bhat-verna-0787"
+    },
+    {
+      "id": "bhat-verna-0789",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Kaustubh Vinayak Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "bhat-verna-0786",
+      "motherId": "bhat-verna-0787",
+      "epithet": "first of the line at Ankola",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0792",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0790",
+      "name": {
+        "given": "Rucha",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Rucha Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0786",
+      "motherId": "bhat-verna-0787"
+    },
+    {
+      "id": "bhat-verna-0791",
+      "name": {
+        "given": "Radhika",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Radhika Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician",
+        "classical dancer"
+      ],
+      "fatherId": "bhat-verna-0786",
+      "motherId": "bhat-verna-0787"
+    },
+    {
+      "id": "bhat-verna-0792",
+      "name": {
+        "given": "Prema",
+        "surname": "Mallya",
+        "display": "Prema Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1977
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0789",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0793",
+      "name": {
+        "given": "Shreyas",
+        "surname": "Mallya",
+        "patronymic": "Kaustubh",
+        "display": "Shreyas Kaustubh Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2010
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0789",
+      "motherId": "bhat-verna-0792"
+    },
+    {
+      "id": "bhat-verna-0794",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Mallya",
+        "patronymic": "Anant",
+        "display": "Kaveribai Anant Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1900,
+          "qualifier": "exact",
+          "raw": "1900"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mardol"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "bhat-verna-0757",
+      "motherId": "bhat-verna-0758"
+    },
+    {
+      "id": "bhat-verna-0795",
+      "name": {
+        "given": "Padmanabh",
+        "surname": "Mallya",
+        "patronymic": "Anant",
+        "display": "Padmanabh Anant Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0757",
+      "motherId": "bhat-verna-0758",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0796",
+          "status": "widowed",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "verna"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0796",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Shanbhag",
+        "display": "Vithabai Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0795",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0797",
+      "name": {
+        "given": "Usha",
+        "surname": "Mallya",
+        "patronymic": "Padmanabh",
+        "display": "Usha Padmanabh Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "bhat-verna-0795",
+      "motherId": "bhat-verna-0796"
+    },
+    {
+      "id": "bhat-verna-0798",
+      "name": {
+        "given": "Vinayak",
+        "surname": "Mallya",
+        "patronymic": "Padmanabh",
+        "display": "Vinayak Padmanabh Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1933
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0795",
+      "motherId": "bhat-verna-0796",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0799",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0799",
+      "name": {
+        "given": "Nalini",
+        "surname": "Kudva",
+        "display": "Nalini Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "kushasthali",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1941
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0798",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0800",
+      "name": {
+        "given": "Shanta",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Shanta Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "bhat-verna-0798",
+      "motherId": "bhat-verna-0799"
+    },
+    {
+      "id": "bhat-verna-0801",
+      "name": {
+        "given": "Kamala",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Kamala Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "bhat-verna-0798",
+      "motherId": "bhat-verna-0799",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0802",
+          "status": "widowed",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0802",
+      "name": {
+        "given": "Nitin",
+        "surname": "Rao",
+        "display": "Nitin Rao"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0801",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0803",
+      "name": {
+        "given": "Radhika",
+        "surname": "Rao",
+        "patronymic": "Nitin",
+        "display": "Radhika Nitin Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "bhat-verna-0802",
+      "motherId": "bhat-verna-0801",
+      "bio": "Radhika was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "bhat-verna-0804",
+      "name": {
+        "given": "Malati",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Malati Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "bhat-verna-0798",
+      "motherId": "bhat-verna-0799",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "bhat-verna-0805",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Chinmay Vinayak Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "bhat-verna-0798",
+      "motherId": "bhat-verna-0799",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0806",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0806",
+      "name": {
+        "given": "Nalini",
+        "surname": "Baliga",
+        "display": "Nalini Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0805",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0807",
+      "name": {
+        "given": "Varun",
+        "surname": "Mallya",
+        "patronymic": "Chinmay",
+        "display": "Varun Chinmay Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "bhat-verna-0805",
+      "motherId": "bhat-verna-0806"
+    },
+    {
+      "id": "bhat-verna-0808",
+      "name": {
+        "given": "Atharva",
+        "surname": "Mallya",
+        "patronymic": "Chinmay",
+        "display": "Atharva Chinmay Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "bhat-verna-0805",
+      "motherId": "bhat-verna-0806"
+    },
+    {
+      "id": "bhat-verna-0809",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Mallya",
+        "patronymic": "Vinayak",
+        "display": "Samruddhi Vinayak Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1987
+        }
+      ],
+      "fatherId": "bhat-verna-0798",
+      "motherId": "bhat-verna-0799",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "bhat-verna-0810",
+      "name": {
+        "given": "Jagannath",
+        "surname": "Mallya",
+        "patronymic": "Padmanabh",
+        "display": "Jagannath Padmanabh Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1950
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0795",
+      "motherId": "bhat-verna-0796",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0811",
+          "status": "widowed",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0811",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Mallya",
+        "display": "Jyoti Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0810",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0812",
+      "name": {
+        "given": "Narayan",
+        "surname": "Mallya",
+        "patronymic": "Jagannath",
+        "display": "Narayan Jagannath Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "bhat-verna-0810",
+      "motherId": "bhat-verna-0811",
+      "bio": "Narayan kept the family's accounts at Mardol and is remembered for maintaining the household vahi in which most of the dates before 1999 in this branch are recorded.",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0813",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0813",
+      "name": {
+        "given": "Kamala",
+        "surname": "Karkal",
+        "display": "Kamala Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1963
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0812",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0814",
+      "name": {
+        "given": "Rucha",
+        "surname": "Mallya",
+        "patronymic": "Narayan",
+        "display": "Rucha Narayan Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "bhat-verna-0812",
+      "motherId": "bhat-verna-0813"
+    },
+    {
+      "id": "bhat-verna-0815",
+      "name": {
+        "given": "Prachi",
+        "surname": "Mallya",
+        "patronymic": "Narayan",
+        "display": "Prachi Narayan Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "bhat-verna-0812",
+      "motherId": "bhat-verna-0813"
+    },
+    {
+      "id": "bhat-verna-0816",
+      "name": {
+        "given": "Radhika",
+        "surname": "Mallya",
+        "patronymic": "Narayan",
+        "display": "Radhika Narayan Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0812",
+      "motherId": "bhat-verna-0813"
+    },
+    {
+      "id": "bhat-verna-0817",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Mallya",
+        "patronymic": "Jagannath",
+        "display": "Nirmala Jagannath Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "fatherId": "bhat-verna-0810",
+      "motherId": "bhat-verna-0811"
+    },
+    {
+      "id": "bhat-verna-0818",
+      "name": {
+        "given": "Prabhakar",
+        "surname": "Mallya",
+        "patronymic": "Padmanabh",
+        "display": "Prabhakar Padmanabh Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "bhat-verna-0795",
+      "motherId": "bhat-verna-0796",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0819",
+          "status": "widowed",
+          "date": {
+            "year": 1964,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "mardol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0819",
+      "name": {
+        "given": "Shobha",
+        "surname": "Shanbhag",
+        "display": "Shobha Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1948
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0818",
+          "status": "married",
+          "date": {
+            "year": 1964,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0820",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Mallya",
+        "patronymic": "Prabhakar",
+        "display": "Shailaja Prabhakar Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1965
+        }
+      ],
+      "fatherId": "bhat-verna-0818",
+      "motherId": "bhat-verna-0819",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0823",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0821",
+      "name": {
+        "given": "Vimala",
+        "surname": "Mallya",
+        "patronymic": "Prabhakar",
+        "display": "Vimala Prabhakar Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "bhat-verna-0818",
+      "motherId": "bhat-verna-0819",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch."
+    },
+    {
+      "id": "bhat-verna-0822",
+      "name": {
+        "given": "Vidya",
+        "surname": "Mallya",
+        "patronymic": "Prabhakar",
+        "display": "Vidya Prabhakar Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1985
+        }
+      ],
+      "fatherId": "bhat-verna-0818",
+      "motherId": "bhat-verna-0819"
+    },
+    {
+      "id": "bhat-verna-0823",
+      "name": {
+        "given": "Omkar",
+        "surname": "Baliga",
+        "display": "Omkar Baliga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "spouses": [
+        {
+          "personId": "bhat-verna-0820",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhat-verna-0824",
+      "name": {
+        "given": "Anjali",
+        "surname": "Baliga",
+        "patronymic": "Omkar",
+        "display": "Anjali Omkar Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "kushasthali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        },
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "fatherId": "bhat-verna-0823",
+      "motherId": "bhat-verna-0820"
+    },
+    {
+      "id": "bhat-verna-0825",
+      "name": {
+        "given": "Aarav",
+        "surname": "Baliga",
+        "patronymic": "Omkar",
+        "display": "Aarav Omkar Baliga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "new-jersey"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "kushasthali",
+      "residences": [
+        {
+          "id": "new-jersey"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2009
+        }
+      ],
+      "fatherId": "bhat-verna-0823",
+      "motherId": "bhat-verna-0820"
+    },
+    {
+      "id": "bhat-verna-0826",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Mallya",
+        "patronymic": "Anant",
+        "display": "Ratnabai Anant Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1906,
+          "qualifier": "exact",
+          "raw": "1906"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mardol"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent",
+        "chartered accountant"
+      ],
+      "fatherId": "bhat-verna-0757",
+      "motherId": "bhat-verna-0758"
+    },
+    {
+      "id": "bhat-verna-0827",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Mallya",
+        "patronymic": "Laxman",
+        "display": "Ambabai Laxman Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mardol"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "bhat-verna-0756",
+      "motherId": "bhat-verna-0755"
+    },
+    {
+      "id": "bhat-verna-0828",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Mallya",
+        "patronymic": "Laxman",
+        "display": "Godavaribai Laxman Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1877,
+          "qualifier": "circa",
+          "raw": "c. 1877"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mardol"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1950,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "fatherId": "bhat-verna-0756",
+      "motherId": "bhat-verna-0755"
+    },
+    {
+      "id": "bhat-verna-0829",
+      "name": {
+        "given": "Yeshwant",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Yeshwant Shrinivas Bhat"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1829,
+          "qualifier": "circa",
+          "raw": "c. 1829"
+        },
+        "place": {
+          "id": "verna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "verna"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1896,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747"
+    },
+    {
+      "id": "bhat-verna-0830",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Bhat",
+        "patronymic": "Shrinivas",
+        "display": "Kashibai Shrinivas Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1831,
+          "qualifier": "circa",
+          "raw": "c. 1831"
+        },
+        "place": {
+          "id": "mardol"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "verna"
+        },
+        {
+          "id": "mardol"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1891,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Bhat household at verna."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "bhat-verna-0746",
+      "motherId": "bhat-verna-0747"
+    }
+  ]
+}

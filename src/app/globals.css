@@ -1,0 +1,1410 @@
+@import "tailwindcss";
+
+/*
+  Visual language
+  ---------------
+  Drawn from the material world of the Konkan coast rather than from a generic
+  "Indian" palette. The colours are things you can point at in a household:
+  kumkum and haldi on the puja thali, sandalwood paste, the ochre of laterite,
+  banana leaf laid out for a meal, the grey-green of the Arabian sea, and the
+  near-black of the basalt a temple is built from.
+
+  The type is an archive's type, not a brochure's: Newsreader — an editorial
+  face with real weight in its serifs — for headings and figures, Archivo for
+  the interface and for reading, and Noto Serif Devanagari for the Konkani that
+  runs through the whole site.
+
+  Interaction follows Material Design 3: a shape scale, state layers rather
+  than colour swaps on hover, and 48px touch targets on everything you can
+  press. The M3 tokens below are a *mapping* — the geometry and behaviour are
+  Material's, the colours stay this archive's own.
+
+  ------------------------------------------------------------------
+  A note on cascade layers, because it caused real bugs here.
+
+  Tailwind emits its utilities inside `@layer utilities`. Any rule written
+  OUTSIDE a layer beats every layered rule regardless of specificity. When the
+  component classes below sat unlayered, `class="field pl-12"` silently
+  dropped the padding — which is why the search icon used to sit on top of its
+  own placeholder. Every component class therefore lives in `@layer
+  components`, so a utility written at the call site still wins.
+  ------------------------------------------------------------------
+*/
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-ink: #1c1814;
+  --color-ink-soft: #4a4139;
+  --color-ink-faint: #685c50;
+
+  --color-paper: #fbf6ec;
+  --color-paper-2: #f4ead9;
+  --color-paper-3: #ebdfc9;
+
+  --color-kumkum: #a8322a;
+  --color-kumkum-deep: #7d211c;
+  --color-kumkum-soft: #c9564a;
+
+  --color-haldi: #a06c0c;
+  --color-gold: #96702a;
+  --color-gold-soft: #d8b463;
+
+  --color-tulsi: #3d6b4f;
+  --color-tulsi-soft: #5c8a6c;
+
+  --color-samudra: #1f5a63;
+  --color-samudra-soft: #3d7f88;
+
+  --color-laterite: #9a5a32;
+  --color-chandan: #e8d9bf;
+
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, serif;
+  --font-body: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", sans-serif;
+  --font-deva: "Noto Serif Devanagari", "Nirmala UI", "Kohinoor Devanagari",
+    serif;
+
+  --radius-card: 12px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Semantic + Material 3 tokens, flipped wholesale in dark mode.       */
+/* ------------------------------------------------------------------ */
+
+:root {
+  --bg: var(--color-paper);
+  --bg-raised: #fffdf8;
+  --bg-sunken: var(--color-paper-2);
+  --bg-inset: var(--color-paper-3);
+
+  --fg: var(--color-ink);
+  --fg-soft: var(--color-ink-soft);
+  /* 4.9:1 against the darkest surface it is ever set on. The old value
+     failed against --bg-inset, and it is used for almost every caption. */
+  --fg-faint: var(--color-ink-faint);
+
+  /* Dividers are decorative and may be faint. Control borders are not:
+     WCAG 1.4.11 wants 3:1 for the edge that tells you where a field is. */
+  --line: #ddcfb6;
+  --line-strong: #c9b795;
+  --outline: #8f7850;
+  --outline-soft: #ab936a;
+
+  --accent: var(--color-kumkum);
+  --accent-fg: #fff8f0;
+  --accent-container: #f6e2dc;
+  --accent-on-container: #6d1c17;
+
+  /* State layers. M3 tints a component with its own foreground colour
+     rather than swapping the fill, so a hover reads the same on every
+     variant and never changes the contrast of the label sitting on it. */
+  --state-hover: 0.08;
+  --state-focus: 0.1;
+  --state-press: 0.12;
+
+  --shadow-card: 0 1px 2px rgb(60 42 20 / 0.06), 0 8px 24px -12px rgb(60 42 20 / 0.28);
+  --shadow-lift: 0 2px 6px rgb(60 42 20 / 0.1), 0 20px 44px -20px rgb(60 42 20 / 0.4);
+  --shadow-menu: 0 2px 4px rgb(60 42 20 / 0.12), 0 12px 28px -8px rgb(60 42 20 / 0.3);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #14110e;
+  --bg-raised: #1e1a15;
+  --bg-sunken: #100e0b;
+  --bg-inset: #262019;
+
+  --fg: #f2e8d8;
+  --fg-soft: #c2b5a1;
+  --fg-faint: #9a8d7d;
+
+  --line: #362e24;
+  --line-strong: #4a4034;
+  --outline: #84745c;
+  --outline-soft: #6a5c4a;
+
+  --accent: #dd7266;
+  --accent-fg: #40100c;
+  --accent-container: #4d1a15;
+  --accent-on-container: #ffd9d2;
+
+  --state-hover: 0.1;
+  --state-focus: 0.12;
+  --state-press: 0.16;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.5), 0 10px 30px -14px rgb(0 0 0 / 0.8);
+  --shadow-lift: 0 2px 8px rgb(0 0 0 / 0.55), 0 24px 50px -22px rgb(0 0 0 / 0.9);
+  --shadow-menu: 0 2px 6px rgb(0 0 0 / 0.6), 0 14px 32px -10px rgb(0 0 0 / 0.85);
+
+  color-scheme: dark;
+}
+
+/*
+  How much of a facet's own colour survives into the ink drawn with it.
+
+  The palette's colours are mid-tones — sea green, tulsi, laterite — chosen
+  against paper. Drawn at the same strength on a near-black page they land
+  around 2.5:1 and the gotra card's link stops being readable. So the mix is a
+  variable: on paper the colour dominates, in the dark the foreground does and
+  the colour survives as a tint. One number, and every medallion, mark,
+  monogram and facet link follows it.
+*/
+:root {
+  --facet-ink: 76%;
+  --facet-fill: 13%;
+  --facet-edge: 30%;
+}
+
+[data-theme="dark"] {
+  --facet-ink: 38%;
+  --facet-fill: 22%;
+  --facet-edge: 40%;
+}
+
+/* Material 3 shape scale — one set of radii, used everywhere. */
+:root {
+  --shape-xs: 4px;
+  --shape-sm: 8px;
+  --shape-md: 12px;
+  --shape-lg: 16px;
+  --shape-xl: 28px;
+  --shape-full: 999px;
+
+  /* M3 easing and duration. Short for state changes, medium for anything
+     that moves across the screen. */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasised: cubic-bezier(0.2, 0, 0, 1);
+  --dur-short: 150ms;
+  --dur-medium: 300ms;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 450;
+    letter-spacing: -0.005em;
+  }
+
+  /* Newsreader's optical sizing wants a nudge at display sizes so the
+     thins do not disappear. */
+  h1,
+  .font-display {
+    font-optical-sizing: auto;
+  }
+
+  .deva {
+    font-family: var(--font-deva);
+    line-height: 1.7;
+  }
+
+  /* Figures line up in a genealogy whether they are in a table or not. */
+  .tabular-nums,
+  time,
+  .font-display {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--accent) 26%, transparent);
+  }
+
+  /*
+    One focus ring, drawn outside the element so it never shifts layout and
+    never gets clipped by a rounded corner. Doubling it with the page
+    background keeps it visible on top of a filled button as well as on
+    paper.
+  */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  [data-theme="dark"] :focus-visible {
+    outline-color: var(--accent);
+  }
+
+  /* Anything focusable inside a filled accent surface needs the ring to
+     read against the fill rather than against the page. */
+  .btn-filled:focus-visible,
+  .on-accent :focus-visible {
+    outline-color: var(--accent-fg);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Components                                                          */
+/* ------------------------------------------------------------------ */
+
+@layer components {
+  .surface {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .surface-flat {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* State layer                                                       */
+  /*                                                                   */
+  /* The single mechanism behind every hover/press in the interface.    */
+  /* An overlay of the component's own foreground at 8–12%, which is    */
+  /* how M3 keeps a hovered control at exactly the contrast it had      */
+  /* before it was hovered.                                            */
+  /* ---------------------------------------------------------------- */
+
+  .state-layer {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .state-layer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .state-layer:hover::before {
+    opacity: var(--state-hover);
+  }
+
+  .state-layer:active::before {
+    opacity: var(--state-press);
+  }
+
+  .state-layer:disabled::before,
+  .state-layer[aria-disabled="true"]::before {
+    opacity: 0;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Buttons                                                           */
+  /*                                                                   */
+  /* M3 gives five shapes for one control. They are not decoration:     */
+  /* the variant says how much of the page's attention the action       */
+  /* deserves, so a reader can find the primary action on a page        */
+  /* without reading any of the labels.                                 */
+  /* ---------------------------------------------------------------- */
+
+  .btn {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 40px;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    border-radius: var(--shape-full);
+    /* Outlined is the default variant: an edge that clears 3:1 against the
+       page is what tells a reader this is a control at all. */
+    border: 1px solid var(--outline);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.006em;
+    line-height: 1.25rem;
+    text-align: center;
+    background: transparent;
+    color: var(--fg);
+    cursor: pointer;
+    transition:
+      background-color var(--dur-short) var(--ease-standard),
+      border-color var(--dur-short) var(--ease-standard),
+      box-shadow var(--dur-short) var(--ease-standard);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* State layer, on the button itself. */
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .btn:hover::before {
+    opacity: var(--state-hover);
+  }
+
+  .btn:active::before {
+    opacity: var(--state-press);
+  }
+
+  .btn:disabled,
+  .btn[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 1;
+    color: color-mix(in oklab, var(--fg) 38%, transparent);
+    background: color-mix(in oklab, var(--fg) 12%, transparent);
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .btn:disabled::before,
+  .btn[aria-disabled="true"]::before {
+    opacity: 0;
+  }
+
+  /* Filled — the one action the page most wants you to take. */
+  .btn-filled,
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: transparent;
+  }
+
+  .btn-filled:disabled,
+  .btn-primary:disabled {
+    background: color-mix(in oklab, var(--fg) 12%, transparent);
+    color: color-mix(in oklab, var(--fg) 38%, transparent);
+  }
+
+  /* Tonal — a strong action that is not the only one on the page. */
+  .btn-tonal {
+    background: var(--accent-container);
+    color: var(--accent-on-container);
+    border-color: transparent;
+  }
+
+  .btn-outlined {
+    border-color: var(--outline);
+    color: var(--fg);
+    background: transparent;
+  }
+
+  .btn-outlined:disabled {
+    border-color: color-mix(in oklab, var(--fg) 20%, transparent);
+    background: transparent;
+  }
+
+  /* Elevated — for controls that float over a canvas or an image. */
+  .btn-elevated {
+    background: var(--bg-raised);
+    color: var(--fg);
+    box-shadow: var(--shadow-card);
+    border-color: var(--line);
+  }
+
+  /* Text — the lowest-emphasis action. Tightened side padding per M3. */
+  .btn-text,
+  .btn-ghost {
+    background: transparent;
+    border-color: transparent;
+    color: var(--accent);
+    padding-inline: 0.75rem;
+  }
+
+  .btn-text-neutral {
+    color: var(--fg-soft);
+  }
+
+  /* Sizes. Height changes; the 48px target does not. */
+  .btn-sm {
+    min-height: 32px;
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .btn-lg {
+    min-height: 48px;
+    padding-inline: 1.75rem;
+    font-size: 0.9375rem;
+  }
+
+  /* Icon-only. Square, centred, and never smaller than a fingertip. */
+  .btn-icon {
+    min-height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: var(--shape-full);
+    flex-shrink: 0;
+  }
+
+  .btn-icon.btn-sm {
+    min-height: 32px;
+    width: 32px;
+  }
+
+  /* Toggle buttons carry their selected state in the fill, not the text
+     colour — colour alone is never the signal, aria-pressed is. */
+  .btn-icon[aria-pressed="true"] {
+    background: var(--accent-container);
+    color: var(--accent-on-container);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Segmented button                                                  */
+  /* ---------------------------------------------------------------- */
+
+  .segmented {
+    display: inline-flex;
+    align-items: stretch;
+    border: 1px solid var(--outline);
+    border-radius: var(--shape-full);
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .segmented > .segment {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    min-height: 38px;
+    padding-inline: 0.875rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--fg-soft);
+    background: transparent;
+    border: 0;
+    border-left: 1px solid var(--outline);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color var(--dur-short) var(--ease-standard);
+  }
+
+  .segmented > .segment:first-child {
+    border-left: 0;
+  }
+
+  .segmented > .segment::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .segmented > .segment:hover::before {
+    opacity: var(--state-hover);
+  }
+
+  .segmented > .segment[aria-checked="true"],
+  .segmented > .segment[aria-selected="true"] {
+    background: var(--accent-container);
+    color: var(--accent-on-container);
+    font-weight: 600;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Text fields                                                       */
+  /*                                                                   */
+  /* Outlined variant. 48px tall, 2px focus ring drawn on the border    */
+  /* itself so it cannot be mistaken for a shadow.                      */
+  /* ---------------------------------------------------------------- */
+
+  .field {
+    width: 100%;
+    min-height: 48px;
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    border-radius: var(--shape-xs);
+    border: 1px solid var(--outline);
+    background: var(--bg-raised);
+    color: var(--fg);
+    font-family: inherit;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    transition:
+      border-color var(--dur-short) var(--ease-standard),
+      box-shadow var(--dur-short) var(--ease-standard);
+  }
+
+  textarea.field {
+    min-height: 6rem;
+    resize: vertical;
+  }
+
+  .field::placeholder {
+    color: var(--fg-faint);
+    opacity: 1;
+  }
+
+  .field:hover:not(:disabled) {
+    border-color: var(--fg-soft);
+  }
+
+  .field:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 1px var(--accent);
+  }
+
+  .field:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .field:disabled {
+    background: color-mix(in oklab, var(--fg) 4%, var(--bg-raised));
+    border-color: color-mix(in oklab, var(--fg) 20%, transparent);
+    color: color-mix(in oklab, var(--fg) 45%, transparent);
+    cursor: not-allowed;
+  }
+
+  .field[aria-invalid="true"] {
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 1px var(--accent);
+  }
+
+  /* A rounded field, for search. */
+  .field-round {
+    border-radius: var(--shape-full);
+    padding-inline: 1.25rem;
+  }
+
+  .field-sm {
+    min-height: 40px;
+    padding-block: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  /*
+    Leading/trailing furniture. The icon and any adornment are positioned
+    against this wrapper and the field is given room by a custom property,
+    so the two can never drift apart the way a hand-tuned `pl-12` did.
+  */
+  .field-wrap {
+    position: relative;
+    display: block;
+  }
+
+  .field-wrap > .field {
+    padding-inline-start: var(--field-lead, 1rem);
+    padding-inline-end: var(--field-trail, 1rem);
+  }
+
+  .field-wrap > .field-lead,
+  .field-wrap > .field-trail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    color: var(--fg-faint);
+    pointer-events: none;
+  }
+
+  .field-wrap > .field-lead {
+    inset-inline-start: 0.875rem;
+  }
+
+  .field-wrap > .field-trail {
+    inset-inline-end: 0.75rem;
+  }
+
+  .field-wrap > .field-trail-interactive {
+    pointer-events: auto;
+  }
+
+  .label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--fg-soft);
+    margin-bottom: 0.375rem;
+  }
+
+  .hint {
+    display: block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--fg-faint);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Menu (the surface a Select drops)                                 */
+  /* ---------------------------------------------------------------- */
+
+  .menu-surface {
+    background: var(--bg-raised);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--shape-sm);
+    box-shadow: var(--shadow-menu);
+    padding-block: 0.25rem;
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+
+  .menu-item {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.625rem;
+    min-height: 44px;
+    padding-inline: 0.875rem;
+    padding-block: 0.5rem;
+    text-align: start;
+    font-size: 0.875rem;
+    color: var(--fg);
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+  }
+
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .menu-item:hover::before,
+  .menu-item[data-active="true"]::before {
+    opacity: var(--state-hover);
+  }
+
+  .menu-item[aria-selected="true"] {
+    background: var(--accent-container);
+    color: var(--accent-on-container);
+    font-weight: 500;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Chips                                                             */
+  /*                                                                   */
+  /* M3 chip: 32px tall, 8px corner, outlined by default, filled when   */
+  /* selected. The colour families below are semantic — a gotra chip is */
+  /* always sea-green, a mool chip always tulsi — so the four kinds of  */
+  /* lineage fact stay distinguishable at a glance. They are never the  */
+  /* only signal: each one is preceded by its field name in the markup. */
+  /* ---------------------------------------------------------------- */
+
+  .chip {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    min-height: 32px;
+    padding-inline: 0.75rem;
+    border-radius: var(--shape-sm);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    border: 1px solid var(--outline-soft);
+    background: transparent;
+    color: var(--fg-soft);
+    white-space: nowrap;
+  }
+
+  a.chip,
+  button.chip {
+    cursor: pointer;
+  }
+
+  a.chip::before,
+  button.chip::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  a.chip:hover::before,
+  button.chip:hover::before {
+    opacity: var(--state-hover);
+  }
+
+  /* Dense chips, for places where a row of facts must not become a wall
+     of pills — still 24px, the WCAG 2.5.8 floor. */
+  .chip-sm {
+    min-height: 24px;
+    padding-inline: 0.5rem;
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+
+  .chip-gotra {
+    border-color: color-mix(in oklab, var(--color-samudra) 50%, var(--outline-soft));
+    color: color-mix(in oklab, var(--color-samudra) 82%, var(--fg));
+    background: color-mix(in oklab, var(--color-samudra) 7%, transparent);
+  }
+
+  .chip-math {
+    border-color: color-mix(in oklab, var(--color-gold) 55%, var(--outline-soft));
+    color: color-mix(in oklab, var(--color-laterite) 82%, var(--fg));
+    background: color-mix(in oklab, var(--color-gold) 8%, transparent);
+  }
+
+  .chip-mool {
+    border-color: color-mix(in oklab, var(--color-tulsi) 50%, var(--outline-soft));
+    color: color-mix(in oklab, var(--color-tulsi) 85%, var(--fg));
+    background: color-mix(in oklab, var(--color-tulsi) 7%, transparent);
+  }
+
+  .chip-accent {
+    border-color: color-mix(in oklab, var(--accent) 55%, var(--outline-soft));
+    color: color-mix(in oklab, var(--accent) 88%, var(--fg));
+    background: color-mix(in oklab, var(--accent) 8%, transparent);
+  }
+
+  /* Filter chips announce selection with a fill and a tick, per M3 — so
+     "selected" survives both greyscale and a colour-blind reader. */
+  .chip[aria-pressed="true"],
+  .chip[aria-current="true"],
+  .chip-selected {
+    background: var(--accent-container);
+    border-color: transparent;
+    color: var(--accent-on-container);
+    font-weight: 600;
+  }
+
+  [data-theme="dark"] .chip-gotra,
+  [data-theme="dark"] .chip-math,
+  [data-theme="dark"] .chip-mool {
+    color: var(--fg-soft);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Type helpers                                                      */
+  /* ---------------------------------------------------------------- */
+
+  .link-underline {
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--accent) 50%, transparent);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  .link-underline:hover {
+    text-decoration-color: var(--accent);
+  }
+
+  /* Section eyebrow. Letter-spaced small caps, not shouty caps. */
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--fg-faint);
+  }
+
+  /* A field name set above its value. Replaces the chip-soup pattern on
+     person cards, where four same-weight pills gave no clue which was the
+     gotra and which was the village. */
+  .fact-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--fg-faint);
+  }
+
+  .fact-value {
+    font-size: 0.875rem;
+    line-height: 1.35;
+    color: var(--fg);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Ornament                                                          */
+  /* ---------------------------------------------------------------- */
+
+  /* A kolam is drawn on a lattice of dots; this is that lattice, at low
+     contrast, as a ground for empty states. */
+  .rangoli-field {
+    background-image: radial-gradient(
+      circle at center,
+      color-mix(in oklab, var(--accent) 20%, transparent) 1.1px,
+      transparent 1.2px
+    );
+    background-size: 22px 22px;
+  }
+
+  /* A woven-border rule, in the spirit of a kasti / temple-cloth edge. */
+  .rule-kasti {
+    height: 8px;
+    background-image:
+      linear-gradient(90deg, var(--accent) 0 6px, transparent 6px 14px),
+      linear-gradient(90deg, transparent 0 7px, var(--color-gold) 7px 13px, transparent 13px 14px);
+    background-size: 14px 2px, 14px 2px;
+    background-position: 0 2px, 0 5px;
+    background-repeat: repeat-x;
+    opacity: 0.55;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Grounds                                                           */
+  /*                                                                   */
+  /* Four textures, so four sections of one page can be told apart      */
+  /* without four colours of type or four sizes of heading. Each is a   */
+  /* pattern the palette already comes from — a kolam lattice, a woven  */
+  /* kasti stripe, a ledger ruling, a laterite grain — laid on at a     */
+  /* contrast low enough that no text sitting on it loses a ratio.      */
+  /* ---------------------------------------------------------------- */
+
+  .ground-kolam {
+    background-image:
+      radial-gradient(
+        circle at center,
+        color-mix(in oklab, var(--color-samudra) 26%, transparent) 1.2px,
+        transparent 1.3px
+      );
+    background-size: 26px 26px;
+  }
+
+  .ground-weave {
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        color-mix(in oklab, var(--color-gold) 12%, transparent) 0 1px,
+        transparent 1px 9px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        color-mix(in oklab, var(--color-gold) 12%, transparent) 0 1px,
+        transparent 1px 9px
+      );
+  }
+
+  .ground-ledger {
+    background-image:
+      repeating-linear-gradient(
+        180deg,
+        transparent 0 27px,
+        color-mix(in oklab, var(--color-laterite) 16%, transparent) 27px 28px
+      );
+  }
+
+  .ground-grain {
+    background-image:
+      radial-gradient(
+        ellipse 60% 45% at 12% 0%,
+        color-mix(in oklab, var(--color-tulsi) 12%, transparent),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 55% 50% at 92% 100%,
+        color-mix(in oklab, var(--color-samudra) 11%, transparent),
+        transparent 70%
+      );
+  }
+
+  /* The hero mandala. Sits behind the content, fades out towards the
+     edges through a mask rather than through opacity alone, so the
+     centre stays legible geometry instead of uniform mud. */
+  .mandala-bed {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    pointer-events: none;
+    color: var(--accent);
+    opacity: 0.13;
+    -webkit-mask-image: radial-gradient(
+      ellipse 68% 78% at 50% 46%,
+      #000 30%,
+      transparent 78%
+    );
+    mask-image: radial-gradient(
+      ellipse 68% 78% at 50% 46%,
+      #000 30%,
+      transparent 78%
+    );
+  }
+
+  [data-theme="dark"] .mandala-bed {
+    opacity: 0.2;
+  }
+
+  /* The mandala turns slowly enough that you only notice it if you stop
+     and look — which is the point. Reduced motion kills it outright. */
+  .mandala-turn {
+    animation: mandala-turn 240s linear infinite;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Facet card                                                        */
+  /*                                                                   */
+  /* A card that carries a colour of its own. `--facet` is set at the   */
+  /* call site and everything else — cap, medallion, wash, hover edge — */
+  /* derives from it, so adding a fifth index is one custom property    */
+  /* rather than five new classes. Colour is never the only difference: */
+  /* each card also gets its own mark.                                  */
+  /* ---------------------------------------------------------------- */
+
+  .facet-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--shape-lg);
+    border: 1px solid color-mix(in oklab, var(--facet) 24%, var(--line));
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--facet) 9%, var(--bg-raised)) 0%,
+      var(--bg-raised) 45%
+    );
+    box-shadow: var(--shadow-card);
+    transition:
+      box-shadow var(--dur-short) var(--ease-standard),
+      border-color var(--dur-short) var(--ease-standard),
+      transform var(--dur-short) var(--ease-standard);
+  }
+
+  /* The coloured cap. Full-bleed across the top edge, which is the part
+     of a card that survives being seen out of the corner of an eye. */
+  .facet-card::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 3px;
+    background: var(--facet);
+  }
+
+  a.facet-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lift);
+    border-color: color-mix(in oklab, var(--facet) 48%, var(--line));
+  }
+
+  .facet-medallion {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    flex: none;
+    border-radius: 15px;
+    color: color-mix(in oklab, var(--facet) var(--facet-ink), var(--fg));
+    background: color-mix(in oklab, var(--facet) var(--facet-fill), var(--bg-raised));
+    border: 1px solid
+      color-mix(in oklab, var(--facet) var(--facet-edge), transparent);
+  }
+
+  .facet-link {
+    color: color-mix(in oklab, var(--facet) var(--facet-ink), var(--fg));
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Lineage card                                                      */
+  /*                                                                   */
+  /* Deliberately a different silhouette from a facet card: no cap, a   */
+  /* spine down the leading edge instead, and the generation count as a */
+  /* row of pips. A line is a *thing that runs*, and the card says so.  */
+  /* ---------------------------------------------------------------- */
+
+  .line-card {
+    position: relative;
+    display: flex;
+    gap: 0.95rem;
+    align-items: stretch;
+    border-radius: var(--shape-md);
+    border: 1px solid var(--line);
+    background: var(--bg-raised);
+    box-shadow: var(--shadow-card);
+    transition:
+      box-shadow var(--dur-short) var(--ease-standard),
+      border-color var(--dur-short) var(--ease-standard);
+  }
+
+  .line-card::before {
+    content: "";
+    width: 5px;
+    flex: none;
+    border-start-start-radius: var(--shape-md);
+    border-end-start-radius: var(--shape-md);
+    background: linear-gradient(
+      180deg,
+      var(--color-gold-soft),
+      var(--color-laterite)
+    );
+  }
+
+  a.line-card:hover {
+    box-shadow: var(--shadow-lift);
+    border-color: var(--line-strong);
+  }
+
+  .gen-pip {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: var(--shape-full);
+    background: color-mix(in oklab, var(--color-laterite) 55%, transparent);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Archive stub                                                      */
+  /*                                                                   */
+  /* For the oldest records: an index card, ruled, with the year set as */
+  /* the subject of the card rather than as a caption on it.            */
+  /* ---------------------------------------------------------------- */
+
+  .stub-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--shape-sm);
+    border: 1px solid var(--line);
+    border-left: 3px solid color-mix(in oklab, var(--accent) 62%, transparent);
+    background: var(--bg-raised);
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent 0 26px,
+      color-mix(in oklab, var(--color-laterite) 12%, transparent) 26px 27px
+    );
+    box-shadow: var(--shadow-card);
+    transition:
+      box-shadow var(--dur-short) var(--ease-standard),
+      border-color var(--dur-short) var(--ease-standard);
+  }
+
+  a.stub-card:hover {
+    box-shadow: var(--shadow-lift);
+    border-left-color: var(--accent);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Section mark                                                      */
+  /*                                                                   */
+  /* A small coloured glyph beside the eyebrow. Cheap, and it does more */
+  /* than any amount of heading-size variation to stop six stacked      */
+  /* sections reading as one long undifferentiated page.                */
+  /* ---------------------------------------------------------------- */
+
+  .section-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    flex: none;
+    border-radius: var(--shape-sm);
+    color: color-mix(in oklab, var(--facet, var(--accent)) var(--facet-ink), var(--fg));
+    background: color-mix(
+      in oklab,
+      var(--facet, var(--accent)) var(--facet-fill),
+      transparent
+    );
+    border: 1px solid
+      color-mix(in oklab, var(--facet, var(--accent)) var(--facet-edge), transparent);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Material 3 cards and lists                                        */
+  /*                                                                   */
+  /* Three card variants, exactly as M3 defines them — elevated,        */
+  /* filled, outlined — so a page can rank its own panels by which      */
+  /* surface they sit on instead of by how big their headings are.      */
+  /* ---------------------------------------------------------------- */
+
+  .m3-card {
+    border-radius: var(--shape-lg);
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  .m3-card-elevated {
+    border-color: transparent;
+    box-shadow: var(--shadow-card);
+  }
+
+  .m3-card-filled {
+    background: var(--bg-inset);
+    border-color: transparent;
+  }
+
+  .m3-card-tonal {
+    background: var(--accent-container);
+    border-color: transparent;
+    color: var(--accent-on-container);
+  }
+
+  /* Card header: a mark, a title, and the hairline under both. */
+  .m3-card-head {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.8rem 1.125rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .m3-card-title {
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    font-weight: 500;
+    letter-spacing: -0.004em;
+  }
+
+  .m3-card-body {
+    padding: 0.9rem 1.125rem 1.05rem;
+  }
+
+  /* M3 two-line list item: leading avatar, headline, supporting text. */
+  .list-item {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--shape-sm);
+    text-align: start;
+    color: var(--fg);
+  }
+
+  .list-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity var(--dur-short) var(--ease-standard);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  a.list-item:hover::before,
+  button.list-item:hover::before {
+    opacity: var(--state-hover);
+  }
+
+  .list-item-headline {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .list-item-support {
+    display: block;
+    margin-top: 0.1rem;
+    font-size: 0.78rem;
+    line-height: 1.25;
+    color: var(--fg-faint);
+  }
+
+  /* Monogram. Sized by --avatar so one class covers 28px in a list and
+     96px in a page header. */
+  .avatar {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: var(--avatar, 32px);
+    height: var(--avatar, 32px);
+    border-radius: var(--shape-full);
+    font-family: var(--font-display);
+    font-size: calc(var(--avatar, 32px) * 0.4);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    color: color-mix(in oklab, var(--tone, var(--accent)) var(--facet-ink), var(--fg));
+    background: color-mix(
+      in oklab,
+      var(--tone, var(--accent)) var(--facet-fill),
+      var(--bg-inset)
+    );
+    border: 1px solid
+      color-mix(in oklab, var(--tone, var(--accent)) var(--facet-edge), transparent);
+    user-select: none;
+  }
+
+  .avatar-square {
+    border-radius: calc(var(--avatar, 32px) * 0.28);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Tree canvas                                                       */
+  /* ---------------------------------------------------------------- */
+
+  .tree-canvas {
+    background-color: var(--bg-sunken);
+    background-image: radial-gradient(
+      circle at center,
+      color-mix(in oklab, var(--fg) 9%, transparent) 1px,
+      transparent 1.1px
+    );
+    background-size: 26px 26px;
+    touch-action: none;
+    cursor: grab;
+  }
+
+  .tree-canvas.is-panning {
+    cursor: grabbing;
+  }
+
+  .tree-card {
+    transition: filter var(--dur-short) var(--ease-standard);
+  }
+
+  .tree-card:hover {
+    filter: brightness(1.03);
+  }
+
+  .scroll-slim {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-strong) transparent;
+  }
+
+  .scroll-slim::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+
+  .scroll-slim::-webkit-scrollbar-thumb {
+    background: var(--line-strong);
+    border-radius: var(--shape-full);
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  .scroll-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/*
+  The tree page owns exactly one screenful. Without this the footer below the
+  canvas makes the document scrollable, and any gesture the canvas does not
+  swallow — a trackpad pan, focusing the filter box — scrolls the toolbar up
+  under the sticky header while the reader is trying to move the tree.
+*/
+body:has(.tree-route) {
+  overflow: hidden;
+}
+
+body:has(.tree-route) > footer {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Motion                                                              */
+/* ------------------------------------------------------------------ */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-rise {
+  animation: rise 0.5s var(--ease-standard) both;
+}
+
+/* Four minutes a revolution. Slow enough that it never pulls the eye off
+   the search field, present enough that the page is not a still image. */
+@keyframes mandala-turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes focus-pulse {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.tree-focus-ring {
+  animation: focus-pulse 2.4s ease-in-out infinite;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+}

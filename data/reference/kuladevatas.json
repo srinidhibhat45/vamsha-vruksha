@@ -1,0 +1,30 @@
+{
+  "_readme": "Kuladevata — the family deity a household turns to first. For Saraswat families this is almost always a temple in Goa, many of which were moved inland from Salcete, Tiswadi and Bardez during the sixteenth and seventeenth centuries. The deity is often the single most reliable link between branches of a family that lost touch generations ago, which is why it is a first-class field in this archive.",
+  "items": [
+    { "id": "mangesh", "name": "Shri Mangesh", "devanagari": "श्री मंगेश", "temple": "Shri Mangueshi Temple", "placeId": "priol", "deityOf": "Shiva as Mangirish", "note": "Moved from Kushasthali (Cortalim) to Priol in the sixteenth century." },
+    { "id": "shantadurga", "name": "Shri Shantadurga", "devanagari": "श्री शांतादुर्गा", "temple": "Shri Shantadurga Temple", "placeId": "kavale", "deityOf": "Parvati as the peacemaker between Shiva and Vishnu", "note": "Originally of Keloshi (Quelossim); among the most widely held kuladevatas." },
+    { "id": "mahalasa", "name": "Shri Mahalasa Narayani", "devanagari": "श्री महालसा नारायणी", "temple": "Shri Mahalasa Temple", "placeId": "mardol", "deityOf": "Mohini form of Vishnu", "note": "Moved from Verna to Mardol." },
+    { "id": "ramnath", "name": "Shri Ramnath", "devanagari": "श्री रामनाथ", "temple": "Shri Ramnathi Temple", "placeId": "bandora", "deityOf": "Shiva", "note": "Originally of Loutolim." },
+    { "id": "nagesh", "name": "Shri Nagesh", "devanagari": "श्री नागेश", "temple": "Shri Nagesh Maharudra Temple", "placeId": "bandora", "deityOf": "Shiva as Nagnath" },
+    { "id": "saptakoteshwar", "name": "Shri Saptakoteshwar", "devanagari": "श्री सप्तकोटेश्वर", "temple": "Shri Saptakoteshwar Temple", "placeId": "narve", "deityOf": "Shiva", "note": "Formerly of Divar; the tutelary deity of the Kadamba kings of Goa." },
+    { "id": "damodar", "name": "Shri Damodar", "devanagari": "श्री दामोदर", "temple": "Shri Damodar Temple", "placeId": "zambaulim", "deityOf": "Shiva", "note": "Originally of Margao (Mathagram)." },
+    { "id": "lakshmi-narasimha", "name": "Shri Lakshmi Narasimha", "devanagari": "श्री लक्ष्मी नरसिंह", "temple": "Shri Lakshmi Narasimha Temple", "placeId": "veling", "deityOf": "Vishnu as Narasimha" },
+    { "id": "devki-krishna", "name": "Shri Devki Krishna", "devanagari": "श्री देवकी कृष्ण", "temple": "Shri Devki Krishna Ravalnath Temple", "placeId": "marcel", "deityOf": "Krishna with Devaki", "note": "Formerly of Chorao island; a rare depiction of Krishna with his mother." },
+    { "id": "kamakshi", "name": "Shri Kamakshi", "devanagari": "श्री कामाक्षी", "temple": "Shri Kamakshi Temple", "placeId": "shiroda", "deityOf": "Parvati", "note": "Originally of Raia." },
+    { "id": "mahamaya-kalika", "name": "Shri Mahamaya Kalika", "devanagari": "श्री महामाया कालिका", "temple": "Shri Mahamaya Kalika Temple", "placeId": "kansarpal", "deityOf": "Kali" },
+    { "id": "vijayadurga", "name": "Shri Vijayadurga", "devanagari": "श्री विजयादुर्गा", "temple": "Shri Vijayadurga Temple", "placeId": "keri", "deityOf": "Durga" },
+    { "id": "navadurga", "name": "Shri Navadurga", "devanagari": "श्री नवदुर्गा", "temple": "Shri Navadurga Temple", "placeId": "madkai", "deityOf": "Durga in nine forms" },
+    { "id": "rayeshwar", "name": "Shri Rayeshwar", "devanagari": "श्री रवळनाथ रायेश्वर", "temple": "Shri Rayeshwar Temple", "placeId": "ponda", "deityOf": "Shiva" },
+    { "id": "ananta", "name": "Shri Ananta", "devanagari": "श्री अनंत", "temple": "Shri Ananta Temple", "placeId": "savoi-verem", "deityOf": "Vishnu reclining on Shesha" },
+    { "id": "mallikarjun", "name": "Shri Mallikarjun", "devanagari": "श्री मल्लिकार्जुन", "temple": "Shri Mallikarjun Temple", "placeId": "canacona", "deityOf": "Shiva" },
+    { "id": "chandreshwar", "name": "Shri Chandreshwar Bhutnath", "devanagari": "श्री चंद्रेश्वर भूतनाथ", "temple": "Shri Chandreshwar Bhutnath Temple", "placeId": "paroda", "deityOf": "Shiva on Chandranath hill" },
+    { "id": "shantadurga-kunkalikarin", "name": "Shri Shantadurga Kunkalikarin", "temple": "Shri Shantadurga Kunkalikarin Temple", "placeId": "fatorpa", "deityOf": "Parvati", "note": "Of the Cuncolim families." },
+    { "id": "katyayani-baneshwar", "name": "Shri Katyayani Baneshwar", "temple": "Shri Katyayani Baneshwar Temple", "placeId": "avedem", "deityOf": "Durga with Shiva" },
+    { "id": "bhagavati", "name": "Shri Bhagavati", "devanagari": "श्री भगवती", "temple": "Shri Bhagavati Temple", "placeId": "pernem", "deityOf": "Durga" },
+    { "id": "vithal", "name": "Shri Vithal", "devanagari": "श्री विठ्ठल", "temple": "Shri Vithal Temple", "placeId": "sanquelim", "deityOf": "Vishnu as Vitthala" },
+    { "id": "umamaheshwar", "name": "Shri Umamaheshwar", "temple": "Shri Umamaheshwar Temple", "placeId": "brahmapur", "deityOf": "Shiva with Uma" },
+    { "id": "venkataramana", "name": "Shri Venkataramana", "devanagari": "श्री वेंकटरमण", "temple": "Shri Venkataramana Temple", "placeId": "mangalore", "deityOf": "Vishnu as Venkatesha", "note": "The principal temple of the GSB families settled in coastal Karnataka." },
+    { "id": "bhavani-shankar", "name": "Shri Bhavanishankar", "temple": "Shri Bhavanishankar Temple", "placeId": "shirali", "deityOf": "Shiva with Bhavani", "note": "At the Shri Chitrapur Math, Shirali — the Chitrapur Saraswat community temple." },
+    { "id": "not-recorded", "name": "Not recorded", "note": "Use where the family deity is unknown." }
+  ]
+}

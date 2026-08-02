@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+build
+.DS_Store
+*.pem
+.env*.local
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Runtime submission queue (moderation inbox). Approved records get promoted
+# into data/people/*.json and committed — git is the archive's provenance log.
+data/submissions/*.jsonl
+!data/submissions/.gitkeep
+
+# Generated search / graph index
+data/generated

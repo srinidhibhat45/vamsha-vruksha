@@ -1,0 +1,30 @@
+{
+  "name": "saraswat-lineage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vansh Vriksha — a public, community-built family tree and archive for Saraswat / GSB / Konkani families worldwide.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run data:check && next build",
+    "start": "next start",
+    "data:seed": "node scripts/generate-seed.ts",
+    "data:check": "node scripts/validate.ts",
+    "import:gedcom": "node scripts/import-gedcom.ts",
+    "import:csv": "node scripts/import-csv.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}

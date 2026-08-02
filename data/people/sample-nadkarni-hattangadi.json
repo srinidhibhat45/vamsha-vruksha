@@ -1,0 +1,7387 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "A Chitrapur Saraswat family of district accountants — the office the surname is named for.",
+  "people": [
+    {
+      "id": "nadkarni-hattangadi-0325",
+      "name": {
+        "given": "Raghunath",
+        "surname": "Nadkarni",
+        "display": "Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1801,
+          "qualifier": "circa",
+          "raw": "c. 1801"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0326",
+          "status": "married",
+          "date": {
+            "year": 1825,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0326",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Gulvady",
+        "display": "Yamunabai Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1808,
+          "qualifier": "circa",
+          "raw": "c. 1808"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1883,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0325",
+          "status": "married",
+          "date": {
+            "year": 1825,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0327",
+      "name": {
+        "given": "Vithal",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Vithal Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1826,
+          "qualifier": "circa",
+          "raw": "c. 1826"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1884,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0328",
+          "status": "married",
+          "date": {
+            "year": 1845,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0328",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Kallianpur",
+        "display": "Shantabai Kallianpur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1829,
+          "qualifier": "circa",
+          "raw": "c. 1829"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1905,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0327",
+          "status": "married",
+          "date": {
+            "year": 1845,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0329",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Yamunabai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1848,
+          "qualifier": "circa",
+          "raw": "c. 1848"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328"
+    },
+    {
+      "id": "nadkarni-hattangadi-0330",
+      "name": {
+        "given": "Ganesh",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Ganesh Vithal Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1851,
+          "qualifier": "circa",
+          "raw": "c. 1851"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1891,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328",
+      "bio": "Ganesh kept the family's accounts at Honnavar and is remembered for maintaining the household vahi in which most of the dates before 1891 in this branch are recorded."
+    },
+    {
+      "id": "nadkarni-hattangadi-0331",
+      "name": {
+        "given": "Venubai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Venubai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1855,
+          "qualifier": "circa",
+          "raw": "c. 1855"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1916,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328"
+    },
+    {
+      "id": "nadkarni-hattangadi-0332",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Saraswatibai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa",
+          "raw": "c. 1858"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1933,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0333",
+          "status": "widowed",
+          "date": {
+            "year": 1874,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0333",
+      "name": {
+        "given": "Vasudev",
+        "surname": "Murdeshwar",
+        "display": "Vasudev Murdeshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0332",
+          "status": "married",
+          "date": {
+            "year": 1874,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0334",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Murdeshwar",
+        "patronymic": "Vasudev",
+        "display": "Narmadabai Vasudev Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1877,
+          "qualifier": "circa",
+          "raw": "c. 1877"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1916,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0333",
+      "motherId": "nadkarni-hattangadi-0332",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0337",
+          "status": "married",
+          "date": {
+            "year": 1893,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0335",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Murdeshwar",
+        "patronymic": "Vasudev",
+        "display": "Parvatibai Vasudev Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1887,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "nadkarni-hattangadi-0333",
+      "motherId": "nadkarni-hattangadi-0332"
+    },
+    {
+      "id": "nadkarni-hattangadi-0336",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Murdeshwar",
+        "patronymic": "Vasudev",
+        "display": "Kashibai Vasudev Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1883,
+          "qualifier": "exact",
+          "raw": "1883"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1931,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0333",
+      "motherId": "nadkarni-hattangadi-0332",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "nadkarni-hattangadi-0337",
+      "name": {
+        "given": "Shridhar",
+        "surname": "Gulvady",
+        "display": "Shridhar Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0334",
+          "status": "married",
+          "date": {
+            "year": 1893,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0338",
+      "name": {
+        "given": "Mukund",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Mukund Shridhar Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1895,
+          "qualifier": "exact",
+          "raw": "1895"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1956,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0339",
+          "status": "married",
+          "date": {
+            "year": 1915,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0339",
+      "name": {
+        "given": "Rukminibai",
+        "surname": "Trasi",
+        "display": "Rukminibai Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0338",
+          "status": "married",
+          "date": {
+            "year": 1915,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0340",
+      "name": {
+        "given": "Prakash",
+        "surname": "Gulvady",
+        "patronymic": "Mukund",
+        "display": "Prakash Mukund Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1918,
+          "qualifier": "exact",
+          "raw": "1918"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0338",
+      "motherId": "nadkarni-hattangadi-0339",
+      "bio": "Moved the household from Honnavar to Kumta after a failed monsoon, and is the first of the line recorded at the new place.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0341",
+          "status": "widowed",
+          "date": {
+            "year": 1946,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0341",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Karnad",
+        "display": "Shantabai Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0340",
+          "status": "married",
+          "date": {
+            "year": 1946,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0342",
+      "name": {
+        "given": "Rohini",
+        "surname": "Gulvady",
+        "patronymic": "Prakash",
+        "display": "Rohini Prakash Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "nadkarni-hattangadi-0340",
+      "motherId": "nadkarni-hattangadi-0341",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0876",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ],
+      "notes": "Married into another family recorded in this archive — the two lineages can be walked end to end from here."
+    },
+    {
+      "id": "nadkarni-hattangadi-0343",
+      "name": {
+        "given": "Ashok",
+        "surname": "Gulvady",
+        "patronymic": "Prakash",
+        "display": "Ashok Prakash Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1967
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0340",
+      "motherId": "nadkarni-hattangadi-0341",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "nadkarni-hattangadi-0344",
+      "name": {
+        "given": "Nitin",
+        "surname": "Gulvady",
+        "patronymic": "Prakash",
+        "display": "Nitin Prakash Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "nadkarni-hattangadi-0340",
+      "motherId": "nadkarni-hattangadi-0341",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0345",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0345",
+      "name": {
+        "given": "Indira",
+        "surname": "Padukone",
+        "display": "Indira Padukone"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1983
+        }
+      ],
+      "bio": "Served as a mahajan of the family's temple and travelled to Shirali for the annual festival every year until old age made the journey impossible.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0344",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0346",
+      "name": {
+        "given": "Sarvesh",
+        "surname": "Gulvady",
+        "patronymic": "Nitin",
+        "display": "Sarvesh Nitin Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact",
+          "raw": "1984"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "nadkarni-hattangadi-0344",
+      "motherId": "nadkarni-hattangadi-0345"
+    },
+    {
+      "id": "nadkarni-hattangadi-0347",
+      "name": {
+        "given": "Rohan",
+        "surname": "Gulvady",
+        "patronymic": "Nitin",
+        "display": "Rohan Nitin Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0344",
+      "motherId": "nadkarni-hattangadi-0345",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "nadkarni-hattangadi-0348",
+      "name": {
+        "given": "Kunda",
+        "surname": "Gulvady",
+        "patronymic": "Prakash",
+        "display": "Kunda Prakash Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "nadkarni-hattangadi-0340",
+      "motherId": "nadkarni-hattangadi-0341"
+    },
+    {
+      "id": "nadkarni-hattangadi-0349",
+      "name": {
+        "given": "Ravi",
+        "surname": "Gulvady",
+        "patronymic": "Mukund",
+        "display": "Ravi Mukund Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1927,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "nadkarni-hattangadi-0338",
+      "motherId": "nadkarni-hattangadi-0339"
+    },
+    {
+      "id": "nadkarni-hattangadi-0350",
+      "name": {
+        "given": "Anant",
+        "surname": "Gulvady",
+        "patronymic": "Mukund",
+        "display": "Anant Mukund Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "nadkarni-hattangadi-0338",
+      "motherId": "nadkarni-hattangadi-0339",
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0351",
+          "status": "married",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0351",
+      "name": {
+        "given": "Shobha",
+        "surname": "Sirur",
+        "display": "Shobha Sirur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent",
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0350",
+          "status": "married",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0352",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Gulvady",
+        "patronymic": "Anant",
+        "display": "Vrinda Anant Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "nadkarni-hattangadi-0350",
+      "motherId": "nadkarni-hattangadi-0351",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0353",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0353",
+      "name": {
+        "given": "Jagannath",
+        "surname": "Hattangadi",
+        "display": "Jagannath Hattangadi"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1954
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0352",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0354",
+      "name": {
+        "given": "Ira",
+        "surname": "Hattangadi",
+        "patronymic": "Jagannath",
+        "display": "Ira Jagannath Hattangadi"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "nadkarni-hattangadi-0353",
+      "motherId": "nadkarni-hattangadi-0352"
+    },
+    {
+      "id": "nadkarni-hattangadi-0355",
+      "name": {
+        "given": "Suresh",
+        "surname": "Hattangadi",
+        "patronymic": "Jagannath",
+        "display": "Suresh Jagannath Hattangadi"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1995
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0353",
+      "motherId": "nadkarni-hattangadi-0352"
+    },
+    {
+      "id": "nadkarni-hattangadi-0356",
+      "name": {
+        "given": "Satish",
+        "surname": "Gulvady",
+        "patronymic": "Anant",
+        "display": "Satish Anant Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "headmistress"
+      ],
+      "fatherId": "nadkarni-hattangadi-0350",
+      "motherId": "nadkarni-hattangadi-0351"
+    },
+    {
+      "id": "nadkarni-hattangadi-0357",
+      "name": {
+        "given": "Prabhakar",
+        "surname": "Gulvady",
+        "patronymic": "Anant",
+        "display": "Prabhakar Anant Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "nadkarni-hattangadi-0350",
+      "motherId": "nadkarni-hattangadi-0351",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0358",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0358",
+      "name": {
+        "given": "Ananya",
+        "surname": "Mavinkurve",
+        "display": "Ananya Mavinkurve"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0357",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0359",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Gulvady",
+        "patronymic": "Prabhakar",
+        "display": "Samruddhi Prabhakar Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0357",
+      "motherId": "nadkarni-hattangadi-0358"
+    },
+    {
+      "id": "nadkarni-hattangadi-0360",
+      "name": {
+        "given": "Sushila",
+        "surname": "Gulvady",
+        "patronymic": "Prabhakar",
+        "display": "Sushila Prabhakar Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2009
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0357",
+      "motherId": "nadkarni-hattangadi-0358"
+    },
+    {
+      "id": "nadkarni-hattangadi-0361",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Gulvady",
+        "patronymic": "Anant",
+        "display": "Trimbak Anant Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0350",
+      "motherId": "nadkarni-hattangadi-0351",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0362",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0362",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Sirur",
+        "display": "Samruddhi Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1971
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0361",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0363",
+      "name": {
+        "given": "Vedant",
+        "surname": "Gulvady",
+        "patronymic": "Trimbak",
+        "display": "Vedant Trimbak Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur",
+        "chartered accountant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0361",
+      "motherId": "nadkarni-hattangadi-0362",
+      "bio": "Vedant kept the family's accounts at Honnavar and is remembered for maintaining the household vahi in which most of the dates before 2028 in this branch are recorded."
+    },
+    {
+      "id": "nadkarni-hattangadi-0364",
+      "name": {
+        "given": "Milind",
+        "surname": "Gulvady",
+        "patronymic": "Trimbak",
+        "display": "Milind Trimbak Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0361",
+      "motherId": "nadkarni-hattangadi-0362",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "nadkarni-hattangadi-0365",
+      "name": {
+        "given": "Vimala",
+        "surname": "Gulvady",
+        "patronymic": "Mukund",
+        "display": "Vimala Mukund Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "nadkarni-hattangadi-0338",
+      "motherId": "nadkarni-hattangadi-0339"
+    },
+    {
+      "id": "nadkarni-hattangadi-0366",
+      "name": {
+        "given": "Vasudev",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Vasudev Shridhar Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1971,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0367",
+          "status": "widowed",
+          "date": {
+            "year": 1918,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0367",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Mavinkurve",
+        "display": "Sitabai Mavinkurve"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1904,
+          "qualifier": "exact",
+          "raw": "1904"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "atri",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1904
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0366",
+          "status": "married",
+          "date": {
+            "year": 1918,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0368",
+      "name": {
+        "given": "Avinash",
+        "surname": "Gulvady",
+        "patronymic": "Vasudev",
+        "display": "Avinash Vasudev Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer",
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0366",
+      "motherId": "nadkarni-hattangadi-0367"
+    },
+    {
+      "id": "nadkarni-hattangadi-0369",
+      "name": {
+        "given": "Indira",
+        "surname": "Gulvady",
+        "patronymic": "Vasudev",
+        "display": "Indira Vasudev Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1925
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0366",
+      "motherId": "nadkarni-hattangadi-0367"
+    },
+    {
+      "id": "nadkarni-hattangadi-0370",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Gulvady",
+        "patronymic": "Vasudev",
+        "display": "Anuradha Vasudev Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "nadkarni-hattangadi-0366",
+      "motherId": "nadkarni-hattangadi-0367",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0371",
+          "status": "married",
+          "date": {
+            "year": 1951,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0371",
+      "name": {
+        "given": "Gopal",
+        "surname": "Dhareshwar",
+        "display": "Gopal Dhareshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0370",
+          "status": "married",
+          "date": {
+            "year": 1951,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0372",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Dhareshwar",
+        "patronymic": "Gopal",
+        "display": "Vithabai Gopal Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "fatherId": "nadkarni-hattangadi-0371",
+      "motherId": "nadkarni-hattangadi-0370",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0373",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0373",
+      "name": {
+        "given": "Prakash",
+        "surname": "Kallianpur",
+        "display": "Prakash Kallianpur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1969
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0372",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0374",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Kallianpur",
+        "patronymic": "Prakash",
+        "display": "Chinmay Prakash Kallianpur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0373",
+      "motherId": "nadkarni-hattangadi-0372"
+    },
+    {
+      "id": "nadkarni-hattangadi-0375",
+      "name": {
+        "given": "Diya",
+        "surname": "Kallianpur",
+        "patronymic": "Prakash",
+        "display": "Diya Prakash Kallianpur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "nadkarni-hattangadi-0373",
+      "motherId": "nadkarni-hattangadi-0372"
+    },
+    {
+      "id": "nadkarni-hattangadi-0376",
+      "name": {
+        "given": "Neel",
+        "surname": "Kallianpur",
+        "patronymic": "Prakash",
+        "display": "Neel Prakash Kallianpur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "marine engineer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0373",
+      "motherId": "nadkarni-hattangadi-0372",
+      "bio": "Moved the household from Honnavar to Kumta after a failed monsoon, and is the first of the line recorded at the new place."
+    },
+    {
+      "id": "nadkarni-hattangadi-0377",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Dhareshwar",
+        "patronymic": "Gopal",
+        "display": "Saraswatibai Gopal Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0371",
+      "motherId": "nadkarni-hattangadi-0370"
+    },
+    {
+      "id": "nadkarni-hattangadi-0378",
+      "name": {
+        "given": "Indira",
+        "surname": "Dhareshwar",
+        "patronymic": "Gopal",
+        "display": "Indira Gopal Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0371",
+      "motherId": "nadkarni-hattangadi-0370",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0379",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0379",
+      "name": {
+        "given": "Sudhir",
+        "surname": "Murdeshwar",
+        "display": "Sudhir Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0378",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0380",
+      "name": {
+        "given": "Kavita",
+        "surname": "Murdeshwar",
+        "patronymic": "Sudhir",
+        "display": "Kavita Sudhir Murdeshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0379",
+      "motherId": "nadkarni-hattangadi-0378"
+    },
+    {
+      "id": "nadkarni-hattangadi-0381",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Murdeshwar",
+        "patronymic": "Sudhir",
+        "display": "Chinmay Sudhir Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0379",
+      "motherId": "nadkarni-hattangadi-0378"
+    },
+    {
+      "id": "nadkarni-hattangadi-0382",
+      "name": {
+        "given": "Uday",
+        "surname": "Dhareshwar",
+        "patronymic": "Gopal",
+        "display": "Uday Gopal Dhareshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0371",
+      "motherId": "nadkarni-hattangadi-0370",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0383",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0383",
+      "name": {
+        "given": "Nandini",
+        "surname": "Kalbag",
+        "display": "Nandini Kalbag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0382",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0384",
+      "name": {
+        "given": "Nandini",
+        "surname": "Dhareshwar",
+        "patronymic": "Uday",
+        "display": "Nandini Uday Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2011
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0382",
+      "motherId": "nadkarni-hattangadi-0383",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "nadkarni-hattangadi-0385",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Dhareshwar",
+        "patronymic": "Gopal",
+        "display": "Narmadabai Gopal Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "classical dancer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0371",
+      "motherId": "nadkarni-hattangadi-0370"
+    },
+    {
+      "id": "nadkarni-hattangadi-0386",
+      "name": {
+        "given": "Malati",
+        "surname": "Gulvady",
+        "patronymic": "Vasudev",
+        "display": "Malati Vasudev Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1933
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0366",
+      "motherId": "nadkarni-hattangadi-0367"
+    },
+    {
+      "id": "nadkarni-hattangadi-0387",
+      "name": {
+        "given": "Ramkrishna",
+        "surname": "Gulvady",
+        "patronymic": "Vasudev",
+        "display": "Ramkrishna Vasudev Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "nadkarni-hattangadi-0366",
+      "motherId": "nadkarni-hattangadi-0367"
+    },
+    {
+      "id": "nadkarni-hattangadi-0388",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Vishwanath Shridhar Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1900,
+          "qualifier": "exact",
+          "raw": "1900"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334",
+      "epithet": "first of the line at Kumta",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0389",
+          "status": "married",
+          "date": {
+            "year": 1925,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0389",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Basrur",
+        "display": "Indirabai Basrur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0388",
+          "status": "married",
+          "date": {
+            "year": 1925,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0390",
+      "name": {
+        "given": "Nalini",
+        "surname": "Gulvady",
+        "patronymic": "Vishwanath",
+        "display": "Nalini Vishwanath Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0388",
+      "motherId": "nadkarni-hattangadi-0389",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation."
+    },
+    {
+      "id": "nadkarni-hattangadi-0391",
+      "name": {
+        "given": "Meera",
+        "surname": "Gulvady",
+        "patronymic": "Vishwanath",
+        "display": "Meera Vishwanath Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "nadkarni-hattangadi-0388",
+      "motherId": "nadkarni-hattangadi-0389",
+      "epithet": "temple mahajan",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0392",
+          "status": "widowed",
+          "date": {
+            "year": 1952,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0392",
+      "name": {
+        "given": "Kiran",
+        "surname": "Kalbag",
+        "display": "Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1925
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0391",
+          "status": "married",
+          "date": {
+            "year": 1952,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0393",
+      "name": {
+        "given": "Nandan",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Nandan Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0392",
+      "motherId": "nadkarni-hattangadi-0391",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0394",
+          "status": "widowed",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0394",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Murdeshwar",
+        "display": "Shailaja Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "harita",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0393",
+          "status": "married",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0395",
+      "name": {
+        "given": "Gauri",
+        "surname": "Kalbag",
+        "patronymic": "Nandan",
+        "display": "Gauri Nandan Kalbag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0393",
+      "motherId": "nadkarni-hattangadi-0394"
+    },
+    {
+      "id": "nadkarni-hattangadi-0396",
+      "name": {
+        "given": "Lata",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Lata Kiran Kalbag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0392",
+      "motherId": "nadkarni-hattangadi-0391"
+    },
+    {
+      "id": "nadkarni-hattangadi-0397",
+      "name": {
+        "given": "Kiran",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Kiran Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1975
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0392",
+      "motherId": "nadkarni-hattangadi-0391",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0398",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0398",
+      "name": {
+        "given": "Ira",
+        "surname": "Hattangadi",
+        "display": "Ira Hattangadi"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0397",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0399",
+      "name": {
+        "given": "Karthik",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Karthik Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "nadkarni-hattangadi-0397",
+      "motherId": "nadkarni-hattangadi-0398"
+    },
+    {
+      "id": "nadkarni-hattangadi-0400",
+      "name": {
+        "given": "Ira",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Ira Kiran Kalbag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2008
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0397",
+      "motherId": "nadkarni-hattangadi-0398",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "nadkarni-hattangadi-0401",
+      "name": {
+        "given": "Omkar",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Omkar Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact",
+          "raw": "1997"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2012
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0397",
+      "motherId": "nadkarni-hattangadi-0398",
+      "bio": "Moved the household from Honnavar to Kumta after a failed monsoon, and is the first of the line recorded at the new place."
+    },
+    {
+      "id": "nadkarni-hattangadi-0402",
+      "name": {
+        "given": "Ashok",
+        "surname": "Kalbag",
+        "patronymic": "Kiran",
+        "display": "Ashok Kiran Kalbag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1962
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0392",
+      "motherId": "nadkarni-hattangadi-0391"
+    },
+    {
+      "id": "nadkarni-hattangadi-0403",
+      "name": {
+        "given": "Krishna",
+        "surname": "Gulvady",
+        "patronymic": "Vishwanath",
+        "display": "Krishna Vishwanath Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0388",
+      "motherId": "nadkarni-hattangadi-0389",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0404",
+          "status": "married",
+          "date": {
+            "year": 1956,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0404",
+      "name": {
+        "given": "Kamala",
+        "surname": "Kalbag",
+        "display": "Kamala Kalbag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0403",
+          "status": "married",
+          "date": {
+            "year": 1956,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0405",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Gulvady",
+        "patronymic": "Krishna",
+        "display": "Vithabai Krishna Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "nadkarni-hattangadi-0403",
+      "motherId": "nadkarni-hattangadi-0404"
+    },
+    {
+      "id": "nadkarni-hattangadi-0406",
+      "name": {
+        "given": "Yeshwant",
+        "surname": "Gulvady",
+        "patronymic": "Krishna",
+        "display": "Yeshwant Krishna Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "nadkarni-hattangadi-0403",
+      "motherId": "nadkarni-hattangadi-0404",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0407",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0407",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Talgeri",
+        "display": "Samruddhi Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0406",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0408",
+      "name": {
+        "given": "Indira",
+        "surname": "Gulvady",
+        "patronymic": "Yeshwant",
+        "display": "Indira Yeshwant Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0406",
+      "motherId": "nadkarni-hattangadi-0407"
+    },
+    {
+      "id": "nadkarni-hattangadi-0409",
+      "name": {
+        "given": "Meera",
+        "surname": "Gulvady",
+        "patronymic": "Yeshwant",
+        "display": "Meera Yeshwant Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1990
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0406",
+      "motherId": "nadkarni-hattangadi-0407"
+    },
+    {
+      "id": "nadkarni-hattangadi-0410",
+      "name": {
+        "given": "Ashok",
+        "surname": "Gulvady",
+        "patronymic": "Yeshwant",
+        "display": "Ashok Yeshwant Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "dentist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0406",
+      "motherId": "nadkarni-hattangadi-0407"
+    },
+    {
+      "id": "nadkarni-hattangadi-0411",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Gulvady",
+        "patronymic": "Vishwanath",
+        "display": "Mangesh Vishwanath Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1937
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0388",
+      "motherId": "nadkarni-hattangadi-0389",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0412",
+          "status": "married",
+          "date": {
+            "year": 1964,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0412",
+      "name": {
+        "given": "Kamala",
+        "surname": "Gulvady",
+        "display": "Kamala Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "harita",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0411",
+          "status": "married",
+          "date": {
+            "year": 1964,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0413",
+      "name": {
+        "given": "Shashank",
+        "surname": "Gulvady",
+        "patronymic": "Mangesh",
+        "display": "Shashank Mangesh Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "nadkarni-hattangadi-0411",
+      "motherId": "nadkarni-hattangadi-0412",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0417",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0414",
+      "name": {
+        "given": "Vimala",
+        "surname": "Gulvady",
+        "patronymic": "Mangesh",
+        "display": "Vimala Mangesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0411",
+      "motherId": "nadkarni-hattangadi-0412"
+    },
+    {
+      "id": "nadkarni-hattangadi-0415",
+      "name": {
+        "given": "Rucha",
+        "surname": "Gulvady",
+        "patronymic": "Mangesh",
+        "display": "Rucha Mangesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "research scientist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0411",
+      "motherId": "nadkarni-hattangadi-0412"
+    },
+    {
+      "id": "nadkarni-hattangadi-0416",
+      "name": {
+        "given": "Vaidehi",
+        "surname": "Gulvady",
+        "patronymic": "Mangesh",
+        "display": "Vaidehi Mangesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "nadkarni-hattangadi-0411",
+      "motherId": "nadkarni-hattangadi-0412"
+    },
+    {
+      "id": "nadkarni-hattangadi-0417",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Bijur",
+        "display": "Nirmala Bijur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bhargava",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "product manager"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0413",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0418",
+      "name": {
+        "given": "Rekha",
+        "surname": "Gulvady",
+        "patronymic": "Shashank",
+        "display": "Rekha Shashank Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "nadkarni-hattangadi-0413",
+      "motherId": "nadkarni-hattangadi-0417"
+    },
+    {
+      "id": "nadkarni-hattangadi-0419",
+      "name": {
+        "given": "Prema",
+        "surname": "Gulvady",
+        "patronymic": "Vishwanath",
+        "display": "Prema Vishwanath Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1940
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0388",
+      "motherId": "nadkarni-hattangadi-0389"
+    },
+    {
+      "id": "nadkarni-hattangadi-0420",
+      "name": {
+        "given": "Rukminibai",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Rukminibai Shridhar Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1904,
+          "qualifier": "exact",
+          "raw": "1904"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334",
+      "bio": "Rukminibai was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "nadkarni-hattangadi-0421",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Ambabai Shridhar Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1906,
+          "qualifier": "exact",
+          "raw": "1906"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334"
+    },
+    {
+      "id": "nadkarni-hattangadi-0422",
+      "name": {
+        "given": "Kashinath",
+        "surname": "Gulvady",
+        "patronymic": "Shridhar",
+        "display": "Kashinath Shridhar Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0337",
+      "motherId": "nadkarni-hattangadi-0334",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0423",
+          "status": "widowed",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0423",
+      "name": {
+        "given": "Sudha",
+        "surname": "Gulvady",
+        "display": "Sudha Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1916,
+          "qualifier": "exact",
+          "raw": "1916"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "mudgala",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "kushasthali",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0422",
+          "status": "married",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0424",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Vasanti Kashinath Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1939
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423"
+    },
+    {
+      "id": "nadkarni-hattangadi-0425",
+      "name": {
+        "given": "Dinesh",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Dinesh Kashinath Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0426",
+          "status": "married",
+          "date": {
+            "year": 1967,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0426",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Nadkarni",
+        "display": "Shailaja Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1950
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0425",
+          "status": "married",
+          "date": {
+            "year": 1967,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0427",
+      "name": {
+        "given": "Karthik",
+        "surname": "Gulvady",
+        "patronymic": "Dinesh",
+        "display": "Karthik Dinesh Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1984
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0425",
+      "motherId": "nadkarni-hattangadi-0426",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0428",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0428",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Sirur",
+        "display": "Vrinda Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0427",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0429",
+      "name": {
+        "given": "Avinash",
+        "surname": "Gulvady",
+        "patronymic": "Karthik",
+        "display": "Avinash Karthik Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "nadkarni-hattangadi-0427",
+      "motherId": "nadkarni-hattangadi-0428"
+    },
+    {
+      "id": "nadkarni-hattangadi-0430",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Gulvady",
+        "patronymic": "Karthik",
+        "display": "Samruddhi Karthik Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer",
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2014
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0427",
+      "motherId": "nadkarni-hattangadi-0428"
+    },
+    {
+      "id": "nadkarni-hattangadi-0431",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Gulvady",
+        "patronymic": "Dinesh",
+        "display": "Aarohi Dinesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "nadkarni-hattangadi-0425",
+      "motherId": "nadkarni-hattangadi-0426",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0432",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0432",
+      "name": {
+        "given": "Yash",
+        "surname": "Murdeshwar",
+        "display": "Yash Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0431",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0433",
+      "name": {
+        "given": "Pooja",
+        "surname": "Murdeshwar",
+        "patronymic": "Yash",
+        "display": "Pooja Yash Murdeshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0432",
+      "motherId": "nadkarni-hattangadi-0431"
+    },
+    {
+      "id": "nadkarni-hattangadi-0434",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Murdeshwar",
+        "patronymic": "Yash",
+        "display": "Kaustubh Yash Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0432",
+      "motherId": "nadkarni-hattangadi-0431"
+    },
+    {
+      "id": "nadkarni-hattangadi-0435",
+      "name": {
+        "given": "Atharva",
+        "surname": "Murdeshwar",
+        "patronymic": "Yash",
+        "display": "Atharva Yash Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2015
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0432",
+      "motherId": "nadkarni-hattangadi-0431",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "nadkarni-hattangadi-0436",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Gulvady",
+        "patronymic": "Dinesh",
+        "display": "Aarohi Dinesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "data scientist"
+      ],
+      "fatherId": "nadkarni-hattangadi-0425",
+      "motherId": "nadkarni-hattangadi-0426"
+    },
+    {
+      "id": "nadkarni-hattangadi-0437",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Gulvady",
+        "patronymic": "Dinesh",
+        "display": "Chinmay Dinesh Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "nadkarni-hattangadi-0425",
+      "motherId": "nadkarni-hattangadi-0426",
+      "bio": "Served as a mahajan of the family's temple and travelled to Shirali for the annual festival every year until old age made the journey impossible.",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0438",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0438",
+      "name": {
+        "given": "Madhura",
+        "surname": "Kallianpur",
+        "display": "Madhura Kallianpur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef",
+        "clinical psychologist"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0437",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0439",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Gulvady",
+        "patronymic": "Chinmay",
+        "display": "Aarohi Chinmay Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2006
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0437",
+      "motherId": "nadkarni-hattangadi-0438"
+    },
+    {
+      "id": "nadkarni-hattangadi-0440",
+      "name": {
+        "given": "Sunil",
+        "surname": "Gulvady",
+        "patronymic": "Chinmay",
+        "display": "Sunil Chinmay Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact",
+          "raw": "2009"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "classical dancer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0437",
+      "motherId": "nadkarni-hattangadi-0438",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "nadkarni-hattangadi-0441",
+      "name": {
+        "given": "Shanta",
+        "surname": "Gulvady",
+        "patronymic": "Chinmay",
+        "display": "Shanta Chinmay Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact",
+          "raw": "2013"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2028
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0437",
+      "motherId": "nadkarni-hattangadi-0438"
+    },
+    {
+      "id": "nadkarni-hattangadi-0442",
+      "name": {
+        "given": "Ishani",
+        "surname": "Gulvady",
+        "patronymic": "Dinesh",
+        "display": "Ishani Dinesh Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "nadkarni-hattangadi-0425",
+      "motherId": "nadkarni-hattangadi-0426"
+    },
+    {
+      "id": "nadkarni-hattangadi-0443",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Purushottam Kashinath Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2020,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0444",
+          "status": "widowed",
+          "date": {
+            "year": 1967,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0444",
+      "name": {
+        "given": "Meera",
+        "surname": "Talgeri",
+        "display": "Meera Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0443",
+          "status": "married",
+          "date": {
+            "year": 1967,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nadkarni-hattangadi-0445",
+      "name": {
+        "given": "Sushila",
+        "surname": "Gulvady",
+        "patronymic": "Purushottam",
+        "display": "Sushila Purushottam Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0443",
+      "motherId": "nadkarni-hattangadi-0444",
+      "epithet": "first of the line at Kumta"
+    },
+    {
+      "id": "nadkarni-hattangadi-0446",
+      "name": {
+        "given": "Neel",
+        "surname": "Gulvady",
+        "patronymic": "Purushottam",
+        "display": "Neel Purushottam Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1988
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0443",
+      "motherId": "nadkarni-hattangadi-0444"
+    },
+    {
+      "id": "nadkarni-hattangadi-0447",
+      "name": {
+        "given": "Tejas",
+        "surname": "Gulvady",
+        "patronymic": "Purushottam",
+        "display": "Tejas Purushottam Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "nadkarni-hattangadi-0443",
+      "motherId": "nadkarni-hattangadi-0444"
+    },
+    {
+      "id": "nadkarni-hattangadi-0448",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Gulvady",
+        "patronymic": "Purushottam",
+        "display": "Shailaja Purushottam Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "nadkarni-hattangadi-0443",
+      "motherId": "nadkarni-hattangadi-0444"
+    },
+    {
+      "id": "nadkarni-hattangadi-0449",
+      "name": {
+        "given": "Madhura",
+        "surname": "Gulvady",
+        "patronymic": "Purushottam",
+        "display": "Madhura Purushottam Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "london"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "nadkarni-hattangadi-0443",
+      "motherId": "nadkarni-hattangadi-0444"
+    },
+    {
+      "id": "nadkarni-hattangadi-0450",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Vaishali Kashinath Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423"
+    },
+    {
+      "id": "nadkarni-hattangadi-0451",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Dinkar Kashinath Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1964
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423"
+    },
+    {
+      "id": "nadkarni-hattangadi-0452",
+      "name": {
+        "given": "Rajeev",
+        "surname": "Gulvady",
+        "patronymic": "Kashinath",
+        "display": "Rajeev Kashinath Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0422",
+      "motherId": "nadkarni-hattangadi-0423"
+    },
+    {
+      "id": "nadkarni-hattangadi-0453",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Vithabai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1860,
+          "qualifier": "circa",
+          "raw": "c. 1860"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1922,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "nadkarni-hattangadi-0454",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Sitabai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa",
+          "raw": "c. 1863"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1908,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328"
+    },
+    {
+      "id": "nadkarni-hattangadi-0455",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Gangabai Vithal Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1867,
+          "qualifier": "circa",
+          "raw": "c. 1867"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328"
+    },
+    {
+      "id": "nadkarni-hattangadi-0456",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Nadkarni",
+        "patronymic": "Vithal",
+        "display": "Trimbak Vithal Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1869,
+          "qualifier": "circa",
+          "raw": "c. 1869"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1918,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0327",
+      "motherId": "nadkarni-hattangadi-0328"
+    },
+    {
+      "id": "nadkarni-hattangadi-0457",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Trimbak Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1829,
+          "qualifier": "circa",
+          "raw": "c. 1829"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1886,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326",
+      "bio": "Trimbak was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "nadkarni-hattangadi-0458",
+      "name": {
+        "given": "Subraya",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Subraya Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1833,
+          "qualifier": "circa",
+          "raw": "c. 1833"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1904,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Nadkarni household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326",
+      "bio": "Subraya was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "nadkarni-hattangadi-0459",
+      "name": {
+        "given": "Madhav",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Madhav Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1837,
+          "qualifier": "circa",
+          "raw": "c. 1837"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1895,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326"
+    },
+    {
+      "id": "nadkarni-hattangadi-0460",
+      "name": {
+        "given": "Ramkrishna",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Ramkrishna Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1839,
+          "qualifier": "circa",
+          "raw": "c. 1839"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1841,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326"
+    },
+    {
+      "id": "nadkarni-hattangadi-0461",
+      "name": {
+        "given": "Anant",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Anant Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1908,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326"
+    },
+    {
+      "id": "nadkarni-hattangadi-0462",
+      "name": {
+        "given": "Sitaram",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Sitaram Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa",
+          "raw": "c. 1846"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326"
+    },
+    {
+      "id": "nadkarni-hattangadi-0463",
+      "name": {
+        "given": "Waman",
+        "surname": "Nadkarni",
+        "patronymic": "Raghunath",
+        "display": "Waman Raghunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa",
+          "raw": "c. 1850"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1857,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "nadkarni-hattangadi-0325",
+      "motherId": "nadkarni-hattangadi-0326"
+    }
+  ]
+}

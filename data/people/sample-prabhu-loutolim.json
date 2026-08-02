@@ -1,0 +1,6655 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Smarta family of the Kavale seat; several generations served as temple mahajans at Ramnathi.",
+  "people": [
+    {
+      "id": "prabhu-loutolim-0621",
+      "name": {
+        "given": "Subraya",
+        "surname": "Prabhu",
+        "display": "Subraya Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1806,
+          "qualifier": "circa",
+          "raw": "c. 1806"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1861,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0622",
+          "status": "married",
+          "date": {
+            "year": 1826,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0622",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Mallya",
+        "display": "Ratnabai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1809,
+          "qualifier": "circa",
+          "raw": "c. 1809"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0621",
+          "status": "married",
+          "date": {
+            "year": 1826,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0623",
+      "name": {
+        "given": "Sunderabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Sunderabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1827,
+          "qualifier": "circa",
+          "raw": "c. 1827"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "loutolim"
+        },
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1895,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0631",
+          "status": "widowed",
+          "date": {
+            "year": 1840,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        },
+        {
+          "personId": "prabhu-loutolim-0632",
+          "status": "married",
+          "date": {
+            "year": 1865,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0624",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Vithabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1831,
+          "qualifier": "circa",
+          "raw": "c. 1831"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1911,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0625",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Sitabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1833,
+          "qualifier": "circa",
+          "raw": "c. 1833"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1841,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0626",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Radhabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1837,
+          "qualifier": "circa",
+          "raw": "c. 1837"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1837,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0627",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Kaveribai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1841,
+          "qualifier": "circa",
+          "raw": "c. 1841"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1848,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0628",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Dinkar Subraya Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "loutolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1848,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0629",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Tarabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa",
+          "raw": "c. 1846"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0630",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Prabhu",
+        "patronymic": "Subraya",
+        "display": "Ratnabai Subraya Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1849,
+          "qualifier": "circa",
+          "raw": "c. 1849"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0621",
+      "motherId": "prabhu-loutolim-0622"
+    },
+    {
+      "id": "prabhu-loutolim-0631",
+      "name": {
+        "given": "Keshav",
+        "surname": "Hegde",
+        "display": "Keshav Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1818,
+          "qualifier": "circa",
+          "raw": "c. 1818"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "epithet": "taught three generations of the family",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0623",
+          "status": "married",
+          "date": {
+            "year": 1840,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0632",
+      "name": {
+        "given": "Krishna",
+        "surname": "Bhandarkar",
+        "display": "Krishna Bhandarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1850,
+          "qualifier": "circa",
+          "raw": "c. 1850"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1898,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0623",
+          "status": "married",
+          "date": {
+            "year": 1865,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0633",
+      "name": {
+        "given": "Venkatesh",
+        "surname": "Hegde",
+        "patronymic": "Keshav",
+        "display": "Venkatesh Keshav Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "loutolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1909,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0631",
+      "motherId": "prabhu-loutolim-0623",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0634",
+          "status": "married",
+          "date": {
+            "year": 1868,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0634",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Adiga",
+        "display": "Ambabai Adiga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1930,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0633",
+          "status": "married",
+          "date": {
+            "year": 1868,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0635",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Hegde",
+        "patronymic": "Venkatesh",
+        "display": "Parvatibai Venkatesh Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1910,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0633",
+      "motherId": "prabhu-loutolim-0634"
+    },
+    {
+      "id": "prabhu-loutolim-0636",
+      "name": {
+        "given": "Vasudev",
+        "surname": "Hegde",
+        "patronymic": "Venkatesh",
+        "display": "Vasudev Venkatesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0633",
+      "motherId": "prabhu-loutolim-0634",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0637",
+          "status": "widowed",
+          "date": {
+            "year": 1894,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0637",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Shanbhag",
+        "display": "Indirabai Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "kushasthali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "loutolim"
+        },
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1934,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0636",
+          "status": "married",
+          "date": {
+            "year": 1894,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0638",
+      "name": {
+        "given": "Krishna",
+        "surname": "Hegde",
+        "patronymic": "Vasudev",
+        "display": "Krishna Vasudev Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0636",
+      "motherId": "prabhu-loutolim-0637",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0639",
+          "status": "widowed",
+          "date": {
+            "year": 1917,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0639",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Adiga",
+        "display": "Vithabai Adiga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0638",
+          "status": "married",
+          "date": {
+            "year": 1917,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0640",
+      "name": {
+        "given": "Bhaskar",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Bhaskar Krishna Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1919,
+          "qualifier": "exact",
+          "raw": "1919"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0641",
+          "status": "married",
+          "date": {
+            "year": 1942,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0641",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Baliga",
+        "display": "Shailaja Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1938
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0640",
+          "status": "married",
+          "date": {
+            "year": 1942,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0642",
+      "name": {
+        "given": "Girish",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Girish Bhaskar Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "prabhu-loutolim-0643",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Nirmala Bhaskar Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0975",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ],
+      "notes": "Married into another family recorded in this archive — the two lineages can be walked end to end from here."
+    },
+    {
+      "id": "prabhu-loutolim-0644",
+      "name": {
+        "given": "Satish",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Satish Bhaskar Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1965
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0645",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0645",
+      "name": {
+        "given": "Rohini",
+        "surname": "Kini",
+        "display": "Rohini Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer",
+        "product manager"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0644",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0646",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Hegde",
+        "patronymic": "Satish",
+        "display": "Pushpa Satish Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0644",
+      "motherId": "prabhu-loutolim-0645"
+    },
+    {
+      "id": "prabhu-loutolim-0647",
+      "name": {
+        "given": "Aditi",
+        "surname": "Hegde",
+        "patronymic": "Satish",
+        "display": "Aditi Satish Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "fatherId": "prabhu-loutolim-0644",
+      "motherId": "prabhu-loutolim-0645"
+    },
+    {
+      "id": "prabhu-loutolim-0648",
+      "name": {
+        "given": "Shruti",
+        "surname": "Hegde",
+        "patronymic": "Satish",
+        "display": "Shruti Satish Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "prabhu-loutolim-0644",
+      "motherId": "prabhu-loutolim-0645",
+      "bio": "Served as a mahajan of the family's temple and travelled to Loutolim for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "prabhu-loutolim-0649",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Vaishali Bhaskar Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1968
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0650",
+          "status": "widowed",
+          "date": {
+            "year": 1973,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0650",
+      "name": {
+        "given": "Nagesh",
+        "surname": "Rao",
+        "display": "Nagesh Rao"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0649",
+          "status": "married",
+          "date": {
+            "year": 1973,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0651",
+      "name": {
+        "given": "Suresh",
+        "surname": "Rao",
+        "patronymic": "Nagesh",
+        "display": "Suresh Nagesh Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "prabhu-loutolim-0650",
+      "motherId": "prabhu-loutolim-0649",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "prabhu-loutolim-0652",
+      "name": {
+        "given": "Sudhir",
+        "surname": "Rao",
+        "patronymic": "Nagesh",
+        "display": "Sudhir Nagesh Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "prabhu-loutolim-0650",
+      "motherId": "prabhu-loutolim-0649"
+    },
+    {
+      "id": "prabhu-loutolim-0653",
+      "name": {
+        "given": "Subraya",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Subraya Bhaskar Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1957
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0654",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0654",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Karkal",
+        "display": "Vithabai Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1964
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0653",
+          "status": "married",
+          "date": {
+            "year": 1983,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0655",
+      "name": {
+        "given": "Meghana",
+        "surname": "Hegde",
+        "patronymic": "Subraya",
+        "display": "Meghana Subraya Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "prabhu-loutolim-0653",
+      "motherId": "prabhu-loutolim-0654",
+      "epithet": "first of the line at Ponda"
+    },
+    {
+      "id": "prabhu-loutolim-0656",
+      "name": {
+        "given": "Shreekant",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Shreekant Bhaskar Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641"
+    },
+    {
+      "id": "prabhu-loutolim-0657",
+      "name": {
+        "given": "Lata",
+        "surname": "Hegde",
+        "patronymic": "Bhaskar",
+        "display": "Lata Bhaskar Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant",
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1961
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0640",
+      "motherId": "prabhu-loutolim-0641",
+      "bio": "Served as a mahajan of the family's temple and travelled to Loutolim for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "prabhu-loutolim-0658",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Ulhas Krishna Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1922,
+          "qualifier": "exact",
+          "raw": "1922"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1934,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639"
+    },
+    {
+      "id": "prabhu-loutolim-0659",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Sulochana Krishna Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1926,
+          "qualifier": "exact",
+          "raw": "1926"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639"
+    },
+    {
+      "id": "prabhu-loutolim-0660",
+      "name": {
+        "given": "Asha",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Asha Krishna Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0661",
+          "status": "married",
+          "date": {
+            "year": 1950,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0661",
+      "name": {
+        "given": "Keshav",
+        "surname": "Rao",
+        "display": "Keshav Rao"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1922,
+          "qualifier": "exact",
+          "raw": "1922"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0660",
+          "status": "married",
+          "date": {
+            "year": 1950,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0662",
+      "name": {
+        "given": "Vimala",
+        "surname": "Rao",
+        "patronymic": "Keshav",
+        "display": "Vimala Keshav Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "headmistress",
+        "Konkani writer"
+      ],
+      "fatherId": "prabhu-loutolim-0661",
+      "motherId": "prabhu-loutolim-0660"
+    },
+    {
+      "id": "prabhu-loutolim-0663",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Rao",
+        "patronymic": "Keshav",
+        "display": "Ulhas Keshav Rao"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0661",
+      "motherId": "prabhu-loutolim-0660",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0664",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0664",
+      "name": {
+        "given": "Ananya",
+        "surname": "Karkal",
+        "display": "Ananya Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "clinical psychologist"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0663",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0665",
+      "name": {
+        "given": "Sudha",
+        "surname": "Rao",
+        "patronymic": "Ulhas",
+        "display": "Sudha Ulhas Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2002
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0663",
+      "motherId": "prabhu-loutolim-0664"
+    },
+    {
+      "id": "prabhu-loutolim-0666",
+      "name": {
+        "given": "Rekha",
+        "surname": "Rao",
+        "patronymic": "Keshav",
+        "display": "Rekha Keshav Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "prabhu-loutolim-0661",
+      "motherId": "prabhu-loutolim-0660"
+    },
+    {
+      "id": "prabhu-loutolim-0667",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Shailaja Krishna Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer",
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1948
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639",
+      "bio": "Moved the household from Bandora to Ponda after a failed monsoon, and is the first of the line recorded at the new place."
+    },
+    {
+      "id": "prabhu-loutolim-0668",
+      "name": {
+        "given": "Narayan",
+        "surname": "Hegde",
+        "patronymic": "Krishna",
+        "display": "Narayan Krishna Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1950
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0638",
+      "motherId": "prabhu-loutolim-0639",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0669",
+          "status": "widowed",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0669",
+      "name": {
+        "given": "Kunda",
+        "surname": "Baliga",
+        "display": "Kunda Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0668",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0670",
+      "name": {
+        "given": "Avinash",
+        "surname": "Hegde",
+        "patronymic": "Narayan",
+        "display": "Avinash Narayan Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0668",
+      "motherId": "prabhu-loutolim-0669"
+    },
+    {
+      "id": "prabhu-loutolim-0671",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Hegde",
+        "patronymic": "Narayan",
+        "display": "Vrinda Narayan Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "prabhu-loutolim-0668",
+      "motherId": "prabhu-loutolim-0669",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0672",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0672",
+      "name": {
+        "given": "Neel",
+        "surname": "Hegde",
+        "display": "Neel Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1965
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0671",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0673",
+      "name": {
+        "given": "Nandini",
+        "surname": "Hegde",
+        "patronymic": "Neel",
+        "display": "Nandini Neel Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1991
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0672",
+      "motherId": "prabhu-loutolim-0671",
+      "epithet": "first of the line at Ponda"
+    },
+    {
+      "id": "prabhu-loutolim-0674",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Hegde",
+        "patronymic": "Narayan",
+        "display": "Anuradha Narayan Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1985
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0668",
+      "motherId": "prabhu-loutolim-0669",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0675",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0675",
+      "name": {
+        "given": "Shreekant",
+        "surname": "Shenoy",
+        "display": "Shreekant Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer",
+        "dentist"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0674",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0676",
+      "name": {
+        "given": "Advait",
+        "surname": "Shenoy",
+        "patronymic": "Shreekant",
+        "display": "Advait Shreekant Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "prabhu-loutolim-0675",
+      "motherId": "prabhu-loutolim-0674"
+    },
+    {
+      "id": "prabhu-loutolim-0677",
+      "name": {
+        "given": "Prachi",
+        "surname": "Hegde",
+        "patronymic": "Narayan",
+        "display": "Prachi Narayan Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0668",
+      "motherId": "prabhu-loutolim-0669"
+    },
+    {
+      "id": "prabhu-loutolim-0678",
+      "name": {
+        "given": "Nikhil",
+        "surname": "Hegde",
+        "patronymic": "Narayan",
+        "display": "Nikhil Narayan Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "prabhu-loutolim-0668",
+      "motherId": "prabhu-loutolim-0669",
+      "bio": "Moved the household from Bandora to Ponda after a failed monsoon, and is the first of the line recorded at the new place."
+    },
+    {
+      "id": "prabhu-loutolim-0679",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Hegde",
+        "patronymic": "Vasudev",
+        "display": "Shantabai Vasudev Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "prabhu-loutolim-0636",
+      "motherId": "prabhu-loutolim-0637"
+    },
+    {
+      "id": "prabhu-loutolim-0680",
+      "name": {
+        "given": "Ashok",
+        "surname": "Hegde",
+        "patronymic": "Vasudev",
+        "display": "Ashok Vasudev Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bandora"
+        },
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "prabhu-loutolim-0636",
+      "motherId": "prabhu-loutolim-0637",
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0681",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0681",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Baliga",
+        "display": "Indirabai Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0680",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0682",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Yamunabai Ashok Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681"
+    },
+    {
+      "id": "prabhu-loutolim-0683",
+      "name": {
+        "given": "Indira",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Indira Ashok Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681"
+    },
+    {
+      "id": "prabhu-loutolim-0684",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Purushottam Ashok Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1942,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681"
+    },
+    {
+      "id": "prabhu-loutolim-0685",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Yamunabai Ashok Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "prabhu-loutolim-0686",
+      "name": {
+        "given": "Pramod",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Pramod Ashok Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0687",
+          "status": "married",
+          "date": {
+            "year": 1968,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0687",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Bhat",
+        "display": "Sarojini Bhat"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0686",
+          "status": "married",
+          "date": {
+            "year": 1968,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0688",
+      "name": {
+        "given": "Aditi",
+        "surname": "Hegde",
+        "patronymic": "Pramod",
+        "display": "Aditi Pramod Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "prabhu-loutolim-0686",
+      "motherId": "prabhu-loutolim-0687",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch."
+    },
+    {
+      "id": "prabhu-loutolim-0689",
+      "name": {
+        "given": "Yash",
+        "surname": "Hegde",
+        "patronymic": "Pramod",
+        "display": "Yash Pramod Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager",
+        "entrepreneur"
+      ],
+      "fatherId": "prabhu-loutolim-0686",
+      "motherId": "prabhu-loutolim-0687",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0690",
+          "status": "married",
+          "date": {
+            "year": 2000,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0690",
+      "name": {
+        "given": "Aditi",
+        "surname": "Rao",
+        "display": "Aditi Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1997
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0689",
+          "status": "married",
+          "date": {
+            "year": 2000,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0691",
+      "name": {
+        "given": "Madhura",
+        "surname": "Hegde",
+        "patronymic": "Yash",
+        "display": "Madhura Yash Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact",
+          "raw": "2001"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist",
+        "software engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0689",
+      "motherId": "prabhu-loutolim-0690"
+    },
+    {
+      "id": "prabhu-loutolim-0692",
+      "name": {
+        "given": "Madhura",
+        "surname": "Hegde",
+        "patronymic": "Yash",
+        "display": "Madhura Yash Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact",
+          "raw": "2005"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "prabhu-loutolim-0689",
+      "motherId": "prabhu-loutolim-0690"
+    },
+    {
+      "id": "prabhu-loutolim-0693",
+      "name": {
+        "given": "Smita",
+        "surname": "Hegde",
+        "patronymic": "Yash",
+        "display": "Smita Yash Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0689",
+      "motherId": "prabhu-loutolim-0690"
+    },
+    {
+      "id": "prabhu-loutolim-0694",
+      "name": {
+        "given": "Rekha",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Rekha Ashok Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681"
+    },
+    {
+      "id": "prabhu-loutolim-0695",
+      "name": {
+        "given": "Nitin",
+        "surname": "Hegde",
+        "patronymic": "Ashok",
+        "display": "Nitin Ashok Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "prabhu-loutolim-0680",
+      "motherId": "prabhu-loutolim-0681"
+    },
+    {
+      "id": "prabhu-loutolim-0696",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Hegde",
+        "patronymic": "Vasudev",
+        "display": "Shantaram Vasudev Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "prabhu-loutolim-0636",
+      "motherId": "prabhu-loutolim-0637",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0697",
+          "status": "married",
+          "date": {
+            "year": 1931,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0697",
+      "name": {
+        "given": "Umabai",
+        "surname": "Shenoy",
+        "display": "Umabai Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath",
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1910
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0696",
+          "status": "married",
+          "date": {
+            "year": 1931,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0698",
+      "name": {
+        "given": "Prema",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Prema Shantaram Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "prabhu-loutolim-0699",
+      "name": {
+        "given": "Sudha",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Sudha Shantaram Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697"
+    },
+    {
+      "id": "prabhu-loutolim-0700",
+      "name": {
+        "given": "Ramesh",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Ramesh Shantaram Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1941,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697"
+    },
+    {
+      "id": "prabhu-loutolim-0701",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Nirmala Shantaram Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697"
+    },
+    {
+      "id": "prabhu-loutolim-0702",
+      "name": {
+        "given": "Shobha",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Shobha Shantaram Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697"
+    },
+    {
+      "id": "prabhu-loutolim-0703",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Shrinivas Shantaram Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697"
+    },
+    {
+      "id": "prabhu-loutolim-0704",
+      "name": {
+        "given": "Sushila",
+        "surname": "Hegde",
+        "patronymic": "Shantaram",
+        "display": "Sushila Shantaram Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "prabhu-loutolim-0696",
+      "motherId": "prabhu-loutolim-0697",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0705",
+          "status": "widowed",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ponda"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0705",
+      "name": {
+        "given": "Dinesh",
+        "surname": "Hegde",
+        "display": "Dinesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0704",
+          "status": "married",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0706",
+      "name": {
+        "given": "Pooja",
+        "surname": "Hegde",
+        "patronymic": "Dinesh",
+        "display": "Pooja Dinesh Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "prabhu-loutolim-0705",
+      "motherId": "prabhu-loutolim-0704"
+    },
+    {
+      "id": "prabhu-loutolim-0707",
+      "name": {
+        "given": "Shruti",
+        "surname": "Hegde",
+        "patronymic": "Dinesh",
+        "display": "Shruti Dinesh Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "prabhu-loutolim-0705",
+      "motherId": "prabhu-loutolim-0704",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0708",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0708",
+      "name": {
+        "given": "Ishaan",
+        "surname": "Shanbhag",
+        "display": "Ishaan Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "bio": "Moved the household from Bandora to Ponda after a failed monsoon, and is the first of the line recorded at the new place.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0707",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0709",
+      "name": {
+        "given": "Deepika",
+        "surname": "Shanbhag",
+        "patronymic": "Ishaan",
+        "display": "Deepika Ishaan Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor",
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0708",
+      "motherId": "prabhu-loutolim-0707"
+    },
+    {
+      "id": "prabhu-loutolim-0710",
+      "name": {
+        "given": "Tejas",
+        "surname": "Shanbhag",
+        "patronymic": "Ishaan",
+        "display": "Tejas Ishaan Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0708",
+      "motherId": "prabhu-loutolim-0707"
+    },
+    {
+      "id": "prabhu-loutolim-0711",
+      "name": {
+        "given": "Aditya",
+        "surname": "Hegde",
+        "patronymic": "Dinesh",
+        "display": "Aditya Dinesh Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "dentist"
+      ],
+      "fatherId": "prabhu-loutolim-0705",
+      "motherId": "prabhu-loutolim-0704",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0712",
+          "status": "married",
+          "date": {
+            "year": 2006,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0712",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Rao",
+        "display": "Nirmala Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2005
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0711",
+          "status": "married",
+          "date": {
+            "year": 2006,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0713",
+      "name": {
+        "given": "Tejas",
+        "surname": "Hegde",
+        "patronymic": "Aditya",
+        "display": "Tejas Aditya Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "fatherId": "prabhu-loutolim-0711",
+      "motherId": "prabhu-loutolim-0712"
+    },
+    {
+      "id": "prabhu-loutolim-0714",
+      "name": {
+        "given": "Rucha",
+        "surname": "Hegde",
+        "patronymic": "Aditya",
+        "display": "Rucha Aditya Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact",
+          "raw": "2010"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2010
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0711",
+      "motherId": "prabhu-loutolim-0712"
+    },
+    {
+      "id": "prabhu-loutolim-0715",
+      "name": {
+        "given": "Trupti",
+        "surname": "Hegde",
+        "patronymic": "Aditya",
+        "display": "Trupti Aditya Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact",
+          "raw": "2013"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "prabhu-loutolim-0711",
+      "motherId": "prabhu-loutolim-0712",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "prabhu-loutolim-0716",
+      "name": {
+        "given": "Atharva",
+        "surname": "Hegde",
+        "patronymic": "Dinesh",
+        "display": "Atharva Dinesh Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1980
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0705",
+      "motherId": "prabhu-loutolim-0704",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0717",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0717",
+      "name": {
+        "given": "Swati",
+        "surname": "Baliga",
+        "display": "Swati Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "kushasthali",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2001
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0716",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0718",
+      "name": {
+        "given": "Deepika",
+        "surname": "Hegde",
+        "patronymic": "Atharva",
+        "display": "Deepika Atharva Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact",
+          "raw": "2008"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2023
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0716",
+      "motherId": "prabhu-loutolim-0717"
+    },
+    {
+      "id": "prabhu-loutolim-0719",
+      "name": {
+        "given": "Prachi",
+        "surname": "Hegde",
+        "patronymic": "Atharva",
+        "display": "Prachi Atharva Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact",
+          "raw": "2012"
+        },
+        "place": {
+          "id": "melbourne"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0716",
+      "motherId": "prabhu-loutolim-0717"
+    },
+    {
+      "id": "prabhu-loutolim-0720",
+      "name": {
+        "given": "Trupti",
+        "surname": "Hegde",
+        "patronymic": "Dinesh",
+        "display": "Trupti Dinesh Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "loutolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur",
+        "pharmacist"
+      ],
+      "fatherId": "prabhu-loutolim-0705",
+      "motherId": "prabhu-loutolim-0704",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "prabhu-loutolim-0721",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Hegde",
+        "patronymic": "Vasudev",
+        "display": "Ambabai Vasudev Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant",
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1924
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0636",
+      "motherId": "prabhu-loutolim-0637",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0722",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0722",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Kini",
+        "display": "Dinkar Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "ponda"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bandora"
+        },
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1918
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "first of the line at Ponda",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0721",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0723",
+      "name": {
+        "given": "Vivek",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Vivek Dinkar Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1930
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0724",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "loutolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0724",
+      "name": {
+        "given": "Kunda",
+        "surname": "Rao",
+        "display": "Kunda Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist",
+        "cooperative bank manager"
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0723",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0725",
+      "name": {
+        "given": "Malati",
+        "surname": "Kini",
+        "patronymic": "Vivek",
+        "display": "Malati Vivek Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "panaji"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "prabhu-loutolim-0723",
+      "motherId": "prabhu-loutolim-0724",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0726",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bandora"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0726",
+      "name": {
+        "given": "Madhav",
+        "surname": "Karkal",
+        "display": "Madhav Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1953
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0725",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "prabhu-loutolim-0727",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Karkal",
+        "patronymic": "Madhav",
+        "display": "Chinmay Madhav Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician",
+        "marine engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0726",
+      "motherId": "prabhu-loutolim-0725"
+    },
+    {
+      "id": "prabhu-loutolim-0728",
+      "name": {
+        "given": "Nandan",
+        "surname": "Karkal",
+        "patronymic": "Madhav",
+        "display": "Nandan Madhav Karkal"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1986
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0726",
+      "motherId": "prabhu-loutolim-0725"
+    },
+    {
+      "id": "prabhu-loutolim-0729",
+      "name": {
+        "given": "Indira",
+        "surname": "Karkal",
+        "patronymic": "Madhav",
+        "display": "Indira Madhav Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1989,
+          "qualifier": "exact",
+          "raw": "1989"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1989
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0726",
+      "motherId": "prabhu-loutolim-0725"
+    },
+    {
+      "id": "prabhu-loutolim-0730",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Kini",
+        "patronymic": "Vivek",
+        "display": "Ulhas Vivek Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1964
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0723",
+      "motherId": "prabhu-loutolim-0724"
+    },
+    {
+      "id": "prabhu-loutolim-0731",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Kini",
+        "patronymic": "Vivek",
+        "display": "Vaishali Vivek Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "marine engineer"
+      ],
+      "fatherId": "prabhu-loutolim-0723",
+      "motherId": "prabhu-loutolim-0724"
+    },
+    {
+      "id": "prabhu-loutolim-0732",
+      "name": {
+        "given": "Aarav",
+        "surname": "Kini",
+        "patronymic": "Vivek",
+        "display": "Aarav Vivek Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "prabhu-loutolim-0723",
+      "motherId": "prabhu-loutolim-0724"
+    },
+    {
+      "id": "prabhu-loutolim-0733",
+      "name": {
+        "given": "Soham",
+        "surname": "Kini",
+        "patronymic": "Vivek",
+        "display": "Soham Vivek Kini"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "melbourne"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "prabhu-loutolim-0723",
+      "motherId": "prabhu-loutolim-0724"
+    },
+    {
+      "id": "prabhu-loutolim-0734",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Manjulabai Dinkar Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ponda"
+        },
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1949
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721"
+    },
+    {
+      "id": "prabhu-loutolim-0735",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Pushpa Dinkar Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1951
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge."
+    },
+    {
+      "id": "prabhu-loutolim-0736",
+      "name": {
+        "given": "Ravi",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Ravi Dinkar Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721"
+    },
+    {
+      "id": "prabhu-loutolim-0737",
+      "name": {
+        "given": "Ravi",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Ravi Dinkar Kini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "panaji"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721"
+    },
+    {
+      "id": "prabhu-loutolim-0738",
+      "name": {
+        "given": "Vimala",
+        "surname": "Kini",
+        "patronymic": "Dinkar",
+        "display": "Vimala Dinkar Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "panaji"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "prabhu-loutolim-0722",
+      "motherId": "prabhu-loutolim-0721"
+    },
+    {
+      "id": "prabhu-loutolim-0739",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Hegde",
+        "patronymic": "Venkatesh",
+        "display": "Lakshmibai Venkatesh Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa",
+          "raw": "c. 1875"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1936,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0633",
+      "motherId": "prabhu-loutolim-0634",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "epithet": "first of the line at Ponda"
+    },
+    {
+      "id": "prabhu-loutolim-0740",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Hegde",
+        "patronymic": "Keshav",
+        "display": "Shantaram Keshav Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1847,
+          "qualifier": "circa",
+          "raw": "c. 1847"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1894,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0631",
+      "motherId": "prabhu-loutolim-0623"
+    },
+    {
+      "id": "prabhu-loutolim-0741",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Hegde",
+        "patronymic": "Keshav",
+        "display": "Sitabai Keshav Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1849,
+          "qualifier": "circa",
+          "raw": "c. 1849"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0631",
+      "motherId": "prabhu-loutolim-0623"
+    },
+    {
+      "id": "prabhu-loutolim-0742",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Hegde",
+        "patronymic": "Keshav",
+        "display": "Ambabai Keshav Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1853,
+          "qualifier": "circa",
+          "raw": "c. 1853"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "loutolim"
+        },
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1919,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0631",
+      "motherId": "prabhu-loutolim-0623",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "prabhu-loutolim-0743",
+      "name": {
+        "given": "Anant",
+        "surname": "Hegde",
+        "patronymic": "Keshav",
+        "display": "Anant Keshav Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "loutolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "loutolim"
+        },
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1901,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Prabhu household at loutolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "prabhu-loutolim-0631",
+      "motherId": "prabhu-loutolim-0623"
+    },
+    {
+      "id": "prabhu-loutolim-0744",
+      "name": {
+        "given": "Waman",
+        "surname": "Bhandarkar",
+        "patronymic": "Krishna",
+        "display": "Waman Krishna Bhandarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa",
+          "raw": "c. 1868"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bandora"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "prabhu-loutolim-0632",
+      "motherId": "prabhu-loutolim-0623",
+      "bio": "Waman was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "prabhu-loutolim-0745",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Bhandarkar",
+        "patronymic": "Krishna",
+        "display": "Savitribai Krishna Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1872,
+          "qualifier": "circa",
+          "raw": "c. 1872"
+        },
+        "place": {
+          "id": "bandora"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bandora"
+        },
+        {
+          "id": "ponda"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1954,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "prabhu-loutolim-0632",
+      "motherId": "prabhu-loutolim-0623"
+    }
+  ]
+}

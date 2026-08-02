@@ -1,0 +1,7473 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Traders in areca and pepper who kept a house at Kavale and a warehouse at Kumta.",
+  "people": [
+    {
+      "id": "pai-keloshi-0187",
+      "name": {
+        "given": "Umanath",
+        "surname": "Pai",
+        "display": "Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1795,
+          "qualifier": "circa",
+          "raw": "c. 1795"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0188",
+          "status": "widowed",
+          "date": {
+            "year": 1818,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0188",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Prabhu",
+        "display": "Janakibai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1796,
+          "qualifier": "circa",
+          "raw": "c. 1796"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0187",
+          "status": "married",
+          "date": {
+            "year": 1818,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0189",
+      "name": {
+        "given": "Mahadev",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Mahadev Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1821,
+          "qualifier": "circa",
+          "raw": "c. 1821"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "keloshi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1882,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188"
+    },
+    {
+      "id": "pai-keloshi-0190",
+      "name": {
+        "given": "Achyut",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Achyut Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1825,
+          "qualifier": "circa",
+          "raw": "c. 1825"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "keloshi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0191",
+          "status": "widowed",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0191",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Rao",
+        "display": "Kaveribai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1828,
+          "qualifier": "circa",
+          "raw": "c. 1828"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1870,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0190",
+          "status": "married",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0192",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Tarabai Achyut Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1849,
+          "qualifier": "circa",
+          "raw": "c. 1849"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        },
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1887,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0193",
+      "name": {
+        "given": "Govind",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Govind Achyut Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1853,
+          "qualifier": "circa",
+          "raw": "c. 1853"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        },
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1929,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0194",
+          "status": "widowed",
+          "date": {
+            "year": 1877,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        },
+        {
+          "personId": "pai-keloshi-0195",
+          "status": "widowed",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0194",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Bhandarkar",
+        "display": "Yamunabai Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1857,
+          "qualifier": "circa",
+          "raw": "c. 1857"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kavale"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1896,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0193",
+          "status": "married",
+          "date": {
+            "year": 1877,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0195",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Hegde",
+        "display": "Saraswatibai Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa",
+          "raw": "c. 1878"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0193",
+          "status": "married",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0196",
+      "name": {
+        "given": "Anant",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Anant Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1880,
+          "qualifier": "exact",
+          "raw": "1880"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1948,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0194",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0197",
+          "status": "widowed",
+          "date": {
+            "year": 1903,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0197",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Baliga",
+        "display": "Indirabai Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1881,
+          "qualifier": "exact",
+          "raw": "1881"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1931,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0196",
+          "status": "married",
+          "date": {
+            "year": 1903,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0198",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Pai",
+        "patronymic": "Anant",
+        "display": "Kashibai Anant Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1904,
+          "qualifier": "exact",
+          "raw": "1904"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1919
+        }
+      ],
+      "fatherId": "pai-keloshi-0196",
+      "motherId": "pai-keloshi-0197"
+    },
+    {
+      "id": "pai-keloshi-0199",
+      "name": {
+        "given": "Deepak",
+        "surname": "Pai",
+        "patronymic": "Anant",
+        "display": "Deepak Anant Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "pai-keloshi-0196",
+      "motherId": "pai-keloshi-0197",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0200",
+          "status": "widowed",
+          "date": {
+            "year": 1930,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0200",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Shanbhag",
+        "display": "Ambabai Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0199",
+          "status": "married",
+          "date": {
+            "year": 1930,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0201",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Pai",
+        "patronymic": "Deepak",
+        "display": "Lakshmibai Deepak Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1931,
+          "qualifier": "exact",
+          "raw": "1931"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "pai-keloshi-0199",
+      "motherId": "pai-keloshi-0200",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0202",
+          "status": "widowed",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0202",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Rao",
+        "display": "Ulhas Rao"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1928
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0201",
+          "status": "married",
+          "date": {
+            "year": 1949,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0203",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Rao",
+        "patronymic": "Ulhas",
+        "display": "Vaishali Ulhas Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "pai-keloshi-0202",
+      "motherId": "pai-keloshi-0201"
+    },
+    {
+      "id": "pai-keloshi-0204",
+      "name": {
+        "given": "Suresh",
+        "surname": "Rao",
+        "patronymic": "Ulhas",
+        "display": "Suresh Ulhas Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1953
+        }
+      ],
+      "fatherId": "pai-keloshi-0202",
+      "motherId": "pai-keloshi-0201",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0205",
+          "status": "married",
+          "date": {
+            "year": 1982,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0205",
+      "name": {
+        "given": "Bhagirathibai",
+        "surname": "Bhandarkar",
+        "display": "Bhagirathibai Bhandarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1981
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0204",
+          "status": "married",
+          "date": {
+            "year": 1982,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0206",
+      "name": {
+        "given": "Prabhakar",
+        "surname": "Rao",
+        "patronymic": "Suresh",
+        "display": "Prabhakar Suresh Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1998
+        }
+      ],
+      "fatherId": "pai-keloshi-0204",
+      "motherId": "pai-keloshi-0205"
+    },
+    {
+      "id": "pai-keloshi-0207",
+      "name": {
+        "given": "Nikhil",
+        "surname": "Rao",
+        "patronymic": "Suresh",
+        "display": "Nikhil Suresh Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "fatherId": "pai-keloshi-0204",
+      "motherId": "pai-keloshi-0205"
+    },
+    {
+      "id": "pai-keloshi-0208",
+      "name": {
+        "given": "Radhika",
+        "surname": "Rao",
+        "patronymic": "Suresh",
+        "display": "Radhika Suresh Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "physician"
+      ],
+      "fatherId": "pai-keloshi-0204",
+      "motherId": "pai-keloshi-0205"
+    },
+    {
+      "id": "pai-keloshi-0209",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Rao",
+        "patronymic": "Ulhas",
+        "display": "Vaishali Ulhas Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0202",
+      "motherId": "pai-keloshi-0201"
+    },
+    {
+      "id": "pai-keloshi-0210",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Pai",
+        "patronymic": "Deepak",
+        "display": "Godavaribai Deepak Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1944,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0199",
+      "motherId": "pai-keloshi-0200"
+    },
+    {
+      "id": "pai-keloshi-0211",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Pai",
+        "patronymic": "Deepak",
+        "display": "Chandrakant Deepak Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "fatherId": "pai-keloshi-0199",
+      "motherId": "pai-keloshi-0200",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0212",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0212",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Karkal",
+        "display": "Sulochana Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "epithet": "first of the line at Kumta",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0211",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0213",
+      "name": {
+        "given": "Lata",
+        "surname": "Pai",
+        "patronymic": "Chandrakant",
+        "display": "Lata Chandrakant Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1981
+        }
+      ],
+      "fatherId": "pai-keloshi-0211",
+      "motherId": "pai-keloshi-0212",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0214",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0214",
+      "name": {
+        "given": "Soham",
+        "surname": "Nayak",
+        "display": "Soham Nayak"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "kushasthali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist",
+        "clinical psychologist"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0213",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0215",
+      "name": {
+        "given": "Prachi",
+        "surname": "Nayak",
+        "patronymic": "Soham",
+        "display": "Prachi Soham Nayak"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "kushasthali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1987
+        }
+      ],
+      "fatherId": "pai-keloshi-0214",
+      "motherId": "pai-keloshi-0213"
+    },
+    {
+      "id": "pai-keloshi-0216",
+      "name": {
+        "given": "Deepika",
+        "surname": "Pai",
+        "patronymic": "Chandrakant",
+        "display": "Deepika Chandrakant Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "pai-keloshi-0211",
+      "motherId": "pai-keloshi-0212"
+    },
+    {
+      "id": "pai-keloshi-0217",
+      "name": {
+        "given": "Smita",
+        "surname": "Pai",
+        "patronymic": "Deepak",
+        "display": "Smita Deepak Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist",
+        "chartered accountant"
+      ],
+      "fatherId": "pai-keloshi-0199",
+      "motherId": "pai-keloshi-0200"
+    },
+    {
+      "id": "pai-keloshi-0218",
+      "name": {
+        "given": "Mahesh",
+        "surname": "Pai",
+        "patronymic": "Deepak",
+        "display": "Mahesh Deepak Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "pai-keloshi-0199",
+      "motherId": "pai-keloshi-0200",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0219",
+          "status": "widowed",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0219",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Hegde",
+        "display": "Nirmala Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0218",
+          "status": "married",
+          "date": {
+            "year": 1969,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0220",
+      "name": {
+        "given": "Amit",
+        "surname": "Pai",
+        "patronymic": "Mahesh",
+        "display": "Amit Mahesh Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "pai-keloshi-0218",
+      "motherId": "pai-keloshi-0219",
+      "epithet": "first of the line at Kumta",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0221",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0221",
+      "name": {
+        "given": "Gauri",
+        "surname": "Rao",
+        "display": "Gauri Rao"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer",
+        "professor"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0220",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0222",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Pai",
+        "patronymic": "Amit",
+        "display": "Chinmay Amit Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact",
+          "raw": "1997"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "fatherId": "pai-keloshi-0220",
+      "motherId": "pai-keloshi-0221"
+    },
+    {
+      "id": "pai-keloshi-0223",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Pai",
+        "patronymic": "Mahesh",
+        "display": "Hrishikesh Mahesh Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "physician"
+      ],
+      "fatherId": "pai-keloshi-0218",
+      "motherId": "pai-keloshi-0219"
+    },
+    {
+      "id": "pai-keloshi-0224",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Pai",
+        "patronymic": "Anant",
+        "display": "Godavaribai Anant Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0196",
+      "motherId": "pai-keloshi-0197"
+    },
+    {
+      "id": "pai-keloshi-0225",
+      "name": {
+        "given": "Bhalchandra",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Bhalchandra Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1884,
+          "qualifier": "exact",
+          "raw": "1884"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1926,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0194"
+    },
+    {
+      "id": "pai-keloshi-0226",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Purushottam Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1887,
+          "qualifier": "exact",
+          "raw": "1887"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1966,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0194",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0227",
+          "status": "widowed",
+          "date": {
+            "year": 1906,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0227",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Rao",
+        "display": "Saraswatibai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1884,
+          "qualifier": "exact",
+          "raw": "1884"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1959,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0226",
+          "status": "married",
+          "date": {
+            "year": 1906,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0228",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Pai",
+        "patronymic": "Purushottam",
+        "display": "Gangabai Purushottam Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0226",
+      "motherId": "pai-keloshi-0227",
+      "epithet": "first of the line at Kumta"
+    },
+    {
+      "id": "pai-keloshi-0229",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Pai",
+        "patronymic": "Purushottam",
+        "display": "Indirabai Purushottam Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "pai-keloshi-0226",
+      "motherId": "pai-keloshi-0227"
+    },
+    {
+      "id": "pai-keloshi-0230",
+      "name": {
+        "given": "Mahadev",
+        "surname": "Pai",
+        "patronymic": "Purushottam",
+        "display": "Mahadev Purushottam Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1913,
+          "qualifier": "exact",
+          "raw": "1913"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "pai-keloshi-0226",
+      "motherId": "pai-keloshi-0227",
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0233",
+          "status": "widowed",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0231",
+      "name": {
+        "given": "Kamala",
+        "surname": "Pai",
+        "patronymic": "Purushottam",
+        "display": "Kamala Purushottam Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0226",
+      "motherId": "pai-keloshi-0227"
+    },
+    {
+      "id": "pai-keloshi-0232",
+      "name": {
+        "given": "Venubai",
+        "surname": "Pai",
+        "patronymic": "Purushottam",
+        "display": "Venubai Purushottam Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1919,
+          "qualifier": "exact",
+          "raw": "1919"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0226",
+      "motherId": "pai-keloshi-0227"
+    },
+    {
+      "id": "pai-keloshi-0233",
+      "name": {
+        "given": "Kamala",
+        "surname": "Prabhu",
+        "display": "Kamala Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1919,
+          "qualifier": "exact",
+          "raw": "1919"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0230",
+          "status": "married",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0234",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Pai",
+        "patronymic": "Mahadev",
+        "display": "Shantaram Mahadev Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "pai-keloshi-0230",
+      "motherId": "pai-keloshi-0233",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0235",
+          "status": "married",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0235",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Bhandarkar",
+        "display": "Nirmala Bhandarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0234",
+          "status": "married",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0236",
+      "name": {
+        "given": "Kunda",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Kunda Shantaram Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "pai-keloshi-0234",
+      "motherId": "pai-keloshi-0235",
+      "epithet": "first of the line at Kumta"
+    },
+    {
+      "id": "pai-keloshi-0237",
+      "name": {
+        "given": "Karthik",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Karthik Shantaram Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1965
+        }
+      ],
+      "fatherId": "pai-keloshi-0234",
+      "motherId": "pai-keloshi-0235",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0238",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0238",
+      "name": {
+        "given": "Trupti",
+        "surname": "Baliga",
+        "display": "Trupti Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "verna",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist",
+        "veterinarian"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0237",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0239",
+      "name": {
+        "given": "Karthik",
+        "surname": "Pai",
+        "patronymic": "Karthik",
+        "display": "Karthik Karthik Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact",
+          "raw": "1997"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2012
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0237",
+      "motherId": "pai-keloshi-0238"
+    },
+    {
+      "id": "pai-keloshi-0240",
+      "name": {
+        "given": "Aniket",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Aniket Shantaram Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "pai-keloshi-0234",
+      "motherId": "pai-keloshi-0235",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0241",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0241",
+      "name": {
+        "given": "Gauri",
+        "surname": "Kudva",
+        "display": "Gauri Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1970
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0240",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0242",
+      "name": {
+        "given": "Vaidehi",
+        "surname": "Pai",
+        "patronymic": "Aniket",
+        "display": "Vaidehi Aniket Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "chartered accountant"
+      ],
+      "fatherId": "pai-keloshi-0240",
+      "motherId": "pai-keloshi-0241",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "pai-keloshi-0243",
+      "name": {
+        "given": "Varun",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Varun Shantaram Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1970
+        }
+      ],
+      "fatherId": "pai-keloshi-0234",
+      "motherId": "pai-keloshi-0235",
+      "bio": "Served as a mahajan of the family's temple and travelled to Keloshi for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "pai-keloshi-0244",
+      "name": {
+        "given": "Rohan",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Rohan Shantaram Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "pai-keloshi-0234",
+      "motherId": "pai-keloshi-0235",
+      "epithet": "taught three generations of the family",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0245",
+          "status": "married",
+          "date": {
+            "year": 2001,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0245",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Adiga",
+        "display": "Aarohi Adiga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact",
+          "raw": "1984"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vatsa",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1984
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0244",
+          "status": "married",
+          "date": {
+            "year": 2001,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0246",
+      "name": {
+        "given": "Shanta",
+        "surname": "Pai",
+        "patronymic": "Rohan",
+        "display": "Shanta Rohan Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact",
+          "raw": "2002"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2017
+        }
+      ],
+      "fatherId": "pai-keloshi-0244",
+      "motherId": "pai-keloshi-0245"
+    },
+    {
+      "id": "pai-keloshi-0247",
+      "name": {
+        "given": "Madhura",
+        "surname": "Pai",
+        "patronymic": "Rohan",
+        "display": "Madhura Rohan Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "pai-keloshi-0244",
+      "motherId": "pai-keloshi-0245"
+    },
+    {
+      "id": "pai-keloshi-0248",
+      "name": {
+        "given": "Shanta",
+        "surname": "Pai",
+        "patronymic": "Mahadev",
+        "display": "Shanta Mahadev Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "fatherId": "pai-keloshi-0230",
+      "motherId": "pai-keloshi-0233"
+    },
+    {
+      "id": "pai-keloshi-0249",
+      "name": {
+        "given": "Meera",
+        "surname": "Pai",
+        "patronymic": "Mahadev",
+        "display": "Meera Mahadev Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1959
+        }
+      ],
+      "fatherId": "pai-keloshi-0230",
+      "motherId": "pai-keloshi-0233",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0250",
+          "status": "widowed",
+          "date": {
+            "year": 1966,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0250",
+      "name": {
+        "given": "Jayant",
+        "surname": "Shanbhag",
+        "display": "Jayant Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years.",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0249",
+          "status": "married",
+          "date": {
+            "year": 1966,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0251",
+      "name": {
+        "given": "Ameya",
+        "surname": "Shanbhag",
+        "patronymic": "Jayant",
+        "display": "Ameya Jayant Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "pai-keloshi-0250",
+      "motherId": "pai-keloshi-0249"
+    },
+    {
+      "id": "pai-keloshi-0252",
+      "name": {
+        "given": "Ananya",
+        "surname": "Shanbhag",
+        "patronymic": "Jayant",
+        "display": "Ananya Jayant Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef",
+        "civil engineer"
+      ],
+      "fatherId": "pai-keloshi-0250",
+      "motherId": "pai-keloshi-0249",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "pai-keloshi-0253",
+      "name": {
+        "given": "Swati",
+        "surname": "Shanbhag",
+        "patronymic": "Jayant",
+        "display": "Swati Jayant Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1975
+        }
+      ],
+      "fatherId": "pai-keloshi-0250",
+      "motherId": "pai-keloshi-0249",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0254",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0254",
+      "name": {
+        "given": "Nitin",
+        "surname": "Rao",
+        "display": "Nitin Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0253",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0255",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Rao",
+        "patronymic": "Nitin",
+        "display": "Hrishikesh Nitin Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1999
+        }
+      ],
+      "fatherId": "pai-keloshi-0254",
+      "motherId": "pai-keloshi-0253"
+    },
+    {
+      "id": "pai-keloshi-0256",
+      "name": {
+        "given": "Siddharth",
+        "surname": "Rao",
+        "patronymic": "Nitin",
+        "display": "Siddharth Nitin Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact",
+          "raw": "2002"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "pai-keloshi-0254",
+      "motherId": "pai-keloshi-0253"
+    },
+    {
+      "id": "pai-keloshi-0257",
+      "name": {
+        "given": "Ameya",
+        "surname": "Rao",
+        "patronymic": "Nitin",
+        "display": "Ameya Nitin Rao"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "pai-keloshi-0254",
+      "motherId": "pai-keloshi-0253"
+    },
+    {
+      "id": "pai-keloshi-0258",
+      "name": {
+        "given": "Prachi",
+        "surname": "Shanbhag",
+        "patronymic": "Jayant",
+        "display": "Prachi Jayant Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer",
+        "physician"
+      ],
+      "fatherId": "pai-keloshi-0250",
+      "motherId": "pai-keloshi-0249"
+    },
+    {
+      "id": "pai-keloshi-0259",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Pai",
+        "patronymic": "Mahadev",
+        "display": "Vrinda Mahadev Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0230",
+      "motherId": "pai-keloshi-0233",
+      "bio": "Moved the household from Kavale to Kumta after a failed monsoon, and is the first of the line recorded at the new place."
+    },
+    {
+      "id": "pai-keloshi-0260",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Shantaram Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1890,
+          "qualifier": "exact",
+          "raw": "1890"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1962,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0194",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0261",
+          "status": "married",
+          "date": {
+            "year": 1908,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0261",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Pai",
+        "display": "Shantabai Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1886,
+          "qualifier": "exact",
+          "raw": "1886"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0260",
+          "status": "married",
+          "date": {
+            "year": 1908,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0262",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Indirabai Shantaram Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer",
+        "physician"
+      ],
+      "fatherId": "pai-keloshi-0260",
+      "motherId": "pai-keloshi-0261"
+    },
+    {
+      "id": "pai-keloshi-0263",
+      "name": {
+        "given": "Prakash",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Prakash Shantaram Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1912
+        }
+      ],
+      "fatherId": "pai-keloshi-0260",
+      "motherId": "pai-keloshi-0261",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0264",
+          "status": "widowed",
+          "date": {
+            "year": 1937,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0264",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Shenoy",
+        "display": "Radhabai Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "epithet": "kept the family vahi",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0263",
+          "status": "married",
+          "date": {
+            "year": 1937,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0265",
+      "name": {
+        "given": "Sudha",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Sudha Prakash Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1941,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264"
+    },
+    {
+      "id": "pai-keloshi-0266",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Kashibai Prakash Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264"
+    },
+    {
+      "id": "pai-keloshi-0267",
+      "name": {
+        "given": "Nandan",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Nandan Prakash Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0268",
+          "status": "widowed",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0268",
+      "name": {
+        "given": "Malati",
+        "surname": "Kudva",
+        "display": "Malati Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer",
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0267",
+          "status": "married",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0269",
+      "name": {
+        "given": "Sameer",
+        "surname": "Pai",
+        "patronymic": "Nandan",
+        "display": "Sameer Nandan Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "pai-keloshi-0267",
+      "motherId": "pai-keloshi-0268",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0270",
+          "status": "married",
+          "date": {
+            "year": 2003,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0270",
+      "name": {
+        "given": "Swati",
+        "surname": "Shanbhag",
+        "display": "Swati Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0269",
+          "status": "married",
+          "date": {
+            "year": 2003,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0271",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Pai",
+        "patronymic": "Sameer",
+        "display": "Nirmala Sameer Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2006
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0269",
+      "motherId": "pai-keloshi-0270"
+    },
+    {
+      "id": "pai-keloshi-0272",
+      "name": {
+        "given": "Vidya",
+        "surname": "Pai",
+        "patronymic": "Sameer",
+        "display": "Vidya Sameer Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact",
+          "raw": "2010"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2010
+        }
+      ],
+      "fatherId": "pai-keloshi-0269",
+      "motherId": "pai-keloshi-0270"
+    },
+    {
+      "id": "pai-keloshi-0273",
+      "name": {
+        "given": "Ira",
+        "surname": "Pai",
+        "patronymic": "Nandan",
+        "display": "Ira Nandan Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "pai-keloshi-0267",
+      "motherId": "pai-keloshi-0268",
+      "bio": "Ira was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "pai-keloshi-0274",
+      "name": {
+        "given": "Kunda",
+        "surname": "Pai",
+        "patronymic": "Nandan",
+        "display": "Kunda Nandan Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0267",
+      "motherId": "pai-keloshi-0268"
+    },
+    {
+      "id": "pai-keloshi-0275",
+      "name": {
+        "given": "Meghana",
+        "surname": "Pai",
+        "patronymic": "Nandan",
+        "display": "Meghana Nandan Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0267",
+      "motherId": "pai-keloshi-0268"
+    },
+    {
+      "id": "pai-keloshi-0276",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Ulhas Prakash Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0277",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0277",
+      "name": {
+        "given": "Kamala",
+        "surname": "Bhandarkar",
+        "display": "Kamala Bhandarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist",
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1962
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0276",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0278",
+      "name": {
+        "given": "Ananya",
+        "surname": "Pai",
+        "patronymic": "Ulhas",
+        "display": "Ananya Ulhas Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "pai-keloshi-0276",
+      "motherId": "pai-keloshi-0277"
+    },
+    {
+      "id": "pai-keloshi-0279",
+      "name": {
+        "given": "Ananya",
+        "surname": "Pai",
+        "patronymic": "Ulhas",
+        "display": "Ananya Ulhas Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "pai-keloshi-0276",
+      "motherId": "pai-keloshi-0277"
+    },
+    {
+      "id": "pai-keloshi-0280",
+      "name": {
+        "given": "Yash",
+        "surname": "Pai",
+        "patronymic": "Ulhas",
+        "display": "Yash Ulhas Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "graphic designer"
+      ],
+      "fatherId": "pai-keloshi-0276",
+      "motherId": "pai-keloshi-0277",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0281",
+          "status": "married",
+          "date": {
+            "year": 2008,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0281",
+      "name": {
+        "given": "Anjali",
+        "surname": "Pai",
+        "display": "Anjali Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian",
+        "graphic designer"
+      ],
+      "epithet": "taught three generations of the family",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0280",
+          "status": "married",
+          "date": {
+            "year": 2008,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0282",
+      "name": {
+        "given": "Pranav",
+        "surname": "Pai",
+        "patronymic": "Yash",
+        "display": "Pranav Yash Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact",
+          "raw": "2011"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2026
+        }
+      ],
+      "fatherId": "pai-keloshi-0280",
+      "motherId": "pai-keloshi-0281"
+    },
+    {
+      "id": "pai-keloshi-0283",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Pai",
+        "patronymic": "Ulhas",
+        "display": "Aarohi Ulhas Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "pai-keloshi-0276",
+      "motherId": "pai-keloshi-0277"
+    },
+    {
+      "id": "pai-keloshi-0284",
+      "name": {
+        "given": "Vinod",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Vinod Prakash Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0285",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0285",
+      "name": {
+        "given": "Indira",
+        "surname": "Nayak",
+        "display": "Indira Nayak"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0284",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0286",
+      "name": {
+        "given": "Neel",
+        "surname": "Pai",
+        "patronymic": "Vinod",
+        "display": "Neel Vinod Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "pai-keloshi-0284",
+      "motherId": "pai-keloshi-0285",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0287",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0287",
+      "name": {
+        "given": "Diya",
+        "surname": "Pai",
+        "display": "Diya Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0286",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0288",
+      "name": {
+        "given": "Kavita",
+        "surname": "Pai",
+        "patronymic": "Neel",
+        "display": "Kavita Neel Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "pai-keloshi-0286",
+      "motherId": "pai-keloshi-0287",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "pai-keloshi-0289",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Pai",
+        "patronymic": "Vinod",
+        "display": "Aarohi Vinod Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef",
+        "clinical psychologist"
+      ],
+      "fatherId": "pai-keloshi-0284",
+      "motherId": "pai-keloshi-0285",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "pai-keloshi-0290",
+      "name": {
+        "given": "Sameer",
+        "surname": "Pai",
+        "patronymic": "Vinod",
+        "display": "Sameer Vinod Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "pai-keloshi-0284",
+      "motherId": "pai-keloshi-0285",
+      "bio": "Sameer was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years.",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0291",
+          "status": "married",
+          "date": {
+            "year": 2014,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keloshi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0291",
+      "name": {
+        "given": "Aditi",
+        "surname": "Kini",
+        "display": "Aditi Kini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2009
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0290",
+          "status": "married",
+          "date": {
+            "year": 2014,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0292",
+      "name": {
+        "given": "Avinash",
+        "surname": "Pai",
+        "patronymic": "Sameer",
+        "display": "Avinash Sameer Pai"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact",
+          "raw": "2015"
+        },
+        "place": {
+          "id": "dubai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2030
+        }
+      ],
+      "fatherId": "pai-keloshi-0290",
+      "motherId": "pai-keloshi-0291"
+    },
+    {
+      "id": "pai-keloshi-0293",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Sulochana Prakash Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264"
+    },
+    {
+      "id": "pai-keloshi-0294",
+      "name": {
+        "given": "Kamala",
+        "surname": "Pai",
+        "patronymic": "Prakash",
+        "display": "Kamala Prakash Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dubai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2023,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1970
+        }
+      ],
+      "fatherId": "pai-keloshi-0263",
+      "motherId": "pai-keloshi-0264"
+    },
+    {
+      "id": "pai-keloshi-0295",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Pai",
+        "patronymic": "Shantaram",
+        "display": "Sitabai Shantaram Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1915,
+          "qualifier": "exact",
+          "raw": "1915"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0260",
+      "motherId": "pai-keloshi-0261",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0296",
+          "status": "widowed",
+          "date": {
+            "year": 1933,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        },
+        {
+          "personId": "pai-keloshi-0297",
+          "status": "married",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0296",
+      "name": {
+        "given": "Sanjeev",
+        "surname": "Adiga",
+        "display": "Sanjeev Adiga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0295",
+          "status": "married",
+          "date": {
+            "year": 1933,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0297",
+      "name": {
+        "given": "Sudhir",
+        "surname": "Mallya",
+        "display": "Sudhir Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0295",
+          "status": "married",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0298",
+      "name": {
+        "given": "Smita",
+        "surname": "Adiga",
+        "patronymic": "Sanjeev",
+        "display": "Smita Sanjeev Adiga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "pai-keloshi-0296",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0299",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Adiga",
+        "patronymic": "Sanjeev",
+        "display": "Shrinivas Sanjeev Adiga"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "pai-keloshi-0296",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0300",
+      "name": {
+        "given": "Satish",
+        "surname": "Adiga",
+        "patronymic": "Sanjeev",
+        "display": "Satish Sanjeev Adiga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant",
+        "professor of mathematics"
+      ],
+      "fatherId": "pai-keloshi-0296",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0301",
+      "name": {
+        "given": "Kiran",
+        "surname": "Adiga",
+        "patronymic": "Sanjeev",
+        "display": "Kiran Sanjeev Adiga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist",
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1944
+        }
+      ],
+      "fatherId": "pai-keloshi-0296",
+      "motherId": "pai-keloshi-0295",
+      "epithet": "first of the line at Kumta"
+    },
+    {
+      "id": "pai-keloshi-0302",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Mallya",
+        "patronymic": "Sudhir",
+        "display": "Vithabai Sudhir Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate",
+        "Hindustani vocalist"
+      ],
+      "fatherId": "pai-keloshi-0297",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0303",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Mallya",
+        "patronymic": "Sudhir",
+        "display": "Shrinivas Sudhir Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "pai-keloshi-0297",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0304",
+      "name": {
+        "given": "Indira",
+        "surname": "Mallya",
+        "patronymic": "Sudhir",
+        "display": "Indira Sudhir Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1951
+        }
+      ],
+      "fatherId": "pai-keloshi-0297",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0305",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Mallya",
+        "patronymic": "Sudhir",
+        "display": "Mangesh Sudhir Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "pai-keloshi-0297",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0306",
+      "name": {
+        "given": "Balkrishna",
+        "surname": "Mallya",
+        "patronymic": "Sudhir",
+        "display": "Balkrishna Sudhir Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "pai-keloshi-0297",
+      "motherId": "pai-keloshi-0295"
+    },
+    {
+      "id": "pai-keloshi-0307",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Manjulabai Govind Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kavale"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1945,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0195"
+    },
+    {
+      "id": "pai-keloshi-0308",
+      "name": {
+        "given": "Mukund",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Mukund Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1902,
+          "qualifier": "exact",
+          "raw": "1902"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0195",
+      "spouses": [
+        {
+          "personId": "kamath-kushasthali-0017",
+          "status": "married",
+          "date": {
+            "year": 1926,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0309",
+      "name": {
+        "given": "Satish",
+        "surname": "Pai",
+        "patronymic": "Govind",
+        "display": "Satish Govind Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kavale"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0193",
+      "motherId": "pai-keloshi-0195"
+    },
+    {
+      "id": "pai-keloshi-0310",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Padmavatibai Achyut Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1931,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0311",
+      "name": {
+        "given": "Waman",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Waman Achyut Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1860,
+          "qualifier": "circa",
+          "raw": "c. 1860"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0312",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Yamunabai Achyut Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa",
+          "raw": "c. 1862"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0313",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Anandibai Achyut Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1864,
+          "qualifier": "circa",
+          "raw": "c. 1864"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        },
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1876,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0314",
+      "name": {
+        "given": "Shridhar",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Shridhar Achyut Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa",
+          "raw": "c. 1866"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1927,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191",
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0315",
+          "status": "widowed",
+          "date": {
+            "year": 1884,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kavale"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0315",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Kamath",
+        "display": "Savitribai Kamath"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa",
+          "raw": "c. 1866"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        },
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1911,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "pai-keloshi-0314",
+          "status": "married",
+          "date": {
+            "year": 1884,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pai-keloshi-0316",
+      "name": {
+        "given": "Padmanabh",
+        "surname": "Pai",
+        "patronymic": "Shridhar",
+        "display": "Padmanabh Shridhar Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1887,
+          "qualifier": "exact",
+          "raw": "1887"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1947,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0314",
+      "motherId": "pai-keloshi-0315"
+    },
+    {
+      "id": "pai-keloshi-0317",
+      "name": {
+        "given": "Dattatreya",
+        "surname": "Pai",
+        "patronymic": "Shridhar",
+        "display": "Dattatreya Shridhar Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1889,
+          "qualifier": "exact",
+          "raw": "1889"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1933,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "fatherId": "pai-keloshi-0314",
+      "motherId": "pai-keloshi-0315"
+    },
+    {
+      "id": "pai-keloshi-0318",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Pai",
+        "patronymic": "Shridhar",
+        "display": "Saraswatibai Shridhar Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1893,
+          "qualifier": "exact",
+          "raw": "1893"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1954,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0314",
+      "motherId": "pai-keloshi-0315"
+    },
+    {
+      "id": "pai-keloshi-0319",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Pai",
+        "patronymic": "Shridhar",
+        "display": "Kaveribai Shridhar Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1964,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "pai-keloshi-0314",
+      "motherId": "pai-keloshi-0315"
+    },
+    {
+      "id": "pai-keloshi-0320",
+      "name": {
+        "given": "Madhav",
+        "surname": "Pai",
+        "patronymic": "Achyut",
+        "display": "Madhav Achyut Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa",
+          "raw": "c. 1868"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1941,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "pai-keloshi-0190",
+      "motherId": "pai-keloshi-0191"
+    },
+    {
+      "id": "pai-keloshi-0321",
+      "name": {
+        "given": "Dattatreya",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Dattatreya Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1829,
+          "qualifier": "circa",
+          "raw": "c. 1829"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "keloshi"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1870,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188"
+    },
+    {
+      "id": "pai-keloshi-0322",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Shrinivas Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1832,
+          "qualifier": "circa",
+          "raw": "c. 1832"
+        },
+        "place": {
+          "id": "keloshi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "keloshi"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1909,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188"
+    },
+    {
+      "id": "pai-keloshi-0323",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Savitribai Umanath Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1836,
+          "qualifier": "circa",
+          "raw": "c. 1836"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "keloshi"
+        },
+        {
+          "id": "kavale"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1836,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188"
+    },
+    {
+      "id": "pai-keloshi-0324",
+      "name": {
+        "given": "Balkrishna",
+        "surname": "Pai",
+        "patronymic": "Umanath",
+        "display": "Balkrishna Umanath Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1840,
+          "qualifier": "circa",
+          "raw": "c. 1840"
+        },
+        "place": {
+          "id": "kavale"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1882,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Pai household at keloshi."
+        }
+      ],
+      "fatherId": "pai-keloshi-0187",
+      "motherId": "pai-keloshi-0188",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation."
+    },
+    {
+      "id": "pai-keloshi-1521",
+      "name": {
+        "given": "Indira",
+        "surname": "Pai",
+        "patronymic": "Mukund",
+        "display": "Indira Mukund Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "pai-keloshi-0308",
+      "motherId": "kamath-kushasthali-0017"
+    }
+  ]
+}

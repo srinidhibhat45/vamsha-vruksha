@@ -1,0 +1,77 @@
+{
+  "_readme": "Monastic seats (mathas) to which Saraswat families owe allegiance. Living pontiffs are deliberately not listed, since the archive is not maintained fast enough to keep them accurate.",
+  "items": [
+    {
+      "id": "kashi-math",
+      "name": "Shri Kashi Math Samsthan",
+      "devanagari": "श्री काशी मठ संस्थान",
+      "seat": "Varanasi, with branches at Walkeshwar (Mumbai), Haldipur, Basrur and Cochin",
+      "tradition": "vaishnava",
+      "founded": "1542 CE",
+      "communities": ["gsb"],
+      "note": "Dvaita/Vaishnava lineage established under Shrimad Yadavendra Tirtha. Followers are often called Kashi Math Samsthan GSBs."
+    },
+    {
+      "id": "partagali-math",
+      "name": "Shri Gokarn Partagali Jeevottam Math",
+      "devanagari": "श्री गोकर्ण पर्तगाळी जीवोत्तम मठ",
+      "seat": "Partagali, Canacona, Goa",
+      "tradition": "vaishnava",
+      "founded": "c. 1475 CE",
+      "communities": ["gsb"],
+      "note": "Founded by Shrimad Narayana Teertha. A principal Vaishnava seat of the Goud Saraswat community."
+    },
+    {
+      "id": "kavale-math",
+      "name": "Shri Saunsthan Gaudapadacharya, Kavale",
+      "devanagari": "श्री संस्थान गौडपादाचार्य, कावळे",
+      "seat": "Kavale, Ponda, Goa",
+      "tradition": "smarta",
+      "founded": "c. 740 CE (traditional)",
+      "communities": ["gsb", "rajapur", "kudaldeshkar"],
+      "note": "Traditionally regarded as the oldest matha of the Saraswats, tracing to Shri Gaudapadacharya. Smarta / Advaita."
+    },
+    {
+      "id": "chitrapur-math",
+      "name": "Shri Chitrapur Math",
+      "devanagari": "श्री चित्रापूर मठ",
+      "seat": "Shirali, Uttara Kannada, Karnataka",
+      "tradition": "smarta",
+      "founded": "c. 1708 CE",
+      "communities": ["chitrapur"],
+      "note": "Guru parampara begins with Shrimat Parijnanashram Swami I. The spiritual home of the Chitrapur Saraswats (Bhanaps)."
+    },
+    {
+      "id": "kaivalya-math",
+      "name": "Shri Kaivalya Math (Shri Sansthan Kaivalyapura)",
+      "devanagari": "श्री कैवल्य मठ",
+      "seat": "Kaivalyapura, Goa",
+      "tradition": "smarta",
+      "communities": ["gsb"],
+      "note": "Recorded by some Smarta Saraswat families of Goa and coastal Maharashtra."
+    },
+    {
+      "id": "shringeri",
+      "name": "Shri Sharada Peetham, Shringeri",
+      "devanagari": "श्री शारदा पीठम्, शृङ्गेरी",
+      "seat": "Shringeri, Karnataka",
+      "tradition": "smarta",
+      "communities": ["gsb", "chitrapur"],
+      "note": "Some Smarta Saraswat families additionally record allegiance to Shringeri."
+    },
+    {
+      "id": "kanchi",
+      "name": "Shri Kanchi Kamakoti Peetham",
+      "seat": "Kanchipuram, Tamil Nadu",
+      "tradition": "smarta",
+      "communities": ["gsb"],
+      "note": "Recorded by a minority of Smarta families, chiefly those settled in the south."
+    },
+    {
+      "id": "unaffiliated",
+      "name": "Not recorded / unaffiliated",
+      "tradition": "other",
+      "note": "Use when the family's matha is unknown, or when a family does not observe a matha affiliation."
+    }
+  ]
+}

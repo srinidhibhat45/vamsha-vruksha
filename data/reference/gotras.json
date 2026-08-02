@@ -1,0 +1,176 @@
+{
+  "_readme": "Gotras attested among Saraswat / Goud Saraswat / Chitrapur Saraswat families. Pravara lists follow the most commonly cited form; families should confirm pravara with their own math or purohit, as recensions differ. Additions welcome via the contribute form.",
+  "items": [
+    {
+      "id": "bharadwaja",
+      "name": "Bharadwaja",
+      "devanagari": "भारद्वाज",
+      "rishi": "Bharadwaja",
+      "pravara": ["Angirasa", "Barhaspatya", "Bharadwaja"],
+      "note": "One of the most widely held gotras across GSB and Chitrapur Saraswat families."
+    },
+    {
+      "id": "kaundinya",
+      "name": "Kaundinya",
+      "devanagari": "कौण्डिन्य",
+      "rishi": "Kundina",
+      "pravara": ["Vasishta", "Maitravaruna", "Kaundinya"]
+    },
+    {
+      "id": "kaushika",
+      "name": "Kaushika",
+      "devanagari": "कौशिक",
+      "rishi": "Vishwamitra",
+      "pravara": ["Vishwamitra", "Aghamarshana", "Kaushika"]
+    },
+    {
+      "id": "vatsa",
+      "name": "Vatsa",
+      "devanagari": "वत्स",
+      "rishi": "Vatsa",
+      "pravara": ["Bhargava", "Chyavana", "Apnavana", "Aurva", "Jamadagnya"]
+    },
+    {
+      "id": "kashyapa",
+      "name": "Kashyapa",
+      "devanagari": "काश्यप",
+      "rishi": "Kashyapa",
+      "pravara": ["Kashyapa", "Avatsara", "Naidhruva"]
+    },
+    {
+      "id": "atri",
+      "name": "Atri",
+      "devanagari": "अत्रि",
+      "rishi": "Atri",
+      "pravara": ["Atreya", "Archananasa", "Shyavashva"]
+    },
+    {
+      "id": "gautama",
+      "name": "Gautama",
+      "devanagari": "गौतम",
+      "rishi": "Gautama",
+      "pravara": ["Angirasa", "Ayasya", "Gautama"]
+    },
+    {
+      "id": "vasishta",
+      "name": "Vasishta",
+      "devanagari": "वसिष्ठ",
+      "rishi": "Vasishta",
+      "pravara": ["Vasishta", "Shaktya", "Parasharya"],
+      "note": "Some families observe the ekarsheya (single-rishi) pravara of Vasishta alone."
+    },
+    {
+      "id": "jamadagni",
+      "name": "Jamadagni",
+      "devanagari": "जमदग्नि",
+      "rishi": "Jamadagni",
+      "pravara": ["Bhargava", "Chyavana", "Apnavana", "Aurva", "Jamadagnya"]
+    },
+    {
+      "id": "vishwamitra",
+      "name": "Vishwamitra",
+      "devanagari": "विश्वामित्र",
+      "rishi": "Vishwamitra",
+      "pravara": ["Vaishwamitra", "Devarata", "Audala"]
+    },
+    {
+      "id": "angirasa",
+      "name": "Angirasa",
+      "devanagari": "आङ्गिरस",
+      "rishi": "Angiras",
+      "pravara": ["Angirasa", "Ambarisha", "Yauvanashva"]
+    },
+    {
+      "id": "shandilya",
+      "name": "Shandilya",
+      "devanagari": "शाण्डिल्य",
+      "rishi": "Shandilya",
+      "pravara": ["Shandilya", "Asita", "Devala"]
+    },
+    {
+      "id": "harita",
+      "name": "Harita",
+      "devanagari": "हारीत",
+      "rishi": "Harita",
+      "pravara": ["Angirasa", "Ambarisha", "Yauvanashva"]
+    },
+    {
+      "id": "bhargava",
+      "name": "Bhargava",
+      "devanagari": "भार्गव",
+      "rishi": "Bhrigu",
+      "pravara": ["Bhargava", "Vaitahavya", "Savedasa"]
+    },
+    {
+      "id": "garga",
+      "name": "Garga",
+      "devanagari": "गार्ग्य",
+      "rishi": "Garga",
+      "pravara": ["Angirasa", "Barhaspatya", "Bharadwaja", "Shainya", "Gargya"]
+    },
+    {
+      "id": "mudgala",
+      "name": "Mudgala",
+      "devanagari": "मौद्गल्य",
+      "rishi": "Mudgala",
+      "pravara": ["Angirasa", "Bharmyashva", "Maudgalya"]
+    },
+    {
+      "id": "kutsa",
+      "name": "Kutsa",
+      "devanagari": "कौत्स",
+      "rishi": "Kutsa",
+      "pravara": ["Angirasa", "Mandhatra", "Kautsa"]
+    },
+    {
+      "id": "srivatsa",
+      "name": "Srivatsa",
+      "devanagari": "श्रीवत्स",
+      "rishi": "Srivatsa",
+      "pravara": ["Bhargava", "Chyavana", "Apnavana", "Aurva", "Jamadagnya"]
+    },
+    {
+      "id": "dhananjaya",
+      "name": "Dhananjaya",
+      "devanagari": "धनञ्जय",
+      "rishi": "Dhananjaya",
+      "pravara": ["Vishwamitra", "Madhuchhandas", "Dhananjaya"]
+    },
+    {
+      "id": "parashara",
+      "name": "Parashara",
+      "devanagari": "पाराशर",
+      "rishi": "Parashara",
+      "pravara": ["Vasishta", "Shaktya", "Parasharya"]
+    },
+    {
+      "id": "naidhruva-kashyapa",
+      "name": "Naidhruva Kashyapa",
+      "devanagari": "नैध्रुव काश्यप",
+      "rishi": "Naidhruva",
+      "pravara": ["Kashyapa", "Avatsara", "Naidhruva"]
+    },
+    {
+      "id": "vadhula",
+      "name": "Vadhula",
+      "devanagari": "वाधूल",
+      "rishi": "Vadhula",
+      "pravara": ["Bhargava", "Vadhryashva", "Divodasa"],
+      "note": "Also recorded as Vatsya in some family registers."
+    },
+    {
+      "id": "shaunaka",
+      "name": "Shaunaka",
+      "devanagari": "शौनक",
+      "rishi": "Shunaka",
+      "pravara": ["Bhargava", "Shaunahotra", "Gartsamada"]
+    },
+    {
+      "id": "sankruti",
+      "name": "Sankruti",
+      "devanagari": "साङ्कृति",
+      "rishi": "Sankruti",
+      "pravara": ["Shandilya", "Asita", "Devala"]
+    }
+  ]
+}

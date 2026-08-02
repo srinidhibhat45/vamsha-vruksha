@@ -1,0 +1,64 @@
+{
+  "_readme": "Sub-communities within, and adjacent to, the Saraswat fold. Boundaries between these groups are historically fluid and locally contested; the archive records what a family says about itself rather than adjudicating.",
+  "items": [
+    {
+      "id": "gsb",
+      "name": "Goud Saraswat Brahmin",
+      "alsoKnownAs": ["GSB", "Gaud Saraswat", "Shenvi", "Konkani Brahmin"],
+      "region": "Goa, coastal Karnataka, Kerala, coastal Maharashtra",
+      "note": "The largest Konkani-speaking Saraswat group. Divided by matha affiliation into Vaishnava (Kashi Math, Partagali) and Smarta (Kavale) families."
+    },
+    {
+      "id": "chitrapur",
+      "name": "Chitrapur Saraswat",
+      "alsoKnownAs": ["Bhanap", "Shenvi of North Kanara", "Chitrapur Saraswat Brahmin"],
+      "region": "Uttara Kannada, Mumbai, worldwide",
+      "note": "A distinct Saraswat community centred on the Shri Chitrapur Math at Shirali. Surnames are usually village names — Nadkarni, Hattangadi, Kaikini, Padukone."
+    },
+    {
+      "id": "rajapur",
+      "name": "Rajapur Saraswat Brahmin",
+      "alsoKnownAs": ["RSB"],
+      "region": "Ratnagiri and Sindhudurg, Maharashtra",
+      "note": "Konkani-speaking Saraswats of the Rajapur region of the southern Maharashtra coast."
+    },
+    {
+      "id": "kudaldeshkar",
+      "name": "Kudaldeshkar Gaud Brahmin",
+      "region": "Kudal, Sindhudurg, Maharashtra",
+      "note": "A Gaud Brahmin community of the Kudal region, closely associated with the Saraswats."
+    },
+    {
+      "id": "bardeskar",
+      "name": "Bardeskar / Pednekar Saraswat",
+      "region": "Bardez and Pernem, Goa",
+      "note": "Saraswat families identified by the Goan taluka of origin."
+    },
+    {
+      "id": "kashmiri-saraswat",
+      "name": "Kashmiri Saraswat",
+      "alsoKnownAs": ["Kashmiri Pandit"],
+      "region": "Kashmir valley and the Indian diaspora",
+      "note": "The northern Saraswat branch, associated with the original Sarasvati river homeland."
+    },
+    {
+      "id": "punjabi-saraswat",
+      "name": "Punjabi Saraswat",
+      "alsoKnownAs": ["Sarsut Brahmin"],
+      "region": "Punjab, Haryana, Himachal Pradesh",
+      "note": "Saraswat Brahmins of the north-west, named for the Sarasvati river."
+    },
+    {
+      "id": "daivadnya",
+      "name": "Daivadnya",
+      "alsoKnownAs": ["Daivajna", "Shet", "Konkani Sonar"],
+      "region": "Goa and coastal Karnataka",
+      "note": "A Konkani-speaking community, closely tied to the Saraswats socially and linguistically but distinct in origin and tradition. Included because families intermarry and share villages, kuladevatas and records."
+    },
+    {
+      "id": "other",
+      "name": "Other / not recorded",
+      "note": "Use where the sub-community is unknown or does not fit the categories above."
+    }
+  ]
+}

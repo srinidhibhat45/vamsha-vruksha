@@ -1,0 +1,4842 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Named for the village of Kaikini near Bhatkal; teachers and lawyers for four generations.",
+  "people": [
+    {
+      "id": "kaikini-chitrapur-0831",
+      "name": {
+        "given": "Dattatreya",
+        "surname": "Kaikini",
+        "display": "Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1812,
+          "qualifier": "circa",
+          "raw": "c. 1812"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0832",
+          "status": "widowed",
+          "date": {
+            "year": 1834,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "bhatkal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0832",
+      "name": {
+        "given": "Godavaribai",
+        "surname": "Gulvady",
+        "display": "Godavaribai Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1818,
+          "qualifier": "circa",
+          "raw": "c. 1818"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kaikini household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0831",
+          "status": "married",
+          "date": {
+            "year": 1834,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0833",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Kashibai Dattatreya Kaikini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1836,
+          "qualifier": "circa",
+          "raw": "c. 1836"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1893,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kaikini household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832",
+      "bio": "Kashibai was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years.",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0834",
+          "status": "married",
+          "date": {
+            "year": 1849,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0834",
+      "name": {
+        "given": "Laxman",
+        "surname": "Karnad",
+        "display": "Laxman Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1827,
+          "qualifier": "circa",
+          "raw": "c. 1827"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1907,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "epithet": "taught three generations of the family",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0833",
+          "status": "married",
+          "date": {
+            "year": 1849,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0835",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Saraswatibai Laxman Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1851,
+          "qualifier": "circa",
+          "raw": "c. 1851"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1931,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833"
+    },
+    {
+      "id": "kaikini-chitrapur-0836",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Tarabai Laxman Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833"
+    },
+    {
+      "id": "kaikini-chitrapur-0837",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Vithabai Laxman Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kaikini household at shirali."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833"
+    },
+    {
+      "id": "kaikini-chitrapur-0838",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Shantaram Laxman Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1859,
+          "qualifier": "circa",
+          "raw": "c. 1859"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1913,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0839",
+          "status": "widowed",
+          "date": {
+            "year": 1877,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0839",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Mavinkurve",
+        "display": "Indirabai Mavinkurve"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1855,
+          "qualifier": "circa",
+          "raw": "c. 1855"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1895,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "epithet": "temple mahajan",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0838",
+          "status": "married",
+          "date": {
+            "year": 1877,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0840",
+      "name": {
+        "given": "Vithal",
+        "surname": "Karnad",
+        "patronymic": "Shantaram",
+        "display": "Vithal Shantaram Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa",
+          "raw": "c. 1878"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1882,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kaikini-chitrapur-0838",
+      "motherId": "kaikini-chitrapur-0839"
+    },
+    {
+      "id": "kaikini-chitrapur-0841",
+      "name": {
+        "given": "Vithal",
+        "surname": "Karnad",
+        "patronymic": "Shantaram",
+        "display": "Vithal Shantaram Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1882,
+          "qualifier": "exact",
+          "raw": "1882"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1964,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0838",
+      "motherId": "kaikini-chitrapur-0839",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0842",
+          "status": "widowed",
+          "date": {
+            "year": 1904,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0842",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Karnad",
+        "display": "Padmavatibai Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1888,
+          "qualifier": "exact",
+          "raw": "1888"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1944,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kaikini household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0841",
+          "status": "married",
+          "date": {
+            "year": 1904,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0843",
+      "name": {
+        "given": "Umabai",
+        "surname": "Karnad",
+        "patronymic": "Vithal",
+        "display": "Umabai Vithal Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bhatkal"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "kaikini-chitrapur-0841",
+      "motherId": "kaikini-chitrapur-0842",
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0844",
+          "status": "widowed",
+          "date": {
+            "year": 1928,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0844",
+      "name": {
+        "given": "Uday",
+        "surname": "Talgeri",
+        "display": "Uday Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer",
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1922
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0843",
+          "status": "married",
+          "date": {
+            "year": 1928,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0845",
+      "name": {
+        "given": "Rekha",
+        "surname": "Talgeri",
+        "patronymic": "Uday",
+        "display": "Rekha Uday Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1931,
+          "qualifier": "exact",
+          "raw": "1931"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2017,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1946
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0844",
+      "motherId": "kaikini-chitrapur-0843"
+    },
+    {
+      "id": "kaikini-chitrapur-0846",
+      "name": {
+        "given": "Uday",
+        "surname": "Talgeri",
+        "patronymic": "Uday",
+        "display": "Uday Uday Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0844",
+      "motherId": "kaikini-chitrapur-0843",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0847",
+          "status": "married",
+          "date": {
+            "year": 1960,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0847",
+      "name": {
+        "given": "Rekha",
+        "surname": "Koppikar",
+        "display": "Rekha Koppikar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "harita",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0846",
+          "status": "married",
+          "date": {
+            "year": 1960,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0848",
+      "name": {
+        "given": "Sanjeev",
+        "surname": "Talgeri",
+        "patronymic": "Uday",
+        "display": "Sanjeev Uday Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "kaikini-chitrapur-0846",
+      "motherId": "kaikini-chitrapur-0847",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0849",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0849",
+      "name": {
+        "given": "Lata",
+        "surname": "Kaikini",
+        "display": "Lata Kaikini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0848",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0850",
+      "name": {
+        "given": "Atharva",
+        "surname": "Talgeri",
+        "patronymic": "Sanjeev",
+        "display": "Atharva Sanjeev Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "kaikini-chitrapur-0848",
+      "motherId": "kaikini-chitrapur-0849"
+    },
+    {
+      "id": "kaikini-chitrapur-0851",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Talgeri",
+        "patronymic": "Uday",
+        "display": "Dinkar Uday Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "kaikini-chitrapur-0846",
+      "motherId": "kaikini-chitrapur-0847"
+    },
+    {
+      "id": "kaikini-chitrapur-0852",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Talgeri",
+        "patronymic": "Uday",
+        "display": "Narmadabai Uday Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "kaikini-chitrapur-0844",
+      "motherId": "kaikini-chitrapur-0843",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0853",
+          "status": "married",
+          "date": {
+            "year": 1953,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0853",
+      "name": {
+        "given": "Mukund",
+        "surname": "Savur",
+        "display": "Mukund Savur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0852",
+          "status": "married",
+          "date": {
+            "year": 1953,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0854",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Savur",
+        "patronymic": "Mukund",
+        "display": "Shailaja Mukund Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "kaikini-chitrapur-0853",
+      "motherId": "kaikini-chitrapur-0852"
+    },
+    {
+      "id": "kaikini-chitrapur-0855",
+      "name": {
+        "given": "Shobha",
+        "surname": "Savur",
+        "patronymic": "Mukund",
+        "display": "Shobha Mukund Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "kaikini-chitrapur-0853",
+      "motherId": "kaikini-chitrapur-0852"
+    },
+    {
+      "id": "kaikini-chitrapur-0856",
+      "name": {
+        "given": "Keshav",
+        "surname": "Savur",
+        "patronymic": "Mukund",
+        "display": "Keshav Mukund Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "kaikini-chitrapur-0853",
+      "motherId": "kaikini-chitrapur-0852"
+    },
+    {
+      "id": "kaikini-chitrapur-0857",
+      "name": {
+        "given": "Amit",
+        "surname": "Savur",
+        "patronymic": "Mukund",
+        "display": "Amit Mukund Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1965
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0853",
+      "motherId": "kaikini-chitrapur-0852",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0858",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bhatkal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0858",
+      "name": {
+        "given": "Sudha",
+        "surname": "Sirur",
+        "display": "Sudha Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "atri",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "kushasthali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0857",
+          "status": "married",
+          "date": {
+            "year": 1991,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0859",
+      "name": {
+        "given": "Nikhil",
+        "surname": "Savur",
+        "patronymic": "Amit",
+        "display": "Nikhil Amit Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "kaikini-chitrapur-0857",
+      "motherId": "kaikini-chitrapur-0858"
+    },
+    {
+      "id": "kaikini-chitrapur-0860",
+      "name": {
+        "given": "Avinash",
+        "surname": "Savur",
+        "patronymic": "Amit",
+        "display": "Avinash Amit Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0857",
+      "motherId": "kaikini-chitrapur-0858"
+    },
+    {
+      "id": "kaikini-chitrapur-0861",
+      "name": {
+        "given": "Ira",
+        "surname": "Savur",
+        "patronymic": "Amit",
+        "display": "Ira Amit Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "kaikini-chitrapur-0857",
+      "motherId": "kaikini-chitrapur-0858"
+    },
+    {
+      "id": "kaikini-chitrapur-0862",
+      "name": {
+        "given": "Karthik",
+        "surname": "Savur",
+        "patronymic": "Mukund",
+        "display": "Karthik Mukund Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "kaikini-chitrapur-0853",
+      "motherId": "kaikini-chitrapur-0852",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0863",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0863",
+      "name": {
+        "given": "Kunda",
+        "surname": "Koppikar",
+        "display": "Kunda Koppikar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1974
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0862",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0864",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Savur",
+        "patronymic": "Karthik",
+        "display": "Chinmay Karthik Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact",
+          "raw": "1997"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "kaikini-chitrapur-0862",
+      "motherId": "kaikini-chitrapur-0863"
+    },
+    {
+      "id": "kaikini-chitrapur-0865",
+      "name": {
+        "given": "Ira",
+        "surname": "Savur",
+        "patronymic": "Karthik",
+        "display": "Ira Karthik Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact",
+          "raw": "2001"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "kaikini-chitrapur-0862",
+      "motherId": "kaikini-chitrapur-0863"
+    },
+    {
+      "id": "kaikini-chitrapur-0866",
+      "name": {
+        "given": "Sameer",
+        "surname": "Savur",
+        "patronymic": "Karthik",
+        "display": "Sameer Karthik Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact",
+          "raw": "2005"
+        },
+        "place": {
+          "id": "seattle"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "kaikini-chitrapur-0862",
+      "motherId": "kaikini-chitrapur-0863"
+    },
+    {
+      "id": "kaikini-chitrapur-0867",
+      "name": {
+        "given": "Vinayak",
+        "surname": "Karnad",
+        "patronymic": "Vithal",
+        "display": "Vinayak Vithal Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "kaikini-chitrapur-0841",
+      "motherId": "kaikini-chitrapur-0842",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0868",
+          "status": "married",
+          "date": {
+            "year": 1932,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0868",
+      "name": {
+        "given": "Meera",
+        "surname": "Trasi",
+        "display": "Meera Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1918,
+          "qualifier": "exact",
+          "raw": "1918"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0867",
+          "status": "married",
+          "date": {
+            "year": 1932,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0869",
+      "name": {
+        "given": "Indira",
+        "surname": "Karnad",
+        "patronymic": "Vinayak",
+        "display": "Indira Vinayak Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1933,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kaikini-chitrapur-0867",
+      "motherId": "kaikini-chitrapur-0868"
+    },
+    {
+      "id": "kaikini-chitrapur-0870",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Karnad",
+        "patronymic": "Vinayak",
+        "display": "Nirmala Vinayak Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "kaikini-chitrapur-0867",
+      "motherId": "kaikini-chitrapur-0868",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years.",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0871",
+          "status": "widowed",
+          "date": {
+            "year": 1951,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0871",
+      "name": {
+        "given": "Bhaskar",
+        "surname": "Savur",
+        "display": "Bhaskar Savur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0870",
+          "status": "married",
+          "date": {
+            "year": 1951,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0872",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Savur",
+        "patronymic": "Bhaskar",
+        "display": "Shailaja Bhaskar Savur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1967
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0871",
+      "motherId": "kaikini-chitrapur-0870"
+    },
+    {
+      "id": "kaikini-chitrapur-0873",
+      "name": {
+        "given": "Sudhir",
+        "surname": "Savur",
+        "patronymic": "Bhaskar",
+        "display": "Sudhir Bhaskar Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "journalist",
+        "Konkani writer"
+      ],
+      "fatherId": "kaikini-chitrapur-0871",
+      "motherId": "kaikini-chitrapur-0870",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0874",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0874",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Gulvady",
+        "display": "Tarabai Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0873",
+          "status": "married",
+          "date": {
+            "year": 1984,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0875",
+      "name": {
+        "given": "Yash",
+        "surname": "Savur",
+        "patronymic": "Sudhir",
+        "display": "Yash Sudhir Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1986
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0873",
+      "motherId": "kaikini-chitrapur-0874"
+    },
+    {
+      "id": "kaikini-chitrapur-0876",
+      "name": {
+        "given": "Mohan",
+        "surname": "Savur",
+        "patronymic": "Bhaskar",
+        "display": "Mohan Bhaskar Savur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2017,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "fatherId": "kaikini-chitrapur-0871",
+      "motherId": "kaikini-chitrapur-0870",
+      "spouses": [
+        {
+          "personId": "nadkarni-hattangadi-0342",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0877",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Karnad",
+        "patronymic": "Vinayak",
+        "display": "Jyoti Vinayak Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1952
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0867",
+      "motherId": "kaikini-chitrapur-0868",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0878",
+          "status": "widowed",
+          "date": {
+            "year": 1954,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0878",
+      "name": {
+        "given": "Milind",
+        "surname": "Gulvady",
+        "display": "Milind Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1929,
+          "qualifier": "exact",
+          "raw": "1929"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1944
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0877",
+          "status": "married",
+          "date": {
+            "year": 1954,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0879",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Gulvady",
+        "patronymic": "Milind",
+        "display": "Vaishali Milind Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0878",
+      "motherId": "kaikini-chitrapur-0877",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0880",
+          "status": "widowed",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0880",
+      "name": {
+        "given": "Shridhar",
+        "surname": "Chandavarkar",
+        "display": "Shridhar Chandavarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1970
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0879",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0881",
+      "name": {
+        "given": "Ananya",
+        "surname": "Chandavarkar",
+        "patronymic": "Shridhar",
+        "display": "Ananya Shridhar Chandavarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1978
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0880",
+      "motherId": "kaikini-chitrapur-0879"
+    },
+    {
+      "id": "kaikini-chitrapur-0882",
+      "name": {
+        "given": "Neel",
+        "surname": "Chandavarkar",
+        "patronymic": "Shridhar",
+        "display": "Neel Shridhar Chandavarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "kaikini-chitrapur-0880",
+      "motherId": "kaikini-chitrapur-0879"
+    },
+    {
+      "id": "kaikini-chitrapur-0883",
+      "name": {
+        "given": "Shreyas",
+        "surname": "Chandavarkar",
+        "patronymic": "Shridhar",
+        "display": "Shreyas Shridhar Chandavarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1986
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0880",
+      "motherId": "kaikini-chitrapur-0879"
+    },
+    {
+      "id": "kaikini-chitrapur-0884",
+      "name": {
+        "given": "Kamala",
+        "surname": "Gulvady",
+        "patronymic": "Milind",
+        "display": "Kamala Milind Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "kaikini-chitrapur-0878",
+      "motherId": "kaikini-chitrapur-0877",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0885",
+          "status": "married",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bhatkal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0885",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Murdeshwar",
+        "display": "Mangesh Murdeshwar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0884",
+          "status": "married",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0886",
+      "name": {
+        "given": "Swati",
+        "surname": "Murdeshwar",
+        "patronymic": "Mangesh",
+        "display": "Swati Mangesh Murdeshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "ramnath",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "kaikini-chitrapur-0885",
+      "motherId": "kaikini-chitrapur-0884",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge."
+    },
+    {
+      "id": "kaikini-chitrapur-0887",
+      "name": {
+        "given": "Harish",
+        "surname": "Gulvady",
+        "patronymic": "Milind",
+        "display": "Harish Milind Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "kaikini-chitrapur-0878",
+      "motherId": "kaikini-chitrapur-0877",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0888",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0888",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Talgeri",
+        "display": "Sulochana Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1966
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0887",
+          "status": "married",
+          "date": {
+            "year": 1987,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0889",
+      "name": {
+        "given": "Sneha",
+        "surname": "Gulvady",
+        "patronymic": "Harish",
+        "display": "Sneha Harish Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "kaikini-chitrapur-0887",
+      "motherId": "kaikini-chitrapur-0888"
+    },
+    {
+      "id": "kaikini-chitrapur-0890",
+      "name": {
+        "given": "Nandini",
+        "surname": "Gulvady",
+        "patronymic": "Harish",
+        "display": "Nandini Harish Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1993
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0887",
+      "motherId": "kaikini-chitrapur-0888"
+    },
+    {
+      "id": "kaikini-chitrapur-0891",
+      "name": {
+        "given": "Gopal",
+        "surname": "Gulvady",
+        "patronymic": "Milind",
+        "display": "Gopal Milind Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0878",
+      "motherId": "kaikini-chitrapur-0877",
+      "epithet": "first of the line at Kumta"
+    },
+    {
+      "id": "kaikini-chitrapur-0892",
+      "name": {
+        "given": "Soham",
+        "surname": "Gulvady",
+        "patronymic": "Milind",
+        "display": "Soham Milind Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1980
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0878",
+      "motherId": "kaikini-chitrapur-0877"
+    },
+    {
+      "id": "kaikini-chitrapur-0893",
+      "name": {
+        "given": "Girish",
+        "surname": "Karnad",
+        "patronymic": "Vithal",
+        "display": "Girish Vithal Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "kaikini-chitrapur-0841",
+      "motherId": "kaikini-chitrapur-0842",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0894",
+          "status": "married",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kumta"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0894",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Bijur",
+        "display": "Anuradha Bijur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1916,
+          "qualifier": "exact",
+          "raw": "1916"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "harita",
+      "math": "partagali-math",
+      "kuladevata": "mahalasa",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bhatkal"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1916
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0893",
+          "status": "married",
+          "date": {
+            "year": 1936,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0895",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Karnad",
+        "patronymic": "Girish",
+        "display": "Shrinivas Girish Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "kaikini-chitrapur-0893",
+      "motherId": "kaikini-chitrapur-0894"
+    },
+    {
+      "id": "kaikini-chitrapur-0896",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Karnad",
+        "patronymic": "Girish",
+        "display": "Padmavatibai Girish Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1942,
+          "qualifier": "exact",
+          "raw": "1942"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1942
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0893",
+      "motherId": "kaikini-chitrapur-0894",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0897",
+          "status": "widowed",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bhatkal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0897",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Padukone",
+        "display": "Chandrakant Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1941
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0896",
+          "status": "married",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0898",
+      "name": {
+        "given": "Narayan",
+        "surname": "Padukone",
+        "patronymic": "Chandrakant",
+        "display": "Narayan Chandrakant Padukone"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist",
+        "chartered accountant"
+      ],
+      "fatherId": "kaikini-chitrapur-0897",
+      "motherId": "kaikini-chitrapur-0896"
+    },
+    {
+      "id": "kaikini-chitrapur-0899",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Padukone",
+        "patronymic": "Chandrakant",
+        "display": "Chinmay Chandrakant Padukone"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "kaikini-chitrapur-0897",
+      "motherId": "kaikini-chitrapur-0896",
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0900",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "bhatkal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0900",
+      "name": {
+        "given": "Vaidehi",
+        "surname": "Hattangadi",
+        "display": "Vaidehi Hattangadi"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "pune"
+        },
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "spouses": [
+        {
+          "personId": "kaikini-chitrapur-0899",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kaikini-chitrapur-0901",
+      "name": {
+        "given": "Dinesh",
+        "surname": "Padukone",
+        "patronymic": "Chinmay",
+        "display": "Dinesh Chinmay Padukone"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0899",
+      "motherId": "kaikini-chitrapur-0900"
+    },
+    {
+      "id": "kaikini-chitrapur-0902",
+      "name": {
+        "given": "Varun",
+        "surname": "Padukone",
+        "patronymic": "Chinmay",
+        "display": "Varun Chinmay Padukone"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "fatherId": "kaikini-chitrapur-0899",
+      "motherId": "kaikini-chitrapur-0900"
+    },
+    {
+      "id": "kaikini-chitrapur-0903",
+      "name": {
+        "given": "Ira",
+        "surname": "Padukone",
+        "patronymic": "Chinmay",
+        "display": "Ira Chinmay Padukone"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact",
+          "raw": "2003"
+        },
+        "place": {
+          "id": "seattle"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "kaikini-chitrapur-0899",
+      "motherId": "kaikini-chitrapur-0900"
+    },
+    {
+      "id": "kaikini-chitrapur-0904",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Padukone",
+        "patronymic": "Chandrakant",
+        "display": "Jyoti Chandrakant Padukone"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1983
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0897",
+      "motherId": "kaikini-chitrapur-0896"
+    },
+    {
+      "id": "kaikini-chitrapur-0905",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Karnad",
+        "patronymic": "Girish",
+        "display": "Vasanti Girish Karnad"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "railway clerk",
+        "surveyor"
+      ],
+      "fatherId": "kaikini-chitrapur-0893",
+      "motherId": "kaikini-chitrapur-0894"
+    },
+    {
+      "id": "kaikini-chitrapur-0906",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Karnad",
+        "patronymic": "Vithal",
+        "display": "Chandrakant Vithal Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1915,
+          "qualifier": "exact",
+          "raw": "1915"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bhatkal"
+        },
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1930
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0841",
+      "motherId": "kaikini-chitrapur-0842"
+    },
+    {
+      "id": "kaikini-chitrapur-0907",
+      "name": {
+        "given": "Smita",
+        "surname": "Karnad",
+        "patronymic": "Vithal",
+        "display": "Smita Vithal Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1918,
+          "qualifier": "exact",
+          "raw": "1918"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kumta"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist",
+        "surveyor"
+      ],
+      "fatherId": "kaikini-chitrapur-0841",
+      "motherId": "kaikini-chitrapur-0842"
+    },
+    {
+      "id": "kaikini-chitrapur-0908",
+      "name": {
+        "given": "Ramchandra",
+        "surname": "Karnad",
+        "patronymic": "Shantaram",
+        "display": "Ramchandra Shantaram Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1886,
+          "qualifier": "exact",
+          "raw": "1886"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1929,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kaikini household at shirali."
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0838",
+      "motherId": "kaikini-chitrapur-0839"
+    },
+    {
+      "id": "kaikini-chitrapur-0909",
+      "name": {
+        "given": "Vishnu",
+        "surname": "Karnad",
+        "patronymic": "Shantaram",
+        "display": "Vishnu Shantaram Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1889,
+          "qualifier": "exact",
+          "raw": "1889"
+        },
+        "place": {
+          "id": "kumta"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kumta"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1892,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kaikini-chitrapur-0838",
+      "motherId": "kaikini-chitrapur-0839"
+    },
+    {
+      "id": "kaikini-chitrapur-0910",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Shantaram Laxman Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa",
+          "raw": "c. 1863"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1918,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "kaikini-chitrapur-0911",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Karnad",
+        "patronymic": "Laxman",
+        "display": "Indirabai Laxman Karnad"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1865,
+          "qualifier": "circa",
+          "raw": "c. 1865"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1941,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "fatherId": "kaikini-chitrapur-0834",
+      "motherId": "kaikini-chitrapur-0833"
+    },
+    {
+      "id": "kaikini-chitrapur-0912",
+      "name": {
+        "given": "Laxman",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Laxman Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1839,
+          "qualifier": "circa",
+          "raw": "c. 1839"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-0913",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Vishwanath Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1841,
+          "qualifier": "circa",
+          "raw": "c. 1841"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1912,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-0914",
+      "name": {
+        "given": "Mukund",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Mukund Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1915,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-0915",
+      "name": {
+        "given": "Sunderabai",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Sunderabai Dattatreya Kaikini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1846,
+          "qualifier": "circa",
+          "raw": "c. 1846"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-0916",
+      "name": {
+        "given": "Vishnu",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Vishnu Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1849,
+          "qualifier": "circa",
+          "raw": "c. 1849"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-0917",
+      "name": {
+        "given": "Achyut",
+        "surname": "Kaikini",
+        "patronymic": "Dattatreya",
+        "display": "Achyut Dattatreya Kaikini"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1853,
+          "qualifier": "circa",
+          "raw": "c. 1853"
+        },
+        "place": {
+          "id": "bhatkal"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "bhatkal"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0831",
+      "motherId": "kaikini-chitrapur-0832"
+    },
+    {
+      "id": "kaikini-chitrapur-1522",
+      "name": {
+        "given": "Shruti",
+        "surname": "Savur",
+        "patronymic": "Mohan",
+        "display": "Shruti Mohan Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "seattle"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker",
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1997
+        }
+      ],
+      "fatherId": "kaikini-chitrapur-0876",
+      "motherId": "nadkarni-hattangadi-0342"
+    },
+    {
+      "id": "kaikini-chitrapur-1523",
+      "name": {
+        "given": "Ananya",
+        "surname": "Savur",
+        "patronymic": "Mohan",
+        "display": "Ananya Mohan Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "kaikini-chitrapur-0876",
+      "motherId": "nadkarni-hattangadi-0342"
+    },
+    {
+      "id": "kaikini-chitrapur-1524",
+      "name": {
+        "given": "Advait",
+        "surname": "Savur",
+        "patronymic": "Mohan",
+        "display": "Advait Mohan Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1989,
+          "qualifier": "exact",
+          "raw": "1989"
+        },
+        "place": {
+          "id": "pune"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "pune"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "kaikini-chitrapur-0876",
+      "motherId": "nadkarni-hattangadi-0342"
+    }
+  ]
+}

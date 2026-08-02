@@ -1,0 +1,4166 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "A Chitrapur family named for its ancestral village, long settled around Kundapur.",
+  "people": [
+    {
+      "id": "padukone-chitrapur-1076",
+      "name": {
+        "given": "Laxman",
+        "surname": "Padukone",
+        "display": "Laxman Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1824,
+          "qualifier": "circa",
+          "raw": "c. 1824"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1901,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1077",
+          "status": "widowed",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1077",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Gulvady",
+        "display": "Shantabai Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1824,
+          "qualifier": "circa",
+          "raw": "c. 1824"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1896,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1076",
+          "status": "married",
+          "date": {
+            "year": 1846,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1078",
+      "name": {
+        "given": "Ramkrishna",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Ramkrishna Laxman Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1849,
+          "qualifier": "circa",
+          "raw": "c. 1849"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1079",
+          "status": "widowed",
+          "date": {
+            "year": 1872,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1079",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Bijur",
+        "display": "Gangabai Bijur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Padukone household at shirali."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1078",
+          "status": "married",
+          "date": {
+            "year": 1872,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1080",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Padukone",
+        "patronymic": "Ramkrishna",
+        "display": "Tarabai Ramkrishna Padukone"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1874,
+          "qualifier": "circa",
+          "raw": "c. 1874"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1943,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Padukone household at shirali."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1078",
+      "motherId": "padukone-chitrapur-1079"
+    },
+    {
+      "id": "padukone-chitrapur-1081",
+      "name": {
+        "given": "Raghunath",
+        "surname": "Padukone",
+        "patronymic": "Ramkrishna",
+        "display": "Raghunath Ramkrishna Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa",
+          "raw": "c. 1878"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1951,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1078",
+      "motherId": "padukone-chitrapur-1079"
+    },
+    {
+      "id": "padukone-chitrapur-1082",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Padukone",
+        "patronymic": "Ramkrishna",
+        "display": "Padmavatibai Ramkrishna Padukone"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1881,
+          "qualifier": "exact",
+          "raw": "1881"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Padukone household at shirali."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1078",
+      "motherId": "padukone-chitrapur-1079",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1083",
+          "status": "widowed",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        },
+        {
+          "personId": "padukone-chitrapur-1084",
+          "status": "married",
+          "date": {
+            "year": 1926,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1083",
+      "name": {
+        "given": "Manjunath",
+        "surname": "Nadkarni",
+        "display": "Manjunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1870,
+          "qualifier": "circa",
+          "raw": "c. 1870"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1925,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1082",
+          "status": "married",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1084",
+      "name": {
+        "given": "Shashank",
+        "surname": "Karnad",
+        "display": "Shashank Karnad"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1908,
+          "qualifier": "exact",
+          "raw": "1908"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "loutolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1082",
+          "status": "married",
+          "date": {
+            "year": 1926,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1085",
+      "name": {
+        "given": "Sadanand",
+        "surname": "Nadkarni",
+        "patronymic": "Manjunath",
+        "display": "Sadanand Manjunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1900,
+          "qualifier": "exact",
+          "raw": "1900"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "haldipur"
+        },
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1083",
+      "motherId": "padukone-chitrapur-1082"
+    },
+    {
+      "id": "padukone-chitrapur-1086",
+      "name": {
+        "given": "Rajaram",
+        "surname": "Nadkarni",
+        "patronymic": "Manjunath",
+        "display": "Rajaram Manjunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "padukone-chitrapur-1083",
+      "motherId": "padukone-chitrapur-1082",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1087",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1087",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Gulvady",
+        "display": "Shantabai Gulvady"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "kushasthali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1920
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1086",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1088",
+      "name": {
+        "given": "Deepak",
+        "surname": "Nadkarni",
+        "patronymic": "Rajaram",
+        "display": "Deepak Rajaram Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "haldipur"
+        },
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "padukone-chitrapur-1086",
+      "motherId": "padukone-chitrapur-1087"
+    },
+    {
+      "id": "padukone-chitrapur-1089",
+      "name": {
+        "given": "Asha",
+        "surname": "Nadkarni",
+        "patronymic": "Rajaram",
+        "display": "Asha Rajaram Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1932,
+          "qualifier": "exact",
+          "raw": "1932"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1086",
+      "motherId": "padukone-chitrapur-1087",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1462",
+          "status": "married",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          }
+        }
+      ],
+      "notes": "Married into another family recorded in this archive — the two lineages can be walked end to end from here."
+    },
+    {
+      "id": "padukone-chitrapur-1090",
+      "name": {
+        "given": "Sunil",
+        "surname": "Nadkarni",
+        "patronymic": "Rajaram",
+        "display": "Sunil Rajaram Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "padukone-chitrapur-1086",
+      "motherId": "padukone-chitrapur-1087",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1091",
+          "status": "widowed",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1091",
+      "name": {
+        "given": "Lata",
+        "surname": "Sirur",
+        "display": "Lata Sirur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "mudgala",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1090",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1092",
+      "name": {
+        "given": "Amit",
+        "surname": "Nadkarni",
+        "patronymic": "Sunil",
+        "display": "Amit Sunil Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1965
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1090",
+      "motherId": "padukone-chitrapur-1091",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1093",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1093",
+      "name": {
+        "given": "Shruti",
+        "surname": "Mavinkurve",
+        "display": "Shruti Mavinkurve"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "sydney"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1092",
+          "status": "married",
+          "date": {
+            "year": 1994,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1094",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Nadkarni",
+        "patronymic": "Amit",
+        "display": "Samruddhi Amit Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1995
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1092",
+      "motherId": "padukone-chitrapur-1093",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "padukone-chitrapur-1095",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Nadkarni",
+        "patronymic": "Sunil",
+        "display": "Vasanti Sunil Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "padukone-chitrapur-1090",
+      "motherId": "padukone-chitrapur-1091"
+    },
+    {
+      "id": "padukone-chitrapur-1096",
+      "name": {
+        "given": "Rohan",
+        "surname": "Nadkarni",
+        "patronymic": "Sunil",
+        "display": "Rohan Sunil Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "padukone-chitrapur-1090",
+      "motherId": "padukone-chitrapur-1091",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1097",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1097",
+      "name": {
+        "given": "Rekha",
+        "surname": "Nadkarni",
+        "display": "Rekha Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1977
+        }
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1096",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1098",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Nadkarni",
+        "patronymic": "Rohan",
+        "display": "Hrishikesh Rohan Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1996
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1096",
+      "motherId": "padukone-chitrapur-1097"
+    },
+    {
+      "id": "padukone-chitrapur-1099",
+      "name": {
+        "given": "Rucha",
+        "surname": "Nadkarni",
+        "patronymic": "Rohan",
+        "display": "Rucha Rohan Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "padukone-chitrapur-1096",
+      "motherId": "padukone-chitrapur-1097"
+    },
+    {
+      "id": "padukone-chitrapur-1100",
+      "name": {
+        "given": "Vidya",
+        "surname": "Nadkarni",
+        "patronymic": "Sunil",
+        "display": "Vidya Sunil Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1971
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1090",
+      "motherId": "padukone-chitrapur-1091",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1101",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1101",
+      "name": {
+        "given": "Sanjeev",
+        "surname": "Karnad",
+        "display": "Sanjeev Karnad"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1979
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1100",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1102",
+      "name": {
+        "given": "Anil",
+        "surname": "Karnad",
+        "patronymic": "Sanjeev",
+        "display": "Anil Sanjeev Karnad"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "padukone-chitrapur-1101",
+      "motherId": "padukone-chitrapur-1100",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "padukone-chitrapur-1103",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Nadkarni",
+        "patronymic": "Rajaram",
+        "display": "Vasanti Rajaram Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1952
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1086",
+      "motherId": "padukone-chitrapur-1087",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation."
+    },
+    {
+      "id": "padukone-chitrapur-1104",
+      "name": {
+        "given": "Vimala",
+        "surname": "Nadkarni",
+        "patronymic": "Rajaram",
+        "display": "Vimala Rajaram Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "padukone-chitrapur-1086",
+      "motherId": "padukone-chitrapur-1087",
+      "bio": "Vimala kept the family's accounts at Haldipur and is remembered for maintaining the household vahi in which most of the dates before 1979 in this branch are recorded."
+    },
+    {
+      "id": "padukone-chitrapur-1105",
+      "name": {
+        "given": "Prabhakar",
+        "surname": "Nadkarni",
+        "patronymic": "Manjunath",
+        "display": "Prabhakar Manjunath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1916,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "padukone-chitrapur-1083",
+      "motherId": "padukone-chitrapur-1082"
+    },
+    {
+      "id": "padukone-chitrapur-1106",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Nadkarni",
+        "patronymic": "Manjunath",
+        "display": "Gangabai Manjunath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "padukone-chitrapur-1083",
+      "motherId": "padukone-chitrapur-1082",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1107",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1107",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Nadkarni",
+        "display": "Vishwanath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1106",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1108",
+      "name": {
+        "given": "Meera",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Meera Vishwanath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1932,
+          "qualifier": "exact",
+          "raw": "1932"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1932
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106"
+    },
+    {
+      "id": "padukone-chitrapur-1109",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Chandrakant Vishwanath Nadkarni"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "haldipur"
+        },
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1110",
+          "status": "widowed",
+          "date": {
+            "year": 1956,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1110",
+      "name": {
+        "given": "Rohini",
+        "surname": "Heblekar",
+        "display": "Rohini Heblekar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer",
+        "surveyor"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1109",
+          "status": "married",
+          "date": {
+            "year": 1956,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1111",
+      "name": {
+        "given": "Anil",
+        "surname": "Nadkarni",
+        "patronymic": "Chandrakant",
+        "display": "Anil Chandrakant Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1959
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1109",
+      "motherId": "padukone-chitrapur-1110",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1112",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1112",
+      "name": {
+        "given": "Rohini",
+        "surname": "Karnad",
+        "display": "Rohini Karnad"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1111",
+          "status": "married",
+          "date": {
+            "year": 1985,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1113",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Nadkarni",
+        "patronymic": "Anil",
+        "display": "Samruddhi Anil Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "padukone-chitrapur-1111",
+      "motherId": "padukone-chitrapur-1112"
+    },
+    {
+      "id": "padukone-chitrapur-1114",
+      "name": {
+        "given": "Nandan",
+        "surname": "Nadkarni",
+        "patronymic": "Anil",
+        "display": "Nandan Anil Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "sydney"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "padukone-chitrapur-1111",
+      "motherId": "padukone-chitrapur-1112"
+    },
+    {
+      "id": "padukone-chitrapur-1115",
+      "name": {
+        "given": "Rahul",
+        "surname": "Nadkarni",
+        "patronymic": "Anil",
+        "display": "Rahul Anil Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1995
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1111",
+      "motherId": "padukone-chitrapur-1112",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "padukone-chitrapur-1116",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Nadkarni",
+        "patronymic": "Chandrakant",
+        "display": "Narmadabai Chandrakant Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1963
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1109",
+      "motherId": "padukone-chitrapur-1110"
+    },
+    {
+      "id": "padukone-chitrapur-1117",
+      "name": {
+        "given": "Smita",
+        "surname": "Nadkarni",
+        "patronymic": "Chandrakant",
+        "display": "Smita Chandrakant Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1966
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1109",
+      "motherId": "padukone-chitrapur-1110"
+    },
+    {
+      "id": "padukone-chitrapur-1118",
+      "name": {
+        "given": "Varun",
+        "surname": "Nadkarni",
+        "patronymic": "Chandrakant",
+        "display": "Varun Chandrakant Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "padukone-chitrapur-1109",
+      "motherId": "padukone-chitrapur-1110",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1119",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1119",
+      "name": {
+        "given": "Anjali",
+        "surname": "Gulvady",
+        "display": "Anjali Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1118",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1120",
+      "name": {
+        "given": "Omkar",
+        "surname": "Nadkarni",
+        "patronymic": "Varun",
+        "display": "Omkar Varun Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact",
+          "raw": "1996"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "padukone-chitrapur-1118",
+      "motherId": "padukone-chitrapur-1119"
+    },
+    {
+      "id": "padukone-chitrapur-1121",
+      "name": {
+        "given": "Rucha",
+        "surname": "Nadkarni",
+        "patronymic": "Varun",
+        "display": "Rucha Varun Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "padukone-chitrapur-1118",
+      "motherId": "padukone-chitrapur-1119",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "padukone-chitrapur-1122",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Nadkarni",
+        "patronymic": "Chandrakant",
+        "display": "Kaustubh Chandrakant Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1986
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1109",
+      "motherId": "padukone-chitrapur-1110",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1123",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1123",
+      "name": {
+        "given": "Nandini",
+        "surname": "Dhareshwar",
+        "display": "Nandini Dhareshwar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1122",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1124",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Nadkarni",
+        "patronymic": "Kaustubh",
+        "display": "Aarohi Kaustubh Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "sydney"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "padukone-chitrapur-1122",
+      "motherId": "padukone-chitrapur-1123"
+    },
+    {
+      "id": "padukone-chitrapur-1125",
+      "name": {
+        "given": "Anjali",
+        "surname": "Nadkarni",
+        "patronymic": "Kaustubh",
+        "display": "Anjali Kaustubh Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant",
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1122",
+      "motherId": "padukone-chitrapur-1123"
+    },
+    {
+      "id": "padukone-chitrapur-1126",
+      "name": {
+        "given": "Madhura",
+        "surname": "Nadkarni",
+        "patronymic": "Kaustubh",
+        "display": "Madhura Kaustubh Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact",
+          "raw": "2002"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1122",
+      "motherId": "padukone-chitrapur-1123",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "padukone-chitrapur-1127",
+      "name": {
+        "given": "Shanta",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Shanta Vishwanath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "haldipur"
+        },
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106"
+    },
+    {
+      "id": "padukone-chitrapur-1128",
+      "name": {
+        "given": "Rohini",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Rohini Vishwanath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1129",
+          "status": "widowed",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1129",
+      "name": {
+        "given": "Nandan",
+        "surname": "Savur",
+        "display": "Nandan Savur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1128",
+          "status": "married",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1130",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Savur",
+        "patronymic": "Nandan",
+        "display": "Vaishali Nandan Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "padukone-chitrapur-1129",
+      "motherId": "padukone-chitrapur-1128",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1131",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1131",
+      "name": {
+        "given": "Mahadev",
+        "surname": "Gulvady",
+        "display": "Mahadev Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1130",
+          "status": "married",
+          "date": {
+            "year": 1986,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1132",
+      "name": {
+        "given": "Vedant",
+        "surname": "Gulvady",
+        "patronymic": "Mahadev",
+        "display": "Vedant Mahadev Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2002
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1131",
+      "motherId": "padukone-chitrapur-1130"
+    },
+    {
+      "id": "padukone-chitrapur-1133",
+      "name": {
+        "given": "Prakash",
+        "surname": "Gulvady",
+        "patronymic": "Mahadev",
+        "display": "Prakash Mahadev Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1131",
+      "motherId": "padukone-chitrapur-1130"
+    },
+    {
+      "id": "padukone-chitrapur-1134",
+      "name": {
+        "given": "Harish",
+        "surname": "Savur",
+        "patronymic": "Nandan",
+        "display": "Harish Nandan Savur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1977
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1129",
+      "motherId": "padukone-chitrapur-1128",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1135",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "haldipur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1135",
+      "name": {
+        "given": "Shobha",
+        "surname": "Savur",
+        "display": "Shobha Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "bharadwaja",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1134",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1136",
+      "name": {
+        "given": "Prachi",
+        "surname": "Savur",
+        "patronymic": "Harish",
+        "display": "Prachi Harish Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "padukone-chitrapur-1134",
+      "motherId": "padukone-chitrapur-1135"
+    },
+    {
+      "id": "padukone-chitrapur-1137",
+      "name": {
+        "given": "Harish",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Harish Vishwanath Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1945,
+          "qualifier": "exact",
+          "raw": "1945"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1138",
+          "status": "married",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kundapur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1138",
+      "name": {
+        "given": "Nalini",
+        "surname": "Mavinkurve",
+        "display": "Nalini Mavinkurve"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vasishta",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1956
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1137",
+          "status": "married",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1139",
+      "name": {
+        "given": "Aniket",
+        "surname": "Nadkarni",
+        "patronymic": "Harish",
+        "display": "Aniket Harish Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "fatherId": "padukone-chitrapur-1137",
+      "motherId": "padukone-chitrapur-1138"
+    },
+    {
+      "id": "padukone-chitrapur-1140",
+      "name": {
+        "given": "Sneha",
+        "surname": "Nadkarni",
+        "patronymic": "Harish",
+        "display": "Sneha Harish Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "bengaluru"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "fatherId": "padukone-chitrapur-1137",
+      "motherId": "padukone-chitrapur-1138"
+    },
+    {
+      "id": "padukone-chitrapur-1141",
+      "name": {
+        "given": "Shashank",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Shashank Vishwanath Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "homoeopath"
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1142",
+          "status": "married",
+          "date": {
+            "year": 1970,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1142",
+      "name": {
+        "given": "Shanta",
+        "surname": "Heblekar",
+        "display": "Shanta Heblekar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "homoeopath"
+      ],
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1141",
+          "status": "married",
+          "date": {
+            "year": 1970,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "padukone-chitrapur-1143",
+      "name": {
+        "given": "Ramesh",
+        "surname": "Nadkarni",
+        "patronymic": "Shashank",
+        "display": "Ramesh Shashank Nadkarni"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1141",
+      "motherId": "padukone-chitrapur-1142"
+    },
+    {
+      "id": "padukone-chitrapur-1144",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Nadkarni",
+        "patronymic": "Shashank",
+        "display": "Nirmala Shashank Nadkarni"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "padukone-chitrapur-1141",
+      "motherId": "padukone-chitrapur-1142"
+    },
+    {
+      "id": "padukone-chitrapur-1145",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Nadkarni",
+        "patronymic": "Vishwanath",
+        "display": "Pushpa Vishwanath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2022,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1949
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1107",
+      "motherId": "padukone-chitrapur-1106"
+    },
+    {
+      "id": "padukone-chitrapur-1146",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Nadkarni",
+        "patronymic": "Manjunath",
+        "display": "Kashibai Manjunath Nadkarni"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1915,
+          "qualifier": "exact",
+          "raw": "1915"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "padukone-chitrapur-1083",
+      "motherId": "padukone-chitrapur-1082"
+    },
+    {
+      "id": "padukone-chitrapur-1147",
+      "name": {
+        "given": "Bhalchandra",
+        "surname": "Padukone",
+        "patronymic": "Ramkrishna",
+        "display": "Bhalchandra Ramkrishna Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "padukone-chitrapur-1078",
+      "motherId": "padukone-chitrapur-1079"
+    },
+    {
+      "id": "padukone-chitrapur-1148",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Padukone",
+        "patronymic": "Ramkrishna",
+        "display": "Parvatibai Ramkrishna Padukone"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1889,
+          "qualifier": "exact",
+          "raw": "1889"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1939,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "fatherId": "padukone-chitrapur-1078",
+      "motherId": "padukone-chitrapur-1079"
+    },
+    {
+      "id": "padukone-chitrapur-1149",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Kashibai Laxman Padukone"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1852,
+          "qualifier": "circa",
+          "raw": "c. 1852"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1921,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Padukone household at shirali."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077"
+    },
+    {
+      "id": "padukone-chitrapur-1150",
+      "name": {
+        "given": "Sitaram",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Sitaram Laxman Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1855,
+          "qualifier": "circa",
+          "raw": "c. 1855"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1903,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077"
+    },
+    {
+      "id": "padukone-chitrapur-1151",
+      "name": {
+        "given": "Shantaram",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Shantaram Laxman Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1857,
+          "qualifier": "circa",
+          "raw": "c. 1857"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1920,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Padukone household at shirali."
+        }
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "epithet": "first of the line at Kundapur"
+    },
+    {
+      "id": "padukone-chitrapur-1152",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Dinkar Laxman Padukone"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1859,
+          "qualifier": "circa",
+          "raw": "c. 1859"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1925,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077"
+    },
+    {
+      "id": "padukone-chitrapur-1153",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Padukone",
+        "patronymic": "Laxman",
+        "display": "Shantabai Laxman Padukone"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa",
+          "raw": "c. 1863"
+        },
+        "place": {
+          "id": "haldipur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "jamadagni",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "haldipur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "padukone-chitrapur-1076",
+      "motherId": "padukone-chitrapur-1077"
+    }
+  ]
+}

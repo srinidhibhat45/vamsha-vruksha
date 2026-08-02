@@ -1,0 +1,3275 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "From Chandavar near Honnavar; several generations in the law and in education.",
+  "people": [
+    {
+      "id": "chandavarkar-honnavar-1411",
+      "name": {
+        "given": "Vithal",
+        "surname": "Chandavarkar",
+        "display": "Vithal Chandavarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1836,
+          "qualifier": "circa",
+          "raw": "c. 1836"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaundinya",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1900,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1412",
+          "status": "married",
+          "date": {
+            "year": 1855,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1412",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Trasi",
+        "display": "Narmadabai Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1839,
+          "qualifier": "circa",
+          "raw": "c. 1839"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "mudgala",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1909,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1411",
+          "status": "married",
+          "date": {
+            "year": 1855,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1413",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Chandavarkar",
+        "patronymic": "Vithal",
+        "display": "Shantabai Vithal Chandavarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaundinya",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1925,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "chandavarkar-honnavar-1411",
+      "motherId": "chandavarkar-honnavar-1412",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1414",
+          "status": "widowed",
+          "date": {
+            "year": 1870,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1414",
+      "name": {
+        "given": "Hari",
+        "surname": "Murdeshwar",
+        "display": "Hari Murdeshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1413",
+          "status": "married",
+          "date": {
+            "year": 1870,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1415",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Ratnabai Hari Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1416",
+      "name": {
+        "given": "Mahadev",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Mahadev Hari Murdeshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1944,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1417",
+      "name": {
+        "given": "Kashinath",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Kashinath Hari Murdeshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa",
+          "raw": "c. 1875"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1925,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1418",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Anandibai Hari Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa",
+          "raw": "c. 1878"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1887,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1419",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Lakshmibai Hari Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1880,
+          "qualifier": "exact",
+          "raw": "1880"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1940,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1420",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Shrinivas Hari Murdeshwar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1883,
+          "qualifier": "exact",
+          "raw": "1883"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1943,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1421",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Sitabai Hari Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1953,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1422",
+          "status": "widowed",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "dharwad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1422",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Kallianpur",
+        "display": "Trimbak Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa",
+          "raw": "c. 1875"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1924,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1421",
+          "status": "married",
+          "date": {
+            "year": 1898,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1423",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Narmadabai Trimbak Kallianpur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1973,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1424",
+          "status": "widowed",
+          "date": {
+            "year": 1914,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1424",
+      "name": {
+        "given": "Yeshwant",
+        "surname": "Talgeri",
+        "display": "Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1893,
+          "qualifier": "exact",
+          "raw": "1893"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1969,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1423",
+          "status": "married",
+          "date": {
+            "year": 1914,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1425",
+      "name": {
+        "given": "Balkrishna",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Balkrishna Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423"
+    },
+    {
+      "id": "chandavarkar-honnavar-1426",
+      "name": {
+        "given": "Rajeev",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Rajeev Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1921
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1427",
+          "status": "married",
+          "date": {
+            "year": 1947,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1427",
+      "name": {
+        "given": "Sushila",
+        "surname": "Bijur",
+        "display": "Sushila Bijur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1931,
+          "qualifier": "exact",
+          "raw": "1931"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "kushasthali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1426",
+          "status": "married",
+          "date": {
+            "year": 1947,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1428",
+      "name": {
+        "given": "Shobha",
+        "surname": "Talgeri",
+        "patronymic": "Rajeev",
+        "display": "Shobha Rajeev Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "dharwad"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "fatherId": "chandavarkar-honnavar-1426",
+      "motherId": "chandavarkar-honnavar-1427"
+    },
+    {
+      "id": "chandavarkar-honnavar-1429",
+      "name": {
+        "given": "Sunil",
+        "surname": "Talgeri",
+        "patronymic": "Rajeev",
+        "display": "Sunil Rajeev Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1426",
+      "motherId": "chandavarkar-honnavar-1427",
+      "bio": "Sunil was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years.",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1430",
+          "status": "married",
+          "date": {
+            "year": 1978,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1430",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Kalbag",
+        "display": "Vasanti Kalbag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1963
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1429",
+          "status": "married",
+          "date": {
+            "year": 1978,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1431",
+      "name": {
+        "given": "Deepika",
+        "surname": "Talgeri",
+        "patronymic": "Sunil",
+        "display": "Deepika Sunil Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist",
+        "software engineer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1429",
+      "motherId": "chandavarkar-honnavar-1430",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "chandavarkar-honnavar-1432",
+      "name": {
+        "given": "Neel",
+        "surname": "Talgeri",
+        "patronymic": "Sunil",
+        "display": "Neel Sunil Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact",
+          "raw": "1984"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1429",
+      "motherId": "chandavarkar-honnavar-1430"
+    },
+    {
+      "id": "chandavarkar-honnavar-1433",
+      "name": {
+        "given": "Indira",
+        "surname": "Talgeri",
+        "patronymic": "Rajeev",
+        "display": "Indira Rajeev Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "homoeopath"
+      ],
+      "fatherId": "chandavarkar-honnavar-1426",
+      "motherId": "chandavarkar-honnavar-1427"
+    },
+    {
+      "id": "chandavarkar-honnavar-1434",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Talgeri",
+        "patronymic": "Rajeev",
+        "display": "Ambabai Rajeev Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1426",
+      "motherId": "chandavarkar-honnavar-1427"
+    },
+    {
+      "id": "chandavarkar-honnavar-1435",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Shrinivas Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423",
+      "epithet": "temple mahajan",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1436",
+          "status": "widowed",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1436",
+      "name": {
+        "given": "Rekha",
+        "surname": "Hattangadi",
+        "display": "Rekha Hattangadi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1926,
+          "qualifier": "exact",
+          "raw": "1926"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "gautama",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1926
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1435",
+          "status": "married",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1437",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Talgeri",
+        "patronymic": "Shrinivas",
+        "display": "Vasanti Shrinivas Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1435",
+      "motherId": "chandavarkar-honnavar-1436"
+    },
+    {
+      "id": "chandavarkar-honnavar-1438",
+      "name": {
+        "given": "Bhaskar",
+        "surname": "Talgeri",
+        "patronymic": "Shrinivas",
+        "display": "Bhaskar Shrinivas Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1435",
+      "motherId": "chandavarkar-honnavar-1436",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1439",
+          "status": "widowed",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1439",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Chandavarkar",
+        "display": "Narmadabai Chandavarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "epithet": "temple mahajan",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1438",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1440",
+      "name": {
+        "given": "Swati",
+        "surname": "Talgeri",
+        "patronymic": "Bhaskar",
+        "display": "Swati Bhaskar Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1978
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1438",
+      "motherId": "chandavarkar-honnavar-1439",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years."
+    },
+    {
+      "id": "chandavarkar-honnavar-1441",
+      "name": {
+        "given": "Meera",
+        "surname": "Talgeri",
+        "patronymic": "Shrinivas",
+        "display": "Meera Shrinivas Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1954
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1435",
+      "motherId": "chandavarkar-honnavar-1436",
+      "bio": "Meera was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "chandavarkar-honnavar-1442",
+      "name": {
+        "given": "Asha",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Asha Yeshwant Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1928
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423"
+    },
+    {
+      "id": "chandavarkar-honnavar-1443",
+      "name": {
+        "given": "Kamala",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Kamala Yeshwant Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1931,
+          "qualifier": "exact",
+          "raw": "1931"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423"
+    },
+    {
+      "id": "chandavarkar-honnavar-1444",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Purushottam Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1948
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423",
+      "epithet": "first of the line at Dharwad"
+    },
+    {
+      "id": "chandavarkar-honnavar-1445",
+      "name": {
+        "given": "Nitin",
+        "surname": "Talgeri",
+        "patronymic": "Yeshwant",
+        "display": "Nitin Yeshwant Talgeri"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "chandavarkar-honnavar-1424",
+      "motherId": "chandavarkar-honnavar-1423",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1446",
+          "status": "married",
+          "date": {
+            "year": 1960,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "dharwad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1446",
+      "name": {
+        "given": "Sushila",
+        "surname": "Bijur",
+        "display": "Sushila Bijur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "parashara",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1959
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1445",
+          "status": "married",
+          "date": {
+            "year": 1960,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1447",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Talgeri",
+        "patronymic": "Nitin",
+        "display": "Sitabai Nitin Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "fatherId": "chandavarkar-honnavar-1445",
+      "motherId": "chandavarkar-honnavar-1446"
+    },
+    {
+      "id": "chandavarkar-honnavar-1448",
+      "name": {
+        "given": "Neel",
+        "surname": "Talgeri",
+        "patronymic": "Nitin",
+        "display": "Neel Nitin Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1981
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1445",
+      "motherId": "chandavarkar-honnavar-1446"
+    },
+    {
+      "id": "chandavarkar-honnavar-1449",
+      "name": {
+        "given": "Aditya",
+        "surname": "Talgeri",
+        "patronymic": "Nitin",
+        "display": "Aditya Nitin Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer",
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1445",
+      "motherId": "chandavarkar-honnavar-1446",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1450",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "dharwad"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1450",
+      "name": {
+        "given": "Diya",
+        "surname": "Chandavarkar",
+        "display": "Diya Chandavarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1449",
+          "status": "married",
+          "date": {
+            "year": 1997,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1451",
+      "name": {
+        "given": "Gauri",
+        "surname": "Talgeri",
+        "patronymic": "Aditya",
+        "display": "Gauri Aditya Talgeri"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "boston"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "chandavarkar-honnavar-1449",
+      "motherId": "chandavarkar-honnavar-1450",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "chandavarkar-honnavar-1452",
+      "name": {
+        "given": "Rohan",
+        "surname": "Talgeri",
+        "patronymic": "Nitin",
+        "display": "Rohan Nitin Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "chandavarkar-honnavar-1445",
+      "motherId": "chandavarkar-honnavar-1446",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1453",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "honnavar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1453",
+      "name": {
+        "given": "Rucha",
+        "surname": "Kaikini",
+        "display": "Rucha Kaikini"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "mudgala",
+      "math": "chitrapur-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2001
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1452",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1454",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Talgeri",
+        "patronymic": "Rohan",
+        "display": "Chinmay Rohan Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact",
+          "raw": "2004"
+        },
+        "place": {
+          "id": "boston"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist",
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1452",
+      "motherId": "chandavarkar-honnavar-1453"
+    },
+    {
+      "id": "chandavarkar-honnavar-1455",
+      "name": {
+        "given": "Sarvesh",
+        "surname": "Talgeri",
+        "patronymic": "Rohan",
+        "display": "Sarvesh Rohan Talgeri"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "boston"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "chandavarkar-honnavar-1452",
+      "motherId": "chandavarkar-honnavar-1453"
+    },
+    {
+      "id": "chandavarkar-honnavar-1456",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Vithabai Trimbak Kallianpur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1903,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421"
+    },
+    {
+      "id": "chandavarkar-honnavar-1457",
+      "name": {
+        "given": "Sanjeev",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Sanjeev Trimbak Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421",
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1458",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1458",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Kallianpur",
+        "display": "Manjulabai Kallianpur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "chitrapur-math",
+      "kuladevata": "shantadurga",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "spouses": [
+        {
+          "personId": "chandavarkar-honnavar-1457",
+          "status": "married",
+          "date": {
+            "year": 1927,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1459",
+      "name": {
+        "given": "Suresh",
+        "surname": "Kallianpur",
+        "patronymic": "Sanjeev",
+        "display": "Suresh Sanjeev Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1943
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1457",
+      "motherId": "chandavarkar-honnavar-1458"
+    },
+    {
+      "id": "chandavarkar-honnavar-1460",
+      "name": {
+        "given": "Mohan",
+        "surname": "Kallianpur",
+        "patronymic": "Sanjeev",
+        "display": "Mohan Sanjeev Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "dharwad"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1940,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "chandavarkar-honnavar-1457",
+      "motherId": "chandavarkar-honnavar-1458"
+    },
+    {
+      "id": "chandavarkar-honnavar-1461",
+      "name": {
+        "given": "Malati",
+        "surname": "Kallianpur",
+        "patronymic": "Sanjeev",
+        "display": "Malati Sanjeev Kallianpur"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2020,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1949
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1457",
+      "motherId": "chandavarkar-honnavar-1458"
+    },
+    {
+      "id": "chandavarkar-honnavar-1462",
+      "name": {
+        "given": "Vasant",
+        "surname": "Kallianpur",
+        "patronymic": "Sanjeev",
+        "display": "Vasant Sanjeev Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "honnavar"
+        },
+        {
+          "id": "dharwad"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1457",
+      "motherId": "chandavarkar-honnavar-1458",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation.",
+      "spouses": [
+        {
+          "personId": "padukone-chitrapur-1089",
+          "status": "married",
+          "date": {
+            "year": 1961,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chandavarkar-honnavar-1463",
+      "name": {
+        "given": "Arun",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Arun Trimbak Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421"
+    },
+    {
+      "id": "chandavarkar-honnavar-1464",
+      "name": {
+        "given": "Jayant",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Jayant Trimbak Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1912,
+          "qualifier": "exact",
+          "raw": "1912"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421"
+    },
+    {
+      "id": "chandavarkar-honnavar-1465",
+      "name": {
+        "given": "Vithal",
+        "surname": "Kallianpur",
+        "patronymic": "Trimbak",
+        "display": "Vithal Trimbak Kallianpur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1914,
+          "qualifier": "exact",
+          "raw": "1914"
+        },
+        "place": {
+          "id": "dharwad"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "dharwad"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "chandavarkar-honnavar-1422",
+      "motherId": "chandavarkar-honnavar-1421"
+    },
+    {
+      "id": "chandavarkar-honnavar-1466",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Murdeshwar",
+        "patronymic": "Hari",
+        "display": "Tarabai Hari Murdeshwar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1887,
+          "qualifier": "exact",
+          "raw": "1887"
+        },
+        "place": {
+          "id": "honnavar"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        },
+        {
+          "id": "honnavar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1951,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1414",
+      "motherId": "chandavarkar-honnavar-1413"
+    },
+    {
+      "id": "chandavarkar-honnavar-1467",
+      "name": {
+        "given": "Sitaram",
+        "surname": "Chandavarkar",
+        "patronymic": "Vithal",
+        "display": "Sitaram Vithal Chandavarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1859,
+          "qualifier": "circa",
+          "raw": "c. 1859"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaundinya",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1919,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1411",
+      "motherId": "chandavarkar-honnavar-1412"
+    },
+    {
+      "id": "chandavarkar-honnavar-1468",
+      "name": {
+        "given": "Subraya",
+        "surname": "Chandavarkar",
+        "patronymic": "Vithal",
+        "display": "Subraya Vithal Chandavarkar"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa",
+          "raw": "c. 1863"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaundinya",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1912,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Chandavarkar household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "chandavarkar-honnavar-1411",
+      "motherId": "chandavarkar-honnavar-1412"
+    },
+    {
+      "id": "chandavarkar-honnavar-1528",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Kallianpur",
+        "patronymic": "Vasant",
+        "display": "Nirmala Vasant Kallianpur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "physician"
+      ],
+      "fatherId": "chandavarkar-honnavar-1462",
+      "motherId": "padukone-chitrapur-1089"
+    },
+    {
+      "id": "chandavarkar-honnavar-1529",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Kallianpur",
+        "patronymic": "Vasant",
+        "display": "Sulochana Vasant Kallianpur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "boston"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "chandavarkar-honnavar-1462",
+      "motherId": "padukone-chitrapur-1089"
+    }
+  ]
+}

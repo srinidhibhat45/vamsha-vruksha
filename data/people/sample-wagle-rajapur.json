@@ -1,0 +1,3883 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "A Rajapur Saraswat family of the southern Maharashtra coast.",
+  "people": [
+    {
+      "id": "wagle-rajapur-1224",
+      "name": {
+        "given": "Waman",
+        "surname": "Wagle",
+        "display": "Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1821,
+          "qualifier": "circa",
+          "raw": "c. 1821"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1883,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1225",
+          "status": "married",
+          "date": {
+            "year": 1841,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1225",
+      "name": {
+        "given": "Umabai",
+        "surname": "Karkal",
+        "display": "Umabai Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1824,
+          "qualifier": "circa",
+          "raw": "c. 1824"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kashyapa",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "keri",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1224",
+          "status": "married",
+          "date": {
+            "year": 1841,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1226",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Indirabai Waman Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1844,
+          "qualifier": "circa",
+          "raw": "c. 1844"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1892,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    },
+    {
+      "id": "wagle-rajapur-1227",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Vishwanath Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1847,
+          "qualifier": "circa",
+          "raw": "c. 1847"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1908,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1228",
+          "status": "widowed",
+          "date": {
+            "year": 1870,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1228",
+      "name": {
+        "given": "Venubai",
+        "surname": "Rao",
+        "display": "Venubai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1848,
+          "qualifier": "circa",
+          "raw": "c. 1848"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1898,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1227",
+          "status": "married",
+          "date": {
+            "year": 1870,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1229",
+      "name": {
+        "given": "Janardan",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Janardan Vishwanath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "keri"
+        },
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1874,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1230",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Saraswatibai Vishwanath Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "residences": [
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1924,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1231",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Janakibai Vishwanath Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1876,
+          "qualifier": "circa",
+          "raw": "c. 1876"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1946,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1232",
+      "name": {
+        "given": "Subraya",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Subraya Vishwanath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1880,
+          "qualifier": "exact",
+          "raw": "1880"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1946,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1233",
+          "status": "widowed",
+          "date": {
+            "year": 1900,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1233",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Bhat",
+        "display": "Janakibai Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "angirasa",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "keri"
+        },
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1933,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "areca and pepper trader"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1232",
+          "status": "married",
+          "date": {
+            "year": 1900,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1234",
+      "name": {
+        "given": "Manjunath",
+        "surname": "Wagle",
+        "patronymic": "Subraya",
+        "display": "Manjunath Subraya Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "wagle-rajapur-1232",
+      "motherId": "wagle-rajapur-1233",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1235",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1235",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Karkal",
+        "display": "Janakibai Karkal"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "mathagram",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer",
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1922
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1234",
+          "status": "married",
+          "date": {
+            "year": 1929,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1236",
+      "name": {
+        "given": "Kunda",
+        "surname": "Wagle",
+        "patronymic": "Manjunath",
+        "display": "Kunda Manjunath Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1930
+        }
+      ],
+      "fatherId": "wagle-rajapur-1234",
+      "motherId": "wagle-rajapur-1235"
+    },
+    {
+      "id": "wagle-rajapur-1237",
+      "name": {
+        "given": "Vasudev",
+        "surname": "Wagle",
+        "patronymic": "Manjunath",
+        "display": "Vasudev Manjunath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "wagle-rajapur-1234",
+      "motherId": "wagle-rajapur-1235",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1238",
+          "status": "widowed",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1238",
+      "name": {
+        "given": "Rekha",
+        "surname": "Nayak",
+        "display": "Rekha Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "loutolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1997,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant",
+        "civil engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1237",
+          "status": "married",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1239",
+      "name": {
+        "given": "Rekha",
+        "surname": "Wagle",
+        "patronymic": "Vasudev",
+        "display": "Rekha Vasudev Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer",
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1961
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1237",
+      "motherId": "wagle-rajapur-1238"
+    },
+    {
+      "id": "wagle-rajapur-1240",
+      "name": {
+        "given": "Uday",
+        "surname": "Wagle",
+        "patronymic": "Vasudev",
+        "display": "Uday Vasudev Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "wagle-rajapur-1237",
+      "motherId": "wagle-rajapur-1238",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "wagle-rajapur-1241",
+      "name": {
+        "given": "Shanta",
+        "surname": "Wagle",
+        "patronymic": "Vasudev",
+        "display": "Shanta Vasudev Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "wagle-rajapur-1237",
+      "motherId": "wagle-rajapur-1238",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1242",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ratnagiri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1242",
+      "name": {
+        "given": "Chandrashekhar",
+        "surname": "Mallya",
+        "display": "Chandrashekhar Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1964,
+          "qualifier": "exact",
+          "raw": "1964"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1964
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1241",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1243",
+      "name": {
+        "given": "Aditya",
+        "surname": "Mallya",
+        "patronymic": "Chandrashekhar",
+        "display": "Aditya Chandrashekhar Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "keri",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist",
+        "chef"
+      ],
+      "fatherId": "wagle-rajapur-1242",
+      "motherId": "wagle-rajapur-1241"
+    },
+    {
+      "id": "wagle-rajapur-1244",
+      "name": {
+        "given": "Arun",
+        "surname": "Mallya",
+        "patronymic": "Chandrashekhar",
+        "display": "Arun Chandrashekhar Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "mudgala",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "wagle-rajapur-1242",
+      "motherId": "wagle-rajapur-1241"
+    },
+    {
+      "id": "wagle-rajapur-1245",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Wagle",
+        "patronymic": "Vasudev",
+        "display": "Sulochana Vasudev Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "pharmacist",
+        "veterinarian"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1985
+        }
+      ],
+      "fatherId": "wagle-rajapur-1237",
+      "motherId": "wagle-rajapur-1238"
+    },
+    {
+      "id": "wagle-rajapur-1246",
+      "name": {
+        "given": "Sameer",
+        "surname": "Wagle",
+        "patronymic": "Vasudev",
+        "display": "Sameer Vasudev Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "wagle-rajapur-1237",
+      "motherId": "wagle-rajapur-1238"
+    },
+    {
+      "id": "wagle-rajapur-1247",
+      "name": {
+        "given": "Dinesh",
+        "surname": "Wagle",
+        "patronymic": "Manjunath",
+        "display": "Dinesh Manjunath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "wagle-rajapur-1234",
+      "motherId": "wagle-rajapur-1235",
+      "bio": "Remembered in the family for an exceptional voice; sang at the temple on festival days for many years.",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1248",
+          "status": "married",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1248",
+      "name": {
+        "given": "Smita",
+        "surname": "Shanbhag",
+        "display": "Smita Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "jamadagni",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1959
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1247",
+          "status": "married",
+          "date": {
+            "year": 1959,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1249",
+      "name": {
+        "given": "Sushila",
+        "surname": "Wagle",
+        "patronymic": "Dinesh",
+        "display": "Sushila Dinesh Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1961
+        }
+      ],
+      "fatherId": "wagle-rajapur-1247",
+      "motherId": "wagle-rajapur-1248"
+    },
+    {
+      "id": "wagle-rajapur-1250",
+      "name": {
+        "given": "Shreyas",
+        "surname": "Wagle",
+        "patronymic": "Dinesh",
+        "display": "Shreyas Dinesh Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "wagle-rajapur-1247",
+      "motherId": "wagle-rajapur-1248",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1251",
+          "status": "married",
+          "date": {
+            "year": 1989,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1251",
+      "name": {
+        "given": "Sushila",
+        "surname": "Karkal",
+        "display": "Sushila Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "keri",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant",
+        "pharmacist"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1250",
+          "status": "married",
+          "date": {
+            "year": 1989,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1252",
+      "name": {
+        "given": "Atharva",
+        "surname": "Wagle",
+        "patronymic": "Shreyas",
+        "display": "Atharva Shreyas Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2005
+        }
+      ],
+      "fatherId": "wagle-rajapur-1250",
+      "motherId": "wagle-rajapur-1251"
+    },
+    {
+      "id": "wagle-rajapur-1253",
+      "name": {
+        "given": "Karthik",
+        "surname": "Wagle",
+        "patronymic": "Dinesh",
+        "display": "Karthik Dinesh Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer",
+        "chartered accountant"
+      ],
+      "fatherId": "wagle-rajapur-1247",
+      "motherId": "wagle-rajapur-1248"
+    },
+    {
+      "id": "wagle-rajapur-1254",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Wagle",
+        "patronymic": "Dinesh",
+        "display": "Aarohi Dinesh Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "wagle-rajapur-1247",
+      "motherId": "wagle-rajapur-1248"
+    },
+    {
+      "id": "wagle-rajapur-1255",
+      "name": {
+        "given": "Vedant",
+        "surname": "Wagle",
+        "patronymic": "Dinesh",
+        "display": "Vedant Dinesh Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "wagle-rajapur-1247",
+      "motherId": "wagle-rajapur-1248",
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1256",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1256",
+      "name": {
+        "given": "Vidya",
+        "surname": "Karkal",
+        "display": "Vidya Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact",
+          "raw": "1986"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1255",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1257",
+      "name": {
+        "given": "Sanjeev",
+        "surname": "Wagle",
+        "patronymic": "Vedant",
+        "display": "Sanjeev Vedant Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "wagle-rajapur-1255",
+      "motherId": "wagle-rajapur-1256"
+    },
+    {
+      "id": "wagle-rajapur-1258",
+      "name": {
+        "given": "Nikhil",
+        "surname": "Wagle",
+        "patronymic": "Vedant",
+        "display": "Nikhil Vedant Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact",
+          "raw": "2009"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "wagle-rajapur-1255",
+      "motherId": "wagle-rajapur-1256"
+    },
+    {
+      "id": "wagle-rajapur-1259",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Wagle",
+        "patronymic": "Manjunath",
+        "display": "Chandrakant Manjunath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "fatherId": "wagle-rajapur-1234",
+      "motherId": "wagle-rajapur-1235",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1260",
+          "status": "married",
+          "date": {
+            "year": 1968,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ratnagiri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1260",
+      "name": {
+        "given": "Rohini",
+        "surname": "Kudva",
+        "display": "Rohini Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1259",
+          "status": "married",
+          "date": {
+            "year": 1968,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1261",
+      "name": {
+        "given": "Vidya",
+        "surname": "Wagle",
+        "patronymic": "Chandrakant",
+        "display": "Vidya Chandrakant Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "wagle-rajapur-1259",
+      "motherId": "wagle-rajapur-1260"
+    },
+    {
+      "id": "wagle-rajapur-1262",
+      "name": {
+        "given": "Yash",
+        "surname": "Wagle",
+        "patronymic": "Chandrakant",
+        "display": "Yash Chandrakant Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact",
+          "raw": "1974"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1974
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1259",
+      "motherId": "wagle-rajapur-1260",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1263",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1263",
+      "name": {
+        "given": "Madhura",
+        "surname": "Kamath",
+        "display": "Madhura Kamath"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1262",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1264",
+      "name": {
+        "given": "Aarohi",
+        "surname": "Wagle",
+        "patronymic": "Yash",
+        "display": "Aarohi Yash Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2005,
+          "qualifier": "exact",
+          "raw": "2005"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2020
+        }
+      ],
+      "fatherId": "wagle-rajapur-1262",
+      "motherId": "wagle-rajapur-1263"
+    },
+    {
+      "id": "wagle-rajapur-1265",
+      "name": {
+        "given": "Ira",
+        "surname": "Wagle",
+        "patronymic": "Chandrakant",
+        "display": "Ira Chandrakant Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "wagle-rajapur-1259",
+      "motherId": "wagle-rajapur-1260",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1266",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1266",
+      "name": {
+        "given": "Ishaan",
+        "surname": "Shanbhag",
+        "display": "Ishaan Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "epithet": "remembered for her singing",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1265",
+          "status": "married",
+          "date": {
+            "year": 2002,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1267",
+      "name": {
+        "given": "Soham",
+        "surname": "Shanbhag",
+        "patronymic": "Ishaan",
+        "display": "Soham Ishaan Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact",
+          "raw": "2004"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "fatherId": "wagle-rajapur-1266",
+      "motherId": "wagle-rajapur-1265"
+    },
+    {
+      "id": "wagle-rajapur-1268",
+      "name": {
+        "given": "Tejas",
+        "surname": "Shanbhag",
+        "patronymic": "Ishaan",
+        "display": "Tejas Ishaan Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1266",
+      "motherId": "wagle-rajapur-1265"
+    },
+    {
+      "id": "wagle-rajapur-1269",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Wagle",
+        "patronymic": "Chandrakant",
+        "display": "Hrishikesh Chandrakant Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "fatherId": "wagle-rajapur-1259",
+      "motherId": "wagle-rajapur-1260",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1270",
+          "status": "married",
+          "date": {
+            "year": 2006,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1270",
+      "name": {
+        "given": "Rucha",
+        "surname": "Kamath",
+        "display": "Rucha Kamath"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact",
+          "raw": "1984"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1269",
+          "status": "married",
+          "date": {
+            "year": 2006,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1271",
+      "name": {
+        "given": "Ameya",
+        "surname": "Wagle",
+        "patronymic": "Hrishikesh",
+        "display": "Ameya Hrishikesh Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "delhi"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant",
+        "graphic designer"
+      ],
+      "fatherId": "wagle-rajapur-1269",
+      "motherId": "wagle-rajapur-1270",
+      "bio": "Served as a mahajan of the family's temple and travelled to Keri for the annual festival every year until old age made the journey impossible."
+    },
+    {
+      "id": "wagle-rajapur-1272",
+      "name": {
+        "given": "Krishna",
+        "surname": "Wagle",
+        "patronymic": "Manjunath",
+        "display": "Krishna Manjunath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1943,
+          "qualifier": "exact",
+          "raw": "1943"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "wagle-rajapur-1234",
+      "motherId": "wagle-rajapur-1235",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1273",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "keri"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1273",
+      "name": {
+        "given": "Kamala",
+        "surname": "Kini",
+        "display": "Kamala Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1943,
+          "qualifier": "exact",
+          "raw": "1943"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "vatsa",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2025,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1272",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1274",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Wagle",
+        "patronymic": "Krishna",
+        "display": "Narmadabai Krishna Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "wagle-rajapur-1272",
+      "motherId": "wagle-rajapur-1273",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1275",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1275",
+      "name": {
+        "given": "Ameya",
+        "surname": "Bhandarkar",
+        "display": "Ameya Bhandarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1274",
+          "status": "married",
+          "date": {
+            "year": 1993,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1276",
+      "name": {
+        "given": "Siddharth",
+        "surname": "Bhandarkar",
+        "patronymic": "Ameya",
+        "display": "Siddharth Ameya Bhandarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "delhi"
+        },
+        {
+          "id": "london"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "wagle-rajapur-1275",
+      "motherId": "wagle-rajapur-1274"
+    },
+    {
+      "id": "wagle-rajapur-1277",
+      "name": {
+        "given": "Ira",
+        "surname": "Bhandarkar",
+        "patronymic": "Ameya",
+        "display": "Ira Ameya Bhandarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "delhi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "delhi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "wagle-rajapur-1275",
+      "motherId": "wagle-rajapur-1274"
+    },
+    {
+      "id": "wagle-rajapur-1278",
+      "name": {
+        "given": "Anirudh",
+        "surname": "Wagle",
+        "patronymic": "Krishna",
+        "display": "Anirudh Krishna Wagle"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "wagle-rajapur-1272",
+      "motherId": "wagle-rajapur-1273"
+    },
+    {
+      "id": "wagle-rajapur-1279",
+      "name": {
+        "given": "Rucha",
+        "surname": "Wagle",
+        "patronymic": "Krishna",
+        "display": "Rucha Krishna Wagle"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact",
+          "raw": "1972"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1987
+        }
+      ],
+      "fatherId": "wagle-rajapur-1272",
+      "motherId": "wagle-rajapur-1273",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "wagle-rajapur-1280",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Wagle",
+        "patronymic": "Subraya",
+        "display": "Radhabai Subraya Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1906,
+          "qualifier": "exact",
+          "raw": "1906"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "wagle-rajapur-1232",
+      "motherId": "wagle-rajapur-1233",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "wagle-rajapur-1281",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Wagle",
+        "patronymic": "Subraya",
+        "display": "Parvatibai Subraya Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "wagle-rajapur-1232",
+      "motherId": "wagle-rajapur-1233"
+    },
+    {
+      "id": "wagle-rajapur-1282",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Wagle",
+        "patronymic": "Subraya",
+        "display": "Parvatibai Subraya Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1913,
+          "qualifier": "exact",
+          "raw": "1913"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher",
+        "headmistress"
+      ],
+      "fatherId": "wagle-rajapur-1232",
+      "motherId": "wagle-rajapur-1233",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1283",
+          "status": "widowed",
+          "date": {
+            "year": 1930,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "sawantwadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1283",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Shenoy",
+        "display": "Purushottam Shenoy"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1910,
+          "qualifier": "exact",
+          "raw": "1910"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation.",
+      "spouses": [
+        {
+          "personId": "wagle-rajapur-1282",
+          "status": "married",
+          "date": {
+            "year": 1930,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wagle-rajapur-1284",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Shenoy",
+        "patronymic": "Purushottam",
+        "display": "Vaishali Purushottam Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1933,
+          "qualifier": "exact",
+          "raw": "1933"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "fatherId": "wagle-rajapur-1283",
+      "motherId": "wagle-rajapur-1282"
+    },
+    {
+      "id": "wagle-rajapur-1285",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Shenoy",
+        "patronymic": "Purushottam",
+        "display": "Sarojini Purushottam Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1935,
+          "qualifier": "exact",
+          "raw": "1935"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "wagle-rajapur-1283",
+      "motherId": "wagle-rajapur-1282"
+    },
+    {
+      "id": "wagle-rajapur-1286",
+      "name": {
+        "given": "Smita",
+        "surname": "Shenoy",
+        "patronymic": "Purushottam",
+        "display": "Smita Purushottam Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "wagle-rajapur-1283",
+      "motherId": "wagle-rajapur-1282"
+    },
+    {
+      "id": "wagle-rajapur-1287",
+      "name": {
+        "given": "Nalini",
+        "surname": "Wagle",
+        "patronymic": "Subraya",
+        "display": "Nalini Subraya Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1916,
+          "qualifier": "exact",
+          "raw": "1916"
+        },
+        "place": {
+          "id": "ratnagiri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "wagle-rajapur-1232",
+      "motherId": "wagle-rajapur-1233",
+      "epithet": "first of the line at Ratnagiri"
+    },
+    {
+      "id": "wagle-rajapur-1288",
+      "name": {
+        "given": "Subraya",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Subraya Vishwanath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1884,
+          "qualifier": "exact",
+          "raw": "1884"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1289",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Padmavatibai Vishwanath Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1888,
+          "qualifier": "exact",
+          "raw": "1888"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1960,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1290",
+      "name": {
+        "given": "Ramkrishna",
+        "surname": "Wagle",
+        "patronymic": "Vishwanath",
+        "display": "Ramkrishna Vishwanath Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1892,
+          "qualifier": "exact",
+          "raw": "1892"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "sawantwadi"
+        },
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1963,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1227",
+      "motherId": "wagle-rajapur-1228"
+    },
+    {
+      "id": "wagle-rajapur-1291",
+      "name": {
+        "given": "Janardan",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Janardan Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1851,
+          "qualifier": "circa",
+          "raw": "c. 1851"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1927,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225",
+      "bio": "Janardan was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years.",
+      "epithet": "kept the family vahi"
+    },
+    {
+      "id": "wagle-rajapur-1292",
+      "name": {
+        "given": "Vithal",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Vithal Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    },
+    {
+      "id": "wagle-rajapur-1293",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Vithabai Waman Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa",
+          "raw": "c. 1858"
+        },
+        "place": {
+          "id": "keri"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "keri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    },
+    {
+      "id": "wagle-rajapur-1294",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Gangabai Waman Wagle"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa",
+          "raw": "c. 1862"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1901,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Wagle household at keri."
+        }
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    },
+    {
+      "id": "wagle-rajapur-1295",
+      "name": {
+        "given": "Vishnu",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Vishnu Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa",
+          "raw": "c. 1866"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "sawantwadi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    },
+    {
+      "id": "wagle-rajapur-1296",
+      "name": {
+        "given": "Ganesh",
+        "surname": "Wagle",
+        "patronymic": "Waman",
+        "display": "Ganesh Waman Wagle"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1869,
+          "qualifier": "circa",
+          "raw": "c. 1869"
+        },
+        "place": {
+          "id": "sawantwadi"
+        }
+      },
+      "community": "rajapur",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "vijayadurga",
+      "mool": "keri",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "ratnagiri"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1945,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "fatherId": "wagle-rajapur-1224",
+      "motherId": "wagle-rajapur-1225"
+    }
+  ]
+}

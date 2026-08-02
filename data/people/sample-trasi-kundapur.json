@@ -1,0 +1,2787 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Named for the coastal village of Trasi, north of Kundapur.",
+  "people": [
+    {
+      "id": "trasi-kundapur-1469",
+      "name": {
+        "given": "Venkatesh",
+        "surname": "Trasi",
+        "display": "Venkatesh Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1841,
+          "qualifier": "circa",
+          "raw": "c. 1841"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1903,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1470",
+          "status": "married",
+          "date": {
+            "year": 1859,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "trasi-village"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1470",
+      "name": {
+        "given": "Rukminibai",
+        "surname": "Talgeri",
+        "display": "Rukminibai Talgeri"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1837,
+          "qualifier": "circa",
+          "raw": "c. 1837"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1907,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1469",
+          "status": "married",
+          "date": {
+            "year": 1859,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1471",
+      "name": {
+        "given": "Shantabai",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Shantabai Venkatesh Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1862,
+          "qualifier": "circa",
+          "raw": "c. 1862"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470"
+    },
+    {
+      "id": "trasi-kundapur-1472",
+      "name": {
+        "given": "Sitaram",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Sitaram Venkatesh Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1864,
+          "qualifier": "circa",
+          "raw": "c. 1864"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1473",
+          "status": "married",
+          "date": {
+            "year": 1889,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "trasi-village"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1473",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Hattangadi",
+        "display": "Anandibai Hattangadi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1873,
+          "qualifier": "circa",
+          "raw": "c. 1873"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kashyapa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1952,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1472",
+          "status": "married",
+          "date": {
+            "year": 1889,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1474",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Ratnabai Sitaram Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1890,
+          "qualifier": "exact",
+          "raw": "1890"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1475",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Trimbak Sitaram Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1893,
+          "qualifier": "exact",
+          "raw": "1893"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1905,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1476",
+      "name": {
+        "given": "Vishwanath",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Vishwanath Sitaram Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1952,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473",
+      "bio": "Moved the household from Trasi to Kundapur after a failed monsoon, and is the first of the line recorded at the new place.",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1477",
+          "status": "married",
+          "date": {
+            "year": 1921,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1477",
+      "name": {
+        "given": "Radhabai",
+        "surname": "Mavinkurve",
+        "display": "Radhabai Mavinkurve"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1476",
+          "status": "married",
+          "date": {
+            "year": 1921,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1478",
+      "name": {
+        "given": "Nalini",
+        "surname": "Trasi",
+        "patronymic": "Vishwanath",
+        "display": "Nalini Vishwanath Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "insurance agent"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1923
+        }
+      ],
+      "fatherId": "trasi-kundapur-1476",
+      "motherId": "trasi-kundapur-1477",
+      "epithet": "kept the family vahi",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1481",
+          "status": "married",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "trasi-village"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1479",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Trasi",
+        "patronymic": "Vishwanath",
+        "display": "Vrinda Vishwanath Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1925,
+          "qualifier": "exact",
+          "raw": "1925"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "fatherId": "trasi-kundapur-1476",
+      "motherId": "trasi-kundapur-1477"
+    },
+    {
+      "id": "trasi-kundapur-1480",
+      "name": {
+        "given": "Prema",
+        "surname": "Trasi",
+        "patronymic": "Vishwanath",
+        "display": "Prema Vishwanath Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "trasi-kundapur-1476",
+      "motherId": "trasi-kundapur-1477"
+    },
+    {
+      "id": "trasi-kundapur-1481",
+      "name": {
+        "given": "Janardan",
+        "surname": "Sirur",
+        "display": "Janardan Sirur"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1972,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1932
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1478",
+          "status": "married",
+          "date": {
+            "year": 1943,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1482",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Sirur",
+        "patronymic": "Janardan",
+        "display": "Sulochana Janardan Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1944
+        }
+      ],
+      "fatherId": "trasi-kundapur-1481",
+      "motherId": "trasi-kundapur-1478"
+    },
+    {
+      "id": "trasi-kundapur-1483",
+      "name": {
+        "given": "Malati",
+        "surname": "Sirur",
+        "patronymic": "Janardan",
+        "display": "Malati Janardan Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1946
+        }
+      ],
+      "fatherId": "trasi-kundapur-1481",
+      "motherId": "trasi-kundapur-1478",
+      "epithet": "taught three generations of the family",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1484",
+          "status": "widowed",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kundapur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1484",
+      "name": {
+        "given": "Satish",
+        "surname": "Gulvady",
+        "display": "Satish Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1938,
+          "qualifier": "exact",
+          "raw": "1938"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2017,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1953
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1483",
+          "status": "married",
+          "date": {
+            "year": 1965,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1485",
+      "name": {
+        "given": "Vasanti",
+        "surname": "Gulvady",
+        "patronymic": "Satish",
+        "display": "Vasanti Satish Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer",
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1983
+        }
+      ],
+      "fatherId": "trasi-kundapur-1484",
+      "motherId": "trasi-kundapur-1483",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1486",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kundapur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1486",
+      "name": {
+        "given": "Chandrakant",
+        "surname": "Hattangadi",
+        "display": "Chandrakant Hattangadi"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1485",
+          "status": "married",
+          "date": {
+            "year": 1988,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1487",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Hattangadi",
+        "patronymic": "Chandrakant",
+        "display": "Mangesh Chandrakant Hattangadi"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1486",
+      "motherId": "trasi-kundapur-1485"
+    },
+    {
+      "id": "trasi-kundapur-1488",
+      "name": {
+        "given": "Rohan",
+        "surname": "Hattangadi",
+        "patronymic": "Chandrakant",
+        "display": "Rohan Chandrakant Hattangadi"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1486",
+      "motherId": "trasi-kundapur-1485",
+      "bio": "Rohan was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "trasi-kundapur-1489",
+      "name": {
+        "given": "Ira",
+        "surname": "Hattangadi",
+        "patronymic": "Chandrakant",
+        "display": "Ira Chandrakant Hattangadi"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact",
+          "raw": "1995"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "dhananjaya",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1995
+        }
+      ],
+      "fatherId": "trasi-kundapur-1486",
+      "motherId": "trasi-kundapur-1485"
+    },
+    {
+      "id": "trasi-kundapur-1490",
+      "name": {
+        "given": "Aditya",
+        "surname": "Gulvady",
+        "patronymic": "Satish",
+        "display": "Aditya Satish Gulvady"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1975,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "trasi-kundapur-1484",
+      "motherId": "trasi-kundapur-1483"
+    },
+    {
+      "id": "trasi-kundapur-1491",
+      "name": {
+        "given": "Rahul",
+        "surname": "Gulvady",
+        "patronymic": "Satish",
+        "display": "Rahul Satish Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "trasi-kundapur-1484",
+      "motherId": "trasi-kundapur-1483",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1492",
+          "status": "married",
+          "date": {
+            "year": 2001,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kundapur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1492",
+      "name": {
+        "given": "Meera",
+        "surname": "Koppikar",
+        "display": "Meera Koppikar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "shandilya",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian",
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1491",
+          "status": "married",
+          "date": {
+            "year": 2001,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1493",
+      "name": {
+        "given": "Jayant",
+        "surname": "Gulvady",
+        "patronymic": "Rahul",
+        "display": "Jayant Rahul Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact",
+          "raw": "2004"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2004
+        }
+      ],
+      "fatherId": "trasi-kundapur-1491",
+      "motherId": "trasi-kundapur-1492"
+    },
+    {
+      "id": "trasi-kundapur-1494",
+      "name": {
+        "given": "Varun",
+        "surname": "Gulvady",
+        "patronymic": "Rahul",
+        "display": "Varun Rahul Gulvady"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "auckland"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "trasi-kundapur-1491",
+      "motherId": "trasi-kundapur-1492"
+    },
+    {
+      "id": "trasi-kundapur-1495",
+      "name": {
+        "given": "Anjali",
+        "surname": "Gulvady",
+        "patronymic": "Rahul",
+        "display": "Anjali Rahul Gulvady"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact",
+          "raw": "2009"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "srivatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "trasi-kundapur-1491",
+      "motherId": "trasi-kundapur-1492"
+    },
+    {
+      "id": "trasi-kundapur-1496",
+      "name": {
+        "given": "Nitin",
+        "surname": "Sirur",
+        "patronymic": "Janardan",
+        "display": "Nitin Janardan Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1949
+        }
+      ],
+      "fatherId": "trasi-kundapur-1481",
+      "motherId": "trasi-kundapur-1478",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1497",
+          "status": "widowed",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "trasi-village"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1497",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Chandavarkar",
+        "display": "Vaishali Chandavarkar"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "garga",
+      "math": "chitrapur-math",
+      "kuladevata": "nagesh",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1496",
+          "status": "married",
+          "date": {
+            "year": 1972,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1498",
+      "name": {
+        "given": "Atharva",
+        "surname": "Sirur",
+        "patronymic": "Nitin",
+        "display": "Atharva Nitin Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1973
+        }
+      ],
+      "fatherId": "trasi-kundapur-1496",
+      "motherId": "trasi-kundapur-1497",
+      "bio": "Served as a mahajan of the family's temple and travelled to Shirali for the annual festival every year until old age made the journey impossible.",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1499",
+          "status": "married",
+          "date": {
+            "year": 2003,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "kundapur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1499",
+      "name": {
+        "given": "Trupti",
+        "surname": "Savur",
+        "display": "Trupti Savur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "ramnath",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "documentary film-maker"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1498",
+          "status": "married",
+          "date": {
+            "year": 2003,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1500",
+      "name": {
+        "given": "Amit",
+        "surname": "Sirur",
+        "patronymic": "Atharva",
+        "display": "Amit Atharva Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact",
+          "raw": "2006"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist",
+        "architect"
+      ],
+      "fatherId": "trasi-kundapur-1498",
+      "motherId": "trasi-kundapur-1499"
+    },
+    {
+      "id": "trasi-kundapur-1501",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Sirur",
+        "patronymic": "Atharva",
+        "display": "Samruddhi Atharva Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact",
+          "raw": "2009"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "auckland"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "trasi-kundapur-1498",
+      "motherId": "trasi-kundapur-1499"
+    },
+    {
+      "id": "trasi-kundapur-1502",
+      "name": {
+        "given": "Soham",
+        "surname": "Sirur",
+        "patronymic": "Nitin",
+        "display": "Soham Nitin Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact",
+          "raw": "1976"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        },
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "trasi-kundapur-1496",
+      "motherId": "trasi-kundapur-1497",
+      "bio": "Soham kept the family's accounts at Trasi and is remembered for maintaining the household vahi in which most of the dates before 2016 in this branch are recorded."
+    },
+    {
+      "id": "trasi-kundapur-1503",
+      "name": {
+        "given": "Smita",
+        "surname": "Sirur",
+        "patronymic": "Nitin",
+        "display": "Smita Nitin Sirur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1978,
+          "qualifier": "exact",
+          "raw": "1978"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1993
+        }
+      ],
+      "fatherId": "trasi-kundapur-1496",
+      "motherId": "trasi-kundapur-1497",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1504",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "trasi-village"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1504",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Chandavarkar",
+        "display": "Kaustubh Chandavarkar"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "chartered accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1503",
+          "status": "married",
+          "date": {
+            "year": 2004,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1505",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Chandavarkar",
+        "patronymic": "Kaustubh",
+        "display": "Shailaja Kaustubh Chandavarkar"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "mangesh",
+      "mool": "shirali",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2022
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1504",
+      "motherId": "trasi-kundapur-1503"
+    },
+    {
+      "id": "trasi-kundapur-1506",
+      "name": {
+        "given": "Ishaan",
+        "surname": "Sirur",
+        "patronymic": "Nitin",
+        "display": "Ishaan Nitin Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "trasi-kundapur-1496",
+      "motherId": "trasi-kundapur-1497",
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1507",
+          "status": "married",
+          "date": {
+            "year": 2010,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "shirali"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1507",
+      "name": {
+        "given": "Vidya",
+        "surname": "Basrur",
+        "display": "Vidya Basrur"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "kaushika",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "spouses": [
+        {
+          "personId": "trasi-kundapur-1506",
+          "status": "married",
+          "date": {
+            "year": 2010,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trasi-kundapur-1508",
+      "name": {
+        "given": "Vinod",
+        "surname": "Sirur",
+        "patronymic": "Ishaan",
+        "display": "Vinod Ishaan Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact",
+          "raw": "2011"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist",
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2011
+        }
+      ],
+      "fatherId": "trasi-kundapur-1506",
+      "motherId": "trasi-kundapur-1507"
+    },
+    {
+      "id": "trasi-kundapur-1509",
+      "name": {
+        "given": "Varun",
+        "surname": "Sirur",
+        "patronymic": "Nitin",
+        "display": "Varun Nitin Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "mangalore"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mangalore"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1998
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1496",
+      "motherId": "trasi-kundapur-1497"
+    },
+    {
+      "id": "trasi-kundapur-1510",
+      "name": {
+        "given": "Shreekant",
+        "surname": "Sirur",
+        "patronymic": "Janardan",
+        "display": "Shreekant Janardan Sirur"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vatsa",
+      "math": "chitrapur-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "Konkani writer",
+        "postmaster"
+      ],
+      "fatherId": "trasi-kundapur-1481",
+      "motherId": "trasi-kundapur-1478"
+    },
+    {
+      "id": "trasi-kundapur-1511",
+      "name": {
+        "given": "Vishnu",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Vishnu Sitaram Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1900,
+          "qualifier": "exact",
+          "raw": "1900"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1900
+        }
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1512",
+      "name": {
+        "given": "Balkrishna",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Balkrishna Sitaram Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1904,
+          "qualifier": "exact",
+          "raw": "1904"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "kundapur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1909,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1513",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Ratnabai Sitaram Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1908,
+          "qualifier": "exact",
+          "raw": "1908"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1908
+        }
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1514",
+      "name": {
+        "given": "Nitin",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Nitin Sitaram Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1986,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1911
+        }
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473",
+      "epithet": "sent the first letters home from abroad"
+    },
+    {
+      "id": "trasi-kundapur-1515",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Trasi",
+        "patronymic": "Sitaram",
+        "display": "Lakshmibai Sitaram Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1914,
+          "qualifier": "exact",
+          "raw": "1914"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "fatherId": "trasi-kundapur-1472",
+      "motherId": "trasi-kundapur-1473"
+    },
+    {
+      "id": "trasi-kundapur-1516",
+      "name": {
+        "given": "Sitabai",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Sitabai Venkatesh Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1868,
+          "qualifier": "circa",
+          "raw": "c. 1868"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1914,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470"
+    },
+    {
+      "id": "trasi-kundapur-1517",
+      "name": {
+        "given": "Kaveribai",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Kaveribai Venkatesh Trasi"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1871,
+          "qualifier": "circa",
+          "raw": "c. 1871"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1946,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Trasi household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        }
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470"
+    },
+    {
+      "id": "trasi-kundapur-1518",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Dinkar Venkatesh Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1875,
+          "qualifier": "circa",
+          "raw": "c. 1875"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1930,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Trasi household at shirali."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470"
+    },
+    {
+      "id": "trasi-kundapur-1519",
+      "name": {
+        "given": "Sitaram",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Sitaram Venkatesh Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1877,
+          "qualifier": "circa",
+          "raw": "c. 1877"
+        },
+        "place": {
+          "id": "shirali"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "residences": [
+        {
+          "id": "shirali"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Trasi household at shirali."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "chitrapur-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470",
+      "epithet": "first of the line at Kundapur"
+    },
+    {
+      "id": "trasi-kundapur-1520",
+      "name": {
+        "given": "Krishna",
+        "surname": "Trasi",
+        "patronymic": "Venkatesh",
+        "display": "Krishna Venkatesh Trasi"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "kundapur"
+        }
+      },
+      "community": "chitrapur",
+      "gotra": "vishwamitra",
+      "math": "chitrapur-math",
+      "kuladevata": "bhavani-shankar",
+      "mool": "shirali",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1942,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Trasi household at shirali."
+        }
+      ],
+      "fatherId": "trasi-kundapur-1469",
+      "motherId": "trasi-kundapur-1470",
+      "bio": "Krishna was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years.",
+      "epithet": "kept the family vahi"
+    }
+  ]
+}

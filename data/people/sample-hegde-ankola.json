@@ -1,0 +1,2551 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Headmen — heggade — of a group of villages south of Karwar.",
+  "people": [
+    {
+      "id": "hegde-ankola-1363",
+      "name": {
+        "given": "Ganesh",
+        "surname": "Hegde",
+        "display": "Ganesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1828,
+          "qualifier": "circa",
+          "raw": "c. 1828"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1899,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Hegde household at canacona."
+        }
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1364",
+          "status": "married",
+          "date": {
+            "year": 1849,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1364",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Hegde",
+        "display": "Tarabai Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1830,
+          "qualifier": "circa",
+          "raw": "c. 1830"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1906,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1363",
+          "status": "married",
+          "date": {
+            "year": 1849,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1365",
+      "name": {
+        "given": "Raghunath",
+        "surname": "Hegde",
+        "patronymic": "Ganesh",
+        "display": "Raghunath Ganesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1852,
+          "qualifier": "circa",
+          "raw": "c. 1852"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "hegde-ankola-1363",
+      "motherId": "hegde-ankola-1364"
+    },
+    {
+      "id": "hegde-ankola-1366",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Hegde",
+        "patronymic": "Ganesh",
+        "display": "Shrinivas Ganesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1927,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "fatherId": "hegde-ankola-1363",
+      "motherId": "hegde-ankola-1364",
+      "bio": "Moved the household from Karwar to Ankola after a failed monsoon, and is the first of the line recorded at the new place.",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1367",
+          "status": "married",
+          "date": {
+            "year": 1875,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1367",
+      "name": {
+        "given": "Bhagirathibai",
+        "surname": "Rao",
+        "display": "Bhagirathibai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1932,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1366",
+          "status": "married",
+          "date": {
+            "year": 1875,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1368",
+      "name": {
+        "given": "Anant",
+        "surname": "Hegde",
+        "patronymic": "Shrinivas",
+        "display": "Anant Shrinivas Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1878,
+          "qualifier": "circa",
+          "raw": "c. 1878"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1959,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "hegde-ankola-1366",
+      "motherId": "hegde-ankola-1367",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1369",
+          "status": "widowed",
+          "date": {
+            "year": 1900,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1369",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Adiga",
+        "display": "Indirabai Adiga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa",
+          "raw": "c. 1879"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "garga",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1923,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1368",
+          "status": "married",
+          "date": {
+            "year": 1900,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1370",
+      "name": {
+        "given": "Nagesh",
+        "surname": "Hegde",
+        "patronymic": "Anant",
+        "display": "Nagesh Anant Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1916
+        }
+      ],
+      "fatherId": "hegde-ankola-1368",
+      "motherId": "hegde-ankola-1369"
+    },
+    {
+      "id": "hegde-ankola-1371",
+      "name": {
+        "given": "Subraya",
+        "surname": "Hegde",
+        "patronymic": "Anant",
+        "display": "Subraya Anant Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        }
+      ],
+      "fatherId": "hegde-ankola-1368",
+      "motherId": "hegde-ankola-1369"
+    },
+    {
+      "id": "hegde-ankola-1372",
+      "name": {
+        "given": "Suresh",
+        "surname": "Hegde",
+        "patronymic": "Anant",
+        "display": "Suresh Anant Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer",
+        "postmaster"
+      ],
+      "fatherId": "hegde-ankola-1368",
+      "motherId": "hegde-ankola-1369"
+    },
+    {
+      "id": "hegde-ankola-1373",
+      "name": {
+        "given": "Mohan",
+        "surname": "Hegde",
+        "patronymic": "Anant",
+        "display": "Mohan Anant Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1911,
+          "qualifier": "exact",
+          "raw": "1911"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "partagali-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "hegde-ankola-1368",
+      "motherId": "hegde-ankola-1369",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1374",
+          "status": "married",
+          "date": {
+            "year": 1935,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1374",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Bhat",
+        "display": "Kashibai Bhat"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1917,
+          "qualifier": "exact",
+          "raw": "1917"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "verna",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician",
+        "Hindustani vocalist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1917
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1373",
+          "status": "married",
+          "date": {
+            "year": 1935,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1375",
+      "name": {
+        "given": "Jayant",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Jayant Mohan Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1937,
+          "qualifier": "exact",
+          "raw": "1937"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1995,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1376",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1376",
+      "name": {
+        "given": "Shobha",
+        "surname": "Nayak",
+        "display": "Shobha Nayak"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "homoeopath"
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1375",
+          "status": "married",
+          "date": {
+            "year": 1962,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1377",
+      "name": {
+        "given": "Mangesh",
+        "surname": "Hegde",
+        "patronymic": "Jayant",
+        "display": "Mangesh Jayant Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1963
+        }
+      ],
+      "fatherId": "hegde-ankola-1375",
+      "motherId": "hegde-ankola-1376",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1378",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1378",
+      "name": {
+        "given": "Anjali",
+        "surname": "Mallya",
+        "display": "Anjali Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1973,
+          "qualifier": "exact",
+          "raw": "1973"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "partagali-math",
+      "kuladevata": "mangesh",
+      "mool": "divar",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1377",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1379",
+      "name": {
+        "given": "Varun",
+        "surname": "Hegde",
+        "patronymic": "Mangesh",
+        "display": "Varun Mangesh Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2006
+        }
+      ],
+      "fatherId": "hegde-ankola-1377",
+      "motherId": "hegde-ankola-1378"
+    },
+    {
+      "id": "hegde-ankola-1380",
+      "name": {
+        "given": "Swati",
+        "surname": "Hegde",
+        "patronymic": "Mangesh",
+        "display": "Swati Mangesh Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "gokarna"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "hegde-ankola-1377",
+      "motherId": "hegde-ankola-1378"
+    },
+    {
+      "id": "hegde-ankola-1381",
+      "name": {
+        "given": "Meera",
+        "surname": "Hegde",
+        "patronymic": "Jayant",
+        "display": "Meera Jayant Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "hegde-ankola-1375",
+      "motherId": "hegde-ankola-1376"
+    },
+    {
+      "id": "hegde-ankola-1382",
+      "name": {
+        "given": "Smita",
+        "surname": "Hegde",
+        "patronymic": "Jayant",
+        "display": "Smita Jayant Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist",
+        "pharmacist"
+      ],
+      "fatherId": "hegde-ankola-1375",
+      "motherId": "hegde-ankola-1376"
+    },
+    {
+      "id": "hegde-ankola-1383",
+      "name": {
+        "given": "Yash",
+        "surname": "Hegde",
+        "patronymic": "Jayant",
+        "display": "Yash Jayant Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1971
+        }
+      ],
+      "fatherId": "hegde-ankola-1375",
+      "motherId": "hegde-ankola-1376"
+    },
+    {
+      "id": "hegde-ankola-1384",
+      "name": {
+        "given": "Deepika",
+        "surname": "Hegde",
+        "patronymic": "Jayant",
+        "display": "Deepika Jayant Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact",
+          "raw": "1975"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1990
+        }
+      ],
+      "fatherId": "hegde-ankola-1375",
+      "motherId": "hegde-ankola-1376",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "hegde-ankola-1385",
+      "name": {
+        "given": "Vaishali",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Vaishali Mohan Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2021,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1386",
+          "status": "widowed",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "karwar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1386",
+      "name": {
+        "given": "Avinash",
+        "surname": "Mallya",
+        "display": "Avinash Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1385",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1387",
+      "name": {
+        "given": "Anil",
+        "surname": "Mallya",
+        "patronymic": "Avinash",
+        "display": "Anil Avinash Mallya"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "hegde-ankola-1386",
+      "motherId": "hegde-ankola-1385",
+      "spouses": [
+        {
+          "personId": "bhat-verna-0765",
+          "status": "married",
+          "date": {
+            "year": 1982,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1388",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Mallya",
+        "patronymic": "Avinash",
+        "display": "Vrinda Avinash Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1976
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "hegde-ankola-1386",
+      "motherId": "hegde-ankola-1385"
+    },
+    {
+      "id": "hegde-ankola-1389",
+      "name": {
+        "given": "Uday",
+        "surname": "Mallya",
+        "patronymic": "Avinash",
+        "display": "Uday Avinash Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "hegde-ankola-1386",
+      "motherId": "hegde-ankola-1385"
+    },
+    {
+      "id": "hegde-ankola-1390",
+      "name": {
+        "given": "Amit",
+        "surname": "Mallya",
+        "patronymic": "Avinash",
+        "display": "Amit Avinash Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact",
+          "raw": "1966"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1966
+        }
+      ],
+      "fatherId": "hegde-ankola-1386",
+      "motherId": "hegde-ankola-1385",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1391",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1391",
+      "name": {
+        "given": "Aditi",
+        "surname": "Shenoy",
+        "display": "Aditi Shenoy"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "canacona",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "first of the line at Ankola",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1390",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1392",
+      "name": {
+        "given": "Diya",
+        "surname": "Mallya",
+        "patronymic": "Amit",
+        "display": "Diya Amit Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "gokarna"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "hegde-ankola-1390",
+      "motherId": "hegde-ankola-1391"
+    },
+    {
+      "id": "hegde-ankola-1393",
+      "name": {
+        "given": "Ramesh",
+        "surname": "Mallya",
+        "patronymic": "Amit",
+        "display": "Ramesh Amit Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact",
+          "raw": "2002"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "hegde-ankola-1390",
+      "motherId": "hegde-ankola-1391"
+    },
+    {
+      "id": "hegde-ankola-1394",
+      "name": {
+        "given": "Karthik",
+        "surname": "Mallya",
+        "patronymic": "Amit",
+        "display": "Karthik Amit Mallya"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact",
+          "raw": "2004"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "fatherId": "hegde-ankola-1390",
+      "motherId": "hegde-ankola-1391"
+    },
+    {
+      "id": "hegde-ankola-1395",
+      "name": {
+        "given": "Kunda",
+        "surname": "Mallya",
+        "patronymic": "Avinash",
+        "display": "Kunda Avinash Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1970,
+          "qualifier": "exact",
+          "raw": "1970"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "damodar",
+      "mool": "chorao",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "hegde-ankola-1386",
+      "motherId": "hegde-ankola-1385"
+    },
+    {
+      "id": "hegde-ankola-1396",
+      "name": {
+        "given": "Asha",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Asha Mohan Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1944,
+          "qualifier": "exact",
+          "raw": "1944"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1959
+        }
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374"
+    },
+    {
+      "id": "hegde-ankola-1397",
+      "name": {
+        "given": "Shanta",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Shanta Mohan Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "gokarna"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374"
+    },
+    {
+      "id": "hegde-ankola-1398",
+      "name": {
+        "given": "Vivek",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Vivek Mohan Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1399",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1399",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Shenoy",
+        "display": "Nirmala Shenoy"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1965,
+          "qualifier": "exact",
+          "raw": "1965"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "partagali-math",
+      "kuladevata": "kamakshi",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "epithet": "first of the line at Ankola",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1398",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1400",
+      "name": {
+        "given": "Atharva",
+        "surname": "Hegde",
+        "patronymic": "Vivek",
+        "display": "Atharva Vivek Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "hubli"
+        },
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "hegde-ankola-1398",
+      "motherId": "hegde-ankola-1399",
+      "bio": "Atharva kept the family's accounts at Karwar and is remembered for maintaining the household vahi in which most of the dates before 2023 in this branch are recorded.",
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1401",
+          "status": "married",
+          "date": {
+            "year": 2009,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "ankola"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1401",
+      "name": {
+        "given": "Sneha",
+        "surname": "Mallya",
+        "display": "Sneha Mallya"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "kashi-math",
+      "kuladevata": "ramnath",
+      "mool": "kushasthali",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "gokarna"
+        },
+        {
+          "id": "hubli"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "spouses": [
+        {
+          "personId": "hegde-ankola-1400",
+          "status": "married",
+          "date": {
+            "year": 2009,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hegde-ankola-1402",
+      "name": {
+        "given": "Prachi",
+        "surname": "Hegde",
+        "patronymic": "Atharva",
+        "display": "Prachi Atharva Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact",
+          "raw": "2012"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2012
+        }
+      ],
+      "fatherId": "hegde-ankola-1400",
+      "motherId": "hegde-ankola-1401"
+    },
+    {
+      "id": "hegde-ankola-1403",
+      "name": {
+        "given": "Amit",
+        "surname": "Hegde",
+        "patronymic": "Atharva",
+        "display": "Amit Atharva Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact",
+          "raw": "2016"
+        },
+        "place": {
+          "id": "hubli"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "bengaluru"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2016
+        }
+      ],
+      "fatherId": "hegde-ankola-1400",
+      "motherId": "hegde-ankola-1401",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation."
+    },
+    {
+      "id": "hegde-ankola-1404",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Jyoti Mohan Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1952,
+          "qualifier": "exact",
+          "raw": "1952"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374"
+    },
+    {
+      "id": "hegde-ankola-1405",
+      "name": {
+        "given": "Ulhas",
+        "surname": "Hegde",
+        "patronymic": "Mohan",
+        "display": "Ulhas Mohan Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "gokarna"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "ankola"
+        },
+        {
+          "id": "gokarna"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2019,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "hegde-ankola-1373",
+      "motherId": "hegde-ankola-1374"
+    },
+    {
+      "id": "hegde-ankola-1406",
+      "name": {
+        "given": "Prabhakar",
+        "surname": "Hegde",
+        "patronymic": "Anant",
+        "display": "Prabhakar Anant Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1915,
+          "qualifier": "exact",
+          "raw": "1915"
+        },
+        "place": {
+          "id": "ankola"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "ankola"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "hegde-ankola-1368",
+      "motherId": "hegde-ankola-1369"
+    },
+    {
+      "id": "hegde-ankola-1407",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Hegde",
+        "patronymic": "Shrinivas",
+        "display": "Tarabai Shrinivas Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1881,
+          "qualifier": "exact",
+          "raw": "1881"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "residences": [
+        {
+          "id": "canacona"
+        },
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1931,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "hegde-ankola-1366",
+      "motherId": "hegde-ankola-1367"
+    },
+    {
+      "id": "hegde-ankola-1408",
+      "name": {
+        "given": "Mukund",
+        "surname": "Hegde",
+        "patronymic": "Shrinivas",
+        "display": "Mukund Shrinivas Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "canacona"
+        },
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "fatherId": "hegde-ankola-1366",
+      "motherId": "hegde-ankola-1367"
+    },
+    {
+      "id": "hegde-ankola-1409",
+      "name": {
+        "given": "Govind",
+        "surname": "Hegde",
+        "patronymic": "Ganesh",
+        "display": "Govind Ganesh Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1860,
+          "qualifier": "circa",
+          "raw": "c. 1860"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "hegde-ankola-1363",
+      "motherId": "hegde-ankola-1364"
+    },
+    {
+      "id": "hegde-ankola-1410",
+      "name": {
+        "given": "Krishnabai",
+        "surname": "Hegde",
+        "patronymic": "Ganesh",
+        "display": "Krishnabai Ganesh Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1864,
+          "qualifier": "circa",
+          "raw": "c. 1864"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "mallikarjun",
+      "mool": "canacona",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1919,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "fatherId": "hegde-ankola-1363",
+      "motherId": "hegde-ankola-1364"
+    }
+  ]
+}

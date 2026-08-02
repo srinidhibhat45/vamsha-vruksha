@@ -1,0 +1,4364 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Village accountants — shanbhog — of the Cuncolim group of villages.",
+  "people": [
+    {
+      "id": "shanbhag-cuncolim-0918",
+      "name": {
+        "given": "Manjunath",
+        "surname": "Shanbhag",
+        "display": "Manjunath Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1799,
+          "qualifier": "circa",
+          "raw": "c. 1799"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1870,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0919",
+          "status": "widowed",
+          "date": {
+            "year": 1820,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0919",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Baliga",
+        "display": "Ambabai Baliga"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1802,
+          "qualifier": "circa",
+          "raw": "c. 1802"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "harita",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1852,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0918",
+          "status": "married",
+          "date": {
+            "year": 1820,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0920",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Padmavatibai Manjunath Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1823,
+          "qualifier": "circa",
+          "raw": "c. 1823"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1870,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0921",
+      "name": {
+        "given": "Padmanabh",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Padmanabh Manjunath Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1826,
+          "qualifier": "circa",
+          "raw": "c. 1826"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1890,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "revenue clerk"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0922",
+          "status": "married",
+          "date": {
+            "year": 1851,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0922",
+      "name": {
+        "given": "Savitribai",
+        "surname": "Kini",
+        "display": "Savitribai Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1834,
+          "qualifier": "circa",
+          "raw": "c. 1834"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kashi-math",
+      "kuladevata": "nagesh",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1899,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0921",
+          "status": "married",
+          "date": {
+            "year": 1851,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0923",
+      "name": {
+        "given": "Yeshwant",
+        "surname": "Shanbhag",
+        "patronymic": "Padmanabh",
+        "display": "Yeshwant Padmanabh Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1854,
+          "qualifier": "circa",
+          "raw": "c. 1854"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "cuncolim"
+        },
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1924,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "fatherId": "shanbhag-cuncolim-0921",
+      "motherId": "shanbhag-cuncolim-0922"
+    },
+    {
+      "id": "shanbhag-cuncolim-0924",
+      "name": {
+        "given": "Yeshwant",
+        "surname": "Shanbhag",
+        "patronymic": "Padmanabh",
+        "display": "Yeshwant Padmanabh Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1933,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0921",
+      "motherId": "shanbhag-cuncolim-0922"
+    },
+    {
+      "id": "shanbhag-cuncolim-0925",
+      "name": {
+        "given": "Chandrashekhar",
+        "surname": "Shanbhag",
+        "patronymic": "Padmanabh",
+        "display": "Chandrashekhar Padmanabh Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1860,
+          "qualifier": "circa",
+          "raw": "c. 1860"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "cuncolim"
+        },
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1921,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0921",
+      "motherId": "shanbhag-cuncolim-0922",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0926",
+          "status": "married",
+          "date": {
+            "year": 1880,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0926",
+      "name": {
+        "given": "Venubai",
+        "surname": "Prabhu",
+        "display": "Venubai Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1865,
+          "qualifier": "circa",
+          "raw": "c. 1865"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0925",
+          "status": "married",
+          "date": {
+            "year": 1880,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0927",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Anandibai Chandrashekhar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1883,
+          "qualifier": "exact",
+          "raw": "1883"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        },
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0928",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Saraswatibai Chandrashekhar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1887,
+          "qualifier": "exact",
+          "raw": "1887"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1965,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0929",
+      "name": {
+        "given": "Govind",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Govind Chandrashekhar Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1889,
+          "qualifier": "exact",
+          "raw": "1889"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1894,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0930",
+      "name": {
+        "given": "Vithal",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Vithal Chandrashekhar Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1893,
+          "qualifier": "exact",
+          "raw": "1893"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1898,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0931",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Yamunabai Chandrashekhar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1895,
+          "qualifier": "exact",
+          "raw": "1895"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1895,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0932",
+      "name": {
+        "given": "Krishna",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Krishna Chandrashekhar Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1936,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0933",
+          "status": "married",
+          "date": {
+            "year": 1916,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0933",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Mallya",
+        "display": "Saraswatibai Mallya"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1900,
+          "qualifier": "exact",
+          "raw": "1900"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaundinya",
+      "math": "kavale-math",
+      "kuladevata": "ramnath",
+      "mool": "kushasthali",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        },
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0932",
+          "status": "married",
+          "date": {
+            "year": 1916,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0934",
+      "name": {
+        "given": "Dinkar",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Dinkar Krishna Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1918,
+          "qualifier": "exact",
+          "raw": "1918"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1966,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0935",
+          "status": "married",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0935",
+      "name": {
+        "given": "Venubai",
+        "surname": "Pai",
+        "display": "Venubai Pai"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk",
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1942
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0934",
+          "status": "married",
+          "date": {
+            "year": 1945,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0936",
+      "name": {
+        "given": "Kunda",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Kunda Dinkar Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "insurance agent"
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935"
+    },
+    {
+      "id": "shanbhag-cuncolim-0937",
+      "name": {
+        "given": "Shashank",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Shashank Dinkar Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "canacona"
+        },
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant",
+        "postmaster"
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0938",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "cuncolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0938",
+      "name": {
+        "given": "Malati",
+        "surname": "Baliga",
+        "display": "Malati Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kavale-math",
+      "kuladevata": "damodar",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0937",
+          "status": "married",
+          "date": {
+            "year": 1980,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0939",
+      "name": {
+        "given": "Karthik",
+        "surname": "Shanbhag",
+        "patronymic": "Shashank",
+        "display": "Karthik Shashank Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1983
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0937",
+      "motherId": "shanbhag-cuncolim-0938",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0940",
+          "status": "married",
+          "date": {
+            "year": 2012,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "cuncolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0940",
+      "name": {
+        "given": "Kavita",
+        "surname": "Hegde",
+        "display": "Kavita Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2006
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0939",
+          "status": "married",
+          "date": {
+            "year": 2012,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0941",
+      "name": {
+        "given": "Nalini",
+        "surname": "Shanbhag",
+        "patronymic": "Karthik",
+        "display": "Nalini Karthik Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact",
+          "raw": "2015"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian"
+      ],
+      "fatherId": "shanbhag-cuncolim-0939",
+      "motherId": "shanbhag-cuncolim-0940"
+    },
+    {
+      "id": "shanbhag-cuncolim-0942",
+      "name": {
+        "given": "Meera",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Meera Dinkar Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1953
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935",
+      "bio": "Served as a mahajan of the family's temple and travelled to Cuncolim for the annual festival every year until old age made the journey impossible.",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0943",
+          "status": "widowed",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0943",
+      "name": {
+        "given": "Vivek",
+        "surname": "Hegde",
+        "display": "Vivek Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1948,
+          "qualifier": "exact",
+          "raw": "1948"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1948
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0942",
+          "status": "married",
+          "date": {
+            "year": 1976,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0944",
+      "name": {
+        "given": "Hrishikesh",
+        "surname": "Hegde",
+        "patronymic": "Vivek",
+        "display": "Hrishikesh Vivek Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer",
+        "physician"
+      ],
+      "fatherId": "shanbhag-cuncolim-0943",
+      "motherId": "shanbhag-cuncolim-0942",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0945",
+          "status": "married",
+          "date": {
+            "year": 2007,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "cuncolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0945",
+      "name": {
+        "given": "Rekha",
+        "surname": "Kudva",
+        "display": "Rekha Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "verna",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2002
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0944",
+          "status": "married",
+          "date": {
+            "year": 2007,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0946",
+      "name": {
+        "given": "Anjali",
+        "surname": "Hegde",
+        "patronymic": "Hrishikesh",
+        "display": "Anjali Hrishikesh Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2008,
+          "qualifier": "exact",
+          "raw": "2008"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2008
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0944",
+      "motherId": "shanbhag-cuncolim-0945"
+    },
+    {
+      "id": "shanbhag-cuncolim-0947",
+      "name": {
+        "given": "Mahesh",
+        "surname": "Hegde",
+        "patronymic": "Hrishikesh",
+        "display": "Mahesh Hrishikesh Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact",
+          "raw": "2012"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "fatherId": "shanbhag-cuncolim-0944",
+      "motherId": "shanbhag-cuncolim-0945"
+    },
+    {
+      "id": "shanbhag-cuncolim-0948",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Hegde",
+        "patronymic": "Hrishikesh",
+        "display": "Kaustubh Hrishikesh Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2015,
+          "qualifier": "exact",
+          "raw": "2015"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "fatherId": "shanbhag-cuncolim-0944",
+      "motherId": "shanbhag-cuncolim-0945"
+    },
+    {
+      "id": "shanbhag-cuncolim-0949",
+      "name": {
+        "given": "Saanvi",
+        "surname": "Hegde",
+        "patronymic": "Vivek",
+        "display": "Saanvi Vivek Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "atri",
+      "math": "kavale-math",
+      "kuladevata": "mangesh",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1996
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0943",
+      "motherId": "shanbhag-cuncolim-0942",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0950",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0950",
+      "name": {
+        "given": "Advait",
+        "surname": "Shenoy",
+        "display": "Advait Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0949",
+          "status": "married",
+          "date": {
+            "year": 2005,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0951",
+      "name": {
+        "given": "Tejas",
+        "surname": "Shenoy",
+        "patronymic": "Advait",
+        "display": "Tejas Advait Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2007,
+          "qualifier": "exact",
+          "raw": "2007"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "product manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2022
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0950",
+      "motherId": "shanbhag-cuncolim-0949",
+      "bio": "Tejas was among the first women in the family to be sent to school, and later taught at the local girls' school for over thirty years."
+    },
+    {
+      "id": "shanbhag-cuncolim-0952",
+      "name": {
+        "given": "Vivek",
+        "surname": "Shenoy",
+        "patronymic": "Advait",
+        "display": "Vivek Advait Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2011,
+          "qualifier": "exact",
+          "raw": "2011"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "partagali-math",
+      "kuladevata": "nagesh",
+      "mool": "divar",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "marine engineer"
+      ],
+      "fatherId": "shanbhag-cuncolim-0950",
+      "motherId": "shanbhag-cuncolim-0949"
+    },
+    {
+      "id": "shanbhag-cuncolim-0953",
+      "name": {
+        "given": "Pushpa",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Pushpa Dinkar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1955,
+          "qualifier": "exact",
+          "raw": "1955"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2014,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1970
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935"
+    },
+    {
+      "id": "shanbhag-cuncolim-0954",
+      "name": {
+        "given": "Vinod",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Vinod Dinkar Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1957,
+          "qualifier": "exact",
+          "raw": "1957"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2018,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1957
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935",
+      "bio": "Vinod kept the family's accounts at Fatorpa and is remembered for maintaining the household vahi in which most of the dates before 1997 in this branch are recorded.",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0955",
+          "status": "married",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0955",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Rao",
+        "display": "Tarabai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact",
+          "raw": "1962"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "pharmacist"
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0954",
+          "status": "married",
+          "date": {
+            "year": 1981,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0956",
+      "name": {
+        "given": "Rahul",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Rahul Vinod Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "fatherId": "shanbhag-cuncolim-0954",
+      "motherId": "shanbhag-cuncolim-0955",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "shanbhag-cuncolim-0957",
+      "name": {
+        "given": "Pooja",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Pooja Vinod Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact",
+          "raw": "1985"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0954",
+      "motherId": "shanbhag-cuncolim-0955",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0958",
+          "status": "married",
+          "date": {
+            "year": 2013,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0958",
+      "name": {
+        "given": "Chinmay",
+        "surname": "Adiga",
+        "display": "Chinmay Adiga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact",
+          "raw": "1988"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0957",
+          "status": "married",
+          "date": {
+            "year": 2013,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0959",
+      "name": {
+        "given": "Anjali",
+        "surname": "Adiga",
+        "patronymic": "Chinmay",
+        "display": "Anjali Chinmay Adiga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact",
+          "raw": "2016"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "clinical psychologist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 2016
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0958",
+      "motherId": "shanbhag-cuncolim-0957"
+    },
+    {
+      "id": "shanbhag-cuncolim-0960",
+      "name": {
+        "given": "Vaidehi",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Vaidehi Vinod Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "classical dancer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1987
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0954",
+      "motherId": "shanbhag-cuncolim-0955"
+    },
+    {
+      "id": "shanbhag-cuncolim-0961",
+      "name": {
+        "given": "Vimala",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Vimala Dinkar Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1959,
+          "qualifier": "exact",
+          "raw": "1959"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "textile mill supervisor"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1959
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "shanbhag-cuncolim-0962",
+      "name": {
+        "given": "Vasant",
+        "surname": "Shanbhag",
+        "patronymic": "Dinkar",
+        "display": "Vasant Dinkar Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1961,
+          "qualifier": "exact",
+          "raw": "1961"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1976
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0934",
+      "motherId": "shanbhag-cuncolim-0935",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0963",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "cuncolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0963",
+      "name": {
+        "given": "Deepika",
+        "surname": "Shenoy",
+        "display": "Deepika Shenoy"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kavale-math",
+      "kuladevata": "mahalasa",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1971
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0962",
+          "status": "married",
+          "date": {
+            "year": 1990,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0964",
+      "name": {
+        "given": "Aarav",
+        "surname": "Shanbhag",
+        "patronymic": "Vasant",
+        "display": "Aarav Vasant Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1991,
+          "qualifier": "exact",
+          "raw": "1991"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2006
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0962",
+      "motherId": "shanbhag-cuncolim-0963",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0965",
+          "status": "married",
+          "date": {
+            "year": 2018,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "canacona"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0965",
+      "name": {
+        "given": "Shailaja",
+        "surname": "Karkal",
+        "display": "Shailaja Karkal"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact",
+          "raw": "2003"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist",
+        "dentist"
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0964",
+          "status": "married",
+          "date": {
+            "year": 2018,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0966",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Anuradha Krishna Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1922,
+          "qualifier": "exact",
+          "raw": "1922"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0967",
+          "status": "widowed",
+          "date": {
+            "year": 1944,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0967",
+      "name": {
+        "given": "Ravi",
+        "surname": "Hegde",
+        "display": "Ravi Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1921,
+          "qualifier": "exact",
+          "raw": "1921"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1936
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0966",
+          "status": "married",
+          "date": {
+            "year": 1944,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0968",
+      "name": {
+        "given": "Sushila",
+        "surname": "Hegde",
+        "patronymic": "Ravi",
+        "display": "Sushila Ravi Hegde"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1946,
+          "qualifier": "exact",
+          "raw": "1946"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor",
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0967",
+      "motherId": "shanbhag-cuncolim-0966"
+    },
+    {
+      "id": "shanbhag-cuncolim-0969",
+      "name": {
+        "given": "Vivek",
+        "surname": "Hegde",
+        "patronymic": "Ravi",
+        "display": "Vivek Ravi Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1950,
+          "qualifier": "exact",
+          "raw": "1950"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0967",
+      "motherId": "shanbhag-cuncolim-0966",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0970",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0970",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Hegde",
+        "display": "Anuradha Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "civil engineer"
+      ],
+      "epithet": "kept the family vahi",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0969",
+          "status": "married",
+          "date": {
+            "year": 1979,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0971",
+      "name": {
+        "given": "Shreyas",
+        "surname": "Hegde",
+        "patronymic": "Vivek",
+        "display": "Shreyas Vivek Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1982
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0969",
+      "motherId": "shanbhag-cuncolim-0970",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0972",
+          "status": "married",
+          "date": {
+            "year": 2012,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "cuncolim"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0972",
+      "name": {
+        "given": "Ishani",
+        "surname": "Nayak",
+        "display": "Ishani Nayak"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1992,
+          "qualifier": "exact",
+          "raw": "1992"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "dhananjaya",
+      "math": "kavale-math",
+      "kuladevata": "nagesh",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "veterinarian",
+        "physician"
+      ],
+      "epithet": "sent the first letters home from abroad",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0971",
+          "status": "married",
+          "date": {
+            "year": 2012,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0973",
+      "name": {
+        "given": "Sneha",
+        "surname": "Hegde",
+        "patronymic": "Shreyas",
+        "display": "Sneha Shreyas Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2013,
+          "qualifier": "exact",
+          "raw": "2013"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "shanbhag-cuncolim-0971",
+      "motherId": "shanbhag-cuncolim-0972"
+    },
+    {
+      "id": "shanbhag-cuncolim-0974",
+      "name": {
+        "given": "Nandini",
+        "surname": "Hegde",
+        "patronymic": "Shreyas",
+        "display": "Nandini Shreyas Hegde"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2016,
+          "qualifier": "exact",
+          "raw": "2016"
+        },
+        "place": {
+          "id": "muscat"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2031
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0971",
+      "motherId": "shanbhag-cuncolim-0972"
+    },
+    {
+      "id": "shanbhag-cuncolim-0975",
+      "name": {
+        "given": "Milind",
+        "surname": "Hegde",
+        "patronymic": "Ravi",
+        "display": "Milind Ravi Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1953,
+          "qualifier": "exact",
+          "raw": "1953"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1953
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0967",
+      "motherId": "shanbhag-cuncolim-0966",
+      "bio": "Took a degree at Bombay and entered the provincial service; the family's move to the city dates from this generation.",
+      "spouses": [
+        {
+          "personId": "prabhu-loutolim-0643",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0976",
+      "name": {
+        "given": "Raghunath",
+        "surname": "Hegde",
+        "patronymic": "Ravi",
+        "display": "Raghunath Ravi Hegde"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact",
+          "raw": "1956"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "belgaum"
+        },
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2024,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "fatherId": "shanbhag-cuncolim-0967",
+      "motherId": "shanbhag-cuncolim-0966"
+    },
+    {
+      "id": "shanbhag-cuncolim-0977",
+      "name": {
+        "given": "Vinod",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Vinod Krishna Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1924,
+          "qualifier": "exact",
+          "raw": "1924"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2004,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933",
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0978",
+          "status": "widowed",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "fatorpa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0978",
+      "name": {
+        "given": "Sulochana",
+        "surname": "Nayak",
+        "display": "Sulochana Nayak"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kavale-math",
+      "kuladevata": "kamakshi",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "canacona"
+        },
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1985,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "port officer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1927
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "shanbhag-cuncolim-0977",
+          "status": "married",
+          "date": {
+            "year": 1948,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shanbhag-cuncolim-0979",
+      "name": {
+        "given": "Smita",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Smita Vinod Shanbhag"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1951,
+          "qualifier": "exact",
+          "raw": "1951"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1951
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0977",
+      "motherId": "shanbhag-cuncolim-0978"
+    },
+    {
+      "id": "shanbhag-cuncolim-0980",
+      "name": {
+        "given": "Nitin",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Nitin Vinod Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1954,
+          "qualifier": "exact",
+          "raw": "1954"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "shanbhag-cuncolim-0977",
+      "motherId": "shanbhag-cuncolim-0978"
+    },
+    {
+      "id": "shanbhag-cuncolim-0981",
+      "name": {
+        "given": "Deepak",
+        "surname": "Shanbhag",
+        "patronymic": "Vinod",
+        "display": "Deepak Vinod Shanbhag"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "muscat"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0977",
+      "motherId": "shanbhag-cuncolim-0978",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "shanbhag-cuncolim-0982",
+      "name": {
+        "given": "Uday",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Uday Krishna Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "canacona"
+        },
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer",
+        "Konkani writer"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "shanbhag-cuncolim-0983",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Anuradha Krishna Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2012,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1945
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933"
+    },
+    {
+      "id": "shanbhag-cuncolim-0984",
+      "name": {
+        "given": "Trimbak",
+        "surname": "Shanbhag",
+        "patronymic": "Krishna",
+        "display": "Trimbak Krishna Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1932,
+          "qualifier": "exact",
+          "raw": "1932"
+        },
+        "place": {
+          "id": "karwar"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2009,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1932
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0932",
+      "motherId": "shanbhag-cuncolim-0933"
+    },
+    {
+      "id": "shanbhag-cuncolim-0985",
+      "name": {
+        "given": "Yamunabai",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Yamunabai Chandrashekhar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        },
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1951,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926"
+    },
+    {
+      "id": "shanbhag-cuncolim-0986",
+      "name": {
+        "given": "Parvatibai",
+        "surname": "Shanbhag",
+        "patronymic": "Chandrashekhar",
+        "display": "Parvatibai Chandrashekhar Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1903,
+          "qualifier": "exact",
+          "raw": "1903"
+        },
+        "place": {
+          "id": "canacona"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "karwar"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "advocate"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1903
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0925",
+      "motherId": "shanbhag-cuncolim-0926",
+      "bio": "Kept up a correspondence in Konkani with cousins who had settled abroad; a bundle of these letters survives and is the source for several dates in this branch.",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "shanbhag-cuncolim-0987",
+      "name": {
+        "given": "Gopal",
+        "surname": "Shanbhag",
+        "patronymic": "Padmanabh",
+        "display": "Gopal Padmanabh Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1864,
+          "qualifier": "circa",
+          "raw": "c. 1864"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1929,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "shanbhag-cuncolim-0921",
+      "motherId": "shanbhag-cuncolim-0922"
+    },
+    {
+      "id": "shanbhag-cuncolim-0988",
+      "name": {
+        "given": "Padmavatibai",
+        "surname": "Shanbhag",
+        "patronymic": "Padmanabh",
+        "display": "Padmavatibai Padmanabh Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1867,
+          "qualifier": "circa",
+          "raw": "c. 1867"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1879,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0921",
+      "motherId": "shanbhag-cuncolim-0922"
+    },
+    {
+      "id": "shanbhag-cuncolim-0989",
+      "name": {
+        "given": "Lakshmibai",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Lakshmibai Manjunath Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1830,
+          "qualifier": "circa",
+          "raw": "c. 1830"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1872,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Shanbhag household at cuncolim."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0990",
+      "name": {
+        "given": "Ramchandra",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Ramchandra Manjunath Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1834,
+          "qualifier": "circa",
+          "raw": "c. 1834"
+        },
+        "place": {
+          "id": "cuncolim"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "cuncolim"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1888,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0991",
+      "name": {
+        "given": "Bhalchandra",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Bhalchandra Manjunath Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1838,
+          "qualifier": "circa",
+          "raw": "c. 1838"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "fatorpa"
+        },
+        {
+          "id": "canacona"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1889,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0992",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Janakibai Manjunath Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1840,
+          "qualifier": "circa",
+          "raw": "c. 1840"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "cuncolim"
+        },
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1852,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0993",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Ratnabai Manjunath Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1843,
+          "qualifier": "circa",
+          "raw": "c. 1843"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1916,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kavale-math"
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-0994",
+      "name": {
+        "given": "Rukminibai",
+        "surname": "Shanbhag",
+        "patronymic": "Manjunath",
+        "display": "Rukminibai Manjunath Shanbhag"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1845,
+          "qualifier": "circa",
+          "raw": "c. 1845"
+        },
+        "place": {
+          "id": "fatorpa"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vasishta",
+      "math": "kavale-math",
+      "kuladevata": "shantadurga-kunkalikarin",
+      "mool": "cuncolim",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "fatorpa"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1897,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "shanbhag-cuncolim-0918",
+      "motherId": "shanbhag-cuncolim-0919"
+    },
+    {
+      "id": "shanbhag-cuncolim-1526",
+      "name": {
+        "given": "Nikhil",
+        "surname": "Hegde",
+        "patronymic": "Milind",
+        "display": "Nikhil Milind Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact",
+          "raw": "1979"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "karwar"
+        },
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1979
+        }
+      ],
+      "fatherId": "shanbhag-cuncolim-0975",
+      "motherId": "prabhu-loutolim-0643"
+    },
+    {
+      "id": "shanbhag-cuncolim-1527",
+      "name": {
+        "given": "Sameer",
+        "surname": "Hegde",
+        "patronymic": "Milind",
+        "display": "Sameer Milind Hegde"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1982,
+          "qualifier": "exact",
+          "raw": "1982"
+        },
+        "place": {
+          "id": "belgaum"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "partagali-math",
+      "kuladevata": "shantadurga",
+      "mool": "cuncolim",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "belgaum"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "pharmacist"
+      ],
+      "fatherId": "shanbhag-cuncolim-0975",
+      "motherId": "prabhu-loutolim-0643"
+    }
+  ]
+}

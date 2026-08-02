@@ -1,0 +1,3520 @@
+{
+  "_note": "GENERATED SAMPLE DATA — every person here is fictional. The gotras, mathas, kuladevatas, villages and naming conventions are authentic; the individuals are not. Delete this file when real records replace it.",
+  "_lineage": "Settled at Barkur when it was still a working port on the Seeta river.",
+  "people": [
+    {
+      "id": "kudva-barkur-1297",
+      "name": {
+        "given": "Ramchandra",
+        "surname": "Kudva",
+        "display": "Ramchandra Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1833,
+          "qualifier": "circa",
+          "raw": "c. 1833"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1900,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "epithet": "earliest ancestor recorded in this branch",
+      "notes": "The line is not traced above this generation. Anyone holding a vahi, horoscope or matha register that reaches further back is asked to contribute it.",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1298",
+          "status": "married",
+          "date": {
+            "year": 1853,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "barkur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1298",
+      "name": {
+        "given": "Gangabai",
+        "surname": "Rao",
+        "display": "Gangabai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1833,
+          "qualifier": "circa",
+          "raw": "c. 1833"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "mudgala",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "verna",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "madkai"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1909,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "shipping agent at Basrur"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1297",
+          "status": "married",
+          "date": {
+            "year": 1853,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1299",
+      "name": {
+        "given": "Krishnabai",
+        "surname": "Kudva",
+        "patronymic": "Ramchandra",
+        "display": "Krishnabai Ramchandra Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1856,
+          "qualifier": "circa",
+          "raw": "c. 1856"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "madkai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1917,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        },
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "fatherId": "kudva-barkur-1297",
+      "motherId": "kudva-barkur-1298"
+    },
+    {
+      "id": "kudva-barkur-1300",
+      "name": {
+        "given": "Shrinivas",
+        "surname": "Kudva",
+        "patronymic": "Ramchandra",
+        "display": "Shrinivas Ramchandra Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa",
+          "raw": "c. 1858"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "madkai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1901,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "Sanskrit scholar"
+      ],
+      "fatherId": "kudva-barkur-1297",
+      "motherId": "kudva-barkur-1298",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1304",
+          "status": "married",
+          "date": {
+            "year": 1879,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "basrur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1301",
+      "name": {
+        "given": "Indirabai",
+        "surname": "Kudva",
+        "patronymic": "Ramchandra",
+        "display": "Indirabai Ramchandra Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1861,
+          "qualifier": "circa",
+          "raw": "c. 1861"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "madkai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1914,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        }
+      ],
+      "fatherId": "kudva-barkur-1297",
+      "motherId": "kudva-barkur-1298"
+    },
+    {
+      "id": "kudva-barkur-1302",
+      "name": {
+        "given": "Ganesh",
+        "surname": "Kudva",
+        "patronymic": "Ramchandra",
+        "display": "Ganesh Ramchandra Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1863,
+          "qualifier": "circa",
+          "raw": "c. 1863"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "madkai"
+        },
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1866,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kudva-barkur-1297",
+      "motherId": "kudva-barkur-1298"
+    },
+    {
+      "id": "kudva-barkur-1303",
+      "name": {
+        "given": "Kashibai",
+        "surname": "Kudva",
+        "patronymic": "Ramchandra",
+        "display": "Kashibai Ramchandra Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1867,
+          "qualifier": "circa",
+          "raw": "c. 1867"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1874,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kudva-barkur-1297",
+      "motherId": "kudva-barkur-1298"
+    },
+    {
+      "id": "kudva-barkur-1304",
+      "name": {
+        "given": "Janakibai",
+        "surname": "Shenoy",
+        "display": "Janakibai Shenoy"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1858,
+          "qualifier": "circa",
+          "raw": "c. 1858"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kashi-math",
+      "kuladevata": "mangesh",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "madkai"
+        }
+      ],
+      "confidence": "unverified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1938,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "salt-pan holder"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1300",
+          "status": "married",
+          "date": {
+            "year": 1879,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1305",
+      "name": {
+        "given": "Narmadabai",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Narmadabai Shrinivas Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1881,
+          "qualifier": "exact",
+          "raw": "1881"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1950,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1306",
+          "status": "widowed",
+          "date": {
+            "year": 1895,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        },
+        {
+          "personId": "kudva-barkur-1307",
+          "status": "married",
+          "date": {
+            "year": 1928,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "barkur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1306",
+      "name": {
+        "given": "Ramchandra",
+        "surname": "Prabhu",
+        "display": "Ramchandra Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1869,
+          "qualifier": "circa",
+          "raw": "c. 1869"
+        },
+        "place": {
+          "id": "madkai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1925,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "keeper of the temple accounts"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1305",
+          "status": "married",
+          "date": {
+            "year": 1895,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1307",
+      "name": {
+        "given": "Deepak",
+        "surname": "Shanbhag",
+        "display": "Deepak Shanbhag"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1913,
+          "qualifier": "exact",
+          "raw": "1913"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1975,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1305",
+          "status": "married",
+          "date": {
+            "year": 1928,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1308",
+      "name": {
+        "given": "Ratnabai",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Ratnabai Ramchandra Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1978,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305"
+    },
+    {
+      "id": "kudva-barkur-1309",
+      "name": {
+        "given": "Anant",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Anant Ramchandra Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1899,
+          "qualifier": "exact",
+          "raw": "1899"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1944,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1310",
+          "status": "married",
+          "date": {
+            "year": 1919,
+            "qualifier": "circa"
+          },
+          "place": {
+            "id": "basrur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1310",
+      "name": {
+        "given": "Vithabai",
+        "surname": "Rao",
+        "display": "Vithabai Rao"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1897,
+          "qualifier": "exact",
+          "raw": "1897"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "parashara",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "kushasthali",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "madkai"
+        },
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1961,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "temple priest"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1309",
+          "status": "married",
+          "date": {
+            "year": 1919,
+            "qualifier": "circa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1311",
+      "name": {
+        "given": "Jyoti",
+        "surname": "Prabhu",
+        "patronymic": "Anant",
+        "display": "Jyoti Anant Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1920,
+          "qualifier": "exact",
+          "raw": "1920"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1984,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil engineer"
+      ],
+      "fatherId": "kudva-barkur-1309",
+      "motherId": "kudva-barkur-1310",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1315",
+          "status": "married",
+          "date": {
+            "year": 1940,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1312",
+      "name": {
+        "given": "Lata",
+        "surname": "Prabhu",
+        "patronymic": "Anant",
+        "display": "Lata Anant Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1923,
+          "qualifier": "exact",
+          "raw": "1923"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1937,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kudva-barkur-1309",
+      "motherId": "kudva-barkur-1310"
+    },
+    {
+      "id": "kudva-barkur-1313",
+      "name": {
+        "given": "Sarojini",
+        "surname": "Prabhu",
+        "patronymic": "Anant",
+        "display": "Sarojini Anant Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1927,
+          "qualifier": "exact",
+          "raw": "1927"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1976,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1927
+        }
+      ],
+      "fatherId": "kudva-barkur-1309",
+      "motherId": "kudva-barkur-1310"
+    },
+    {
+      "id": "kudva-barkur-1314",
+      "name": {
+        "given": "Shanta",
+        "surname": "Prabhu",
+        "patronymic": "Anant",
+        "display": "Shanta Anant Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1932,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kudva-barkur-1309",
+      "motherId": "kudva-barkur-1310"
+    },
+    {
+      "id": "kudva-barkur-1315",
+      "name": {
+        "given": "Kiran",
+        "surname": "Kudva",
+        "display": "Kiran Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1920,
+          "qualifier": "exact",
+          "raw": "1920"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1988,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "journalist"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1311",
+          "status": "married",
+          "date": {
+            "year": 1940,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1316",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Nirmala Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1941,
+          "qualifier": "exact",
+          "raw": "1941"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2006,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Hindustani vocalist"
+      ],
+      "fatherId": "kudva-barkur-1315",
+      "motherId": "kudva-barkur-1311",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1317",
+          "status": "widowed",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1317",
+      "name": {
+        "given": "Keshav",
+        "surname": "Pai",
+        "display": "Keshav Pai"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1931,
+          "qualifier": "exact",
+          "raw": "1931"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1316",
+          "status": "married",
+          "date": {
+            "year": 1957,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1318",
+      "name": {
+        "given": "Vrinda",
+        "surname": "Pai",
+        "patronymic": "Keshav",
+        "display": "Vrinda Keshav Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "cooperative bank manager"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1958
+        }
+      ],
+      "fatherId": "kudva-barkur-1317",
+      "motherId": "kudva-barkur-1316",
+      "epithet": "taught three generations of the family"
+    },
+    {
+      "id": "kudva-barkur-1319",
+      "name": {
+        "given": "Lata",
+        "surname": "Pai",
+        "patronymic": "Keshav",
+        "display": "Lata Keshav Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "kudva-barkur-1317",
+      "motherId": "kudva-barkur-1316",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "kudva-barkur-1320",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Pai",
+        "patronymic": "Keshav",
+        "display": "Anuradha Keshav Pai"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "gautama",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "kudva-barkur-1317",
+      "motherId": "kudva-barkur-1316"
+    },
+    {
+      "id": "kudva-barkur-1321",
+      "name": {
+        "given": "Saraswatibai",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Saraswatibai Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1943,
+          "qualifier": "exact",
+          "raw": "1943"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2001,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "professor of mathematics"
+      ],
+      "fatherId": "kudva-barkur-1315",
+      "motherId": "kudva-barkur-1311",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "kudva-barkur-1322",
+      "name": {
+        "given": "Vinod",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Vinod Kiran Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1947,
+          "qualifier": "exact",
+          "raw": "1947"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Rigveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "civil servant"
+      ],
+      "fatherId": "kudva-barkur-1315",
+      "motherId": "kudva-barkur-1311"
+    },
+    {
+      "id": "kudva-barkur-1323",
+      "name": {
+        "given": "Kiran",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Kiran Kiran Kudva"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1949,
+          "qualifier": "exact",
+          "raw": "1949"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "railway clerk",
+        "insurance agent"
+      ],
+      "fatherId": "kudva-barkur-1315",
+      "motherId": "kudva-barkur-1311",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1324",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1324",
+      "name": {
+        "given": "Lata",
+        "surname": "Baliga",
+        "display": "Lata Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1958,
+          "qualifier": "exact",
+          "raw": "1958"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "vishwamitra",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "mathagram",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "insurance agent",
+        "railway clerk"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1973
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1323",
+          "status": "married",
+          "date": {
+            "year": 1977,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1325",
+      "name": {
+        "given": "Aditi",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Aditi Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1980,
+          "qualifier": "exact",
+          "raw": "1980"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "entrepreneur"
+      ],
+      "fatherId": "kudva-barkur-1323",
+      "motherId": "kudva-barkur-1324"
+    },
+    {
+      "id": "kudva-barkur-1326",
+      "name": {
+        "given": "Swati",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Swati Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1983,
+          "qualifier": "exact",
+          "raw": "1983"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1983
+        }
+      ],
+      "fatherId": "kudva-barkur-1323",
+      "motherId": "kudva-barkur-1324"
+    },
+    {
+      "id": "kudva-barkur-1327",
+      "name": {
+        "given": "Trupti",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Trupti Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1987,
+          "qualifier": "exact",
+          "raw": "1987"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        },
+        {
+          "id": "chicago"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1323",
+      "motherId": "kudva-barkur-1324"
+    },
+    {
+      "id": "kudva-barkur-1328",
+      "name": {
+        "given": "Meghana",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Meghana Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1990,
+          "qualifier": "exact",
+          "raw": "1990"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "residences": [
+        {
+          "id": "chicago"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 2005
+        }
+      ],
+      "fatherId": "kudva-barkur-1323",
+      "motherId": "kudva-barkur-1324"
+    },
+    {
+      "id": "kudva-barkur-1329",
+      "name": {
+        "given": "Diya",
+        "surname": "Kudva",
+        "patronymic": "Kiran",
+        "display": "Diya Kiran Kudva"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1993,
+          "qualifier": "exact",
+          "raw": "1993"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kutsa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "keloshi",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "fatherId": "kudva-barkur-1323",
+      "motherId": "kudva-barkur-1324"
+    },
+    {
+      "id": "kudva-barkur-1330",
+      "name": {
+        "given": "Damodar",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Damodar Ramchandra Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1901,
+          "qualifier": "exact",
+          "raw": "1901"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1974,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "surveyor"
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1331",
+          "status": "widowed",
+          "date": {
+            "year": 1925,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1331",
+      "name": {
+        "given": "Tarabai",
+        "surname": "Kini",
+        "display": "Tarabai Kini"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bharadwaja",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "mathagram",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1924
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1330",
+          "status": "married",
+          "date": {
+            "year": 1925,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1332",
+      "name": {
+        "given": "Avinash",
+        "surname": "Prabhu",
+        "patronymic": "Damodar",
+        "display": "Avinash Damodar Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1928,
+          "qualifier": "exact",
+          "raw": "1928"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1979,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "Konkani writer"
+      ],
+      "fatherId": "kudva-barkur-1330",
+      "motherId": "kudva-barkur-1331"
+    },
+    {
+      "id": "kudva-barkur-1333",
+      "name": {
+        "given": "Malati",
+        "surname": "Prabhu",
+        "patronymic": "Damodar",
+        "display": "Malati Damodar Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1930,
+          "qualifier": "exact",
+          "raw": "1930"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2003,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "bank officer"
+      ],
+      "fatherId": "kudva-barkur-1330",
+      "motherId": "kudva-barkur-1331"
+    },
+    {
+      "id": "kudva-barkur-1334",
+      "name": {
+        "given": "Ramesh",
+        "surname": "Prabhu",
+        "patronymic": "Damodar",
+        "display": "Ramesh Damodar Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1934,
+          "qualifier": "exact",
+          "raw": "1934"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2010,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath",
+        "textile mill supervisor"
+      ],
+      "fatherId": "kudva-barkur-1330",
+      "motherId": "kudva-barkur-1331",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1335",
+          "status": "married",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1335",
+      "name": {
+        "given": "Rekha",
+        "surname": "Shenoy",
+        "display": "Rekha Shenoy"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1940,
+          "qualifier": "exact",
+          "raw": "1940"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "jamadagni",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "madkai",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1940
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1334",
+          "status": "married",
+          "date": {
+            "year": 1958,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1336",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Prabhu",
+        "patronymic": "Ramesh",
+        "display": "Anuradha Ramesh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1960,
+          "qualifier": "exact",
+          "raw": "1960"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1975
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1334",
+      "motherId": "kudva-barkur-1335"
+    },
+    {
+      "id": "kudva-barkur-1337",
+      "name": {
+        "given": "Sunil",
+        "surname": "Prabhu",
+        "patronymic": "Ramesh",
+        "display": "Sunil Ramesh Prabhu"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1963,
+          "qualifier": "exact",
+          "raw": "1963"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1963
+        }
+      ],
+      "fatherId": "kudva-barkur-1334",
+      "motherId": "kudva-barkur-1335",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1338",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "madkai"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1338",
+      "name": {
+        "given": "Nirmala",
+        "surname": "Prabhu",
+        "display": "Nirmala Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1977,
+          "qualifier": "exact",
+          "raw": "1977"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "bhargava",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "kushasthali",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "dentist"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1337",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1339",
+      "name": {
+        "given": "Vivek",
+        "surname": "Prabhu",
+        "patronymic": "Sunil",
+        "display": "Vivek Sunil Prabhu"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "data scientist"
+      ],
+      "fatherId": "kudva-barkur-1337",
+      "motherId": "kudva-barkur-1338",
+      "epithet": "temple mahajan"
+    },
+    {
+      "id": "kudva-barkur-1340",
+      "name": {
+        "given": "Shobha",
+        "surname": "Prabhu",
+        "patronymic": "Ramesh",
+        "display": "Shobha Ramesh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1967,
+          "qualifier": "exact",
+          "raw": "1967"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect",
+        "data scientist"
+      ],
+      "fatherId": "kudva-barkur-1334",
+      "motherId": "kudva-barkur-1335",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1341",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "barkur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1341",
+      "name": {
+        "given": "Ameya",
+        "surname": "Shenoy",
+        "display": "Ameya Shenoy"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1340",
+          "status": "married",
+          "date": {
+            "year": 1992,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1342",
+      "name": {
+        "given": "Swati",
+        "surname": "Shenoy",
+        "patronymic": "Ameya",
+        "display": "Swati Ameya Shenoy"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1994,
+          "qualifier": "exact",
+          "raw": "1994"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "angirasa",
+      "math": "kashi-math",
+      "kuladevata": "mahalasa",
+      "mool": "madkai",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "kudva-barkur-1341",
+      "motherId": "kudva-barkur-1340"
+    },
+    {
+      "id": "kudva-barkur-1343",
+      "name": {
+        "given": "Kaustubh",
+        "surname": "Prabhu",
+        "patronymic": "Ramesh",
+        "display": "Kaustubh Ramesh Prabhu"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1969,
+          "qualifier": "exact",
+          "raw": "1969"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "residences": [
+        {
+          "id": "barkur"
+        },
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "documentary film-maker"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1334",
+      "motherId": "kudva-barkur-1335",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1344",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "basrur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1344",
+      "name": {
+        "given": "Samruddhi",
+        "surname": "Baliga",
+        "display": "Samruddhi Baliga"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1981,
+          "qualifier": "exact",
+          "raw": "1981"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kashyapa",
+      "math": "kashi-math",
+      "kuladevata": "shantadurga",
+      "mool": "divar",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "software engineer"
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1343",
+          "status": "married",
+          "date": {
+            "year": 1995,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1345",
+      "name": {
+        "given": "Radhika",
+        "surname": "Prabhu",
+        "patronymic": "Kaustubh",
+        "display": "Radhika Kaustubh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1998,
+          "qualifier": "exact",
+          "raw": "1998"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "architect"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1998
+        }
+      ],
+      "fatherId": "kudva-barkur-1343",
+      "motherId": "kudva-barkur-1344"
+    },
+    {
+      "id": "kudva-barkur-1346",
+      "name": {
+        "given": "Anjali",
+        "surname": "Prabhu",
+        "patronymic": "Kaustubh",
+        "display": "Anjali Kaustubh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2000,
+          "qualifier": "exact",
+          "raw": "2000"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "physician"
+      ],
+      "fatherId": "kudva-barkur-1343",
+      "motherId": "kudva-barkur-1344",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "kudva-barkur-1347",
+      "name": {
+        "given": "Anuradha",
+        "surname": "Prabhu",
+        "patronymic": "Kaustubh",
+        "display": "Anuradha Kaustubh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 2002,
+          "qualifier": "exact",
+          "raw": "2002"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "chicago"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "research scientist"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1343",
+      "motherId": "kudva-barkur-1344"
+    },
+    {
+      "id": "kudva-barkur-1348",
+      "name": {
+        "given": "Rucha",
+        "surname": "Prabhu",
+        "patronymic": "Ramesh",
+        "display": "Rucha Ramesh Prabhu"
+      },
+      "gender": "F",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1971,
+          "qualifier": "exact",
+          "raw": "1971"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "professor"
+      ],
+      "fatherId": "kudva-barkur-1334",
+      "motherId": "kudva-barkur-1335",
+      "bio": "Trained as a physician and ran a dispensary that treated the surrounding villages, often without charge.",
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1349",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          },
+          "place": {
+            "id": "barkur"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1349",
+      "name": {
+        "given": "Soham",
+        "surname": "Adiga",
+        "display": "Soham Adiga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1968,
+          "qualifier": "exact",
+          "raw": "1968"
+        },
+        "place": {
+          "id": "udupi"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "verified",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "graphic designer"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "Municipal birth register",
+          "year": 1968
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "spouses": [
+        {
+          "personId": "kudva-barkur-1348",
+          "status": "married",
+          "date": {
+            "year": 1996,
+            "qualifier": "exact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kudva-barkur-1350",
+      "name": {
+        "given": "Aniket",
+        "surname": "Adiga",
+        "patronymic": "Soham",
+        "display": "Aniket Soham Adiga"
+      },
+      "gender": "M",
+      "status": "living",
+      "birth": {
+        "date": {
+          "year": 1999,
+          "qualifier": "exact",
+          "raw": "1999"
+        },
+        "place": {
+          "id": "mumbai"
+        }
+      },
+      "community": "gsb",
+      "gotra": "kaushika",
+      "math": "kashi-math",
+      "kuladevata": "kamakshi",
+      "mool": "chorao",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        },
+        {
+          "id": "mumbai"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "occupations": [
+        "chef"
+      ],
+      "sources": [
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1349",
+      "motherId": "kudva-barkur-1348"
+    },
+    {
+      "id": "kudva-barkur-1351",
+      "name": {
+        "given": "Ambabai",
+        "surname": "Prabhu",
+        "patronymic": "Damodar",
+        "display": "Ambabai Damodar Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1936,
+          "qualifier": "exact",
+          "raw": "1936"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1996,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "headmistress"
+      ],
+      "fatherId": "kudva-barkur-1330",
+      "motherId": "kudva-barkur-1331"
+    },
+    {
+      "id": "kudva-barkur-1352",
+      "name": {
+        "given": "Kamala",
+        "surname": "Prabhu",
+        "patronymic": "Damodar",
+        "display": "Kamala Damodar Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1939,
+          "qualifier": "exact",
+          "raw": "1939"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 2020,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "schoolteacher",
+        "bank officer"
+      ],
+      "fatherId": "kudva-barkur-1330",
+      "motherId": "kudva-barkur-1331"
+    },
+    {
+      "id": "kudva-barkur-1353",
+      "name": {
+        "given": "Shashank",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Shashank Ramchandra Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1905,
+          "qualifier": "exact",
+          "raw": "1905"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "postmaster"
+      ],
+      "sources": [
+        {
+          "kind": "document",
+          "title": "School leaving certificate",
+          "year": 1905
+        }
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305"
+    },
+    {
+      "id": "kudva-barkur-1354",
+      "name": {
+        "given": "Satish",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Satish Ramchandra Prabhu"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1907,
+          "qualifier": "exact",
+          "raw": "1907"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1956,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "chartered accountant"
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305"
+    },
+    {
+      "id": "kudva-barkur-1355",
+      "name": {
+        "given": "Manjulabai",
+        "surname": "Prabhu",
+        "patronymic": "Ramchandra",
+        "display": "Manjulabai Ramchandra Prabhu"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1909,
+          "qualifier": "exact",
+          "raw": "1909"
+        },
+        "place": {
+          "id": "barkur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "shandilya",
+      "math": "kashi-math",
+      "kuladevata": "damodar",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "udupi"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1962,
+          "qualifier": "exact"
+        }
+      },
+      "occupations": [
+        "homoeopath",
+        "port officer"
+      ],
+      "fatherId": "kudva-barkur-1306",
+      "motherId": "kudva-barkur-1305"
+    },
+    {
+      "id": "kudva-barkur-1356",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Anandibai Shrinivas Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1883,
+          "qualifier": "exact",
+          "raw": "1883"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Apastamba",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1954,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "cardamom broker"
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    },
+    {
+      "id": "kudva-barkur-1357",
+      "name": {
+        "given": "Anandibai",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Anandibai Shrinivas Kudva"
+      },
+      "gender": "F",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1885,
+          "qualifier": "exact",
+          "raw": "1885"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1939,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "purohit"
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    },
+    {
+      "id": "kudva-barkur-1358",
+      "name": {
+        "given": "Ramchandra",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Ramchandra Shrinivas Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1888,
+          "qualifier": "exact",
+          "raw": "1888"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Krishna Yajurveda",
+      "residences": [
+        {
+          "id": "basrur"
+        },
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1955,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "schoolmaster"
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    },
+    {
+      "id": "kudva-barkur-1359",
+      "name": {
+        "given": "Purushottam",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Purushottam Shrinivas Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1890,
+          "qualifier": "exact",
+          "raw": "1890"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Shukla Yajurveda",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1962,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "village accountant"
+      ],
+      "sources": [
+        {
+          "kind": "oral",
+          "title": "Family recollection",
+          "detail": "Recorded from elders of the Kudva household at madkai."
+        },
+        {
+          "kind": "photograph",
+          "title": "Family group photograph",
+          "detail": "Undated studio portrait held by the family."
+        }
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304",
+      "epithet": "remembered for her singing"
+    },
+    {
+      "id": "kudva-barkur-1360",
+      "name": {
+        "given": "Govind",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Govind Shrinivas Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1892,
+          "qualifier": "exact",
+          "raw": "1892"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Rigveda",
+      "sutra": "Drahyayana",
+      "residences": [
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "attested",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1946,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "ayurvedic vaidya"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    },
+    {
+      "id": "kudva-barkur-1361",
+      "name": {
+        "given": "Waman",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Waman Shrinivas Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1894,
+          "qualifier": "exact",
+          "raw": "1894"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "veda": "Samaveda",
+      "sutra": "Ashvalayana",
+      "residences": [
+        {
+          "id": "madkai"
+        },
+        {
+          "id": "basrur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1956,
+          "qualifier": "circa"
+        }
+      },
+      "occupations": [
+        "landholder"
+      ],
+      "sources": [
+        {
+          "kind": "matha-record",
+          "title": "Matha vahi entry",
+          "detail": "Entry in the register kept at the family's matha.",
+          "heldBy": "kashi-math"
+        }
+      ],
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    },
+    {
+      "id": "kudva-barkur-1362",
+      "name": {
+        "given": "Vishnu",
+        "surname": "Kudva",
+        "patronymic": "Shrinivas",
+        "display": "Vishnu Shrinivas Kudva"
+      },
+      "gender": "M",
+      "status": "deceased",
+      "birth": {
+        "date": {
+          "year": 1898,
+          "qualifier": "exact",
+          "raw": "1898"
+        },
+        "place": {
+          "id": "basrur"
+        }
+      },
+      "community": "gsb",
+      "gotra": "srivatsa",
+      "math": "kashi-math",
+      "kuladevata": "venkataramana",
+      "mool": "madkai",
+      "sutra": "Bodhayana",
+      "residences": [
+        {
+          "id": "barkur"
+        }
+      ],
+      "confidence": "oral",
+      "contributedBy": "Community archive (sample)",
+      "sample": true,
+      "updatedAt": "2026-01-15",
+      "death": {
+        "date": {
+          "year": 1910,
+          "qualifier": "circa"
+        },
+        "note": "Died in infancy — recorded so that the birth order of the siblings is right."
+      },
+      "fatherId": "kudva-barkur-1300",
+      "motherId": "kudva-barkur-1304"
+    }
+  ]
+}
