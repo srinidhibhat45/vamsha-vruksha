@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { isAdmin } from "@/lib/adminAuth";
 import { getSubmission, updateSubmission } from "@/lib/submissions";
-import { publishSubmission } from "@/lib/promote";
+import { publishFamilyDraft, publishSubmission } from "@/lib/promote";
 
 export const dynamic = "force-dynamic";
 
@@ -59,6 +59,36 @@ export async function POST(request: Request) {
         { error: "This one has already been published" },
         { status: 409 },
       );
+    }
+
+    if (submission.kind === "family-tree") {
+      const result = publishFamilyDraft(submission);
+      if (!result.ok) {
+        return NextResponse.json(
+          { error: result.error, issues: result.issues },
+          { status: 422 },
+        );
+      }
+
+      const updated = updateSubmission(id, {
+        status: "merged",
+        reviewerNote: note,
+        // A family has no single record to point at, so the submission is
+        // anchored to the one a reviewer would open first — the head of the
+        // branch. The full id map lives on the family payload below.
+        appliedTo: result.apexId,
+        appliedAt: new Date().toISOString(),
+      });
+
+      return NextResponse.json({
+        ok: true,
+        submission: updated,
+        family: {
+          created: result.created,
+          updated: result.updated,
+          apexId: result.apexId,
+        },
+      });
     }
 
     const result = publishSubmission(submission);

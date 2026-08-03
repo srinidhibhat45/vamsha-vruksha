@@ -393,6 +393,39 @@ export interface Suggestion {
   detail: string;
   kind: "person" | "surname" | "gotra" | "mool" | "lineage";
   href: string;
+  /**
+   * The alternative name the query actually hit, when it was not the one being
+   * displayed. Without it a reader searching for the grandmother they knew as
+   * "Nanu" gets a list of people called something else and assumes she is
+   * missing — the match is right there and looks like a miss.
+   */
+  via?: string;
+}
+
+/**
+ * Which of a person's alternative names a query hit, if it hit one rather than
+ * the displayed name. Only alternatives are reported: saying "also written
+ * Narayan" under a card that says Narayan is noise.
+ */
+function aliasHit(p: Person, queryTokens: string[]): string | undefined {
+  if (!queryTokens.length) return undefined;
+
+  const displayed = new Set(plainTokens(fullName(p)).map(phoneticKey));
+  const alternatives = [
+    ...(p.name.aka ?? []),
+    p.name.birthName,
+    p.name.devanagari,
+    p.name.kannada,
+  ].filter((x): x is string => !!x?.trim());
+
+  for (const alt of alternatives) {
+    for (const token of plainTokens(alt)) {
+      const key = phoneticKey(token);
+      if (!key || displayed.has(key)) continue;
+      if (queryTokens.some((q) => phoneticKey(q) === key)) return alt.trim();
+    }
+  }
+  return undefined;
 }
 
 export function suggest(query: string, limit = 8): Suggestion[] {
@@ -401,17 +434,22 @@ export function suggest(query: string, limit = 8): Suggestion[] {
   const archive = getArchive();
   const out: Suggestion[] = [];
 
+  const queryTokens = plainTokens(q);
   const people = search({ query: q, limit }).results;
   for (const r of people) {
     const years = [birthYear(r.person), deathYear(r.person)]
       .filter(Boolean)
       .join("–");
+    const via = aliasHit(r.person, queryTokens);
     out.push({
       id: r.person.id,
       name: fullName(r.person),
-      detail: [years, r.lineageLabel].filter(Boolean).join(" · "),
+      detail: [via ? `also written ${via}` : undefined, years, r.lineageLabel]
+        .filter(Boolean)
+        .join(" · "),
       kind: "person",
       href: `/person/${r.person.id}`,
+      via,
     });
   }
 

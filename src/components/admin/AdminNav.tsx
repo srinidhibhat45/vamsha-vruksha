@@ -8,9 +8,17 @@ const LINKS = [
   { href: "/admin", label: "Overview" },
   { href: "/admin/queue", label: "Review queue" },
   { href: "/admin/people", label: "Records" },
+  { href: "/admin/vocabulary", label: "Vocabulary" },
 ];
 
-export function AdminNav({ pending }: { pending: number }) {
+export function AdminNav({
+  pending,
+  proposals,
+}: {
+  pending: number;
+  /** Reference entries waiting to be confirmed — see /admin/vocabulary. */
+  proposals: number;
+}) {
   const pathname = usePathname();
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -56,6 +64,11 @@ export function AdminNav({ pending }: { pending: number }) {
                 {link.href === "/admin/queue" && pending > 0 && (
                   <span className="ml-1.5 rounded-full bg-[var(--accent)] px-1.5 py-px text-[0.7rem] font-semibold text-[var(--accent-fg)]">
                     {pending}
+                  </span>
+                )}
+                {link.href === "/admin/vocabulary" && proposals > 0 && (
+                  <span className="ml-1.5 rounded-full bg-[var(--color-gold)] px-1.5 py-px text-[0.7rem] font-semibold text-[var(--color-ink)]">
+                    {proposals}
                   </span>
                 )}
               </Link>

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { isAdmin } from "@/lib/adminAuth";
 import { PersonInputSchema, createPerson } from "@/lib/peopleStore";
+import { createVocabResolver, resolvePersonRefs } from "@/lib/vocabStore";
 
 export const dynamic = "force-dynamic";
 
@@ -30,6 +31,11 @@ export async function POST(request: Request) {
     );
   }
 
-  const person = createPerson(parsed.data);
+  // A gotra or village the maintainer typed rather than picked becomes a real
+  // id here — matched onto the vocabulary where possible, otherwise added to
+  // it as a pending entry for /admin/vocabulary.
+  const person = createPerson(
+    resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
+  );
   return NextResponse.json({ ok: true, person });
 }

@@ -1,6 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import {
+  isProposedRef,
+  makeProposedRef,
+  proposedLabel,
+} from "@/lib/vocabulary";
 
 /**
  * A Material 3 exposed dropdown menu.
@@ -51,6 +56,9 @@ export function Select({
   describedBy,
   disabled,
   name,
+  allowCustom = false,
+  customHint = "A maintainer will check it before it joins the list.",
+  customVerb = "Add",
 }: {
   options: SelectOption[];
   value: string;
@@ -69,6 +77,19 @@ export function Select({
   disabled?: boolean;
   /** Mirrored into a hidden input so the control still posts in a plain form. */
   name?: string;
+  /**
+   * Let the typed text stand as the answer when the list does not hold it.
+   *
+   * The vocabularies here are open in principle and closed in practice — every
+   * list of gotras or kuladevatas is somebody's list, and the family in front
+   * of the form is as likely to be the exception as not. A closed dropdown
+   * makes them choose between the nearest wrong entry and abandoning the
+   * field, and both lose the name. The typed value is marked as a proposal
+   * (see lib/vocabulary.ts) rather than silently minted into the vocabulary.
+   */
+  allowCustom?: boolean;
+  customHint?: string;
+  customVerb?: string;
 }) {
   const reactId = useId();
   const baseId = id ?? `select-${reactId}`;
@@ -85,17 +106,43 @@ export function Select({
   const searchRef = useRef<HTMLInputElement>(null);
   const typeahead = useRef<{ text: string; at: number }>({ text: "", at: 0 });
 
+  const filterable = searchable || allowCustom;
   const selected = options.find((o) => o.value === value);
+  const proposed = isProposedRef(value) ? proposedLabel(value) : undefined;
 
-  const visible = useMemo(() => {
-    if (!searchable || !query.trim()) return options;
+  const matching = useMemo(() => {
+    if (!filterable || !query.trim()) return options;
     const q = query.trim().toLowerCase();
     return options.filter(
       (o) =>
         o.label.toLowerCase().includes(q) ||
         o.detail?.toLowerCase().includes(q),
     );
-  }, [options, query, searchable]);
+  }, [options, query, filterable]);
+
+  /**
+   * The typed text as a row of its own, offered *below* the matches rather
+   * than instead of them. Only suppressed when the list already holds that
+   * exact name, where adding it again would be a duplicate by definition.
+   */
+  const customRow = useMemo<SelectOption | null>(() => {
+    const typed = query.trim();
+    if (!allowCustom || typed.length < 2) return null;
+    const exact = options.some(
+      (o) => o.label.toLowerCase() === typed.toLowerCase(),
+    );
+    if (exact) return null;
+    return {
+      value: makeProposedRef(typed),
+      label: `${customVerb} “${typed}”`,
+      detail: customHint,
+    };
+  }, [allowCustom, query, options, customHint, customVerb]);
+
+  const visible = useMemo(
+    () => (customRow ? [...matching, customRow] : matching),
+    [matching, customRow],
+  );
 
   const close = useCallback(
     (refocus = true) => {
@@ -145,8 +192,8 @@ export function Select({
   }, [open, activeIndex]);
 
   useEffect(() => {
-    if (open && searchable) searchRef.current?.focus();
-  }, [open, searchable]);
+    if (open && filterable) searchRef.current?.focus();
+  }, [open, filterable]);
 
   const move = (delta: number) => {
     if (!visible.length) return;
@@ -229,13 +276,13 @@ export function Select({
       case " ":
       case "Spacebar":
         // Inside a filter box a space is a space.
-        if (searchable) break;
+        if (filterable) break;
         e.preventDefault();
         if (visible[activeIndex]) commit(visible[activeIndex]);
         break;
       default:
         if (
-          !searchable &&
+          !filterable &&
           e.key.length === 1 &&
           !e.metaKey &&
           !e.ctrlKey &&
@@ -289,11 +336,19 @@ export function Select({
       >
         <span
           className={`min-w-0 flex-1 truncate ${
-            selected ? "" : "text-[var(--fg-faint)]"
+            selected || proposed ? "" : "text-[var(--fg-faint)]"
           }`}
         >
-          {selected?.label ?? placeholder}
+          {selected?.label ?? proposed ?? placeholder}
         </span>
+        {/* A proposal has to look different from a chosen entry, or the
+            contributor cannot tell which of their fields are still waiting on
+            a maintainer. */}
+        {proposed && (
+          <span className="shrink-0 rounded-[var(--shape-full)] border border-[var(--color-gold)] px-1.5 py-px text-[0.65rem] font-semibold uppercase tracking-wide text-[color-mix(in_oklab,var(--color-laterite)_85%,var(--fg))]">
+            new
+          </span>
+        )}
         <svg
           viewBox="0 0 20 20"
           className={`h-4 w-4 shrink-0 text-[var(--fg-faint)] transition-transform duration-150 ${
@@ -316,7 +371,7 @@ export function Select({
           open ? "" : "hidden"
         }`}
       >
-        {searchable && (
+        {filterable && (
           <div className="sticky top-0 z-10 border-b border-[var(--line)] bg-[var(--bg-raised)] p-2">
             <input
               ref={searchRef}
@@ -327,7 +382,7 @@ export function Select({
                 setActiveIndex(0);
               }}
               onKeyDown={onKeyDown}
-              placeholder="Filter…"
+              placeholder={allowCustom ? "Search, or type a new one…" : "Filter…"}
               aria-label="Filter the list"
               aria-controls={listboxId}
               autoComplete="off"
@@ -345,7 +400,9 @@ export function Select({
         >
           {visible.length === 0 && (
             <li className="px-4 py-3 text-[0.85rem] text-[var(--fg-faint)]">
-              Nothing matches that.
+              {allowCustom
+                ? "Nothing matches — type at least two letters to add it."
+                : "Nothing matches that."}
             </li>
           )}
           {visible.map((option, i) => (
@@ -356,10 +413,27 @@ export function Select({
               aria-selected={option.value === value}
               data-index={i}
               data-active={i === activeIndex}
-              className="menu-item"
+              className={`menu-item ${
+                option === customRow
+                  ? "border-t border-[var(--line)] text-[var(--accent)]"
+                  : ""
+              }`}
               onPointerMove={() => setActiveIndex(i)}
               onClick={() => commit(option)}
             >
+              {option === customRow && (
+                <svg
+                  viewBox="0 0 16 16"
+                  className="h-4 w-4 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  aria-hidden="true"
+                >
+                  <path d="M8 3v10M3 8h10" />
+                </svg>
+              )}
               <span className="min-w-0 flex-1">
                 <span className="block truncate">{option.label}</span>
                 {option.detail && (

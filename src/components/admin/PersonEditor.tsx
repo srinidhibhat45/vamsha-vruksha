@@ -507,7 +507,7 @@ export function PersonEditor({
           <Text label="Born in" value={f.birthYear} onChange={(v) => set("birthYear", v)} placeholder="1897" />
           <Select label="How exact" value={f.birthQualifier} onChange={(v) => set("birthQualifier", v)} options={QUALIFIERS} />
           <div>
-            <Select label="Born at" value={f.birthPlace} onChange={(v) => set("birthPlace", v)} searchable options={options(refs.places, "Not recorded")} />
+            <Select label="Born at" value={f.birthPlace} onChange={(v) => set("birthPlace", v)} allowCustom options={options(refs.places, "Not recorded")} />
             <FreeTextPlace
               label={f.birthPlaceLabel}
               chosen={f.birthPlace}
@@ -520,7 +520,7 @@ export function PersonEditor({
         <div className="grid gap-4 sm:grid-cols-2">
           <Text label="Died in" value={f.deathYear} onChange={(v) => set("deathYear", v)} placeholder="1968" />
           <div>
-            <Select label="Died at" value={f.deathPlace} onChange={(v) => set("deathPlace", v)} searchable options={options(refs.places, "Not recorded")} />
+            <Select label="Died at" value={f.deathPlace} onChange={(v) => set("deathPlace", v)} allowCustom options={options(refs.places, "Not recorded")} />
             <FreeTextPlace
               label={f.deathPlaceLabel}
               chosen={f.deathPlace}
@@ -553,7 +553,7 @@ export function PersonEditor({
                           ),
                         )
                       }
-                      searchable
+                      allowCustom
                       options={options(refs.places, "Choose a place")}
                     />
                   </div>
@@ -585,14 +585,14 @@ export function PersonEditor({
 
       <Section
         title="Lineage"
-        note="Every one of these is a reference entry rather than free text, which is what keeps the directory from splitting one gotra across four spellings."
+        note="Every one of these is a reference entry rather than free text, which is what keeps the directory from splitting one gotra across four spellings. Anything not on a list can still be typed into it — it is recorded against this person straight away and queued on the vocabulary screen for the details only you can fill in."
       >
         <div className="grid gap-4 sm:grid-cols-2">
-          <Select label="Gotra" value={f.gotra} onChange={(v) => set("gotra", v)} searchable options={options(refs.gotras, "Not recorded")} />
-          <Select label="Community" value={f.community} onChange={(v) => set("community", v)} options={options(refs.communities, "Not recorded")} />
-          <Select label="Math" value={f.math} onChange={(v) => set("math", v)} searchable options={options(refs.maths, "Not recorded")} />
-          <Select label="Kuladevata" value={f.kuladevata} onChange={(v) => set("kuladevata", v)} searchable options={options(refs.kuladevatas, "Not recorded")} />
-          <Select label="Mool — ancestral village" value={f.mool} onChange={(v) => set("mool", v)} searchable options={options(refs.moolPlaces, "Not recorded")} />
+          <Select label="Gotra" value={f.gotra} onChange={(v) => set("gotra", v)} allowCustom options={options(refs.gotras, "Not recorded")} />
+          <Select label="Community" value={f.community} onChange={(v) => set("community", v)} allowCustom options={options(refs.communities, "Not recorded")} />
+          <Select label="Math" value={f.math} onChange={(v) => set("math", v)} allowCustom options={options(refs.maths, "Not recorded")} />
+          <Select label="Kuladevata" value={f.kuladevata} onChange={(v) => set("kuladevata", v)} allowCustom options={options(refs.kuladevatas, "Not recorded")} />
+          <Select label="Mool — ancestral village" value={f.mool} onChange={(v) => set("mool", v)} allowCustom options={options(refs.moolPlaces, "Not recorded")} />
           <Text label="Veda" value={f.veda} onChange={(v) => set("veda", v)} placeholder="Shukla Yajurveda" />
           <Text label="Sutra" value={f.sutra} onChange={(v) => set("sutra", v)} placeholder="Ashvalayana" />
         </div>

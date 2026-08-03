@@ -93,6 +93,22 @@ export default async function FacetPage({ params }: { params: Params }) {
 
   const maxCount = Math.max(1, ...list.map((f) => f.count));
 
+  /**
+   * The photograph of the temple, where the facet is one that has a building
+   * behind it. A directory of two dozen deity names reads as a glossary; the
+   * same list with the temples beside it reads as a set of places a family
+   * could go, which is what these entries actually are.
+   */
+  const imageFor = (id: string) => {
+    const temple =
+      facet === "kuladevata"
+        ? archive.templeByKuladevata.get(id)
+        : facet === "math"
+          ? archive.templeByMath.get(id)
+          : undefined;
+    return temple?.image ? { temple, image: temple.image } : undefined;
+  };
+
   const noteFor = (id: string): string | undefined => {
     if (facet === "gotra") {
       const g = archive.gotras.get(id);
@@ -165,39 +181,61 @@ export default async function FacetPage({ params }: { params: Params }) {
       <ul className="mt-8 surface divide-y divide-[var(--line)] overflow-hidden">
         {list.map((f) => {
           const note = noteFor(f.id);
+          const picture = imageFor(f.id);
           return (
             <li key={f.id}>
               <Link
                 href={`/search?${config.param}=${encodeURIComponent(f.id)}`}
-                className="group block px-5 py-4 transition-colors hover:bg-[var(--bg-sunken)]"
+                className="group flex gap-4 px-5 py-4 transition-colors hover:bg-[var(--bg-sunken)]"
               >
-                <div className="flex items-baseline justify-between gap-4">
-                  <h2 className="font-display text-[1.25rem] font-medium group-hover:text-[var(--accent)]">
-                    {f.label}
-                  </h2>
-                  <span className="shrink-0 text-[0.85rem] tabular-nums text-[var(--fg-faint)]">
-                    {f.count.toLocaleString()}{" "}
-                    {f.count === 1 ? "person" : "people"}
-                  </span>
-                </div>
-
-                {/* Proportional bar — makes the long tail of small families
-                    legible next to the handful of very large ones. */}
-                <div
-                  className="mt-2 h-1 rounded-full bg-[var(--bg-inset)]"
-                  aria-hidden
-                >
-                  <div
-                    className="h-full rounded-full bg-[var(--accent)] opacity-60"
-                    style={{ width: `${Math.max(2, (f.count / maxCount) * 100)}%` }}
+                {picture && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={picture.image.src}
+                    alt=""
+                    width={112}
+                    height={84}
+                    loading="lazy"
+                    decoding="async"
+                    className="hidden h-[84px] w-28 shrink-0 rounded-[var(--shape-sm)] bg-[var(--bg-inset)] object-cover sm:block"
                   />
-                </div>
-
-                {note && (
-                  <p className="mt-2.5 text-[0.9rem] leading-relaxed text-[var(--fg-soft)]">
-                    {note}
-                  </p>
                 )}
+
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-baseline justify-between gap-4">
+                    <h2 className="font-display text-[1.25rem] font-medium group-hover:text-[var(--accent)]">
+                      {f.label}
+                    </h2>
+                    <span className="shrink-0 text-[0.85rem] tabular-nums text-[var(--fg-faint)]">
+                      {f.count.toLocaleString()}{" "}
+                      {f.count === 1 ? "person" : "people"}
+                    </span>
+                  </div>
+
+                  {/* Proportional bar — makes the long tail of small families
+                      legible next to the handful of very large ones. */}
+                  <div
+                    className="mt-2 h-1 rounded-full bg-[var(--bg-inset)]"
+                    aria-hidden
+                  >
+                    <div
+                      className="h-full rounded-full bg-[var(--accent)] opacity-60"
+                      style={{ width: `${Math.max(2, (f.count / maxCount) * 100)}%` }}
+                    />
+                  </div>
+
+                  {note && (
+                    <p className="mt-2.5 text-[0.9rem] leading-relaxed text-[var(--fg-soft)]">
+                      {note}
+                    </p>
+                  )}
+
+                  {picture && (
+                    <p className="mt-1.5 text-[0.72rem] text-[var(--fg-faint)]">
+                      Photograph {picture.image.credit}, {picture.image.license}
+                    </p>
+                  )}
+                </div>
               </Link>
             </li>
           );

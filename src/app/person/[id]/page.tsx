@@ -136,6 +136,11 @@ export default async function PersonPage({ params }: { params: Params }) {
   const line = maleLine(id);
   const gotra = person.gotra ? archive.gotras.get(person.gotra) : undefined;
   const math = person.math ? archive.maths.get(person.math) : undefined;
+  const temple =
+    (person.kuladevata
+      ? archive.templeByKuladevata.get(person.kuladevata)
+      : undefined) ??
+    (person.math ? archive.templeByMath.get(person.math) : undefined);
   const kuladevata = person.kuladevata
     ? archive.kuladevatas.get(person.kuladevata)
     : undefined;
@@ -256,13 +261,40 @@ export default async function PersonPage({ params }: { params: Params }) {
         </div>
 
         <div className="relative flex flex-wrap items-start gap-6 p-6">
-          <span
-            className="avatar avatar-square [--avatar:88px]"
-            style={{ ["--tone" as string]: tone }}
-            aria-hidden
-          >
-            {initials(person)}
-          </span>
+          {/*
+            A photograph where there is one, initials where there is not. The
+            initials tile is not a placeholder waiting to be replaced — most
+            people in this archive were photographed rarely or never, and a
+            record of somebody who has no surviving picture should not look
+            like a broken version of one that does.
+          */}
+          {person.photo?.url ? (
+            <figure className="m-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={person.photo.url}
+                alt={person.photo.caption ?? `Photograph of ${fullName(person)}`}
+                width={person.photo.width}
+                height={person.photo.height}
+                className="h-[132px] w-[132px] rounded-[var(--shape-md)] bg-[var(--bg-inset)] object-cover"
+              />
+              {(person.photo.credit || person.photo.year) && (
+                <figcaption className="mt-1.5 max-w-[132px] text-[0.72rem] leading-snug text-[var(--fg-faint)]">
+                  {[person.photo.year, person.photo.credit]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </figcaption>
+              )}
+            </figure>
+          ) : (
+            <span
+              className="avatar avatar-square [--avatar:88px]"
+              style={{ ["--tone" as string]: tone }}
+              aria-hidden
+            >
+              {initials(person)}
+            </span>
+          )}
 
           <div className="min-w-0 flex-1">
             <h1 className="font-display text-[2.25rem] font-medium leading-tight">
@@ -664,6 +696,65 @@ export default async function PersonPage({ params }: { params: Params }) {
 
           {kuladevata?.note && (
             <NoteCard title="On this deity">{kuladevata.note}</NoteCard>
+          )}
+
+          {/*
+            The family's temple, on the family's record. For a reader abroad
+            who has only ever heard the deity's name said aloud at home, this
+            is the one thing on the page that turns a reference id into a real
+            building they could stand in front of.
+          */}
+          {temple?.image && (
+            <div className="surface overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={temple.image.src}
+                alt={temple.name}
+                width={temple.image.width}
+                height={temple.image.height}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[4/3] w-full bg-[var(--bg-inset)] object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-display text-[1.1rem] font-medium">
+                  {temple.name}
+                </h3>
+                <p className="mt-0.5 text-[0.82rem] text-[var(--fg-faint)]">
+                  {[
+                    temple.placeId
+                      ? archive.places.get(temple.placeId)?.name
+                      : undefined,
+                    temple.originPlaceId
+                      ? `carried from ${archive.places.get(temple.originPlaceId)?.name}`
+                      : undefined,
+                  ]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
+                {temple.blurb && (
+                  <p className="mt-2 text-[0.86rem] leading-relaxed text-[var(--fg-soft)]">
+                    {temple.blurb}
+                  </p>
+                )}
+                <p className="mt-2 text-[0.72rem] leading-relaxed text-[var(--fg-faint)]">
+                  Photograph {temple.image.credit}
+                  {", "}
+                  {temple.image.licenseUrl ? (
+                    <a
+                      href={temple.image.licenseUrl}
+                      rel="noopener noreferrer license"
+                      target="_blank"
+                      className="underline decoration-dotted underline-offset-2"
+                    >
+                      {temple.image.license}
+                    </a>
+                  ) : (
+                    temple.image.license
+                  )}
+                </p>
+              </div>
+            </div>
           )}
         </aside>
       </div>

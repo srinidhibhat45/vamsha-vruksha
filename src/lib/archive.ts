@@ -9,6 +9,7 @@ import type {
   Math as MathRef,
   Person,
   Place,
+  Temple,
   Union,
 } from "./types.ts";
 
@@ -62,6 +63,14 @@ export interface Archive {
   communities: Map<string, Community>;
   kuladevatas: Map<string, Kuladevata>;
   places: Map<string, Place>;
+  temples: Map<string, Temple>;
+  /**
+   * Indexed both ways round because the two are asked for from opposite
+   * directions: the diaspora gallery walks the temples, while a person's
+   * record and the kuladevata directory hold a deity id and want its picture.
+   */
+  templeByKuladevata: Map<string, Temple>;
+  templeByMath: Map<string, Temple>;
   surnameNotes: Map<string, SurnameNote>;
 
   stats: ArchiveStats;
@@ -525,6 +534,7 @@ function build(): Archive {
   const communities = indexBy(readReference<Community>("communities"));
   const kuladevatas = indexBy(readReference<Kuladevata>("kuladevatas"));
   const places = indexBy(readReference<Place>("places"));
+  const temples = indexBy(readReference<Temple>("temples"));
   const surnameNotes = new Map(
     readReference<SurnameNote>("surnames").map((s) => [
       s.name.toLowerCase(),
@@ -587,6 +597,15 @@ function build(): Archive {
     communities,
     kuladevatas,
     places,
+    temples,
+    templeByKuladevata: new Map(
+      [...temples.values()]
+        .filter((t) => t.kuladevataId)
+        .map((t) => [t.kuladevataId!, t]),
+    ),
+    templeByMath: new Map(
+      [...temples.values()].filter((t) => t.mathId).map((t) => [t.mathId!, t]),
+    ),
     surnameNotes,
     stats,
     sampleOnly: personList.length > 0 && personList.every((p) => p.sample),

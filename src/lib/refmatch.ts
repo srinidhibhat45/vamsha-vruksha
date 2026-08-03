@@ -89,6 +89,24 @@ export interface ResolveResult {
 export function resolveRef(
   vocabulary: Vocabulary,
   value: string | undefined,
+  options: {
+    /**
+     * Only accept a match the spelling itself justifies — the phonetic key of
+     * the name, an alias or an id — and stop before the prefix and
+     * edit-distance passes.
+     *
+     * The loose passes below exist for bulk imports, where every unmatched
+     * value is listed for a human afterwards and an over-eager match is caught
+     * in review. Nothing is reviewed when a contributor proposes a name in a
+     * form, so the same passes stop being a convenience and become silent data
+     * loss: "Kolambe" is two edits from "Kollam", and a village in the Konkan
+     * would be rewritten into a city in Kerala with nobody ever told. Strict
+     * matching lets it through as a proposal instead — where the same fuzzy
+     * candidates are shown to a maintainer *as suggestions*, which is the only
+     * place guessing belongs.
+     */
+    strict?: boolean;
+  } = {},
 ): ResolveResult | undefined {
   if (!value?.trim()) return undefined;
 
@@ -98,6 +116,13 @@ export function resolveRef(
 
   const exact = lookup.get(key);
   if (exact) return { id: exact, matched: true };
+
+  if (options.strict) {
+    return {
+      id: cleaned.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, ""),
+      matched: false,
+    };
+  }
 
   // Prefix match, both ways: "Gokarn Partagali Jeevottam" against
   // "Gokarn Partagali", and "Shantadurga Kunkali" against "Shantadurga".

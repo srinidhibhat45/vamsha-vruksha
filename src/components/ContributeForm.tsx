@@ -1,10 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useRef, useState } from "react";
 import { PersonPicker, type PickedPerson } from "./PersonPicker";
 import { Select } from "./ui/Select";
-import type { Suggestion } from "@/lib/search";
+import { MatchHint } from "./MatchHint";
+import { PhotoField } from "./PhotoField";
+import { FamilyBuilder } from "./family/FamilyBuilder";
+import { checkDraft } from "@/lib/family";
+import type { DraftPerson, PhotoRef } from "@/lib/types";
 
 export interface RefOption {
   id: string;
@@ -26,6 +30,12 @@ const KINDS = [
     id: "new-person",
     title: "Add a person",
     blurb: "Someone not yet in the archive — an ancestor, a cousin, yourself.",
+  },
+  {
+    id: "family-tree",
+    title: "Add a whole family",
+    blurb:
+      "A household or a branch in one go — parents, their children, who married whom. Drawn as a tree as you enter it.",
   },
   {
     id: "correction",
@@ -52,6 +62,15 @@ interface SourceEntry {
   kind: string;
   title: string;
   detail: string;
+}
+
+/** A record the archive already holds that may be the one being submitted. */
+interface PossibleMatch {
+  id: string;
+  name: string;
+  detail: string;
+  reasons: string[];
+  confidence: number;
 }
 
 const SOURCE_KINDS = [
@@ -229,6 +248,12 @@ export function ContributeForm({
   const [relChild, setRelChild] = useState<PickedPerson | null>(null);
   const [relPersonA, setRelPersonA] = useState<PickedPerson | null>(null);
 
+  // A whole branch, entered at once. Held here rather than inside the builder
+  // so that switching between kinds does not throw away half an hour of work.
+  const [family, setFamily] = useState<DraftPerson[]>([]);
+
+  const [photo, setPhoto] = useState<PhotoRef | null>(null);
+
   const [confidence, setConfidence] = useState("oral");
   const [sources, setSources] = useState<SourceEntry[]>([
     { kind: "oral", title: "", detail: "" },
@@ -246,38 +271,11 @@ export function ContributeForm({
   const errorRef = useRef<HTMLDivElement>(null);
   const [done, setDone] = useState<{
     id: string;
-    duplicates: { id: string; name: string; birthYear?: number; confidence: number }[];
+    duplicates: PossibleMatch[];
+    people?: number;
+    warnings?: string[];
+    familyDuplicates?: { key: string; name: string; matches: PossibleMatch[] }[];
   } | null>(null);
-
-  /* --------------------------------------------------------------- */
-  /* Live duplicate warning                                           */
-  /* --------------------------------------------------------------- */
-
-  const [similar, setSimilar] = useState<Suggestion[]>([]);
-  useEffect(() => {
-    const name = [given, surname].filter(Boolean).join(" ").trim();
-    if (kind !== "new-person" || name.length < 4) {
-      setSimilar([]);
-      return;
-    }
-    const controller = new AbortController();
-    const timer = setTimeout(async () => {
-      try {
-        const res = await fetch(`/api/suggest?q=${encodeURIComponent(name)}`, {
-          signal: controller.signal,
-        });
-        if (!res.ok) return;
-        const data = (await res.json()) as { suggestions: Suggestion[] };
-        setSimilar((data.suggestions ?? []).filter((s) => s.kind === "person").slice(0, 4));
-      } catch {
-        /* superseded */
-      }
-    }, 400);
-    return () => {
-      controller.abort();
-      clearTimeout(timer);
-    };
-  }, [given, surname, kind]);
 
   /* --------------------------------------------------------------- */
   /* Who a correction or a story targets, and the payload each kind    */
@@ -300,6 +298,28 @@ export function ContributeForm({
       window.scrollTo({ top: 0, behavior: "smooth" });
       requestAnimationFrame(() => errorRef.current?.focus());
     };
+
+    if (kind === "family-tree") {
+      if (!family.length) {
+        fail("Add at least one person to the family before sending it.");
+        return;
+      }
+      if (family.every((p) => !p.given.trim())) {
+        fail("Everyone in the family needs at least a given name.");
+        return;
+      }
+      // Checked here as well as on the server, so a contradiction found after
+      // twenty minutes of typing is reported without a round trip losing it.
+      const problems = checkDraft({ people: family }).filter(
+        (p) => p.severity === "error",
+      );
+      if (problems.length) {
+        setIssues(problems.map((p) => ({ path: p.key ?? "", message: p.message })));
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        requestAnimationFrame(() => errorRef.current?.focus());
+        return;
+      }
+    }
 
     if (kind === "correction" && !correctionTargetId) {
       fail("Search for the record you want to correct.");
@@ -330,13 +350,22 @@ export function ContributeForm({
     let targetId: string | undefined;
     let payload: Record<string, unknown>;
 
-    if (kind === "story") {
+    if (kind === "family-tree") {
+      // The draft *is* the payload — no flattening, because the reviewer needs
+      // the same graph the contributor built, not a table of it.
+      payload = {
+        people: family,
+        note: message || undefined,
+        sources: sourcePayload.length ? sourcePayload : undefined,
+      };
+    } else if (kind === "story") {
       targetId = storyTargetId;
       payload = {
         epithet: epithet || undefined,
         occupations: commaList(occupations),
         residences: commaList(residences),
         bio: bio || undefined,
+        photo: photo ?? undefined,
         confidence,
         sources: sourcePayload,
       };
@@ -400,6 +429,7 @@ export function ContributeForm({
         spouseId: spouse?.id,
         spouseName: spouse?.name,
         marriageYear: marriageYear ? Number(marriageYear) : undefined,
+        photo: photo ?? undefined,
         confidence,
         sources: sourcePayload,
       };
@@ -436,7 +466,13 @@ export function ContributeForm({
         requestAnimationFrame(() => errorRef.current?.focus());
         return;
       }
-      setDone({ id: data.id, duplicates: data.duplicates ?? [] });
+      setDone({
+        id: data.id,
+        duplicates: data.duplicates ?? [],
+        people: data.people,
+        warnings: data.warnings,
+        familyDuplicates: data.familyDuplicates,
+      });
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setIssues([
@@ -454,7 +490,9 @@ export function ContributeForm({
       <div className="surface rangoli-field p-10 text-center">
         <h2 className="font-display text-[2.2rem] font-medium">Thank you.</h2>
         <p className="mx-auto mt-4 max-w-md text-[1rem] leading-relaxed text-[var(--fg-soft)]">
-          Your submission is in the queue as{" "}
+          {done.people
+            ? `All ${done.people} of them are in the queue as `
+            : "Your submission is in the queue as "}
           <code className="rounded bg-[var(--bg-inset)] px-1.5 py-0.5 text-[0.9rem]">
             {done.id}
           </code>
@@ -462,6 +500,47 @@ export function ContributeForm({
           immediately — that delay is the only thing keeping the archive
           trustworthy.
         </p>
+
+        {done.warnings && done.warnings.length > 0 && (
+          <div className="mx-auto mt-6 max-w-lg rounded-[var(--shape-md)] border border-[var(--outline-soft)] bg-[var(--bg-sunken)] p-4 text-left">
+            <h3 className="font-display text-[1.1rem] font-medium">
+              Passed on to the reviewer
+            </h3>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-[0.88rem] leading-relaxed text-[var(--fg-soft)]">
+              {done.warnings.map((w, i) => (
+                <li key={i}>{w}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {done.familyDuplicates && done.familyDuplicates.length > 0 && (
+          <div className="mx-auto mt-6 max-w-lg rounded-[var(--shape-md)] border border-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_8%,transparent)] p-4 text-left">
+            <h3 className="font-display text-[1.15rem] font-medium">
+              Some of these may already be here
+            </h3>
+            <ul className="mt-3 space-y-2.5">
+              {done.familyDuplicates.map((d) => (
+                <li key={d.key} className="text-[0.9rem]">
+                  <span className="font-medium">{d.name}</span>
+                  <span className="text-[var(--fg-faint)]"> may be </span>
+                  {d.matches.map((m, i) => (
+                    <span key={m.id}>
+                      {i > 0 && ", "}
+                      <Link href={`/person/${m.id}`} className="link-underline">
+                        {m.name}
+                      </Link>
+                    </span>
+                  ))}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-[0.82rem] leading-relaxed text-[var(--fg-faint)]">
+              The reviewer will merge rather than duplicate. If you know which
+              is which, an email saying so saves them an evening.
+            </p>
+          </div>
+        )}
 
         {done.duplicates.length > 0 && (
           <div className="mx-auto mt-8 max-w-lg rounded-[var(--shape-md)] border border-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_8%,transparent)] p-4 text-left">
@@ -472,19 +551,23 @@ export function ContributeForm({
               These records look close. If one of them is the same person, that
               is useful to know — the reviewer will merge rather than duplicate.
             </p>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-3 space-y-2.5">
               {done.duplicates.map((d) => (
                 <li key={d.id}>
                   <Link
                     href={`/person/${d.id}`}
-                    className="link-underline text-[0.92rem]"
+                    className="link-underline text-[0.92rem] font-medium"
                   >
                     {d.name}
-                    {d.birthYear && ` (b. ${d.birthYear})`}
                   </Link>
-                  <span className="ml-2 text-[0.8rem] text-[var(--fg-faint)]">
-                    {d.confidence}% match
-                  </span>
+                  {d.detail && (
+                    <span className="ml-2 text-[0.8rem] text-[var(--fg-faint)]">
+                      {d.detail}
+                    </span>
+                  )}
+                  <p className="text-[0.84rem] leading-relaxed text-[var(--fg-soft)]">
+                    {d.reasons.join(" · ")}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -614,6 +697,29 @@ export function ContributeForm({
             you know at the bottom.
           </p>
         </div>
+      )}
+
+      {/* ------------------------------------------- A whole family */}
+      {kind === "family-tree" && (
+        <>
+          <div className="rounded-[var(--shape-md)] border border-[var(--outline-soft)] bg-[var(--bg-sunken)] p-4">
+            <p className="text-[0.92rem] leading-relaxed text-[var(--fg-soft)]">
+              Add one person, then build outward from them — parents upward,
+              children and marriages downward. Anyone already in the archive
+              can be brought in rather than typed again, which is what keeps
+              the family you send attached to the one already here instead of
+              becoming a second copy of it. Nothing is sent until you press the
+              button at the bottom.
+            </p>
+          </div>
+
+          {/* The one section of this form that is a workspace rather than a
+              column of questions, and the only one that wants the whole
+              window. */}
+          <div className="wide-bleed">
+            <FamilyBuilder refs={refs} people={family} onChange={setFamily} />
+          </div>
+        </>
       )}
 
       {/* -------------------------------------------- Which record(s) */}
@@ -757,35 +863,36 @@ export function ContributeForm({
           </Field>
         </div>
 
-        {similar.length > 0 && (
-          <div
-            role="status"
-            className="rounded-[var(--shape-md)] border border-[var(--color-gold)] bg-[color-mix(in_oklab,var(--color-gold)_7%,transparent)] p-3.5"
-          >
-            <p className="text-[0.9rem] font-semibold">
-              Already in the archive with a similar name
-            </p>
-            <ul className="mt-2 space-y-1">
-              {similar.map((s) => (
-                <li key={s.id} className="text-[0.88rem]">
-                  <Link
-                    href={`/person/${s.id}`}
-                    target="_blank"
-                    className="link-underline"
-                  >
-                    {s.name}
-                    <span className="sr-only"> (opens in a new tab)</span>
-                  </Link>
-                  <span className="ml-2 text-[var(--fg-faint)]">{s.detail}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-2 text-[0.82rem] leading-relaxed text-[var(--fg-faint)]">
-              If one of these is the same person, use <em>Correct a record</em>{" "}
-              on their page instead — it keeps the archive from growing two
-              versions of one ancestor.
-            </p>
-          </div>
+        {/*
+          Fed everything the form knows, not just the name. Two men called
+          Narayan Kamath are common; two of the same gotra and mool, with the
+          same father's name, are one man written down twice.
+        */}
+        {kind === "new-person" && (
+          <MatchHint
+            descriptor={{
+              given,
+              patronymic,
+              surname,
+              aka: aka ? commaList(aka) : undefined,
+              devanagari: devanagari || undefined,
+              birthYear: birthYear ? Number(birthYear) : undefined,
+              deathYear: deathYear ? Number(deathYear) : undefined,
+              gotra: gotra || undefined,
+              mool: mool || undefined,
+              kuladevata: kuladevata || undefined,
+              math: math || undefined,
+              community: community || undefined,
+              fatherName: father?.name,
+              motherName: mother?.name,
+              spouseName: spouse?.name,
+            }}
+            // Nothing to link to here: a single-person submission has no row to
+            // attach an existing record to, so this stays advice. Correcting
+            // the record that is already there is the action, and it lives on
+            // that record's own page.
+            heading="Someone here may already be this person"
+          />
         )}
 
         <div className="grid gap-4 sm:grid-cols-2">
@@ -871,7 +978,7 @@ export function ContributeForm({
             value={birthPlace}
             onChange={setBirthPlace}
             placeholder="Not recorded"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not recorded" },
               ...refs.places.map((pl) => ({ value: pl.id, label: pl.label })),
@@ -905,7 +1012,7 @@ export function ContributeForm({
             value={deathPlace}
             onChange={setDeathPlace}
             placeholder="Not recorded"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not recorded" },
               ...refs.places.map((pl) => ({ value: pl.id, label: pl.label })),
@@ -927,7 +1034,7 @@ export function ContributeForm({
             value={gotra}
             onChange={setGotra}
             placeholder="Not known"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not known" },
               ...refs.gotras.map((g) => ({ value: g.id, label: g.label })),
@@ -938,7 +1045,7 @@ export function ContributeForm({
             value={kuladevata}
             onChange={setKuladevata}
             placeholder="Not known"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not known" },
               ...refs.kuladevatas.map((k) => ({ value: k.id, label: k.label })),
@@ -949,7 +1056,7 @@ export function ContributeForm({
             value={mool}
             onChange={setMool}
             placeholder="Not known"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not known" },
               ...refs.moolPlaces.map((pl) => ({
@@ -963,6 +1070,7 @@ export function ContributeForm({
             value={math}
             onChange={setMath}
             placeholder="Not known"
+            allowCustom
             options={[
               { value: "", label: "Not known" },
               ...refs.maths.map((m) => ({ value: m.id, label: m.label })),
@@ -973,7 +1081,7 @@ export function ContributeForm({
             value={community}
             onChange={setCommunity}
             placeholder="Not known"
-            searchable
+            allowCustom
             options={[
               { value: "", label: "Not known" },
               ...refs.communities.map((c) => ({ value: c.id, label: c.label })),
@@ -1084,14 +1192,21 @@ export function ContributeForm({
             />
           )}
         </Field>
+
+        <PhotoField value={photo} onChange={setPhoto} />
       </Section>
       )}
 
       {/* -------------------------------------------------- Sources */}
       <Section
         title="How do you know?"
-        note="This is the difference between an archive and a rumour. Nothing here is checked against you — it just tells the next reader how much weight to give it."
+        note={
+          kind === "family-tree"
+            ? "Recorded against everyone in this family. How sure you are about each individual person is set on their own card above — this is what the branch as a whole rests on."
+            : "This is the difference between an archive and a rumour. Nothing here is checked against you — it just tells the next reader how much weight to give it."
+        }
       >
+        {kind !== "family-tree" && (
         <fieldset>
           <legend className="label">How sure are you?</legend>
           <div className="space-y-2.5">
@@ -1124,8 +1239,15 @@ export function ContributeForm({
             ))}
           </div>
         </fieldset>
+        )}
 
-        <div className="space-y-3 border-t border-[var(--line)] pt-5">
+        <div
+          className={
+            kind === "family-tree"
+              ? "space-y-3"
+              : "space-y-3 border-t border-[var(--line)] pt-5"
+          }
+        >
           <h3 className="label">What it is based on</h3>
           {sources.map((src, i) => (
             <div key={i} className="grid gap-2 sm:grid-cols-[13rem_1fr_1fr]">

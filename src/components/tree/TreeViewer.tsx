@@ -21,15 +21,7 @@ import { phoneticKey } from "@/lib/translit";
 import { Select } from "@/components/ui/Select";
 import { PersonCard, TreeCardDefs, type TreeBaseline } from "./PersonCard";
 import { TreeDetailPanel } from "./TreeDetailPanel";
-
-const MIN_ZOOM = 0.12;
-const MAX_ZOOM = 2.6;
-
-interface Transform {
-  x: number;
-  y: number;
-  k: number;
-}
+import { usePanZoom, type Transform } from "./usePanZoom";
 
 const MODES: { id: LayoutMode; label: string; hint: string }[] = [
   {
@@ -65,30 +57,26 @@ export function TreeViewer({
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [filter, setFilter] = useState("");
-  const [transform, setTransform] = useState<Transform>({ x: 0, y: 0, k: 0.75 });
-  const [panning, setPanning] = useState(false);
-  // Starts at zero so the initial fit waits for a real measurement. Seeding it
-  // with a guess made the tree frame itself against dimensions the container
-  // never had, leaving it parked off-centre.
-  const [size, setSize] = useState({ w: 0, h: 0 });
   // Open by default. A key that has to be found before the drawing can be
   // read is not a key, and every reader arriving here is a first-time reader
   // of *this* family whatever else they have seen.
   const [showLegend, setShowLegend] = useState(true);
 
-  const wrapRef = useRef<HTMLDivElement>(null);
+  // Drag, pinch, wheel and the measured viewport, shared with the builder
+  // canvas so both drawings answer to the same gestures.
+  const {
+    wrapRef,
+    size,
+    transform,
+    setTransform,
+    panning,
+    zoomBy,
+    fitTo,
+    dragged,
+    handlers,
+  } = usePanZoom(0.75);
+
   const modeBtnRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const dragRef = useRef<{
-    startX: number;
-    startY: number;
-    origX: number;
-    origY: number;
-    moved: boolean;
-  } | null>(null);
-  const pinchRef = useRef<{ dist: number; k: number } | null>(null);
-  // Active touch/pen/mouse contacts, keyed by pointerId. A second concurrent
-  // pointer is what turns a drag into a pinch — see onPointerDown below.
-  const pointersRef = useRef<Map<number, { x: number; y: number }>>(new Map());
 
   /* ---------------------------------------------------------------- */
   /* Layout                                                            */
@@ -154,31 +142,7 @@ export function TreeViewer({
     if (window.matchMedia("(max-width: 47.9rem)").matches) setShowLegend(false);
   }, []);
 
-  useLayoutEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    const ro = new ResizeObserver(([entry]) => {
-      const { width, height } = entry.contentRect;
-      setSize({ w: width, h: height });
-    });
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, []);
-
-  const fit = useCallback(() => {
-    const { minX, minY, maxX, maxY } = layout.bounds;
-    const bw = Math.max(1, maxX - minX);
-    const bh = Math.max(1, maxY - minY);
-    const k = Math.min(
-      MAX_ZOOM,
-      Math.max(MIN_ZOOM, Math.min(size.w / bw, size.h / bh)),
-    );
-    setTransform({
-      k,
-      x: size.w / 2 - ((minX + maxX) / 2) * k,
-      y: size.h / 2 - ((minY + maxY) / 2) * k,
-    });
-  }, [layout.bounds, size.w, size.h]);
+  const fit = useCallback(() => fitTo(layout.bounds), [fitTo, layout.bounds]);
 
   const centerOnFocus = useCallback(
     (zoom?: number) => {
@@ -202,7 +166,16 @@ export function TreeViewer({
         y: size.h * fraction - fy * k,
       });
     },
-    [personNodes, focusId, size.w, size.h, transform.k, fit, layout.bounds],
+    [
+      personNodes,
+      focusId,
+      size.w,
+      size.h,
+      transform.k,
+      fit,
+      layout.bounds,
+      setTransform,
+    ],
   );
 
   // On first paint, and whenever the shape of the tree changes underneath us,
@@ -272,159 +245,7 @@ export function TreeViewer({
       x: size.w / 2 - (node.x + CARD_W / 2) * t.k,
       y: size.h * fraction - fy * t.k,
     }));
-  }, [focusId, personNodes, size.w, size.h, layout.bounds]);
-
-  /* ---------------------------------------------------------------- */
-  /* Pointer interaction                                               */
-  /* ---------------------------------------------------------------- */
-
-  // Starts a one-finger/mouse drag from the given point, against the
-  // transform as it stands right now. Pulled out so a pinch that ends with
-  // one finger still on the glass can drop straight back into a pan instead
-  // of stopping dead.
-  const startDrag = (x: number, y: number) => {
-    dragRef.current = {
-      startX: x,
-      startY: y,
-      origX: transform.x,
-      origY: transform.y,
-      moved: false,
-    };
-    setPanning(true);
-  };
-
-  const onPointerDown = (e: React.PointerEvent) => {
-    if (e.button !== 0 && e.pointerType === "mouse") return;
-    (e.target as Element).setPointerCapture?.(e.pointerId);
-    pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
-
-    if (pointersRef.current.size >= 2) {
-      // A second touch has landed: this is a pinch, not a pan. Drop any pan
-      // in progress and record the starting spread so onPointerMove has a
-      // baseline to scale against.
-      dragRef.current = null;
-      setPanning(false);
-      const [p1, p2] = [...pointersRef.current.values()];
-      pinchRef.current = {
-        dist: Math.hypot(p1.x - p2.x, p1.y - p2.y),
-        k: transform.k,
-      };
-      return;
-    }
-
-    startDrag(e.clientX, e.clientY);
-  };
-
-  const onPointerMove = (e: React.PointerEvent) => {
-    if (pointersRef.current.has(e.pointerId)) {
-      pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    }
-
-    if (pointersRef.current.size >= 2 && pinchRef.current) {
-      const [p1, p2] = [...pointersRef.current.values()];
-      const rect = wrapRef.current?.getBoundingClientRect();
-      const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
-      if (rect && pinchRef.current.dist > 0 && dist > 0) {
-        const midX = (p1.x + p2.x) / 2 - rect.left;
-        const midY = (p1.y + p2.y) / 2 - rect.top;
-        const k = Math.min(
-          MAX_ZOOM,
-          Math.max(MIN_ZOOM, pinchRef.current.k * (dist / pinchRef.current.dist)),
-        );
-        setTransform((t) => {
-          const scale = k / t.k;
-          // Keep the midpoint between the two fingers fixed, the same way a
-          // wheel-zoom keeps the point under the cursor fixed.
-          return {
-            k,
-            x: midX - (midX - t.x) * scale,
-            y: midY - (midY - t.y) * scale,
-          };
-        });
-      }
-      return;
-    }
-
-    const d = dragRef.current;
-    if (!d) return;
-    const dx = e.clientX - d.startX;
-    const dy = e.clientY - d.startY;
-    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) d.moved = true;
-    setTransform((t) => ({ ...t, x: d.origX + dx, y: d.origY + dy }));
-  };
-
-  const endDrag = (e?: React.PointerEvent) => {
-    if (e) pointersRef.current.delete(e.pointerId);
-
-    if (pointersRef.current.size >= 2) {
-      // Still pinching on the remaining fingers — re-baseline rather than
-      // stopping, so lifting a third finger (or a stray palm contact) does
-      // not interrupt the gesture.
-      const [p1, p2] = [...pointersRef.current.values()];
-      pinchRef.current = {
-        dist: Math.hypot(p1.x - p2.x, p1.y - p2.y),
-        k: transform.k,
-      };
-      return;
-    }
-
-    pinchRef.current = null;
-
-    if (pointersRef.current.size === 1) {
-      // One finger lifted out of a pinch, one still down: carry on panning
-      // from here rather than leaving the gesture dangling.
-      const [p] = [...pointersRef.current.values()];
-      startDrag(p.x, p.y);
-      return;
-    }
-
-    dragRef.current = null;
-    setPanning(false);
-  };
-
-  const zoomAt = useCallback(
-    (clientX: number, clientY: number, factor: number) => {
-      const rect = wrapRef.current?.getBoundingClientRect();
-      if (!rect) return;
-      const px = clientX - rect.left;
-      const py = clientY - rect.top;
-      setTransform((t) => {
-        const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, t.k * factor));
-        const scale = k / t.k;
-        return {
-          k,
-          // Keep the point under the cursor fixed while the scale changes.
-          x: px - (px - t.x) * scale,
-          y: py - (py - t.y) * scale,
-        };
-      });
-    },
-    [],
-  );
-
-  const onWheel = (e: React.WheelEvent) => {
-    if (e.ctrlKey || e.metaKey) {
-      // Trackpad pinch arrives as ctrl+wheel; so does an explicit zoom gesture.
-      e.preventDefault();
-      zoomAt(e.clientX, e.clientY, Math.exp(-e.deltaY * 0.01));
-    } else {
-      // Plain scroll pans, the way it does in every other canvas the reader
-      // has used. Zoom is on pinch, the buttons, and +/-.
-      setTransform((t) => ({ ...t, x: t.x - e.deltaX, y: t.y - e.deltaY }));
-    }
-  };
-
-  // React attaches wheel passively, which forbids preventDefault, so the pinch
-  // path is registered directly on the element instead.
-  useEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    const handler = (e: WheelEvent) => {
-      if (e.ctrlKey || e.metaKey) e.preventDefault();
-    };
-    el.addEventListener("wheel", handler, { passive: false });
-    return () => el.removeEventListener("wheel", handler);
-  }, []);
+  }, [focusId, personNodes, size.w, size.h, layout.bounds, setTransform]);
 
   /* ---------------------------------------------------------------- */
   /* Keyboard navigation                                               */
@@ -508,11 +329,11 @@ export function TreeViewer({
       }
 
       if (e.key === "+" || e.key === "=") {
-        setTransform((t) => ({ ...t, k: Math.min(MAX_ZOOM, t.k * 1.2) }));
+        zoomBy(1.2);
         return;
       }
       if (e.key === "-" || e.key === "_") {
-        setTransform((t) => ({ ...t, k: Math.max(MIN_ZOOM, t.k / 1.2) }));
+        zoomBy(1 / 1.2);
         return;
       }
       if (e.key === "0") {
@@ -844,20 +665,16 @@ export function TreeViewer({
           aria-roledescription="Family tree canvas"
           aria-label={`Family tree of ${payload.lineageLabel}`}
           aria-describedby="tree-canvas-help"
-          onPointerDown={(e) => {
-            setKeyboardNav(false);
-            onPointerDown(e);
-          }}
           className={`tree-canvas relative min-h-0 flex-1 overflow-hidden ${
             panning ? "is-panning" : ""
           }`}
-          onPointerMove={onPointerMove}
-          onPointerUp={endDrag}
-          onPointerLeave={endDrag}
-          onPointerCancel={endDrag}
-          onWheel={onWheel}
+          {...handlers}
+          onPointerDown={(e) => {
+            setKeyboardNav(false);
+            handlers.onPointerDown(e);
+          }}
           onClick={() => {
-            if (!dragRef.current?.moved) setSelectedId(null);
+            if (!dragged()) setSelectedId(null);
           }}
         >
           <svg
@@ -978,12 +795,7 @@ export function TreeViewer({
           {/* Framing controls, over the thing being framed. */}
           <ViewControls
             zoom={transform.k}
-            onZoom={(factor) =>
-              setTransform((t) => ({
-                ...t,
-                k: Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, t.k * factor)),
-              }))
-            }
+            onZoom={zoomBy}
             onFit={fit}
             onCentre={() => centerOnFocus(0.95)}
           />

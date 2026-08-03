@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { isAdmin } from "@/lib/adminAuth";
 import { queueCounts } from "@/lib/submissions";
+import { listPending } from "@/lib/vocabStore";
 import { AdminNav } from "@/components/admin/AdminNav";
 
 export const metadata: Metadata = {
@@ -31,10 +32,11 @@ export default async function SecureAdminLayout({
   if (!(await isAdmin())) redirect("/admin/login");
 
   const counts = queueCounts();
+  const proposals = listPending().length;
 
   return (
     <div className="admin-route min-h-full">
-      <AdminNav pending={counts.pending} />
+      <AdminNav pending={counts.pending} proposals={proposals} />
       {children}
     </div>
   );

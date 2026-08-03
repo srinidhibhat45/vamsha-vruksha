@@ -11,6 +11,8 @@
  * single record; all of them are obvious when you check the graph.
  */
 
+import fs from "node:fs";
+import path from "node:path";
 import {
   getArchive,
   fullName,
@@ -93,6 +95,52 @@ function main() {
       add("error", p.id, "father and mother are the same person");
     if (p.fatherId === p.id || p.motherId === p.id)
       add("error", p.id, "is recorded as their own parent");
+
+    // A photograph url that does not resolve is a broken image on a public
+    // page. Records point either at the media route or at a committed file;
+    // anything else means a record was hand-edited with a url the archive does
+    // not serve, and it will 404 for every reader.
+    if (p.photo?.url && !/^(\/api\/media\/|\/|https?:)/.test(p.photo.url)) {
+      add("error", p.id, `photo url "${p.photo.url}" is not a usable address`);
+    }
+  }
+
+  /* -------------------- temple photographs -------------------- */
+
+  for (const temple of archive.temples.values()) {
+    if (temple.kuladevataId && !archive.kuladevatas.has(temple.kuladevataId)) {
+      add("error", temple.id, `temple names unknown kuladevata "${temple.kuladevataId}"`);
+    }
+    if (temple.mathId && !archive.maths.has(temple.mathId)) {
+      add("error", temple.id, `temple names unknown math "${temple.mathId}"`);
+    }
+    for (const [field, id] of [
+      ["placeId", temple.placeId],
+      ["originPlaceId", temple.originPlaceId],
+    ] as const) {
+      if (id && !archive.places.has(id)) {
+        add("error", temple.id, `temple ${field} points at unknown place "${id}"`);
+      }
+    }
+
+    // Attribution is a licence condition, not a nicety. A temple image that
+    // has lost its photographer or its licence must not ship.
+    if (temple.image) {
+      if (!temple.image.credit) {
+        add("error", temple.id, "temple photograph has no photographer credited");
+      }
+      if (!temple.image.license) {
+        add("error", temple.id, "temple photograph has no licence recorded");
+      }
+      const file = path.join(process.cwd(), "public", temple.image.src.replace(/^\//, ""));
+      if (!fs.existsSync(file)) {
+        add(
+          "error",
+          temple.id,
+          `temple photograph ${temple.image.src} is missing — run npm run media:temples`,
+        );
+      }
+    }
   }
 
   /* -------------------- chronology -------------------- */
@@ -202,6 +250,26 @@ function main() {
   console.log(`  surnames      ${s.bySurname.length}`);
   console.log(`  gotras        ${s.byGotra.length}`);
   console.log(`  mool villages ${s.byMool.length}`);
+
+  /*
+    Vocabulary entries a contributor proposed and no maintainer has confirmed.
+    Not an error — the entries are real, the records using them resolve, and
+    the archive is meant to grow this way. It is reported because a pending
+    entry is invisible in every dropdown, so a pile of them building up is a
+    maintainer falling behind rather than anything being broken.
+  */
+  const pending = [
+    ...archive.gotras.values(),
+    ...archive.maths.values(),
+    ...archive.communities.values(),
+    ...archive.kuladevatas.values(),
+    ...archive.places.values(),
+  ].filter((entry) => entry.pending);
+  if (pending.length) {
+    console.log(
+      `  proposed      ${pending.length} awaiting confirmation at /admin/vocabulary`,
+    );
+  }
   console.log("");
 
   const show = (list: Problem[], label: string, limit = 15) => {

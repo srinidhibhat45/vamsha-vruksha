@@ -1,0 +1,383 @@
+{
+  "_readme": "Photographs of the temples and mathas this community names, gathered from Wikimedia Commons under free licences. Regenerate with `npm run media:temples`. Every entry carries its photographer, its licence and the page it came from; the site renders all three wherever the image appears, which is a condition of using them. Do not hand-edit the image blocks — the script owns them.",
+  "items": [
+    {
+      "id": "mangesh",
+      "name": "Shri Mangueshi Temple",
+      "devanagari": "श्री मंगेश",
+      "kuladevataId": "mangesh",
+      "placeId": "priol",
+      "originPlaceId": "kushasthali",
+      "blurb": "Shiva as Mangirish. The deity was carried from Kushasthali — Cortalim, on the Zuari — to Priol in the sixteenth century, and the seven-storey deepstambha in front of it is the one most Saraswats picture when they picture a Goan temple.",
+      "image": {
+        "src": "/temples/mangesh.jpg",
+        "width": 1400,
+        "height": 863,
+        "credit": "Vinayaraj",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Goa_-_Shri_Mangueshi_temple_(1).JPG"
+      }
+    },
+    {
+      "id": "shantadurga",
+      "name": "Shri Shantadurga Temple",
+      "devanagari": "श्री शांतादुर्गा",
+      "kuladevataId": "shantadurga",
+      "placeId": "kavale",
+      "originPlaceId": "keloshi",
+      "blurb": "Parvati in the act of making peace between Shiva and Vishnu. Originally of Keloshi (Quelossim); more Saraswat households name Shantadurga as their kuladevata than any other deity.",
+      "image": {
+        "src": "/temples/shantadurga.jpg",
+        "width": 1400,
+        "height": 788,
+        "credit": "Amol.Gaitonde",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shanta_Durga_Kavle_Temple.jpg"
+      }
+    },
+    {
+      "id": "mahalasa",
+      "name": "Shri Mahalasa Temple",
+      "devanagari": "श्री महालसा नारायणी",
+      "kuladevataId": "mahalasa",
+      "placeId": "mardol",
+      "originPlaceId": "verna",
+      "blurb": "Vishnu in the Mohini form, brought from Verna to Mardol. The brass lamp tower in the courtyard is lit on Kojagiri Purnima and is among the tallest in Goa.",
+      "image": {
+        "src": "/temples/mahalasa.jpg",
+        "width": 1400,
+        "height": 1050,
+        "credit": "Vinayaraj",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_Mahalasa_Narayani_Temple,_Mardol,_Goa_vrvbgoa2k24_(16).jpg"
+      }
+    },
+    {
+      "id": "ramnath",
+      "name": "Shri Ramnathi Temple",
+      "devanagari": "श्री रामनाथ",
+      "kuladevataId": "ramnath",
+      "placeId": "bandora",
+      "originPlaceId": "loutolim",
+      "blurb": "Shiva as Ramnath, moved inland from Loutolim. The silver screen before the sanctum is worked with scenes that families come specifically to see.",
+      "image": {
+        "src": "/temples/ramnath.jpg",
+        "width": 1400,
+        "height": 860,
+        "credit": "Mahabalaindia",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrance_of_Shri_Ramnathi_Temple..jpg"
+      }
+    },
+    {
+      "id": "nagesh",
+      "name": "Shri Nagesh Maharudra Temple",
+      "devanagari": "श्री नागेश",
+      "kuladevataId": "nagesh",
+      "placeId": "bandora",
+      "blurb": "Shiva as Nagnath. An inscription on the temple tank dates the site to 1413, which makes it one of the few Goan temples standing on ground it never had to leave.",
+      "image": {
+        "src": "/temples/nagesh.jpg",
+        "width": 1400,
+        "height": 788,
+        "credit": "Deepak Patil",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_Nagesh_Maharudra_Mandir_,_Goa_-_panoramio.jpg"
+      }
+    },
+    {
+      "id": "saptakoteshwar",
+      "name": "Shri Saptakoteshwar Temple",
+      "devanagari": "श्री सप्तकोटेश्वर",
+      "kuladevataId": "saptakoteshwar",
+      "placeId": "narve",
+      "originPlaceId": "divar",
+      "blurb": "The tutelary deity of the Kadamba kings of Goa, formerly of Divar island. Rebuilt at Narve in 1668 under Shivaji, and the only Goan temple of its period with a distinctly Maratha profile.",
+      "image": {
+        "src": "/temples/saptakoteshwar.jpg",
+        "width": 1400,
+        "height": 933,
+        "credit": "Savika Gomes",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Saptakoteshwar_temple_-_Narve,_Goa_(left_view).jpg"
+      }
+    },
+    {
+      "id": "damodar",
+      "name": "Shri Damodar Temple",
+      "devanagari": "श्री दामोदर",
+      "kuladevataId": "damodar",
+      "placeId": "zambaulim",
+      "originPlaceId": "mathagram",
+      "blurb": "Shiva as Damodar, originally of Mathagram — Margao. The Kushavati river beside it is held to cure, and the Gulal festival here is attended by Hindu and Christian families alike.",
+      "image": {
+        "src": "/temples/damodar.jpg",
+        "width": 1400,
+        "height": 1027,
+        "credit": "SADDP",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_Damodar_Temple_Entrence_Zambaulim.jpg"
+      }
+    },
+    {
+      "id": "lakshmi-narasimha",
+      "name": "Shri Lakshmi Narasimha Temple",
+      "devanagari": "श्री लक्ष्मी नरसिंह",
+      "kuladevataId": "lakshmi-narasimha",
+      "placeId": "veling",
+      "blurb": "Vishnu as Narasimha, with Lakshmi. The tank and the sloping laterite steps below the temple are seventeenth-century.",
+      "image": {
+        "src": "/temples/lakshmi-narasimha.jpg",
+        "width": 1400,
+        "height": 933,
+        "credit": "Sharvarism",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_Lakshminarasimha_Temple.jpg"
+      }
+    },
+    {
+      "id": "kamakshi",
+      "name": "Shri Kamakshi Temple",
+      "devanagari": "श्री कामाक्षी",
+      "kuladevataId": "kamakshi",
+      "placeId": "shiroda",
+      "originPlaceId": "raia",
+      "blurb": "Parvati as Kamakshi, brought from Raia in Salcete. The Rayeshwar and Laxmi Narayan shrines share the compound.",
+      "image": {
+        "src": "/temples/kamakshi.jpg",
+        "width": 1400,
+        "height": 1050,
+        "credit": "Joegoauk Goa",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kamakshi_Temple,_Shiroda.jpg"
+      }
+    },
+    {
+      "id": "chandreshwar",
+      "name": "Shri Chandreshwar Bhutnath Temple",
+      "kuladevataId": "chandreshwar",
+      "placeId": "paroda",
+      "blurb": "Shiva on the Chandranath hill above Paroda, where the sanctum is built so that moonlight falls on the linga. The climb is part of the visit.",
+      "image": {
+        "src": "/temples/chandreshwar.jpg",
+        "width": 1400,
+        "height": 790,
+        "credit": "Prajakt Kamulkar",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Entrance_at_Chandreshwar_Bhutnath_Temple,_Paroda-Quepem.jpg"
+      }
+    },
+    {
+      "id": "vijayadurga",
+      "name": "Shri Vijayadurga Temple",
+      "devanagari": "श्री विजयादुर्गा",
+      "kuladevataId": "vijayadurga",
+      "placeId": "keri",
+      "blurb": "Durga as the victorious. A smaller temple than most in this list, and the kuladevata of a correspondingly close-knit set of families.",
+      "image": {
+        "src": "/temples/vijayadurga.jpg",
+        "width": 1400,
+        "height": 1050,
+        "credit": "Subhash Jan",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vijayadurga_Temple_01.JPG"
+      }
+    },
+    {
+      "id": "navadurga",
+      "name": "Shri Navadurga Temple",
+      "devanagari": "श्री नवदुर्गा",
+      "kuladevataId": "navadurga",
+      "placeId": "madkai",
+      "blurb": "Durga in her nine forms. The temple at Madkai is known for the tradition of putting questions to the deity through the palanquin.",
+      "image": {
+        "src": "/temples/navadurga.jpg",
+        "width": 1400,
+        "height": 1050,
+        "credit": "Kuldeep Dilip Sawant",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Navdurga_Temple,_Madkai,_Goa.jpg"
+      }
+    },
+    {
+      "id": "mallikarjun",
+      "name": "Shri Mallikarjun Temple",
+      "devanagari": "श्री मल्लिकार्जुन",
+      "kuladevataId": "mallikarjun",
+      "placeId": "canacona",
+      "blurb": "Shiva as Mallikarjun, deep in Canacona where the Portuguese conquest arrived late and the temple was never moved.",
+      "image": {
+        "src": "/temples/mallikarjun.jpg",
+        "width": 1050,
+        "height": 1400,
+        "credit": "Divya Dilip Sawant",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mallikarjun_Temple,_Canacona_Goa.jpg"
+      }
+    },
+    {
+      "id": "shantadurga-kunkalikarin",
+      "name": "Shri Shantadurga Kunkalikarin Temple",
+      "kuladevataId": "shantadurga-kunkalikarin",
+      "placeId": "fatorpa",
+      "originPlaceId": "cuncolim",
+      "blurb": "The Shantadurga of the Cuncolim families, moved to Fatorpa after the revolt of 1583. The Shisharanni festival still returns the deity towards Cuncolim once a year.",
+      "image": {
+        "src": "/temples/shantadurga-kunkalikarin.jpg",
+        "width": 1400,
+        "height": 933,
+        "credit": "Sharvarism",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_Shantadurga_Kunkalikarin_Temple.jpg"
+      }
+    },
+    {
+      "id": "vithal",
+      "name": "Shri Vithal Temple",
+      "devanagari": "श्री विठ्ठल",
+      "kuladevataId": "vithal",
+      "placeId": "sanquelim",
+      "blurb": "Vishnu as Vitthala, standing on the brick — the Pandharpur form, carried into Goa by families who kept the Varkari connection.",
+      "image": {
+        "src": "/temples/vithal.jpg",
+        "width": 1400,
+        "height": 1050,
+        "credit": "Vinayaraj",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_Vithal_Temple,_Vittal_Rukumai_Mandir_Sanquelim,_Goa_vrvbgoa2k24_(10).jpg"
+      }
+    },
+    {
+      "id": "ananta",
+      "name": "Shri Ananta Temple",
+      "devanagari": "श्री अनंत",
+      "kuladevataId": "ananta",
+      "placeId": "savoi-verem",
+      "blurb": "Vishnu reclining on Shesha, at Savoi Verem. One of the few reclining Vishnu images in Goa.",
+      "image": {
+        "src": "/temples/ananta.jpg",
+        "width": 1400,
+        "height": 831,
+        "credit": "KaushikiPD",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Madanant_Savoi-Verem_2.jpg"
+      }
+    },
+    {
+      "id": "bhagavati",
+      "name": "Shri Bhagavati Temple",
+      "devanagari": "श्री भगवती",
+      "kuladevataId": "bhagavati",
+      "placeId": "pernem",
+      "blurb": "Durga as Bhagavati, in Pernem north of the Chapora — the New Conquests, annexed late enough that the temples there were left standing.",
+      "image": {
+        "src": "/temples/bhagavati.jpg",
+        "width": 801,
+        "height": 320,
+        "credit": "Konkani Manis",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bhagavathi_Pernem.jpg"
+      }
+    },
+    {
+      "id": "venkataramana",
+      "name": "Shri Venkataramana Temple",
+      "devanagari": "श्री वेंकटरमण",
+      "kuladevataId": "venkataramana",
+      "placeId": "mangalore",
+      "blurb": "The principal temple of the GSB families who settled along the coastal Karnataka strip. Not a Goan temple at all — which is the point of it: it is where the families who left built again.",
+      "image": {
+        "src": "/temples/venkataramana.jpg",
+        "width": 960,
+        "height": 720,
+        "credit": "Ganeshrao53",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shri_venkataramana_Temple,Night_view.jpg"
+      }
+    },
+    {
+      "id": "chitrapur-math",
+      "name": "Shri Chitrapur Math",
+      "devanagari": "श्री चित्रापूर मठ",
+      "mathId": "chitrapur-math",
+      "placeId": "shirali",
+      "blurb": "The spiritual home of the Chitrapur Saraswats — the Bhanaps — at Shirali in Uttara Kannada. The guru parampara begins with Shrimat Parijnanashram Swami I, around 1708.",
+      "image": {
+        "src": "/temples/chitrapur-math.jpg",
+        "width": 1000,
+        "height": 668,
+        "credit": "Nkodikal",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Shirali_Math.jpg"
+      }
+    },
+    {
+      "id": "kavale-math",
+      "name": "Shri Saunsthan Gaudapadacharya, Kavale",
+      "devanagari": "श्री संस्थान गौडपादाचार्य",
+      "mathId": "kavale-math",
+      "placeId": "kavale",
+      "blurb": "Traditionally the oldest of the Saraswat mathas, tracing to Shri Gaudapadacharya. Smarta, and the seat named by GSB, Rajapur and Kudaldeshkar households alike.",
+      "image": {
+        "src": "/temples/kavale-math.jpg",
+        "width": 1400,
+        "height": 937,
+        "credit": "Ashok Prabhu ( talk )",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Gouda_Padacharya_Matha.JPG"
+      }
+    },
+    {
+      "id": "kashi-math",
+      "name": "Shri Kashi Math Samsthan",
+      "devanagari": "श्री काशी मठ संस्थान",
+      "mathId": "kashi-math",
+      "blurb": "The Vaishnava seat established in 1542 under Shrimad Yadavendra Tirtha, with its principal branch at Walkeshwar in Mumbai — which is where most of the diaspora families of this lineage actually go.",
+      "image": {
+        "src": "/temples/kashi-math.jpg",
+        "width": 1050,
+        "height": 1400,
+        "credit": "Sntshkumar750",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Walkeshwar_Sri_Kashi_Math.jpg"
+      }
+    },
+    {
+      "id": "partagali-math",
+      "name": "Shri Gokarn Partagali Jeevottam Math",
+      "devanagari": "श्री गोकर्ण पर्तगाळी जीवोत्तम मठ",
+      "mathId": "partagali-math",
+      "placeId": "canacona",
+      "blurb": "Founded around 1475 by Shrimad Narayana Teertha at Partagali in Canacona. A principal Vaishnava seat of the Goud Saraswat community.",
+      "image": {
+        "src": "/temples/partagali-math.jpg",
+        "width": 512,
+        "height": 340,
+        "credit": "Pranavhegde006",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:GokarnaMath.jpg"
+      }
+    }
+  ]
+}

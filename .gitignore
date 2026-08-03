@@ -15,3 +15,13 @@ data/submissions/*.jsonl
 
 # Generated search / graph index
 data/generated
+
+# Contributed photographs written by the local development backend. In a
+# deployment these go to Netlify Blobs instead (see lib/mediaStore.ts) — this
+# directory only ever holds what was uploaded on somebody's own machine.
+data/media
+
+# public/temples/ is NOT ignored. Those images are fetched once by
+# `npm run media:temples` and committed on purpose: an archive that depends on
+# somebody else's server still serving a photograph in 2050 has not preserved
+# anything. Their licences and photographers are in data/reference/temples.json.

@@ -1,0 +1,208 @@
+{
+  "_readme": "Which photograph belongs to which temple, and what to say about it. This file is edited by hand; `npm run media:temples` reads it, fetches each image from Wikimedia Commons, records the photographer and licence, and writes data/reference/temples.json. Keep the `file` values exactly as Commons titles them, including the File: prefix. Many of these deities were carried inland from Salcete, Tiswadi and Bardez in the sixteenth and seventeenth centuries, ahead of the destruction of temples in the Old Conquests — where that is so, `originPlaceId` names the village they came from, and it is very often the mool a family still names.",
+  "items": [
+    {
+      "id": "mangesh",
+      "file": "File:Goa - Shri Mangueshi temple (1).JPG",
+      "name": "Shri Mangueshi Temple",
+      "devanagari": "श्री मंगेश",
+      "kuladevataId": "mangesh",
+      "placeId": "priol",
+      "originPlaceId": "kushasthali",
+      "blurb": "Shiva as Mangirish. The deity was carried from Kushasthali — Cortalim, on the Zuari — to Priol in the sixteenth century, and the seven-storey deepstambha in front of it is the one most Saraswats picture when they picture a Goan temple."
+    },
+    {
+      "id": "shantadurga",
+      "file": "File:Shanta Durga Kavle Temple.jpg",
+      "name": "Shri Shantadurga Temple",
+      "devanagari": "श्री शांतादुर्गा",
+      "kuladevataId": "shantadurga",
+      "placeId": "kavale",
+      "originPlaceId": "keloshi",
+      "blurb": "Parvati in the act of making peace between Shiva and Vishnu. Originally of Keloshi (Quelossim); more Saraswat households name Shantadurga as their kuladevata than any other deity."
+    },
+    {
+      "id": "mahalasa",
+      "file": "File:Shri Mahalasa Narayani Temple, Mardol, Goa vrvbgoa2k24 (16).jpg",
+      "name": "Shri Mahalasa Temple",
+      "devanagari": "श्री महालसा नारायणी",
+      "kuladevataId": "mahalasa",
+      "placeId": "mardol",
+      "originPlaceId": "verna",
+      "blurb": "Vishnu in the Mohini form, brought from Verna to Mardol. The brass lamp tower in the courtyard is lit on Kojagiri Purnima and is among the tallest in Goa."
+    },
+    {
+      "id": "ramnath",
+      "file": "File:Entrance of Shri Ramnathi Temple..jpg",
+      "name": "Shri Ramnathi Temple",
+      "devanagari": "श्री रामनाथ",
+      "kuladevataId": "ramnath",
+      "placeId": "bandora",
+      "originPlaceId": "loutolim",
+      "blurb": "Shiva as Ramnath, moved inland from Loutolim. The silver screen before the sanctum is worked with scenes that families come specifically to see."
+    },
+    {
+      "id": "nagesh",
+      "file": "File:Entrance to Nagesh Maharudra Mandir , Goa - panoramio.jpg",
+      "name": "Shri Nagesh Maharudra Temple",
+      "devanagari": "श्री नागेश",
+      "kuladevataId": "nagesh",
+      "placeId": "bandora",
+      "blurb": "Shiva as Nagnath. An inscription on the temple tank dates the site to 1413, which makes it one of the few Goan temples standing on ground it never had to leave."
+    },
+    {
+      "id": "saptakoteshwar",
+      "file": "File:Saptakoteshwar temple - Narve, Goa (left view).jpg",
+      "name": "Shri Saptakoteshwar Temple",
+      "devanagari": "श्री सप्तकोटेश्वर",
+      "kuladevataId": "saptakoteshwar",
+      "placeId": "narve",
+      "originPlaceId": "divar",
+      "blurb": "The tutelary deity of the Kadamba kings of Goa, formerly of Divar island. Rebuilt at Narve in 1668 under Shivaji, and the only Goan temple of its period with a distinctly Maratha profile."
+    },
+    {
+      "id": "damodar",
+      "file": "File:Shri Damodar Temple Entrence Zambaulim.jpg",
+      "name": "Shri Damodar Temple",
+      "devanagari": "श्री दामोदर",
+      "kuladevataId": "damodar",
+      "placeId": "zambaulim",
+      "originPlaceId": "mathagram",
+      "blurb": "Shiva as Damodar, originally of Mathagram — Margao. The Kushavati river beside it is held to cure, and the Gulal festival here is attended by Hindu and Christian families alike."
+    },
+    {
+      "id": "lakshmi-narasimha",
+      "file": "File:Shri Lakshminarasimha Temple.jpg",
+      "name": "Shri Lakshmi Narasimha Temple",
+      "devanagari": "श्री लक्ष्मी नरसिंह",
+      "kuladevataId": "lakshmi-narasimha",
+      "placeId": "veling",
+      "blurb": "Vishnu as Narasimha, with Lakshmi. The tank and the sloping laterite steps below the temple are seventeenth-century."
+    },
+    {
+      "id": "kamakshi",
+      "file": "File:Kamakshi Temple, Shiroda.jpg",
+      "name": "Shri Kamakshi Temple",
+      "devanagari": "श्री कामाक्षी",
+      "kuladevataId": "kamakshi",
+      "placeId": "shiroda",
+      "originPlaceId": "raia",
+      "blurb": "Parvati as Kamakshi, brought from Raia in Salcete. The Rayeshwar and Laxmi Narayan shrines share the compound."
+    },
+    {
+      "id": "chandreshwar",
+      "file": "File:Entrance at Chandreshwar Bhutnath Temple, Paroda-Quepem.jpg",
+      "name": "Shri Chandreshwar Bhutnath Temple",
+      "kuladevataId": "chandreshwar",
+      "placeId": "paroda",
+      "blurb": "Shiva on the Chandranath hill above Paroda, where the sanctum is built so that moonlight falls on the linga. The climb is part of the visit."
+    },
+    {
+      "id": "vijayadurga",
+      "file": "File:Vijayadurga Temple 01.JPG",
+      "name": "Shri Vijayadurga Temple",
+      "devanagari": "श्री विजयादुर्गा",
+      "kuladevataId": "vijayadurga",
+      "placeId": "keri",
+      "blurb": "Durga as the victorious. A smaller temple than most in this list, and the kuladevata of a correspondingly close-knit set of families."
+    },
+    {
+      "id": "navadurga",
+      "file": "File:Navdurga Temple, Madkai, Goa.jpg",
+      "name": "Shri Navadurga Temple",
+      "devanagari": "श्री नवदुर्गा",
+      "kuladevataId": "navadurga",
+      "placeId": "madkai",
+      "blurb": "Durga in her nine forms. The temple at Madkai is known for the tradition of putting questions to the deity through the palanquin."
+    },
+    {
+      "id": "mallikarjun",
+      "file": "File:Mallikarjun Temple, Canacona Goa.jpg",
+      "name": "Shri Mallikarjun Temple",
+      "devanagari": "श्री मल्लिकार्जुन",
+      "kuladevataId": "mallikarjun",
+      "placeId": "canacona",
+      "blurb": "Shiva as Mallikarjun, deep in Canacona where the Portuguese conquest arrived late and the temple was never moved."
+    },
+    {
+      "id": "shantadurga-kunkalikarin",
+      "file": "File:Shri Shantadurga Kunkalikarin Temple.jpg",
+      "name": "Shri Shantadurga Kunkalikarin Temple",
+      "kuladevataId": "shantadurga-kunkalikarin",
+      "placeId": "fatorpa",
+      "originPlaceId": "cuncolim",
+      "blurb": "The Shantadurga of the Cuncolim families, moved to Fatorpa after the revolt of 1583. The Shisharanni festival still returns the deity towards Cuncolim once a year."
+    },
+    {
+      "id": "vithal",
+      "file": "File:Shri Vithal Temple, Vittal Rukumai Mandir Sanquelim, Goa vrvbgoa2k24 (10).jpg",
+      "name": "Shri Vithal Temple",
+      "devanagari": "श्री विठ्ठल",
+      "kuladevataId": "vithal",
+      "placeId": "sanquelim",
+      "blurb": "Vishnu as Vitthala, standing on the brick — the Pandharpur form, carried into Goa by families who kept the Varkari connection."
+    },
+    {
+      "id": "ananta",
+      "file": "File:Madanant Savoi-Verem 2.jpg",
+      "name": "Shri Ananta Temple",
+      "devanagari": "श्री अनंत",
+      "kuladevataId": "ananta",
+      "placeId": "savoi-verem",
+      "blurb": "Vishnu reclining on Shesha, at Savoi Verem. One of the few reclining Vishnu images in Goa."
+    },
+    {
+      "id": "bhagavati",
+      "file": "File:Bhagavathi Pernem.jpg",
+      "name": "Shri Bhagavati Temple",
+      "devanagari": "श्री भगवती",
+      "kuladevataId": "bhagavati",
+      "placeId": "pernem",
+      "blurb": "Durga as Bhagavati, in Pernem north of the Chapora — the New Conquests, annexed late enough that the temples there were left standing."
+    },
+    {
+      "id": "venkataramana",
+      "file": "File:Shri venkataramana Temple,Night view.jpg",
+      "name": "Shri Venkataramana Temple",
+      "devanagari": "श्री वेंकटरमण",
+      "kuladevataId": "venkataramana",
+      "placeId": "mangalore",
+      "blurb": "The principal temple of the GSB families who settled along the coastal Karnataka strip. Not a Goan temple at all — which is the point of it: it is where the families who left built again."
+    },
+    {
+      "id": "chitrapur-math",
+      "file": "File:Shirali Math.jpg",
+      "name": "Shri Chitrapur Math",
+      "devanagari": "श्री चित्रापूर मठ",
+      "mathId": "chitrapur-math",
+      "placeId": "shirali",
+      "blurb": "The spiritual home of the Chitrapur Saraswats — the Bhanaps — at Shirali in Uttara Kannada. The guru parampara begins with Shrimat Parijnanashram Swami I, around 1708."
+    },
+    {
+      "id": "kavale-math",
+      "file": "File:Gouda Padacharya Matha.JPG",
+      "name": "Shri Saunsthan Gaudapadacharya, Kavale",
+      "devanagari": "श्री संस्थान गौडपादाचार्य",
+      "mathId": "kavale-math",
+      "placeId": "kavale",
+      "blurb": "Traditionally the oldest of the Saraswat mathas, tracing to Shri Gaudapadacharya. Smarta, and the seat named by GSB, Rajapur and Kudaldeshkar households alike."
+    },
+    {
+      "id": "kashi-math",
+      "file": "File:Walkeshwar Sri Kashi Math.jpg",
+      "name": "Shri Kashi Math Samsthan",
+      "devanagari": "श्री काशी मठ संस्थान",
+      "mathId": "kashi-math",
+      "blurb": "The Vaishnava seat established in 1542 under Shrimad Yadavendra Tirtha, with its principal branch at Walkeshwar in Mumbai — which is where most of the diaspora families of this lineage actually go."
+    },
+    {
+      "id": "partagali-math",
+      "file": "File:GokarnaMath.jpg",
+      "name": "Shri Gokarn Partagali Jeevottam Math",
+      "devanagari": "श्री गोकर्ण पर्तगाळी जीवोत्तम मठ",
+      "mathId": "partagali-math",
+      "placeId": "canacona",
+      "blurb": "Founded around 1475 by Shrimad Narayana Teertha at Partagali in Canacona. A principal Vaishnava seat of the Goud Saraswat community."
+    }
+  ]
+}

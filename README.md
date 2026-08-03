@@ -27,9 +27,9 @@ npm run dev           # http://localhost:3000
 | `/lineages` | Every connected family line in the archive |
 | `/directory/[facet]` | Indexes of surnames, gotras, kuladevatas, mool villages, mathas |
 | `/relate` | How any two people are related, in English and Konkani |
-| `/diaspora` | Where the community went, by generation |
-| `/contribute` | Submission form — no account needed |
-| `/admin` | Maintainer tools: review queue and record editing, behind a sign-in |
+| `/diaspora` | Where the community went, by generation — and the temples they still name |
+| `/contribute` | Submission form — one person, or a whole family at once. No account needed |
+| `/admin` | Maintainer tools: review queue, record editing, whole-family entry, vocabulary proposals, behind a sign-in |
 | `/about` | Method, biases, privacy, glossary |
 
 ---
@@ -113,6 +113,84 @@ when you check the graph. It exits non-zero on errors and is wired into
 Submissions append to `data/submissions/queue.jsonl` — append-only, so
 concurrent writes cannot corrupt each other. Nothing is published automatically.
 
+### Whole families, in one piece
+
+The commonest real contribution is not *"here is my grandfather"* — it is
+*"here are my grandparents, their six children, who each of them married, and
+which ones went to Bombay"*, learned in one afternoon with an elderly relative.
+Sent one person at a time that is thirty forms, each unable to name a parent
+who has not been published yet.
+
+So **Add a whole family** (`/contribute`) and **Add a family** (`/admin/people/family`)
+take the branch as one object. Both run the same builder — `src/components/family/FamilyBuilder.tsx` —
+and the only difference is the far end: a contributor's draft goes to the queue,
+a maintainer's is written straight to the archive.
+
+Three things make it work:
+
+- **Relationships are stated by where you add somebody**, not typed into a field.
+  The buttons say *add her father*, *add a child*, *add a marriage*, so a link
+  cannot be dangling or half-entered, and nothing depends on publication order.
+- **A row can be somebody already in the archive.** Branches almost always hang
+  off a person who is already recorded, and that row is *linked* rather than
+  retyped — which is the whole mechanism keeping a second copy of one
+  grandfather out of the database.
+- **The drawing is the workspace.** Cards are selected on the tree, the four
+  relationship buttons appear around the selected card, and the form for
+  whoever is selected sits beside the drawing rather than under it. The canvas
+  pans, pinches and zooms on the same hook the reader's tree uses
+  (`src/components/tree/usePanZoom.ts`), and it is laid out by
+  `src/lib/draftLayout.ts`, which guarantees every person in the draft is drawn
+  — including the ones a depth-limited walk from an apex cannot reach.
+  Children are added from the *junction* under a couple, so a child can never
+  be attached to the wrong marriage.
+
+Drafts carry draft-local keys and are resolved to real ids in a single pass by
+`createFamily` in `src/lib/peopleStore.ts` — every id minted against one
+snapshot, every relationship rewritten, one atomic write. `checkDraft`
+(`src/lib/family.ts`) refuses contradictions (a child born before their father,
+an ancestry cycle) and merely *warns* about improbabilities (a mother of
+thirteen), because real families produce records that look wrong and are not.
+
+### Not ending up with two of the same ancestor
+
+The most damaging thing that happens to a community archive is a duplicated
+person: from then on half the descendants hang off one copy and half off the
+other, and it is very hard to unpick years later.
+
+`src/lib/match.ts` is the defence, and it is a different problem from search.
+Search is asked by a reader who will recognise the record when they see it;
+this is asked on behalf of somebody halfway through typing a name in, where a
+missed match is expensive and silent. It scores against **every name surface a
+record carries** — display name, `aka` list, birth name, Devanagari — so an
+ancestor recorded under a nickname is still found, and it reports *which* one
+hit, because "recorded here as Nanu" is what tells a contributor this is their
+man. On top of the phonetic folding it uses the surname families that folding
+cannot bridge (Shenoy/Sinai, Kamath/Camotim), and then the lineage fields:
+gotra, mool and kuladevata agreeing is strong evidence *for*, and a gotra
+disagreeing is strong evidence *against*, since it is patrilineal and does not
+change.
+
+What is shown is never the score. It is the reasons — *same gotra and mool, and
+her father's name matches* — because a contributor can check that against what
+they know and cannot check 87%. And the suggestion carries an action: linking
+this row to that record, rather than a warning after the fact.
+
+### Photographs
+
+Optional everywhere, and compressed in the browser before upload
+(`src/lib/imageCompress.ts`): 1600px on the long edge, walked down towards
+~340 KB, with a 400px thumbnail. Re-encoding via canvas also **strips EXIF**,
+which is a privacy fix rather than a size one — phone photographs carry the GPS
+coordinates of where they were taken, and a public, search-indexed archive that
+quietly publishes contributors' home addresses would be a serious harm nobody
+uploading a picture of their grandmother knows they are risking.
+
+Storage is behind `src/lib/mediaStore.ts`: Netlify Blobs in a deployment,
+`data/media/` on a laptop, chosen from the environment. Records always store
+`/api/media/<key>` rather than a bucket url, so the storage can change in a
+decade without rewriting every record that points at a photograph.
+
 > The failure mode of an open family tree is not spam. It is a confidently wrong
 > parent link that quietly rewrites three hundred people's ancestry and is
 > believed because it is written down.
@@ -141,9 +219,19 @@ remove, and mark someone deceased. Two rules there are worth knowing:
   there, and the lineage silently splits in two. The confirmation says how many
   links will be cut before you agree to it.
 
+`/admin/vocabulary` is the third screen: the gotras, kuladevatas, mathas,
+communities and villages contributors have typed because the list did not have
+them. Each can be confirmed into the list, merged into the entry it is a
+spelling of, or discarded — and merging and discarding both repoint the records
+already using it, so nothing is ever left pointing at a name that has gone.
+
 **Deploying to a serverless host** with an ephemeral filesystem means replacing
 the write functions in `src/lib/submissions.ts` and `src/lib/peopleStore.ts`
-with a database or object-store call. Nothing else in the app writes.
+with a database or object-store call. Those two are the only remaining places
+the app writes to a filesystem — photographs already go to Netlify Blobs
+through `src/lib/mediaStore.ts`, which picks its backend from the environment
+and needs no configuration on Netlify. Elsewhere, set `NETLIFY_SITE_ID` and
+`NETLIFY_BLOBS_TOKEN`, or `MEDIA_BACKEND=local` to keep using the disk.
 
 ---
 
@@ -157,7 +245,10 @@ and CORS-free by default:
 | `GET /api/suggest?q=` | Type-ahead matches, spelling-tolerant |
 | `GET /api/tree?lineage=L0001` | A whole lineage subgraph — people, unions, parentage |
 | `GET /api/relate?a=&b=` | The relationship between two people, with Konkani terms |
-| `POST /api/submit` | Contribute a record (goes to the moderation queue) |
+| `POST /api/match` | Records that may already be the person being described — name, dates, lineage fields and relatives, answered with reasons |
+| `POST /api/submit` | Contribute a record or a whole family (goes to the moderation queue) |
+| `POST /api/media` | Upload a contributed photograph; returns the url a submission references |
+| `GET /api/media/<key>` | Serve a stored photograph |
 
 The endpoints under `/api/admin/*` are not on this list. They require the
 maintainer session and they write to disk.
@@ -181,6 +272,47 @@ Everything culturally specific is a reference into `data/reference/`:
 | `places.json` | Mool villages, Karavali settlements, diaspora cities, with coordinates |
 | `communities.json` | Sub-communities within and adjacent to the Saraswat fold |
 | `surnames.json` | Surname derivations — office-names and village-names |
+| `temples.json` | Photographs of the temples and mathas, with photographer and licence |
+
+### When the list does not have it
+
+A controlled vocabulary is what stops one gotra becoming four spellings, and it
+is also never complete — the person who knows the missing kuladevata is the one
+looking at a dropdown that lacks it. So every one of these fields takes a typed
+answer as well as a chosen one. What was typed is carried as `new:<what they
+wrote>` (`src/lib/vocabulary.ts`) and resolved when the submission is published
+(`src/lib/vocabStore.ts`): a spelling the matcher already recognises resolves
+onto the existing entry, and anything else is appended to the vocabulary file
+with `"pending": true`.
+
+A pending entry is used by the record that proposed it and shown wherever that
+record is, but it is filtered out of every dropdown until a maintainer confirms
+it at `/admin/vocabulary`, where it can also be merged into an existing entry or
+discarded — both of which repoint the records already carrying it. Matching for
+proposals is deliberately **strict** (exact phonetic key only): the fuzzy passes
+that serve a reviewed bulk import would silently rewrite *Kolambe* into *Kollam*
+here, with nobody ever told.
+
+### The temple photographs
+
+`data/reference/temple-sources.json` says which Commons file belongs to which
+deity and what to say about it; `npm run media:temples` fetches each one,
+compresses it to 1400px, and writes `data/reference/temples.json` with the
+photographer, the licence and the source page recorded per image. The files land
+in `public/temples/` and **are committed** — an archive that depends on somebody
+else's server still serving a photograph in 2050 has not preserved anything.
+
+The script will not publish an image whose licence or author it could not read,
+and `npm run data:check` fails the build if a committed temple entry has lost
+either — attribution is a licence condition, and an archive that exists to keep
+people's names attached to what they did does not get to strip a photographer's.
+
+They earn their place beyond decoration: the kuladevata is the field most likely
+to reconnect two branches that lost each other, because a family that has
+forgotten its village has almost never forgotten its deity. They appear on
+`/diaspora`, in `/directory/kuladevata`, and on the record of anyone who names
+one. Several deities in `kuladevatas.json` have no freely licensed photograph
+yet — those entries simply render without one.
 
 That indirection is what makes the directory pages worth having: it stops
 `Bharadwaj`, `Bhardwaj` and `Bhāradvāja` from becoming three separate entries.
@@ -231,7 +363,11 @@ src/lib/
   search.ts        inverted index over literal + phonetic keys, with facets
   kinship.ts       relationship solver with Konkani kin terms
   layout.ts        union-aware tidy tree layout (no React, no Node)
+  draftLayout.ts   generation layout for a family being entered — draws everyone
+  family.ts        whole-family drafts: shape, coherence checks, preview source
   refmatch.ts      resolves free text onto the vocabularies
+  vocabulary.ts    the shape of a typed-not-chosen reference value
+  vocabStore.ts    resolving those, and the maintainer's confirm/merge/discard
   treeSource.ts    the payload the viewer runs on
   submissions.ts   the moderation queue
 ```
@@ -239,6 +375,15 @@ src/lib/
 `src/lib/layout.ts` deliberately imports nothing from React or Node: the same
 code runs on the server and in the browser, which is why re-rooting the tree on
 any person is instant and needs no round trip.
+
+`draftLayout.ts` is a second layout rather than a flag on the first, because
+reading and entering want opposite guarantees. `layout.ts` walks outward from a
+focus person to a depth — right for a reader asking about somebody, and wrong
+for a draft, where anyone the walk cannot reach (a row not joined up yet, a
+married-in spouse's father) silently vanishes from the drawing that is supposed
+to be showing you your own work. `draftLayout.ts` works in generations instead
+and draws **every** person exactly once. Both emit the same node and link
+shapes, so one canvas renders either.
 
 ---
 

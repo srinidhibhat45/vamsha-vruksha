@@ -1,12 +1,16 @@
 import { getArchive } from "./archive.ts";
 import {
   PersonInputSchema,
+  createFamily,
   createPerson,
   readPersonRaw,
   updatePerson,
+  type FamilyMember,
   type PersonInput,
 } from "./peopleStore.ts";
-import type { Person, Submission } from "./types.ts";
+import { FamilyDraftSchema, checkDraft, displayOf, topoOrder } from "./family.ts";
+import { createVocabResolver, type VocabResolver } from "./vocabStore.ts";
+import type { DraftPerson, FamilyDraft, Person, Submission } from "./types.ts";
 
 /**
  * Turning a submission into a record.
@@ -59,6 +63,9 @@ function place(value: string | undefined) {
   return getArchive().places.has(value) ? { id: value } : { label: value };
 }
 
+/** No proposals to resolve — used where a payload is only being inspected. */
+const passThrough: VocabResolver = (_vocabulary, value) => value;
+
 function enumOr<T extends string>(
   value: string | undefined,
   allowed: readonly T[],
@@ -66,9 +73,19 @@ function enumOr<T extends string>(
   return allowed.includes(value as T) ? (value as T) : undefined;
 }
 
-/** The subset of a Person a submission payload can describe. */
+/**
+ * The subset of a Person a submission payload can describe.
+ *
+ * `vocab` is where a value the contributor typed instead of picked becomes an
+ * id — either an existing entry the fuzzy matcher recognised, or a new pending
+ * one. It is a parameter rather than a module-level call because resolving has
+ * a side effect (it can write to a vocabulary file), and one resolver has to be
+ * shared across every person in a family so six people proposing the same gotra
+ * create one entry between them.
+ */
 export function payloadToPersonInput(
   payload: Record<string, unknown>,
+  vocab: VocabResolver = passThrough,
 ): Partial<PersonInput> {
   const birthYear = num(payload, "birthYear");
   const birthNote = str(payload, "birthNote");
@@ -113,6 +130,34 @@ export function payloadToPersonInput(
         }))
     : undefined;
 
+  /**
+   * A photograph arrives as the object the upload endpoint returned, so the
+   * url and the dimensions are ours rather than the contributor's. Anything
+   * without a url is dropped: a caption with no image is not a photograph.
+   */
+  const photoValue = payload.photo;
+  const photoObj =
+    photoValue && typeof photoValue === "object"
+      ? (photoValue as Record<string, unknown>)
+      : undefined;
+  const photo =
+    photoObj && typeof photoObj.url === "string" && photoObj.url.trim()
+      ? {
+          url: photoObj.url.trim(),
+          thumbUrl:
+            typeof photoObj.thumbUrl === "string" ? photoObj.thumbUrl : undefined,
+          caption:
+            typeof photoObj.caption === "string" ? photoObj.caption : undefined,
+          credit:
+            typeof photoObj.credit === "string" ? photoObj.credit : undefined,
+          year: typeof photoObj.year === "number" ? photoObj.year : undefined,
+          width: typeof photoObj.width === "number" ? photoObj.width : undefined,
+          height:
+            typeof photoObj.height === "number" ? photoObj.height : undefined,
+          bytes: typeof photoObj.bytes === "number" ? photoObj.bytes : undefined,
+        }
+      : undefined;
+
   const input: Partial<PersonInput> = {
     name: {
       // Left undefined rather than "" when the contributor did not supply
@@ -138,21 +183,24 @@ export function payloadToPersonInput(
 
     birth:
       birthDate || str(payload, "birthPlace")
-        ? { date: birthDate, place: place(str(payload, "birthPlace")) }
+        ? {
+            date: birthDate,
+            place: place(vocab("places", str(payload, "birthPlace"))),
+          }
         : undefined,
     death:
       deathYear || str(payload, "deathPlace")
         ? {
             date: deathYear ? { year: deathYear } : undefined,
-            place: place(str(payload, "deathPlace")),
+            place: place(vocab("places", str(payload, "deathPlace"))),
           }
         : undefined,
 
-    gotra: str(payload, "gotra"),
-    community: str(payload, "community"),
-    math: str(payload, "math"),
-    kuladevata: str(payload, "kuladevata"),
-    mool: str(payload, "mool"),
+    gotra: vocab("gotras", str(payload, "gotra")),
+    community: vocab("communities", str(payload, "community")),
+    math: vocab("maths", str(payload, "math")),
+    kuladevata: vocab("kuladevatas", str(payload, "kuladevata")),
+    mool: vocab("places", str(payload, "mool")),
     veda: str(payload, "veda"),
     sutra: str(payload, "sutra"),
 
@@ -174,6 +222,8 @@ export function payloadToPersonInput(
           },
         ]
       : undefined,
+
+    photo,
 
     sources,
     confidence:
@@ -197,6 +247,139 @@ function defined<T extends object>(obj: T): Partial<T> {
   return out as Partial<T>;
 }
 
+/* ------------------------------------------------------------------ */
+/* Whole families                                                      */
+/* ------------------------------------------------------------------ */
+
+/** One draft row, in the vocabulary the store writes. */
+export function draftToMember(
+  p: DraftPerson,
+  /** Draft-wide provenance, applied to everyone the draft creates. */
+  sources?: FamilyDraft["sources"],
+  /** Shared across the whole draft — see payloadToPersonInput. */
+  vocab: VocabResolver = passThrough,
+): FamilyMember {
+  const input = payloadToPersonInput({
+    sources,
+    given: p.given,
+    patronymic: p.patronymic,
+    surname: p.surname,
+    displayName: displayOf(p),
+    devanagari: p.devanagari,
+    aka: p.aka,
+    gender: p.gender,
+    status: p.status,
+    birthYear: p.birthYear,
+    birthNote: p.birthNote,
+    birthPlace: p.birthPlace,
+    deathYear: p.deathYear,
+    deathPlace: p.deathPlace,
+    gotra: p.gotra,
+    community: p.community,
+    math: p.math,
+    kuladevata: p.kuladevata,
+    mool: p.mool,
+    veda: p.veda,
+    sutra: p.sutra,
+    occupations: p.occupations,
+    residences: p.residences,
+    epithet: p.epithet,
+    bio: p.bio,
+    photo: p.photo,
+    confidence: p.confidence,
+  }, vocab);
+
+  return {
+    key: p.key,
+    existingId: p.existingId,
+    input: input as PersonInput,
+    fatherRef: p.fatherKey,
+    motherRef: p.motherKey,
+    spouseRefs: p.spouseKeys?.map((s) => ({ ref: s.key, year: s.year })),
+  };
+}
+
+export type PublishFamilyResult =
+  | {
+      ok: true;
+      ids: Record<string, string>;
+      created: string[];
+      updated: string[];
+      /** The row a reviewer should be sent to look at first. */
+      apexId?: string;
+    }
+  | { ok: false; error: string; issues?: string[] };
+
+/**
+ * Write an approved family draft into the archive.
+ *
+ * Validated twice on purpose. The schema check is the same one the submission
+ * endpoint ran, repeated because a queue entry can sit for months and the code
+ * that reads it is not the code that wrote it; the coherence check is run
+ * against the *current* archive, because "father is record X" was true when it
+ * was submitted and X may have been merged away since.
+ */
+export function publishFamilyDraft(
+  submission: Submission,
+  by?: string,
+): PublishFamilyResult {
+  const parsed = FamilyDraftSchema.safeParse(submission.payload);
+  if (!parsed.success) {
+    return {
+      ok: false,
+      error: "This draft is not in a shape that can be published",
+      issues: parsed.error.issues.map((i) =>
+        [i.path.join("."), i.message].filter(Boolean).join(": "),
+      ),
+    };
+  }
+
+  const archive = getArchive();
+  const problems = checkDraft(parsed.data, (id) => archive.people.has(id));
+  const errors = problems.filter((p) => p.severity === "error");
+  if (errors.length) {
+    return {
+      ok: false,
+      error: "The draft contradicts itself and was not written",
+      issues: errors.map((p) => p.message),
+    };
+  }
+
+  // Parents before children, so every id a record points at has been minted.
+  const ordered = topoOrder(parsed.data.people);
+  const vocab = createVocabResolver(by ?? submission.submitter.name);
+  const members = ordered.map((p) =>
+    draftToMember(p, parsed.data.sources, vocab),
+  );
+
+  for (const m of members) {
+    if (m.existingId) continue;
+    const check = PersonInputSchema.safeParse(m.input);
+    if (!check.success) {
+      return {
+        ok: false,
+        error: `${m.input.name?.given || m.key}: ${firstIssue(check.error.issues)}`,
+      };
+    }
+    m.input = check.data;
+  }
+
+  const written = createFamily(
+    members,
+    by ?? submission.submitter.name ?? "Community archive",
+  );
+
+  const apexKey = ordered.find((p) => !p.existingId)?.key ?? ordered[0]?.key;
+
+  return {
+    ok: true,
+    ids: written.ids,
+    created: written.created,
+    updated: written.updated,
+    apexId: apexKey ? written.ids[apexKey] : undefined,
+  };
+}
+
 export type PublishResult =
   | { ok: true; person: Person; created: boolean }
   | { ok: false; error: string };
@@ -209,8 +392,11 @@ export type PublishResult =
  * the record it names, keeping whatever the submission did not mention.
  */
 export function publishSubmission(submission: Submission): PublishResult {
-  const draft = payloadToPersonInput(submission.payload);
   const credit = submission.submitter.name || "Community archive";
+  const draft = payloadToPersonInput(
+    submission.payload,
+    createVocabResolver(credit),
+  );
 
   if (submission.targetId) {
     const existing = readPersonRaw(submission.targetId);

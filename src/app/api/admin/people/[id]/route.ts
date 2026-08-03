@@ -9,6 +9,7 @@ import {
   markLiving,
   updatePerson,
 } from "@/lib/peopleStore";
+import { createVocabResolver, resolvePersonRefs } from "@/lib/vocabStore";
 
 export const dynamic = "force-dynamic";
 
@@ -56,7 +57,10 @@ export async function PUT(request: Request, { params }: Context) {
     );
   }
 
-  const person = updatePerson(id, parsed.data);
+  const person = updatePerson(
+    id,
+    resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
+  );
   if (!person) {
     return NextResponse.json({ error: "No such record" }, { status: 404 });
   }

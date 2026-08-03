@@ -1265,6 +1265,82 @@
     filter: brightness(1.03);
   }
 
+  /* ---------------------------------------------------------------- */
+  /* Controls floating over a canvas                                   */
+  /*                                                                   */
+  /* Drawn as HTML above the SVG rather than inside it, so they keep a  */
+  /* fixed, hittable size at every zoom level — a 44px target that      */
+  /* becomes 9px when the reader zooms out to see the whole family is   */
+  /* not a target. They are deliberately loud: on the builder canvas    */
+  /* these are the primary way a family gets entered.                   */
+  /* ---------------------------------------------------------------- */
+
+  .canvas-group {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--shape-full);
+    border: 1px solid var(--line);
+    background: color-mix(in oklab, var(--bg-raised) 92%, transparent);
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(4px);
+  }
+
+  .canvas-btn {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 40px;
+    color: var(--fg-soft);
+  }
+
+  .canvas-btn:hover {
+    color: var(--fg);
+    background: color-mix(in oklab, var(--fg) 7%, transparent);
+  }
+
+  .canvas-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    height: 32px;
+    padding-inline: 0.7rem;
+    border-radius: var(--shape-full);
+    border: 1px solid color-mix(in oklab, var(--accent) 40%, var(--outline-soft));
+    background: color-mix(in oklab, var(--bg-raised) 94%, transparent);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition:
+      background var(--dur-short) var(--ease-standard),
+      color var(--dur-short) var(--ease-standard);
+  }
+
+  .canvas-pill:hover {
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: var(--accent);
+  }
+
+  /*
+    A block that steps outside the reading column it sits in.
+
+    Prose wants 65 characters; a family tree wants every pixel there is. The
+    contribute page is a column of text with one section that is a drawing
+    board, and squeezing the board into the text measure is what turned a
+    ten-person family into thumbnails. Centred on the column it breaks out of,
+    so it stays put when the page is scrolled or the window resized.
+  */
+  .wide-bleed {
+    --bleed-w: min(1560px, calc(100vw - 2rem));
+    width: var(--bleed-w);
+    margin-inline-start: calc((100% - var(--bleed-w)) / 2);
+  }
+
   .scroll-slim {
     scrollbar-width: thin;
     scrollbar-color: var(--line-strong) transparent;

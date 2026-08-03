@@ -219,9 +219,13 @@ export const PersonInputSchema = z.object({
   photo: z
     .object({
       url: z.string().max(2000),
+      thumbUrl: z.string().max(2000).optional(),
       caption: z.string().max(300).optional(),
       credit: z.string().max(200).optional(),
       year: z.number().int().optional(),
+      width: z.number().int().max(20000).optional(),
+      height: z.number().int().max(20000).optional(),
+      bytes: z.number().int().max(50_000_000).optional(),
     })
     .optional(),
 
@@ -329,6 +333,224 @@ export function createPerson(input: PersonInput, by = "Archive maintainer"): Per
   writeFile(target);
   invalidateArchive();
   return person;
+}
+
+/**
+ * Write a whole family in one pass.
+ *
+ * Calling createPerson in a loop would be wrong twice over. It reloads and
+ * rewrites the file on every person, so a forty-person branch is forty reads
+ * and forty renames — but worse, it cannot express the thing a family draft is
+ * for: the records refer to each other, and none of them has an id until it is
+ * written. So ids are minted for every row up front against one snapshot of
+ * what is taken, the relationship fields are rewritten from draft keys to
+ * those ids, and the whole set lands in a single write.
+ *
+ * `link` is the second half. A draft usually hangs off somebody already in the
+ * archive, and while a *child* pointing at an existing father needs nothing
+ * from that father, a *marriage* does — the spouse link has to appear on both
+ * records or the union renders once and the couple looks unmarried from one
+ * side. Those existing records are patched here, in the same pass.
+ */
+export interface FamilyMember {
+  /** The draft-local key this row came from. */
+  key: string;
+  /** An archive record this row *is*, rather than one to be created. */
+  existingId?: string;
+  input: PersonInput;
+  fatherRef?: string;
+  motherRef?: string;
+  spouseRefs?: { ref: string; year?: number; status?: string }[];
+}
+
+export interface FamilyWriteResult {
+  /** draft key -> archive id, for every row. */
+  ids: Record<string, string>;
+  created: string[];
+  /** Existing records that gained a spouse link. */
+  updated: string[];
+}
+
+export function createFamily(
+  members: FamilyMember[],
+  by = "Archive maintainer",
+): FamilyWriteResult {
+  const files = loadFiles();
+  const taken = allIds(files);
+  const stamp = today();
+
+  // 1. Give every row an id. Existing rows keep theirs; new ones are minted
+  //    against a set that grows as we go, so two brothers with identical
+  //    names cannot collide.
+  const ids: Record<string, string> = {};
+  for (const m of members) {
+    if (m.existingId) {
+      ids[m.key] = m.existingId;
+      continue;
+    }
+    const id = mintId(m.input.name, taken);
+    taken.add(id);
+    ids[m.key] = id;
+  }
+
+  /** A relationship target: a draft key if it names one, else an archive id. */
+  const resolve = (ref: string | undefined) =>
+    ref ? (ids[ref] ?? (taken.has(ref) ? ref : undefined)) : undefined;
+
+  const created: string[] = [];
+  const updated = new Set<string>();
+  const touched = new Set<LoadedFile>();
+
+  const target =
+    files.find((f) => f.path === COMMUNITY_FILE) ??
+    ({
+      path: COMMUNITY_FILE,
+      bare: false,
+      people: [],
+      doc: {
+        _note:
+          "Records entered directly by archive maintainers, as opposed to the generated sample lineages.",
+      },
+    } satisfies LoadedFile);
+
+  // 2. Build the records, with relationships now pointing at real ids.
+  for (const m of members) {
+    const id = ids[m.key];
+    const spouses = (m.spouseRefs ?? [])
+      .map((s) => {
+        const personId = resolve(s.ref);
+        return personId && personId !== id
+          ? {
+              personId,
+              status: (s.status ?? "married") as NonNullable<
+                Person["spouses"]
+              >[number]["status"],
+              date: s.year ? { year: s.year } : undefined,
+            }
+          : null;
+      })
+      .filter((s): s is NonNullable<typeof s> => !!s);
+
+    const fatherId = resolve(m.fatherRef);
+    const motherId = resolve(m.motherRef);
+
+    if (m.existingId) {
+      // An existing record is not rebuilt from the draft — the draft knows
+      // less about them than the archive already does. Only the links the
+      // draft adds are merged in.
+      const found = locate(files, m.existingId);
+      if (!found) continue;
+      const existing = found.file.people[found.index];
+      const merged: Person = { ...existing };
+      let changed = false;
+
+      if (fatherId && fatherId !== existing.fatherId && fatherId !== existing.id) {
+        merged.fatherId = fatherId;
+        changed = true;
+      }
+      if (motherId && motherId !== existing.motherId && motherId !== existing.id) {
+        merged.motherId = motherId;
+        changed = true;
+      }
+      const fresh = spouses.filter(
+        (s) => !existing.spouses?.some((e) => e.personId === s.personId),
+      );
+      if (fresh.length) {
+        merged.spouses = [...(existing.spouses ?? []), ...fresh];
+        changed = true;
+      }
+      if (changed) {
+        merged.updatedAt = stamp;
+        found.file.people[found.index] = merged;
+        touched.add(found.file);
+        updated.add(m.existingId);
+      }
+      continue;
+    }
+
+    const cleaned = (prune(m.input) ?? {}) as PersonInput;
+    const person: Person = {
+      ...cleaned,
+      id,
+      name: {
+        ...cleaned.name,
+        display:
+          cleaned.name?.display ??
+          [m.input.name.given, m.input.name.surname].filter(Boolean).join(" "),
+      },
+      gender: m.input.gender,
+      confidence: m.input.confidence,
+      contributedBy: cleaned.contributedBy ?? by,
+      createdAt: stamp,
+      updatedAt: stamp,
+    };
+
+    if (fatherId) person.fatherId = fatherId;
+    else delete person.fatherId;
+    if (motherId) person.motherId = motherId;
+    else delete person.motherId;
+    if (spouses.length) person.spouses = spouses;
+    else delete person.spouses;
+
+    target.people.push(person);
+    created.push(id);
+  }
+
+  // 3. A marriage stated on one side has to exist on the other, or the couple
+  //    reads as married from one record and single from the other.
+  const createdSet = new Set(created);
+  // The target file is not necessarily in `files` — it is newly minted the
+  // first time a maintainer saves anything — so a partner living in it has to
+  // be found here rather than through locate().
+  const inTarget = new Map(target.people.map((p) => [p.id, p]));
+
+  for (const m of members) {
+    const id = ids[m.key];
+    for (const s of m.spouseRefs ?? []) {
+      const partnerId = resolve(s.ref);
+      if (!partnerId || partnerId === id) continue;
+
+      const link = {
+        personId: id,
+        status: (s.status ?? "married") as NonNullable<
+          Person["spouses"]
+        >[number]["status"],
+        date: s.year ? { year: s.year } : undefined,
+      };
+
+      const local = inTarget.get(partnerId);
+      if (local) {
+        if (local.spouses?.some((x) => x.personId === id)) continue;
+        local.spouses = [...(local.spouses ?? []), link];
+        touched.add(target);
+        // Only worth reporting when it was already published — a link between
+        // two people created by this same draft is not an edit to anything.
+        if (!createdSet.has(partnerId)) {
+          local.updatedAt = stamp;
+          updated.add(partnerId);
+        }
+        continue;
+      }
+
+      const found = locate(files, partnerId);
+      if (!found) continue;
+      const existing = found.file.people[found.index];
+      if (existing.spouses?.some((x) => x.personId === id)) continue;
+      found.file.people[found.index] = {
+        ...existing,
+        spouses: [...(existing.spouses ?? []), link],
+        updatedAt: stamp,
+      };
+      touched.add(found.file);
+      updated.add(partnerId);
+    }
+  }
+
+  if (created.length) touched.add(target);
+  for (const file of touched) writeFile(file);
+  invalidateArchive();
+
+  return { ids, created, updated: [...updated] };
 }
 
 export function updatePerson(id: string, input: PersonInput): Person | null {
@@ -522,4 +744,109 @@ export function deletePerson(id: string): DeletionResult | null {
 export function readPersonRaw(id: string): Person | null {
   const found = locate(loadFiles(), id);
   return found ? found.file.people[found.index] : null;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reference values across every record                                */
+/* ------------------------------------------------------------------ */
+
+/** Which person fields draw on which vocabulary. */
+const VOCABULARY_FIELDS = {
+  gotras: ["gotra"],
+  maths: ["math"],
+  communities: ["community"],
+  kuladevatas: ["kuladevata"],
+  places: ["mool"],
+} as const;
+
+export type RetargetVocabulary = keyof typeof VOCABULARY_FIELDS;
+
+/**
+ * Point every record that uses one reference id at another, or at nothing.
+ *
+ * This is what makes a vocabulary decision reversible. A maintainer looking at
+ * a pending "Bhardwaj" that should have been "Bharadwaja" needs the four
+ * records already carrying it to move too, or approving the merge would leave
+ * those four pointing at an id that no longer exists — a record whose gotra
+ * silently stops resolving, which is exactly the rot the controlled
+ * vocabulary is there to prevent.
+ *
+ * Passing `null` for `toId` clears the field instead, for a value that was
+ * simply wrong.
+ */
+export function retargetRef(
+  vocabulary: RetargetVocabulary,
+  fromId: string,
+  toId: string | null,
+): { changed: string[] } {
+  const files = loadFiles();
+  const changed: string[] = [];
+  const touched = new Set<LoadedFile>();
+  const stamp = today();
+
+  for (const file of files) {
+    file.people.forEach((person, index) => {
+      let hit = false;
+      const next: Person = { ...person };
+
+      for (const field of VOCABULARY_FIELDS[vocabulary]) {
+        if (person[field] === fromId) {
+          const replacement = toId ?? undefined;
+          if (replacement === undefined) delete next[field];
+          else next[field] = replacement;
+          hit = true;
+        }
+      }
+
+      // Places are also named from inside birth, death, residences and the
+      // place a marriage was held, so a place merge has to reach all of them.
+      if (vocabulary === "places") {
+        if (person.birth?.place?.id === fromId) {
+          next.birth = { ...person.birth, place: placeAfter(person.birth.place, toId) };
+          hit = true;
+        }
+        if (person.death?.place?.id === fromId) {
+          next.death = { ...person.death, place: placeAfter(person.death.place, toId) };
+          hit = true;
+        }
+        if (person.residences?.some((r) => r.id === fromId)) {
+          next.residences = person.residences
+            .map((r) => (r.id === fromId ? placeAfter(r, toId) : r))
+            .filter((r): r is NonNullable<typeof r> => !!r);
+          hit = true;
+        }
+        if (person.spouses?.some((s) => s.place?.id === fromId)) {
+          next.spouses = person.spouses.map((s) =>
+            s.place?.id === fromId ? { ...s, place: placeAfter(s.place, toId) } : s,
+          );
+          hit = true;
+        }
+      }
+
+      if (!hit) return;
+      next.updatedAt = stamp;
+      file.people[index] = next;
+      changed.push(person.id);
+      touched.add(file);
+    });
+  }
+
+  for (const file of touched) writeFile(file);
+  if (touched.size) invalidateArchive();
+  return { changed };
+}
+
+/**
+ * What a place reference becomes when its entry is merged away. Keeping the
+ * label when there is nowhere to point means a village the archive no longer
+ * has an entry for still reads as a village rather than vanishing.
+ */
+function placeAfter(
+  ref: { id?: string; label?: string } | undefined,
+  toId: string | null,
+) {
+  if (!ref) return ref;
+  if (toId) return { ...ref, id: toId };
+  const label = ref.label;
+  return label ? { label } : undefined;
 }

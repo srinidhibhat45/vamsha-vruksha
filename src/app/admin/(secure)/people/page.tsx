@@ -49,9 +49,14 @@ export default async function AdminPeoplePage() {
             and are live on the site immediately.
           </p>
         </div>
-        <Link href="/admin/people/new" className="btn btn-filled">
-          Add a person
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <Link href="/admin/people/family" className="btn btn-filled">
+            Add a family
+          </Link>
+          <Link href="/admin/people/new" className="btn btn-outlined">
+            Add one person
+          </Link>
+        </div>
       </header>
 
       <div className="mt-7">

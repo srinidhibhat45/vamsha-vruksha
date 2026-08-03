@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { birthYear, getArchive } from "@/lib/archive";
 import { KastiRule } from "@/components/Ornament";
+import { TempleGallery } from "@/components/TempleGallery";
 import type { Place } from "@/lib/types";
 
 export const metadata: Metadata = {
@@ -115,6 +116,25 @@ export default function DiasporaPage() {
   }));
 
   const grandTotal = Math.max(1, byBand.reduce((s, b) => s + b.total, 0));
+
+  /* ---------------------------------------------------- The temples */
+
+  // Ordered by how many people in the archive actually name the deity, so the
+  // gallery opens on the temples these particular families belong to rather
+  // than on whichever happened to be listed first.
+  const kuladevataCounts = new Map(
+    archive.stats.byKuladevata.map((f) => [f.id, f.count]),
+  );
+  const mathCounts = new Map(archive.stats.byMath.map((f) => [f.id, f.count]));
+
+  const temples = [...archive.temples.values()]
+    .filter((t) => t.image)
+    .sort((a, b) => {
+      const weight = (t: typeof a) =>
+        (t.kuladevataId ? (kuladevataCounts.get(t.kuladevataId) ?? 0) : 0) +
+        (t.mathId ? (mathCounts.get(t.mathId) ?? 0) : 0);
+      return weight(b) - weight(a) || a.name.localeCompare(b.name);
+    });
 
   /* ----------------------------------------------------- The chakra */
 
@@ -400,6 +420,53 @@ export default function DiasporaPage() {
           ))}
         </aside>
       </section>
+
+      {/* ----------------------------------------------- The temples */}
+      {temples.length > 0 && (
+        <section className="mt-16">
+          <h2 className="font-display text-[1.75rem] font-medium">
+            What the families left behind, and still name
+          </h2>
+          <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--fg-soft)]">
+            The households in this archive scattered from Goa across four
+            centuries, and the thing almost none of them let go of was the
+            kuladevata. A family that has forgotten its village can nearly
+            always still tell you its deity — which is why it is the single
+            most reliable way to reconnect two branches that lost each other,
+            and why it is worth seeing the buildings rather than only reading
+            the names.
+          </p>
+          <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--fg-soft)]">
+            Many of these images were carried inland to Ponda and Bicholim in
+            the sixteenth and seventeenth centuries, ahead of the destruction of
+            temples in the Old Conquests. Where that happened, the village the
+            deity came from is named below — and it is very often the mool a
+            family still gives, four hundred years after anyone last lived
+            there.
+          </p>
+
+          <TempleGallery
+            temples={temples}
+            placeName={(id) => (id ? archive.places.get(id)?.name : undefined)}
+            countFor={(t) =>
+              t.kuladevataId
+                ? kuladevataCounts.get(t.kuladevataId)
+                : t.mathId
+                  ? mathCounts.get(t.mathId)
+                  : undefined
+            }
+          />
+
+          <p className="mt-6 max-w-3xl text-[0.85rem] leading-relaxed text-[var(--fg-faint)]">
+            These photographs are other people&rsquo;s work, gathered from
+            Wikimedia Commons under free licences and reproduced here with the
+            photographer and licence attached to each one. The temples are not
+            a complete list — several of the deities named in this archive have
+            no freely licensed photograph yet. If you have taken one, releasing
+            it on Commons puts it here and everywhere else it is needed.
+          </p>
+        </section>
+      )}
 
       <section className="mt-14 surface p-6">
         <h2 className="font-display text-[1.5rem] font-medium">

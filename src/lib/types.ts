@@ -103,6 +103,27 @@ export interface PersonName {
   kannada?: string;
 }
 
+/**
+ * A stored image.
+ *
+ * `thumbUrl` is not an optimisation detail that belongs in a rendering layer:
+ * the archive stores exactly two renditions of every photograph a contributor
+ * sends, and which one a page asks for is a property of the record. `bytes`
+ * and the dimensions are kept because a maintainer auditing storage years from
+ * now should not have to fetch every image to find out what is in the bucket.
+ */
+export interface PhotoRef {
+  url: string;
+  /** Small rendition — cards, search results, the tree. */
+  thumbUrl?: string;
+  caption?: string;
+  credit?: string;
+  year?: number;
+  width?: number;
+  height?: number;
+  bytes?: number;
+}
+
 export interface Person {
   id: string;
   name: PersonName;
@@ -144,7 +165,7 @@ export interface Person {
   /** Relationship to parents when not biological. */
   parentage?: "biological" | "adopted" | "step" | "unknown";
 
-  photo?: { url: string; caption?: string; credit?: string; year?: number };
+  photo?: PhotoRef;
   /** Additional images, documents. */
   media?: { url: string; kind: "photo" | "document"; caption?: string }[];
 
@@ -195,7 +216,23 @@ export interface Lineage {
 /* Reference vocabularies                                              */
 /* ------------------------------------------------------------------ */
 
-export interface Gotra {
+/**
+ * Carried by every reference vocabulary entry that a contributor, rather than
+ * a maintainer, put there — see lib/vocabulary.ts and lib/vocabStore.ts.
+ *
+ * `pending` is what keeps the entry out of everybody else's dropdown until a
+ * maintainer has checked the spelling and filled in what a contributor's form
+ * cannot supply (a pravara, a temple, coordinates). It does not stop the entry
+ * from being *used*: the record that proposed it already names it, and any
+ * page rendering that record shows the name exactly as written.
+ */
+interface Proposable {
+  pending?: boolean;
+  /** Who proposed it, for the maintainer's approval screen. */
+  proposedBy?: string;
+}
+
+export interface Gotra extends Proposable {
   id: string;
   name: string;
   devanagari?: string;
@@ -204,7 +241,7 @@ export interface Gotra {
   note?: string;
 }
 
-export interface Math {
+export interface Math extends Proposable {
   id: string;
   name: string;
   devanagari?: string;
@@ -215,7 +252,7 @@ export interface Math {
   communities?: string[];
 }
 
-export interface Community {
+export interface Community extends Proposable {
   id: string;
   name: string;
   alsoKnownAs?: string[];
@@ -223,7 +260,7 @@ export interface Community {
   note?: string;
 }
 
-export interface Kuladevata {
+export interface Kuladevata extends Proposable {
   id: string;
   name: string;
   devanagari?: string;
@@ -233,7 +270,7 @@ export interface Kuladevata {
   note?: string;
 }
 
-export interface Place {
+export interface Place extends Proposable {
   id: string;
   name: string;
   alt?: string[];
@@ -246,12 +283,54 @@ export interface Place {
   note?: string;
 }
 
+/**
+ * A photograph of a place that belongs to the community rather than to a
+ * family — a kuladevata's temple, a matha.
+ *
+ * The licence fields are not decoration. Every image here is somebody else's
+ * work used under a licence that requires attribution, and an archive that
+ * strips that is doing to photographers exactly what it exists to stop
+ * happening to ancestors. Author, licence and the page it came from are stored
+ * with the file and rendered wherever the image is.
+ */
+export interface TempleImage {
+  /** Path under /public, e.g. "/temples/mangueshi.jpg". */
+  src: string;
+  width?: number;
+  height?: number;
+  /** Photographer or uploader, as the source names them. */
+  credit: string;
+  /** Licence short code, e.g. "CC BY-SA 4.0", "Public domain". */
+  license: string;
+  licenseUrl?: string;
+  /** The page the file came from, for anyone re-checking the licence. */
+  source: string;
+}
+
+export interface Temple {
+  id: string;
+  name: string;
+  devanagari?: string;
+  /** id into kuladevatas.json — the deity whose temple this is. */
+  kuladevataId?: string;
+  /** id into maths.json, for the monastic seats. */
+  mathId?: string;
+  /** id into places.json — where it stands now. */
+  placeId?: string;
+  /** id into places.json — the village the deity was carried from. */
+  originPlaceId?: string;
+  image?: TempleImage;
+  /** Two or three sentences: what it is, and why this family would know it. */
+  blurb?: string;
+}
+
 export interface ReferenceData {
   gotras: Gotra[];
   maths: Math[];
   communities: Community[];
   kuladevatas: Kuladevata[];
   places: Place[];
+  temples: Temple[];
 }
 
 /* ------------------------------------------------------------------ */
@@ -263,7 +342,9 @@ export type SubmissionKind =
   | "correction"
   | "add-relationship"
   | "story"
-  | "photo";
+  | "photo"
+  /** A whole household or branch, submitted in one piece. See FamilyDraft. */
+  | "family-tree";
 
 /**
  * `changes-requested` is the one a moderation queue cannot do without. Most
@@ -278,6 +359,77 @@ export type SubmissionStatus =
   | "approved"
   | "rejected"
   | "merged";
+
+/* ------------------------------------------------------------------ */
+/* Family drafts — a whole branch, authored in one piece                */
+/* ------------------------------------------------------------------ */
+
+/**
+ * One person inside a draft family, before anything is written.
+ *
+ * The interesting field is `key`. A contributor entering four generations at
+ * once is describing people who do not have archive ids yet but who refer to
+ * each other constantly — this child's father is that row above. So a draft
+ * carries its own private namespace: `key` is unique within the draft only,
+ * relationships point at keys, and the whole set of keys is resolved to real
+ * ids in a single pass when the draft is published.
+ *
+ * `existingId` is the other half of that idea and the reason duplicates stay
+ * out. A draft row can *be* somebody already in the archive — the grandfather
+ * everyone hangs off is usually already there — and marking the row as that
+ * person means the publish step links to them rather than minting a second
+ * copy. Every row therefore resolves to exactly one archive id, whether or not
+ * that id existed before.
+ */
+export interface DraftPerson {
+  /** Unique within this draft, meaningless outside it. */
+  key: string;
+  /** Set when this row is a record that already exists. Nothing is created. */
+  existingId?: string;
+
+  given: string;
+  patronymic?: string;
+  surname?: string;
+  devanagari?: string;
+  aka?: string[];
+  gender?: Gender;
+  status?: LifeStatus;
+
+  birthYear?: number;
+  birthNote?: string;
+  birthPlace?: string;
+  deathYear?: number;
+  deathPlace?: string;
+
+  gotra?: string;
+  community?: string;
+  math?: string;
+  kuladevata?: string;
+  mool?: string;
+  veda?: string;
+  sutra?: string;
+
+  occupations?: string[];
+  residences?: string[];
+  epithet?: string;
+  bio?: string;
+  photo?: PhotoRef;
+
+  /** Draft keys, or the id of a person already in the archive. */
+  fatherKey?: string;
+  motherKey?: string;
+  spouseKeys?: { key: string; year?: number }[];
+
+  confidence?: Confidence;
+}
+
+export interface FamilyDraft {
+  people: DraftPerson[];
+  /** What the contributor wants a reviewer to know about the branch as a whole. */
+  note?: string;
+  /** Provenance for the branch, copied onto every record it creates. */
+  sources?: { kind: Source["kind"]; title: string; detail?: string }[];
+}
 
 export interface Submission {
   id: string;
