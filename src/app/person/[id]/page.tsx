@@ -484,11 +484,13 @@ export default async function PersonPage({ params }: { params: Params }) {
                     )}
                     {p.id === person.id ? (
                       <span className="chip chip-selected" aria-current="true">
-                        {p.name.given} {birthYear(p) ?? ""}
+                        {fullName(p)}
+                        {birthYear(p) ? ` ${birthYear(p)}` : ""}
                       </span>
                     ) : (
                       <Link href={`/person/${p.id}`} className="chip">
-                        {p.name.given} {birthYear(p) ?? ""}
+                        {fullName(p)}
+                        {birthYear(p) ? ` ${birthYear(p)}` : ""}
                       </Link>
                     )}
                   </li>

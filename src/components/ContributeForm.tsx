@@ -215,6 +215,20 @@ export function ContributeForm({
   const [spouse, setSpouse] = useState<PickedPerson | null>(null);
   const [marriageYear, setMarriageYear] = useState("");
 
+  // Who a correction or a story is about, when the reader arrived at the
+  // form directly rather than via a "Correct this" link that already knows.
+  const [correctionTarget, setCorrectionTarget] = useState<PickedPerson | null>(null);
+  const [storyTarget, setStoryTarget] = useState<PickedPerson | null>(null);
+
+  // Joining two existing records is either a parent-child link or a
+  // marriage — the pickers involved differ, so the kind is its own field
+  // rather than inferred from which boxes got filled in.
+  const [relType, setRelType] = useState<"parent-child" | "spouse">(
+    "parent-child",
+  );
+  const [relChild, setRelChild] = useState<PickedPerson | null>(null);
+  const [relPersonA, setRelPersonA] = useState<PickedPerson | null>(null);
+
   const [confidence, setConfidence] = useState("oral");
   const [sources, setSources] = useState<SourceEntry[]>([
     { kind: "oral", title: "", detail: "" },
@@ -266,53 +280,130 @@ export function ContributeForm({
   }, [given, surname, kind]);
 
   /* --------------------------------------------------------------- */
+  /* Who a correction or a story targets, and the payload each kind    */
+  /* sends — see the note above KINDS: these four are not one form     */
+  /* with different labels, they collect different facts.              */
+  /* --------------------------------------------------------------- */
+
+  const correctionTargetId = correctTarget?.id ?? correctionTarget?.id;
+  const storyTargetId = correctTarget?.id ?? storyTarget?.id;
+
+  const commaList = (v: string) =>
+    v ? v.split(",").map((s) => s.trim()).filter(Boolean) : undefined;
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setBusy(true);
     setIssues([]);
 
-    const payload: Record<string, unknown> = {
-      given: given || undefined,
-      patronymic: patronymic || undefined,
-      surname: surname || undefined,
-      displayName: [given, patronymic, surname].filter(Boolean).join(" "),
-      devanagari: devanagari || undefined,
-      aka: aka
-        ? aka.split(",").map((s) => s.trim()).filter(Boolean)
-        : undefined,
-      gender: gender || undefined,
-      status: living || undefined,
-      birthYear: birthYear ? Number(birthYear) : undefined,
-      birthNote: birthNote || undefined,
-      birthPlace: birthPlace || undefined,
-      deathYear: deathYear ? Number(deathYear) : undefined,
-      deathPlace: deathPlace || undefined,
-      gotra: gotra || undefined,
-      community: community || undefined,
-      math: math || undefined,
-      kuladevata: kuladevata || undefined,
-      mool: mool || undefined,
-      veda: veda || undefined,
-      sutra: sutra || undefined,
-      occupations: occupations
-        ? occupations.split(",").map((s) => s.trim()).filter(Boolean)
-        : undefined,
-      residences: residences
-        ? residences.split(",").map((s) => s.trim()).filter(Boolean)
-        : undefined,
-      epithet: epithet || undefined,
-      bio: bio || undefined,
-      fatherId: father?.id,
-      fatherName: father?.name,
-      motherId: mother?.id,
-      motherName: mother?.name,
-      spouseId: spouse?.id,
-      spouseName: spouse?.name,
-      marriageYear: marriageYear ? Number(marriageYear) : undefined,
-      confidence,
-      sources: sources.filter((s) => s.title.trim()),
+    const fail = (msg: string) => {
+      setIssues([{ path: "", message: msg }]);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      requestAnimationFrame(() => errorRef.current?.focus());
     };
+
+    if (kind === "correction" && !correctionTargetId) {
+      fail("Search for the record you want to correct.");
+      return;
+    }
+    if (kind === "story" && !storyTargetId) {
+      fail("Search for the person this story is about.");
+      return;
+    }
+    if (kind === "add-relationship") {
+      if (relType === "parent-child" && !relChild) {
+        fail("Choose the child in this relationship.");
+        return;
+      }
+      if (relType === "parent-child" && !father && !mother) {
+        fail("Choose at least one parent.");
+        return;
+      }
+      if (relType === "spouse" && (!relPersonA || !spouse)) {
+        fail("Choose both people in the marriage.");
+        return;
+      }
+    }
+
+    setBusy(true);
+
+    const sourcePayload = sources.filter((s) => s.title.trim());
+    let targetId: string | undefined;
+    let payload: Record<string, unknown>;
+
+    if (kind === "story") {
+      targetId = storyTargetId;
+      payload = {
+        epithet: epithet || undefined,
+        occupations: commaList(occupations),
+        residences: commaList(residences),
+        bio: bio || undefined,
+        confidence,
+        sources: sourcePayload,
+      };
+    } else if (kind === "add-relationship") {
+      targetId = relType === "parent-child" ? relChild?.id : relPersonA?.id;
+      payload =
+        relType === "parent-child"
+          ? {
+              fatherId: father?.id,
+              fatherName: father?.name,
+              motherId: mother?.id,
+              motherName: mother?.name,
+              confidence,
+              sources: sourcePayload,
+            }
+          : {
+              spouseId: spouse?.id,
+              spouseName: spouse?.name,
+              marriageYear: marriageYear ? Number(marriageYear) : undefined,
+              confidence,
+              sources: sourcePayload,
+            };
+    } else {
+      // new-person and correction collect the same shape — a correction is
+      // just a new-person submission layered onto an existing record.
+      targetId = kind === "correction" ? correctionTargetId : undefined;
+      payload = {
+        given: given || undefined,
+        patronymic: patronymic || undefined,
+        surname: surname || undefined,
+        // A correction that leaves the name fields blank must not blank out
+        // the existing name — only a new person gets a computed display name.
+        displayName:
+          kind === "new-person"
+            ? [given, patronymic, surname].filter(Boolean).join(" ")
+            : undefined,
+        devanagari: devanagari || undefined,
+        aka: commaList(aka),
+        gender: gender || undefined,
+        status: living || undefined,
+        birthYear: birthYear ? Number(birthYear) : undefined,
+        birthNote: birthNote || undefined,
+        birthPlace: birthPlace || undefined,
+        deathYear: deathYear ? Number(deathYear) : undefined,
+        deathPlace: deathPlace || undefined,
+        gotra: gotra || undefined,
+        community: community || undefined,
+        math: math || undefined,
+        kuladevata: kuladevata || undefined,
+        mool: mool || undefined,
+        veda: veda || undefined,
+        sutra: sutra || undefined,
+        occupations: commaList(occupations),
+        residences: commaList(residences),
+        epithet: epithet || undefined,
+        bio: bio || undefined,
+        fatherId: father?.id,
+        fatherName: father?.name,
+        motherId: mother?.id,
+        motherName: mother?.name,
+        spouseId: spouse?.id,
+        spouseName: spouse?.name,
+        marriageYear: marriageYear ? Number(marriageYear) : undefined,
+        confidence,
+        sources: sourcePayload,
+      };
+    }
 
     try {
       const res = await fetch("/api/submit", {
@@ -320,7 +411,7 @@ export function ContributeForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           kind,
-          targetId: correctTarget?.id,
+          targetId,
           message: message || undefined,
           payload,
           website: honeypot,
@@ -415,6 +506,10 @@ export function ContributeForm({
               setFather(null);
               setMother(null);
               setSpouse(null);
+              setCorrectionTarget(null);
+              setStoryTarget(null);
+              setRelChild(null);
+              setRelPersonA(null);
             }}
             className="btn btn-filled"
           >
@@ -521,7 +616,96 @@ export function ContributeForm({
         </div>
       )}
 
+      {/* -------------------------------------------- Which record(s) */}
+      {!correctTarget && kind === "correction" && (
+        <Section
+          title="Which record"
+          note="Search for the person whose record needs fixing."
+        >
+          <PersonPicker
+            label="Person to correct"
+            value={correctionTarget}
+            onChange={setCorrectionTarget}
+            autoFocus
+          />
+        </Section>
+      )}
+
+      {!correctTarget && kind === "story" && (
+        <Section
+          title="Who is this about"
+          note="Search for the person already in the archive."
+        >
+          <PersonPicker
+            label="Person"
+            value={storyTarget}
+            onChange={setStoryTarget}
+            autoFocus
+          />
+        </Section>
+      )}
+
+      {kind === "add-relationship" && (
+        <Section
+          title="How are they linked"
+          note="Search for two people already in the archive. If one of them is not here yet, add them as a separate person first."
+        >
+          <div
+            role="radiogroup"
+            aria-label="Kind of relationship"
+            className="flex flex-wrap gap-2"
+          >
+            {(
+              [
+                { id: "parent-child", label: "Parent and child" },
+                { id: "spouse", label: "Married couple" },
+              ] as const
+            ).map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                role="radio"
+                aria-checked={relType === opt.id}
+                onClick={() => setRelType(opt.id)}
+                className={`chip chip-sm ${relType === opt.id ? "chip-selected" : ""}`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+
+          {relType === "parent-child" ? (
+            <div className="grid gap-4 sm:grid-cols-3">
+              <PersonPicker label="Father" value={father} onChange={setFather} />
+              <PersonPicker label="Mother" value={mother} onChange={setMother} />
+              <PersonPicker label="Child" value={relChild} onChange={setRelChild} />
+            </div>
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-[1fr_1fr_10rem]">
+              <PersonPicker
+                label="Person"
+                value={relPersonA}
+                onChange={setRelPersonA}
+              />
+              <PersonPicker label="Married to" value={spouse} onChange={setSpouse} />
+              <Field label="Year of marriage">
+                {(p) => (
+                  <input
+                    {...p}
+                    className="field"
+                    inputMode="numeric"
+                    value={marriageYear}
+                    onChange={(e) => setMarriageYear(e.target.value)}
+                  />
+                )}
+              </Field>
+            </div>
+          )}
+        </Section>
+      )}
+
       {/* ---------------------------------------------------- Names */}
+      {(kind === "new-person" || kind === "correction") && (
       <Section
         title="Who"
         note="Write the name the way the family says it. Alternative spellings can go in the box below — the search treats Shreenivas and Srinivasa as the same name anyway, but recording both helps a reviewer match records."
@@ -529,10 +713,10 @@ export function ContributeForm({
         <div className="grid gap-4 sm:grid-cols-3">
           <Field
             label="Given name"
-            required={!correctTarget}
+            required={kind === "new-person"}
             hint={
-              correctTarget
-                ? `Leave this blank — you're already correcting ${correctTarget.name}.`
+              kind === "correction"
+                ? `Leave this blank unless the name itself is wrong.`
                 : undefined
             }
           >
@@ -661,8 +845,10 @@ export function ContributeForm({
           />
         </div>
       </Section>
+      )}
 
       {/* --------------------------------------------- Dates & places */}
+      {(kind === "new-person" || kind === "correction") && (
       <Section
         title="When and where"
         note="A year is far more useful than nothing. If you only know 'around the time of the 1918 influenza' or 'Shaka 1832', write that in the note — a reviewer can convert it."
@@ -727,8 +913,10 @@ export function ContributeForm({
           />
         </div>
       </Section>
+      )}
 
       {/* ------------------------------------------------- Lineage */}
+      {(kind === "new-person" || kind === "correction") && (
       <Section
         title="Lineage"
         note="These fields do more to reconnect scattered branches than names and dates do. If you know only one of them, it is still worth recording — and leaving one blank is always better than guessing at it."
@@ -817,8 +1005,10 @@ export function ContributeForm({
           </div>
         </div>
       </Section>
+      )}
 
       {/* -------------------------------------------------- Family */}
+      {(kind === "new-person" || kind === "correction") && (
       <Section
         title="Family"
         note="Link to people already in the archive. If a parent is not here yet, add them as a separate submission first and mention it below — a reviewer will join them up."
@@ -840,8 +1030,10 @@ export function ContributeForm({
           </Field>
         </div>
       </Section>
+      )}
 
       {/* ---------------------------------------------------- Life */}
+      {(kind === "new-person" || kind === "correction" || kind === "story") && (
       <Section
         title="Their life"
         note="Optional, and the part people most enjoy reading."
@@ -893,6 +1085,7 @@ export function ContributeForm({
           )}
         </Field>
       </Section>
+      )}
 
       {/* -------------------------------------------------- Sources */}
       <Section
