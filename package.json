@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Vansh Vriksha — a public, community-built family tree and archive for Saraswat / GSB / Konkani families worldwide.",
+  "engines": {
+    "node": ">=22.6.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "npm run data:check && next build",
@@ -20,6 +23,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.13",
     "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.0",
