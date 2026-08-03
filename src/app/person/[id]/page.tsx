@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { notFound } from "next/navigation";
 import {
   CONFIDENCE_LABEL,
@@ -40,6 +40,25 @@ import type { FuzzyDate, Person } from "@/lib/types";
  */
 
 type Params = Promise<{ id: string }>;
+
+/**
+ * Prerender every record at build time.
+ *
+ * A person page is the most-linked page on the site — search results, tree
+ * nodes, lineage lists and the relationship finder all end here — and it is
+ * pure function of data that only changes when a maintainer commits to
+ * data/people. Left to render on demand, each of those clicks was a cold
+ * serverless invocation that parsed the whole archive before it could draw
+ * one record. Prerendered, they are files on the CDN.
+ *
+ * `dynamicParams` stays on, so a record added between deploys still renders
+ * rather than 404ing; it simply pays the on-demand cost until the next build.
+ */
+export function generateStaticParams(): { id: string }[] {
+  return getArchive().personList.map((p) => ({ id: p.id }));
+}
+
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params,

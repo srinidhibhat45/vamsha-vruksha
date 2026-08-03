@@ -1,22 +1,20 @@
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
+import type { Archive } from "@/lib/archive";
 import { getArchive, fullName, birthYear } from "@/lib/archive";
+import type { Lineage } from "@/lib/types";
+import { displayImage } from "@/lib/media";
 import { HeroSearch } from "@/components/HeroSearch";
+import { LineageGlyph } from "@/components/LineageGlyph";
 import {
-  Deepa,
   GotraMark,
-  KastiRule,
   KuladevataMark,
   Mandala,
-  MarkBranch,
-  MarkHourglass,
-  MarkKeys,
-  MarkQuill,
   MoolMark,
   SurnameMark,
 } from "@/components/Ornament";
 
 /**
- * Two rules shape what this page is allowed to put in front of a reader.
+ * Three rules shape what this page is allowed to put in front of a reader.
  *
  * It does not name particular communities. An archive that opens by listing
  * four of them has already told everyone else that it was built for somebody
@@ -34,24 +32,48 @@ import {
  * ------------------------------------------------------------------
  * A third rule, about the look of it.
  *
- * Six sections of cards that share one border radius, one background and one
- * heading size is six sections a reader cannot tell apart — they scroll past
- * as a single grey wall, and nothing on the page is findable a second time.
- * So each band here owns a colour, a ground texture and a mark, and the three
- * kinds of card have three different silhouettes: the indexes are capped and
- * medallioned, a family line has a spine down its leading edge, and an old
- * record is a ruled index card with its year set large. Colour never carries
- * a fact on its own — every mark sits beside its own words.
+ * Everything below the hero is a register: ruled rows, aligned columns,
+ * figures set in the display face, and no cards at all. That is not a style
+ * preference. This page's content is four indexes with counts, ten lineages
+ * with spans and generation depths, and three dated records — which is to
+ * say it is *tabular*, and it was being served as three separate grids of
+ * rounded boxes that shared a shadow, a radius and an icon bubble and could
+ * not be told apart or compared down the page.
+ *
+ * Sections are distinguished by structure and by a numeral on a rule, not by
+ * a colour each. The accent is reserved for one meaning: this is something
+ * you can follow. Nothing decorative uses it.
  */
 
 export default function HomePage() {
   const archive = getArchive();
   const s = archive.stats;
 
-  // Alphabetical, explicitly. Never the largest first.
+  // Alphabetical, explicitly. Never the largest first. Three, because the
+  // section says "three of N" — the number here and the number in that
+  // sentence have to be the same one.
   const lines = [...archive.lineageList]
     .sort((a, b) => a.label.localeCompare(b.label))
-    .slice(0, 6);
+    .slice(0, 3);
+
+  /*
+    Three temples, named rather than sorted.
+
+    The rule against ranking on this page is about families: the archive must
+    not put its biggest contributors on the front. Which photographs lead a
+    page is a different question, and taking these alphabetically answered it
+    badly — it opened on a promotional collage with a banner across it and a
+    street view with a camera datestamp burned into the corner, because that
+    is where the alphabet happened to land.
+
+    So these three are chosen as pictures. They are also the temples the copy
+    beside them refers to, and the ones a Saraswat household is most likely to
+    recognise on sight. The gallery on /diaspora still shows every one.
+  */
+  const FEATURED_TEMPLES = ["mangesh", "shantadurga", "ramnath"];
+  const temples = FEATURED_TEMPLES.map((id) => archive.temples.get(id)).filter(
+    (t): t is NonNullable<typeof t> => !!t?.image,
+  );
 
   const oldest = [...archive.personList]
     .filter((p) => birthYear(p))
@@ -122,10 +144,11 @@ export default function HomePage() {
         </div>
 
         {/* Figures for the archive itself — the one thing on this page it is
-            fair to count. Given the kolam ground so the strip reads as a
-            plinth under the hero rather than as the next section. */}
-        <div className="relative border-t border-[var(--line)] bg-[var(--bg-sunken)] ground-kolam">
-          <dl className="mx-auto flex max-w-[1400px] flex-wrap justify-center gap-x-10 gap-y-5 px-4 py-7">
+            fair to count. Set as a ruled strip of tabular numerals rather
+            than a textured plinth: they are the first register on the page
+            and they should look like the ones below them. */}
+        <div className="relative border-t border-[var(--line)] bg-[var(--bg-sunken)]">
+          <dl className="mx-auto grid max-w-[1400px] grid-cols-2 gap-y-6 px-4 py-8 sm:grid-cols-3 lg:grid-cols-5">
             {[
               { value: s.people.toLocaleString(), label: "people recorded" },
               { value: s.lineages.toLocaleString(), label: "family lines" },
@@ -140,336 +163,490 @@ export default function HomePage() {
                 key={stat.label}
                 className={
                   i === 0
-                    ? ""
-                    : "border-l border-[var(--line)] pl-10 max-sm:border-0 max-sm:pl-0"
+                    ? "px-1"
+                    : "border-l border-[var(--line-strong)] px-1 pl-5 lg:pl-8"
                 }
               >
-                <dd className="font-display text-[1.7rem] font-medium leading-none text-[var(--fg)]">
+                <dd className="figure text-[1.85rem] text-[var(--fg)]">
                   {stat.value}
                 </dd>
-                <dt className="mt-1.5 text-[0.8rem] text-[var(--fg-faint)]">
-                  {stat.label}
-                </dt>
+                <dt className="col-label mt-2">{stat.label}</dt>
               </div>
             ))}
           </dl>
         </div>
       </section>
 
-      {/* ------------------------------------------------- Who this is for */}
-      <section className="ground-grain">
-        <div className="mx-auto max-w-[1400px] px-4 py-16">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-16">
-            <div className="max-w-2xl">
-              <SectionHead
-                eyebrow="Why this exists"
-                mark={<MarkHourglass className="h-[1.05rem] w-[1.05rem]" />}
-                facet="var(--color-samudra)"
-              />
-              <h2 className="mt-3 font-display text-[2rem] font-medium leading-tight">
-                Memory has a half-life, and the joins are what get lost first.
-              </h2>
-              <div className="mt-5 space-y-4 text-[1rem] leading-[1.75] text-[var(--fg-soft)]">
-                <p>
-                  Most families can name four generations without help. The
-                  fifth is a first name and a village. The sixth is gone — and
-                  with it goes the only evidence that two branches now living in
-                  different countries were one household within living memory.
-                </p>
-                <p>
-                  Two families that lost touch in 1910 will usually still agree
-                  on three things: the sage their line descends from, the deity
-                  the household turns to first, and the village they name as
-                  their root. Those three fields do more to reconnect a
-                  scattered family than any amount of names and dates, which is
-                  why this archive is organised around them.
-                </p>
-                <p>Written down once, none of it decays again.</p>
-              </div>
-            </div>
+      {/* ------------------------------------------- I · Why this exists */}
+      <section className="mx-auto max-w-[1400px] px-4 pb-14 pt-16">
+        <BandHead numeral="I" eyebrow="Why this exists" />
 
-            <aside className="m3-card m3-card-elevated self-start">
-              <div className="m3-card-head">
-                <span
-                  className="section-mark"
-                  style={{ ["--facet" as string]: "var(--color-tulsi)" }}
-                  aria-hidden
-                >
-                  <Tick className="h-4 w-4" />
-                </span>
-                <h3 className="m3-card-title">Who this is for</h3>
-              </div>
-              <div className="m3-card-body">
-                <p className="text-[0.95rem] leading-relaxed text-[var(--fg-soft)]">
-                  Anyone with a family. There is no community you have to belong
-                  to, no list you have to be on, and nothing to prove before you
-                  can add a record.
-                </p>
-                <ul className="mt-5 space-y-3 text-[0.92rem] leading-relaxed text-[var(--fg-soft)]">
-                  <li className="flex gap-3">
-                    <Tick className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-tulsi)]" />
-                    <span>
-                      Free to read in full, with no account and no membership.
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Tick className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-tulsi)]" />
-                    <span>
-                      Open to correction by anyone, with a reason attached to
-                      every change.
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <Tick className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-tulsi)]" />
-                    <span>
-                      Every record says where it came from and how sure of it we
-                      are.
-                    </span>
-                  </li>
-                </ul>
-                <Link href="/about" className="btn btn-outlined mt-6 w-full">
-                  How the archive works
-                </Link>
-              </div>
-            </aside>
+        {/* An editorial opening: the claim hangs in its own column and the
+            argument runs beside it at a reading measure. Two columns of
+            unequal weight, which is what a page of prose looks like when
+            somebody has set it rather than stacked it. */}
+        <div className="mt-9 grid gap-x-16 gap-y-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)]">
+          <div>
+            <h2 className="font-display text-[2.15rem] font-medium leading-[1.12] tracking-[-0.012em] sm:text-[2.5rem]">
+              Memory has a half-life, and the joins are what get lost first.
+            </h2>
+            <p className="col-label mt-8">Who this is for</p>
+            <p className="mt-2.5 max-w-[26rem] text-[0.95rem] leading-relaxed text-[var(--fg-soft)]">
+              Anyone with a family. There is no community you have to belong to,
+              no list you have to be on, and nothing to prove before you can add
+              a record.
+            </p>
+          </div>
+
+          <div className="max-w-[38rem] space-y-5 text-[1.02rem] leading-[1.75] text-[var(--fg-soft)]">
+            <p>
+              Most families can name four generations without help. The fifth is
+              a first name and a village. The sixth is gone — and with it goes
+              the only evidence that two branches now living in different
+              countries were one household within living memory.
+            </p>
+            <p>
+              Two families that lost touch in 1910 will usually still agree on
+              three things: the sage their line descends from, the deity the
+              household turns to first, and the village they name as their root.
+              Those three fields do more to reconnect a scattered family than
+              any amount of names and dates, which is why this archive is
+              organised around them.
+            </p>
+            <p className="font-display text-[1.2rem] italic leading-snug text-[var(--fg)]">
+              Written down once, none of it decays again.
+            </p>
+          </div>
+        </div>
+
+        {/* The three commitments, as a ruled footing to the argument rather
+            than as a boxed aside with a tick beside each line. */}
+        <ul className="mt-12 grid gap-x-10 gap-y-7 border-t border-[var(--outline-soft)] pt-7 sm:grid-cols-3">
+          {[
+            {
+              head: "Free to read",
+              body: "The whole archive, in full, with no account and no membership.",
+            },
+            {
+              head: "Open to correction",
+              body: "Anyone may correct a record, and every change carries a reason.",
+            },
+            {
+              head: "Sourced",
+              body: "Each record says where it came from and how sure of it we are.",
+            },
+          ].map((c, i) => (
+            <li
+              key={c.head}
+              className={
+                i === 0 ? "" : "sm:border-l sm:border-[var(--line)] sm:pl-10"
+              }
+            >
+              <h3 className="font-display text-[1.05rem] font-medium">
+                {c.head}
+              </h3>
+              <p className="mt-1.5 text-[0.92rem] leading-relaxed text-[var(--fg-soft)]">
+                {c.body}
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <p className="mt-8">
+          <Link
+            href="/about"
+            className="group inline-flex items-baseline gap-2 font-display text-[1.05rem] text-[var(--accent)] underline decoration-[color-mix(in_oklab,var(--accent)_35%,transparent)] underline-offset-[6px] hover:decoration-[var(--accent)]"
+          >
+            How the archive works
+            <span className="reg-arrow" aria-hidden>
+              →
+            </span>
+          </Link>
+        </p>
+      </section>
+
+      {/* ---------------------------------------------- II · The indexes */}
+      <section className="border-y border-[var(--line)] bg-[var(--bg-sunken)]">
+        <div
+          className="mx-auto max-w-[1400px] px-4 py-16"
+          style={{ ["--band-paper" as string]: "var(--bg-sunken)" }}
+        >
+          <BandHead numeral="II" eyebrow="Find a way in" />
+
+          <div className="mt-8 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-end">
+            <h2 className="font-display text-[2.15rem] font-medium leading-[1.12] tracking-[-0.012em]">
+              Four things a family tends to remember
+            </h2>
+            <p className="max-w-[34rem] text-[1rem] leading-relaxed text-[var(--fg-soft)]">
+              Even when the names have run out, these usually survive — and any
+              one of them narrows a search from thousands of people to dozens.
+              Each index lists everything the archive holds, in alphabetical
+              order.
+            </p>
+          </div>
+
+          <div className="reg mt-10">
+            <WayIn
+              konkani="आडनांव"
+              title="Surname"
+              href="/directory/surname"
+              count={s.bySurname.length}
+              unit="surnames"
+              mark={<SurnameMark className="h-7 w-7" />}
+              body="Usually either an office a family once held, or the village it came from. Both are strong evidence of where a branch sits."
+            />
+            <WayIn
+              konkani="गोत्र"
+              title="Gotra"
+              href="/directory/gotra"
+              count={s.byGotra.length}
+              unit="gotras"
+              mark={<GotraMark className="h-7 w-7" />}
+              body="The rishi a line descends from. Passed father to child and never changed by marriage, so it survives centuries of migration intact."
+            />
+            <WayIn
+              konkani="कुलदेवता"
+              title="Kuladevata"
+              href="/directory/kuladevata"
+              count={s.byKuladevata.length}
+              unit="deities"
+              mark={<KuladevataMark className="h-7 w-7" />}
+              body="The family deity, and the temple it sits in. A household that has forgotten its village has usually not forgotten this."
+            />
+            <WayIn
+              konkani="मूळ गांव"
+              title="Mool village"
+              href="/directory/mool"
+              count={s.byMool.length}
+              unit="villages"
+              mark={<MoolMark className="h-7 w-7" />}
+              body="The place a family names as its root, however many generations ago it left, and however far down the coast it went after."
+            />
           </div>
         </div>
       </section>
 
-      <KastiRule className="mx-auto max-w-[1400px] px-4" />
-
-      {/* ----------------------------------------------------- Ways in */}
+      {/* -------------------------------------------- III · Family lines */}
       <section className="mx-auto max-w-[1400px] px-4 py-16">
-        <div className="max-w-2xl">
-          <SectionHead
-            eyebrow="Find a way in"
-            mark={<MarkKeys className="h-[1.05rem] w-[1.05rem]" />}
-            facet="var(--color-kumkum)"
-          />
-          <h2 className="mt-3 font-display text-[2rem] font-medium leading-tight">
-            Four things a family tends to remember
+        <BandHead numeral="III" eyebrow="Browse" />
+
+        <div className="mt-8 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-end">
+          <h2 className="font-display text-[2.15rem] font-medium leading-[1.12] tracking-[-0.012em]">
+            Every family has a shape
           </h2>
-          <p className="mt-3 text-[1rem] leading-relaxed text-[var(--fg-soft)]">
-            Even when the names have run out, these usually survive — and any
-            one of them narrows a search from thousands of people to dozens.
-            Each index below lists everything the archive holds, in alphabetical
-            order.
+          <p className="max-w-[34rem] text-[1rem] leading-relaxed text-[var(--fg-soft)]">
+            A line is not a surname — it is one connected web of relatives, and
+            where two families married their records join and the two become
+            one. Nine generations of two brothers looks nothing like five
+            generations of eleven children, so each line is drawn as itself.
           </p>
         </div>
 
-        <div className="mt-9 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <WayIn
-            title="Surname"
-            konkani="आडनांव"
-            href="/directory/surname"
-            count={s.bySurname.length}
-            facet="var(--color-kumkum)"
-            mark={<SurnameMark className="h-6 w-6" />}
-            body="Usually either an office a family once held, or the village it came from. Both are strong evidence of where a branch sits."
-          />
-          <WayIn
-            title="Gotra"
-            konkani="गोत्र"
-            href="/directory/gotra"
-            count={s.byGotra.length}
-            facet="var(--color-samudra)"
-            mark={<GotraMark className="h-6 w-6" />}
-            body="The rishi a line descends from. Passed father to child and never changed by marriage, so it survives centuries of migration intact."
-          />
-          <WayIn
-            title="Kuladevata"
-            konkani="कुलदेवता"
-            href="/directory/kuladevata"
-            count={s.byKuladevata.length}
-            facet="var(--color-haldi)"
-            mark={<KuladevataMark className="h-6 w-6" />}
-            body="The family deity, and the temple it sits in. A household that has forgotten its village has usually not forgotten this."
-          />
-          <WayIn
-            title="Mool village"
-            konkani="मूळ गांव"
-            href="/directory/mool"
-            count={s.byMool.length}
-            facet="var(--color-tulsi)"
-            mark={<MoolMark className="h-6 w-6" />}
-            body="The place a family names as its root, however many generations ago it left, and however far down the coast it went after."
-          />
-        </div>
-      </section>
+        {/*
+          Three, not the whole index.
 
-      {/* ----------------------------------------------------- Lineages */}
-      <section className="border-y border-[var(--line)] bg-[var(--bg-sunken)] ground-weave">
-        <div className="mx-auto max-w-[1400px] px-4 py-16">
-          <div className="flex flex-wrap items-end justify-between gap-4">
-            <div className="max-w-xl">
-              <SectionHead
-                eyebrow="Browse"
-                mark={<MarkBranch className="h-[1.05rem] w-[1.05rem]" />}
-                facet="var(--color-laterite)"
-              />
-              <h2 className="mt-3 font-display text-[2rem] font-medium leading-tight">
-                Family lines
-              </h2>
-              <p className="mt-3 text-[1rem] leading-relaxed text-[var(--fg-soft)]">
-                A line here is not a surname — it is one connected web of
-                relatives. Where two families married, their records join and
-                the two lines become one. Shown alphabetically; none of them is
-                a headline.
-              </p>
-            </div>
-            <Link href="/lineages" className="btn btn-outlined shrink-0">
-              All {s.lineages} lines
-            </Link>
-          </div>
+          This used to be a full-width ruled table, and a table is a promise:
+          it says these are the records, here are the columns, read down them.
+          With ten lines that was merely heavy; with a hundred it would be a
+          lie, because the page would still be showing six and the reader would
+          have no way to know that. So the home page shows a named, counted
+          sample and sends you somewhere built for the rest — and it spends the
+          room it saved on drawing each of the three properly.
+        */}
+        <ul className="mt-12 grid gap-x-12 gap-y-12 border-t border-[var(--outline-soft)] pt-10 md:grid-cols-3">
+          {lines.map((l, i) => {
+            const apex = archive.people.get(l.apexId);
+            return (
+              <li
+                key={l.id}
+                className={
+                  i === 0 ? "" : "md:border-l md:border-[var(--line)] md:pl-12"
+                }
+              >
+                <Link href={`/tree?lineage=${l.id}`} className="group block">
+                  <LineageGlyph
+                    profile={generationProfile(archive, l)}
+                    className="h-[3.6rem] w-auto text-[var(--accent)] opacity-80 transition-opacity group-hover:opacity-100"
+                  />
 
-          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {lines.map((l) => {
-              const apex = archive.people.get(l.apexId);
-              return (
-                <li key={l.id}>
-                  <Link
-                    href={`/tree?lineage=${l.id}`}
-                    className="line-card group h-full"
-                  >
-                    <div className="flex min-w-0 flex-1 flex-col py-4 pr-4">
-                      <div className="flex items-start justify-between gap-3">
-                        <h3 className="font-display text-[1.2rem] font-medium leading-snug group-hover:text-[var(--accent)]">
-                          {l.label}
-                        </h3>
-                        <span className="chip chip-sm chip-accent shrink-0">
-                          {l.size}
-                          <span className="sr-only"> people</span>
-                        </span>
-                      </div>
+                  <h3 className="mt-5 font-display text-[1.3rem] font-medium leading-snug group-hover:text-[var(--accent)]">
+                    {l.label}
+                  </h3>
 
-                      {apex && (
-                        <p className="mt-2 text-[0.9rem] text-[var(--fg-soft)]">
-                          from{" "}
-                          <strong className="font-semibold text-[var(--fg)]">
-                            {fullName(apex)}
-                          </strong>
-                          {birthYear(apex) && `, born ${birthYear(apex)}`}
-                        </p>
-                      )}
-
-                      {/* One pip per generation. A count you can see the size
-                          of without reading it. */}
-                      <div className="mt-auto flex items-center gap-2.5 pt-4">
-                        <span
-                          className="flex items-center gap-[3px]"
-                          aria-hidden
-                        >
-                          {Array.from({
-                            length: Math.min(l.generations, 12),
-                          }).map((_, i) => (
-                            <span key={i} className="gen-pip" />
-                          ))}
-                        </span>
-                        <span className="text-[0.8rem] text-[var(--fg-faint)]">
-                          {l.generations} generations
-                          {l.earliestYear && l.latestYear
-                            ? ` · ${l.earliestYear}–${l.latestYear}`
-                            : ""}
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
-
-      {/* -------------------------------------------------------- Oldest */}
-      {oldest.length > 0 && (
-        <section className="mx-auto max-w-[1400px] px-4 py-16">
-          <div className="max-w-2xl">
-            <SectionHead
-              eyebrow="Furthest back"
-              mark={<Deepa className="h-[1.05rem] w-[1.05rem]" />}
-              facet="var(--color-gold)"
-            />
-            <h2 className="mt-3 font-display text-[2rem] font-medium leading-tight">
-              The oldest names in the archive
-            </h2>
-            <p className="mt-3 text-[1rem] leading-relaxed text-[var(--fg-soft)]">
-              Every line stops somewhere. These are the earliest ancestors
-              anyone has been able to name — if your family holds a household
-              ledger or a temple register that reaches further back, it is worth
-              more than you think.
-            </p>
-          </div>
-          <ul className="mt-8 grid gap-4 sm:grid-cols-3">
-            {oldest.map((p) => (
-              <li key={p.id}>
-                <Link
-                  href={`/person/${p.id}`}
-                  className="stub-card group block h-full p-5"
-                >
-                  {/* The year is the subject of this card, so it is set as
-                      the subject and the name reads under it. */}
-                  <span className="block font-display text-[2rem] font-medium leading-none tabular-nums text-[var(--accent)]">
-                    {birthYear(p)}
-                  </span>
-                  <span className="mt-2.5 block font-display text-[1.15rem] font-medium leading-snug group-hover:text-[var(--accent)]">
-                    {fullName(p)}
-                  </span>
-                  <span className="mt-1 block text-[0.83rem] text-[var(--fg-faint)]">
-                    born{" "}
-                    {p.mool
-                      ? `in ${archive.places.get(p.mool)?.name ?? p.mool}`
-                      : "— place not recorded"}
-                  </span>
-                  {p.epithet && (
-                    <span className="mt-3 block border-t border-[var(--line)] pt-3 text-[0.88rem] italic leading-relaxed text-[var(--fg-soft)]">
-                      {p.epithet}
-                    </span>
+                  {apex && (
+                    <p className="mt-2 text-[0.92rem] leading-snug text-[var(--fg-soft)]">
+                      from{" "}
+                      <span className="font-semibold text-[var(--fg)]">
+                        {fullName(apex)}
+                      </span>
+                      {birthYear(apex) ? `, born ${birthYear(apex)}` : ""}
+                    </p>
                   )}
+
+                  {/* The three comparable figures, aligned across all three
+                      entries so the eye can still run across them. */}
+                  <dl className="mt-5 flex gap-7 border-t border-[var(--line)] pt-4">
+                    <div>
+                      <dd className="figure text-[1.3rem] text-[var(--fg)]">
+                        {l.size.toLocaleString()}
+                      </dd>
+                      <dt className="col-label mt-1">people</dt>
+                    </div>
+                    <div>
+                      <dd className="figure text-[1.3rem] text-[var(--fg)]">
+                        {l.generations}
+                      </dd>
+                      <dt className="col-label mt-1">generations</dt>
+                    </div>
+                    <div className="min-w-0">
+                      <dd className="figure whitespace-nowrap text-[1.3rem] text-[var(--fg)]">
+                        {l.earliestYear && l.latestYear
+                          ? `${l.earliestYear}–${l.latestYear}`
+                          : "—"}
+                      </dd>
+                      <dt className="col-label mt-1">recorded</dt>
+                    </div>
+                  </dl>
                 </Link>
               </li>
-            ))}
-          </ul>
+            );
+          })}
+        </ul>
+
+        <p className="mt-10 border-t border-[var(--line)] pt-6 text-[1rem] text-[var(--fg-soft)]">
+          Three of {s.lineages.toLocaleString()} lines, taken alphabetically —
+          the home page does not rank families.{" "}
+          <Link
+            href="/lineages"
+            className="group whitespace-nowrap font-display text-[1.05rem] text-[var(--accent)] underline decoration-[color-mix(in_oklab,var(--accent)_35%,transparent)] underline-offset-[6px] hover:decoration-[var(--accent)]"
+          >
+            Browse the full index
+            <span className="reg-arrow ml-1.5" aria-hidden>
+              →
+            </span>
+          </Link>
+        </p>
+      </section>
+
+      {/* ------------------------------------------------ IV · The temples */}
+      {temples.length > 0 && (
+        <section className="border-y border-[var(--line)] bg-[var(--bg-sunken)] ground-kolam">
+          <div
+            className="mx-auto max-w-[1400px] px-4 py-16"
+            style={{ ["--band-paper" as string]: "var(--bg-sunken)" }}
+          >
+            <BandHead numeral="IV" eyebrow="Kuladevata" />
+
+            <div className="mt-8 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-end">
+              <h2 className="font-display text-[2.15rem] font-medium leading-[1.12] tracking-[-0.012em]">
+                The buildings behind the field
+              </h2>
+              <p className="max-w-[34rem] text-[1rem] leading-relaxed text-[var(--fg-soft)]">
+                Names and dates are not what a fourteen-year-old will read. What
+                they will look at is the temple their grandmother means when she
+                says <em>Mangeshi</em> — and once they have, the kuladevata on a
+                record stops being a form field and becomes a place with a lamp
+                tower in front of it.
+              </p>
+            </div>
+
+            <ul className="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+              {temples.map((temple) => {
+                const image = displayImage(temple.image);
+                const here = temple.placeId
+                  ? archive.places.get(temple.placeId)?.name
+                  : undefined;
+
+                return (
+                  <li key={temple.id}>
+                    <Link
+                      href={
+                        temple.kuladevataId
+                          ? `/search?kuladevata=${temple.kuladevataId}`
+                          : "/diaspora"
+                      }
+                      className="group block"
+                    >
+                      {image && (
+                        <figure className="overflow-hidden rounded-[var(--shape-sm)] border border-[var(--line)]">
+                          {/*
+                            Plain <img> against a pre-sized file, so no
+                            optimiser runs per request on Netlify. Width and
+                            height are the derivative's own — a few sources
+                            are narrower than 900px and keep their size — so
+                            the box is reserved correctly and nothing shifts.
+                          */}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={image.src}
+                            alt={`${temple.name}${here ? `, ${here}` : ""}`}
+                            width={image.width}
+                            height={image.height}
+                            loading="lazy"
+                            decoding="async"
+                            className="aspect-[5/3] w-full bg-[var(--bg-inset)] object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                          />
+                        </figure>
+                      )}
+
+                      <div className="mt-4 flex items-baseline justify-between gap-3">
+                        <h3 className="font-display text-[1.2rem] font-medium leading-snug group-hover:text-[var(--accent)]">
+                          {temple.name}
+                        </h3>
+                        {temple.devanagari && (
+                          <span
+                            className="deva shrink-0 text-[0.95rem] text-[var(--fg-faint)]"
+                            lang="kok"
+                          >
+                            {temple.devanagari}
+                          </span>
+                        )}
+                      </div>
+
+                      {here && <p className="col-label mt-1.5">{here}</p>}
+                    </Link>
+
+                    {/* Somebody else's photograph, under a licence that asks
+                        for their name. An archive that exists to keep names
+                        attached to what people did does not get to strip one. */}
+                    {image && (
+                      <p className="mt-2 text-[0.72rem] leading-snug text-[var(--fg-faint)]">
+                        Photograph {image.credit} ·{" "}
+                        {image.licenseUrl ? (
+                          <a
+                            href={image.licenseUrl}
+                            rel="license noopener noreferrer"
+                            target="_blank"
+                            className="underline underline-offset-2"
+                          >
+                            {image.license}
+                          </a>
+                        ) : (
+                          image.license
+                        )}
+                      </p>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p className="mt-9">
+              <Link
+                href="/diaspora"
+                className="group inline-flex items-baseline gap-2 font-display text-[1.05rem] text-[var(--accent)] underline decoration-[color-mix(in_oklab,var(--accent)_35%,transparent)] underline-offset-[6px] hover:decoration-[var(--accent)]"
+              >
+                Where these families went, and the temples they left behind
+                <span className="reg-arrow" aria-hidden>
+                  →
+                </span>
+              </Link>
+            </p>
+          </div>
         </section>
       )}
 
-      {/* ------------------------------------------------------ Contribute */}
-      <section className="relative overflow-hidden border-t border-[var(--line)] bg-[var(--bg-sunken)]">
-        <div
-          className="mandala-bed opacity-[0.1]"
-          style={{
-            maskImage: "radial-gradient(ellipse 60% 90% at 88% 50%, #000 20%, transparent 72%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse 60% 90% at 88% 50%, #000 20%, transparent 72%)",
-          }}
-        >
-          <Mandala className="ml-[55%] h-[42rem] w-[42rem] max-w-none shrink-0" folds={12} />
-        </div>
+      {/* -------------------------------------------- V · Furthest back */}
+      {oldest.length > 0 && (
+        <section className="border-y border-[var(--line)] bg-[var(--bg-sunken)]">
+          <div
+            className="mx-auto max-w-[1400px] px-4 py-16"
+            style={{ ["--band-paper" as string]: "var(--bg-sunken)" }}
+          >
+            <BandHead numeral="V" eyebrow="Furthest back" />
 
-        <div className="relative mx-auto max-w-[1400px] px-4 py-16">
-          <div className="max-w-2xl">
-            <SectionHead
-              eyebrow={
-                <>
-                  <span className="deva" lang="kok">
-                    योगदान
-                  </span>{" "}
-                  · Contribute
-                </>
-              }
-              mark={<MarkQuill className="h-[1.05rem] w-[1.05rem]" />}
-              facet="var(--accent)"
-            />
-            <h2 className="mt-3 font-display text-[2rem] font-medium leading-tight sm:text-[2.4rem]">
+            <div className="mt-8 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:items-end">
+              <h2 className="font-display text-[2.15rem] font-medium leading-[1.12] tracking-[-0.012em]">
+                The oldest names in the archive
+              </h2>
+              <p className="max-w-[34rem] text-[1rem] leading-relaxed text-[var(--fg-soft)]">
+                Every line stops somewhere. These are the earliest ancestors
+                anyone has been able to name — if your family holds a household
+                ledger or a temple register that reaches further back, it is
+                worth more than you think.
+              </p>
+            </div>
+
+            {/* Three dated records, set as catalogue entries hanging off one
+                rule: the year is the subject, so it is the largest thing in
+                the entry and every one of them sits on the same baseline. */}
+            <ul className="mt-10 grid gap-x-12 gap-y-10 border-t border-[var(--outline-soft)] pt-8 sm:grid-cols-3">
+              {oldest.map((p, i) => (
+                <li
+                  key={p.id}
+                  className={
+                    i === 0
+                      ? ""
+                      : "sm:border-l sm:border-[var(--line)] sm:pl-12"
+                  }
+                >
+                  <Link href={`/person/${p.id}`} className="group block">
+                    <span className="figure block text-[3.4rem] text-[var(--accent)]">
+                      {birthYear(p)}
+                    </span>
+                    {/* The rule closes the figure, so every entry has the
+                        same structure whether or not the record carries an
+                        epithet — hanging it off the epithet instead left the
+                        middle column looking like a rendering fault. */}
+                    <span
+                      className="mt-4 block h-px w-16 bg-[var(--outline-soft)]"
+                      aria-hidden
+                    />
+                    <span className="mt-4 block font-display text-[1.2rem] font-medium leading-snug group-hover:underline group-hover:decoration-[var(--accent)] group-hover:underline-offset-4">
+                      {fullName(p)}
+                    </span>
+                    <span className="col-label mt-2.5 block">
+                      {p.mool
+                        ? `born in ${archive.places.get(p.mool)?.name ?? p.mool}`
+                        : "birthplace not recorded"}
+                    </span>
+                    {p.epithet && (
+                      <span className="mt-4 block max-w-[22rem] text-[0.9rem] italic leading-relaxed text-[var(--fg-soft)]">
+                        {p.epithet}
+                      </span>
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {/* ----------------------------------------------- VI · Contribute */}
+      <section className="mx-auto max-w-[1400px] px-4 py-16">
+        <BandHead
+          numeral="VI"
+          eyebrow={
+            <>
+              <span className="deva" lang="kok">
+                योगदान
+              </span>{" "}
+              · Contribute
+            </>
+          }
+        />
+
+        <div className="mt-9 grid gap-x-16 gap-y-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)]">
+          <div>
+            <h2 className="font-display text-[2.3rem] font-medium leading-[1.1] tracking-[-0.012em] sm:text-[2.7rem]">
               You know something this archive does not.
             </h2>
-            <p className="mt-4 text-[1.05rem] leading-relaxed text-[var(--fg-soft)]">
+            <p className="col-label mt-8">Held so far</p>
+            <p className="mt-2 font-display text-[1.05rem] text-[var(--fg-soft)]">
+              {s.people.toLocaleString()} people, across {s.lineages} lines,
+              reaching back to {s.earliestYear ?? "—"}.
+            </p>
+          </div>
+
+          <div className="max-w-[38rem]">
+            <p className="text-[1.05rem] leading-[1.75] text-[var(--fg-soft)]">
               A grandmother&rsquo;s maiden name. The village on an old land
               document. Which brother went to the city in 1938 and which stayed.
               Send one fact or a hundred — every submission is read by a person
               before it goes in, and every record says where it came from.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/contribute" className="btn btn-filled btn-lg">
                 Add what you know
               </Link>
@@ -484,95 +661,114 @@ export default function HomePage() {
   );
 }
 
-/** An eyebrow with its section's mark beside it. */
-function SectionHead({
+/* ------------------------------------------------------------------ */
+/* Pieces                                                              */
+/* ------------------------------------------------------------------ */
+
+/** A section's opening rule, with its numeral and name set on the line. */
+function BandHead({
+  numeral,
   eyebrow,
-  mark,
-  facet,
 }: {
+  numeral: string;
   eyebrow: React.ReactNode;
-  mark: React.ReactNode;
-  facet: string;
 }) {
   return (
-    <div className="flex items-center gap-2.5">
-      <span
-        className="section-mark"
-        style={{ ["--facet" as string]: facet }}
-        aria-hidden
-      >
-        {mark}
-      </span>
+    <div className="band-head">
+      <span className="band-numeral">{numeral}</span>
       <p className="eyebrow">{eyebrow}</p>
     </div>
   );
 }
 
-function Tick({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 20 20"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="m4 10.5 4 4 8-9" />
-    </svg>
-  );
-}
-
+/**
+ * One index, as a row in a ruled register.
+ *
+ * The Konkani term leads, because in an archive organised around these four
+ * words that is what the entry is called; the English name sits under it as
+ * the gloss. The count is set as a figure at the end of the row so the four
+ * of them form a column you can read on its own.
+ */
 function WayIn({
-  title,
   konkani,
+  title,
   href,
   count,
-  body,
-  facet,
+  unit,
   mark,
+  body,
 }: {
-  title: string;
   konkani: string;
+  title: string;
   href: string;
   count: number;
-  body: string;
-  facet: string;
+  unit: string;
   mark: React.ReactNode;
+  body: string;
 }) {
   return (
+    /*
+      Two layouts from one DOM order. Narrow, the entry stacks: mark, term and
+      count on the first line, the definition across the second. Wide, all
+      five cells sit on one row, which is what makes the counts read as a
+      column — hence the explicit column placement rather than source order.
+    */
     <Link
       href={href}
-      className="facet-card group p-5"
-      style={{ ["--facet" as string]: facet }}
+      className="reg-row group grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-5 gap-y-4 px-3 py-6 md:grid-cols-[auto_minmax(7.5rem,11rem)_minmax(0,1fr)_auto_2rem] md:gap-x-8 md:gap-y-0 md:py-7"
     >
-      <div className="flex items-start justify-between gap-3">
-        <span className="facet-medallion" aria-hidden>
-          {mark}
-        </span>
-        <span className="deva text-[0.95rem] text-[var(--fg-faint)]" lang="kok">
+      <span className="index-mark md:col-start-1 md:row-start-1" aria-hidden>
+        {mark}
+      </span>
+
+      <div className="min-w-0 md:col-start-2 md:row-start-1">
+        <span
+          className="deva block text-[1.5rem] leading-tight text-[var(--fg)]"
+          lang="kok"
+        >
           {konkani}
+        </span>
+        <span className="mt-1 block font-display text-[1.15rem] font-medium text-[var(--fg)] group-hover:text-[var(--accent)]">
+          {title}
         </span>
       </div>
 
-      <h3 className="mt-4 font-display text-[1.25rem] font-medium">{title}</h3>
+      <div className="text-right md:col-start-4 md:row-start-1">
+        <span className="figure block text-[2.1rem] text-[var(--fg)]">
+          {count.toLocaleString()}
+        </span>
+        <span className="col-label mt-1.5 block">{unit}</span>
+      </div>
 
-      <p className="mt-2 text-[0.92rem] leading-relaxed text-[var(--fg-soft)]">
+      <p className="col-span-3 max-w-[42rem] text-[0.95rem] leading-relaxed text-[var(--fg-soft)] md:col-span-1 md:col-start-3 md:row-start-1">
         {body}
       </p>
 
-      <p className="facet-link mt-auto pt-4 text-[0.85rem] font-medium">
-        Browse all {count.toLocaleString()}
-        <span
-          className="inline-block transition-transform group-hover:translate-x-1"
-          aria-hidden
-        >
-          {" "}
-          →
-        </span>
-      </p>
+      <span
+        className="reg-arrow hidden text-right text-[1.15rem] md:col-start-5 md:row-start-1 md:block"
+        aria-hidden
+      >
+        →
+      </span>
     </Link>
   );
+}
+
+/**
+ * How many people sit in each generation of a lineage, oldest first.
+ *
+ * The one number a lineage card cannot get from the Lineage record itself:
+ * `generations` says how deep it runs, `size` how many people, but neither
+ * says whether those people are spread evenly or bunched into one enormous
+ * fourth generation. That distribution is the family's shape, and it is what
+ * LineageGlyph draws.
+ */
+function generationProfile(archive: Archive, lineage: Lineage): number[] {
+  const counts = new Map<number, number>();
+  for (const id of lineage.memberIds) {
+    const g = archive.generationOf.get(id);
+    if (g == null) continue;
+    counts.set(g, (counts.get(g) ?? 0) + 1);
+  }
+  return Array.from({ length: lineage.generations }, (_, i) => counts.get(i) ?? 0);
 }

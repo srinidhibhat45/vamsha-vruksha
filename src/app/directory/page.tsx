@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { getArchive } from "@/lib/archive";
 import { KastiRule } from "@/components/Ornament";
 

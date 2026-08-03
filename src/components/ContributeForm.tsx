@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { useId, useRef, useState } from "react";
 import { PersonPicker, type PickedPerson } from "./PersonPicker";
 import { Select } from "./ui/Select";

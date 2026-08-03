@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
+import { displayImage } from "@/lib/media";
 import type { Temple } from "@/lib/types";
 
 /**
@@ -39,25 +40,28 @@ export function TempleGallery({
         const here = placeName(temple.placeId);
         const from = placeName(temple.originPlaceId);
         const count = countFor?.(temple);
+        const image = displayImage(temple.image);
 
         return (
           <li
             key={temple.id}
             className="surface flex flex-col overflow-hidden"
           >
-            {temple.image && (
+            {image && (
               <figure className="relative">
                 {/*
-                  Plain <img>: these are pre-sized static files committed to the
-                  repo at exactly the width they render at, so the optimiser
-                  would re-encode an image that is already the right size.
+                  Plain <img> against a pre-sized static file, so no optimiser
+                  runs per request. It is the 900px derivative rather than the
+                  archival copy: this gallery draws twenty-two of these at
+                  about 430px each, and shipping the originals meant 3.6 MB of
+                  photographs for one screen.
                 */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={temple.image.src}
+                  src={image.src}
                   alt={`${temple.name}${here ? `, ${here}` : ""}`}
-                  width={temple.image.width}
-                  height={temple.image.height}
+                  width={image.width}
+                  height={image.height}
                   loading="lazy"
                   decoding="async"
                   className="aspect-[4/3] w-full bg-[var(--bg-inset)] object-cover"

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { useEffect, useRef, useState } from "react";
 import type { MatchCandidate, MatchDescriptor } from "@/lib/match";
 

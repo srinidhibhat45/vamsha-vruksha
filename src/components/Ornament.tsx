@@ -270,53 +270,98 @@ function facetSvg(children: React.ReactNode, className: string) {
   );
 }
 
-/** A palm-leaf manuscript strip — where a name was first written down. */
+/*
+  Each mark is drawn on Material's 24px grid at a 1.5 stroke, with one filled
+  detail carrying the accent — the knot, the flame, the bindu, the doorway.
+  The fill is what stops four line drawings at 26px reading as four grey
+  squiggles; it gives each one a shape you recognise before you have read the
+  word beside it.
+
+  They are specific on purpose. A generic tag, chain, star and pin would have
+  been quicker and would have told a reader nothing about what a gotra is.
+*/
+
+/**
+ * A name written out on a ruled line.
+ *
+ * The first draft of this was a palm-leaf folio, and at 26px a leaf with two
+ * lines of script inside it is a rectangle with two lines in it — which is the
+ * icon for a list, a drawer, or a sofa, depending on the reader. A signature
+ * is the one drawing that can only mean a name.
+ */
 export function SurnameMark({ className = "" }: { className?: string }) {
   return facetSvg(
     <>
-      <path d="M3 7.5c3-1.6 15-1.6 18 0v9c-3-1.6-15-1.6-18 0z" />
-      <path d="M6.5 11h11M6.5 14h7" opacity="0.7" />
-      <circle cx="12" cy="4.4" r="1.1" />
+      {/* The hand itself — a Modi-ish running stroke, rising and falling. */}
+      <path d="M4.4 14.9c1.7-4.9 2.9-7.3 3.6-7.3.9 0 .3 7.3 1.6 7.3 1.1 0 1.7-4.6 2.8-4.6 1 0 .8 3.4 2 3.4.9 0 1.6-1.3 2.8-3.2" />
+      {/* Where the pen left the leaf. */}
+      <circle cx="19.3" cy="10.2" r="1.1" fill="currentColor" stroke="none" />
+      {/* The rule it was written on. */}
+      <path d="M3.6 18.9h16.8" strokeWidth="1.7" />
     </>,
     className,
   );
 }
 
-/** The sacred thread, looped — a line that passes father to child. */
+/**
+ * One unbroken cord, knotted at each generation.
+ *
+ * Drawn as a line rather than as the looped yajnopavita it refers to, because
+ * the loop closed into an egg at small sizes. What the icon has to carry is
+ * the property that makes a gotra useful — it descends father to child without
+ * branching and marriage never changes it — and a single cord that never forks
+ * says exactly that, and says it differently from the branching family glyph.
+ */
 export function GotraMark({ className = "" }: { className?: string }) {
   return facetSvg(
     <>
-      <path d="M12 3.2 20 18.4H4z" />
-      <path d="M12 7.4 16.9 17H7.1z" opacity="0.55" />
-      <circle cx="12" cy="20.8" r="1.2" />
+      {/* The cord. Barely bowed — a pronounced wave read as a squiggle, and
+          what matters here is that it runs straight down and never forks. */}
+      <path d="M12 5.6c-1.1 2.1-1.1 4.2 0 6.3s1.1 4.2 0 6.3" />
+      {/* The rishi the line is named for, filled; then the generations. */}
+      <circle cx="12" cy="3.7" r="1.9" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="11.9" r="1.45" />
+      <circle cx="12" cy="20.1" r="1.45" />
     </>,
     className,
   );
 }
 
-/** A shrine with its lamp lit — the household deity and its temple. */
+/** A shrine under its shikhara, lamp lit — the deity a household turns to. */
 export function KuladevataMark({ className = "" }: { className?: string }) {
   return facetSvg(
     <>
-      <path d="M4 20.5h16" strokeWidth="1.7" />
-      <path d="M6 20.5V11c0-3.3 2.7-6 6-6s6 2.7 6 6v9.5" />
-      <path d="M12 5V2.6" />
-      <path d="M12 10.2c1.3 1.5 2 2.6 2 3.5a2 2 0 1 1-4 0c0-.9.7-2 2-3.5z" fill="currentColor" stroke="none" />
-      <path d="M9 17.6h6" opacity="0.6" />
+      {/* The plinth the whole thing stands on. */}
+      <path d="M3.4 20.6h17.2" strokeWidth="1.7" />
+      {/* Shikhara and walls, in one silhouette. */}
+      <path d="M6.2 20.6v-7.9L12 6.1l5.8 6.6v7.9" />
+      {/* The kalasha finial. */}
+      <path d="M12 6.1V3.4" />
+      {/* The flame in the garbhagriha — the one thing that is lit. */}
+      <path
+        d="M12 12.4c1.3 1.5 1.95 2.6 1.95 3.45a1.95 1.95 0 1 1-3.9 0c0-.85.65-1.95 1.95-3.45z"
+        fill="currentColor"
+        stroke="none"
+      />
     </>,
     className,
   );
 }
 
-/** A coconut palm over a tiled roof, at the waterline. */
+/** A tiled roof and a palm at the waterline — the village a family names as root. */
 export function MoolMark({ className = "" }: { className?: string }) {
   return facetSvg(
     <>
-      <path d="M7 20.5v-6l4-3 4 3v6" />
-      <path d="M4.5 14.5 11 9.3l6.5 5.2" />
-      <path d="M19 20.5V9.5" />
-      <path d="M19 9.5c0-1.6 1-2.6 2.6-2.8M19 9.5c0-1.6-1-2.6-2.6-2.8M19 9.5c.4-1.6 1.4-2.4 3-2.4" opacity="0.8" />
-      <path d="M3 20.5h18" strokeWidth="1.7" />
+      {/* The water the Konkan villages all sit above. */}
+      <path d="M2.6 20.6h18.8" strokeWidth="1.7" />
+      {/* The pitched Mangalore-tile roof, oversailing its walls. */}
+      <path d="M3.6 12.4 10 7.2l6.4 5.2" />
+      <path d="M5.4 12.4v8.2h9.2v-8.2" />
+      {/* The doorway — filled, so the house reads as lived in. */}
+      <path d="M8.4 20.6v-4.1h2.8v4.1z" fill="currentColor" stroke="none" />
+      {/* The coconut palm beside it. */}
+      <path d="M19.4 20.6v-8.3" />
+      <path d="M19.4 12.3c-.3-1.7-1.4-2.6-3-2.7M19.4 12.3c.3-1.7 1.4-2.6 3-2.7M19.4 12.3c0-1.8.5-2.9 1.5-3.8" opacity="0.85" />
     </>,
     className,
   );

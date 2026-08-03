@@ -57,12 +57,11 @@
   --color-laterite: #9a5a32;
   --color-chandan: #e8d9bf;
 
-  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype",
-    Palatino, Georgia, serif;
-  --font-body: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-    Roboto, "Helvetica Neue", sans-serif;
-  --font-deva: "Noto Serif Devanagari", "Nirmala UI", "Kohinoor Devanagari",
-    serif;
+  /* Set by next/font in the root layout, which self-hosts the faces and
+     appends its own metric-matched fallback stack to each variable. */
+  --font-display: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-body: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-deva: var(--font-noto-devanagari), "Nirmala UI", serif;
 
   --radius-card: 12px;
 }
@@ -842,6 +841,25 @@
     background-size: 22px 22px;
   }
 
+  /*
+    A kolam lattice, as a ground for a whole band.
+
+    There used to be four of these — a kolam, a weave, a ledger ruling and a
+    laterite grain — one per section, and four textures on one page is no
+    texture at all: they cancelled out into noise and the sections still
+    looked alike. This is the only one left, used on the band that carries
+    the photographs, where a plain flat fill would let three bright images
+    float on nothing.
+  */
+  .ground-kolam {
+    background-image: radial-gradient(
+      circle at center,
+      color-mix(in oklab, var(--color-samudra) 22%, transparent) 1.1px,
+      transparent 1.2px
+    );
+    background-size: 24px 24px;
+  }
+
   /* A woven-border rule, in the spirit of a kasti / temple-cloth edge. */
   .rule-kasti {
     height: 8px;
@@ -852,63 +870,6 @@
     background-position: 0 2px, 0 5px;
     background-repeat: repeat-x;
     opacity: 0.55;
-  }
-
-  /* ---------------------------------------------------------------- */
-  /* Grounds                                                           */
-  /*                                                                   */
-  /* Four textures, so four sections of one page can be told apart      */
-  /* without four colours of type or four sizes of heading. Each is a   */
-  /* pattern the palette already comes from — a kolam lattice, a woven  */
-  /* kasti stripe, a ledger ruling, a laterite grain — laid on at a     */
-  /* contrast low enough that no text sitting on it loses a ratio.      */
-  /* ---------------------------------------------------------------- */
-
-  .ground-kolam {
-    background-image:
-      radial-gradient(
-        circle at center,
-        color-mix(in oklab, var(--color-samudra) 26%, transparent) 1.2px,
-        transparent 1.3px
-      );
-    background-size: 26px 26px;
-  }
-
-  .ground-weave {
-    background-image:
-      repeating-linear-gradient(
-        45deg,
-        color-mix(in oklab, var(--color-gold) 12%, transparent) 0 1px,
-        transparent 1px 9px
-      ),
-      repeating-linear-gradient(
-        -45deg,
-        color-mix(in oklab, var(--color-gold) 12%, transparent) 0 1px,
-        transparent 1px 9px
-      );
-  }
-
-  .ground-ledger {
-    background-image:
-      repeating-linear-gradient(
-        180deg,
-        transparent 0 27px,
-        color-mix(in oklab, var(--color-laterite) 16%, transparent) 27px 28px
-      );
-  }
-
-  .ground-grain {
-    background-image:
-      radial-gradient(
-        ellipse 60% 45% at 12% 0%,
-        color-mix(in oklab, var(--color-tulsi) 12%, transparent),
-        transparent 70%
-      ),
-      radial-gradient(
-        ellipse 55% 50% at 92% 100%,
-        color-mix(in oklab, var(--color-samudra) 11%, transparent),
-        transparent 70%
-      );
   }
 
   /* The hero mandala. Sits behind the content, fades out towards the
@@ -942,145 +903,197 @@
   }
 
   /* ---------------------------------------------------------------- */
-  /* Facet card                                                        */
+  /* The register                                                      */
   /*                                                                   */
-  /* A card that carries a colour of its own. `--facet` is set at the   */
-  /* call site and everything else — cap, medallion, wash, hover edge — */
-  /* derives from it, so adding a fifth index is one custom property    */
-  /* rather than five new classes. Colour is never the only difference: */
-  /* each card also gets its own mark.                                  */
+  /* What the home page is built from, in place of cards.               */
+  /*                                                                   */
+  /* It used to be six bands of rounded, shadowed, top-barred boxes —   */
+  /* four indexes, six lineages, three old records — differing only in  */
+  /* which accent colour their cap was and which glyph sat in their     */
+  /* icon bubble. That is the default shape of a web page rather than a */
+  /* decision about this one, and it did the content a disservice: an   */
+  /* index of thirty-seven surnames, a lineage's span of nine           */
+  /* generations and a birth year of 1782 are all *figures in a         */
+  /* register*, and a register is ruled, aligned and countable, not     */
+  /* boxed.                                                            */
+  /*                                                                   */
+  /* So: hairlines instead of borders, columns that line up down the    */
+  /* page instead of cards that only line up across it, figures set in  */
+  /* the display face at a size worth reading, and no shadow anywhere.  */
+  /* Colour stops being decoration — the accent now means "this is      */
+  /* something you can follow", and nothing else uses it.               */
   /* ---------------------------------------------------------------- */
 
-  .facet-card {
+  /* A section opens on a rule, with its numeral and name sitting on
+     that rule the way a chapter break is set in print. `--band-paper`
+     is the surface the section stands on, so the label knocks the
+     right colour out of the line behind it. */
+  .band-head {
     position: relative;
-    isolation: isolate;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: var(--shape-lg);
-    border: 1px solid color-mix(in oklab, var(--facet) 24%, var(--line));
-    background: linear-gradient(
-      180deg,
-      color-mix(in oklab, var(--facet) 9%, var(--bg-raised)) 0%,
-      var(--bg-raised) 45%
-    );
-    box-shadow: var(--shadow-card);
-    transition:
-      box-shadow var(--dur-short) var(--ease-standard),
-      border-color var(--dur-short) var(--ease-standard),
-      transform var(--dur-short) var(--ease-standard);
+    align-items: center;
+    isolation: isolate;
   }
 
-  /* The coloured cap. Full-bleed across the top edge, which is the part
-     of a card that survives being seen out of the corner of an eye. */
-  .facet-card::after {
+  .band-head::before {
     content: "";
     position: absolute;
     inset-inline: 0;
-    top: 0;
-    height: 3px;
-    background: var(--facet);
+    top: 50%;
+    height: 1px;
+    background: var(--line-strong);
   }
 
-  a.facet-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lift);
-    border-color: color-mix(in oklab, var(--facet) 48%, var(--line));
+  .band-head > * {
+    position: relative;
+    background: var(--band-paper, var(--bg));
   }
 
-  .facet-medallion {
+  .band-numeral {
+    padding-inline-end: 0.7rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+  }
+
+  .band-head .eyebrow {
+    padding-inline-end: 0.95rem;
+  }
+
+  /* A figure that is the subject of its line rather than a caption on
+     it — a count, a year, a number of generations. Always tabular, so a
+     column of them reads as a column. */
+  .figure {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Index mark                                                        */
+  /*                                                                   */
+  /* The medallion each of the four indexes is drawn in. A single       */
+  /* accent for all four, not one colour each: colour here would be     */
+  /* decoration, because the drawing already distinguishes them and     */
+  /* the word is right beside it. What the medallion is for is weight — */
+  /* four line drawings floating on paper read as smudges, and four     */
+  /* sitting in a tinted disc read as marks.                            */
+  /* ---------------------------------------------------------------- */
+
+  .index-mark {
     display: grid;
     place-items: center;
-    width: 46px;
-    height: 46px;
+    width: 54px;
+    height: 54px;
     flex: none;
-    border-radius: 15px;
-    color: color-mix(in oklab, var(--facet) var(--facet-ink), var(--fg));
-    background: color-mix(in oklab, var(--facet) var(--facet-fill), var(--bg-raised));
-    border: 1px solid
-      color-mix(in oklab, var(--facet) var(--facet-edge), transparent);
-  }
-
-  .facet-link {
-    color: color-mix(in oklab, var(--facet) var(--facet-ink), var(--fg));
-  }
-
-  /* ---------------------------------------------------------------- */
-  /* Lineage card                                                      */
-  /*                                                                   */
-  /* Deliberately a different silhouette from a facet card: no cap, a   */
-  /* spine down the leading edge instead, and the generation count as a */
-  /* row of pips. A line is a *thing that runs*, and the card says so.  */
-  /* ---------------------------------------------------------------- */
-
-  .line-card {
-    position: relative;
-    display: flex;
-    gap: 0.95rem;
-    align-items: stretch;
     border-radius: var(--shape-md);
-    border: 1px solid var(--line);
-    background: var(--bg-raised);
-    box-shadow: var(--shadow-card);
+    color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 8%, var(--bg-raised));
+    border: 1px solid color-mix(in oklab, var(--accent) 20%, transparent);
     transition:
-      box-shadow var(--dur-short) var(--ease-standard),
+      background-color var(--dur-short) var(--ease-standard),
       border-color var(--dur-short) var(--ease-standard);
   }
 
-  .line-card::before {
-    content: "";
-    width: 5px;
-    flex: none;
-    border-start-start-radius: var(--shape-md);
-    border-end-start-radius: var(--shape-md);
-    background: linear-gradient(
-      180deg,
-      var(--color-gold-soft),
-      var(--color-laterite)
-    );
+  a:hover > .index-mark {
+    background: color-mix(in oklab, var(--accent) 14%, var(--bg-raised));
+    border-color: color-mix(in oklab, var(--accent) 38%, transparent);
   }
 
-  a.line-card:hover {
-    box-shadow: var(--shadow-lift);
-    border-color: var(--line-strong);
-  }
-
-  .gen-pip {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: var(--shape-full);
-    background: color-mix(in oklab, var(--color-laterite) 55%, transparent);
+  /* Column headings above a ruled list. */
+  .col-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--fg-faint);
   }
 
   /* ---------------------------------------------------------------- */
-  /* Archive stub                                                      */
-  /*                                                                   */
-  /* For the oldest records: an index card, ruled, with the year set as */
-  /* the subject of the card rather than as a caption on it.            */
+  /* Ruled rows                                                        */
   /* ---------------------------------------------------------------- */
 
-  .stub-card {
+  /* The heavier rule that opens a list, against the hairlines that
+     separate its entries — the same hierarchy a printed table uses. */
+  .reg {
+    border-top: 1px solid var(--outline-soft);
+  }
+
+  .reg-row {
     position: relative;
-    overflow: hidden;
-    border-radius: var(--shape-sm);
-    border: 1px solid var(--line);
-    border-left: 3px solid color-mix(in oklab, var(--accent) 62%, transparent);
-    background: var(--bg-raised);
-    background-image: repeating-linear-gradient(
-      180deg,
-      transparent 0 26px,
-      color-mix(in oklab, var(--color-laterite) 12%, transparent) 26px 27px
-    );
-    box-shadow: var(--shadow-card);
-    transition:
-      box-shadow var(--dur-short) var(--ease-standard),
-      border-color var(--dur-short) var(--ease-standard);
+    display: grid;
+    align-items: baseline;
+    border-bottom: 1px solid var(--line);
+    transition: background-color var(--dur-short) var(--ease-standard);
   }
 
-  a.stub-card:hover {
-    box-shadow: var(--shadow-lift);
-    border-left-color: var(--accent);
+  /* The whole row is the target, so the hit area is the row and not the
+     four words of a link at the end of it. */
+  a.reg-row:hover {
+    background-color: color-mix(in oklab, var(--accent) 5%, transparent);
+  }
+
+  /* A rule that fills down the leading edge on hover. Replaces the
+     lift-and-shadow that every card on the page used to do, which is
+     the single most template-looking gesture available. */
+  .reg-row::before {
+    content: "";
+    position: absolute;
+    inset-block: -1px;
+    inset-inline-start: 0;
+    width: 2px;
+    background: var(--accent);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform var(--dur-medium) var(--ease-standard);
+  }
+
+  a.reg-row:hover::before,
+  a.reg-row:focus-visible::before {
+    transform: scaleY(1);
+  }
+
+  .reg-arrow {
+    display: inline-block;
+    color: var(--accent);
+    transition: transform var(--dur-short) var(--ease-standard);
+  }
+
+  a.reg-row:hover .reg-arrow {
+    transform: translateX(4px);
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Span bar                                                          */
+  /*                                                                   */
+  /* Each lineage's coverage drawn against the archive's whole range,   */
+  /* on one shared scale. Two lines both saying "8 generations" can     */
+  /* still be a century apart, and this is the only place on the page   */
+  /* that shows it. The years are printed under the bar as well — the   */
+  /* bar is a comparison, not the fact.                                 */
+  /* ---------------------------------------------------------------- */
+
+  .span-track {
+    position: relative;
+    height: 4px;
+    border-radius: var(--shape-full);
+    background: color-mix(in oklab, var(--outline-soft) 38%, transparent);
+  }
+
+  .span-fill {
+    position: absolute;
+    inset-block: 0;
+    border-radius: inherit;
+    background: color-mix(in oklab, var(--accent) 62%, var(--color-gold));
+    transition: background-color var(--dur-short) var(--ease-standard);
+  }
+
+  a.reg-row:hover .span-fill {
+    background-color: var(--accent);
   }
 
   /* ---------------------------------------------------------------- */

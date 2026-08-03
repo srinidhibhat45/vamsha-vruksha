@@ -1,0 +1,93 @@
+{
+  "_note": "Written by scripts/resize-media.ts. Do not edit by hand.",
+  "sizes": {
+    "ananta": {
+      "width": 900,
+      "height": 534
+    },
+    "bhagavati": {
+      "width": 801,
+      "height": 320
+    },
+    "chandreshwar": {
+      "width": 900,
+      "height": 508
+    },
+    "chitrapur-math": {
+      "width": 900,
+      "height": 601
+    },
+    "damodar": {
+      "width": 900,
+      "height": 660
+    },
+    "kamakshi": {
+      "width": 900,
+      "height": 675
+    },
+    "kashi-math": {
+      "width": 900,
+      "height": 1200
+    },
+    "kavale-math": {
+      "width": 900,
+      "height": 602
+    },
+    "lakshmi-narasimha": {
+      "width": 900,
+      "height": 600
+    },
+    "mahalasa": {
+      "width": 900,
+      "height": 675
+    },
+    "mallikarjun": {
+      "width": 900,
+      "height": 1200
+    },
+    "mangesh": {
+      "width": 900,
+      "height": 555
+    },
+    "nagesh": {
+      "width": 900,
+      "height": 507
+    },
+    "navadurga": {
+      "width": 900,
+      "height": 675
+    },
+    "partagali-math": {
+      "width": 512,
+      "height": 340
+    },
+    "ramnath": {
+      "width": 900,
+      "height": 553
+    },
+    "saptakoteshwar": {
+      "width": 900,
+      "height": 600
+    },
+    "shantadurga-kunkalikarin": {
+      "width": 900,
+      "height": 600
+    },
+    "shantadurga": {
+      "width": 900,
+      "height": 507
+    },
+    "venkataramana": {
+      "width": 900,
+      "height": 675
+    },
+    "vijayadurga": {
+      "width": 900,
+      "height": 675
+    },
+    "vithal": {
+      "width": 900,
+      "height": 675
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { birthYear, fullName, getArchive } from "@/lib/archive";
 
 export const metadata: Metadata = {

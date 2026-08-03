@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { getArchive } from "@/lib/archive";
 import { usingDefaultCredentials } from "@/lib/adminAuth";
 import { queueCounts, readSubmissions } from "@/lib/submissions";

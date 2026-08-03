@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { notFound } from "next/navigation";
 import { birthYear, fullName, getArchive } from "@/lib/archive";
 import type { LayoutMode } from "@/lib/layout";

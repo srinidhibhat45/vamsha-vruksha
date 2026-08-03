@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { useEffect, useId, useRef, useState } from "react";
 import type { TreePerson } from "@/lib/layout";
 import type { TreePayload } from "@/lib/treeSource";

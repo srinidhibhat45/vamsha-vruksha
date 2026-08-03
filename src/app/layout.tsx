@@ -1,8 +1,52 @@
 import type { Metadata, Viewport } from "next";
+import { Archivo, Newsreader, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { getArchive } from "@/lib/archive";
+
+/*
+  The three faces, fetched once at build and served from this site's own
+  origin.
+
+  They used to arrive through a plain <link> to fonts.googleapis.com. That
+  stylesheet is render-blocking and cross-origin, so every page — even the
+  ones prerendered to static HTML sitting on a CDN — could not paint until
+  two DNS lookups, two TLS handshakes and two round trips to Google had
+  finished. On a slow or filtered connection that is the whole of the wait a
+  reader experiences, and no amount of server-side speed makes up for it.
+
+  next/font downloads the files at build time and emits a preload for the
+  faces this page actually uses, so there is no third-party request left on
+  the critical path at all. `fallback` keeps the metric-adjusted local stack
+  the CSS already named, so the text that paints before the webfont arrives
+  is close to the right size and the page does not jump.
+*/
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+  display: "swap",
+  variable: "--font-newsreader",
+  fallback: ["Iowan Old Style", "Palatino Linotype", "Palatino", "Georgia", "serif"],
+});
+
+const archivo = Archivo({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-archivo",
+  fallback: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+});
+
+/* Only the Konkani needs this one, which is why it is a variable of its own
+   rather than part of the body stack — it is never in the critical path for
+   a page with no Devanagari on it. */
+const devanagari = Noto_Serif_Devanagari({
+  subsets: ["devanagari"],
+  display: "swap",
+  variable: "--font-noto-devanagari",
+  fallback: ["Nirmala UI", "Kohinoor Devanagari", "serif"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -31,24 +75,10 @@ export default function RootLayout({
   const archive = getArchive();
 
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {/*
-          Loaded with a plain stylesheet link rather than next/font so the build
-          does not depend on network access to Google's servers. The stacks in
-          globals.css degrade to serviceable system faces if it fails.
-        */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Archivo:wght@400..700&family=Noto+Serif+Devanagari:wght@400..600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${newsreader.variable} ${archivo.variable} ${devanagari.variable}`}
+    >
       <body className="min-h-screen flex flex-col">
         <a
           href="#main"

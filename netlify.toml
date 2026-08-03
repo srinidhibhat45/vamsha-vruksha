@@ -7,3 +7,19 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# The temple photographs are content-stable: a given file is that photograph
+# for good, and when one is replaced it is replaced under a new deploy. The Next
+# runtime sets immutable headers on its own /_next/static bundles but knows
+# nothing about /public, so without this the browser revalidates twenty-two
+# JPEGs on every visit to /diaspora.
+[[headers]]
+  for = "/temples/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Same reasoning, for anything else dropped into /public later.
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -613,11 +613,53 @@ function build(): Archive {
 }
 
 let cached: Archive | null = null;
+let cachedStamp = "";
+
+/**
+ * A cheap fingerprint of what is on disk: the size and mtime of every file the
+ * archive is built from. Two dozen stat calls, well under a millisecond.
+ */
+function dataStamp(): string {
+  const parts: string[] = [];
+  for (const sub of ["people", "reference"]) {
+    const dir = path.join(DATA_DIR, sub);
+    let names: string[];
+    try {
+      names = fs.readdirSync(dir).sort();
+    } catch {
+      continue;
+    }
+    for (const name of names) {
+      if (!name.endsWith(".json")) continue;
+      try {
+        const s = fs.statSync(path.join(dir, name));
+        parts.push(`${name}:${s.size}:${s.mtimeMs}`);
+      } catch {
+        /* removed between readdir and stat — the next call will notice */
+      }
+    }
+  }
+  return parts.join("|");
+}
 
 export function getArchive(): Archive {
-  // In development, rebuild on every request so edits to data/ show up without
-  // a restart. The build takes single-digit milliseconds for a sample-sized set.
-  if (process.env.NODE_ENV === "development") return build();
+  // Development used to rebuild the whole graph on every call so that edits to
+  // data/ showed up without a restart. That is the right behaviour and the
+  // wrong implementation: getArchive() is called from forty places, including
+  // PersonRow — once per row — so a fifty-result page reparsed two megabytes
+  // of JSON fifty times and spent seconds doing it.
+  //
+  // Stat the files instead and rebuild only when one of them has actually
+  // changed. Same freshness, none of the cost.
+  if (process.env.NODE_ENV === "development") {
+    const stamp = dataStamp();
+    if (!cached || stamp !== cachedStamp) {
+      cached = build();
+      cachedStamp = stamp;
+    }
+    return cached;
+  }
+
   cached ??= build();
   return cached;
 }
@@ -632,6 +674,7 @@ export function getArchive(): Archive {
  */
 export function invalidateArchive(): void {
   cached = null;
+  cachedStamp = "";
 }
 
 /* ------------------------------------------------------------------ */

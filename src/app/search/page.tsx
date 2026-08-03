@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppLink as Link } from "@/components/AppLink";
 import { redirect } from "next/navigation";
 import { getArchive } from "@/lib/archive";
 import { search, type SearchFilters } from "@/lib/search";
