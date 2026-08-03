@@ -28,15 +28,19 @@
  * Card size is a legibility decision, not a layout one. At 190×78 a name had
  * 124px to live in and was being truncated at around fourteen characters,
  * which cuts most patronymic names in half — "Venubai Madhav Ka…" identifies
- * nobody. The extra 22px of width buys back roughly four characters and the
- * extra 10px of height buys a third line that can carry the lineage detail
- * without crowding the dates.
+ * nobody. At 244×96 the name column is 162px, which holds a full patronymic
+ * at reading size, and the height carries a third line for the one or two
+ * cards in a tree that have something to say the others do not.
+ *
+ * The gaps are wider than they need to be for the same reason a printed
+ * pedigree leaves air around a name: the white is what lets the eye follow a
+ * single line down the page instead of reading the row across.
  */
-export const CARD_W = 212;
-export const CARD_H = 88;
-export const H_GAP = 26;
-export const V_GAP = 104;
-export const SPOUSE_GAP = 22;
+export const CARD_W = 244;
+export const CARD_H = 96;
+export const H_GAP = 34;
+export const V_GAP = 112;
+export const SPOUSE_GAP = 28;
 export const ROW_H = CARD_H + V_GAP;
 /** How far below a couple's row the junction dot sits. */
 export const JUNCTION_DROP = 30;

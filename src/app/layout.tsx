@@ -20,28 +20,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fbf6ec" },
-    { media: "(prefers-color-scheme: dark)", color: "#14110e" },
-  ],
+  themeColor: "#fbf6ec",
 };
-
-/**
- * Applied before paint so the page never flashes the wrong theme. Reads an
- * explicit choice from localStorage, otherwise follows the system.
- */
-const THEME_BOOTSTRAP = `
-(function(){
-  try {
-    var saved = localStorage.getItem("vv-theme");
-    var dark = saved ? saved === "dark"
-      : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
-  } catch (e) {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-})();
-`;
 
 export default function RootLayout({
   children,
@@ -51,9 +31,8 @@ export default function RootLayout({
   const archive = getArchive();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP }} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

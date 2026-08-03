@@ -603,6 +603,18 @@ export function getArchive(): Archive {
   return cached;
 }
 
+/**
+ * Drop the in-memory archive so the next read rebuilds it from disk.
+ *
+ * The admin tools write straight into data/people/*.json. Without this, an
+ * approved correction would sit on disk unread until the process restarted,
+ * and the moderator would be told the edit had saved while the site went on
+ * showing the old record.
+ */
+export function invalidateArchive(): void {
+  cached = null;
+}
+
 /* ------------------------------------------------------------------ */
 /* Convenience accessors used across the app                           */
 /* ------------------------------------------------------------------ */

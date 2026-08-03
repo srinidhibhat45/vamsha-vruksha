@@ -104,6 +104,15 @@ function toneOf(gender: string): string {
   return "var(--color-gold)";
 }
 
+// The tree's card colour is the only other place this is recorded, and that
+// colour is decorative (WCAG 1.4.1) — a reader who cannot see it, or cannot
+// tell the two apart, needs it written down somewhere too.
+function genderLabel(gender: string): string | undefined {
+  if (gender === "F") return "Woman";
+  if (gender === "M") return "Man";
+  return undefined;
+}
+
 export default async function PersonPage({ params }: { params: Params }) {
   const { id } = await params;
   const archive = getArchive();
@@ -579,6 +588,7 @@ export default async function PersonPage({ params }: { params: Params }) {
               <h2 className="m3-card-title">Details</h2>
             </div>
             <dl className="divide-y divide-[var(--line)] px-4 py-1">
+              <Detail label="Recorded as" value={genderLabel(person.gender)} />
               <Detail label="Gotra" value={gotra?.name} />
               {gotra?.pravara && (
                 <Detail label="Pravara" value={gotra.pravara.join(" · ")} />
@@ -634,7 +644,7 @@ export default async function PersonPage({ params }: { params: Params }) {
                       {toApex.term.english}
                     </strong>
                     {toApex.term.konkani && (
-                      <span className="deva text-[var(--accent)]" lang="kok">
+                      <span className="text-[var(--accent)]" lang="kok">
                         {" "}
                         ({toApex.term.konkani})
                       </span>

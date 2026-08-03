@@ -41,6 +41,15 @@ function initialsOf(p: TreePerson): string {
   ).toUpperCase();
 }
 
+// The card's leading stripe carries this too, but only as colour (WCAG
+// 1.4.1) — the legend explains the code for a sighted reader of the canvas,
+// but the panel is also where a screen-reader user actually meets the fact.
+function genderLabel(gender: string): string | undefined {
+  if (gender === "F") return "Woman";
+  if (gender === "M") return "Man";
+  return undefined;
+}
+
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   if (!children) return null;
   return (
@@ -77,6 +86,7 @@ function PersonItem({
       onClick={() => onSelect(person.id)}
       className="list-item"
       style={{ ["--tone" as string]: toneOf(person.gender) }}
+      aria-label={`${person.name}, ${years}${suffix ? `, ${suffix}` : ""}`}
     >
       <span className="avatar [--avatar:30px]" aria-hidden>
         {initialsOf(person)}
@@ -264,12 +274,19 @@ export function TreeDetailPanel({
               <>
                 <p className="mt-1.5 font-display text-[1.2rem] font-medium leading-tight">
                   {relation.term.english}
-                  {relation.term.konkani && (
-                    <span className="deva ml-2 text-[0.95em]" lang="kok">
-                      {relation.term.konkani}
-                    </span>
-                  )}
                 </p>
+                {/* The Konkani term is romanised, so it shares a script with
+                    the English one. Set side by side they read as a single
+                    phrase — "granddaughter Natin" looks like a name. It needs
+                    its own line and a word saying what it is. */}
+                {relation.term.konkani && (
+                  <p className="mt-1 text-[0.85rem] leading-snug opacity-75">
+                    <span lang="kok" className="font-medium">
+                      {relation.term.konkani}
+                    </span>{" "}
+                    in Konkani
+                  </p>
+                )}
                 {relation.term.gloss && (
                   <p className="mt-1.5 text-[0.8rem] leading-relaxed opacity-80">
                     {relation.term.gloss}
@@ -300,6 +317,7 @@ export function TreeDetailPanel({
         {/* --------------------------------------------------- Lineage */}
         <div className="m3-card">
           <dl className="divide-y divide-[var(--line)] py-1">
+            <Row label="Recorded as">{genderLabel(person.gender)}</Row>
             <Row label="Gotra">{person.gotraLabel}</Row>
             <Row label="Kuladevata">{person.kuladevataLabel}</Row>
             <Row label="Mool">{person.moolLabel}</Row>

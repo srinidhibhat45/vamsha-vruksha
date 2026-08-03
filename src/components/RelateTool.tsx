@@ -113,14 +113,20 @@ export function RelateTool({
                 <h2 className="mt-2 font-display text-[2.4rem] font-medium leading-tight">
                   {result.term.english}
                 </h2>
+                {/* Romanised, so it shares a script with the English term
+                    above it. Without a caption a reader has no way to tell
+                    which of the two words is which language. */}
                 {result.term.konkani && (
-                  <p className="deva mt-2 text-[1.6rem] text-[var(--accent)]" lang="kok">
-                    {result.term.konkani}
-                  </p>
+                  <>
+                    <p className="eyebrow mt-3">In Konkani</p>
+                    <p className="mt-0.5 text-[1.6rem] text-[var(--accent)]" lang="kok">
+                      {result.term.konkani}
+                    </p>
+                  </>
                 )}
                 {result.term.alt?.length ? (
                   <p className="mt-1.5 text-[0.85rem] text-[var(--fg-faint)]">
-                    also {result.term.alt.join(" · ")}
+                    also <span lang="kok">{result.term.alt.join(" · ")}</span>
                   </p>
                 ) : null}
                 {result.term.gloss && (
@@ -134,10 +140,7 @@ export function RelateTool({
                     {result.reciprocal.english}
                   </strong>
                   {result.reciprocal.konkani && (
-                    <span className="deva" lang="kok">
-                      {" "}
-                      ({result.reciprocal.konkani})
-                    </span>
+                    <span lang="kok"> ({result.reciprocal.konkani})</span>
                   )}
                 </p>
               </>

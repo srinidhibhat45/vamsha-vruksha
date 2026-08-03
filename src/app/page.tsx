@@ -125,7 +125,7 @@ export default function HomePage() {
             fair to count. Given the kolam ground so the strip reads as a
             plinth under the hero rather than as the next section. */}
         <div className="relative border-t border-[var(--line)] bg-[var(--bg-sunken)] ground-kolam">
-          <dl className="mx-auto flex max-w-[1400px] flex-wrap justify-center gap-x-10 gap-y-5 px-4 py-7 sm:justify-start">
+          <dl className="mx-auto flex max-w-[1400px] flex-wrap justify-center gap-x-10 gap-y-5 px-4 py-7">
             {[
               { value: s.people.toLocaleString(), label: "people recorded" },
               { value: s.lineages.toLocaleString(), label: "family lines" },

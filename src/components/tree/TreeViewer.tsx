@@ -19,7 +19,7 @@ import {
 import type { TreePayload } from "@/lib/treeSource";
 import { phoneticKey } from "@/lib/translit";
 import { Select } from "@/components/ui/Select";
-import { PersonCard } from "./PersonCard";
+import { PersonCard, TreeCardDefs, type TreeBaseline } from "./PersonCard";
 import { TreeDetailPanel } from "./TreeDetailPanel";
 
 const MIN_ZOOM = 0.12;
@@ -71,9 +71,13 @@ export function TreeViewer({
   // with a guess made the tree frame itself against dimensions the container
   // never had, leaving it parked off-centre.
   const [size, setSize] = useState({ w: 0, h: 0 });
-  const [showLegend, setShowLegend] = useState(false);
+  // Open by default. A key that has to be found before the drawing can be
+  // read is not a key, and every reader arriving here is a first-time reader
+  // of *this* family whatever else they have seen.
+  const [showLegend, setShowLegend] = useState(true);
 
   const wrapRef = useRef<HTMLDivElement>(null);
+  const modeBtnRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const dragRef = useRef<{
     startX: number;
     startY: number;
@@ -102,9 +106,50 @@ export function TreeViewer({
     [layout],
   );
 
+  /*
+    What this whole tree has in common. Printing "Kaundinya gotra ·
+    Kushasthali" on three hundred cards tells a reader nothing they cannot
+    get from one line of the key; printing it only on the four people it is
+    *not* true of turns the same ink into the most useful thing on the card.
+    So the modal gotra and village are computed once here, stated once in the
+    key, and omitted from every card that agrees with them.
+  */
+  const baseline = useMemo<TreeBaseline>(() => {
+    const mode = (pick: (n: LaidOutPerson) => string | undefined) => {
+      const counts = new Map<string, number>();
+      for (const n of personNodes) {
+        const v = pick(n);
+        if (v) counts.set(v, (counts.get(v) ?? 0) + 1);
+      }
+      let best: string | undefined;
+      let bestN = 0;
+      for (const [v, c] of counts) {
+        if (c > bestN) {
+          best = v;
+          bestN = c;
+        }
+      }
+      // A value only counts as the family's baseline if most of the family
+      // actually shares it. In a tree of two married-in branches there is no
+      // baseline, and pretending otherwise would hide a real difference.
+      return bestN >= Math.max(2, personNodes.length * 0.5) ? best : undefined;
+    };
+    return {
+      gotraLabel: mode((n) => n.person.gotraLabel),
+      moolLabel: mode((n) => n.person.moolLabel),
+    };
+  }, [personNodes]);
+
   /* ---------------------------------------------------------------- */
   /* Viewport                                                          */
   /* ---------------------------------------------------------------- */
+
+  // …but on a phone the key is most of the canvas, and a reader who cannot
+  // see the drawing has nothing to apply the key to. Closed there, one tap
+  // from open.
+  useLayoutEffect(() => {
+    if (window.matchMedia("(max-width: 47.9rem)").matches) setShowLegend(false);
+  }, []);
 
   useLayoutEffect(() => {
     const el = wrapRef.current;
@@ -174,8 +219,8 @@ export function TreeViewer({
     const bw = Math.max(1, layout.bounds.maxX - layout.bounds.minX);
     const bh = Math.max(1, layout.bounds.maxY - layout.bounds.minY);
     const fitK = Math.min(size.w / bw, size.h / bh);
-    if (fitK >= 0.45) fit();
-    else centerOnFocus(0.85);
+    if (fitK >= 0.5) fit();
+    else centerOnFocus(0.95);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [size.w, size.h]);
 
@@ -348,6 +393,26 @@ export function TreeViewer({
   */
   const [keyboardNav, setKeyboardNav] = useState(false);
   const canvasRef = useRef<HTMLDivElement>(null);
+
+  /*
+    The detail panel moves focus onto its own heading when it opens (see
+    TreeDetailPanel). Closing it removes that heading from the DOM, and a
+    browser's default move for focus that vanishes out from under it is
+    <body> — which strands a keyboard user at the top of the document rather
+    than back in the tree they were just navigating. Only step in when that
+    has actually happened: the guard skips this effect's first run (the
+    initial mount, where selectedId is already null) so nothing steals focus
+    on page load.
+  */
+  const selectedMounted = useRef(false);
+  useEffect(() => {
+    if (!selectedMounted.current) {
+      selectedMounted.current = true;
+      return;
+    }
+    if (selectedId !== null) return;
+    if (document.activeElement === document.body) canvasRef.current?.focus();
+  }, [selectedId]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -588,14 +653,33 @@ export function TreeViewer({
           role="radiogroup"
           aria-label="What to show around this person"
           className="segmented"
+          onKeyDown={(e) => {
+            if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+            // Otherwise the same keystroke also reaches the window-level
+            // listener that drives the tree, which would re-root the
+            // canvas's own selection at the same time as this control moves.
+            e.preventDefault();
+            e.stopPropagation();
+            const i = MODES.findIndex((m) => m.id === mode);
+            const next =
+              e.key === "ArrowRight"
+                ? (i + 1) % MODES.length
+                : (i - 1 + MODES.length) % MODES.length;
+            setMode(MODES[next].id);
+            modeBtnRefs.current[next]?.focus();
+          }}
         >
-          {MODES.map((m) => (
+          {MODES.map((m, i) => (
             <button
               key={m.id}
+              ref={(el) => {
+                modeBtnRefs.current[i] = el;
+              }}
               type="button"
               role="radio"
               aria-checked={mode === m.id}
               aria-label={`${m.label} — ${m.hint}`}
+              tabIndex={mode === m.id ? 0 : -1}
               onClick={() => setMode(m.id)}
               className="segment"
             >
@@ -651,48 +735,12 @@ export function TreeViewer({
           </span>
         </div>
 
+        {/* Framing lives on the canvas, where the thing being framed is.
+            What stays up here is the choice of *what* to draw. */}
         <div className="ml-auto flex items-center gap-1">
-          <button
-            type="button"
-            onClick={() => setTransform((t) => ({ ...t, k: Math.max(MIN_ZOOM, t.k / 1.25) }))}
-            className="btn btn-text btn-icon btn-sm"
-            aria-label="Zoom out"
-          >
-            <span aria-hidden className="text-[1.1rem]">
-              −
-            </span>
-          </button>
-          <span
-            className="w-12 text-center text-[0.8rem] tabular-nums text-[var(--fg-soft)]"
-            role="status"
-            aria-label={`Zoom ${Math.round(transform.k * 100)} percent`}
-          >
-            {Math.round(transform.k * 100)}%
+          <span className="hidden text-[0.8rem] tabular-nums text-[var(--fg-faint)] xl:inline">
+            {personNodes.length} of {payload.size} drawn
           </span>
-          <button
-            type="button"
-            onClick={() => setTransform((t) => ({ ...t, k: Math.min(MAX_ZOOM, t.k * 1.25) }))}
-            className="btn btn-text btn-icon btn-sm"
-            aria-label="Zoom in"
-          >
-            <span aria-hidden className="text-[1.1rem]">
-              +
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={fit}
-            className="btn btn-outlined btn-sm"
-          >
-            Fit<span className="sr-only"> the whole family on screen</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => centerOnFocus(0.9)}
-            className="btn btn-outlined btn-sm"
-          >
-            Centre<span className="sr-only"> on the rooted person</span>
-          </button>
           <button
             type="button"
             onClick={() => setShowLegend((s) => !s)}
@@ -700,7 +748,7 @@ export function TreeViewer({
             aria-expanded={showLegend}
             aria-controls="tree-legend"
           >
-            Key
+            {showLegend ? "Hide key" : "Key"}
           </button>
         </div>
       </div>
@@ -739,6 +787,9 @@ export function TreeViewer({
             className="block select-none"
             aria-hidden="true"
           >
+            {/* One clip path, shared by every card — defined in user space so
+                it lands correctly inside each card's own translate. */}
+            <TreeCardDefs />
             <g
               transform={`translate(${transform.x} ${transform.y}) scale(${transform.k})`}
               style={{
@@ -756,22 +807,21 @@ export function TreeViewer({
                   return (
                     <path
                       key={link.id}
-                      d={orthogonalPath(link.points, isMarriage ? 6 : 12)}
+                      d={orthogonalPath(link.points, isMarriage ? 8 : 14)}
                       stroke={
                         onPath
                           ? "var(--color-gold)"
                           : isMarriage
-                            ? "var(--color-kumkum)"
+                            ? "color-mix(in oklab, var(--color-kumkum) 55%, transparent)"
                             : "var(--line-strong)"
                       }
-                      strokeWidth={onPath ? 2.4 : isMarriage ? 1.6 : 1.3}
-                      strokeDasharray={isMarriage ? "0" : undefined}
+                      strokeWidth={onPath ? 2.2 : 1.3}
                       opacity={
                         matches && link.childId && !matches.has(link.childId)
-                          ? 0.2
+                          ? 0.18
                           : onPath
                             ? 1
-                            : 0.75
+                            : 0.65
                       }
                     />
                   );
@@ -785,15 +835,15 @@ export function TreeViewer({
                   .map((n) => (
                     <g key={n.id} transform={`translate(${n.x} ${n.y})`}>
                       <path
-                        d="M0 -4.5 L4.5 0 L0 4.5 L-4.5 0 Z"
+                        d="M0 -4 L4 0 L0 4 L-4 0 Z"
                         fill="var(--color-kumkum)"
-                        opacity={0.9}
+                        opacity={0.75}
                       />
                       {n.kind === "junction" && n.year && (
                         <text
-                          y={-9}
+                          y={-10}
                           textAnchor="middle"
-                          fontSize={8.5}
+                          fontSize={9.5}
                           fill="var(--fg-faint)"
                           style={{ userSelect: "none" }}
                         >
@@ -814,6 +864,7 @@ export function TreeViewer({
                   >
                     <PersonCard
                       node={node}
+                      baseline={baseline}
                       state={{
                         isSelected: selectedId === node.id,
                         isHovered: hoverId === node.id,
@@ -845,27 +896,38 @@ export function TreeViewer({
             }
           />
 
+          {/* Framing controls, over the thing being framed. */}
+          <ViewControls
+            zoom={transform.k}
+            onZoom={(factor) =>
+              setTransform((t) => ({
+                ...t,
+                k: Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, t.k * factor)),
+              }))
+            }
+            onFit={fit}
+            onCentre={() => centerOnFocus(0.95)}
+          />
+
           {/* Always in the DOM so the Key button's aria-controls resolves —
               a dangling aria-controls is worse than none at all. */}
-          <Legend open={showLegend} onClose={() => setShowLegend(false)} />
+          <Legend
+            open={showLegend}
+            baseline={baseline}
+            drawn={personNodes.length}
+            total={payload.size}
+            onClose={() => setShowLegend(false)}
+          />
 
-          <div className="pointer-events-none absolute left-3 top-3 max-w-xs rounded-[var(--shape-sm)] border border-[var(--line)] bg-[color-mix(in_oklab,var(--bg-raised)_92%,transparent)] px-3 py-2 text-[0.78rem] leading-relaxed text-[var(--fg-faint)] backdrop-blur-sm no-print">
-            <span className="font-medium text-[var(--fg-soft)]">
-              {personNodes.length} of {payload.size} shown
-            </span>
-            <span className="block">
-              Drag to pan · pinch to zoom · double-click a card to re-root
-            </span>
-            {/* The full instructions belong to the canvas widget, where a
-                screen reader reads them on focus; on screen they would be a
-                paragraph of chrome nobody asked for. */}
-            <span id="tree-canvas-help" className="sr-only">
-              Arrow keys walk the family from the selected person. Enter roots
-              the tree on them. Plus and minus zoom, 0 fits the whole family
-              on screen, Escape closes the detail panel. A list of everyone
-              currently drawn follows this canvas.
-            </span>
-          </div>
+          {/* The full instructions belong to the canvas widget, where a
+              screen reader reads them on focus; on screen they would be a
+              paragraph of chrome nobody asked for. */}
+          <span id="tree-canvas-help" className="sr-only">
+            Arrow keys walk the family from the selected person. Enter roots
+            the tree on them. Plus and minus zoom, 0 fits the whole family on
+            screen, Escape closes the detail panel. A list of everyone
+            currently drawn follows this canvas.
+          </span>
 
           {/* Every arrow-key move, announced. */}
           <p role="status" aria-live="polite" className="sr-only">
@@ -1000,25 +1062,188 @@ function Minimap({
 }
 
 /* ------------------------------------------------------------------ */
-/* Legend                                                              */
+/* View controls                                                       */
+/*                                                                     */
+/* Zoom and framing, on the canvas rather than in the toolbar. They act */
+/* on the drawing, so they belong over the drawing — and it leaves the  */
+/* toolbar to say one thing: what is being drawn.                      */
 /* ------------------------------------------------------------------ */
 
-function Legend({ open, onClose }: { open: boolean; onClose: () => void }) {
+function ViewControls({
+  zoom,
+  onZoom,
+  onFit,
+  onCentre,
+}: {
+  zoom: number;
+  onZoom: (factor: number) => void;
+  onFit: () => void;
+  onCentre: () => void;
+}) {
+  const group =
+    "flex flex-col overflow-hidden rounded-[var(--shape-full)] border border-[var(--line)] bg-[color-mix(in_oklab,var(--bg-raised)_92%,transparent)] shadow-[var(--shadow-card)] backdrop-blur-sm";
+  const item =
+    "state-layer grid h-10 w-10 place-items-center text-[var(--fg-soft)] hover:text-[var(--fg)]";
+
+  return (
+    <div className="absolute right-3 top-3 flex flex-col items-center gap-2 no-print">
+      <div className={group}>
+        <button
+          type="button"
+          onClick={() => onZoom(1.25)}
+          className={`${item} border-b border-[var(--line)]`}
+          aria-label="Zoom in"
+          title="Zoom in"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            className="h-[18px] w-[18px]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <path d="M10 4v12M4 10h12" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={() => onZoom(1 / 1.25)}
+          className={item}
+          aria-label="Zoom out"
+          title="Zoom out"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            className="h-[18px] w-[18px]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 10h12" />
+          </svg>
+        </button>
+      </div>
+
+      <span
+        className="rounded-[var(--shape-full)] border border-[var(--line)] bg-[color-mix(in_oklab,var(--bg-raised)_92%,transparent)] px-2 py-0.5 text-[0.7rem] tabular-nums text-[var(--fg-faint)] backdrop-blur-sm"
+        role="status"
+        aria-label={`Zoom ${Math.round(zoom * 100)} percent`}
+      >
+        {Math.round(zoom * 100)}%
+      </span>
+
+      <div className={group}>
+        <button
+          type="button"
+          onClick={onFit}
+          className={`${item} border-b border-[var(--line)]`}
+          aria-label="Fit the whole family on screen"
+          title="Fit the whole family on screen"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            className="h-[18px] w-[18px]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7.5V4h3.5M16 7.5V4h-3.5M4 12.5V16h3.5M16 12.5V16h-3.5" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={onCentre}
+          className={item}
+          aria-label="Centre on the rooted person"
+          title="Centre on the rooted person"
+        >
+          <svg
+            viewBox="0 0 20 20"
+            className="h-[18px] w-[18px]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.7"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="10" cy="10" r="3.2" />
+            <path d="M10 2.5v2.6M10 14.9v2.6M2.5 10h2.6M14.9 10h2.6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Legend                                                              */
+/*                                                                     */
+/* Open by default and docked to a corner it can stay in. It also       */
+/* carries the one sentence that lets every card drop two lines: what   */
+/* the family's own gotra and village are, so a card only speaks when   */
+/* it differs.                                                          */
+/* ------------------------------------------------------------------ */
+
+function LegendRow({
+  swatch,
+  children,
+}: {
+  swatch: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <span className="flex h-4 items-center justify-center">{swatch}</span>
+      <span className="leading-snug">{children}</span>
+    </>
+  );
+}
+
+function Legend({
+  open,
+  baseline,
+  drawn,
+  total,
+  onClose,
+}: {
+  open: boolean;
+  baseline: TreeBaseline;
+  drawn: number;
+  total: number;
+  onClose: () => void;
+}) {
+  const shared = [
+    baseline.gotraLabel && `${baseline.gotraLabel} gotra`,
+    baseline.moolLabel,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
   return (
     <div
       id="tree-legend"
       hidden={!open}
-      className="absolute right-3 top-3 w-72 rounded-[var(--shape-md)] border border-[var(--line)] bg-[color-mix(in_oklab,var(--bg-raised)_95%,transparent)] p-4 text-[0.82rem] shadow-lg backdrop-blur-sm no-print"
+      className="absolute left-3 top-3 flex max-h-[calc(100%-1.5rem)] w-[19rem] max-w-[calc(100%-1.5rem)] flex-col overflow-hidden rounded-[var(--shape-md)] border border-[var(--line)] bg-[color-mix(in_oklab,var(--bg-raised)_94%,transparent)] shadow-[var(--shadow-menu)] backdrop-blur-sm no-print"
     >
-      <div className="mb-2.5 flex items-center justify-between gap-2">
-        <h3 className="font-display text-[1rem] font-medium">
-          Reading the tree
-        </h3>
+      <div className="flex items-center justify-between gap-2 border-b border-[var(--line)] px-3.5 py-2">
+        <h2 className="font-display text-[0.95rem] font-medium">
+          Reading this tree
+        </h2>
+        <span className="ml-auto text-[0.72rem] tabular-nums text-[var(--fg-faint)]">
+          {drawn} of {total}
+        </span>
         <button
           type="button"
           onClick={onClose}
-          className="btn btn-text btn-icon btn-sm -mr-1.5 text-[var(--fg-faint)]"
-          aria-label="Close the key"
+          className="btn btn-text btn-icon btn-sm -mr-2 text-[var(--fg-faint)]"
+          aria-label="Hide the key"
         >
           <svg
             viewBox="0 0 16 16"
@@ -1033,56 +1258,118 @@ function Legend({ open, onClose }: { open: boolean; onClose: () => void }) {
           </svg>
         </button>
       </div>
-      <ul className="space-y-2 text-[var(--fg-soft)]">
-        <li className="flex items-center gap-2">
-          <span className="inline-block h-3 w-1 rounded-sm bg-[var(--color-samudra)]" />
-          <span className="inline-block h-3 w-1 rounded-sm bg-[var(--color-kumkum)]" />
-          men and women
-        </li>
-        <li className="flex items-center gap-2">
-          <svg viewBox="0 0 20 8" className="h-2 w-6">
-            <path d="M1 6h18" stroke="var(--color-kumkum)" strokeWidth="1.6" />
-            <path d="M10 4 12 6 10 8 8 6z" fill="var(--color-kumkum)" />
-          </svg>
-          a marriage, with its junction
-        </li>
-        <li className="flex items-center gap-2">
-          <svg viewBox="0 0 20 8" className="h-2 w-6">
-            <path d="M1 6h18" stroke="var(--line-strong)" strokeWidth="1.4" />
-          </svg>
-          descent from that couple
-        </li>
-        <li className="flex items-center gap-2">
-          <svg viewBox="0 0 12 12" className="h-3 w-3">
-            <path
-              d="M6 1.5c1.5 1.8 2.3 3 2.3 4.1A2.3 2.3 0 0 1 6 7.9a2.3 2.3 0 0 1-2.3-2.3C3.7 4.5 4.5 3.3 6 1.5z"
-              fill="var(--color-haldi)"
-            />
-          </svg>
-          a lamp marks someone living
-        </li>
-        <li>
-          <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+
+      <div className="scroll-slim grid grid-cols-[1.6rem_1fr] items-start gap-x-2 gap-y-2 overflow-y-auto px-3.5 py-2.5 text-[0.79rem] text-[var(--fg-soft)]">
+        <LegendRow
+          swatch={
+            <span className="flex items-center gap-[3px]">
+              <span className="inline-block h-3.5 w-[3px] rounded-full bg-[var(--color-samudra)]" />
+              <span className="inline-block h-3.5 w-[3px] rounded-full bg-[var(--color-kumkum)]" />
+            </span>
+          }
+        >
+          Stripe on a card&rsquo;s edge —{" "}
+          <span className="text-[var(--color-samudra)]">man</span>,{" "}
+          <span className="text-[var(--color-kumkum)]">woman</span>
+        </LegendRow>
+
+        <LegendRow
+          swatch={
+            <svg viewBox="0 0 22 10" className="h-2.5 w-6" aria-hidden="true">
+              <path
+                d="M2 5h18"
+                stroke="color-mix(in oklab, var(--color-kumkum) 55%, transparent)"
+                strokeWidth="1.6"
+              />
+              <path d="M11 1.5 14 5l-3 3.5L8 5z" fill="var(--color-kumkum)" opacity="0.75" />
+            </svg>
+          }
+        >
+          A marriage and its junction
+        </LegendRow>
+
+        <LegendRow
+          swatch={
+            <svg viewBox="0 0 22 10" className="h-2.5 w-6" aria-hidden="true">
+              <path d="M2 5h18" stroke="var(--line-strong)" strokeWidth="1.4" />
+            </svg>
+          }
+        >
+          Descent from that couple
+        </LegendRow>
+
+        <LegendRow
+          swatch={
+            <svg viewBox="0 0 12 13" className="h-3.5 w-3" aria-hidden="true">
+              <path
+                d="M6 1.5c1.5 1.8 2.3 3 2.3 4.1A2.3 2.3 0 0 1 6 7.9a2.3 2.3 0 0 1-2.3-2.3C3.7 4.5 4.5 3.3 6 1.5z"
+                fill="var(--color-haldi)"
+              />
+              <path
+                d="M2.6 9.4h6.8c-.4 1.1-1.8 1.8-3.4 1.8s-3-.7-3.4-1.8z"
+                fill="var(--color-haldi)"
+                opacity="0.5"
+              />
+            </svg>
+          }
+        >
+          A lamp — someone living
+        </LegendRow>
+
+        <LegendRow
+          swatch={
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--color-tulsi)]" />
-            documented
-            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--color-gold)]" />
-            corroborated
-            <span className="inline-block h-2.5 w-2.5 rounded-full border border-[var(--fg-faint)]" />
-            hearsay
+          }
+        >
+          <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>documented</span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--color-gold)]" />
+              corroborated
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-full border border-[var(--fg-faint)]" />
+              hearsay
+            </span>
+            <span className="text-[var(--fg-faint)]">— the corner dot</span>
           </span>
-          <span className="mt-0.5 block text-[0.78rem] text-[var(--fg-faint)]">
-            the dot in the bottom corner of a card
-          </span>
-        </li>
-        <li className="pt-1 text-[var(--fg-faint)]">
-          <strong className="font-semibold">+3</strong> under a card means three
-          more children are recorded but not drawn — click it to open that
-          branch.
-        </li>
-      </ul>
-      <p className="mt-3 border-t border-[var(--line)] pt-2.5 text-[0.78rem] leading-relaxed text-[var(--fg-faint)]">
-        Arrow keys walk the family. Enter re-roots. 0 fits to screen.
-      </p>
+        </LegendRow>
+
+        <LegendRow
+          swatch={
+            <span className="inline-flex h-4 items-center gap-0.5 rounded-full border border-[var(--line-strong)] px-1 text-[0.62rem] font-semibold text-[var(--fg-soft)]">
+              3
+              <svg
+                viewBox="0 0 8 5"
+                className="h-[5px] w-2"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                aria-hidden="true"
+              >
+                <path d="m1 1 3 3 3-3" />
+              </svg>
+            </span>
+          }
+        >
+          More kin recorded than drawn — click to open
+        </LegendRow>
+      </div>
+
+      <div className="shrink-0">
+        {shared && (
+          <p className="border-t border-[var(--line)] px-3.5 py-2 text-[0.77rem] leading-relaxed text-[var(--fg-faint)]">
+            Everyone here is{" "}
+            <span className="font-medium text-[var(--fg-soft)]">{shared}</span>{" "}
+            unless their card says otherwise.
+          </p>
+        )}
+
+        <p className="border-t border-[var(--line)] px-3.5 py-2 text-[0.74rem] text-[var(--fg-faint)]">
+          Drag to pan · double-click a card to re-root
+        </p>
+      </div>
     </div>
   );
 }

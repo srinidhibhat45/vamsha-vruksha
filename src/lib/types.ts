@@ -265,10 +265,24 @@ export type SubmissionKind =
   | "story"
   | "photo";
 
+/**
+ * `changes-requested` is the one a moderation queue cannot do without. Most
+ * submissions are neither right nor wrong — they are a real family memory with
+ * a date nobody can place, and the only useful reply is to ask. Without it a
+ * reviewer has to choose between publishing something they doubt and rejecting
+ * a contributor who was telling the truth.
+ */
+export type SubmissionStatus =
+  | "pending"
+  | "changes-requested"
+  | "approved"
+  | "rejected"
+  | "merged";
+
 export interface Submission {
   id: string;
   kind: SubmissionKind;
-  status: "pending" | "approved" | "rejected" | "merged";
+  status: SubmissionStatus;
   /** The person being edited, for corrections. */
   targetId?: string;
   payload: Record<string, unknown>;
@@ -282,4 +296,7 @@ export interface Submission {
   submittedAt: string;
   reviewedAt?: string;
   reviewerNote?: string;
+  /** Id of the record this submission created or updated, once published. */
+  appliedTo?: string;
+  appliedAt?: string;
 }

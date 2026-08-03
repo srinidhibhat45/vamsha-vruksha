@@ -31,8 +31,6 @@
   ------------------------------------------------------------------
 */
 
-@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
-
 @theme {
   --color-ink: #1c1814;
   --color-ink-soft: #4a4139;
@@ -70,7 +68,7 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Semantic + Material 3 tokens, flipped wholesale in dark mode.       */
+/* Semantic + Material 3 tokens.                                      */
 /* ------------------------------------------------------------------ */
 
 :root {
@@ -111,57 +109,19 @@
   color-scheme: light;
 }
 
-[data-theme="dark"] {
-  --bg: #14110e;
-  --bg-raised: #1e1a15;
-  --bg-sunken: #100e0b;
-  --bg-inset: #262019;
-
-  --fg: #f2e8d8;
-  --fg-soft: #c2b5a1;
-  --fg-faint: #9a8d7d;
-
-  --line: #362e24;
-  --line-strong: #4a4034;
-  --outline: #84745c;
-  --outline-soft: #6a5c4a;
-
-  --accent: #dd7266;
-  --accent-fg: #40100c;
-  --accent-container: #4d1a15;
-  --accent-on-container: #ffd9d2;
-
-  --state-hover: 0.1;
-  --state-focus: 0.12;
-  --state-press: 0.16;
-
-  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.5), 0 10px 30px -14px rgb(0 0 0 / 0.8);
-  --shadow-lift: 0 2px 8px rgb(0 0 0 / 0.55), 0 24px 50px -22px rgb(0 0 0 / 0.9);
-  --shadow-menu: 0 2px 6px rgb(0 0 0 / 0.6), 0 14px 32px -10px rgb(0 0 0 / 0.85);
-
-  color-scheme: dark;
-}
-
 /*
   How much of a facet's own colour survives into the ink drawn with it.
 
   The palette's colours are mid-tones — sea green, tulsi, laterite — chosen
-  against paper. Drawn at the same strength on a near-black page they land
-  around 2.5:1 and the gotra card's link stops being readable. So the mix is a
-  variable: on paper the colour dominates, in the dark the foreground does and
-  the colour survives as a tint. One number, and every medallion, mark,
-  monogram and facet link follows it.
+  against paper, so the mix is a variable rather than the raw colour: at full
+  strength a fill this pale would not clear 3:1 against paper for a border,
+  and text this saturated would not clear 4.5:1 against paper for body copy.
+  One number, and every medallion, mark, monogram and facet link follows it.
 */
 :root {
   --facet-ink: 76%;
   --facet-fill: 13%;
   --facet-edge: 30%;
-}
-
-[data-theme="dark"] {
-  --facet-ink: 38%;
-  --facet-fill: 22%;
-  --facet-edge: 40%;
 }
 
 /* Material 3 shape scale — one set of radii, used everywhere. */
@@ -245,10 +205,6 @@
   :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
-  }
-
-  [data-theme="dark"] :focus-visible {
-    outline-color: var(--accent);
   }
 
   /* Anything focusable inside a filled accent surface needs the ring to
@@ -830,12 +786,6 @@
     font-weight: 600;
   }
 
-  [data-theme="dark"] .chip-gotra,
-  [data-theme="dark"] .chip-math,
-  [data-theme="dark"] .chip-mool {
-    color: var(--fg-soft);
-  }
-
   /* ---------------------------------------------------------------- */
   /* Type helpers                                                      */
   /* ---------------------------------------------------------------- */
@@ -972,7 +922,7 @@
     overflow: hidden;
     pointer-events: none;
     color: var(--accent);
-    opacity: 0.13;
+    opacity: 0.085;
     -webkit-mask-image: radial-gradient(
       ellipse 68% 78% at 50% 46%,
       #000 30%,
@@ -983,10 +933,6 @@
       #000 30%,
       transparent 78%
     );
-  }
-
-  [data-theme="dark"] .mandala-bed {
-    opacity: 0.2;
   }
 
   /* The mandala turns slowly enough that you only notice it if you stop
@@ -1352,6 +1298,18 @@ body:has(.tree-route) {
 }
 
 body:has(.tree-route) > footer {
+  display: none;
+}
+
+/*
+  The maintainer section has its own nav (AdminNav, with its own sign-out and
+  its own links) nested inside the page. Without this an admin page carries
+  the public site header — logo, search, the six public nav links, a
+  "Contribute" call to action, the demo-data banner — stacked directly above
+  the tools an admin actually came to use, and two landmark navs on one page.
+*/
+body:has(.admin-route) > header,
+body:has(.admin-route) > footer {
   display: none;
 }
 

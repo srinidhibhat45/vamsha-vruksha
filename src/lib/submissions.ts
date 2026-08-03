@@ -69,7 +69,9 @@ export function readSubmissions(): Submission[] {
 
 export function updateSubmission(
   id: string,
-  changes: Partial<Pick<Submission, "status" | "reviewerNote">>,
+  changes: Partial<
+    Pick<Submission, "status" | "reviewerNote" | "appliedTo" | "appliedAt">
+  >,
 ): Submission | null {
   const existing = readSubmissions().find((s) => s.id === id);
   if (!existing) return null;
@@ -83,30 +85,43 @@ export function updateSubmission(
   return updated;
 }
 
-export function queueCounts() {
-  const all = readSubmissions();
-  return {
-    pending: all.filter((s) => s.status === "pending").length,
-    approved: all.filter((s) => s.status === "approved").length,
-    rejected: all.filter((s) => s.status === "rejected").length,
-    total: all.length,
-  };
+export function getSubmission(id: string): Submission | null {
+  return readSubmissions().find((s) => s.id === id) ?? null;
 }
 
 /**
- * Simple shared-secret gate for the review queue.
+ * Every version of a submission, oldest first.
  *
- * The archive has no user accounts by design — everything readable is public
- * and contributing needs no login. Moderation is the one action that must not
- * be open, so it sits behind a secret held by whoever maintains the archive.
- * If the variable is unset the queue is refused outright rather than left open.
+ * The queue file is a log and `readSubmissions` is its projection; this reads
+ * the log itself. It is what lets the review screen show that a record was
+ * sent back for changes on Tuesday and approved on Friday, rather than only
+ * its current state.
  */
-export function isReviewer(token: string | null | undefined): boolean {
-  const secret = process.env.ARCHIVE_REVIEW_KEY;
-  if (!secret) return false;
-  if (!token) return false;
-  const a = Buffer.from(token);
-  const b = Buffer.from(secret);
-  if (a.length !== b.length) return false;
-  return crypto.timingSafeEqual(a, b);
+export function submissionHistory(id: string): Submission[] {
+  if (!fs.existsSync(QUEUE_FILE)) return [];
+  const out: Submission[] = [];
+  for (const line of fs.readFileSync(QUEUE_FILE, "utf8").split("\n")) {
+    if (!line) continue;
+    try {
+      const record = JSON.parse(line) as Submission;
+      if (record.id === id) out.push(record);
+    } catch {
+      /* skip a truncated line */
+    }
+  }
+  return out;
+}
+
+export function queueCounts() {
+  const all = readSubmissions();
+  const count = (status: Submission["status"]) =>
+    all.filter((s) => s.status === status).length;
+  return {
+    pending: count("pending"),
+    changesRequested: count("changes-requested"),
+    approved: count("approved"),
+    rejected: count("rejected"),
+    merged: count("merged"),
+    total: all.length,
+  };
 }

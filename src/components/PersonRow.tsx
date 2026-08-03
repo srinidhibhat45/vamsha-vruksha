@@ -10,42 +10,36 @@ import {
 import type { Person } from "@/lib/types";
 
 /**
- * One person, as a card in a list of results.
+ * One person, as a row in a list of results.
  *
- * The problem this replaces: the four lineage facts were rendered as four
- * same-weight coloured pills in a row. Colour was the only thing separating
- * "Kaundinya gotra" from "Shri Mangesh" from "Kushasthali", the words were
- * 11px, and a reader who does not already know which of those is a deity and
- * which is a village had no way to find out. Four pills also read as four
- * tags of the same kind, which they are not.
+ * ------------------------------------------------------------------
+ * The layout, and why it is a grid rather than a stack.
  *
- * So the facts are now a labelled grid. The field name is above its value,
- * the value is set at reading size, and the colour is a supporting cue rather
- * than the whole signal. It costs two lines of height and returns the ability
- * to scan a column of results for a village.
+ * A result carries two unrelated kinds of fact: who this is — name, dates,
+ * which family, what they were remembered for — and where they sit in the
+ * lineage system — gotra, village, kuladevata, matha. Stacked one under the
+ * other in a single column they read as one undifferentiated spill of text,
+ * and nothing in the twenty rows below lines up with anything in this one.
  *
- * Ordering is deliberate: name, then when, then which family, then the four
- * fields that reconnect branches, then how well attested. That is the order a
- * reader checks them in.
+ * So the row is a grid: identity on the left, the four lineage coordinates in
+ * a fixed column on the right behind a hairline, in the same place in every
+ * row. That is what makes a column of results scannable — you can run your
+ * eye down "Mool village" alone and never read a name. Below `lg` the right
+ * column drops underneath, still on its own grid.
+ *
+ * The four facts used to be four coloured pills, then four colour-barred
+ * values. Both made colour do work that the field name does better and
+ * neither survived being repeated twenty times down a page. The field name
+ * is now the only label the value needs.
+ * ------------------------------------------------------------------
  */
-
-const FIELD_TONE: Record<string, string> = {
-  Gotra: "var(--color-samudra)",
-  "Mool village": "var(--color-tulsi)",
-  Kuladevata: "var(--accent)",
-  Matha: "var(--color-laterite)",
-};
 
 function Fact({ label, value }: { label: string; value?: string }) {
   if (!value) return null;
   return (
     <div className="min-w-0">
       <dt className="fact-label">{label}</dt>
-      <dd
-        className="fact-value truncate border-l-2 pl-2"
-        style={{ borderColor: FIELD_TONE[label] ?? "var(--line-strong)" }}
-        title={value}
-      >
+      <dd className="mt-0.5 truncate text-[0.875rem] leading-snug" title={value}>
         {value}
       </dd>
     </div>
@@ -117,11 +111,14 @@ export function PersonRow({
         ? "var(--color-gold)"
         : undefined;
 
+  const subtitle = person.epithet ?? note;
+
   return (
     <Link
       href={`/person/${person.id}`}
-      className="group flex gap-4 border-b border-[var(--line)] px-4 py-4 transition-colors last:border-0 hover:bg-[var(--bg-sunken)] focus-visible:bg-[var(--bg-sunken)]"
+      className="group grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-4 border-b border-[var(--line)] px-5 py-5 transition-colors last:border-0 hover:bg-[var(--bg-sunken)] focus-visible:bg-[var(--bg-sunken)] lg:grid-cols-[auto_minmax(0,1fr)_minmax(0,21rem)] lg:gap-x-6"
     >
+      {/* Monogram ---------------------------------------------------- */}
       <span
         className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[0.85rem] font-semibold"
         style={{
@@ -134,13 +131,13 @@ export function PersonRow({
         {initials(person)}
       </span>
 
-      <span className="min-w-0 flex-1">
-        {/* Name and dates ------------------------------------------- */}
+      {/* Who ---------------------------------------------------------- */}
+      <span className="min-w-0">
         <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <span className="font-display text-[1.25rem] font-medium leading-snug group-hover:text-[var(--accent)]">
+          <span className="font-display text-[1.2rem] font-medium leading-snug group-hover:text-[var(--accent)]">
             {fullName(person)}
           </span>
-          <span className="text-[0.9rem] tabular-nums text-[var(--fg-soft)]">
+          <span className="text-[0.875rem] tabular-nums text-[var(--fg-soft)]">
             {years}
           </span>
           {person.status === "living" && (
@@ -148,33 +145,22 @@ export function PersonRow({
           )}
         </span>
 
-        {/* Which family, and what they were known for ---------------- */}
-        {(lineageLabel || person.epithet || note) && (
-          <span className="mt-1 block text-[0.9rem] leading-relaxed text-[var(--fg-soft)]">
-            {lineageLabel && <span>{lineageLabel}</span>}
-            {lineageLabel && (person.epithet || note) && (
+        {(lineageLabel || subtitle) && (
+          <span className="mt-1.5 block text-[0.875rem] leading-relaxed text-[var(--fg-soft)]">
+            {lineageLabel}
+            {lineageLabel && subtitle && (
               <span className="text-[var(--fg-faint)]"> — </span>
             )}
-            {(person.epithet || note) && (
-              <em className="not-italic">{person.epithet ?? note}</em>
-            )}
+            {subtitle}
           </span>
         )}
 
-        {/* The four fields that reconnect branches ------------------- */}
-        {facts.length > 0 && (
-          <dl className="mt-3 grid grid-cols-2 gap-x-5 gap-y-2.5 sm:grid-cols-4">
-            {facts.map((f) => (
-              <Fact key={f.label} label={f.label} value={f.value} />
-            ))}
-          </dl>
-        )}
-
-        {/* Provenance ------------------------------------------------ */}
-        <span className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.8rem] text-[var(--fg-faint)]">
+        {/* Provenance, and what they did. The two things that qualify a
+            record rather than locate it. */}
+        <span className="mt-2.5 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[0.8rem] text-[var(--fg-faint)]">
           <span className="inline-flex items-center gap-1.5">
             <span
-              className="inline-block h-2.5 w-2.5 rounded-full"
+              className="inline-block h-2 w-2 rounded-full"
               style={{
                 background: confidenceTone ?? "transparent",
                 border: confidenceTone ? "none" : "1px solid currentColor",
@@ -183,9 +169,23 @@ export function PersonRow({
             />
             {CONFIDENCE_LABEL[person.confidence]}
           </span>
-          {person.occupations?.[0] && <span>{person.occupations[0]}</span>}
+          {person.occupations?.[0] && (
+            <>
+              <span aria-hidden>·</span>
+              <span>{person.occupations[0]}</span>
+            </>
+          )}
         </span>
       </span>
+
+      {/* Where they sit in the lineage system -------------------------- */}
+      {facts.length > 0 && (
+        <dl className="col-start-2 grid grid-cols-2 gap-x-5 gap-y-3 border-t border-[var(--line)] pt-3.5 lg:col-start-3 lg:mt-0.5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
+          {facts.map((f) => (
+            <Fact key={f.label} label={f.label} value={f.value} />
+          ))}
+        </dl>
+      )}
     </Link>
   );
 }

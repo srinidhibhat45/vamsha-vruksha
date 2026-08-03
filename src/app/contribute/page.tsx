@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { fullName, getArchive } from "@/lib/archive";
-import { ContributeForm, type ContributeRefs } from "@/components/ContributeForm";
+import { buildRefs } from "@/lib/refs";
+import { ContributeForm } from "@/components/ContributeForm";
 import { Vrindavan } from "@/components/Ornament";
 
 export const metadata: Metadata = {
@@ -19,31 +20,8 @@ export default async function ContributePage({
   const params = await searchParams;
   const archive = getArchive();
 
-  const refs: ContributeRefs = {
-    gotras: [...archive.gotras.values()].map((g) => ({
-      id: g.id,
-      label: g.name,
-    })),
-    maths: [...archive.maths.values()].map((m) => ({ id: m.id, label: m.name })),
-    communities: [...archive.communities.values()].map((c) => ({
-      id: c.id,
-      label: c.name,
-    })),
-    kuladevatas: [...archive.kuladevatas.values()].map((k) => ({
-      id: k.id,
-      label: k.name,
-    })),
-    places: [...archive.places.values()].map((p) => ({
-      id: p.id,
-      label: p.region ? `${p.name} — ${p.region}` : `${p.name}${p.country && p.country !== "India" ? `, ${p.country}` : ""}`,
-    })),
-    moolPlaces: [...archive.places.values()]
-      .filter((p) => p.kind === "mool" || p.kind === "settlement")
-      .map((p) => ({
-        id: p.id,
-        label: p.region ? `${p.name} — ${p.region}` : p.name,
-      })),
-  };
+  // Shared with the maintainer's editor, so both offer the same vocabularies.
+  const refs = buildRefs();
 
   const target = params.correct ? archive.people.get(params.correct) : undefined;
 

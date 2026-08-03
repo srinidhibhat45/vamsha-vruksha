@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -74,15 +75,14 @@ export function HeroSearch({
       >
         <span id="hero-examples-label">Try</span>
         {examples.map((ex) => (
-          <button
+          <Link
             key={ex}
-            type="button"
-            onClick={() => router.push(`/search?q=${encodeURIComponent(ex)}`)}
+            href={`/search?q=${encodeURIComponent(ex)}`}
             aria-describedby="hero-examples-label"
             className="chip chip-sm"
           >
             {ex}
-          </button>
+          </Link>
         ))}
       </div>
     </div>

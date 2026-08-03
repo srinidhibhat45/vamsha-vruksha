@@ -29,28 +29,12 @@ export function SiteHeader({
   const [results, setResults] = useState<Suggestion[]>([]);
   const [active, setActive] = useState(0);
   const [showResults, setShowResults] = useState(false);
-  const [dark, setDark] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
 
   const uid = useId();
   const listboxId = `${uid}-suggestions`;
   const menuId = `${uid}-menu`;
-
-  useEffect(() => {
-    setDark(document.documentElement.getAttribute("data-theme") === "dark");
-  }, []);
-
-  const toggleTheme = () => {
-    const next = dark ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", next);
-    try {
-      localStorage.setItem("vv-theme", next);
-    } catch {
-      /* private browsing — the choice just will not persist */
-    }
-    setDark(!dark);
-  };
 
   // Cmd/Ctrl-K focuses search from anywhere.
   useEffect(() => {
@@ -253,13 +237,13 @@ export function SiteHeader({
               ))}
             </ul>
             <div className="mt-1 border-t border-[var(--line)] pt-1">
-              <button
-                type="button"
+              <Link
+                href={`/search?q=${encodeURIComponent(query)}`}
                 onClick={() => go(`/search?q=${encodeURIComponent(query)}`)}
                 className="menu-item text-[var(--accent)]"
               >
                 See all results for “{query}”
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -291,24 +275,6 @@ export function SiteHeader({
         >
           Contribute
         </Link>
-
-        <button
-          type="button"
-          onClick={toggleTheme}
-          aria-pressed={dark}
-          aria-label="Dark theme"
-          className="btn btn-text btn-icon btn-sm shrink-0 text-[var(--fg-soft)]"
-        >
-          {dark ? (
-            <svg viewBox="0 0 20 20" className="h-[18px] w-[18px]" fill="currentColor" aria-hidden="true">
-              <path d="M10 3.5a1 1 0 0 1 1 1V5a1 1 0 1 1-2 0v-.5a1 1 0 0 1 1-1Zm0 11a1 1 0 0 1 1 1v.5a1 1 0 1 1-2 0V15a1 1 0 0 1 1-1Zm6.5-4.5a1 1 0 0 1-1 1H15a1 1 0 1 1 0-2h.5a1 1 0 0 1 1 1Zm-11 0a1 1 0 0 1-1 1H4a1 1 0 1 1 0-2h.5a1 1 0 0 1 1 1Zm8.9-4.4a1 1 0 0 1 0 1.4l-.35.36a1 1 0 0 1-1.42-1.42l.36-.35a1 1 0 0 1 1.41 0ZM6.37 12.63a1 1 0 0 1 0 1.41l-.36.36a1 1 0 0 1-1.41-1.42l.35-.35a1 1 0 0 1 1.42 0Zm8.03 1.41a1 1 0 0 1-1.42 0l-.35-.35a1 1 0 0 1 1.41-1.42l.36.36a1 1 0 0 1 0 1.41ZM6.37 7.37a1 1 0 0 1-1.42 0l-.35-.36A1 1 0 0 1 6.01 5.6l.36.35a1 1 0 0 1 0 1.42ZM10 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 20 20" className="h-[18px] w-[18px]" fill="currentColor" aria-hidden="true">
-              <path d="M8.4 2.6a7.5 7.5 0 1 0 9 9 6 6 0 1 1-9-9Z" />
-            </svg>
-          )}
-        </button>
 
         <button
           type="button"

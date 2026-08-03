@@ -29,7 +29,7 @@ npm run dev           # http://localhost:3000
 | `/relate` | How any two people are related, in English and Konkani |
 | `/diaspora` | Where the community went, by generation |
 | `/contribute` | Submission form — no account needed |
-| `/admin?key=…` | Moderation queue, behind a shared secret |
+| `/admin` | Maintainer tools: review queue and record editing, behind a sign-in |
 | `/about` | Method, biases, privacy, glossary |
 
 ---
@@ -117,15 +117,33 @@ concurrent writes cannot corrupt each other. Nothing is published automatically.
 > parent link that quietly rewrites three hundred people's ancestry and is
 > believed because it is written down.
 
-Review at `/admin?key=…`, gated by `ARCHIVE_REVIEW_KEY` (see
-`.env.local.example`). If the variable is unset the queue refuses everyone
-rather than opening up. Promotion from an approved submission into
-`data/people/` is deliberately a manual commit: git is the provenance log, and a
-commit with a human name on it is worth more than an automated write.
+Review at `/admin`, behind a single maintainer sign-in. There is one account,
+set with `ADMIN_USERNAME` and `ADMIN_PASSWORD` (see `.env.local.example`); unset,
+it falls back to `admin` / `admin`, which is fine on a laptop and unacceptable
+anywhere else. The session is a signed, HttpOnly cookie — `src/lib/adminAuth.ts`.
+
+A reviewer can approve, decline, or **ask for changes**, which is the one most
+queues lack. Most submissions are neither right nor wrong: they are a real
+family memory with a date nobody can place, and the only useful reply is to ask.
+
+Approving writes the record into `data/people/` and it is live at once. Commit
+afterwards — git is still the provenance log, and a commit with a human name on
+it is worth more than an automated write.
+
+Beyond the queue, `/admin/people` is the full record editor: add, correct,
+remove, and mark someone deceased. Two rules there are worth knowing:
+
+- A field cleared in the editor is cleared on the record — that is how a wrong
+  gotra gets retracted. A field left out of a *submission* is ignored instead,
+  so a contributor fixing a death year cannot blank a gotra by not retyping it.
+- Deleting a person repairs every reference to them first. A dangling `fatherId`
+  is worse than a missing record: the tree draws an edge to someone who is not
+  there, and the lineage silently splits in two. The confirmation says how many
+  links will be cut before you agree to it.
 
 **Deploying to a serverless host** with an ephemeral filesystem means replacing
-the two write functions in `src/lib/submissions.ts` with a database or
-object-store call. Nothing else in the app touches the queue.
+the write functions in `src/lib/submissions.ts` and `src/lib/peopleStore.ts`
+with a database or object-store call. Nothing else in the app writes.
 
 ---
 
@@ -140,7 +158,9 @@ and CORS-free by default:
 | `GET /api/tree?lineage=L0001` | A whole lineage subgraph — people, unions, parentage |
 | `GET /api/relate?a=&b=` | The relationship between two people, with Konkani terms |
 | `POST /api/submit` | Contribute a record (goes to the moderation queue) |
-| `POST /api/admin` | Change a submission's status — requires `ARCHIVE_REVIEW_KEY` |
+
+The endpoints under `/api/admin/*` are not on this list. They require the
+maintainer session and they write to disk.
 
 ---
 

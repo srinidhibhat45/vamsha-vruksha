@@ -112,7 +112,12 @@ export default function LineagesPage() {
                   </Link>
                 ))}
                 {l.surnames.length > 4 && (
-                  <span className="chip chip-sm">+{l.surnames.length - 4}</span>
+                  <span
+                    className="chip chip-sm"
+                    aria-label={`${l.surnames.length - 4} more surnames`}
+                  >
+                    +{l.surnames.length - 4}
+                  </span>
                 )}
               </div>
 
