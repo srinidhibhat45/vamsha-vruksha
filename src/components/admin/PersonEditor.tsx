@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { PersonPicker, type PickedPerson } from "../PersonPicker";
 import { Select } from "../ui/Select";
 import type { ContributeRefs } from "../ContributeForm";
@@ -401,9 +401,34 @@ export function PersonEditor({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [issues, setIssues] = useState<{ path: string; message: string }[]>([]);
+  // Every field on this form writes straight to disk on save, and there is
+  // no autosave and no draft — so a record with a dozen fields filled in that
+  // gets lost to a stray click is gone, not recoverable. `dirty` is the flag
+  // that stands between "edited" and "actually saved".
+  const [dirty, setDirty] = useState(false);
 
-  const set = <K extends keyof EditorPerson>(key: K, value: EditorPerson[K]) =>
+  const set = <K extends keyof EditorPerson>(key: K, value: EditorPerson[K]) => {
+    setDirty(true);
     setF((prev) => ({ ...prev, [key]: value }));
+  };
+
+  // Covers closing the tab, reloading, or typing a new address — the ways of
+  // leaving this page that a client-side route change cannot intercept.
+  useEffect(() => {
+    if (!dirty) return;
+    const onBeforeUnload = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", onBeforeUnload);
+    return () => window.removeEventListener("beforeunload", onBeforeUnload);
+  }, [dirty]);
+
+  const leaveIfConfirmed = () => {
+    if (!dirty || window.confirm("Discard the changes you made to this record?")) {
+      router.push("/admin/people");
+    }
+  };
 
   const options = (items: { id: string; label: string }[], empty: string) => [
     { value: "", label: empty },
@@ -439,6 +464,7 @@ export function PersonEditor({
         return;
       }
 
+      setDirty(false);
       router.push("/admin/people");
       router.refresh();
     } catch {
@@ -710,9 +736,9 @@ export function PersonEditor({
         <button type="submit" className="btn btn-filled" disabled={busy}>
           {busy ? "Saving…" : personId ? "Save changes" : "Add the record"}
         </button>
-        <Link href="/admin/people" className="btn btn-text">
+        <button type="button" className="btn btn-text" onClick={leaveIfConfirmed}>
           Cancel
-        </Link>
+        </button>
         {personId && (
           <Link
             href={`/person/${personId}`}

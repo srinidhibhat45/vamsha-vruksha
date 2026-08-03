@@ -527,7 +527,15 @@ export function ContributeForm({
         note="Write the name the way the family says it. Alternative spellings can go in the box below — the search treats Shreenivas and Srinivasa as the same name anyway, but recording both helps a reviewer match records."
       >
         <div className="grid gap-4 sm:grid-cols-3">
-          <Field label="Given name" required>
+          <Field
+            label="Given name"
+            required={!correctTarget}
+            hint={
+              correctTarget
+                ? `Leave this blank — you're already correcting ${correctTarget.name}.`
+                : undefined
+            }
+          >
             {(p) => (
               <input
                 {...p}

@@ -302,7 +302,9 @@ export function ReviewQueue({
   const [filter, setFilter] = useState(initialFilter);
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [flash, setFlash] = useState<string | null>(null);
+  const [flash, setFlash] = useState<{ message: string; personId?: string } | null>(
+    null,
+  );
 
   const act = async (id: string, action: Action, note?: string) => {
     setBusy(id);
@@ -327,11 +329,12 @@ export function ReviewQueue({
 
       setItems((list) => list.map((s) => (s.id === id ? data.submission : s)));
       if (data.person) {
-        setFlash(
-          data.person.created
+        setFlash({
+          message: data.person.created
             ? `Published as a new record — ${data.person.id}`
             : `Applied to ${data.person.id}`,
-        );
+          personId: data.person.id,
+        });
       }
       // The queue badge in the nav is rendered on the server.
       router.refresh();
@@ -369,7 +372,30 @@ export function ReviewQueue({
             {error}
           </p>
         )}
-        {flash && <p className="text-[0.92rem] text-[var(--fg-soft)]">{flash}</p>}
+        {flash && (
+          <p className="text-[0.92rem] text-[var(--fg-soft)]">
+            {flash.message}
+            {flash.personId && (
+              <>
+                {" — "}
+                <Link
+                  href={`/admin/people/${encodeURIComponent(flash.personId)}`}
+                  className="link-underline font-medium"
+                >
+                  edit
+                </Link>
+                {" · "}
+                <Link
+                  href={`/person/${encodeURIComponent(flash.personId)}`}
+                  className="link-underline font-medium"
+                  target="_blank"
+                >
+                  view on the site
+                </Link>
+              </>
+            )}
+          </p>
+        )}
       </div>
 
       {shown.length === 0 ? (

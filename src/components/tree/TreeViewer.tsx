@@ -86,6 +86,9 @@ export function TreeViewer({
     moved: boolean;
   } | null>(null);
   const pinchRef = useRef<{ dist: number; k: number } | null>(null);
+  // Active touch/pen/mouse contacts, keyed by pointerId. A second concurrent
+  // pointer is what turns a drag into a pinch — see onPointerDown below.
+  const pointersRef = useRef<Map<number, { x: number; y: number }>>(new Map());
 
   /* ---------------------------------------------------------------- */
   /* Layout                                                            */
@@ -275,12 +278,14 @@ export function TreeViewer({
   /* Pointer interaction                                               */
   /* ---------------------------------------------------------------- */
 
-  const onPointerDown = (e: React.PointerEvent) => {
-    if (e.button !== 0) return;
-    (e.target as Element).setPointerCapture?.(e.pointerId);
+  // Starts a one-finger/mouse drag from the given point, against the
+  // transform as it stands right now. Pulled out so a pinch that ends with
+  // one finger still on the glass can drop straight back into a pan instead
+  // of stopping dead.
+  const startDrag = (x: number, y: number) => {
     dragRef.current = {
-      startX: e.clientX,
-      startY: e.clientY,
+      startX: x,
+      startY: y,
       origX: transform.x,
       origY: transform.y,
       moved: false,
@@ -288,7 +293,58 @@ export function TreeViewer({
     setPanning(true);
   };
 
+  const onPointerDown = (e: React.PointerEvent) => {
+    if (e.button !== 0 && e.pointerType === "mouse") return;
+    (e.target as Element).setPointerCapture?.(e.pointerId);
+    pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+    if (pointersRef.current.size >= 2) {
+      // A second touch has landed: this is a pinch, not a pan. Drop any pan
+      // in progress and record the starting spread so onPointerMove has a
+      // baseline to scale against.
+      dragRef.current = null;
+      setPanning(false);
+      const [p1, p2] = [...pointersRef.current.values()];
+      pinchRef.current = {
+        dist: Math.hypot(p1.x - p2.x, p1.y - p2.y),
+        k: transform.k,
+      };
+      return;
+    }
+
+    startDrag(e.clientX, e.clientY);
+  };
+
   const onPointerMove = (e: React.PointerEvent) => {
+    if (pointersRef.current.has(e.pointerId)) {
+      pointersRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    }
+
+    if (pointersRef.current.size >= 2 && pinchRef.current) {
+      const [p1, p2] = [...pointersRef.current.values()];
+      const rect = wrapRef.current?.getBoundingClientRect();
+      const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+      if (rect && pinchRef.current.dist > 0 && dist > 0) {
+        const midX = (p1.x + p2.x) / 2 - rect.left;
+        const midY = (p1.y + p2.y) / 2 - rect.top;
+        const k = Math.min(
+          MAX_ZOOM,
+          Math.max(MIN_ZOOM, pinchRef.current.k * (dist / pinchRef.current.dist)),
+        );
+        setTransform((t) => {
+          const scale = k / t.k;
+          // Keep the midpoint between the two fingers fixed, the same way a
+          // wheel-zoom keeps the point under the cursor fixed.
+          return {
+            k,
+            x: midX - (midX - t.x) * scale,
+            y: midY - (midY - t.y) * scale,
+          };
+        });
+      }
+      return;
+    }
+
     const d = dragRef.current;
     if (!d) return;
     const dx = e.clientX - d.startX;
@@ -297,10 +353,33 @@ export function TreeViewer({
     setTransform((t) => ({ ...t, x: d.origX + dx, y: d.origY + dy }));
   };
 
-  const endDrag = () => {
+  const endDrag = (e?: React.PointerEvent) => {
+    if (e) pointersRef.current.delete(e.pointerId);
+
+    if (pointersRef.current.size >= 2) {
+      // Still pinching on the remaining fingers — re-baseline rather than
+      // stopping, so lifting a third finger (or a stray palm contact) does
+      // not interrupt the gesture.
+      const [p1, p2] = [...pointersRef.current.values()];
+      pinchRef.current = {
+        dist: Math.hypot(p1.x - p2.x, p1.y - p2.y),
+        k: transform.k,
+      };
+      return;
+    }
+
+    pinchRef.current = null;
+
+    if (pointersRef.current.size === 1) {
+      // One finger lifted out of a pinch, one still down: carry on panning
+      // from here rather than leaving the gesture dangling.
+      const [p] = [...pointersRef.current.values()];
+      startDrag(p.x, p.y);
+      return;
+    }
+
     dragRef.current = null;
     setPanning(false);
-    pinchRef.current = null;
   };
 
   const zoomAt = useCallback(

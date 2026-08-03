@@ -115,7 +115,14 @@ export function payloadToPersonInput(
 
   const input: Partial<PersonInput> = {
     name: {
-      given: str(payload, "given") ?? str(payload, "displayName") ?? "",
+      // Left undefined rather than "" when the contributor did not supply
+      // one — a correction submission legitimately omits it (the target is
+      // already named). "" would still be a defined value to the `defined()`
+      // filter below and would blank out the existing person's name on
+      // every correction that does not retype it. A genuinely new person
+      // with no name at all is still caught, because PersonInputSchema
+      // requires `given` and treats a missing key the same as an empty one.
+      given: (str(payload, "given") ?? str(payload, "displayName")) as string,
       surname: str(payload, "surname"),
       patronymic: str(payload, "patronymic"),
       display: str(payload, "displayName"),

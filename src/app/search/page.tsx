@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { getArchive } from "@/lib/archive";
 import { search, type SearchFilters } from "@/lib/search";
 import { PersonRow } from "@/components/PersonRow";
@@ -97,6 +98,15 @@ export default async function SearchPage({
   }).filter((entry): entry is [string, string] => !!entry[1]);
 
   const totalPages = Math.ceil(response.total / PAGE_SIZE);
+
+  // A page number past the end — from a stale bookmark, a shared link, or
+  // the back button after narrowing a filter — used to render the same
+  // "nothing matched, add them" empty state as a genuine zero-result search.
+  // That is actively misleading when matches exist; this sends the reader to
+  // the last real page instead of telling them a real person is not here.
+  if (response.total > 0 && page > totalPages) {
+    redirect(withParam(params, "page", totalPages > 1 ? String(totalPages) : undefined));
+  }
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-10">
