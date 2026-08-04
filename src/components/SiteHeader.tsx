@@ -1,7 +1,7 @@
 "use client";
 
 import { AppLink as Link } from "@/components/AppLink";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { TreeMark } from "./Ornament";
 import type { Suggestion } from "@/lib/search";
@@ -23,6 +23,7 @@ export function SiteHeader({
   sampleOnly: boolean;
 }) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -31,6 +32,26 @@ export function SiteHeader({
   const [showResults, setShowResults] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
+
+  /*
+    On the results page, the box holds what was searched for.
+
+    It used to come up empty there, which made refining a search — the
+    commonest thing a reader does after the first one — mean retyping the name
+    from memory with the results for it still on screen. Only on /search:
+    everywhere else an empty box is right.
+
+    `typing` is what keeps the seeding from firing the type-ahead. Without it
+    the suggestion list would drop open over the results on every page load,
+    offering to navigate to the search that has already happened.
+  */
+  const urlQuery = pathname === "/search" ? (searchParams.get("q") ?? "") : "";
+  const [typing, setTyping] = useState(false);
+  useEffect(() => {
+    setQuery(urlQuery);
+    setTyping(false);
+    setShowResults(false);
+  }, [urlQuery]);
 
   const uid = useId();
   const listboxId = `${uid}-suggestions`;
@@ -62,8 +83,8 @@ export function SiteHeader({
   // "kam" cannot land after the fast one for "kamath".
   useEffect(() => {
     const q = query.trim();
-    if (q.length < 2) {
-      setResults([]);
+    if (!typing || q.length < 2) {
+      if (q.length < 2) setResults([]);
       return;
     }
     const controller = new AbortController();
@@ -85,12 +106,16 @@ export function SiteHeader({
       controller.abort();
       clearTimeout(timer);
     };
-  }, [query]);
+  }, [query, typing]);
 
   const go = useCallback(
     (href: string) => {
       setShowResults(false);
-      setQuery("");
+      setTyping(false);
+      // Not cleared. Navigating to /search?q=… is answered by the seeding
+      // effect above, which puts the query back in the box where the reader
+      // can edit it; clearing here would blank it for a frame and then blank
+      // it again on any page that is not /search — which the effect handles.
       setOpen(false);
       router.push(href);
     },
@@ -164,7 +189,11 @@ export function SiteHeader({
           logo, a search field, a theme toggle and a menu button, and the
           search was the one that lost — squeezed to an empty pill with its
           placeholder clipped, while the menu button ran off the edge. Small
-          screens get search from the hero and from the menu instead.
+          screens get search from the hero and from the menu instead — and the
+          menu really does carry one now, which for a long time it did not:
+          the hero only exists on the home page, so a phone reader looking at
+          a result list, a person or a tree had no search field anywhere on
+          screen and no way to reach one except by going back to the front.
         */}
         <div
           ref={boxRef}
@@ -187,7 +216,10 @@ export function SiteHeader({
             <input
               ref={inputRef}
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => {
+                setTyping(true);
+                setQuery(e.target.value);
+              }}
               onKeyDown={onKeyDown}
               onFocus={() => results.length && setShowResults(true)}
               placeholder="Search a name, surname, gotra or village…"
@@ -303,6 +335,55 @@ export function SiteHeader({
         aria-label="All sections"
         className={`border-t border-[var(--line)] px-4 py-2 xl:hidden ${open ? "" : "hidden"}`}
       >
+        {/*
+          The search the header cannot fit below `md`. A plain form rather than
+          the type-ahead above it: the suggestion list would have to open over
+          the menu that opened it, and one name typed and submitted is what
+          this is for. Hidden from `md` up, where the real search box is back.
+        */}
+        <form
+          role="search"
+          className="mb-2 md:hidden"
+          onSubmit={(e) => {
+            e.preventDefault();
+            const q = query.trim();
+            if (q) go(`/search?q=${encodeURIComponent(q)}`);
+          }}
+        >
+          <div className="field-wrap [--field-lead:2.75rem] [--field-trail:5rem]">
+            <span className="field-lead">
+              <svg
+                viewBox="0 0 20 20"
+                className="h-[18px] w-[18px]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="9" r="6" />
+                <path d="m13.5 13.5 3.5 3.5" strokeLinecap="round" />
+              </svg>
+            </span>
+            <input
+              value={query}
+              onChange={(e) => {
+                setTyping(true);
+                setQuery(e.target.value);
+              }}
+              placeholder="A name, gotra or village…"
+              aria-label="Search the archive"
+              type="search"
+              autoComplete="off"
+              className="field field-round min-h-[44px] text-[0.95rem]"
+            />
+            <span className="field-trail field-trail-interactive">
+              <button type="submit" className="btn btn-filled btn-sm">
+                Search
+              </button>
+            </span>
+          </div>
+        </form>
+
         <ul className="grid grid-cols-2 gap-1 sm:grid-cols-3">
           {[
             ...NAV,

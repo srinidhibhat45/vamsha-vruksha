@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
-import { isAdmin } from "@/lib/adminAuth";
+import { isAdmin, usingDefaultCredentials } from "@/lib/adminAuth";
 import { queueCounts } from "@/lib/submissions";
 import { listPending } from "@/lib/vocabStore";
 import { AdminNav } from "@/components/admin/AdminNav";
+import { LoginForm } from "@/components/admin/LoginForm";
 
 export const metadata: Metadata = {
   title: { default: "Maintainer", template: "%s · Maintainer" },
@@ -23,13 +23,47 @@ export const dynamic = "force-dynamic";
  * This is not the only check. The API routes verify the session again for
  * themselves, because a page guard protects what is rendered and says nothing
  * about what can be posted.
+ *
+ * Signed out, it renders the sign-in form *in place* rather than redirecting.
+ * Redirecting threw away the destination — a maintainer who opened a bookmark
+ * to the review queue, or whose twelve-hour session expired while they were
+ * reading it, was bounced to /admin/login with no `next` and landed on the
+ * overview afterwards, one navigation short of where they had asked to be.
+ * A server layout has no way to read the pathname it is guarding, and the one
+ * mechanism that could tell it — middleware — would put an edge function in
+ * front of every request to a site that is otherwise prerendered. Rendering
+ * the form here needs neither: the URL never changes, so `router.refresh()`
+ * after a successful sign-in re-renders this same page as the real thing.
  */
 export default async function SecureAdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  if (!(await isAdmin())) redirect("/admin/login");
+  if (!(await isAdmin())) {
+    return (
+      <div className="admin-route mx-auto max-w-sm px-4 py-20">
+        <p className="eyebrow">Maintainers</p>
+        <h1 className="mt-2 font-display text-[2rem] font-medium">Sign in</h1>
+        <p className="mt-3 text-[0.95rem] leading-relaxed text-[var(--fg-soft)]">
+          This page is for the people who review what comes in. Sign in and it
+          will open where you left off.
+        </p>
+
+        <LoginForm />
+
+        {usingDefaultCredentials() && (
+          <p className="mt-6 rounded-[var(--shape-md)] bg-[var(--bg-inset)] p-3.5 text-[0.85rem] leading-relaxed text-[var(--fg-soft)]">
+            This deployment is still on the built-in{" "}
+            <code className="font-medium">admin</code> /{" "}
+            <code className="font-medium">admin</code>. Set{" "}
+            <code>ADMIN_USERNAME</code> and <code>ADMIN_PASSWORD</code> in the
+            environment before it faces the public.
+          </p>
+        )}
+      </div>
+    );
+  }
 
   const counts = queueCounts();
   const proposals = listPending().length;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { queueCounts, readSubmissions } from "@/lib/submissions";
+import { targetNames } from "@/lib/submissionTargets";
 import { ReviewQueue } from "@/components/admin/ReviewQueue";
 
 export const metadata: Metadata = { title: "Review queue" };
@@ -36,7 +37,11 @@ export default async function QueuePage({
       </header>
 
       <div className="mt-7">
-        <ReviewQueue submissions={submissions} initialFilter={status ?? "pending"} />
+        <ReviewQueue
+          submissions={submissions}
+          names={targetNames(submissions)}
+          initialFilter={status ?? "pending"}
+        />
       </div>
     </div>
   );

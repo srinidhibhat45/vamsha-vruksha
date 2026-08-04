@@ -1,7 +1,7 @@
 "use client";
 
 import { AppLink as Link } from "@/components/AppLink";
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { PersonPicker, type PickedPerson } from "./PersonPicker";
 import { Select } from "./ui/Select";
 import { MatchHint } from "./MatchHint";
@@ -276,6 +276,34 @@ export function ContributeForm({
     warnings?: string[];
     familyDuplicates?: { key: string; name: string; matches: PossibleMatch[] }[];
   } | null>(null);
+
+  /*
+    Don't let a closed tab take half an hour of typing with it.
+
+    Both maintainer editors have guarded against this from the start, and the
+    contributor is the one who needs it more: a maintainer's record is still on
+    disk after a misclick, while a family drawn out here exists nowhere but in
+    this tab until the button at the bottom is pressed. The browser decides the
+    wording; all a page can do is ask.
+
+    Only once anything has actually been entered, so the ordinary case —
+    opening the form, reading it, leaving — is not interrupted.
+  */
+  const started =
+    family.length > 0 ||
+    !!given.trim() ||
+    !!surname.trim() ||
+    !!bio.trim() ||
+    !!epithet.trim() ||
+    !!message.trim() ||
+    !!photo;
+
+  useEffect(() => {
+    if (!started || done) return;
+    const onBeforeUnload = (e: BeforeUnloadEvent) => e.preventDefault();
+    window.addEventListener("beforeunload", onBeforeUnload);
+    return () => window.removeEventListener("beforeunload", onBeforeUnload);
+  }, [started, done]);
 
   /* --------------------------------------------------------------- */
   /* Who a correction or a story targets, and the payload each kind    */
@@ -575,24 +603,54 @@ export function ContributeForm({
         )}
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
+          {/*
+            Everything about the person just sent, cleared. Everything about
+            the *family* and about you, kept — somebody entering four siblings
+            should not retype the gotra, the village and their own name four
+            times, and that is the whole reason this button exists.
+
+            The list used to stop short: a photograph, the Devanagari spelling,
+            the other spellings, the occupations, the note to the reviewer and
+            a whole drafted family all survived the reset. So the second
+            submission went off carrying the first one's photograph — a picture
+            of one man's grandmother filed against another man's grandfather,
+            with nothing on either screen to show it had happened.
+          */}
           <button
             type="button"
             onClick={() => {
               setDone(null);
+              // The person.
               setGiven("");
               setPatronymic("");
               setSurname("");
+              setDevanagari("");
+              setAka("");
+              setGender("");
+              setLiving("");
               setBirthYear("");
+              setBirthNote("");
+              setBirthPlace("");
               setDeathYear("");
-              setBio("");
+              setDeathPlace("");
+              setOccupations("");
+              setResidences("");
               setEpithet("");
+              setBio("");
+              setPhoto(null);
+              // Who they were attached to.
               setFather(null);
               setMother(null);
               setSpouse(null);
+              setMarriageYear("");
               setCorrectionTarget(null);
               setStoryTarget(null);
               setRelChild(null);
               setRelPersonA(null);
+              setFamily([]);
+              // What the last claim rested on, and the note that explained it.
+              setSources([{ kind: "oral", title: "", detail: "" }]);
+              setMessage("");
             }}
             className="btn btn-filled"
           >

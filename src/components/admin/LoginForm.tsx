@@ -3,7 +3,12 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function LoginForm({ next }: { next: string }) {
+/**
+ * `next` is where to go after signing in. Omitted, the form stays on the
+ * current URL and simply refreshes it — which is what the secure layout wants,
+ * because the URL the reader asked for is already the right destination.
+ */
+export function LoginForm({ next }: { next?: string }) {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -26,9 +31,12 @@ export function LoginForm({ next }: { next: string }) {
         setPassword("");
         return;
       }
-      router.replace(next);
+      if (next) router.replace(next);
       // The guard runs on the server, so the cached tree has to be dropped or
-      // the redirect lands back on the login page it just came from.
+      // the redirect lands back on the login page it just came from. With no
+      // `next`, this refresh is the whole navigation: the current URL is a
+      // guarded admin page rendering its sign-in form, and re-rendering it
+      // with a session in hand turns it into the page itself.
       router.refresh();
     } catch {
       setError("Could not reach the server");

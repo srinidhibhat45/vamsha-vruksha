@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { Archivo, Newsreader, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -86,10 +87,22 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <SiteHeader
-          totalPeople={archive.stats.people}
-          sampleOnly={archive.sampleOnly}
-        />
+        {/*
+          The header reads the query string, so that the search box on
+          /search holds what was searched for rather than coming up empty.
+          useSearchParams() opts its subtree out of prerendering, and without
+          this boundary that subtree would be the root layout — which is to
+          say every page on the site, including the hundreds that are static
+          files on a CDN today. The boundary keeps the deopt where it belongs:
+          the header still prerenders, and the one value it cannot know until
+          the browser has a URL arrives on hydration.
+        */}
+        <Suspense>
+          <SiteHeader
+            totalPeople={archive.stats.people}
+            sampleOnly={archive.sampleOnly}
+          />
+        </Suspense>
         <main id="main" className="flex-1">
           {children}
         </main>

@@ -6,6 +6,7 @@ import { useState } from "react";
 import { formatTimestamp } from "@/lib/datetime";
 import { FamilyCanvas } from "../family/FamilyCanvas";
 import { checkDraft, describeDraft, displayOf } from "@/lib/family";
+import { submissionTitle } from "@/lib/submissionTitle";
 import { isProposedRef, proposedLabel } from "@/lib/vocabulary";
 import type {
   DraftPerson,
@@ -218,10 +219,6 @@ function FamilySubmission({ draft }: { draft: FamilyDraft }) {
  * a shared vocabulary — so it says so rather than arriving as an id-shaped
  * string with a prefix on it.
  */
-function sentenceCase(text: string): string {
-  return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
 function vocab(value: string | undefined): string | undefined {
   if (!value) return undefined;
   return isProposedRef(value) ? `${proposedLabel(value)} — proposed, not yet in the list` : value;
@@ -320,10 +317,13 @@ function DraftFacts({
 
 function Card({
   submission,
+  targetName,
   onAct,
   busy,
 }: {
   submission: Submission;
+  /** Display name of the record this submission is about, when it has one. */
+  targetName?: string;
   onAct: (id: string, action: Action, note?: string) => void;
   busy: boolean;
 }) {
@@ -352,13 +352,7 @@ function Card({
           </div>
 
           <h2 className="mt-2.5 font-display text-[1.3rem] font-medium">
-            {family
-              ? `${displayOf(family.people[0]) || sentenceCase(describeDraft(family.people[0], family.people))}${
-                  family.people.length > 1
-                    ? ` and ${family.people.length - 1} more`
-                    : ""
-                }`
-              : String(s.payload.displayName ?? "(no name given)")}
+            {submissionTitle(s, targetName)}
           </h2>
 
           <p className="mt-0.5 text-[0.88rem] text-[var(--fg-soft)]">
@@ -371,7 +365,7 @@ function Card({
             <p className="mt-1.5 text-[0.88rem]">
               about{" "}
               <Link href={`/person/${s.targetId}`} className="link-underline">
-                {s.targetId}
+                {targetName ?? s.targetId}
               </Link>{" "}
               ·{" "}
               <Link
@@ -421,6 +415,24 @@ function Card({
                 className="btn btn-outlined btn-sm"
               >
                 Ask for changes
+              </button>
+              {/*
+                The queue has always filtered on "Accepted" and the API has
+                always understood accept-only, but nothing on this screen could
+                produce one — so the chip sat at zero forever. It is the right
+                answer often enough to be worth a button: the submission is
+                good, and the maintainer would rather write it into
+                data/people/ by hand and commit it under their own name, which
+                is exactly what the note at the top of this page asks for.
+              */}
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => onAct(s.id, "accept-only", note || undefined)}
+                className="btn btn-text btn-sm"
+                title="Mark it accepted without writing it into data/people/ — for when you would rather make the change and the commit yourself."
+              >
+                Accept, don&rsquo;t publish
               </button>
               <button
                 type="button"
@@ -510,9 +522,12 @@ function Card({
 
 export function ReviewQueue({
   submissions,
+  names = {},
   initialFilter = "pending",
 }: {
   submissions: Submission[];
+  /** targetId → display name, resolved on the server. See lib/submissionTargets. */
+  names?: Record<string, string>;
   initialFilter?: string;
 }) {
   const router = useRouter();
@@ -635,6 +650,7 @@ export function ReviewQueue({
             <Card
               key={s.id}
               submission={s}
+              targetName={s.targetId ? names[s.targetId] : undefined}
               onAct={act}
               busy={busy === s.id}
             />

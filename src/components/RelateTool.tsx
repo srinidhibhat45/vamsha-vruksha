@@ -51,6 +51,29 @@ export function RelateTool({
     return () => controller.abort();
   }, [a, b]);
 
+  /*
+    Keep the two people in the URL.
+
+    The page has always *read* ?a= and ?b= — that is how the "how are you
+    related to this person" link on a record arrives — but it never wrote them
+    back, so the one thing a reader actually wants to do with an answer was the
+    one thing they could not do: send it to the cousin it is about. Copying the
+    address bar gave them the empty tool.
+
+    replaceState rather than the router, because this is the same page with the
+    same answer on it; a navigation would refetch and stack a history entry per
+    pick.
+  */
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (a) params.set("a", a.id);
+    else params.delete("a");
+    if (b) params.set("b", b.id);
+    else params.delete("b");
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [a, b]);
+
   const swap = () => {
     setA(b);
     setB(a);

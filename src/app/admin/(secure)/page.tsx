@@ -2,6 +2,8 @@ import { AppLink as Link } from "@/components/AppLink";
 import { getArchive } from "@/lib/archive";
 import { usingDefaultCredentials } from "@/lib/adminAuth";
 import { queueCounts, readSubmissions } from "@/lib/submissions";
+import { submissionTitle } from "@/lib/submissionTitle";
+import { targetNames } from "@/lib/submissionTargets";
 import { formatDate } from "@/lib/datetime";
 
 export const dynamic = "force-dynamic";
@@ -44,6 +46,7 @@ export default async function AdminHomePage() {
   const archive = getArchive();
   const counts = queueCounts();
   const recent = readSubmissions().slice(0, 5);
+  const names = targetNames(recent);
 
   return (
     <div className="mx-auto max-w-[1100px] px-4 py-9">
@@ -149,7 +152,7 @@ export default async function AdminHomePage() {
               <li key={s.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3">
                 <span className="chip chip-sm">{s.status}</span>
                 <span className="font-medium">
-                  {String(s.payload.displayName ?? "(no name given)")}
+                  {submissionTitle(s, s.targetId ? names[s.targetId] : undefined)}
                 </span>
                 <span className="text-[0.85rem] text-[var(--fg-faint)]">
                   {s.kind.replace(/-/g, " ")} · from {s.submitter.name}

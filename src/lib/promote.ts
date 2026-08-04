@@ -174,7 +174,22 @@ export function payloadToPersonInput(
       devanagari: str(payload, "devanagari"),
       aka: strList(payload, "aka"),
     },
-    gender: enumOr(str(payload, "gender"), ["M", "F", "X", "?"] as const) ?? "?",
+    /*
+      No default here, and that is the whole point.
+
+      `gender` and `confidence` are the only two fields PersonInputSchema
+      requires, so this function used to hand back "?" and "unverified" when a
+      payload said nothing about them. On the create path that was harmless. On
+      the correction path below it was silent data loss: `draft.gender ??
+      existing.gender` can never reach the fallback if draft.gender is always
+      defined, so approving a *story* — which carries no sex at all — rewrote
+      the target's recorded sex to "?" and its confidence to whatever the story
+      was rated. A submission that does not mention a field must not touch it.
+
+      The defaults now live at the two places that genuinely mint a record:
+      publishSubmission's create branch and draftToMember.
+    */
+    gender: enumOr(str(payload, "gender"), ["M", "F", "X", "?"] as const),
     status: enumOr(str(payload, "status"), [
       "living",
       "deceased",
@@ -226,17 +241,22 @@ export function payloadToPersonInput(
     photo,
 
     sources,
-    confidence:
-      enumOr(str(payload, "confidence"), [
-        "verified",
-        "attested",
-        "oral",
-        "unverified",
-      ] as const) ?? "unverified",
+    confidence: enumOr(str(payload, "confidence"), [
+      "verified",
+      "attested",
+      "oral",
+      "unverified",
+    ] as const),
   };
 
   return input;
 }
+
+/** What a brand-new record needs when the submission was silent about it. */
+const NEW_RECORD_DEFAULTS = {
+  gender: "?",
+  confidence: "unverified",
+} as const;
 
 /** Drop undefined keys so a spread merge does not overwrite with nothing. */
 function defined<T extends object>(obj: T): Partial<T> {
@@ -292,7 +312,9 @@ export function draftToMember(
   return {
     key: p.key,
     existingId: p.existingId,
-    input: input as PersonInput,
+    // Every row without an existingId becomes a new record, so the two
+    // required fields are filled in here rather than by the payload reader.
+    input: { ...NEW_RECORD_DEFAULTS, ...defined(input) } as PersonInput,
     fatherRef: p.fatherKey,
     motherRef: p.motherKey,
     spouseRefs: p.spouseKeys?.map((s) => ({
@@ -447,7 +469,8 @@ export function publishSubmission(submission: Submission): PublishResult {
   }
 
   const parsed = PersonInputSchema.safeParse({
-    ...draft,
+    ...NEW_RECORD_DEFAULTS,
+    ...defined(draft),
     contributedBy: credit,
   });
   if (!parsed.success) {
