@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { formatTimestamp } from "@/lib/datetime";
 import { FamilyCanvas } from "../family/FamilyCanvas";
-import { checkDraft, displayOf } from "@/lib/family";
+import { checkDraft, describeDraft, displayOf } from "@/lib/family";
 import { isProposedRef, proposedLabel } from "@/lib/vocabulary";
 import type {
   DraftPerson,
@@ -218,6 +218,10 @@ function FamilySubmission({ draft }: { draft: FamilyDraft }) {
  * a shared vocabulary — so it says so rather than arriving as an id-shaped
  * string with a prefix on it.
  */
+function sentenceCase(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 function vocab(value: string | undefined): string | undefined {
   if (!value) return undefined;
   return isProposedRef(value) ? `${proposedLabel(value)} — proposed, not yet in the list` : value;
@@ -233,11 +237,31 @@ function DraftFacts({
 }) {
   const nameOf = (key?: string) => {
     const found = key ? draft.people.find((p) => p.key === key) : undefined;
-    return found ? displayOf(found) : undefined;
+    if (!found) return undefined;
+    return displayOf(found) || describeDraft(found, draft.people);
+  };
+
+  /** "Savitri Mahadev Shenoy, 1923–1928, ended in widowhood" */
+  const marriage = (s: NonNullable<DraftPerson["spouseKeys"]>[number]) => {
+    const when =
+      s.year && s.endYear
+        ? `${s.year}–${s.endYear}`
+        : s.year
+          ? String(s.year)
+          : s.endYear
+            ? `until ${s.endYear}`
+            : undefined;
+    const how =
+      s.status === "widowed"
+        ? "ended in widowhood"
+        : s.status === "separated"
+          ? "separated"
+          : undefined;
+    return [nameOf(s.key), when, how].filter(Boolean).join(", ");
   };
 
   const rows: [string, string | undefined][] = [
-    ["Name", displayOf(person)],
+    ["Name", displayOf(person) || `— ${describeDraft(person, draft.people)}`],
     ["Also written", person.aka?.join(", ")],
     ["In Devanagari", person.devanagari],
     ["Sex", person.gender],
@@ -252,11 +276,10 @@ function DraftFacts({
     ["Father", nameOf(person.fatherKey)],
     ["Mother", nameOf(person.motherKey)],
     [
-      "Married to",
-      person.spouseKeys
-        ?.map((s) => [nameOf(s.key), s.year].filter(Boolean).join(", "))
-        .filter(Boolean)
-        .join("; ") || undefined,
+      person.spouseKeys && person.spouseKeys.length > 1
+        ? "Marriages"
+        : "Married to",
+      person.spouseKeys?.map(marriage).filter(Boolean).join("; ") || undefined,
     ],
     ["Work", person.occupations?.join(", ")],
     ["Lived at", person.residences?.join(", ")],
@@ -272,7 +295,7 @@ function DraftFacts({
     <div className="rounded-[var(--shape-md)] bg-[var(--bg-raised)] p-3.5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h4 className="font-display text-[1.05rem] font-medium">
-          {displayOf(person) || "Unnamed"}
+          {displayOf(person) || describeDraft(person, draft.people)}
         </h4>
         {person.photo?.url && (
           // eslint-disable-next-line @next/next/no-img-element
@@ -330,7 +353,7 @@ function Card({
 
           <h2 className="mt-2.5 font-display text-[1.3rem] font-medium">
             {family
-              ? `${displayOf(family.people[0]) || "A family"}${
+              ? `${displayOf(family.people[0]) || sentenceCase(describeDraft(family.people[0], family.people))}${
                   family.people.length > 1
                     ? ` and ${family.people.length - 1} more`
                     : ""

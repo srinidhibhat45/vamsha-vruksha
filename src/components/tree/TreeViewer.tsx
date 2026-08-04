@@ -13,6 +13,7 @@ import {
   CARD_W,
   layoutTree,
   orthogonalPath,
+  type LaidOutJunction,
   type LaidOutPerson,
   type LayoutMode,
 } from "@/lib/layout";
@@ -25,6 +26,11 @@ import { usePanZoom, type Transform } from "./usePanZoom";
 
 const MODES: { id: LayoutMode; label: string; hint: string }[] = [
   {
+    id: "family",
+    label: "Family",
+    hint: "This couple and their children, with the rest on tabs",
+  },
+  {
     id: "hourglass",
     label: "Hourglass",
     hint: "Ancestors above, descendants below",
@@ -33,13 +39,37 @@ const MODES: { id: LayoutMode; label: string; hint: string }[] = [
   { id: "ancestors", label: "Ancestors", hint: "Everyone above this person" },
 ];
 
+/**
+ * The caption over a marriage junction.
+ *
+ * Ordinarily just the year. On somebody who married more than once it also
+ * says which marriage this was, and when it ended — the two facts that turn a
+ * man drawn between two women from a puzzle into a widower who remarried.
+ */
+function marriageLabel(n: LaidOutJunction): string {
+  const parts: string[] = [];
+  if (n.order) parts.push(ordinal(n.order));
+  if (n.year && n.endYear) parts.push(`m. ${n.year}–${n.endYear}`);
+  else if (n.year) parts.push(`m. ${n.year}`);
+  else if (n.endYear) parts.push(`ended ${n.endYear}`);
+  else if (n.status === "widowed") parts.push("widowed");
+  else if (n.status === "separated") parts.push("separated");
+  return parts.join(" · ");
+}
+
+function ordinal(n: number): string {
+  const names = ["", "1st", "2nd", "3rd"];
+  return names[n] ?? `${n}th`;
+}
+
 export function TreeViewer({
   payload,
   lineages,
   initialFocus,
-  initialMode = "hourglass",
+  initialMode = "family",
   initialUp = 3,
   initialDown = 3,
+  initialFollowDaughters = false,
 }: {
   payload: TreePayload;
   lineages: { id: string; label: string; size: number }[];
@@ -47,6 +77,7 @@ export function TreeViewer({
   initialMode?: LayoutMode;
   initialUp?: number;
   initialDown?: number;
+  initialFollowDaughters?: boolean;
 }) {
   const [focusId, setFocusId] = useState(
     initialFocus && payload.people[initialFocus] ? initialFocus : payload.apexId,
@@ -54,6 +85,42 @@ export function TreeViewer({
   const [mode, setMode] = useState<LayoutMode>(initialMode);
   const [down, setDown] = useState(initialDown);
   const [up, setUp] = useState(initialUp);
+  const [followDaughters, setFollowDaughters] = useState(initialFollowDaughters);
+
+  /*
+    Layers the reader has opened by name, from the tab on a card.
+
+    A family is not a depth. My father's household is his wife and his
+    children; my grandfather belongs to *his* household, and the two are
+    joined by a tab above my father's card rather than by both being inside
+    one drawing that gets a generation taller every time somebody wants to see
+    one more person. Held per card, so opening the branch you are reading
+    leaves every other branch exactly where it was — which is the whole
+    difference between this and turning the depth up by one.
+  */
+  const [openDown, setOpenDown] = useState<Set<string>>(() => new Set());
+  const [openUp, setOpenUp] = useState<Set<string>>(() => new Set());
+
+  const toggleOpen = useCallback(
+    (which: "up" | "down", id: string) => {
+      const set = which === "up" ? setOpenUp : setOpenDown;
+      set((prev) => {
+        const next = new Set(prev);
+        if (next.has(id)) next.delete(id);
+        else next.add(id);
+        return next;
+      });
+    },
+    [],
+  );
+
+  // Re-rooting is a different question about a different person, so the layers
+  // opened around the old root are not answers to it. Depth and mode changes
+  // are, so they leave the opened layers alone.
+  const clearOpen = useCallback(() => {
+    setOpenDown(new Set());
+    setOpenUp(new Set());
+  }, []);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [filter, setFilter] = useState("");
@@ -88,8 +155,11 @@ export function TreeViewer({
         mode,
         descendantDepth: down,
         ancestorDepth: up,
+        expandedDown: openDown,
+        expandedUp: openUp,
+        followDaughters,
       }),
-    [payload, focusId, mode, down, up],
+    [payload, focusId, mode, down, up, openDown, openUp, followDaughters],
   );
 
   const personNodes = useMemo(
@@ -210,10 +280,12 @@ export function TreeViewer({
     params.set("mode", mode);
     params.set("up", String(up));
     params.set("down", String(down));
+    if (followDaughters) params.set("daughters", "1");
+    else params.delete("daughters");
     // replaceState rather than the router: this fires on every depth tweak,
     // and a router navigation per keystroke would re-render the whole page.
     window.history.replaceState(null, "", `?${params.toString()}`);
-  }, [focusId, mode, up, down]);
+  }, [focusId, mode, up, down, followDaughters]);
 
   /* ---------------------------------------------------------------- */
   /* Re-rooting                                                        */
@@ -224,8 +296,9 @@ export function TreeViewer({
       if (!payload.people[id]) return;
       setFocusId(id);
       setSelectedId(id);
+      clearOpen();
     },
-    [payload.people],
+    [payload.people, clearOpen],
   );
 
   // Keep the newly-rooted person in view. Runs after layout has been recomputed
@@ -353,12 +426,20 @@ export function TreeViewer({
         ArrowRight: "right",
       };
       if (map[e.key]) {
-        const next = navFrom(cur, map[e.key]);
+        const direction = map[e.key];
+        const next = navFrom(cur, direction);
         if (next) {
           e.preventDefault();
           setKeyboardNav(true);
           setSelectedId(next);
-          if (!layout.drawn.has(next)) reRoot(next);
+          if (!layout.drawn.has(next)) {
+            // Walking off the top or bottom of what is drawn opens that layer
+            // rather than throwing the reader into a redrawn tree. Sideways
+            // there is no layer to open, so re-rooting is still the move.
+            if (direction === "up") toggleOpen("up", cur);
+            else if (direction === "down") toggleOpen("down", cur);
+            else reRoot(next);
+          }
         }
         return;
       }
@@ -369,7 +450,7 @@ export function TreeViewer({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [selectedId, focusId, navFrom, layout.drawn, reRoot, fit]);
+  }, [selectedId, focusId, navFrom, layout.drawn, reRoot, fit, toggleOpen, zoomBy]);
 
   /*
     What the arrow keys just did, said out loud. Without this the tree is a
@@ -432,6 +513,35 @@ export function TreeViewer({
     }
     return set;
   }, [filter, personNodes]);
+
+  /**
+   * Marriages drawn with a broken bracket.
+   *
+   * Only the marriages of somebody who married more than once. Almost every
+   * completed marriage ends in one partner outliving the other, and dashing
+   * all of them would make the dash mean "both of these people are dead" —
+   * which the years on the cards already say, and which is not worth a second
+   * notation. Where there are two marriages it means the thing the reader
+   * actually needs: this one had ended before that one began.
+   */
+  const endedUnions = useMemo(() => {
+    const set = new Set<string>();
+    for (const list of Object.values(payload.personUnions)) {
+      if (list.length < 2) continue;
+      for (const id of list) {
+        const u = payload.unions[id];
+        if (!u) continue;
+        if (
+          u.endYear != null ||
+          u.status === "widowed" ||
+          u.status === "separated"
+        ) {
+          set.add(u.id);
+        }
+      }
+    }
+    return set;
+  }, [payload.personUnions, payload.unions]);
 
   /* ---------------------------------------------------------------- */
   /* Path highlight: focus -> hovered person                            */
@@ -588,8 +698,37 @@ export function TreeViewer({
           ))}
         </div>
 
-        {mode !== "descendants" && depthControl("up", up, setUp, 12)}
-        {mode !== "ancestors" && depthControl("down", down, setDown, 12)}
+        {/* A household has no depth to set — the tabs on the cards are the
+            depth control, one branch at a time. */}
+        {mode !== "family" && mode !== "descendants" &&
+          depthControl("up", up, setUp, 12)}
+        {mode !== "family" && mode !== "ancestors" &&
+          depthControl("down", down, setDown, 12)}
+
+        {/*
+          Whether a daughter's descent is followed inside her father's tree.
+          Off by default, because by the reckoning these families use her line
+          continues in the family she married into — and because following it
+          silently doubles the width of the drawing per generation. Never
+          hidden, though: it is a reading convention, and a reader has to be
+          able to see that a convention is being applied and turn it off.
+        */}
+        <button
+          type="button"
+          onClick={() => setFollowDaughters((v) => !v)}
+          aria-pressed={followDaughters}
+          className={`chip chip-sm ${followDaughters ? "chip-selected" : ""}`}
+          title={
+            followDaughters
+              ? "Daughters' descendants are drawn in full. Click to summarise them again."
+              : "A daughter's children are drawn, her grandchildren are on a tab. Click to follow every line in full."
+          }
+        >
+          Daughters&rsquo; lines
+          <span className="text-[var(--fg-faint)]">
+            {followDaughters ? "in full" : "summarised"}
+          </span>
+        </button>
 
         <div className="field-wrap w-52 [--field-lead:2.25rem] [--field-trail:2.5rem]">
           <span className="field-lead">
@@ -700,10 +839,16 @@ export function TreeViewer({
                   const isMarriage = link.kind === "marriage";
                   const onPath =
                     !!link.childId && pathIds.has(link.childId);
+                  // A marriage that ended is drawn broken. It is the one thing
+                  // that makes a second marriage read as a remarriage rather
+                  // than as two at once, and it survives being seen small,
+                  // where a caption does not.
+                  const ended = !!link.unionId && endedUnions.has(link.unionId);
                   return (
                     <path
                       key={link.id}
                       d={orthogonalPath(link.points, isMarriage ? 8 : 14)}
+                      strokeDasharray={isMarriage && ended ? "7 4" : undefined}
                       stroke={
                         onPath
                           ? "var(--color-gold)"
@@ -724,7 +869,15 @@ export function TreeViewer({
                 })}
               </g>
 
-              {/* Union junctions — a small diamond, echoing the kasti motif. */}
+              {/*
+                Union junctions — a small diamond, echoing the kasti motif.
+
+                Where somebody married more than once the diamond also carries
+                which marriage this was, because that is the difference
+                between a second family and a mystery: two women beside one man
+                with nothing to tell them apart is the commonest way a
+                remarriage gets misread as bigamy, or a stepmother as a mother.
+              */}
               <g>
                 {layout.nodes
                   .filter((n) => n.kind === "junction")
@@ -735,7 +888,7 @@ export function TreeViewer({
                         fill="var(--color-kumkum)"
                         opacity={0.75}
                       />
-                      {n.kind === "junction" && n.year && (
+                      {n.kind === "junction" && marriageLabel(n) && (
                         <text
                           y={-10}
                           textAnchor="middle"
@@ -743,7 +896,7 @@ export function TreeViewer({
                           fill="var(--fg-faint)"
                           style={{ userSelect: "none" }}
                         >
-                          m. {n.year}
+                          {marriageLabel(n)}
                         </text>
                       )}
                     </g>
@@ -771,6 +924,9 @@ export function TreeViewer({
                       }}
                       onSelect={setSelectedId}
                       onReRoot={reRoot}
+                      onExpand={toggleOpen}
+                      openDown={openDown.has(node.id)}
+                      openUp={openUp.has(node.id)}
                     />
                   </g>
                 ))}
@@ -807,6 +963,7 @@ export function TreeViewer({
             baseline={baseline}
             drawn={personNodes.length}
             total={payload.size}
+            followDaughters={followDaughters}
             onClose={() => setShowLegend(false)}
           />
 
@@ -1102,12 +1259,14 @@ function Legend({
   baseline,
   drawn,
   total,
+  followDaughters,
   onClose,
 }: {
   open: boolean;
   baseline: TreeBaseline;
   drawn: number;
   total: number;
+  followDaughters: boolean;
   onClose: () => void;
 }) {
   const shared = [
@@ -1182,6 +1341,22 @@ function Legend({
         <LegendRow
           swatch={
             <svg viewBox="0 0 22 10" className="h-2.5 w-6" aria-hidden="true">
+              <path
+                d="M2 5h18"
+                stroke="color-mix(in oklab, var(--color-kumkum) 55%, transparent)"
+                strokeWidth="1.6"
+                strokeDasharray="4 2.5"
+              />
+            </svg>
+          }
+        >
+          A broken bracket — a marriage that ended. Where somebody married more
+          than once the junction says which marriage it was.
+        </LegendRow>
+
+        <LegendRow
+          swatch={
+            <svg viewBox="0 0 22 10" className="h-2.5 w-6" aria-hidden="true">
               <path d="M2 5h18" stroke="var(--line-strong)" strokeWidth="1.4" />
             </svg>
           }
@@ -1244,8 +1419,33 @@ function Legend({
             </span>
           }
         >
-          More kin recorded than drawn — click to open
+          More kin recorded than drawn — click to open that one branch. The
+          drawing stays where it is; nothing else moves.
         </LegendRow>
+
+        {!followDaughters && (
+          <LegendRow
+            swatch={
+              <svg viewBox="0 0 12 10" className="h-2.5 w-3" aria-hidden="true">
+                <path
+                  d="M1 5h9M7 1.5 10.5 5 7 8.5"
+                  fill="none"
+                  stroke="var(--color-kumkum)"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            }
+          >
+            A daughter married out — her children are drawn, and their descent
+            belongs to her husband&rsquo;s family. Open it on her tab, or on{" "}
+            <span className="font-medium text-[var(--fg-soft)]">
+              Daughters&rsquo; lines
+            </span>{" "}
+            above.
+          </LegendRow>
+        )}
       </div>
 
       <div className="shrink-0">

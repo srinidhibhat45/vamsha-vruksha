@@ -4,7 +4,7 @@ import { AppLink as Link } from "@/components/AppLink";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FamilyBuilder } from "../family/FamilyBuilder";
-import { checkDraft, displayOf } from "@/lib/family";
+import { checkDraft, describeDraft, displayOf } from "@/lib/family";
 import type { ContributeRefs } from "../ContributeForm";
 import type { DraftPerson } from "@/lib/types";
 
@@ -220,7 +220,7 @@ export function FamilyEditor({ refs }: { refs: ContributeRefs }) {
         </p>
         {people.length > 0 && (
           <span className="ml-auto text-[0.85rem] text-[var(--fg-faint)]">
-            {displayOf(people[0]) || "Unnamed"}
+            {displayOf(people[0]) || describeDraft(people[0], people)}
             {people.length > 1 && ` and ${people.length - 1} more`}
           </span>
         )}

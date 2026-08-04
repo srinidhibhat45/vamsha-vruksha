@@ -18,6 +18,8 @@ type Params = Promise<{
   mode?: string;
   up?: string;
   down?: string;
+  /** "1" to follow the descent of daughters born into this family. */
+  daughters?: string;
 }>;
 
 function clampDepth(value: string | undefined, fallback: number): number {
@@ -73,11 +75,16 @@ export default async function TreePage({
   const payload = buildTreePayload(lineageId);
   if (!payload) notFound();
 
-  const mode: LayoutMode = (["hourglass", "descendants", "ancestors"] as const).includes(
-    params.mode as LayoutMode,
-  )
+  // A tree opens on one household — this couple and their children — because
+  // that is the unit a reader arrives holding, and because opening six
+  // generations at 30% zoom shows a reader nothing they can read. Everything
+  // above and below is a tab on a card away. A mode named in the URL still
+  // wins: a shared link is somebody handing over a particular view.
+  const mode: LayoutMode = (
+    ["family", "hourglass", "descendants", "ancestors"] as const
+  ).includes(params.mode as LayoutMode)
     ? (params.mode as LayoutMode)
-    : "hourglass";
+    : "family";
 
   const lineages = archive.lineageList.map((l) => ({
     id: l.id,
@@ -111,6 +118,7 @@ export default async function TreePage({
         initialMode={mode}
         initialUp={clampDepth(params.up, 3)}
         initialDown={clampDepth(params.down, 3)}
+        initialFollowDaughters={params.daughters === "1"}
       />
     </div>
   );

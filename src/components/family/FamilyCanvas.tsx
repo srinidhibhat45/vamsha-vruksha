@@ -3,7 +3,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CARD_H, CARD_W, orthogonalPath } from "@/lib/layout";
 import { layoutDraft, type DraftLayoutResult } from "@/lib/draftLayout";
-import { draftToTreeSource, displayOf } from "@/lib/family";
+import {
+  describeDraft,
+  draftToTreeSource,
+  displayOf,
+  partialNameOf,
+} from "@/lib/family";
 import { usePanZoom } from "@/components/tree/usePanZoom";
 import type { DraftPerson, FamilyDraft } from "@/lib/types";
 
@@ -352,6 +357,7 @@ export function FamilyCanvas({
                   x={node.x}
                   y={node.y}
                   person={byKey.get(node.id)}
+                  people={draft.people}
                   selected={node.id === selectedKey}
                   hovered={node.id === hoverKey}
                   bad={!!problemKeys?.has(node.id)}
@@ -382,7 +388,11 @@ export function FamilyCanvas({
           ownUnions.map((j) => {
             const pos = screen(j.x, j.y);
             const couple = j.partners
-              .map((p) => displayOf(byKey.get(p)!) || "this person")
+              .map(
+                (p) =>
+                  displayOf(byKey.get(p)!) ||
+                  describeDraft(byKey.get(p)!, draft.people),
+              )
               .join(" and ");
             return (
               <button
@@ -474,7 +484,7 @@ export function FamilyCanvas({
           <ul>
             {draft.people.map((p) => (
               <li key={p.key}>
-                {displayOf(p) || "Unnamed person"}
+                {displayOf(p) || `${describeDraft(p, draft.people)} — not named yet`}
                 {p.existingId ? " — already in the archive" : ""}
               </li>
             ))}
@@ -493,6 +503,7 @@ function DraftCard({
   x,
   y,
   person,
+  people,
   selected,
   hovered,
   bad,
@@ -502,6 +513,8 @@ function DraftCard({
   x: number;
   y: number;
   person?: DraftPerson;
+  /** The whole draft, so an unnamed card can say who it stands next to. */
+  people: DraftPerson[];
   selected: boolean;
   hovered: boolean;
   bad: boolean;
@@ -520,9 +533,22 @@ function DraftCard({
         ? "var(--color-samudra)"
         : "var(--outline)";
 
+  /*
+    A card with no name says who it is anyway — "the wife of Narayan Kamath",
+    "a son of Shrikan and Lakshmi". It used to print whatever the form had
+    inherited into the middle name and surname fields, which read as a real
+    name and hid the fact that the person still needed naming; and the
+    fallback, "Name not filled in", was the same six words on every such card
+    in a drawing where the whole difficulty is telling them apart.
+  */
+  const placeholder = name ? "" : describeDraft(person, people);
+  const inherited = name ? "" : partialNameOf(person);
+
   const second = existing
     ? [years, "already in the archive"].filter(Boolean).join(" · ")
-    : years || (person.epithet ?? "");
+    : name
+      ? years || (person.epithet ?? "")
+      : [inherited && `…${inherited}`, years].filter(Boolean).join(" · ");
 
   return (
     <g
@@ -579,11 +605,12 @@ function DraftCard({
         <text
           x={18}
           y={36}
-          fontSize={15}
+          fontSize={14}
           fontStyle="italic"
           fill="var(--accent)"
         >
-          Name not filled in
+          <title>Still needs a given name</title>
+          {truncate(placeholder, 26)}
         </text>
       )}
 

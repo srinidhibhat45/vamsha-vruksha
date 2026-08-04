@@ -117,6 +117,10 @@ function maleLine(id: string): Person[] {
   return out.reverse();
 }
 
+function ordinal(n: number): string {
+  return ["", "First", "Second", "Third", "Fourth", "Fifth"][n] ?? `${n}th`;
+}
+
 function toneOf(gender: string): string {
   if (gender === "F") return "var(--color-kumkum)";
   if (gender === "M") return "var(--color-samudra)";
@@ -188,20 +192,49 @@ export default async function PersonPage({ params }: { params: Params }) {
         .filter(Boolean)
         .join(" · "),
     });
-  for (const s of person.spouses ?? []) {
+  const marriages = person.spouses ?? [];
+  marriages.forEach((s, i) => {
     const other = archive.people.get(s.personId);
+    const ending =
+      s.status === "separated"
+        ? "separated"
+        : s.status === "widowed"
+          ? "ended in widowhood"
+          : s.endDate
+            ? "ended"
+            : undefined;
+
     timeline.push({
       year: s.date?.year,
-      label: "Married",
+      // A second marriage is worth naming as one here: it is the line that
+      // explains why there are two households below this person.
+      label: marriages.length > 1 ? `${ordinal(i + 1)} marriage` : "Married",
       detail: [
         other ? fullName(other) : "—",
         s.date ? formatDate(s.date) : undefined,
         s.place?.id ? archive.places.get(s.place.id)?.name : s.place?.label,
+        // Said on the marriage's own line when we do not know *when* it
+        // ended. A separate entry with no year sorts to the bottom of a
+        // timeline, which put "Widowed" underneath "Died".
+        s.endDate ? undefined : ending,
       ]
         .filter(Boolean)
         .join(" · "),
     });
-  }
+
+    // With a year it is its own event — and for most of the generations here
+    // widowhood is the event that set the rest of a life, not a footnote to
+    // the wedding.
+    if (s.endDate?.year) {
+      timeline.push({
+        year: s.endDate.year,
+        label: s.status === "separated" ? "Separated" : "Widowed",
+        detail: [other ? fullName(other) : undefined, formatDate(s.endDate)]
+          .filter(Boolean)
+          .join(" · "),
+      });
+    }
+  });
   for (const c of children) {
     timeline.push({
       year: birthYear(c),

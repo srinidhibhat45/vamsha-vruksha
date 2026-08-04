@@ -45,7 +45,23 @@ export const ROW_H = CARD_H + V_GAP;
 /** How far below a couple's row the junction dot sits. */
 export const JUNCTION_DROP = 30;
 
-export type LayoutMode = "descendants" | "ancestors" | "hourglass";
+/*
+ * Second and third marriages.
+ *
+ * A remarriage is drawn as one more card in the same row, and the bracket
+ * joining it to the person has to get past whoever is standing in between.
+ * Adjacent partners — the first marriage on the left, the second on the right —
+ * need nothing; a third has a card between it and its partner, so its bracket
+ * and its junction drop a step lower, and the children of each marriage leave
+ * on a bus of their own. Everything stays in the band between the bottom of the
+ * cards and the top of the next row, so no line ever crosses a card.
+ */
+export const JUNCTION_STEP = 14;
+export const MAX_JUNCTION_STEPS = 2;
+export const BUS_STEP = 11;
+export const MAX_BUS_STEPS = 2;
+
+export type LayoutMode = "descendants" | "ancestors" | "hourglass" | "family";
 
 export interface TreePerson {
   id: string;
@@ -75,6 +91,8 @@ export interface TreeUnion {
   childIds: string[];
   status?: string;
   year?: number;
+  /** When the marriage ended — a death, a separation. */
+  endYear?: number;
 }
 
 /** The subgraph handed to the renderer — usually one whole lineage. */
@@ -103,10 +121,22 @@ export interface LaidOutPerson {
   isFocus: boolean;
   /** True when the card is a spouse who married into the drawn family. */
   isSpouse: boolean;
-  /** Children that exist but are not drawn because of the depth limit. */
+  /** Children that exist but are not drawn. */
   hiddenChildren?: number;
   /** Parents that exist but are not drawn. */
   hiddenParents?: number;
+  /**
+   * The children are hidden because this person's line is being read as
+   * belonging to another family, not because of the depth limit — so the tab
+   * offering them says something different.
+   */
+  lineSummarised?: boolean;
+  /**
+   * A daughter born into this family whose descendants belong to the family
+   * she married into. Marked so the card can say so rather than leaving a
+   * reader to wonder why her branch stops short.
+   */
+  marriedOut?: boolean;
 }
 
 export interface LaidOutJunction {
@@ -118,6 +148,11 @@ export interface LaidOutJunction {
   row: number;
   status?: string;
   year?: number;
+  endYear?: number;
+  /** 1-based position among this person's marriages; absent when there is one. */
+  order?: number;
+  /** How many marriages the person on this junction had, in this drawing. */
+  ofTotal?: number;
 }
 
 export type LayoutNode = LaidOutPerson | LaidOutJunction;
@@ -186,27 +221,88 @@ function selfBlockWidth(partnerCount: number): number {
 /* Descendant layout                                                   */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Whether a person's children are drawn, and why not when they are not.
+ *
+ * Two rules close a branch, and they mean different things to a reader, so the
+ * card has to be able to say which one applied.
+ *
+ * The first is the depth limit, which is arbitrary and about the screen.
+ *
+ * The second is descent. In this community a daughter's children belong to the
+ * family she married into: her line, as this family counts it, ends with her.
+ * Drawing her descendants inside her father's tree by default is not extra
+ * information, it is a different family's tree grafted into the middle of this
+ * one — and by the third generation it is several, each of them wider than the
+ * line the reader came to look at. So her husband and her children are drawn,
+ * and their descent is offered rather than assumed. That is a reading
+ * convention, not a claim about who matters: the records are all there, the
+ * tab is one click, and the whole rule turns off from the toolbar.
+ */
+interface Descent {
+  /** Draw this person's children. */
+  open: boolean;
+  /** How far past a married-out daughter the children sit. */
+  childOutside: number;
+  /** This person is a daughter whose line is being read as ending here. */
+  marriedOut: boolean;
+  /** Closed by the descent rule rather than by the depth limit. */
+  cutByLine: boolean;
+}
+
 class DescendantLayout {
   private widths = new Map<string, number>();
   nodes: LayoutNode[] = [];
   links: LayoutLink[] = [];
   drawn = new Set<string>();
+  /** Person nodes by id — the same objects that are in `nodes`. */
+  private byId = new Map<string, LaidOutPerson>();
 
   private src: TreeSource;
   private maxDepth: number;
   private focusId: string;
+  private expanded: Set<string>;
+  private agnatic: boolean;
 
   // Written out longhand rather than as constructor parameter properties:
   // this module is executed directly by Node in the data scripts, and Node's
   // type-stripping loader rejects that shorthand.
-  constructor(src: TreeSource, maxDepth: number, focusId: string) {
+  constructor(
+    src: TreeSource,
+    maxDepth: number,
+    focusId: string,
+    expanded: Set<string>,
+    agnatic: boolean,
+  ) {
     this.src = src;
     this.maxDepth = maxDepth;
     this.focusId = focusId;
+    this.expanded = expanded;
+    this.agnatic = agnatic;
   }
 
-  measure(id: string, depth: number, trail: Set<string>): number {
-    const key = `${id}@${depth}`;
+  private descent(id: string, depth: number, outside: number): Descent {
+    const person = this.src.people[id];
+    const marriedOut =
+      this.agnatic &&
+      outside === 0 &&
+      person?.gender === "F" &&
+      id !== this.focusId;
+    // Her children are drawn; theirs are not, which is where the line stops.
+    const childOutside = outside > 0 ? outside + 1 : marriedOut ? 1 : 0;
+    const withinDepth = depth < this.maxDepth;
+    const withinLine = childOutside <= 1;
+    const opened = this.expanded.has(id);
+    return {
+      open: opened || (withinDepth && withinLine),
+      childOutside,
+      marriedOut,
+      cutByLine: !opened && withinDepth && !withinLine,
+    };
+  }
+
+  measure(id: string, depth: number, trail: Set<string>, outside = 0): number {
+    const key = `${id}@${depth}@${outside}`;
     const cached = this.widths.get(key);
     if (cached !== undefined) return cached;
 
@@ -214,13 +310,14 @@ class DescendantLayout {
     const selfW = selfBlockWidth(partners.length);
 
     let width = selfW;
-    if (depth < this.maxDepth && !trail.has(id)) {
+    const d = this.descent(id, depth, outside);
+    if (d.open && !trail.has(id)) {
       trail.add(id);
       const kids = allChildren(this.src, id);
       if (kids.length) {
         let kidsW = 0;
         kids.forEach((k, i) => {
-          kidsW += this.measure(k, depth + 1, trail);
+          kidsW += this.measure(k, depth + 1, trail, d.childOutside);
           if (i > 0) kidsW += H_GAP;
         });
         width = Math.max(selfW, kidsW);
@@ -232,43 +329,76 @@ class DescendantLayout {
     return width;
   }
 
-  place(id: string, depth: number, left: number, trail: Set<string>): void {
+  place(
+    id: string,
+    depth: number,
+    left: number,
+    trail: Set<string>,
+    outside = 0,
+  ): void {
     if (trail.has(id)) return;
     trail.add(id);
 
     const person = this.src.people[id];
-    if (!person) return;
+    if (!person) {
+      trail.delete(id);
+      return;
+    }
 
-    const width = this.measure(id, depth, new Set(trail));
+    const width = this.measure(id, depth, new Set(trail), outside);
     const partners = partnersOf(this.src, id);
     const selfW = selfBlockWidth(partners.length);
     const y = depth * ROW_H;
-    const selfLeft = left + (width - selfW) / 2;
+    const blockLeft = left + (width - selfW) / 2;
 
-    // The person, then each partner to their right.
+    /*
+      Where a remarriage stands.
+
+      Partners arrive oldest marriage first. One marriage is drawn as it always
+      has been, the person then their spouse. From two, the first marriage
+      moves to the person's *left* and the rest stay on the right, so a widower
+      and his two wives read left to right in the order he married them, and —
+      the part that matters — the junction of each marriage lands between the
+      two people actually in it. Hanging every spouse off the right instead put
+      the second marriage's junction underneath the first wife's card, which
+      drew her stepchildren as though they were hers.
+    */
+    const many = partners.length > 1;
+    const slotOf = (i: number) => (many ? (i === 0 ? 0 : i + 1) : i + 1);
+    const selfSlot = many ? 1 : 0;
+    const slotX = (slot: number) => blockLeft + slot * (CARD_W + SPOUSE_GAP);
+    const selfLeft = slotX(selfSlot);
+
     this.pushPerson(person, selfLeft, y, depth, id === this.focusId, false);
     const partnerX = new Map<string, number>();
+    const partnerIndex = new Map<string, number>();
     partners.forEach((pid, i) => {
-      const px = selfLeft + (i + 1) * (CARD_W + SPOUSE_GAP);
+      const px = slotX(slotOf(i));
       partnerX.set(pid, px);
+      partnerIndex.set(pid, i);
       const p = this.src.people[pid];
       if (p) this.pushPerson(p, px, y, depth, false, true);
     });
 
-    // A junction between each couple.
+    // A junction between each couple, dropped a step further for any marriage
+    // whose partner is not standing next to them.
     const groups = childGroups(this.src, id);
-    const junctionX = new Map<string, number>();
-    for (const u of unionsOf(this.src, id)) {
+    const unions = unionsOf(this.src, id);
+    const junctionAt = new Map<string, { x: number; y: number }>();
+    unions.forEach((u, ui) => {
       const other = u.partners.find((p) => p !== id);
       const ax = selfLeft + CARD_W / 2;
-      const bx = other && partnerX.has(other)
-        ? partnerX.get(other)! + CARD_W / 2
-        : ax;
+      const linked = other && partnerX.has(other);
+      const bx = linked ? partnerX.get(other!)! + CARD_W / 2 : ax;
       const jx = (ax + bx) / 2;
-      const jy = y + CARD_H + JUNCTION_DROP;
-      junctionX.set(u.id, jx);
+      const steps = Math.min(
+        MAX_JUNCTION_STEPS,
+        Math.max(0, (partnerIndex.get(other ?? "") ?? 0) - 1),
+      );
+      const jy = y + CARD_H + JUNCTION_DROP + steps * JUNCTION_STEP;
+      junctionAt.set(u.id, { x: jx, y: jy });
 
-      if (other && partnerX.has(other)) {
+      if (linked) {
         this.nodes.push({
           kind: "junction",
           id: `j-${u.id}`,
@@ -278,6 +408,9 @@ class DescendantLayout {
           row: depth,
           status: u.status,
           year: u.year,
+          endYear: u.endYear,
+          order: unions.length > 1 ? ui + 1 : undefined,
+          ofTotal: unions.length > 1 ? unions.length : undefined,
         });
         // Marriage bracket: down from each card, across, meeting at the junction.
         this.links.push({
@@ -292,15 +425,17 @@ class DescendantLayout {
           ],
         });
       }
-    }
+    });
 
-    if (depth >= this.maxDepth) {
+    const d = this.descent(id, depth, outside);
+    const node = this.byId.get(id);
+    if (node && d.marriedOut && groups.length) node.marriedOut = true;
+
+    if (!d.open) {
       const hidden = allChildren(this.src, id).length;
-      if (hidden) {
-        const node = this.nodes.find(
-          (n) => n.kind === "person" && n.id === id,
-        ) as LaidOutPerson | undefined;
-        if (node) node.hiddenChildren = hidden;
+      if (hidden && node) {
+        node.hiddenChildren = hidden;
+        node.lineSummarised = d.cutByLine;
       }
       trail.delete(id);
       return;
@@ -311,27 +446,33 @@ class DescendantLayout {
     if (kids.length) {
       let kidsW = 0;
       kids.forEach((k, i) => {
-        kidsW += this.measure(k, depth + 1, new Set(trail));
+        kidsW += this.measure(k, depth + 1, new Set(trail), d.childOutside);
         if (i > 0) kidsW += H_GAP;
       });
 
       let cursor = left + (width - kidsW) / 2;
       const childCenters = new Map<string, number>();
       for (const kid of kids) {
-        const kw = this.measure(kid, depth + 1, new Set(trail));
-        this.place(kid, depth + 1, cursor, trail);
-        const kidNode = this.nodes.find(
-          (n) => n.kind === "person" && n.id === kid,
-        ) as LaidOutPerson | undefined;
+        const kw = this.measure(kid, depth + 1, new Set(trail), d.childOutside);
+        this.place(kid, depth + 1, cursor, trail, d.childOutside);
+        const kidNode = this.byId.get(kid);
         childCenters.set(kid, kidNode ? kidNode.x + CARD_W / 2 : cursor + kw / 2);
         cursor += kw + H_GAP;
       }
 
-      // Descent lines: junction -> horizontal sibling bus -> each child.
-      for (const g of groups) {
-        const jx = junctionX.get(g.union.id) ?? selfLeft + CARD_W / 2;
-        const jy = y + CARD_H + JUNCTION_DROP;
-        const busY = (depth + 1) * ROW_H - V_GAP / 2 + 12;
+      // Descent lines: junction -> horizontal sibling bus -> each child. One
+      // bus per marriage, each on its own line, so two sets of half-siblings
+      // never appear to leave the same rail.
+      groups.forEach((g, gi) => {
+        const j = junctionAt.get(g.union.id) ?? {
+          x: selfLeft + CARD_W / 2,
+          y: y + CARD_H + JUNCTION_DROP,
+        };
+        const busY =
+          (depth + 1) * ROW_H -
+          V_GAP / 2 +
+          12 +
+          Math.min(MAX_BUS_STEPS, gi) * BUS_STEP;
         for (const kid of g.kids) {
           const cx = childCenters.get(kid);
           if (cx === undefined) continue;
@@ -341,14 +482,14 @@ class DescendantLayout {
             unionId: g.union.id,
             childId: kid,
             points: [
-              { x: jx, y: jy },
-              { x: jx, y: busY },
+              { x: j.x, y: j.y },
+              { x: j.x, y: busY },
               { x: cx, y: busY },
               { x: cx, y: (depth + 1) * ROW_H },
             ],
           });
         }
-      }
+      });
     }
 
     trail.delete(id);
@@ -364,7 +505,7 @@ class DescendantLayout {
   ) {
     if (this.drawn.has(person.id)) return;
     this.drawn.add(person.id);
-    this.nodes.push({
+    const node: LaidOutPerson = {
       kind: "person",
       id: person.id,
       person,
@@ -375,7 +516,9 @@ class DescendantLayout {
       row,
       isFocus,
       isSpouse,
-    });
+    };
+    this.nodes.push(node);
+    this.byId.set(person.id, node);
   }
 }
 
@@ -388,15 +531,28 @@ class AncestorLayout {
   nodes: LayoutNode[] = [];
   links: LayoutLink[] = [];
   drawn = new Set<string>();
+  private byId = new Map<string, LaidOutPerson>();
 
   private src: TreeSource;
   private maxDepth: number;
   private focusId: string;
+  private expanded: Set<string>;
 
-  constructor(src: TreeSource, maxDepth: number, focusId: string) {
+  constructor(
+    src: TreeSource,
+    maxDepth: number,
+    focusId: string,
+    expanded: Set<string>,
+  ) {
     this.src = src;
     this.maxDepth = maxDepth;
     this.focusId = focusId;
+    this.expanded = expanded;
+  }
+
+  /** Draw this person's parents. */
+  private opens(id: string, depth: number): boolean {
+    return depth < this.maxDepth || this.expanded.has(id);
   }
 
   measure(id: string, depth: number, trail: Set<string>): number {
@@ -405,7 +561,7 @@ class AncestorLayout {
     if (cached !== undefined) return cached;
 
     let width = CARD_W;
-    if (depth < this.maxDepth && !trail.has(id)) {
+    if (this.opens(id, depth) && !trail.has(id)) {
       trail.add(id);
       const ps = parentsOf(this.src, id);
       if (ps.length) {
@@ -428,7 +584,10 @@ class AncestorLayout {
     trail.add(id);
 
     const person = this.src.people[id];
-    if (!person) return;
+    if (!person) {
+      trail.delete(id);
+      return;
+    }
 
     const width = this.measure(id, depth, new Set(trail));
     const y = -depth * ROW_H;
@@ -436,7 +595,7 @@ class AncestorLayout {
 
     if (!this.drawn.has(id)) {
       this.drawn.add(id);
-      this.nodes.push({
+      const node: LaidOutPerson = {
         kind: "person",
         id,
         person,
@@ -447,15 +606,15 @@ class AncestorLayout {
         row: -depth,
         isFocus: id === this.focusId,
         isSpouse: false,
-      });
+      };
+      this.nodes.push(node);
+      this.byId.set(id, node);
     }
 
     const ps = parentsOf(this.src, id);
-    if (depth >= this.maxDepth) {
+    if (!this.opens(id, depth)) {
       if (ps.length) {
-        const node = this.nodes.find(
-          (n) => n.kind === "person" && n.id === id,
-        ) as LaidOutPerson | undefined;
+        const node = this.byId.get(id);
         if (node) node.hiddenParents = ps.length;
       }
       trail.delete(id);
@@ -474,9 +633,7 @@ class AncestorLayout {
       for (const parent of ps) {
         const pw = this.measure(parent, depth + 1, new Set(trail));
         this.place(parent, depth + 1, cursor, trail);
-        const pNode = this.nodes.find(
-          (n) => n.kind === "person" && n.id === parent,
-        ) as LaidOutPerson | undefined;
+        const pNode = this.byId.get(parent);
         centers.push(pNode ? pNode.x + CARD_W / 2 : cursor + pw / 2);
         cursor += pw + H_GAP;
       }
@@ -551,7 +708,29 @@ export interface LayoutOptions {
   descendantDepth?: number;
   /** Generations drawn above the focus person. */
   ancestorDepth?: number;
+  /**
+   * People whose children the reader has asked for by name, past whatever the
+   * depth limit or the descent rule would otherwise draw.
+   *
+   * A number in a box is the wrong control for "show me one more generation".
+   * It applies everywhere at once, so opening the grandfather above one branch
+   * also opens six hundred cousins below every other one, and the family the
+   * reader was looking at is off the screen by the time it has finished. These
+   * two sets are the other answer: the tab on a card opens *that* card, and
+   * the rest of the drawing does not move.
+   */
+  expandedDown?: Set<string>;
+  /** People whose parents the reader has asked for — the layer above. */
+  expandedUp?: Set<string>;
+  /**
+   * Follow the descent of daughters born into this family. Off by default:
+   * see the note on Descent.
+   */
+  followDaughters?: boolean;
 }
+
+/** Generations a household shows below its couple before asking. */
+const FAMILY_DEPTH = 1;
 
 export function layoutTree(
   src: TreeSource,
@@ -559,8 +738,14 @@ export function layoutTree(
   options: LayoutOptions,
 ): LayoutResult {
   const { mode } = options;
-  const down = options.descendantDepth ?? 3;
-  const up = options.ancestorDepth ?? 3;
+  const expandedDown = options.expandedDown ?? new Set<string>();
+  const expandedUp = options.expandedUp ?? new Set<string>();
+  const agnatic = !options.followDaughters;
+
+  // A household is the couple and their children, and nothing above them —
+  // the generation above is a different household, offered on a tab.
+  const down = mode === "family" ? FAMILY_DEPTH : (options.descendantDepth ?? 3);
+  const up = mode === "family" ? 0 : (options.ancestorDepth ?? 3);
 
   const nodes: LayoutNode[] = [];
   const links: LayoutLink[] = [];
@@ -577,22 +762,27 @@ export function layoutTree(
   }
 
   let focusX = 0;
+  const drawsDown =
+    mode === "descendants" || mode === "hourglass" || mode === "family";
+  const drawsUp = mode === "ancestors" || mode === "hourglass" || mode === "family";
 
-  if (mode === "descendants" || mode === "hourglass") {
-    const d = new DescendantLayout(src, down, focusId);
+  let focusNode: LaidOutPerson | undefined;
+
+  if (drawsDown) {
+    const d = new DescendantLayout(src, down, focusId, expandedDown, agnatic);
     d.measure(focusId, 0, new Set());
     d.place(focusId, 0, 0, new Set());
     nodes.push(...d.nodes);
     links.push(...d.links);
     d.drawn.forEach((id) => drawn.add(id));
-    const focusNode = d.nodes.find(
+    focusNode = d.nodes.find(
       (n) => n.kind === "person" && n.id === focusId,
     ) as LaidOutPerson | undefined;
     focusX = focusNode?.x ?? 0;
   }
 
-  if (mode === "ancestors" || mode === "hourglass") {
-    const a = new AncestorLayout(src, up, focusId);
+  if (drawsUp) {
+    const a = new AncestorLayout(src, up, focusId, expandedUp);
     a.measure(focusId, 0, new Set());
     a.place(focusId, 0, 0, new Set());
 
@@ -600,7 +790,7 @@ export function layoutTree(
       (n) => n.kind === "person" && n.id === focusId,
     ) as LaidOutPerson | undefined;
 
-    if (mode === "hourglass") {
+    if (drawsDown) {
       // Slide the ancestor half so the two halves share the same focus card,
       // then drop the ancestor copy of the focus person.
       const dx = focusX - (aFocus?.x ?? 0);
@@ -619,6 +809,12 @@ export function layoutTree(
           ...l,
           points: l.points.map((p) => ({ x: p.x + dx, y: p.y })),
         });
+      }
+      // The ancestor half's copy of the focus person is thrown away, and with
+      // it the count of the parents it did not draw — which in a household
+      // view is the whole "show the generation above" affordance.
+      if (focusNode && aFocus?.hiddenParents) {
+        focusNode.hiddenParents = aFocus.hiddenParents;
       }
     } else {
       nodes.push(...a.nodes);

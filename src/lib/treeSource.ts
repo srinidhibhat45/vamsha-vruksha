@@ -90,6 +90,7 @@ export function buildTreePayload(lineageId: string): TreePayload | null {
       childIds: u.childIds.filter((c) => memberSet.has(c)),
       status: u.status,
       year: u.date?.year,
+      endYear: u.endDate?.year,
     };
   }
 

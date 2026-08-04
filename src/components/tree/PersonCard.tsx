@@ -164,12 +164,19 @@ export const PersonCard = memo(function PersonCard({
   baseline,
   onSelect,
   onReRoot,
+  onExpand,
+  openDown,
+  openUp,
 }: {
   node: LaidOutPerson;
   state: CardState;
   baseline: TreeBaseline;
   onSelect: (id: string) => void;
   onReRoot: (id: string) => void;
+  /** Open or close one more layer around this card. */
+  onExpand: (which: "up" | "down", id: string) => void;
+  openDown: boolean;
+  openUp: boolean;
 }) {
   const p = node.person;
   const { isSelected, isHovered, isDimmed, isOnPath, isKeyboardFocus } = state;
@@ -374,34 +381,73 @@ export const PersonCard = memo(function PersonCard({
         </g>
       )}
 
-      {/* Branches the depth limit is hiding. A count and a chevron pointing
-          the way the branch runs — the same affordance an org chart uses,
-          because it is the one people already know. */}
-      {!!node.hiddenChildren && (
+      {/* A daughter whose descendants are read as her husband's family. Said
+          on the card, because a branch that simply stops looks like a branch
+          nobody recorded — which is the opposite of what has happened. */}
+      {node.marriedOut && (
+        <g transform={`translate(${CARD_W - 25} ${CARD_H - 13})`} opacity={0.9}>
+          <title>
+            Her line continues in the family she married into. Her children are
+            drawn; open the tab below her for the rest.
+          </title>
+          <path
+            d="M-5 0h10M2 -4l4 4-4 4"
+            fill="none"
+            stroke="var(--color-kumkum)"
+            strokeWidth={1.5}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+      )}
+
+      {/* Branches not drawn. A count and a chevron pointing the way the branch
+          runs — the same affordance an org chart uses, because it is the one
+          people already know. Clicking opens *this* branch and moves nothing
+          else; double-clicking the card still re-roots the whole tree. */}
+      {(!!node.hiddenChildren || openDown) && (
         <CountTab
           x={CARD_W / 2}
           y={CARD_H + 6}
-          count={node.hiddenChildren}
-          direction="down"
-          title={`${node.hiddenChildren} more ${node.hiddenChildren === 1 ? "child" : "children"} — click to open this branch`}
-          onClick={() => onReRoot(p.id)}
+          count={node.hiddenChildren ?? 0}
+          direction={openDown ? "up" : "down"}
+          title={
+            openDown
+              ? "Close this branch again"
+              : node.lineSummarised
+                ? `${node.hiddenChildren} more recorded below — her line is read as her husband's family, click to follow it anyway`
+                : `${node.hiddenChildren} more ${node.hiddenChildren === 1 ? "child" : "children"} — click to show the next generation`
+          }
+          onClick={() => onExpand("down", p.id)}
         />
       )}
 
-      {!!node.hiddenParents && (
+      {(!!node.hiddenParents || openUp) && (
         <CountTab
           x={CARD_W / 2}
           y={-28}
-          count={node.hiddenParents}
-          direction="up"
-          title="More ancestors recorded — click to open"
-          onClick={() => onReRoot(p.id)}
+          count={node.hiddenParents ?? 0}
+          direction={openUp ? "down" : "up"}
+          title={
+            openUp
+              ? "Close the generation above again"
+              : "Show the generation above — their own household"
+          }
+          onClick={() => onExpand("up", p.id)}
         />
       )}
     </g>
   );
 });
 
+/**
+ * The tab that opens one more layer.
+ *
+ * With a count it reads as a promise — "three more below here" — and without
+ * one, which is how it comes back after the layer is open, it is just the
+ * chevron pointing the way back. Same control, same place, so the reader does
+ * not have to hunt for the way to close what they opened.
+ */
 function CountTab({
   x,
   y,
@@ -417,8 +463,9 @@ function CountTab({
   title: string;
   onClick: () => void;
 }) {
-  const W = 48;
+  const W = count > 0 ? 48 : 30;
   const H = 22;
+  const chevronX = count > 0 ? 33 : 15;
   return (
     <g
       transform={`translate(${x - W / 2} ${y})`}
@@ -426,6 +473,7 @@ function CountTab({
         e.stopPropagation();
         onClick();
       }}
+      style={{ cursor: "pointer" }}
     >
       <title>{title}</title>
       <rect
@@ -435,19 +483,25 @@ function CountTab({
         fill="var(--bg-raised)"
         stroke="var(--line-strong)"
       />
-      <text
-        x={17}
-        y={15}
-        textAnchor="middle"
-        fontSize={11}
-        fontWeight={600}
-        fill="var(--fg-soft)"
-        style={{ userSelect: "none" }}
-      >
-        {count}
-      </text>
+      {count > 0 && (
+        <text
+          x={17}
+          y={15}
+          textAnchor="middle"
+          fontSize={11}
+          fontWeight={600}
+          fill="var(--fg-soft)"
+          style={{ userSelect: "none" }}
+        >
+          {count}
+        </text>
+      )}
       <path
-        d={direction === "down" ? "M30 9.5 33 12.5 36 9.5" : "M30 12.5 33 9.5 36 12.5"}
+        d={
+          direction === "down"
+            ? `M${chevronX - 3} 9.5 ${chevronX} 12.5 ${chevronX + 3} 9.5`
+            : `M${chevronX - 3} 12.5 ${chevronX} 9.5 ${chevronX + 3} 12.5`
+        }
         fill="none"
         stroke="var(--fg-faint)"
         strokeWidth={1.6}

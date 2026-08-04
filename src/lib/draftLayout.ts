@@ -1,8 +1,12 @@
 import {
+  BUS_STEP,
   CARD_H,
   CARD_W,
   H_GAP,
   JUNCTION_DROP,
+  JUNCTION_STEP,
+  MAX_BUS_STEPS,
+  MAX_JUNCTION_STEPS,
   ROW_H,
   SPOUSE_GAP,
   V_GAP,
@@ -186,6 +190,17 @@ export function layoutDraft(src: TreeSource): DraftLayoutResult {
   };
 
   const visit = (id: string) => {
+    // Somebody married twice gets their first marriage placed to their left,
+    // so the row reads first wife, husband, second wife — and each junction
+    // falls between the two people in that marriage rather than over the head
+    // of the one who was not.
+    if (!placed.has(id) && src.people[id]) {
+      const us = unionsOf(id);
+      if (us.length > 1) {
+        const first = us[0].partners.find((q) => q !== id);
+        if (first && src.people[first]) place(first);
+      }
+    }
     place(id);
     if (expanded.has(id) || !src.people[id]) return;
     expanded.add(id);
@@ -369,16 +384,55 @@ export function layoutDraft(src: TreeSource): DraftLayoutResult {
 
   const junctions: DraftJunction[] = [];
 
+  /**
+   * How far a marriage's bracket has to drop to get past whoever stands
+   * between the two people in it.
+   *
+   * Measured off the row rather than off a marriage index, because in a draft
+   * the row order is whatever the walk produced — a third marriage may end up
+   * next to its partner and a second one two cards away. Counting the cards
+   * actually in the way is the only thing that is true either way.
+   */
+  const cardsBetween = (a: string, b: string): number => {
+    const ga = byId.get(a)?.row;
+    if (ga === undefined || ga !== byId.get(b)?.row) return 0;
+    const row = rows.get(ga) ?? [];
+    const ia = row.indexOf(a);
+    const ib = row.indexOf(b);
+    if (ia < 0 || ib < 0) return 0;
+    return Math.max(0, Math.abs(ia - ib) - 1);
+  };
+
+  /** Which marriage of the busier partner this is, oldest first. */
+  const marriageIndex = (unionId: string, partners: string[]): number => {
+    let best = 0;
+    for (const p of partners) {
+      const list = src.personUnions[p] ?? [];
+      if (list.length < 2) continue;
+      best = Math.max(best, Math.max(0, list.indexOf(unionId)));
+    }
+    return best;
+  };
+
   for (const u of Object.values(src.unions)) {
     const partners = u.partners.filter((p) => byId.has(p));
     if (!partners.length) continue;
 
     const kids = childrenOfUnion(u.id).filter((c) => byId.has(c));
     const rowY = Math.max(...partners.map((p) => byId.get(p)!.y));
-    const jy = rowY + CARD_H + JUNCTION_DROP;
+    const steps =
+      partners.length === 2
+        ? Math.min(MAX_JUNCTION_STEPS, cardsBetween(partners[0], partners[1]))
+        : 0;
+    const jy = rowY + CARD_H + JUNCTION_DROP + steps * JUNCTION_STEP;
     const jx =
       (Math.min(...partners.map(centre)) + Math.max(...partners.map(centre))) /
       2;
+    const order = marriageIndex(u.id, partners);
+    const total = Math.max(
+      ...partners.map((p) => (src.personUnions[p] ?? []).length),
+      1,
+    );
 
     if (partners.length === 2) {
       const [a, b] = [...partners].sort((p, q) => x.get(p)! - x.get(q)!);
@@ -391,6 +445,9 @@ export function layoutDraft(src: TreeSource): DraftLayoutResult {
         row: rowY / ROW_H,
         status: u.status,
         year: u.year,
+        endYear: u.endYear,
+        order: total > 1 ? order + 1 : undefined,
+        ofTotal: total > 1 ? total : undefined,
       } satisfies LaidOutJunction);
 
       links.push({
@@ -419,7 +476,8 @@ export function layoutDraft(src: TreeSource): DraftLayoutResult {
     // One bus per marriage, just above the topmost child, so siblings read as
     // a set and two marriages never share a line.
     const topChildY = Math.min(...kids.map((c) => byId.get(c)!.y));
-    const busY = topChildY - V_GAP / 2 + 12;
+    const busY =
+      topChildY - V_GAP / 2 + 12 + Math.min(MAX_BUS_STEPS, order) * BUS_STEP;
     const from = { x: jx, y: partners.length === 2 ? jy : rowY + CARD_H };
 
     for (const kid of kids) {

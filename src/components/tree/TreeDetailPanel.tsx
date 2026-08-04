@@ -102,6 +102,27 @@ function PersonItem({
   );
 }
 
+const STATUS_WORD: Record<string, string> = {
+  widowed: "ended in widowhood",
+  separated: "separated",
+};
+
+/** "second marriage, 1948–1961, ended in widowhood" — in words, not symbols. */
+function marriageNote(
+  u: { year?: number; endYear?: number; status?: string },
+  order?: number,
+): string | undefined {
+  const ordinals = ["", "first", "second", "third", "fourth"];
+  const parts: string[] = [];
+  if (order) parts.push(`${ordinals[order] ?? `${order}th`} marriage`);
+  if (u.year && u.endYear) parts.push(`${u.year}–${u.endYear}`);
+  else if (u.year) parts.push(`married ${u.year}`);
+  else if (u.endYear) parts.push(`ended ${u.endYear}`);
+  const word = u.status ? STATUS_WORD[u.status] : undefined;
+  if (word) parts.push(word);
+  return parts.length ? parts.join(", ") : undefined;
+}
+
 function Group({
   title,
   children,
@@ -175,10 +196,24 @@ export function TreeDetailPanel({
     (id) => payload.people[id],
   );
   const unionIds = payload.personUnions[person.id] ?? [];
-  const spouses = unionIds
-    .flatMap((u) => payload.unions[u]?.partners ?? [])
-    .filter((id) => id !== person.id)
-    .map((id) => payload.people[id]);
+
+  /*
+    Marriages, oldest first, each with what it is: when it began, whether it
+    ended, and which one of several it was. Listed as marriages rather than as
+    a flat run of spouse names because that list — "Lakshmi, Yamuna" under a
+    man who was widowed and remarried — is the single most misread thing on
+    the page, and the panel is where a screen-reader user meets it at all.
+  */
+  const marriages = unionIds
+    .map((id) => payload.unions[id])
+    .filter((u): u is NonNullable<typeof u> => !!u)
+    .map((u, i, all) => ({
+      union: u,
+      partner: payload.people[u.partners.find((p) => p !== person.id) ?? ""],
+      note: marriageNote(u, all.length > 1 ? i + 1 : undefined),
+    }))
+    .filter((m) => m.partner);
+
   const children = unionIds
     .flatMap((u) => payload.unions[u]?.childIds ?? [])
     .map((id) => payload.people[id]);
@@ -335,10 +370,15 @@ export function TreeDetailPanel({
             </Group>
           )}
 
-          {spouses.length > 0 && (
-            <Group title={spouses.length > 1 ? "Marriages" : "Married to"}>
-              {spouses.map((p) => (
-                <PersonItem key={p?.id} person={p} onSelect={onSelect} />
+          {marriages.length > 0 && (
+            <Group title={marriages.length > 1 ? "Marriages" : "Married to"}>
+              {marriages.map((m) => (
+                <PersonItem
+                  key={m.union.id}
+                  person={m.partner}
+                  onSelect={onSelect}
+                  suffix={m.note}
+                />
               ))}
             </Group>
           )}

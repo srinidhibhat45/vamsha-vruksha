@@ -76,12 +76,24 @@ export interface Source {
   year?: number;
 }
 
+/**
+ * One marriage, recorded on both partners.
+ *
+ * `status` and `endDate` are what make a second marriage legible rather than
+ * merely present. A widower who remarried and a man with two wives at once are
+ * the same three records and different families, and the only thing that tells
+ * them apart is whether the first marriage had ended and when. Both are
+ * ordinary in the generations this archive covers, so the distinction has to be
+ * storable — and where it is not known, absent, which is the honest answer.
+ */
 export interface SpouseLink {
   personId: string;
   /** Stable id shared by both partners so the union renders once. */
   unionId?: string;
   status?: "married" | "widowed" | "separated" | "unknown";
   date?: FuzzyDate;
+  /** When the marriage ended — a death, a separation. */
+  endDate?: FuzzyDate;
   place?: PlaceRef;
 }
 
@@ -192,6 +204,7 @@ export interface Union {
   childIds: string[];
   status?: SpouseLink["status"];
   date?: FuzzyDate;
+  endDate?: FuzzyDate;
   place?: PlaceRef;
 }
 
@@ -418,7 +431,16 @@ export interface DraftPerson {
   /** Draft keys, or the id of a person already in the archive. */
   fatherKey?: string;
   motherKey?: string;
-  spouseKeys?: { key: string; year?: number }[];
+  /**
+   * Marriages, oldest first. `endYear` and `status` are how a second marriage
+   * says whether it followed the first or ran alongside it — see SpouseLink.
+   */
+  spouseKeys?: {
+    key: string;
+    year?: number;
+    endYear?: number;
+    status?: SpouseLink["status"];
+  }[];
 
   confidence?: Confidence;
 }

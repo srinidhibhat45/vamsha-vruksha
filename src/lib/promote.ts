@@ -295,7 +295,12 @@ export function draftToMember(
     input: input as PersonInput,
     fatherRef: p.fatherKey,
     motherRef: p.motherKey,
-    spouseRefs: p.spouseKeys?.map((s) => ({ ref: s.key, year: s.year })),
+    spouseRefs: p.spouseKeys?.map((s) => ({
+      ref: s.key,
+      year: s.year,
+      endYear: s.endYear,
+      status: s.status,
+    })),
   };
 }
 

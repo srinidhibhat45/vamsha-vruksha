@@ -4,9 +4,41 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FamilyCanvas, type CanvasActions } from "./FamilyCanvas";
 import { DraftPersonForm } from "./DraftPersonForm";
 import { PersonPicker, type PickedPerson } from "../PersonPicker";
-import { checkDraft, displayOf } from "@/lib/family";
+import {
+  checkDraft,
+  conventionalName,
+  describeDraft,
+  displayOf,
+  nameIsInherited,
+} from "@/lib/family";
 import type { ContributeRefs } from "../ContributeForm";
-import type { DraftPerson, FamilyDraft } from "@/lib/types";
+import type { DraftPerson, FamilyDraft, SpouseLink } from "@/lib/types";
+
+/**
+ * One marriage, seen from either side.
+ *
+ * A marriage is stored on one row only — whichever the contributor happened to
+ * press "+ Marriage" from. Reading it from that row alone meant the wife's own
+ * panel listed no husband, offered no way to correct the year, and answered
+ * "add a child" by inventing a child with no father. `ownerKey` is which row
+ * holds it, so an edit made from either side writes to the one place it lives.
+ */
+export interface DraftMarriage {
+  ownerKey: string;
+  /**
+   * The key inside `ownerKey`'s spouseKeys — which is the *other* person from
+   * the owner's point of view, and therefore not always the partner shown
+   * here. Read from the wife's panel of a marriage her husband's row holds,
+   * `partner` is the husband and this is the wife: matching on `partner` there
+   * looks for the husband inside his own list of spouses, finds nothing, and
+   * silently drops every edit made from her side.
+   */
+  linkKey: string;
+  partner: DraftPerson;
+  year?: number;
+  endYear?: number;
+  status?: SpouseLink["status"];
+}
 
 /**
  * Entering a whole family at once.
@@ -195,9 +227,61 @@ export function FamilyBuilder({
 
   const addFirst = (seed: Partial<DraftPerson> = {}) => add(blankPerson(seed));
 
+  /** Every marriage this person is in, oldest first, from whichever row holds it. */
+  const marriagesOf = useCallback(
+    (person: DraftPerson): DraftMarriage[] => {
+      const out: DraftMarriage[] = [];
+      for (const s of person.spouseKeys ?? []) {
+        const partner = people.find((p) => p.key === s.key);
+        if (partner && !out.some((m) => m.partner.key === partner.key)) {
+          out.push({
+            ownerKey: person.key,
+            linkKey: partner.key,
+            partner,
+            year: s.year,
+            endYear: s.endYear,
+            status: s.status,
+          });
+        }
+      }
+      for (const q of people) {
+        if (q.key === person.key) continue;
+        for (const s of q.spouseKeys ?? []) {
+          if (s.key !== person.key) continue;
+          if (out.some((m) => m.partner.key === q.key)) continue;
+          out.push({
+            ownerKey: q.key,
+            linkKey: person.key,
+            partner: q,
+            year: s.year,
+            endYear: s.endYear,
+            status: s.status,
+          });
+        }
+      }
+      // Oldest first, so "1st" and "2nd" mean the same thing here as on the
+      // drawing and in the published tree.
+      return out.sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999));
+    },
+    [people],
+  );
+
   const addParent = (childKey: string, role: "father" | "mother") => {
     const child = people.find((p) => p.key === childKey);
     if (!child) return;
+
+    /*
+      A child's middle name is their father's given name, so it usually says
+      what to call him before anybody types it. Usually — but a *married
+      woman* carries her husband's given name there, not her father's, so
+      reading it as her father's name fills the father's card in with her
+      husband's name. Only prefill from a patronymic that is still a
+      patronymic.
+    */
+    const marriedWoman = child.gender === "F" && marriagesOf(child).length > 0;
+    const fromPatronymic =
+      role === "father" && !marriedWoman ? (child.patronymic ?? "") : "";
+
     const parent = blankPerson({
       gender: role === "father" ? "M" : "F",
       // The lineage fields descend down the male line, so a father's gotra,
@@ -208,10 +292,8 @@ export function FamilyBuilder({
       kuladevata: child.kuladevata,
       math: child.math,
       community: child.community,
-      surname: role === "father" ? child.surname : undefined,
-      // The Konkani middle name *is* the father's given name, so a child with
-      // a patronymic has already told us what to call him.
-      given: role === "father" ? (child.patronymic ?? "") : "",
+      surname: role === "father" && !marriedWoman ? child.surname : undefined,
+      given: fromPatronymic,
     });
 
     add(parent, (list) =>
@@ -226,14 +308,76 @@ export function FamilyBuilder({
   const addSpouse = (personKey: string) => {
     const person = people.find((p) => p.key === personKey);
     if (!person) return;
+    const gender =
+      person.gender === "M" ? "F" : person.gender === "F" ? "M" : "?";
+
+    // A wife takes her husband's given name as her middle name and his
+    // surname — nothing can be lost here, the row is brand new.
+    const takesHisName = gender === "F" && person.gender === "M";
     const spouse = blankPerson({
-      gender: person.gender === "M" ? "F" : person.gender === "F" ? "M" : "?",
+      gender,
       community: person.community,
+      ...(takesHisName ? conventionalName(person) : {}),
     });
+
     add(spouse, (list) =>
       list.map((p) =>
         p.key === person.key
           ? { ...p, spouseKeys: [...(p.spouseKeys ?? []), { key: spouse.key }] }
+          : p,
+      ),
+    );
+  };
+
+  /**
+   * Put somebody's name onto the convention's other side — her husband's, or
+   * her father's again.
+   *
+   * An undo step of its own, because it rewrites two fields at once and the
+   * contributor should be able to take it straight back if the family in
+   * front of them did not follow the convention.
+   */
+  const useNameOf = (personKey: string, sourceKey: string) => {
+    const source = people.find((p) => p.key === sourceKey);
+    const next = conventionalName(source);
+    if (!next.patronymic && !next.surname) return;
+    commit(
+      people.map((p) =>
+        p.key === personKey
+          ? { ...p, patronymic: next.patronymic, surname: next.surname }
+          : p,
+      ),
+    );
+  };
+
+  const updateMarriage = (
+    ownerKey: string,
+    linkKey: string,
+    changes: Partial<Omit<DraftMarriage, "ownerKey" | "linkKey" | "partner">>,
+  ) => {
+    onChange(
+      people.map((p) =>
+        p.key === ownerKey
+          ? {
+              ...p,
+              spouseKeys: (p.spouseKeys ?? []).map((s) =>
+                s.key === linkKey ? { ...s, ...changes } : s,
+              ),
+            }
+          : p,
+      ),
+    );
+  };
+
+  /** Unmarry two people without removing either of them from the draft. */
+  const removeMarriage = (ownerKey: string, linkKey: string) => {
+    commit(
+      people.map((p) =>
+        p.key === ownerKey
+          ? {
+              ...p,
+              spouseKeys: (p.spouseKeys ?? []).filter((s) => s.key !== linkKey),
+            }
           : p,
       ),
     );
@@ -253,11 +397,26 @@ export function FamilyBuilder({
 
     let father = members.find((m) => m.gender === "M");
     let mother = members.find((m) => m.gender === "F");
-    const rest = members.filter((m) => m !== father && m !== mother);
+    // Whoever is left goes into the empty slot in the draft's own order, so
+    // the same couple produces the same result whichever of the two the
+    // contributor happened to be looking at when they pressed the button.
+    const rest = members
+      .filter((m) => m !== father && m !== mother)
+      .sort((a, b) => people.indexOf(a) - people.indexOf(b));
     if (!father) father = rest.shift();
     if (!mother) mother = rest.shift();
 
-    const source = father ?? mother!;
+    /*
+      The child's middle name is its father's given name — but only when we
+      actually know which of the two the father is. With neither sex recorded
+      the slots above are filled in an order that is stable rather than
+      informed, and copying a name out of a coin toss puts a woman's given
+      name in as a patronymic and reads, on the card, as a fact. Left blank
+      instead, and checkDraft says so.
+    */
+    const knownFather = father?.gender === "M" ? father : undefined;
+    const source = knownFather ?? father ?? mother!;
+
     add(
       blankPerson({
         fatherKey: father?.key,
@@ -268,19 +427,33 @@ export function FamilyBuilder({
         kuladevata: source.kuladevata,
         math: source.math,
         community: source.community ?? mother?.community,
-        patronymic: father?.given || undefined,
+        patronymic: knownFather?.given || undefined,
       }),
     );
   };
 
+  /**
+   * A child of whoever is selected.
+   *
+   * With one marriage it belongs to that marriage. With two it cannot be
+   * guessed, and guessing is the error this archive most wants to avoid — so
+   * the panel offers a button per marriage instead, and this generic one is
+   * only ever reached by somebody with no marriage recorded at all, where a
+   * single-parent child is what they mean.
+   */
   const addChild = (personKey: string) => {
     const person = people.find((p) => p.key === personKey);
     if (!person) return;
-    const spouses = person.spouseKeys ?? [];
+    const marriages = marriagesOf(person);
     addChildOf(
-      spouses.length === 1 ? [person.key, spouses[0].key] : [person.key],
+      marriages.length === 1
+        ? [person.key, marriages[0].partner.key]
+        : [person.key],
     );
   };
+
+  const addChildOfMarriage = (personKey: string, partnerKey: string) =>
+    addChildOf([personKey, partnerKey]);
 
   const addSibling = (personKey: string) => {
     const person = people.find((p) => p.key === personKey);
@@ -313,9 +486,9 @@ export function FamilyBuilder({
   const relatives = (person: DraftPerson) => {
     const father = people.find((p) => p.key === person.fatherKey);
     const mother = people.find((p) => p.key === person.motherKey);
-    const spouses = (person.spouseKeys ?? [])
-      .map((s) => people.find((p) => p.key === s.key))
-      .filter((p): p is DraftPerson => !!p);
+    // Read from both rows: a marriage entered from the husband's card is the
+    // wife's marriage too, and her panel used to show none.
+    const spouses = marriagesOf(person).map((m) => m.partner);
     const children = people.filter(
       (p) => p.fatherKey === person.key || p.motherKey === person.key,
     );
@@ -465,6 +638,7 @@ export function FamilyBuilder({
               refs={refs}
               variant={variant}
               relatives={relatives(selected)}
+              marriages={marriagesOf(selected)}
               allPeople={people}
               onChange={(changes) => update(selected.key, changes)}
               onRemove={() => remove(selected.key)}
@@ -473,6 +647,12 @@ export function FamilyBuilder({
               onAddSpouse={() => addSpouse(selected.key)}
               onAddChild={() => addChild(selected.key)}
               onAddSibling={() => addSibling(selected.key)}
+              onUpdateMarriage={updateMarriage}
+              onRemoveMarriage={removeMarriage}
+              onAddChildOfMarriage={(partnerKey) =>
+                addChildOfMarriage(selected.key, partnerKey)
+              }
+              onUseNameOf={(sourceKey) => useNameOf(selected.key, sourceKey)}
               onSelect={setSelectedKey}
               onLinkExisting={(id) => update(selected.key, { existingId: id })}
               onUnlinkExisting={() =>
@@ -552,9 +732,12 @@ export function FamilyBuilder({
                     aria-pressed={p.key === selectedKey}
                     className={`chip chip-sm ${
                       p.key === selectedKey ? "chip-selected" : ""
-                    }`}
+                    } ${displayOf(p) ? "" : "italic text-[var(--fg-faint)]"}`}
+                    title={
+                      displayOf(p) ? undefined : "Still needs a given name"
+                    }
                   >
-                    {displayOf(p) || "Unnamed"}
+                    {displayOf(p) || describeDraft(p, people)}
                     {p.existingId && (
                       <span
                         className="text-[var(--color-tulsi)]"

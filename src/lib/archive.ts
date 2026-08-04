@@ -186,6 +186,7 @@ function buildUnions(people: Person[], byId: Map<string, Person>) {
       if (existing) {
         existing.status ??= link.status;
         existing.date ??= link.date;
+        existing.endDate ??= link.endDate;
         existing.place ??= link.place;
         continue;
       }
@@ -195,6 +196,7 @@ function buildUnions(people: Person[], byId: Map<string, Person>) {
         childIds: [],
         status: link.status,
         date: link.date,
+        endDate: link.endDate,
         place: link.place,
       });
     }
@@ -243,6 +245,32 @@ function buildUnions(people: Person[], byId: Map<string, Person>) {
       if (yb != null) return 1;
       return 0;
     });
+  }
+
+  // A person's marriages, oldest first.
+  //
+  // Insertion order is the order the JSON happened to list them in, and for
+  // anyone married twice that is the difference between a tree that reads
+  // "first wife, then the second" and one that reads as an unexplained pair.
+  // The marriage year decides it where there is one; where there is not, the
+  // eldest child of each marriage is the next best evidence, and a family that
+  // recorded neither at least keeps a stable order rather than a shuffling one.
+  for (const [id, list] of unionsOf) {
+    if (list.length < 2) continue;
+    list.sort((a, b) => unionOrderKey(a) - unionOrderKey(b) || a.localeCompare(b));
+    unionsOf.set(id, list);
+  }
+
+  function unionOrderKey(unionId: string): number {
+    const u = unions.get(unionId);
+    if (!u) return Number.MAX_SAFE_INTEGER;
+    if (u.date?.year != null) return u.date.year;
+    const births = u.childIds
+      .map((c) => birthYear(byId.get(c)))
+      .filter((y): y is number => y != null);
+    // A marriage dated only by its children sorts a notch after one dated
+    // outright in the same year, since the wedding preceded the birth.
+    return births.length ? Math.min(...births) - 0.5 : Number.MAX_SAFE_INTEGER;
   }
 
   return { unions, unionsOf, parentUnionOf };

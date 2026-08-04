@@ -5,9 +5,15 @@ import { useEffect, useId, useRef, useState } from "react";
 import { Select } from "../ui/Select";
 import { MatchHint } from "../MatchHint";
 import { PhotoField } from "../PhotoField";
-import { displayOf } from "@/lib/family";
+import {
+  conventionalName,
+  describeDraft,
+  displayOf,
+  nameMatches,
+} from "@/lib/family";
 import type { ContributeRefs } from "../ContributeForm";
-import type { DraftPerson } from "@/lib/types";
+import type { DraftMarriage } from "./FamilyBuilder";
+import type { DraftPerson, SpouseLink } from "@/lib/types";
 
 /**
  * One person inside a family draft, as a panel beside the drawing.
@@ -125,6 +131,149 @@ function Disclosure({
   );
 }
 
+function sentenceCase(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+const ORDINAL = ["", "First", "Second", "Third", "Fourth", "Fifth"];
+
+/**
+ * One marriage, with the two things that make a second one legible: when it
+ * happened and whether it had ended. Plus the child button, which belongs
+ * here rather than on the person — a child is a child *of a marriage*, and
+ * asking for one from somebody with two wives has no answer.
+ */
+function MarriageRow({
+  marriage,
+  index,
+  allPeople,
+  onSelect,
+  onChange,
+  onRemove,
+  onAddChild,
+}: {
+  marriage: DraftMarriage;
+  index?: number;
+  allPeople: DraftPerson[];
+  onSelect: (key: string) => void;
+  onChange: (changes: {
+    year?: number;
+    endYear?: number;
+    status?: SpouseLink["status"];
+  }) => void;
+  onRemove: () => void;
+  onAddChild: () => void;
+}) {
+  const [confirm, setConfirm] = useState(false);
+  const partner = marriage.partner;
+  const name = displayOf(partner);
+  const yearOf = (v: string) => {
+    const n = Number(v);
+    return v.trim() && Number.isFinite(n) ? n : undefined;
+  };
+
+  return (
+    <div className="rounded-[var(--shape-md)] border border-[var(--outline-soft)] p-3">
+      <div className="flex items-baseline justify-between gap-2">
+        <p className="min-w-0 text-[0.9rem]">
+          {index && (
+            <span className="fact-label mr-1.5">
+              {ORDINAL[index] ?? `${index}th`}
+            </span>
+          )}
+          <button
+            type="button"
+            onClick={() => onSelect(partner.key)}
+            className={`link-underline font-medium ${
+              name ? "" : "italic text-[var(--fg-faint)]"
+            }`}
+          >
+            {name || describeDraft(partner, allPeople)}
+          </button>
+        </p>
+        {confirm ? (
+          <span className="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              onClick={onRemove}
+              className="btn btn-text btn-sm text-[var(--accent)]"
+            >
+              Unmarry
+            </button>
+            <button
+              type="button"
+              onClick={() => setConfirm(false)}
+              className="btn btn-text btn-sm"
+            >
+              Keep
+            </button>
+          </span>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setConfirm(true)}
+            className="btn btn-text btn-sm shrink-0 text-[var(--fg-faint)]"
+          >
+            Not married
+            <span className="sr-only">
+              {" "}
+              — remove this marriage, keeping both people
+            </span>
+          </button>
+        )}
+      </div>
+
+      <div className="mt-2 grid grid-cols-2 gap-2">
+        <Field label="Married in">
+          {(p) => (
+            <input
+              {...p}
+              className="field field-sm"
+              inputMode="numeric"
+              value={marriage.year ?? ""}
+              onChange={(e) => onChange({ year: yearOf(e.target.value) })}
+              placeholder="1923"
+            />
+          )}
+        </Field>
+        <Field label="Until">
+          {(p) => (
+            <input
+              {...p}
+              className="field field-sm"
+              inputMode="numeric"
+              value={marriage.endYear ?? ""}
+              onChange={(e) => onChange({ endYear: yearOf(e.target.value) })}
+              placeholder="1928"
+            />
+          )}
+        </Field>
+      </div>
+
+      <div className="mt-2">
+        <Select
+          label="How it ended"
+          value={marriage.status === "married" ? "" : (marriage.status ?? "")}
+          onChange={(v) =>
+            onChange({
+              status: (v || "married") as SpouseLink["status"],
+            })
+          }
+          options={MARRIAGE_END}
+        />
+      </div>
+
+      <button
+        type="button"
+        onClick={onAddChild}
+        className="btn btn-outlined btn-sm mt-2.5"
+      >
+        <span aria-hidden>+</span> Child of this marriage
+      </button>
+    </div>
+  );
+}
+
 export interface DraftRelatives {
   father?: DraftPerson;
   mother?: DraftPerson;
@@ -133,10 +282,17 @@ export interface DraftRelatives {
   siblings: DraftPerson[];
 }
 
+const MARRIAGE_END = [
+  { value: "", label: "Still married, or not known" },
+  { value: "widowed", label: "Ended — one of them died" },
+  { value: "separated", label: "Ended — separated" },
+];
+
 export function DraftPersonForm({
   person,
   refs,
   relatives,
+  marriages,
   allPeople,
   variant,
   onChange,
@@ -146,6 +302,10 @@ export function DraftPersonForm({
   onAddSpouse,
   onAddChild,
   onAddSibling,
+  onUpdateMarriage,
+  onRemoveMarriage,
+  onAddChildOfMarriage,
+  onUseNameOf,
   onSelect,
   onLinkExisting,
   onUnlinkExisting,
@@ -153,6 +313,7 @@ export function DraftPersonForm({
   person: DraftPerson;
   refs: ContributeRefs;
   relatives: DraftRelatives;
+  marriages: DraftMarriage[];
   allPeople: DraftPerson[];
   variant: "contribute" | "admin";
   onChange: (changes: Partial<DraftPerson>) => void;
@@ -162,6 +323,14 @@ export function DraftPersonForm({
   onAddSpouse: () => void;
   onAddChild: () => void;
   onAddSibling: () => void;
+  onUpdateMarriage: (
+    ownerKey: string,
+    linkKey: string,
+    changes: { year?: number; endYear?: number; status?: SpouseLink["status"] },
+  ) => void;
+  onRemoveMarriage: (ownerKey: string, linkKey: string) => void;
+  onAddChildOfMarriage: (partnerKey: string) => void;
+  onUseNameOf: (sourceKey: string) => void;
   onSelect: (key: string) => void;
   onLinkExisting: (id: string) => void;
   onUnlinkExisting: () => void;
@@ -204,21 +373,52 @@ export function DraftPersonForm({
       ? "Filled in"
       : "Gotra, kuladevata, village, matha";
 
+  // Marriages get their own block below — they carry dates and a child button
+  // each, which a one-line list of names cannot.
   const relationRows = [
     { label: "Father", list: relatives.father ? [relatives.father] : [] },
     { label: "Mother", list: relatives.mother ? [relatives.mother] : [] },
-    { label: "Married to", list: relatives.spouses },
     { label: "Brothers and sisters", list: relatives.siblings },
     { label: "Children", list: relatives.children },
   ].filter((row) => row.list.length);
+
+  /*
+    Whose name this person carries, by the convention — her father's until she
+    marries, her husband's after. Offered rather than applied, and only when
+    it would actually change something.
+  */
+  const husband = marriages.find((m) => m.partner.gender !== "F")?.partner;
+  const nameSources =
+    person.gender === "F"
+      ? ([
+          husband && { source: husband, role: "husband" as const },
+          relatives.father && {
+            source: relatives.father,
+            role: "father" as const,
+          },
+        ].filter(Boolean) as { source: DraftPerson; role: "husband" | "father" }[])
+      : [];
+  const nameOffers = nameSources.filter(
+    (s) =>
+      displayOf(s.source) &&
+      !nameMatches(person, s.source) &&
+      (conventionalName(s.source).patronymic ||
+        conventionalName(s.source).surname),
+  );
 
   return (
     <section className="surface flex min-h-0 flex-col">
       {/* ------------------------------------------------- Heading */}
       <header className="border-b border-[var(--line)] px-4 py-3">
         <div className="flex items-start justify-between gap-2">
-          <h2 className="font-display text-[1.25rem] font-medium leading-tight">
-            {displayOf(person) || "New person"}
+          {/* Not "New person": the heading has to say *which* new person, or
+              it is the same heading on every unnamed row in the draft. */}
+          <h2
+            className={`font-display text-[1.25rem] font-medium leading-tight ${
+              displayOf(person) ? "" : "italic text-[var(--fg-soft)]"
+            }`}
+          >
+            {displayOf(person) || sentenceCase(describeDraft(person, allPeople))}
           </h2>
           {confirmRemove ? (
             <span className="flex shrink-0 items-center gap-1">
@@ -243,7 +443,11 @@ export function DraftPersonForm({
               onClick={() => setConfirmRemove(true)}
               className="btn btn-text btn-sm shrink-0 text-[var(--fg-faint)]"
             >
-              Remove<span className="sr-only"> {displayOf(person) || "this person"}</span>
+              Remove
+              <span className="sr-only">
+                {" "}
+                {displayOf(person) || describeDraft(person, allPeople)}
+              </span>
             </button>
           )}
         </div>
@@ -278,11 +482,25 @@ export function DraftPersonForm({
               </button>
             )}
             <button type="button" onClick={onAddSpouse} className="btn btn-outlined btn-sm">
-              <span aria-hidden>+</span> Marriage
+              <span aria-hidden>+</span>{" "}
+              {marriages.length ? "Another marriage" : "Marriage"}
             </button>
-            <button type="button" onClick={onAddChild} className="btn btn-outlined btn-sm">
-              <span aria-hidden>+</span> Child
-            </button>
+            {/* With two marriages there is no such thing as "a child" — the
+                buttons that mean something are the one per marriage below. */}
+            {marriages.length < 2 && (
+              <button
+                type="button"
+                onClick={onAddChild}
+                className="btn btn-outlined btn-sm"
+                title={
+                  marriages.length === 1
+                    ? `Add a child of this marriage`
+                    : "Add a child with no other parent recorded"
+                }
+              >
+                <span aria-hidden>+</span> Child
+              </button>
+            )}
             {(relatives.father || relatives.mother) && (
               <button type="button" onClick={onAddSibling} className="btn btn-outlined btn-sm">
                 <span aria-hidden>+</span> Sibling
@@ -303,9 +521,11 @@ export function DraftPersonForm({
                         key={r.key}
                         type="button"
                         onClick={() => onSelect(r.key)}
-                        className="link-underline text-left"
+                        className={`link-underline text-left ${
+                          displayOf(r) ? "" : "italic text-[var(--fg-faint)]"
+                        }`}
                       >
-                        {displayOf(r) || "Unnamed"}
+                        {displayOf(r) || "not named yet"}
                       </button>
                     ))}
                   </dd>
@@ -314,6 +534,38 @@ export function DraftPersonForm({
             </dl>
           )}
         </div>
+
+        {/* ---------------------------------------------- Marriages */}
+        {marriages.length > 0 && (
+          <div className="space-y-2">
+            <h3 className="label">
+              {marriages.length > 1
+                ? `${marriages.length} marriages`
+                : "The marriage"}
+            </h3>
+            {marriages.length > 1 && (
+              <p className="hint">
+                Listed oldest first. Say when each one ended and the tree draws
+                them in order, so a second marriage reads as a remarriage
+                rather than as two at once.
+              </p>
+            )}
+            {marriages.map((m, i) => (
+              <MarriageRow
+                key={m.partner.key}
+                marriage={m}
+                index={marriages.length > 1 ? i + 1 : undefined}
+                allPeople={allPeople}
+                onSelect={onSelect}
+                onChange={(changes) =>
+                  onUpdateMarriage(m.ownerKey, m.linkKey, changes)
+                }
+                onRemove={() => onRemoveMarriage(m.ownerKey, m.linkKey)}
+                onAddChild={() => onAddChildOfMarriage(m.partner.key)}
+              />
+            ))}
+          </div>
+        )}
 
         {/* ------------------------------------------------- Name */}
         <div className="space-y-3.5">
@@ -357,6 +609,50 @@ export function DraftPersonForm({
               )}
             </Field>
           </div>
+
+          {/*
+            The convention, as a button rather than a rule.
+
+            A woman's middle name is her father's given name until she marries
+            and her husband's afterwards, and her surname moves with it — the
+            same woman is Sunanda Vasudev Kamath in her father's records and
+            Sunanda Narayan Pai in her husband's. Doing that silently would
+            overwrite a contributor who typed something else on purpose, and
+            plenty of families no longer follow it at all. So it is offered,
+            with both names visible, and either one is one press away.
+          */}
+          {nameOffers.length > 0 && (
+            <div className="rounded-[var(--shape-sm)] bg-[var(--bg-sunken)] px-3 py-2.5">
+              <p className="text-[0.8rem] leading-relaxed text-[var(--fg-soft)]">
+                By the usual naming, a woman carries her father&rsquo;s name
+                until she marries and her husband&rsquo;s after.
+              </p>
+              <div className="mt-1.5 flex flex-wrap gap-1.5">
+                {nameOffers.map(({ source, role }) => {
+                  const next = conventionalName(source);
+                  const shown = [person.given, next.patronymic, next.surname]
+                    .filter(Boolean)
+                    .join(" ");
+                  return (
+                    <button
+                      key={source.key}
+                      type="button"
+                      onClick={() => onUseNameOf(source.key)}
+                      className="btn btn-text btn-sm"
+                      title={`Use ${displayOf(source)}'s name: ${shown}`}
+                    >
+                      Take her {role}&rsquo;s name
+                      <span className="text-[var(--fg-faint)]">
+                        {[next.patronymic, next.surname]
+                          .filter(Boolean)
+                          .join(" ")}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/*
             Not shown for a row that is already linked to a record — the

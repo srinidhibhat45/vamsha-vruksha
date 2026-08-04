@@ -209,6 +209,7 @@ export const PersonInputSchema = z.object({
         personId: z.string().min(1).max(120),
         status: z.enum(["married", "widowed", "separated", "unknown"]).optional(),
         date: FuzzyDateSchema,
+        endDate: FuzzyDateSchema,
         place: PlaceRefSchema,
       }),
     )
@@ -360,7 +361,12 @@ export interface FamilyMember {
   input: PersonInput;
   fatherRef?: string;
   motherRef?: string;
-  spouseRefs?: { ref: string; year?: number; status?: string }[];
+  spouseRefs?: {
+    ref: string;
+    year?: number;
+    endYear?: number;
+    status?: string;
+  }[];
 }
 
 export interface FamilyWriteResult {
@@ -422,10 +428,15 @@ export function createFamily(
         return personId && personId !== id
           ? {
               personId,
-              status: (s.status ?? "married") as NonNullable<
+              // An end year with no stated reason still says the marriage
+              // ended, which is the part the tree draws. Guessing *why* it
+              // ended would put a widowhood in the archive nobody claimed.
+              status: (s.status ??
+                (s.endYear ? "unknown" : "married")) as NonNullable<
                 Person["spouses"]
               >[number]["status"],
               date: s.year ? { year: s.year } : undefined,
+              endDate: s.endYear ? { year: s.endYear } : undefined,
             }
           : null;
       })
@@ -512,10 +523,12 @@ export function createFamily(
 
       const link = {
         personId: id,
-        status: (s.status ?? "married") as NonNullable<
+        status: (s.status ??
+          (s.endYear ? "unknown" : "married")) as NonNullable<
           Person["spouses"]
         >[number]["status"],
         date: s.year ? { year: s.year } : undefined,
+        endDate: s.endYear ? { year: s.endYear } : undefined,
       };
 
       const local = inTarget.get(partnerId);
