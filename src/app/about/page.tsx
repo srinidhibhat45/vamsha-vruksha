@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "About the archive",
   description:
     "How this lineage archive is built, what it holds, what it is biased towards, and how to add to it.",
+  alternates: { canonical: "/about" },
 };
 
 const GLOSSARY = [

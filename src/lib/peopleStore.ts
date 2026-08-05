@@ -1,6 +1,5 @@
-import fs from "node:fs";
-import path from "node:path";
 import { z } from "zod";
+import { listDataFiles, readDataFile, writeDataFile } from "./dataFiles.ts";
 import { getArchive, invalidateArchive } from "./archive.ts";
 import type { Person } from "./types.ts";
 
@@ -9,14 +8,16 @@ import type { Person } from "./types.ts";
  *
  * lib/archive.ts is the read path: it loads data/people/*.json once and holds
  * the graph in memory. This is the other half — the only code in the app that
- * changes what is on disk. Everything it does obeys three rules:
+ * changes what is on disk (or, in a deployment, what is committed to git —
+ * see dataFiles.ts and github.ts). Everything it does obeys three rules:
  *
  * 1. A record is rewritten in the file it already lives in. The files are
  *    organised by lineage and a maintainer reads them; moving a person between
  *    files because they were edited would scramble that.
  *
- * 2. Writes are atomic — temp file, then rename. A power cut in the middle of
- *    saving one correction must not take a whole lineage with it.
+ * 2. Writes are atomic — temp file, then rename, locally; a single whole-file
+ *    commit on GitHub. A power cut or a failed request in the middle of saving
+ *    one correction must not take a whole lineage with it.
  *
  * 3. Deleting a person repairs every reference to them first. A dangling
  *    fatherId is worse than a missing record: the tree renderer will happily
@@ -27,10 +28,10 @@ import type { Person } from "./types.ts";
  * render reads the change back rather than serving a stale graph.
  */
 
-const PEOPLE_DIR = path.join(process.cwd(), "data", "people");
+const PEOPLE_DIR = "people";
 
 /** Where records created through the admin land. Kept out of the sample files. */
-const COMMUNITY_FILE = path.join(PEOPLE_DIR, "community.json");
+const COMMUNITY_FILE = "community.json";
 
 interface PeopleDoc {
   [key: string]: unknown;
@@ -38,7 +39,8 @@ interface PeopleDoc {
 }
 
 interface LoadedFile {
-  path: string;
+  /** Filename within data/people/, e.g. "community.json". */
+  name: string;
   /** The document as it sits on disk, so sibling keys survive a rewrite. */
   doc: PeopleDoc;
   /** True when the file was a bare array rather than { people: [...] }. */
@@ -51,18 +53,17 @@ interface LoadedFile {
 /* ------------------------------------------------------------------ */
 
 function loadFiles(): LoadedFile[] {
-  if (!fs.existsSync(PEOPLE_DIR)) return [];
   const out: LoadedFile[] = [];
-  for (const name of fs.readdirSync(PEOPLE_DIR).sort()) {
-    if (!name.endsWith(".json")) continue;
-    const file = path.join(PEOPLE_DIR, name);
+  for (const name of listDataFiles(PEOPLE_DIR)) {
+    const text = readDataFile(`${PEOPLE_DIR}/${name}`);
+    if (text === null) continue;
     try {
-      const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+      const parsed = JSON.parse(text);
       if (Array.isArray(parsed)) {
-        out.push({ path: file, doc: {}, bare: true, people: parsed as Person[] });
+        out.push({ name, doc: {}, bare: true, people: parsed as Person[] });
       } else {
         out.push({
-          path: file,
+          name,
           doc: parsed as PeopleDoc,
           bare: false,
           people: (parsed as PeopleDoc).people ?? [],
@@ -76,16 +77,17 @@ function loadFiles(): LoadedFile[] {
   return out;
 }
 
-function writeFile(loaded: LoadedFile): void {
+async function writeFile(loaded: LoadedFile, meta: CommitMeta): Promise<void> {
   const body = loaded.bare
     ? loaded.people
     : { ...loaded.doc, people: loaded.people };
   const json = JSON.stringify(body, null, 2) + "\n";
+  await writeDataFile(`${PEOPLE_DIR}/${loaded.name}`, json, meta);
+}
 
-  fs.mkdirSync(path.dirname(loaded.path), { recursive: true });
-  const tmp = `${loaded.path}.${process.pid}.tmp`;
-  fs.writeFileSync(tmp, json, "utf8");
-  fs.renameSync(tmp, loaded.path);
+interface CommitMeta {
+  message: string;
+  authorName?: string;
 }
 
 function locate(files: LoadedFile[], id: string) {
@@ -96,6 +98,10 @@ function locate(files: LoadedFile[], id: string) {
   return null;
 }
 
+function label(p: Person): string {
+  return p.name.display ?? [p.name.given, p.name.surname].filter(Boolean).join(" ");
+}
+
 /* ------------------------------------------------------------------ */
 /* Identity                                                            */
 /* ------------------------------------------------------------------ */
@@ -104,7 +110,7 @@ function slug(value: string): string {
   return value
     .normalize("NFKD")
     // Drop combining marks, so "Vāsudēv" and "Vasudev" mint the same stem.
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\p{Mn}/gu, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
@@ -297,7 +303,21 @@ function prune<T>(value: T): T | undefined {
 
 const today = () => new Date().toISOString().slice(0, 10);
 
-export function createPerson(input: PersonInput, by = "Archive maintainer"): Person {
+function communityTarget(files: LoadedFile[]): LoadedFile {
+  return (
+    files.find((f) => f.name === COMMUNITY_FILE) ?? {
+      name: COMMUNITY_FILE,
+      bare: false,
+      people: [],
+      doc: {
+        _note:
+          "Records entered directly by archive maintainers, as opposed to the generated sample lineages.",
+      },
+    }
+  );
+}
+
+export async function createPerson(input: PersonInput, by = "Archive maintainer"): Promise<Person> {
   const files = loadFiles();
   const taken = allIds(files);
 
@@ -318,20 +338,12 @@ export function createPerson(input: PersonInput, by = "Archive maintainer"): Per
     updatedAt: today(),
   };
 
-  const target =
-    files.find((f) => f.path === COMMUNITY_FILE) ??
-    ({
-      path: COMMUNITY_FILE,
-      bare: false,
-      people: [],
-      doc: {
-        _note:
-          "Records entered directly by archive maintainers, as opposed to the generated sample lineages.",
-      },
-    } satisfies LoadedFile);
-
+  const target = communityTarget(files);
   target.people.push(person);
-  writeFile(target);
+  await writeFile(target, {
+    message: `Add ${label(person)} (${person.id})`,
+    authorName: by,
+  });
   invalidateArchive();
   return person;
 }
@@ -345,7 +357,7 @@ export function createPerson(input: PersonInput, by = "Archive maintainer"): Per
  * for: the records refer to each other, and none of them has an id until it is
  * written. So ids are minted for every row up front against one snapshot of
  * what is taken, the relationship fields are rewritten from draft keys to
- * those ids, and the whole set lands in a single write.
+ * those ids, and the whole set lands in a single write per file touched.
  *
  * `link` is the second half. A draft usually hangs off somebody already in the
  * archive, and while a *child* pointing at an existing father needs nothing
@@ -377,10 +389,10 @@ export interface FamilyWriteResult {
   updated: string[];
 }
 
-export function createFamily(
+export async function createFamily(
   members: FamilyMember[],
   by = "Archive maintainer",
-): FamilyWriteResult {
+): Promise<FamilyWriteResult> {
   const files = loadFiles();
   const taken = allIds(files);
   const stamp = today();
@@ -404,20 +416,11 @@ export function createFamily(
     ref ? (ids[ref] ?? (taken.has(ref) ? ref : undefined)) : undefined;
 
   const created: string[] = [];
+  const createdNames: string[] = [];
   const updated = new Set<string>();
   const touched = new Set<LoadedFile>();
 
-  const target =
-    files.find((f) => f.path === COMMUNITY_FILE) ??
-    ({
-      path: COMMUNITY_FILE,
-      bare: false,
-      people: [],
-      doc: {
-        _note:
-          "Records entered directly by archive maintainers, as opposed to the generated sample lineages.",
-      },
-    } satisfies LoadedFile);
+  const target = communityTarget(files);
 
   // 2. Build the records, with relationships now pointing at real ids.
   for (const m of members) {
@@ -505,6 +508,7 @@ export function createFamily(
 
     target.people.push(person);
     created.push(id);
+    createdNames.push(label(person));
   }
 
   // 3. A marriage stated on one side has to exist on the other, or the couple
@@ -560,13 +564,22 @@ export function createFamily(
   }
 
   if (created.length) touched.add(target);
-  for (const file of touched) writeFile(file);
+
+  const message = createdNames.length
+    ? `Add family: ${createdNames.slice(0, 4).join(", ")}${createdNames.length > 4 ? ", …" : ""}`
+    : `Link family members (${by})`;
+
+  // Every touched file is a distinct path, so these commits cannot collide —
+  // they are safe to send together rather than one at a time.
+  await Promise.all(
+    [...touched].map((file) => writeFile(file, { message, authorName: by })),
+  );
   invalidateArchive();
 
   return { ids, created, updated: [...updated] };
 }
 
-export function updatePerson(id: string, input: PersonInput): Person | null {
+export async function updatePerson(id: string, input: PersonInput): Promise<Person | null> {
   const files = loadFiles();
   const found = locate(files, id);
   if (!found) return null;
@@ -597,7 +610,10 @@ export function updatePerson(id: string, input: PersonInput): Person | null {
   };
 
   found.file.people[found.index] = updated;
-  writeFile(found.file);
+  await writeFile(found.file, {
+    message: `Edit ${label(updated)} (${updated.id})`,
+    authorName: "Archive maintainer",
+  });
   invalidateArchive();
   return updated;
 }
@@ -609,10 +625,10 @@ export function updatePerson(id: string, input: PersonInput): Person | null {
  * and it is the one most likely to arrive as a phone call rather than a form.
  * It deserves to be one action.
  */
-export function markDeceased(
+export async function markDeceased(
   id: string,
   death: { year?: number; raw?: string; placeLabel?: string; note?: string } = {},
-): Person | null {
+): Promise<Person | null> {
   const files = loadFiles();
   const found = locate(files, id);
   if (!found) return null;
@@ -643,13 +659,16 @@ export function markDeceased(
   else delete updated.death;
 
   found.file.people[found.index] = updated;
-  writeFile(found.file);
+  await writeFile(found.file, {
+    message: `Mark ${label(updated)} (${updated.id}) deceased`,
+    authorName: "Archive maintainer",
+  });
   invalidateArchive();
   return updated;
 }
 
 /** Undo of the above, for the case where the wrong row was clicked. */
-export function markLiving(id: string): Person | null {
+export async function markLiving(id: string): Promise<Person | null> {
   const files = loadFiles();
   const found = locate(files, id);
   if (!found) return null;
@@ -659,7 +678,10 @@ export function markLiving(id: string): Person | null {
   delete updated.death;
 
   found.file.people[found.index] = updated;
-  writeFile(found.file);
+  await writeFile(found.file, {
+    message: `Mark ${label(updated)} (${updated.id}) living`,
+    authorName: "Archive maintainer",
+  });
   invalidateArchive();
   return updated;
 }
@@ -683,7 +705,6 @@ export function deletionImpact(id: string): DeletionImpact | null {
   const person = archive.people.get(id);
   if (!person) return null;
 
-  const label = (p: Person) => p.name.display ?? [p.name.given, p.name.surname].filter(Boolean).join(" ");
   const children: { id: string; name: string }[] = [];
   const spouses: { id: string; name: string }[] = [];
 
@@ -706,7 +727,7 @@ export interface DeletionResult {
   detached: string[];
 }
 
-export function deletePerson(id: string): DeletionResult | null {
+export async function deletePerson(id: string): Promise<DeletionResult | null> {
   const files = loadFiles();
   const found = locate(files, id);
   if (!found) return null;
@@ -748,7 +769,12 @@ export function deletePerson(id: string): DeletionResult | null {
     }
   }
 
-  for (const file of touched) writeFile(file);
+  const message = `Delete ${label(deleted)} (${deleted.id})`;
+  await Promise.all(
+    [...touched].map((file) =>
+      writeFile(file, { message, authorName: "Archive maintainer" }),
+    ),
+  );
   invalidateArchive();
   return { deleted, detached: [...detached] };
 }
@@ -787,11 +813,11 @@ export type RetargetVocabulary = keyof typeof VOCABULARY_FIELDS;
  * Passing `null` for `toId` clears the field instead, for a value that was
  * simply wrong.
  */
-export function retargetRef(
+export async function retargetRef(
   vocabulary: RetargetVocabulary,
   fromId: string,
   toId: string | null,
-): { changed: string[] } {
+): Promise<{ changed: string[] }> {
   const files = loadFiles();
   const changed: string[] = [];
   const touched = new Set<LoadedFile>();
@@ -844,7 +870,15 @@ export function retargetRef(
     });
   }
 
-  for (const file of touched) writeFile(file);
+  const message = toId
+    ? `Retarget ${vocabulary} ${fromId} -> ${toId} (${changed.length} record${changed.length === 1 ? "" : "s"})`
+    : `Clear ${vocabulary} ${fromId} (${changed.length} record${changed.length === 1 ? "" : "s"})`;
+
+  await Promise.all(
+    [...touched].map((file) =>
+      writeFile(file, { message, authorName: "Archive maintainer" }),
+    ),
+  );
   if (touched.size) invalidateArchive();
   return { changed };
 }
@@ -860,6 +894,6 @@ function placeAfter(
 ) {
   if (!ref) return ref;
   if (toId) return { ...ref, id: toId };
-  const label = ref.label;
-  return label ? { label } : undefined;
+  const l = ref.label;
+  return l ? { label: l } : undefined;
 }

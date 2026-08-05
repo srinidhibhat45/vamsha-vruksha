@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Directory",
   description:
     "Indexes of the surnames, gotras, kuladevatas, mool villages and mathas recorded in this archive — with notes on what each one means.",
+  alternates: { canonical: "/directory" },
 };
 
 export default function DirectoryPage() {

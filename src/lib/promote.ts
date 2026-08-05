@@ -64,7 +64,7 @@ function place(value: string | undefined) {
 }
 
 /** No proposals to resolve — used where a payload is only being inspected. */
-const passThrough: VocabResolver = (_vocabulary, value) => value;
+const passThrough: VocabResolver = async (_vocabulary, value) => value;
 
 function enumOr<T extends string>(
   value: string | undefined,
@@ -83,10 +83,10 @@ function enumOr<T extends string>(
  * shared across every person in a family so six people proposing the same gotra
  * create one entry between them.
  */
-export function payloadToPersonInput(
+export async function payloadToPersonInput(
   payload: Record<string, unknown>,
   vocab: VocabResolver = passThrough,
-): Partial<PersonInput> {
+): Promise<Partial<PersonInput>> {
   const birthYear = num(payload, "birthYear");
   const birthNote = str(payload, "birthNote");
   const deathYear = num(payload, "deathYear");
@@ -158,6 +158,20 @@ export function payloadToPersonInput(
         }
       : undefined;
 
+  // Resolved one at a time, in this fixed order, rather than with
+  // Promise.all — see the note on VocabResolver in vocabStore.ts. Two of
+  // these ("mool" and a birth/death place) can legitimately name the same
+  // brand-new village in one submission, and running them concurrently would
+  // race past each other's not-yet-cached proposal and mint two pending
+  // entries for it instead of one.
+  const birthPlaceId = await vocab("places", str(payload, "birthPlace"));
+  const deathPlaceId = await vocab("places", str(payload, "deathPlace"));
+  const gotra = await vocab("gotras", str(payload, "gotra"));
+  const community = await vocab("communities", str(payload, "community"));
+  const math = await vocab("maths", str(payload, "math"));
+  const kuladevata = await vocab("kuladevatas", str(payload, "kuladevata"));
+  const mool = await vocab("places", str(payload, "mool"));
+
   const input: Partial<PersonInput> = {
     name: {
       // Left undefined rather than "" when the contributor did not supply
@@ -200,22 +214,22 @@ export function payloadToPersonInput(
       birthDate || str(payload, "birthPlace")
         ? {
             date: birthDate,
-            place: place(vocab("places", str(payload, "birthPlace"))),
+            place: place(birthPlaceId),
           }
         : undefined,
     death:
       deathYear || str(payload, "deathPlace")
         ? {
             date: deathYear ? { year: deathYear } : undefined,
-            place: place(vocab("places", str(payload, "deathPlace"))),
+            place: place(deathPlaceId),
           }
         : undefined,
 
-    gotra: vocab("gotras", str(payload, "gotra")),
-    community: vocab("communities", str(payload, "community")),
-    math: vocab("maths", str(payload, "math")),
-    kuladevata: vocab("kuladevatas", str(payload, "kuladevata")),
-    mool: vocab("places", str(payload, "mool")),
+    gotra,
+    community,
+    math,
+    kuladevata,
+    mool,
     veda: str(payload, "veda"),
     sutra: str(payload, "sutra"),
 
@@ -272,14 +286,14 @@ function defined<T extends object>(obj: T): Partial<T> {
 /* ------------------------------------------------------------------ */
 
 /** One draft row, in the vocabulary the store writes. */
-export function draftToMember(
+export async function draftToMember(
   p: DraftPerson,
   /** Draft-wide provenance, applied to everyone the draft creates. */
   sources?: FamilyDraft["sources"],
   /** Shared across the whole draft — see payloadToPersonInput. */
   vocab: VocabResolver = passThrough,
-): FamilyMember {
-  const input = payloadToPersonInput({
+): Promise<FamilyMember> {
+  const input = await payloadToPersonInput({
     sources,
     given: p.given,
     patronymic: p.patronymic,
@@ -346,10 +360,10 @@ export type PublishFamilyResult =
  * against the *current* archive, because "father is record X" was true when it
  * was submitted and X may have been merged away since.
  */
-export function publishFamilyDraft(
+export async function publishFamilyDraft(
   submission: Submission,
   by?: string,
-): PublishFamilyResult {
+): Promise<PublishFamilyResult> {
   const parsed = FamilyDraftSchema.safeParse(submission.payload);
   if (!parsed.success) {
     return {
@@ -375,9 +389,11 @@ export function publishFamilyDraft(
   // Parents before children, so every id a record points at has been minted.
   const ordered = topoOrder(parsed.data.people);
   const vocab = createVocabResolver(by ?? submission.submitter.name);
-  const members = ordered.map((p) =>
-    draftToMember(p, parsed.data.sources, vocab),
-  );
+  // One at a time, not Promise.all — see the note on VocabResolver.
+  const members: FamilyMember[] = [];
+  for (const p of ordered) {
+    members.push(await draftToMember(p, parsed.data.sources, vocab));
+  }
 
   for (const m of members) {
     if (m.existingId) continue;
@@ -391,7 +407,7 @@ export function publishFamilyDraft(
     m.input = check.data;
   }
 
-  const written = createFamily(
+  const written = await createFamily(
     members,
     by ?? submission.submitter.name ?? "Community archive",
   );
@@ -418,9 +434,9 @@ export type PublishResult =
  * correction, an added relationship, a story, a photograph — is layered onto
  * the record it names, keeping whatever the submission did not mention.
  */
-export function publishSubmission(submission: Submission): PublishResult {
+export async function publishSubmission(submission: Submission): Promise<PublishResult> {
   const credit = submission.submitter.name || "Community archive";
-  const draft = payloadToPersonInput(
+  const draft = await payloadToPersonInput(
     submission.payload,
     createVocabResolver(credit),
   );
@@ -462,7 +478,7 @@ export function publishSubmission(submission: Submission): PublishResult {
       return { ok: false, error: firstIssue(parsed.error.issues) };
     }
 
-    const person = updatePerson(submission.targetId, parsed.data);
+    const person = await updatePerson(submission.targetId, parsed.data);
     return person
       ? { ok: true, person, created: false }
       : { ok: false, error: "Could not write the record" };
@@ -477,7 +493,7 @@ export function publishSubmission(submission: Submission): PublishResult {
     return { ok: false, error: firstIssue(parsed.error.issues) };
   }
 
-  return { ok: true, person: createPerson(parsed.data, credit), created: true };
+  return { ok: true, person: await createPerson(parsed.data, credit), created: true };
 }
 
 function firstIssue(issues: { path: (string | number)[]; message: string }[]) {

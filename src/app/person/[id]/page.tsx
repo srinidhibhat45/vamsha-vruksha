@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { AppLink as Link } from "@/components/AppLink";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
+import { SITE_URL } from "@/lib/seo";
 import {
   CONFIDENCE_LABEL,
   CONFIDENCE_NOTE,
@@ -73,15 +75,19 @@ export async function generateMetadata({
   const b = birthYear(person);
   const d = deathYear(person);
   const years = b && d ? `${b}–${d}` : b ? `b. ${b}` : "";
+  const title = `${fullName(person)}${years ? ` (${years})` : ""}`;
+  const description = [
+    fullName(person),
+    person.gotra && `${archive.gotras.get(person.gotra)?.name} gotra`,
+    person.mool && `of ${archive.places.get(person.mool)?.name}`,
+  ]
+    .filter(Boolean)
+    .join(", ");
   return {
-    title: `${fullName(person)}${years ? ` (${years})` : ""}`,
-    description: [
-      fullName(person),
-      person.gotra && `${archive.gotras.get(person.gotra)?.name} gotra`,
-      person.mool && `of ${archive.places.get(person.mool)?.name}`,
-    ]
-      .filter(Boolean)
-      .join(", "),
+    title,
+    description,
+    alternates: { canonical: `/person/${id}` },
+    openGraph: { title, description, type: "profile" },
   };
 }
 
@@ -101,6 +107,25 @@ function formatDate(date?: FuzzyDate): string {
     return `${prefix}${date.day}/${date.month}/${date.year}`;
   }
   return `${prefix}${date.year}`;
+}
+
+/**
+ * A date as partial ISO 8601 — "1890", "1890-05" or "1890-05-12" — which is
+ * what schema.org's Date properties accept for exactly this reason: a
+ * genealogical record rarely carries a full date, and a qualifier like
+ * "circa" or a raw string with no year at all has nothing ISO 8601 can
+ * express, so those are left out of structured data entirely rather than
+ * asserted as more precise than the record actually is.
+ */
+function isoDate(date?: FuzzyDate): string | undefined {
+  if (!date?.year || date.qualifier === "circa" || date.qualifier === "between") {
+    return undefined;
+  }
+  const year = String(date.year).padStart(4, "0");
+  if (!date.month) return year;
+  const month = String(date.month).padStart(2, "0");
+  if (!date.day) return `${year}-${month}`;
+  return `${year}-${month}-${String(date.day).padStart(2, "0")}`;
 }
 
 /** Walk straight up the father's line — the descent a gotra follows. */
@@ -257,8 +282,68 @@ export default async function PersonPage({ params }: { params: Params }) {
     });
   timeline.sort((x, y) => (x.year ?? 9999) - (y.year ?? 9999));
 
+  const personUrl = (p: { id: string }) => `${SITE_URL}/person/${p.id}`;
+  const asPerson = (p: Person) => ({
+    "@type": "Person",
+    name: fullName(p),
+    url: personUrl(p),
+  });
+
   return (
     <div className="mx-auto max-w-[1100px] px-4 py-8">
+      {/*
+        Mirrors what this page already shows and nothing more: the same
+        name, years and family links a visitor reads below, in the shape a
+        search engine's Knowledge Graph and a genealogy crawler both expect.
+        Full birth/death dates only appear here when the record itself
+        carries one — the archive's own privacy rule (name, year and family
+        links for the living) means most living people's records have a
+        year alone anyway, and this reads whatever field the record has
+        rather than deciding anything new.
+      */}
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: fullName(person),
+          alternateName: person.name.aka?.length ? person.name.aka : undefined,
+          url: personUrl(person),
+          gender:
+            person.gender === "M" ? "Male" : person.gender === "F" ? "Female" : undefined,
+          birthDate: isoDate(person.birth?.date),
+          deathDate: person.status === "deceased" ? isoDate(person.death?.date) : undefined,
+          image: person.photo?.url ? `${SITE_URL}${person.photo.url}` : undefined,
+          parent: parents.length ? parents.map(asPerson) : undefined,
+          children: children.length ? children.map(asPerson) : undefined,
+          sibling: siblings.length ? siblings.map(asPerson) : undefined,
+          spouse: spouses.length ? spouses.map(asPerson) : undefined,
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Archive", item: `${SITE_URL}/search` },
+            ...(lineage
+              ? [
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: lineage.label,
+                    item: `${SITE_URL}/tree?lineage=${lineage.id}`,
+                  },
+                ]
+              : []),
+            {
+              "@type": "ListItem",
+              position: lineage ? 3 : 2,
+              name: fullName(person),
+              item: personUrl(person),
+            },
+          ],
+        }}
+      />
       <nav
         aria-label="Breadcrumb"
         className="mb-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.85rem] text-[var(--fg-faint)]"

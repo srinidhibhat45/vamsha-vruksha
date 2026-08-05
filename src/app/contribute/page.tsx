@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Contribute",
   description:
     "Add a person, correct a record, or send a story to the archive. No account needed.",
+  alternates: { canonical: "/contribute" },
 };
 
 type Params = Promise<{ correct?: string }>;

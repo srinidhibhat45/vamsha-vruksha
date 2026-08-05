@@ -1,8 +1,14 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { findMatches } from "@/lib/match";
+import { clientIp, createRateLimiter, rateLimitResponse } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
+
+// Fired on every keystroke while a contributor fills in a name, so the limit
+// is per-minute rather than per-ten-minutes and generous enough that normal
+// typing never touches it.
+const limiter = createRateLimiter({ windowMs: 60 * 1000, max: 60 });
 
 /**
  * "Is this person already in the archive?", asked while somebody types.
@@ -38,6 +44,10 @@ const DescriptorSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  if (!limiter.check(clientIp(request))) {
+    return rateLimitResponse(60);
+  }
+
   let body: unknown;
   try {
     body = await request.json();

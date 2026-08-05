@@ -4,7 +4,9 @@ import { Archivo, Newsreader, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { JsonLd } from "@/components/JsonLd";
 import { getArchive } from "@/lib/archive";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 /*
   The three faces, fetched once at build and served from this site's own
@@ -50,18 +52,36 @@ const devanagari = Noto_Serif_Devanagari({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Vansh Vriksha — a shared lineage archive",
     template: "%s · Vansh Vriksha",
   },
-  description:
-    "A public, community-built family tree and archive, open to every family and every community. Free to read, free to search, and no account needed to contribute.",
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
+    siteName: SITE_NAME,
     title: "Vansh Vriksha — a shared lineage archive",
     description:
       "One family tree, open to every family. Search by name, gotra, kuladevata or ancestral village.",
     type: "website",
+    url: "/",
+    locale: "en_US",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vansh Vriksha — a shared lineage archive",
+    description:
+      "One family tree, open to every family. Search by name, gotra, kuladevata or ancestral village.",
+  },
+  // Every reference route (facets, JSON endpoints) is unauthenticated and
+  // meant to be found; only /admin opts out, on its own layout.
+  robots: { index: true, follow: true },
+  // No `icons` entry here on purpose: icon.svg, apple-icon.tsx and
+  // manifest.ts (all in this folder) are Next's file-convention icons, and
+  // it wires the <link> tags for those in automatically.
 };
 
 export const viewport: Viewport = {
@@ -81,6 +101,20 @@ export default function RootLayout({
       className={`${newsreader.variable} ${archivo.variable} ${devanagari.variable}`}
     >
       <body className="min-h-screen flex flex-col">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: SITE_NAME,
+            url: SITE_URL,
+            description: SITE_DESCRIPTION,
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `${SITE_URL}/search?q={search_term_string}`,
+              "query-input": "required name=search_term_string",
+            },
+          }}
+        />
         <a
           href="#main"
           className="btn btn-filled sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50"

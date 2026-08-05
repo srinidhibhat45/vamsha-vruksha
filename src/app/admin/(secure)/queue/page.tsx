@@ -14,8 +14,8 @@ export default async function QueuePage({
   searchParams: Params;
 }) {
   const { status } = await searchParams;
-  const submissions = readSubmissions();
-  const counts = queueCounts();
+  const submissions = await readSubmissions();
+  const counts = await queueCounts();
 
   return (
     <div className="mx-auto max-w-[1100px] px-4 py-9">

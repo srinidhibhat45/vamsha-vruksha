@@ -5,8 +5,14 @@ import {
   putMedia,
   sniffImageType,
 } from "@/lib/mediaStore";
+import { clientIp, createRateLimiter, rateLimitResponse } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
+
+// A family submission can carry several photographs; a script re-uploading
+// the same file cannot. 30 uploads in 10 minutes is generous for the former
+// and still bounds the latter's storage cost.
+const limiter = createRateLimiter({ windowMs: 10 * 60 * 1000, max: 30 });
 
 /**
  * Where a contributed photograph lands.
@@ -55,6 +61,10 @@ async function readImage(
 }
 
 export async function POST(request: Request) {
+  if (!limiter.check(clientIp(request))) {
+    return rateLimitResponse(600);
+  }
+
   let form: FormData;
   try {
     form = await request.formData();

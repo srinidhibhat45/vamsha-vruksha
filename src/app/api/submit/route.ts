@@ -4,8 +4,15 @@ import { appendSubmission } from "@/lib/submissions";
 import { getArchive } from "@/lib/archive";
 import { findMatches } from "@/lib/match";
 import { FamilyDraftSchema, checkDraft, displayOf } from "@/lib/family";
+import { clientIp, createRateLimiter, rateLimitResponse } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
+
+// A contributor entering a whole family in one sitting submits once; someone
+// working through several corrections in an evening submits a handful of
+// times. 15 in 10 minutes covers both comfortably while still bounding a
+// script that would otherwise flood the moderation queue.
+const limiter = createRateLimiter({ windowMs: 10 * 60 * 1000, max: 15 });
 
 const SubmissionSchema = z.object({
   kind: z.enum([
@@ -55,6 +62,10 @@ function findPossibleDuplicates(
 }
 
 export async function POST(request: Request) {
+  if (!limiter.check(clientIp(request))) {
+    return rateLimitResponse(600);
+  }
+
   let body: unknown;
   try {
     body = await request.json();
@@ -125,7 +136,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const record = appendSubmission({
+    const record = await appendSubmission({
       kind: data.kind,
       message: data.message,
       payload: draft.data,
@@ -192,7 +203,7 @@ export async function POST(request: Request) {
     });
   }
 
-  const record = appendSubmission({
+  const record = await appendSubmission({
     kind: data.kind,
     targetId: data.targetId,
     message: data.message,

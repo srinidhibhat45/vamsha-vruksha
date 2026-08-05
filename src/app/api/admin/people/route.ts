@@ -34,8 +34,8 @@ export async function POST(request: Request) {
   // A gotra or village the maintainer typed rather than picked becomes a real
   // id here — matched onto the vocabulary where possible, otherwise added to
   // it as a pending entry for /admin/vocabulary.
-  const person = createPerson(
-    resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
+  const person = await createPerson(
+    await resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
   );
   return NextResponse.json({ ok: true, person });
 }

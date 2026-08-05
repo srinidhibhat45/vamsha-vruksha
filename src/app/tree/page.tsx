@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import { AppLink as Link } from "@/components/AppLink";
 import { notFound } from "next/navigation";
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   title: "Family tree",
   description:
     "Walk the family tree — ancestors, descendants and marriages, with Konkani kinship terms.",
+  alternates: { canonical: "/tree" },
 };
 
 type Params = Promise<{
@@ -99,7 +101,11 @@ export default async function TreePage({
 
   return (
     <div
-      style={{ height: `calc(100dvh - ${chrome})` }}
+      // The height itself lives in a stylesheet rule (`.tree-route`) rather
+      // than staying inline, so a print stylesheet can override it — an
+      // inline style always wins over a class, @media or not, which would
+      // otherwise clip the printed chart to one screenful.
+      style={{ "--tree-chrome": chrome } as CSSProperties}
       className="tree-route flex flex-col"
     >
       {/*

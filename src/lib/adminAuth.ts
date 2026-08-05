@@ -42,6 +42,20 @@ export function usingDefaultCredentials(): boolean {
 }
 
 /**
+ * A production build still running admin/admin is not "fine on a laptop" —
+ * it is a public write endpoint with a published password. Warning about it
+ * on the dashboard is not enough, because the one moment that matters is
+ * before the first real contributor's data is at risk, not after a
+ * maintainer happens to notice a banner. So in production this locks the
+ * door rather than merely posting a sign on it: no password, however typed,
+ * is accepted while ADMIN_USERNAME/ADMIN_PASSWORD are unset. Setting either
+ * one — to anything, including by accident — clears this.
+ */
+export function productionLockedOut(): boolean {
+  return process.env.NODE_ENV === "production" && usingDefaultCredentials();
+}
+
+/**
  * The key the session cookie is signed with.
  *
  * Falling back to a value derived from the password means a deployment that
@@ -64,6 +78,7 @@ function safeEqual(a: string, b: string): boolean {
 }
 
 export function checkPassword(username: string, password: string): boolean {
+  if (productionLockedOut()) return false;
   const expected = credentials();
   // Both compared, both in constant time, so a wrong username and a wrong
   // password are indistinguishable from the outside.
@@ -110,6 +125,10 @@ export function verifySession(token: string | undefined | null): boolean {
  * but not in the handler that actually writes to disk.
  */
 export async function isAdmin(): Promise<boolean> {
+  // Defense in depth: if the environment variables that gate a session were
+  // removed after one was issued (a redeploy that dropped them, say), an
+  // outstanding cookie should not go on working.
+  if (productionLockedOut()) return false;
   const jar = await cookies();
   return verifySession(jar.get(SESSION_COOKIE)?.value);
 }

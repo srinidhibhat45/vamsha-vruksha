@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Relationship finder",
   description:
     "Work out how any two people in the archive are related, named in both English and Konkani.",
+  alternates: { canonical: "/relate" },
 };
 
 type Params = Promise<{ a?: string; b?: string }>;

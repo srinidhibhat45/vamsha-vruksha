@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "Search",
   description:
     "Search the archive by name, surname, gotra, kuladevata or ancestral village. Spelling-tolerant: Shreenivas finds Srinivasa.",
+  // The bare path, not whatever was searched for — every query string is the
+  // same page as far as a crawler should be concerned, so indexing each one
+  // separately would just be duplicate content under a different URL.
+  alternates: { canonical: "/search" },
 };
 
 type Params = Promise<Record<string, string | undefined>>;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { isAdmin, usingDefaultCredentials } from "@/lib/adminAuth";
+import { isAdmin, productionLockedOut, usingDefaultCredentials } from "@/lib/adminAuth";
 import { queueCounts } from "@/lib/submissions";
 import { listPending } from "@/lib/vocabStore";
 import { AdminNav } from "@/components/admin/AdminNav";
@@ -50,22 +50,35 @@ export default async function SecureAdminLayout({
           will open where you left off.
         </p>
 
-        <LoginForm />
-
-        {usingDefaultCredentials() && (
-          <p className="mt-6 rounded-[var(--shape-md)] bg-[var(--bg-inset)] p-3.5 text-[0.85rem] leading-relaxed text-[var(--fg-soft)]">
-            This deployment is still on the built-in{" "}
+        {productionLockedOut() ? (
+          <p className="mt-6 rounded-[var(--shape-md)] border-2 border-[var(--accent)] p-3.5 text-[0.85rem] leading-relaxed text-[var(--fg-soft)]">
+            Sign-in is disabled on this deployment because{" "}
+            <code>ADMIN_USERNAME</code> and <code>ADMIN_PASSWORD</code> have
+            not been set — a production build refuses the built-in{" "}
             <code className="font-medium">admin</code> /{" "}
-            <code className="font-medium">admin</code>. Set{" "}
-            <code>ADMIN_USERNAME</code> and <code>ADMIN_PASSWORD</code> in the
-            environment before it faces the public.
+            <code className="font-medium">admin</code> pair rather than
+            leaving it reachable from the internet. Set both in the
+            environment and redeploy.
           </p>
+        ) : (
+          <>
+            <LoginForm />
+            {usingDefaultCredentials() && (
+              <p className="mt-6 rounded-[var(--shape-md)] bg-[var(--bg-inset)] p-3.5 text-[0.85rem] leading-relaxed text-[var(--fg-soft)]">
+                This deployment is still on the built-in{" "}
+                <code className="font-medium">admin</code> /{" "}
+                <code className="font-medium">admin</code>. Set{" "}
+                <code>ADMIN_USERNAME</code> and <code>ADMIN_PASSWORD</code> in
+                the environment before it faces the public.
+              </p>
+            )}
+          </>
         )}
       </div>
     );
   }
 
-  const counts = queueCounts();
+  const counts = await queueCounts();
   const proposals = listPending().length;
 
   return (

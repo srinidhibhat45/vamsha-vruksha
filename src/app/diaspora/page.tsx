@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Where the community went",
   description:
     "Migration traced through the birthplaces in this archive: Goa, the Karavali coast, the cities, and the world.",
+  alternates: { canonical: "/diaspora" },
 };
 
 /**

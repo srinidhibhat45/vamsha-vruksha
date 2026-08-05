@@ -1,5 +1,4 @@
-import fs from "node:fs";
-import path from "node:path";
+import { readDataFile, writeDataFile } from "./dataFiles.ts";
 import { getArchive, invalidateArchive } from "./archive.ts";
 import { resolveRef } from "./refmatch.ts";
 import {
@@ -34,9 +33,12 @@ import {
  * than minting a duplicate each time a person record is built. That is what
  * the request-scoped cache below is for: call `createVocabResolver()` once per
  * submission and reuse the resolver across every person in it.
+ *
+ * Every resolution is `await`ed one at a time by its callers (never run
+ * concurrently across people in the same draft) precisely so that guarantee
+ * holds — two proposals racing each other would each miss the other's
+ * not-yet-cached entry and mint two.
  */
-
-const REFERENCE_DIR = path.join(process.cwd(), "data", "reference");
 
 const FILE_OF: Record<ProposableVocabulary, string> = {
   gotras: "gotras.json",
@@ -63,21 +65,27 @@ interface RefDoc {
 }
 
 function readDoc(vocabulary: ProposableVocabulary): RefDoc {
-  const file = path.join(REFERENCE_DIR, FILE_OF[vocabulary]);
+  const text = readDataFile(`reference/${FILE_OF[vocabulary]}`);
+  if (text === null) return { items: [] };
   try {
-    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+    const parsed = JSON.parse(text);
     return { ...parsed, items: parsed.items ?? [] };
   } catch {
     return { items: [] };
   }
 }
 
-function writeDoc(vocabulary: ProposableVocabulary, doc: RefDoc): void {
-  const file = path.join(REFERENCE_DIR, FILE_OF[vocabulary]);
+async function writeDoc(
+  vocabulary: ProposableVocabulary,
+  doc: RefDoc,
+  message: string,
+  authorName?: string,
+): Promise<void> {
   const json = JSON.stringify(doc, null, 2) + "\n";
-  const tmp = `${file}.${process.pid}.tmp`;
-  fs.writeFileSync(tmp, json, "utf8");
-  fs.renameSync(tmp, file);
+  await writeDataFile(`reference/${FILE_OF[vocabulary]}`, json, {
+    message,
+    authorName,
+  });
 }
 
 /**
@@ -85,11 +93,11 @@ function writeDoc(vocabulary: ProposableVocabulary, doc: RefDoc): void {
  * approval screen, which needs to write the *filled-in* version back once a
  * maintainer has supplied a proper devanagari spelling, a temple, a seat.
  */
-export function addPendingEntry(
+export async function addPendingEntry(
   vocabulary: ProposableVocabulary,
   label: string,
   meta?: { proposedBy?: string; note?: string },
-): string {
+): Promise<string> {
   const doc = readDoc(vocabulary);
   const taken = new Set(doc.items.map((i) => i.id));
 
@@ -106,7 +114,12 @@ export function addPendingEntry(
   if (meta?.note) entry.note = meta.note;
 
   doc.items.push(entry as RefDoc["items"][number]);
-  writeDoc(vocabulary, doc);
+  await writeDoc(
+    vocabulary,
+    doc,
+    `Propose ${vocabulary} entry: ${label}`,
+    meta?.proposedBy,
+  );
   invalidateArchive();
   return id;
 }
@@ -114,7 +127,7 @@ export function addPendingEntry(
 export type VocabResolver = (
   vocabulary: ProposableVocabulary,
   value: string | undefined,
-) => string | undefined;
+) => Promise<string | undefined>;
 
 /**
  * A resolver scoped to one publish call. Matches against the vocabulary as it
@@ -145,7 +158,7 @@ export function createVocabResolver(proposedBy?: string): VocabResolver {
   seed("kuladevatas", archive.kuladevatas);
   seed("places", archive.places);
 
-  return (vocabulary, value) => {
+  return async (vocabulary, value) => {
     if (!value) return value;
     if (!isProposedRef(value)) return value;
 
@@ -168,7 +181,7 @@ export function createVocabResolver(proposedBy?: string): VocabResolver {
       return match.id;
     }
 
-    const id = addPendingEntry(vocabulary, label, { proposedBy });
+    const id = await addPendingEntry(vocabulary, label, { proposedBy });
     known[vocabulary].set(label.toLowerCase(), id);
     return id;
   };
@@ -264,11 +277,11 @@ export function listPending(): PendingEntry[] {
  * Clearing `pending` is what puts it in everybody's dropdown, so it is the one
  * change that cannot be made by anybody but a maintainer.
  */
-export function approveEntry(
+export async function approveEntry(
   vocabulary: ProposableVocabulary,
   id: string,
   patch: Record<string, unknown> = {},
-): boolean {
+): Promise<boolean> {
   const doc = readDoc(vocabulary);
   const index = doc.items.findIndex((i) => i.id === id);
   if (index === -1) return false;
@@ -284,20 +297,30 @@ export function approveEntry(
   }
 
   doc.items[index] = cleaned as RefDoc["items"][number];
-  writeDoc(vocabulary, doc);
+  await writeDoc(
+    vocabulary,
+    doc,
+    `Confirm ${vocabulary} entry: ${(cleaned.name as string) ?? id}`,
+    "Archive maintainer",
+  );
   invalidateArchive();
   return true;
 }
 
 /** Drop an entry from the vocabulary file. Records are retargeted separately. */
-export function removeEntry(
+export async function removeEntry(
   vocabulary: ProposableVocabulary,
   id: string,
-): boolean {
+): Promise<boolean> {
   const doc = readDoc(vocabulary);
   const next = doc.items.filter((i) => i.id !== id);
   if (next.length === doc.items.length) return false;
-  writeDoc(vocabulary, { ...doc, items: next });
+  await writeDoc(
+    vocabulary,
+    { ...doc, items: next },
+    `Remove ${vocabulary} entry: ${id}`,
+    "Archive maintainer",
+  );
   invalidateArchive();
   return true;
 }
@@ -322,29 +345,46 @@ interface PersonRefFields {
  * doing the same thing a contributor does, and it lands in the same place —
  * pending, on the approval screen — because being trusted about *what* a
  * family's gotra is called is not the same as having supplied its pravara.
+ *
+ * Resolved one field at a time, in order, rather than with Promise.all — see
+ * the note on VocabResolver above.
  */
-export function resolvePersonRefs<T extends PersonRefFields>(
+export async function resolvePersonRefs<T extends PersonRefFields>(
   input: T,
   vocab: VocabResolver,
-): T {
-  const placeRef = (ref: { id?: string; label?: string } | undefined) => {
+): Promise<T> {
+  const placeRef = async (ref: { id?: string; label?: string } | undefined) => {
     if (!ref?.id) return ref;
-    return { ...ref, id: vocab("places", ref.id) };
+    return { ...ref, id: await vocab("places", ref.id) };
   };
+
+  const gotra = await vocab("gotras", input.gotra);
+  const community = await vocab("communities", input.community);
+  const math = await vocab("maths", input.math);
+  const kuladevata = await vocab("kuladevatas", input.kuladevata);
+  const mool = await vocab("places", input.mool);
+  const birth = input.birth
+    ? { ...input.birth, place: await placeRef(input.birth.place) }
+    : input.birth;
+  const death = input.death
+    ? { ...input.death, place: await placeRef(input.death.place) }
+    : input.death;
+  let residences = input.residences;
+  if (residences) {
+    const out: NonNullable<T["residences"]> = [];
+    for (const r of residences) out.push((await placeRef(r)) ?? r);
+    residences = out;
+  }
 
   return {
     ...input,
-    gotra: vocab("gotras", input.gotra),
-    community: vocab("communities", input.community),
-    math: vocab("maths", input.math),
-    kuladevata: vocab("kuladevatas", input.kuladevata),
-    mool: vocab("places", input.mool),
-    birth: input.birth
-      ? { ...input.birth, place: placeRef(input.birth.place) }
-      : input.birth,
-    death: input.death
-      ? { ...input.death, place: placeRef(input.death.place) }
-      : input.death,
-    residences: input.residences?.map((r) => placeRef(r) ?? r),
+    gotra,
+    community,
+    math,
+    kuladevata,
+    mool,
+    birth,
+    death,
+    residences,
   };
 }

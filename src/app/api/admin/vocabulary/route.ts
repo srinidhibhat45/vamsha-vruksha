@@ -78,7 +78,7 @@ export async function POST(request: Request) {
 
   if (input.action === "confirm") {
     const { action: _a, vocabulary, id, ...patch } = input;
-    const ok = approveEntry(vocabulary, id, patch);
+    const ok = await approveEntry(vocabulary, id, patch);
     return ok
       ? NextResponse.json({ ok: true, confirmed: id })
       : NextResponse.json({ error: "No such entry" }, { status: 404 });
@@ -110,12 +110,12 @@ export async function POST(request: Request) {
     // Records first: an entry removed before the records that use it are
     // moved leaves those records pointing at nothing for as long as the second
     // write takes, and at nothing permanently if it fails.
-    const { changed } = retargetRef(input.vocabulary, input.id, input.into);
-    removeEntry(input.vocabulary, input.id);
+    const { changed } = await retargetRef(input.vocabulary, input.id, input.into);
+    await removeEntry(input.vocabulary, input.id);
     return NextResponse.json({ ok: true, merged: changed.length });
   }
 
-  const { changed } = retargetRef(input.vocabulary, input.id, null);
-  removeEntry(input.vocabulary, input.id);
+  const { changed } = await retargetRef(input.vocabulary, input.id, null);
+  await removeEntry(input.vocabulary, input.id);
   return NextResponse.json({ ok: true, cleared: changed.length });
 }

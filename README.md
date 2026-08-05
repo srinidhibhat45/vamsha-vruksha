@@ -225,13 +225,81 @@ them. Each can be confirmed into the list, merged into the entry it is a
 spelling of, or discarded — and merging and discarding both repoint the records
 already using it, so nothing is ever left pointing at a name that has gone.
 
-**Deploying to a serverless host** with an ephemeral filesystem means replacing
-the write functions in `src/lib/submissions.ts` and `src/lib/peopleStore.ts`
-with a database or object-store call. Those two are the only remaining places
-the app writes to a filesystem — photographs already go to Netlify Blobs
-through `src/lib/mediaStore.ts`, which picks its backend from the environment
-and needs no configuration on Netlify. Elsewhere, set `NETLIFY_SITE_ID` and
-`NETLIFY_BLOBS_TOKEN`, or `MEDIA_BACKEND=local` to keep using the disk.
+**Deploying to a serverless host** with an ephemeral filesystem means every
+write in the app has to land somewhere that outlives one function
+invocation. Three modules write, and each picks its backend from the
+environment the same way `src/lib/mediaStore.ts` already did for
+photographs — nothing to configure on Netlify itself, only the env vars in
+`.env.local.example`'s deployment section, set once in the Netlify dashboard:
+
+- `src/lib/submissions.ts` (the moderation queue) → Netlify Blobs. A raw,
+  anonymous, unreviewed submission does not need git's provenance guarantees
+  yet — that starts to matter once a maintainer has looked at it.
+- `src/lib/peopleStore.ts` and `src/lib/vocabStore.ts` (everything that
+  writes into `data/people/` and `data/reference/`, all of it behind the
+  admin session) → a commit to this repository's GitHub remote, via
+  `src/lib/github.ts`, when `GITHUB_TOKEN` is set. This is what turns
+  "approving writes the record and it appears at once… commit the change
+  afterwards" from a manual step a maintainer has to remember into something
+  that happens automatically and still lands as a real, human-attributed
+  commit — the archive's core design promise (an author, a date and a reason
+  on every change) survives moving off a laptop. `src/lib/dataFiles.ts` is
+  the shared seam: an in-memory overlay keeps a maintainer's own writes
+  visible to themselves immediately, while Netlify's rebuild-on-push makes
+  the change visible to everyone else within a couple of minutes.
+- Photographs → Netlify Blobs, unchanged.
+
+Without `GITHUB_TOKEN`, `peopleStore.ts`/`vocabStore.ts` fall back to writing
+straight to the local filesystem, which is correct for `npm run dev` and
+silently loses every admin write on Netlify — the same trap the queue used to
+fall into. Set it before real maintainers start approving real submissions.
+
+---
+
+## Going to production
+
+Everything below is already in the code; this is the checklist for turning
+it on.
+
+**Set in the Netlify dashboard, not in git:**
+
+- `ADMIN_USERNAME`, `ADMIN_PASSWORD` — a production build (`NODE_ENV` is set
+  to `production` by `next build`) refuses to authenticate the built-in
+  `admin`/`admin` pair at all, so `/admin` is unreachable until these are set.
+- `GITHUB_TOKEN` (and `GITHUB_REPO` if this deployment's repo is not
+  `srinidhibhat45/vamsha-vruksha`) — without it, admin writes fall back to a
+  filesystem that Netlify wipes on every cold start. See the deployment
+  section above.
+- `NEXT_PUBLIC_SITE_URL` — the real domain. Drives canonical links, the
+  sitemap, robots.txt and Open Graph tags; get it wrong and search engines
+  index the wrong host.
+
+Full explanations of each are in `.env.local.example`.
+
+**Already wired in, nothing to configure:**
+
+- **Security headers** (`next.config.mjs`) — a Content-Security-Policy,
+  `Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options`
+  and a locked-down `Permissions-Policy`, sent on every response. The CSP's
+  `script-src` carries `'unsafe-inline'` as a deliberate, documented
+  trade-off — see the comment above `CSP` in that file for why a nonce-based
+  policy is not compatible with this app's no-middleware design.
+- **Rate limiting** (`src/lib/rateLimit.ts`) — `/api/submit`, `/api/media`
+  and `/api/match` are IP-throttled in-memory, on top of the login throttle
+  `/api/admin/login` already had. Honest about its limits in its own
+  comment: per-instance, not distributed, a backstop against casual abuse
+  rather than a determined attacker.
+- **SEO** — `sitemap.xml` and `robots.txt` (both generated from the live
+  archive, so a new record is in the sitemap on the next build), canonical
+  URLs on every page, JSON-LD (`WebSite`+`SearchAction` site-wide, `Person`
+  and `BreadcrumbList` on every record — see `src/components/JsonLd.tsx`),
+  and a generated Open Graph image.
+- **Privacy** — see the section below; enforced by review, not by code, which
+  is why it is a policy a human applies rather than a validator rule.
+
+`npm run build` runs `npm run data:check` first either way, so a broken
+archive — or a TypeScript error introduced anywhere in the above — cannot
+ship regardless of which of these are configured.
 
 ---
 

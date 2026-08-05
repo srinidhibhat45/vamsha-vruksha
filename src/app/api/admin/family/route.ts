@@ -58,11 +58,13 @@ export async function POST(request: Request) {
 
   const ordered = topoOrder(parsed.data.people);
   // Shared across the family, so a gotra proposed on four brothers becomes one
-  // pending vocabulary entry rather than four.
+  // pending vocabulary entry rather than four. Resolved one row at a time —
+  // see the note on VocabResolver in vocabStore.ts.
   const vocab = createVocabResolver("Archive maintainer");
-  const members = ordered.map((p) =>
-    draftToMember(p, parsed.data.sources, vocab),
-  );
+  const members = [];
+  for (const p of ordered) {
+    members.push(await draftToMember(p, parsed.data.sources, vocab));
+  }
 
   for (const m of members) {
     if (m.existingId) continue;
@@ -82,7 +84,7 @@ export async function POST(request: Request) {
     m.input = check.data;
   }
 
-  const written = createFamily(members);
+  const written = await createFamily(members);
 
   return NextResponse.json({
     ok: true,

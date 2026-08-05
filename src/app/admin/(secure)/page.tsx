@@ -44,8 +44,8 @@ function Stat({
 
 export default async function AdminHomePage() {
   const archive = getArchive();
-  const counts = queueCounts();
-  const recent = readSubmissions().slice(0, 5);
+  const counts = await queueCounts();
+  const recent = (await readSubmissions()).slice(0, 5);
   const names = targetNames(recent);
 
   return (

@@ -4,6 +4,7 @@ import {
   SESSION_COOKIE,
   checkPassword,
   issueSession,
+  productionLockedOut,
   sessionCookieOptions,
 } from "@/lib/adminAuth";
 
@@ -49,6 +50,16 @@ function clientIp(request: Request): string {
 }
 
 export async function POST(request: Request) {
+  if (productionLockedOut()) {
+    return NextResponse.json(
+      {
+        error:
+          "This deployment has not set ADMIN_USERNAME and ADMIN_PASSWORD yet, so sign-in is disabled here until it does.",
+      },
+      { status: 503 },
+    );
+  }
+
   const ip = clientIp(request);
   if (tooManyAttempts(ip)) {
     return NextResponse.json(

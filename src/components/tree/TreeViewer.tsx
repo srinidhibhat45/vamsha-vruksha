@@ -129,6 +129,12 @@ export function TreeViewer({
   // of *this* family whatever else they have seen.
   const [showLegend, setShowLegend] = useState(true);
 
+  // The print-only chart (see below) is mounted only while this is true —
+  // built once, on demand, rather than carried in the DOM at double the cost
+  // of the interactive one for every tree on every render. A large lineage is
+  // exactly the case that cost would hurt most.
+  const [printMode, setPrintMode] = useState(false);
+
   // Drag, pinch, wheel and the measured viewport, shared with the builder
   // canvas so both drawings answer to the same gestures.
   const {
@@ -591,6 +597,199 @@ export function TreeViewer({
   const selected = selectedId ? payload.people[selectedId] : null;
   const focusPerson = payload.people[focusId];
 
+  /* ---------------------------------------------------------------- */
+  /* Download as PDF                                                    */
+  /*                                                                     */
+  /* There is no PDF library here, and none is needed: the browser's own */
+  /* print pipeline already turns real DOM and SVG into a real vector    */
+  /* PDF, with the fonts and colours already loaded — nothing rasterised, */
+  /* nothing to keep in sync with a second renderer. So "download" means  */
+  /* opening a print dialog whose destination the reader sets to "Save   */
+  /* as PDF", against a page built to fit this exact chart rather than    */
+  /* whatever the browser's default paper size happens to be.            */
+  /*                                                                     */
+  /* The interactive canvas cannot supply that page itself — it is       */
+  /* deliberately clipped to one screenful (see tree/page.tsx) and drawn */
+  /* at whatever pan and zoom the reader left it at. So a second, plain   */
+  /* copy of the same nodes and links is built at full size and natural  */
+  /* scale, mounted only for the moment printing is happening, and it is */
+  /* that copy — not the canvas — that the print stylesheet shows.       */
+  /* ---------------------------------------------------------------- */
+
+  const PRINT_MARGIN = 48;
+  const PRINT_HEADER_H = 116;
+  // A generous ceiling on one page's own long side. Comfortably past any
+  // real family tree, and there so that a pathologically wide one (a
+  // hundred-odd siblings in one generation, say) still lands as one page a
+  // PDF reader will actually open, just drawn smaller — it stays exactly as
+  // sharp when zoomed in, because none of this is raster.
+  const MAX_PRINT_DIM = 14400;
+
+  const printBoundsW = Math.max(1, layout.bounds.maxX - layout.bounds.minX);
+  const printBoundsH = Math.max(1, layout.bounds.maxY - layout.bounds.minY);
+  const printRawW = printBoundsW + PRINT_MARGIN * 2;
+  const printRawH = printBoundsH + PRINT_MARGIN * 2;
+  const printScale = Math.min(1, MAX_PRINT_DIM / Math.max(printRawW, printRawH));
+  const printSvgW = printRawW * printScale;
+  const printSvgH = printRawH * printScale;
+  const printPageW = Math.ceil(printSvgW);
+  const printPageH = Math.ceil(printSvgH + PRINT_HEADER_H);
+
+  const printSharedLine = [
+    baseline.gotraLabel && `${baseline.gotraLabel} gotra`,
+    baseline.moolLabel,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  const printModeLabel = MODES.find((m) => m.id === mode)?.label ?? mode;
+  const printMeta = [
+    `${printModeLabel} view, rooted on ${focusPerson?.name ?? "—"}`,
+    `${personNodes.length} of ${payload.size} people drawn`,
+    printSharedLine && `everyone here is ${printSharedLine} unless noted`,
+    `generated ${new Date().toLocaleDateString("en-IN", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    })}`,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  const requestDownload = useCallback(() => {
+    setPrintMode(true);
+  }, []);
+
+  // Two frames: one for the print-only tree to mount, one for the browser to
+  // lay it out, before the dialog steals the thread. Restoring on "afterprint"
+  // rather than after `window.print()` returns is what makes this work in
+  // Chrome, where the call returns immediately and the dialog runs async.
+  useEffect(() => {
+    if (!printMode) return;
+    let raf2 = 0;
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => window.print());
+    });
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+    };
+  }, [printMode]);
+
+  useEffect(() => {
+    const onAfterPrint = () => setPrintMode(false);
+    window.addEventListener("afterprint", onAfterPrint);
+    return () => window.removeEventListener("afterprint", onAfterPrint);
+  }, []);
+
+  // A filename a reader will recognise later, rather than every download in
+  // the family landing in their folder as the same "Family tree.pdf".
+  useEffect(() => {
+    if (!printMode) return;
+    const prevTitle = document.title;
+    document.title = `${payload.lineageLabel} family tree`;
+    return () => {
+      document.title = prevTitle;
+    };
+  }, [printMode, payload.lineageLabel]);
+
+  /**
+   * The links, junctions and cards, shared between the interactive canvas and
+   * the print-only copy — the two differ only in outer transform and in
+   * whether transient pointer/keyboard state should show, not in what a node
+   * or a link actually looks like.
+   */
+  const treeSvgContent = (opts: { interactive: boolean }) => (
+    <>
+      <TreeCardDefs />
+      <g fill="none" strokeLinecap="round">
+        {layout.links.map((link) => {
+          const isMarriage = link.kind === "marriage";
+          const onPath = !!link.childId && pathIds.has(link.childId);
+          const ended = !!link.unionId && endedUnions.has(link.unionId);
+          return (
+            <path
+              key={link.id}
+              d={orthogonalPath(link.points, isMarriage ? 8 : 14)}
+              strokeDasharray={isMarriage && ended ? "7 4" : undefined}
+              stroke={
+                onPath
+                  ? "var(--color-gold)"
+                  : isMarriage
+                    ? "color-mix(in oklab, var(--color-kumkum) 55%, transparent)"
+                    : "var(--line-strong)"
+              }
+              strokeWidth={onPath ? 2.2 : 1.3}
+              opacity={
+                matches && link.childId && !matches.has(link.childId)
+                  ? 0.18
+                  : onPath
+                    ? 1
+                    : 0.65
+              }
+            />
+          );
+        })}
+      </g>
+
+      <g>
+        {layout.nodes
+          .filter((n) => n.kind === "junction")
+          .map((n) => (
+            <g key={n.id} transform={`translate(${n.x} ${n.y})`}>
+              <path
+                d="M0 -4 L4 0 L0 4 L-4 0 Z"
+                fill="var(--color-kumkum)"
+                opacity={0.75}
+              />
+              {n.kind === "junction" && marriageLabel(n) && (
+                <text
+                  y={-10}
+                  textAnchor="middle"
+                  fontSize={9.5}
+                  fill="var(--fg-faint)"
+                  style={{ userSelect: "none" }}
+                >
+                  {marriageLabel(n)}
+                </text>
+              )}
+            </g>
+          ))}
+      </g>
+
+      <g>
+        {personNodes.map((node) => (
+          <g
+            key={node.id}
+            {...(opts.interactive
+              ? {
+                  onPointerEnter: () => setHoverId(node.id),
+                  onPointerLeave: () => setHoverId(null),
+                }
+              : {})}
+          >
+            <PersonCard
+              node={node}
+              baseline={baseline}
+              state={{
+                isSelected: selectedId === node.id,
+                isHovered: opts.interactive && hoverId === node.id,
+                isDimmed: !!matches && !matches.has(node.id),
+                isOnPath: pathIds.has(node.id),
+                isKeyboardFocus:
+                  opts.interactive && keyboardNav && selectedId === node.id,
+              }}
+              onSelect={setSelectedId}
+              onReRoot={reRoot}
+              onExpand={toggleOpen}
+              openDown={openDown.has(node.id)}
+              openUp={openUp.has(node.id)}
+            />
+          </g>
+        ))}
+      </g>
+    </>
+  );
+
   const depthControl = (
     label: string,
     value: number,
@@ -631,7 +830,7 @@ export function TreeViewer({
   );
 
   return (
-    <div className="flex h-full min-h-0 flex-col">
+    <div className="flex h-full min-h-0 flex-col print:block print:h-auto">
       {/* Toolbar */}
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-[var(--line)] bg-[var(--bg-raised)] px-3 py-2.5 no-print">
         <Select
@@ -782,6 +981,27 @@ export function TreeViewer({
           </span>
           <button
             type="button"
+            onClick={requestDownload}
+            disabled={printMode}
+            className="btn btn-tonal btn-sm gap-1.5"
+            title="Download this exact chart as a PDF — pick &quot;Save as PDF&quot; in the dialog that opens"
+          >
+            <svg
+              viewBox="0 0 16 16"
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M8 2v8m0 0-3-3m3 3 3-3M2.5 11v1.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V11" />
+            </svg>
+            {printMode ? "Preparing…" : "Download PDF"}
+          </button>
+          <button
+            type="button"
             onClick={() => setShowLegend((s) => !s)}
             className="btn btn-text btn-sm"
             aria-expanded={showLegend}
@@ -792,8 +1012,9 @@ export function TreeViewer({
         </div>
       </div>
 
-      {/* Canvas + panel */}
-      <div className="relative flex min-h-0 flex-1">
+      {/* Canvas + panel. Screen-only: the print stylesheet hides this whole
+          stage and shows the full-size chart built below it instead. */}
+      <div className="relative flex min-h-0 flex-1 print:hidden">
         <div
           ref={(node) => {
             wrapRef.current = node;
@@ -822,9 +1043,6 @@ export function TreeViewer({
             className="block select-none"
             aria-hidden="true"
           >
-            {/* One clip path, shared by every card — defined in user space so
-                it lands correctly inside each card's own translate. */}
-            <TreeCardDefs />
             <g
               transform={`translate(${transform.x} ${transform.y}) scale(${transform.k})`}
               style={{
@@ -833,104 +1051,7 @@ export function TreeViewer({
                   : "transform 380ms cubic-bezier(0.22, 1, 0.36, 1)",
               }}
             >
-              {/* Connections first so cards sit on top of them. */}
-              <g fill="none" strokeLinecap="round">
-                {layout.links.map((link) => {
-                  const isMarriage = link.kind === "marriage";
-                  const onPath =
-                    !!link.childId && pathIds.has(link.childId);
-                  // A marriage that ended is drawn broken. It is the one thing
-                  // that makes a second marriage read as a remarriage rather
-                  // than as two at once, and it survives being seen small,
-                  // where a caption does not.
-                  const ended = !!link.unionId && endedUnions.has(link.unionId);
-                  return (
-                    <path
-                      key={link.id}
-                      d={orthogonalPath(link.points, isMarriage ? 8 : 14)}
-                      strokeDasharray={isMarriage && ended ? "7 4" : undefined}
-                      stroke={
-                        onPath
-                          ? "var(--color-gold)"
-                          : isMarriage
-                            ? "color-mix(in oklab, var(--color-kumkum) 55%, transparent)"
-                            : "var(--line-strong)"
-                      }
-                      strokeWidth={onPath ? 2.2 : 1.3}
-                      opacity={
-                        matches && link.childId && !matches.has(link.childId)
-                          ? 0.18
-                          : onPath
-                            ? 1
-                            : 0.65
-                      }
-                    />
-                  );
-                })}
-              </g>
-
-              {/*
-                Union junctions — a small diamond, echoing the kasti motif.
-
-                Where somebody married more than once the diamond also carries
-                which marriage this was, because that is the difference
-                between a second family and a mystery: two women beside one man
-                with nothing to tell them apart is the commonest way a
-                remarriage gets misread as bigamy, or a stepmother as a mother.
-              */}
-              <g>
-                {layout.nodes
-                  .filter((n) => n.kind === "junction")
-                  .map((n) => (
-                    <g key={n.id} transform={`translate(${n.x} ${n.y})`}>
-                      <path
-                        d="M0 -4 L4 0 L0 4 L-4 0 Z"
-                        fill="var(--color-kumkum)"
-                        opacity={0.75}
-                      />
-                      {n.kind === "junction" && marriageLabel(n) && (
-                        <text
-                          y={-10}
-                          textAnchor="middle"
-                          fontSize={9.5}
-                          fill="var(--fg-faint)"
-                          style={{ userSelect: "none" }}
-                        >
-                          {marriageLabel(n)}
-                        </text>
-                      )}
-                    </g>
-                  ))}
-              </g>
-
-              {/* Cards */}
-              <g>
-                {personNodes.map((node) => (
-                  <g
-                    key={node.id}
-                    onPointerEnter={() => setHoverId(node.id)}
-                    onPointerLeave={() => setHoverId(null)}
-                  >
-                    <PersonCard
-                      node={node}
-                      baseline={baseline}
-                      state={{
-                        isSelected: selectedId === node.id,
-                        isHovered: hoverId === node.id,
-                        isDimmed: !!matches && !matches.has(node.id),
-                        isOnPath: pathIds.has(node.id),
-                        isKeyboardFocus:
-                          keyboardNav && selectedId === node.id,
-                      }}
-                      onSelect={setSelectedId}
-                      onReRoot={reRoot}
-                      onExpand={toggleOpen}
-                      openDown={openDown.has(node.id)}
-                      openUp={openUp.has(node.id)}
-                    />
-                  </g>
-                ))}
-              </g>
+              {treeSvgContent({ interactive: true })}
             </g>
           </svg>
 
@@ -1017,6 +1138,45 @@ export function TreeViewer({
           />
         )}
       </div>
+
+      {/*
+        Print-only. Built at full size and natural scale rather than clipped
+        to a screenful, so the page this becomes fits the chart instead of the
+        other way round — see the comment above `requestDownload`. Hidden on
+        screen and mounted only while printing, so an ordinary visit carries
+        none of this cost.
+      */}
+      {printMode && (
+        <div className="hidden print:block">
+          <style>{`@page { size: ${printPageW}px ${printPageH}px; margin: 0; }`}</style>
+          <div
+            style={{ width: printSvgW }}
+            className="px-12 pt-5 pb-3"
+          >
+            <p className="text-[0.68rem] uppercase tracking-wide text-[var(--fg-faint)]">
+              <span className="deva" lang="kok">
+                वंशवृक्ष
+              </span>{" "}
+              · Vansh Vriksha
+            </p>
+            <h1 className="font-display text-[1.4rem] font-medium leading-tight text-[var(--fg)]">
+              {payload.lineageLabel}
+            </h1>
+            <p className="mt-1 text-[0.72rem] leading-relaxed text-[var(--fg-soft)]">
+              {printMeta}
+            </p>
+          </div>
+          <svg width={printSvgW} height={printSvgH} className="block">
+            <g
+              transform={`scale(${printScale}) translate(${
+                PRINT_MARGIN - layout.bounds.minX
+              } ${PRINT_MARGIN - layout.bounds.minY})`}
+            >
+              {treeSvgContent({ interactive: false })}
+            </g>
+          </svg>
+        </div>
+      )}
     </div>
   );
 }

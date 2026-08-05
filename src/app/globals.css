@@ -1446,6 +1446,10 @@ body:has(.admin-route) > footer {
   animation: focus-pulse 2.4s ease-in-out infinite;
 }
 
+.tree-route {
+  height: calc(100dvh - var(--tree-chrome, 3.9rem));
+}
+
 @media print {
   .no-print {
     display: none !important;
@@ -1453,5 +1457,13 @@ body:has(.admin-route) > footer {
   body {
     background: white;
     color: black;
+  }
+  /* The interactive canvas owns exactly one screenful on purpose (see
+     tree/page.tsx) — a fine rule for panning, a bad one for printing, where
+     it would clip the chart to whatever was on screen when the button was
+     pressed. The print-only chart below it supplies its own full-size page
+     instead, so this just gets out of the way. */
+  .tree-route {
+    height: auto !important;
   }
 }

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Lineages",
   description:
     "Every connected family line in the archive, with its earliest recorded ancestor, gotras and mool village.",
+  alternates: { canonical: "/lineages" },
 };
 
 export default function LineagesPage() {

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { listDataFiles, readDataFile } from "./dataFiles.ts";
 import type {
   Community,
   Confidence,
@@ -109,28 +110,33 @@ export interface Facet {
 /* Loading                                                             */
 /* ------------------------------------------------------------------ */
 
-function readJson<T>(file: string, fallback: T): T {
+/**
+ * These two go through dataFiles.ts rather than node:fs directly, because in
+ * a deployment a just-approved record or just-confirmed vocabulary entry
+ * lives only in that module's in-memory overlay until the commit it triggered
+ * reaches this site's next build — reading straight from disk here would
+ * still show the pre-approval state to the maintainer who just approved it.
+ */
+function readJsonRel<T>(relPath: string, fallback: T): T {
+  const text = readDataFile(relPath);
+  if (text === null) return fallback;
   try {
-    return JSON.parse(fs.readFileSync(file, "utf8")) as T;
+    return JSON.parse(text) as T;
   } catch {
     return fallback;
   }
 }
 
 function readReference<T>(name: string): T[] {
-  const file = path.join(DATA_DIR, "reference", `${name}.json`);
-  const doc = readJson<{ items?: T[] }>(file, {});
+  const doc = readJsonRel<{ items?: T[] }>(`reference/${name}.json`, {});
   return doc.items ?? [];
 }
 
 function readPeople(): Person[] {
-  const dir = path.join(DATA_DIR, "people");
-  if (!fs.existsSync(dir)) return [];
   const out: Person[] = [];
-  for (const file of fs.readdirSync(dir).sort()) {
-    if (!file.endsWith(".json")) continue;
-    const doc = readJson<{ people?: Person[] } | Person[]>(
-      path.join(dir, file),
+  for (const file of listDataFiles("people")) {
+    const doc = readJsonRel<{ people?: Person[] } | Person[]>(
+      `people/${file}`,
       [],
     );
     const list = Array.isArray(doc) ? doc : (doc.people ?? []);

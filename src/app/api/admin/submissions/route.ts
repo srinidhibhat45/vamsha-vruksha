@@ -39,7 +39,7 @@ export async function POST(request: Request) {
   }
 
   const { id, action, note } = parsed.data;
-  const submission = getSubmission(id);
+  const submission = await getSubmission(id);
   if (!submission) {
     return NextResponse.json({ error: "Unknown submission" }, { status: 404 });
   }
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
     }
 
     if (submission.kind === "family-tree") {
-      const result = publishFamilyDraft(submission);
+      const result = await publishFamilyDraft(submission);
       if (!result.ok) {
         return NextResponse.json(
           { error: result.error, issues: result.issues },
@@ -70,7 +70,7 @@ export async function POST(request: Request) {
         );
       }
 
-      const updated = updateSubmission(id, {
+      const updated = await updateSubmission(id, {
         status: "merged",
         reviewerNote: note,
         // A family has no single record to point at, so the submission is
@@ -91,12 +91,12 @@ export async function POST(request: Request) {
       });
     }
 
-    const result = publishSubmission(submission);
+    const result = await publishSubmission(submission);
     if (!result.ok) {
       return NextResponse.json({ error: result.error }, { status: 422 });
     }
 
-    const updated = updateSubmission(id, {
+    const updated = await updateSubmission(id, {
       status: "merged",
       reviewerNote: note,
       appliedTo: result.person.id,
@@ -117,6 +117,6 @@ export async function POST(request: Request) {
     reopen: "pending",
   }[action] as "approved" | "changes-requested" | "rejected" | "pending";
 
-  const updated = updateSubmission(id, { status, reviewerNote: note });
+  const updated = await updateSubmission(id, { status, reviewerNote: note });
   return NextResponse.json({ ok: true, submission: updated });
 }

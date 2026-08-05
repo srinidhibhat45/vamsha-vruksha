@@ -57,9 +57,9 @@ export async function PUT(request: Request, { params }: Context) {
     );
   }
 
-  const person = updatePerson(
+  const person = await updatePerson(
     id,
-    resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
+    await resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
   );
   if (!person) {
     return NextResponse.json({ error: "No such record" }, { status: 404 });
@@ -97,13 +97,13 @@ export async function PATCH(request: Request, { params }: Context) {
 
   const person =
     parsed.data.action === "mark-deceased"
-      ? markDeceased(id, {
+      ? await markDeceased(id, {
           year: parsed.data.year,
           raw: parsed.data.raw,
           placeLabel: parsed.data.placeLabel,
           note: parsed.data.note,
         })
-      : markLiving(id);
+      : await markLiving(id);
 
   if (!person) {
     return NextResponse.json({ error: "No such record" }, { status: 404 });
@@ -143,7 +143,7 @@ export async function DELETE(request: Request, { params }: Context) {
     );
   }
 
-  const result = deletePerson(id);
+  const result = await deletePerson(id);
   if (!result) {
     return NextResponse.json({ error: "No such record" }, { status: 404 });
   }
