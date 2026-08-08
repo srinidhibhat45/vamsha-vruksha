@@ -136,17 +136,30 @@ export async function POST(request: Request) {
       );
     }
 
-    const record = await appendSubmission({
-      kind: data.kind,
-      message: data.message,
-      payload: draft.data,
-      submitter: {
-        name: data.submitter.name,
-        email: data.submitter.email || undefined,
-        relationship: data.submitter.relationship,
-        consent: data.submitter.consent,
-      },
-    });
+    let record;
+    try {
+      record = await appendSubmission({
+        kind: data.kind,
+        message: data.message,
+        payload: draft.data,
+        submitter: {
+          name: data.submitter.name,
+          email: data.submitter.email || undefined,
+          relationship: data.submitter.relationship,
+          consent: data.submitter.consent,
+        },
+      });
+    } catch (error) {
+      // The moderation queue's store rejecting or erroring the write — a
+      // contributor can retry, but cannot do anything about a storage
+      // misconfiguration, so it is logged for the maintainer rather than
+      // shown to the person who just typed in four generations.
+      console.error("[submit] queue write failed", error);
+      return NextResponse.json(
+        { error: "The archive could not save that. Try again shortly." },
+        { status: 502 },
+      );
+    }
 
     // Duplicates are reported per person: a draft of thirty where one is
     // already here needs to say *which* one. Rows the contributor already
@@ -203,18 +216,27 @@ export async function POST(request: Request) {
     });
   }
 
-  const record = await appendSubmission({
-    kind: data.kind,
-    targetId: data.targetId,
-    message: data.message,
-    payload: data.payload,
-    submitter: {
-      name: data.submitter.name,
-      email: data.submitter.email || undefined,
-      relationship: data.submitter.relationship,
-      consent: data.submitter.consent,
-    },
-  });
+  let record;
+  try {
+    record = await appendSubmission({
+      kind: data.kind,
+      targetId: data.targetId,
+      message: data.message,
+      payload: data.payload,
+      submitter: {
+        name: data.submitter.name,
+        email: data.submitter.email || undefined,
+        relationship: data.submitter.relationship,
+        consent: data.submitter.consent,
+      },
+    });
+  } catch (error) {
+    console.error("[submit] queue write failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save that. Try again shortly." },
+      { status: 502 },
+    );
+  }
 
   const text = (key: string) => {
     const v = data.payload[key];

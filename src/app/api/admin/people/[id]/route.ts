@@ -57,14 +57,22 @@ export async function PUT(request: Request, { params }: Context) {
     );
   }
 
-  const person = await updatePerson(
-    id,
-    await resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
-  );
-  if (!person) {
-    return NextResponse.json({ error: "No such record" }, { status: 404 });
+  try {
+    const person = await updatePerson(
+      id,
+      await resolvePersonRefs(parsed.data, createVocabResolver("Archive maintainer")),
+    );
+    if (!person) {
+      return NextResponse.json({ error: "No such record" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true, person });
+  } catch (error) {
+    console.error("[admin/people] update failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save this record. Try again shortly." },
+      { status: 502 },
+    );
   }
-  return NextResponse.json({ ok: true, person });
 }
 
 const StatusSchema = z.object({
@@ -95,20 +103,28 @@ export async function PATCH(request: Request, { params }: Context) {
     return NextResponse.json({ error: "Bad request" }, { status: 400 });
   }
 
-  const person =
-    parsed.data.action === "mark-deceased"
-      ? await markDeceased(id, {
-          year: parsed.data.year,
-          raw: parsed.data.raw,
-          placeLabel: parsed.data.placeLabel,
-          note: parsed.data.note,
-        })
-      : await markLiving(id);
+  try {
+    const person =
+      parsed.data.action === "mark-deceased"
+        ? await markDeceased(id, {
+            year: parsed.data.year,
+            raw: parsed.data.raw,
+            placeLabel: parsed.data.placeLabel,
+            note: parsed.data.note,
+          })
+        : await markLiving(id);
 
-  if (!person) {
-    return NextResponse.json({ error: "No such record" }, { status: 404 });
+    if (!person) {
+      return NextResponse.json({ error: "No such record" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true, person });
+  } catch (error) {
+    console.error("[admin/people] status change failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save this change. Try again shortly." },
+      { status: 502 },
+    );
   }
-  return NextResponse.json({ ok: true, person });
 }
 
 /**
@@ -143,9 +159,17 @@ export async function DELETE(request: Request, { params }: Context) {
     );
   }
 
-  const result = await deletePerson(id);
-  if (!result) {
-    return NextResponse.json({ error: "No such record" }, { status: 404 });
+  try {
+    const result = await deletePerson(id);
+    if (!result) {
+      return NextResponse.json({ error: "No such record" }, { status: 404 });
+    }
+    return NextResponse.json({ ok: true, ...result });
+  } catch (error) {
+    console.error("[admin/people] delete failed", error);
+    return NextResponse.json(
+      { error: "The archive could not delete this record. Try again shortly." },
+      { status: 502 },
+    );
   }
-  return NextResponse.json({ ok: true, ...result });
 }

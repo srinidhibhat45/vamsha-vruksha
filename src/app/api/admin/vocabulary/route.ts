@@ -76,46 +76,54 @@ export async function POST(request: Request) {
 
   const input = parsed.data;
 
-  if (input.action === "confirm") {
-    const { action: _a, vocabulary, id, ...patch } = input;
-    const ok = await approveEntry(vocabulary, id, patch);
-    return ok
-      ? NextResponse.json({ ok: true, confirmed: id })
-      : NextResponse.json({ error: "No such entry" }, { status: 404 });
-  }
-
-  if (input.action === "merge") {
-    const archive = getArchive();
-    const target = {
-      gotras: archive.gotras,
-      maths: archive.maths,
-      communities: archive.communities,
-      kuladevatas: archive.kuladevatas,
-      places: archive.places,
-    }[input.vocabulary].get(input.into);
-
-    if (!target) {
-      return NextResponse.json(
-        { error: "The entry to merge into is not in the vocabulary" },
-        { status: 400 },
-      );
-    }
-    if (target.pending) {
-      return NextResponse.json(
-        { error: "Merge into a confirmed entry, not another proposal" },
-        { status: 400 },
-      );
+  try {
+    if (input.action === "confirm") {
+      const { action: _a, vocabulary, id, ...patch } = input;
+      const ok = await approveEntry(vocabulary, id, patch);
+      return ok
+        ? NextResponse.json({ ok: true, confirmed: id })
+        : NextResponse.json({ error: "No such entry" }, { status: 404 });
     }
 
-    // Records first: an entry removed before the records that use it are
-    // moved leaves those records pointing at nothing for as long as the second
-    // write takes, and at nothing permanently if it fails.
-    const { changed } = await retargetRef(input.vocabulary, input.id, input.into);
+    if (input.action === "merge") {
+      const archive = getArchive();
+      const target = {
+        gotras: archive.gotras,
+        maths: archive.maths,
+        communities: archive.communities,
+        kuladevatas: archive.kuladevatas,
+        places: archive.places,
+      }[input.vocabulary].get(input.into);
+
+      if (!target) {
+        return NextResponse.json(
+          { error: "The entry to merge into is not in the vocabulary" },
+          { status: 400 },
+        );
+      }
+      if (target.pending) {
+        return NextResponse.json(
+          { error: "Merge into a confirmed entry, not another proposal" },
+          { status: 400 },
+        );
+      }
+
+      // Records first: an entry removed before the records that use it are
+      // moved leaves those records pointing at nothing for as long as the
+      // second write takes, and at nothing permanently if it fails.
+      const { changed } = await retargetRef(input.vocabulary, input.id, input.into);
+      await removeEntry(input.vocabulary, input.id);
+      return NextResponse.json({ ok: true, merged: changed.length });
+    }
+
+    const { changed } = await retargetRef(input.vocabulary, input.id, null);
     await removeEntry(input.vocabulary, input.id);
-    return NextResponse.json({ ok: true, merged: changed.length });
+    return NextResponse.json({ ok: true, cleared: changed.length });
+  } catch (error) {
+    console.error("[admin/vocabulary] write failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save that. Try again shortly." },
+      { status: 502 },
+    );
   }
-
-  const { changed } = await retargetRef(input.vocabulary, input.id, null);
-  await removeEntry(input.vocabulary, input.id);
-  return NextResponse.json({ ok: true, cleared: changed.length });
 }

@@ -61,38 +61,51 @@ export async function POST(request: Request) {
   // pending vocabulary entry rather than four. Resolved one row at a time —
   // see the note on VocabResolver in vocabStore.ts.
   const vocab = createVocabResolver("Archive maintainer");
-  const members = [];
-  for (const p of ordered) {
-    members.push(await draftToMember(p, parsed.data.sources, vocab));
-  }
 
-  for (const m of members) {
-    if (m.existingId) continue;
-    const check = PersonInputSchema.safeParse(m.input);
-    if (!check.success) {
-      return NextResponse.json(
-        {
-          error: "Some fields need attention",
-          issues: check.error.issues.map((i) => ({
-            path: `${m.input.name?.given || m.key}.${i.path.join(".")}`,
-            message: i.message,
-          })),
-        },
-        { status: 400 },
-      );
+  try {
+    const members = [];
+    for (const p of ordered) {
+      members.push(await draftToMember(p, parsed.data.sources, vocab));
     }
-    m.input = check.data;
+
+    for (const m of members) {
+      if (m.existingId) continue;
+      const check = PersonInputSchema.safeParse(m.input);
+      if (!check.success) {
+        return NextResponse.json(
+          {
+            error: "Some fields need attention",
+            issues: check.error.issues.map((i) => ({
+              path: `${m.input.name?.given || m.key}.${i.path.join(".")}`,
+              message: i.message,
+            })),
+          },
+          { status: 400 },
+        );
+      }
+      m.input = check.data;
+    }
+
+    const written = await createFamily(members);
+
+    return NextResponse.json({
+      ok: true,
+      ids: written.ids,
+      created: written.created,
+      updated: written.updated,
+      warnings: problems
+        .filter((p) => p.severity === "warning")
+        .map((p) => p.message),
+    });
+  } catch (error) {
+    // Almost always the archive's git backend rejecting or failing the
+    // commit — a maintainer can retry, but cannot do anything about the
+    // underlying cause, so it is logged for whoever can and reported here as
+    // what it is rather than as a mistake in what was typed.
+    console.error("[admin/family] write failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save this family. Try again shortly." },
+      { status: 502 },
+    );
   }
-
-  const written = await createFamily(members);
-
-  return NextResponse.json({
-    ok: true,
-    ids: written.ids,
-    created: written.created,
-    updated: written.updated,
-    warnings: problems
-      .filter((p) => p.severity === "warning")
-      .map((p) => p.message),
-  });
 }

@@ -53,70 +53,83 @@ export async function POST(request: Request) {
     );
   }
 
-  if (action === "approve") {
-    if (submission.appliedTo) {
-      return NextResponse.json(
-        { error: "This one has already been published" },
-        { status: 409 },
-      );
-    }
-
-    if (submission.kind === "family-tree") {
-      const result = await publishFamilyDraft(submission);
-      if (!result.ok) {
+  try {
+    if (action === "approve") {
+      if (submission.appliedTo) {
         return NextResponse.json(
-          { error: result.error, issues: result.issues },
-          { status: 422 },
+          { error: "This one has already been published" },
+          { status: 409 },
         );
+      }
+
+      if (submission.kind === "family-tree") {
+        const result = await publishFamilyDraft(submission);
+        if (!result.ok) {
+          return NextResponse.json(
+            { error: result.error, issues: result.issues },
+            { status: 422 },
+          );
+        }
+
+        const updated = await updateSubmission(id, {
+          status: "merged",
+          reviewerNote: note,
+          // A family has no single record to point at, so the submission is
+          // anchored to the one a reviewer would open first — the head of
+          // the branch. The full id map lives on the family payload below.
+          appliedTo: result.apexId,
+          appliedAt: new Date().toISOString(),
+        });
+
+        return NextResponse.json({
+          ok: true,
+          submission: updated,
+          family: {
+            created: result.created,
+            updated: result.updated,
+            apexId: result.apexId,
+          },
+        });
+      }
+
+      const result = await publishSubmission(submission);
+      if (!result.ok) {
+        return NextResponse.json({ error: result.error }, { status: 422 });
       }
 
       const updated = await updateSubmission(id, {
         status: "merged",
         reviewerNote: note,
-        // A family has no single record to point at, so the submission is
-        // anchored to the one a reviewer would open first — the head of the
-        // branch. The full id map lives on the family payload below.
-        appliedTo: result.apexId,
+        appliedTo: result.person.id,
         appliedAt: new Date().toISOString(),
       });
 
       return NextResponse.json({
         ok: true,
         submission: updated,
-        family: {
-          created: result.created,
-          updated: result.updated,
-          apexId: result.apexId,
-        },
+        person: { id: result.person.id, created: result.created },
       });
     }
 
-    const result = await publishSubmission(submission);
-    if (!result.ok) {
-      return NextResponse.json({ error: result.error }, { status: 422 });
-    }
+    const status = {
+      "accept-only": "approved",
+      "request-changes": "changes-requested",
+      reject: "rejected",
+      reopen: "pending",
+    }[action] as "approved" | "changes-requested" | "rejected" | "pending";
 
-    const updated = await updateSubmission(id, {
-      status: "merged",
-      reviewerNote: note,
-      appliedTo: result.person.id,
-      appliedAt: new Date().toISOString(),
-    });
-
-    return NextResponse.json({
-      ok: true,
-      submission: updated,
-      person: { id: result.person.id, created: result.created },
-    });
+    const updated = await updateSubmission(id, { status, reviewerNote: note });
+    return NextResponse.json({ ok: true, submission: updated });
+  } catch (error) {
+    // A result with `ok: false` above is the draft or the record disagreeing
+    // with itself, which is reported to the reviewer as-is. Reaching this
+    // catch instead means the write itself failed — the git backend or the
+    // queue's store rejecting or erroring the commit — which the reviewer
+    // can retry but not otherwise act on.
+    console.error("[admin/submissions] action failed", error);
+    return NextResponse.json(
+      { error: "The archive could not save that. Try again shortly." },
+      { status: 502 },
+    );
   }
-
-  const status = {
-    "accept-only": "approved",
-    "request-changes": "changes-requested",
-    reject: "rejected",
-    reopen: "pending",
-  }[action] as "approved" | "changes-requested" | "rejected" | "pending";
-
-  const updated = await updateSubmission(id, { status, reviewerNote: note });
-  return NextResponse.json({ ok: true, submission: updated });
 }
