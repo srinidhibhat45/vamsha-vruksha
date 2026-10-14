@@ -4,7 +4,7 @@
  * searched for, which two people are being related. Everything else in the
  * public site is prerendered at build time and served as a file.
  */
-const ON_DEMAND_ROUTES = ["/tree", "/search", "/relate"];
+const ON_DEMAND_ROUTES = ["/tree", "/search", "/relate", "/contribute"];
 
 /**
  * A conservative Content-Security-Policy.
@@ -61,7 +61,7 @@ const SECURITY_HEADERS = [
     value:
       "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
   },
-  // Netlify terminates TLS and only ever serves this site over https, so this
+  // TLS is terminated at the edge and only ever served over https, so this
   // is safe to send unconditionally rather than gated on NODE_ENV — `next
   // dev` on plain http simply never reaches a browser that had cause to
   // remember it.
@@ -89,29 +89,65 @@ const nextConfig = {
         source: `/:path(${ON_DEMAND_ROUTES.map((r) => r.slice(1)).join("|")})`,
         headers: [
           /*
-            Let the CDN hold these, and let it answer from the held copy
-            while it refreshes in the background. Without this, every
-            reader who opens the same family tree pays for a fresh
-            serverless invocation of a page whose content did not change
-            between them.
+            Let the CDN (Vercel, Cloudflare, Netlify) hold these at the edge.
+            Without Vercel-CDN-Cache-Control and CDN-Cache-Control, Vercel
+            invokes a Serverless Function (Compute) for every single request,
+            transferring hundreds of kilobytes of un-cached RSC payload and
+            eating up free Vercel Fast Data Transfer / Compute bandwidth.
 
-            Safe because records are not a live database: they live in
-            data/people/*.json and only change when a maintainer commits,
-            which means a deploy, which purges the cache. The archive
-            cannot be more stale than the last build.
-
-            Netlify-CDN-Cache-Control governs the edge; the plain header
-            keeps browsers revalidating, so a reader who returns to a tree
-            after a deploy sees the new records rather than their own
-            stale copy of them.
+            Records only change when a commit/deploy occurs, which automatically
+            purges the Vercel CDN cache.
           */
           {
+            key: "CDN-Cache-Control",
+            value: "public, s-maxage=86400, stale-while-revalidate=604800",
+          },
+          {
+            key: "Vercel-CDN-Cache-Control",
+            value: "public, s-maxage=86400, stale-while-revalidate=604800",
+          },
+          {
             key: "Netlify-CDN-Cache-Control",
-            value: "public, s-maxage=300, stale-while-revalidate=86400",
+            value: "public, s-maxage=86400, stale-while-revalidate=604800",
           },
           {
             key: "Cache-Control",
             value: "public, max-age=0, must-revalidate",
+          },
+        ],
+      },
+      {
+        source: "/api/:path(tree|suggest|relate)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=3600, stale-while-revalidate=86400",
+          },
+          {
+            key: "CDN-Cache-Control",
+            value: "public, s-maxage=86400, stale-while-revalidate=604800",
+          },
+          {
+            key: "Vercel-CDN-Cache-Control",
+            value: "public, s-maxage=86400, stale-while-revalidate=604800",
+          },
+        ],
+      },
+      {
+        source: "/temples/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/:path*.svg",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800",
           },
         ],
       },

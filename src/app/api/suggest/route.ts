@@ -11,8 +11,10 @@ export function GET(request: Request) {
     {
       headers: {
         // Type-ahead results change only when the archive does, so let the
-        // browser and any CDN in front of it hold them briefly.
-        "Cache-Control": "public, max-age=30, stale-while-revalidate=300",
+        // browser and any CDN in front of it hold them.
+        "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+        "CDN-Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+        "Vercel-CDN-Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
       },
     },
   );

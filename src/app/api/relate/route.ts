@@ -38,5 +38,11 @@ export function GET(request: Request) {
       toId: s.toId,
       label: s.label,
     })),
+  }, {
+    headers: {
+      "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+      "CDN-Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+      "Vercel-CDN-Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+    },
   });
 }
